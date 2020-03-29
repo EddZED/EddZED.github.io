@@ -10,7 +10,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .sub_title{color:#D9D8D8;font-family:'adobe_arabic',sans-serif;font-weight:normal;font-size:20px;}
 .content_body{background: #1D1B1B;box-shadow:inset 6px 6px 4px rgba(79, 67, 67, 0.25), inset -6px -6px 8px rgba(0, 0, 0, 0.48);border-radius: 38px;padding:15px;width:100%;margin-top:15px;}
 #slider{position:relative;padding:15px;}
-.slider_item{position:relative;}
+.slider_item{position:relative;padding:0 10px;}
 .block_slider{background-color:rgba(244, 45, 189, 0.91);border-radius:15px;padding:15px 10px;box-shadow:inset 4px 4px 10px rgba(255,255,255, .3), inset -4px -4px 10px rgba(0,0,0,.6);}
 .bg_sl{background-color:#f37fd3;box-shadow:inset 2px 4px 10px rgba(0,0,0,.6),inset -2px -4px 10px rgba(255,255,255,.4);padding:15px;border-radius:10px;min-height:250px;}
 .slide_2 .block_slider{background-color:rgba(34, 192, 73);}
