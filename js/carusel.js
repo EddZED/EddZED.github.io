@@ -1,27 +1,27 @@
-$('#comments_sl').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
+$('#slider').slick({
+      dots: false,
+      arrows: true,
+      infinite: false,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 1,
       centerMode: true,
       slidesToScroll: 1,
-      centerPadding:'0px',
+      centerPadding:'10px',
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             centerMode: true,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             dots: false
           }
         },
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding:'0px',
             swipe:true
