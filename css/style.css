@@ -1,6 +1,8 @@
 @font-face{font-family:'press_start';src:url(../font/PressStart2P.ttf);}
 @font-face{font-family:'adobe_arabic';src:url(../font/AdobeArabicRegular.otf);}
-body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-repeat:no-repeat;}
+@font-face {font-family:'amiko';src: url(../font/AmikoRegular.otf);
+}
+body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-repeat:no-repeat;font-family:'amiko',sans-serif;}
 .frame{border:6px solid rgba(244, 45, 189, 0.91);box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25), -3px -8px 4px rgba(78, 75, 75, 0.29);border-radius:44px;width:100%;}
 .bg_content{width:100%;height:100%;background: #131314;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.5);padding:15px;border-radius:40px;}
 .name_page{width:100%;background:#1D1B1B;box-shadow: inset -6px -6px 4px rgba(0, 0, 0, 0.48), inset 6px 6px 4px rgba(79, 67, 67, 0.48);border-radius: 18px;padding:13px 20px;}
@@ -17,6 +19,20 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .slide_2 .bg_sl{background-color:#85f083;}
 .slide_3 .block_slider{background-color:rgba(76, 170, 239);}
 .slide_3 .bg_sl{background-color:#80d5f3;}
+.box_today{background-color:transparent;box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.4),inset -5px -5px 5px rgba(255,255,255,.1);padding:5px;border-radius:12px;}
+.today{background:#25B0E1;border: 1px solid #363535;box-sizing: border-box;box-shadow: inset 0px 4px 4px rgba(251, 251, 251, 0.48), inset 0px -4px 4px rgba(77, 4, 43, 0.48);border-radius: 10px;color:#fff;font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
