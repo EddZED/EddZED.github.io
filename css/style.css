@@ -13,7 +13,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .title_page{font-family:'press_start',sans-serif;font-style:normal;font-weight:normal;font-size:30px;line-height:38px;letter-spacing:0.05em;color:#70C5EA;text-shadow:2px 2px 0px #FFFFFF;text-align:center;}
 .purple_line{width:85%;height:1px;background-color:rgba(230, 23, 209, 1);box-shadow: 0px 0px 8px 4px rgba(230, 23, 209, 0.6);}
 .sub_title{color:#D9D8D8;font-family:'adobe_arabic',sans-serif;font-weight:normal;font-size:20px;}
-.content_body{background: #1D1B1B;box-shadow:inset 6px 6px 4px rgba(79, 67, 67, 0.25), inset -6px -6px 8px rgba(0, 0, 0, 0.48);border-radius: 38px;padding:15px;width:100%;margin-top:15px;}
+.content_body{background: #1D1B1B;box-shadow:inset 6px 6px 4px rgba(79, 67, 67, 0.25), inset -6px -6px 8px rgba(0, 0, 0, 0.48);border-radius: 38px;padding:20px 15px;width:100%;margin-top:15px;}
 #slider{position:relative;padding:15px;}
 .slider_item{position:relative;padding:0 10px;}
 .block_slider{background-color:rgba(244, 45, 189, 0.91);border-radius:15px;padding:15px 10px;box-shadow:inset 4px 4px 10px rgba(255,255,255, .3), inset -4px -4px 10px rgba(0,0,0,.6);}
@@ -44,9 +44,9 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .news_view{background: linear-gradient(180deg, rgba(23, 29, 162, 0.5) 0%, rgba(6, 69, 142, 0.5) 57.62%, rgba(23, 29, 162, 0.5) 99.25%), #286EC0;box-shadow: 4px 4px 4px rgba(55, 55, 55, 0.48), -4px -4px 4px rgba(22, 22, 22, 0.48), inset -4px -4px 16px rgba(4, 29, 9, 0.6), inset 4px 4px 16px rgba(4, 29, 9, 0.6);border-radius: 13px;padding:5px 15px;max-height:180px;overflow-y:scroll;}
 .head_news{font-size:20px;text-decoration-line:underline;color: #C7E3F8;}
 .text_news{font-size:18px;font-family:'segoe',sans-serif;color:#fff;}
-
-
-
+.text_game{font-size:18px;color:rgba(255, 255, 255, 0.75);}
+.border_box{background: linear-gradient(101.92deg, #171616 3.88%, #151515 100%);border: 2px solid rgba(217, 27, 164, 0.91);box-sizing: border-box;box-shadow: -4px -4px 8px rgba(47, 46, 46, 0.48), -4px -4px 8px rgba(22, 22, 22, 0.48), inset 4px 4px 8px rgba(69, 68, 68, 0.48), inset -4px -4px 8px rgba(15, 14, 14, 0.48);border-radius:24px;padding:10px;}
+.box_game{background:#C4C4C4;border-radius: 17px;background-image:url(../img/bg_game.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;min-height:83px;}
 
 
 
