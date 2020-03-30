@@ -14,10 +14,17 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .purple_line{width:85%;height:1px;background-color:rgba(230, 23, 209, 1);box-shadow: 0px 0px 8px 4px rgba(230, 23, 209, 0.6);}
 .sub_title{color:#D9D8D8;font-family:'adobe_arabic',sans-serif;font-weight:normal;font-size:20px;}
 .content_body{background: #1D1B1B;box-shadow:inset 6px 6px 4px rgba(79, 67, 67, 0.25), inset -6px -6px 8px rgba(0, 0, 0, 0.48);border-radius: 38px;padding:20px 15px;width:100%;margin-top:15px;}
-#slider{position:relative;padding:15px;}
-.slider_item{position:relative;padding:0 10px;}
+#slider{position:relative;padding:15px 0;}
+.slider_item{position:relative;padding:0 20px 40px 20px;}
 .block_slider{background-color:rgba(244, 45, 189, 0.91);border-radius:15px;padding:15px 10px;box-shadow:inset 4px 4px 10px rgba(255,255,255, .3), inset -4px -4px 10px rgba(0,0,0,.6);}
 .bg_sl{background-color:#f37fd3;box-shadow:inset 2px 4px 10px rgba(0,0,0,.6),inset -2px -4px 10px rgba(255,255,255,.4);padding:15px;border-radius:10px;min-height:390px;}
+.slide_1:not(.slick-active){position:absolute !important;top:20px !important;left:-20px !important;opacity:1 !important;z-index:2;transition:all.5s;}
+.slide_2:not(.slick-active){position:absolute !important;top:20px !important;left:-20px !important;opacity:1 !important;z-index:2;transition:all.5s;}
+.slide_3:not(.slick-active){position:absolute !important;top:40px !important;left:20px !important;opacity:1 !important;z-index:1;transition:all.5s;}
+.slide_1.slick-active{position:relative !important;top:0 !important;left:0 !important;z-index:3;}
+.slide_2.slick-active{position:relative !important;top:0 !important;left:0 !important;z-index:3;}
+.slide_3.slick-active{position:relative !important;top:0 !important;left:0 !important;z-index:3;}
+.slide_3.slick-active + .slide_1{position:absolute !important;top:40px !important;left:20px !important;opacity:1 !important;z-index:2;transition:all.5s;}
 .slide_2 .block_slider{background-color:rgba(34, 192, 73);}
 .slide_2 .bg_sl{background-color:#85f083;}
 .slide_3 .block_slider{background-color:rgba(76, 170, 239);}

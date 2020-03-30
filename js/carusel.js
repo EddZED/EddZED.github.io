@@ -1,12 +1,14 @@
 $('#slider').slick({
       dots: false,
       arrows: true,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
       centerMode: true,
       slidesToScroll: 1,
       centerPadding:'10px',
+      fade:true,
+      prevArrow: <button type = "button" class = "slick-prev"><img src="img/"></img></ button>
       responsive: [
         {
           breakpoint: 1024,
@@ -14,7 +16,7 @@ $('#slider').slick({
             centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             dots: false
           }
         },
