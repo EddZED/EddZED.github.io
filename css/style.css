@@ -1,7 +1,10 @@
 @font-face{font-family:'press_start';src:url(../font/PressStart2P.ttf);}
 @font-face{font-family:'adobe_arabic';src:url(../font/AdobeArabicRegular.otf);}
-@font-face {font-family:'amiko';src: url(../font/AmikoRegular.ttf);
-}
+@font-face {font-family:'amiko';src: url(../font/AmikoRegular.ttf)}
+@font-face {font-family:'segoe_bold';src: url(../font/SegoeUI-Bold.ttf)}
+@font-face {font-family:'arimo';src: url(../font/Arimo-Bold.ttf)}
+@font-face {font-family:'lcd';src: url(../font/lcd-nova.ttf)}
+@font-face {font-family:'segoe';src: url(../font/SegoeUI.ttf)}
 body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-repeat:no-repeat;font-family:'amiko',sans-serif;}
 .frame{border:6px solid rgba(244, 45, 189, 0.91);box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25), -3px -8px 4px rgba(78, 75, 75, 0.29);border-radius:44px;width:100%;}
 .bg_content{width:100%;height:100%;background: #131314;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.5);padding:15px;border-radius:40px;}
@@ -29,6 +32,19 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .btn_body {background: linear-gradient(134.42deg, #1D1B1B 0%, rgba(21, 21, 21, 0.84) 84.02%);box-shadow: inset 0px 4px 4px rgba(79, 75, 75, 0.48), inset 0px -4px 4px rgba(9, 7, 7, 0.48);border-radius: 19px;padding:31px 5px;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-size:18px;font-weight:bold;transition:all .5s;}
 .btn_block:hover .btn_body {box-shadow: inset 0px 0px 1px 5px rgba(79, 75, 75, 1);color:#fff;text-decoration:none;}
 .today_boxx {background: #171616;box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px -4px 4px rgba(96, 94, 94, 0.1);border-radius: 22px;padding:7px;}
+.grey_box{background: #302E2E;box-shadow: inset 4px 4px 4px rgba(84, 78, 78, 0.48), inset -4px -4px 4px rgba(62, 55, 55, 0.48);border-radius: 16px;padding:0 13px 10px 13px;}
+.bold_segoe{font-family:'segoe_bold',sans-serif;}
+.green_txt{font-size: 24px;line-height: 32px;color: #5CE759;text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.48);}
+.view_today{background: rgba(13, 101, 27, 0.7);box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45), -3px -3px 16px rgba(105, 102, 102, 0.45), inset 3px 3px 4px rgba(0, 0, 0, 0.5), inset -3px -3px 4px rgba(155, 143, 143, 0.5);border-radius: 14px;padding:5px 15px 10px 15px;}
+.txt_stat{font-family:'arimo',sans-serif;font-size:18px;line-height:21px;color:#9ECEE9;}
+.num_stat{font-family:'lcd',arial;font-size: 24px;line-height:18px;color:#fff;}
+.line_view{width:100%;background-color:#91BB97;}
+.news_block{background: #171616;box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px -4px 4px rgba(96, 94, 94, 0.1);border-radius:22px;padding:9px 11px 9px 11px;}
+.news_sub{background: #1D1A1A;box-shadow: inset 4px 4px 4px rgba(40, 36, 36, 0.48), inset -4px -4px 4px rgba(29, 28, 28, 0.48);border-radius: 16px;padding:5px;}
+.news_view{background: linear-gradient(180deg, rgba(23, 29, 162, 0.5) 0%, rgba(6, 69, 142, 0.5) 57.62%, rgba(23, 29, 162, 0.5) 99.25%), #286EC0;box-shadow: 4px 4px 4px rgba(55, 55, 55, 0.48), -4px -4px 4px rgba(22, 22, 22, 0.48), inset -4px -4px 16px rgba(4, 29, 9, 0.6), inset 4px 4px 16px rgba(4, 29, 9, 0.6);border-radius: 13px;padding:5px 15px;max-height:180px;overflow-y:scroll;}
+.head_news{font-size:20px;text-decoration-line:underline;color: #C7E3F8;}
+.text_news{font-size:18px;font-family:'segoe',sans-serif;color:#fff;}
+
 
 
 
