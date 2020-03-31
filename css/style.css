@@ -54,8 +54,8 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .text_game{font-size:18px;color:rgba(255, 255, 255, 0.75);}
 .border_box{background: linear-gradient(101.92deg, #171616 3.88%, #151515 100%);border: 2px solid rgba(217, 27, 164, 0.91);box-sizing: border-box;box-shadow: -4px -4px 8px rgba(47, 46, 46, 0.48), -4px -4px 8px rgba(22, 22, 22, 0.48), inset 4px 4px 8px rgba(69, 68, 68, 0.48), inset -4px -4px 8px rgba(15, 14, 14, 0.48);border-radius:24px;padding:10px;}
 .box_game{background:#C4C4C4;border-radius: 17px;background-image:url(../img/bg_game.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;min-height:83px;}
-
-
-
+.slick-prev:before{display:none;}
+.slick-next:before{display:none;}
+.slick-prev, .slick-next{width:auto;height:auto;}
 
 

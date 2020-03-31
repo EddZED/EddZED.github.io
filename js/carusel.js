@@ -8,7 +8,8 @@ $('#slider').slick({
       slidesToScroll: 1,
       centerPadding:'10px',
       fade:true,
-      prevArrow: <button type = "button" class = "slick-prev"><img src="img/"></img></ button>
+      prevArrow: '<button type = "button" class = "slick-prev"><img src="img/btn_left.png" class="img-fluid"></ button>',
+      nextArrow: '<button type = "button" class = "slick-next"><img src="img/btn_right.png" class="img-fluid"></ button>',
       responsive: [
         {
           breakpoint: 1024,
