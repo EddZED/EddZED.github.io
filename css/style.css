@@ -72,6 +72,15 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 @media(max-width:991px){
   .page_2 .title_page{font-size:50px;}
 }
-
-
+@media(max-width:767px){
+  .box_image{height:100%;}
+}
+@media(max-width:400px){
+  .page_2 .title_page{font-size:40px;}
+  .box_color,.box_color_2,.box_color_3{padding:6px;border-radius:15px;}
+  .page_2 .content_body{padding:35px 5px 15px 5px;border-radius:15px;}
+  .inset_box{padding:15px 5px 10px;border-radius:15px}
+  .text_content_box{padding:13px 6px;}
+  .box_image{border-radius:15px;}
+}
 
