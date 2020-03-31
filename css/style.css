@@ -68,10 +68,10 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .text_about{font-size:18px;font-family:'segoe',sans-serif;font-weight:600;color:#fff;line-height:24px;}
 .text_about span{color:rgba(40,191,58,1);}
 .page_3 .title_page{font-size:64px;color:rgba(244, 45, 189, 0.91);}
-
-
-
-
+.head_faq{font-size:24px;font-family:'segoe_bold',sans-serif;color:#FFF;}
+.block_faq{height:100%;width:100%;background: #0E0D0D;box-shadow: inset 2px 2px 4px rgba(134, 126, 126, 0.25), inset -2px -2px 4px rgba(134, 126, 126, 0.25);border-radius: 30px;padding:15px 20px;}
+.green_head{font-size:16px;font-family:'amiko',sans-serif;color:#0AB911;font-weight:normal;}
+.txt_faq{font-size:16px;color:#fff;font-family:'amiko',sans-serif;}
 
 
 
