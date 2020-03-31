@@ -57,5 +57,5 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .slick-prev:before{display:none;}
 .slick-next:before{display:none;}
 .slick-prev, .slick-next{width:auto;height:auto;}
-
+.page_2 .title_page{font-size:64px;}
 
