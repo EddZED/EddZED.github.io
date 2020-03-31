@@ -8,8 +8,9 @@ $('#slider_kab').slick({
       slidesToScroll: 1,
       centerPadding:'10px',
       fade:true,
-      prevArrow: '<button type = "button" class = "slick-prev"><img src="img/btn_left.png" class="img-fluid"></ button>',
-      nextArrow: '<button type = "button" class = "slick-next"><img src="img/btn_right.png" class="img-fluid"></ button>',
+      appendArrows: '.jak',
+      prevArrow: '<button type = "button" class = "slick-prev prev_kub"></ button>',
+      nextArrow: '<button type = "button" class = "slick-next next_kub"></ button>',
       responsive: [
         {
           breakpoint: 1024,
