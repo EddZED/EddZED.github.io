@@ -72,14 +72,25 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .block_faq{height:100%;width:100%;background: #0E0D0D;box-shadow: inset 2px 2px 4px rgba(134, 126, 126, 0.25), inset -2px -2px 4px rgba(134, 126, 126, 0.25);border-radius: 30px;padding:15px 20px;}
 .green_head{font-size:16px;font-family:'amiko',sans-serif;color:#0AB911;font-weight:normal;}
 .txt_faq{font-size:16px;color:#fff;font-family:'amiko',sans-serif;}
+.page_4 .title_page{font-size:48px;color:#85EE82;line-height:48px;}
+.page_4 .btn_block{display:flex;height:100%;}
+.page_4 .btn_body{padding:25px 5px;height:100%}
+.page_4 .today_boxx{padding:14px 17px;}
+.stat_box_kab{background:#302E2E;box-shadow: inset 4px 4px 4px rgba(84, 78, 78, 0.48), inset -4px -4px 4px rgba(62, 55, 55, 0.48);border-radius: 16px;padding:15px 20px;max-height:195px;overflow-y:scroll;}
+.purple_head{font-size:24px;line-height:18px;color: rgba(244, 45, 189, 0.91);font-family:'lcd',arial;}
+
+
+
 
 
 
 @media(max-width:991px){
   .page_2 .title_page{font-size:50px;}
+  .page_4 .title_page{font-size:33px;}
 }
 @media(max-width:767px){
   .box_image{height:100%;}
+  .page_4 .title_page{font-size:45px;}
 }
 @media(max-width:400px){
   .page_2 .title_page{font-size:40px;}
