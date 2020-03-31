@@ -67,6 +67,12 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .text_content_box{background: #363636;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.57), inset -4px -4px 4px rgba(45, 44, 44, 0.57);border-radius: 21px;padding:15px 30px;}
 .text_about{font-size:18px;font-family:'segoe',sans-serif;font-weight:600;color:#fff;line-height:24px;}
 .text_about span{color:rgba(40,191,58,1);}
+.page_3 .title_page{font-size:64px;color:rgba(244, 45, 189, 0.91);}
+
+
+
+
+
 
 
 @media(max-width:991px){
