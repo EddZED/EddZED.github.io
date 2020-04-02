@@ -102,11 +102,11 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .w-90{width:90%;}
 .btn_other{display:inline-block;padding:5px 20px;background: #7C08B3;box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(72, 5, 70, 0.85), inset 4px 4px 4px rgba(215, 51, 208, 0.85);border-radius: 10px;transition:all .3s;color:#FCF4F4;font-family:'amiko',sans-serif;font-weight:bold;}
 .btn_other:hover, .btn_other:focus{background:#44105D;box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(61, 4, 58, 0.85), inset 4px 4px 4px rgba(115, 18, 111, 0.85);color:#FCF4F4;text-decoration:none;}
-
-
-
-
-
+.page_6 .title_page{font-size:48px;color:#C31D1D;}
+.page_6 .sub_title{font-size:24px;color:#fff;}
+.substrate_privacy{background: #EFECEC;box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45), inset -4px -4px 8px rgba(255, 255, 255, 0.45);border-radius: 25px;padding:20px 15px;}
+.heaad_privacy{font-size:18px;font-family:'segoe_bold',sans-serif;letter-spacing: 0.1em;text-transform:uppercase;color:#3D3939;font-weight:bold;}
+.txt_privacy{font-size:18px;font-family:'segoe',sans-serif;letter-spacing: 0.1em;color:#3D3939;}
 
 
 
@@ -135,6 +135,8 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .page_2 .title_page{font-size:50px;}
   .page_4 .title_page{font-size:33px;}
   .page_5 .title_page{font-size:40px;}
+  .page_6 .title_page{font-size:40px;}
+  .page_6 .sub_title{font-size:22px;}
 }
 @media(max-width:767px){
   .box_image{height:100%;}
@@ -142,6 +144,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .page_4 .today_boxx{padding:5px;}
   #slider_kab .slider_item{padding:15px 0;}
   .page_5 .title_page{font-size:45px;}
+  .page_6 .sub_title{font-size:18px;}
 }
 @media(max-width:400px){
   .page_2 .title_page{font-size:40px;}
@@ -152,5 +155,6 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .box_image{border-radius:15px;}
   .page_4 .title_page{font-size:30px;}
   .page_5 .title_page{font-size:30px;}
+  .page_6 .title_page{font-size:30px;}
 }
 
