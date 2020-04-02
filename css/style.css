@@ -123,7 +123,23 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .btn_close{padding:10px 40px;background: #272525;box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43), -4px -4px 16px rgba(68, 62, 62, 0.48), inset -4px -4px 16px #1E1C1C, inset 4px 4px 16px rgba(74, 74, 74, 0.4);border-radius: 21px;display:inline-block;color: rgba(169, 169, 169, 0.7);text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);font-size:24px;font-family:'segoe_bold',sans-serif;text-align:center;transition:all .3s;}
 .bord_rad_2:hover .red_btn_2{color:#fff;text-decoration:none;}
 .close_btn_box:hover .btn_close{color:rgba(169, 169, 169, 0.7);background: #121111;box-shadow: 4px 4px 4px #000000, -4px -4px 16px #040404;text-decoration:none;}
-.page_8
+.page_8 .block_slider {background-color: rgba(34, 192, 73);}
+.page_8 .bg_sl{background-color: #85f083;}
+.page_8 .title_page{color:#17CD55}
+.page_8 .gr_txt{font-size:18px;font-family:'segoe_bold', sans-serif;color:rgba(23, 205, 85, 0.91);}
+.page_8 .gr_txt_2{font-size:18px;font-family:'segoe_bold', sans-serif;color:#90F387;}
+.page_8 .num_blanck{color:rgba(23, 205, 85, 0.91);}
+.page_8 .attention{border-color:#17CD55;}
+.page_9 .title_page{color:#2DA1F4}
+.page_9 .block_slider{background-color:rgba(76, 170, 239);}
+.page_9 .bg_sl{background-color:#80d5f3;}
+.page_9 .blue_txt{font-size:18px;font-family:'segoe_bold', sans-serif;color:rgba(45, 161, 244, 0.91);}
+.page_9 .blue_txt_2{font-size:18px;font-family:'segoe_bold', sans-serif;color:#87D9F3;}
+.page_9 .num_blanck{color:rgba(45, 161, 244, 0.91);}
+.page_9 .attention{border-color:#2DA1F4;}
+
+
+
 
 
 @media(min-width:992px){
@@ -162,7 +178,9 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   #slider_kab .slider_item{padding:15px 0;}
   .page_5 .title_page{font-size:45px;}
   .page_6 .sub_title{font-size:18px;}
-  .page_7 .title_page{font-size:27px;}
+  .page_7 .title_page{font-size: 27px;}
+  .page_8 .title_page {font-size: 25px;}
+  .page_9 .title_page{font-size:25px;}
 }
 @media(max-width:575px){
   .page_7 .title_page{font-size:24px;}
