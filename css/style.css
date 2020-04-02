@@ -123,7 +123,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .btn_close{padding:10px 40px;background: #272525;box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43), -4px -4px 16px rgba(68, 62, 62, 0.48), inset -4px -4px 16px #1E1C1C, inset 4px 4px 16px rgba(74, 74, 74, 0.4);border-radius: 21px;display:inline-block;color: rgba(169, 169, 169, 0.7);text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);font-size:24px;font-family:'segoe_bold',sans-serif;text-align:center;transition:all .3s;}
 .bord_rad_2:hover .red_btn_2{color:#fff;text-decoration:none;}
 .close_btn_box:hover .btn_close{color:rgba(169, 169, 169, 0.7);background: #121111;box-shadow: 4px 4px 4px #000000, -4px -4px 16px #040404;text-decoration:none;}
-
+.page_8
 
 
 @media(min-width:992px){
