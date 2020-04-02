@@ -85,6 +85,14 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .prev_kub:after{content:'';position:absolute;background-image:url(../img/arr_left.png);background-size:cover;width:9px;height:12px;left:-3px;right:0;top:0;bottom:0;margin:auto;}
 .next_kub:after{content:'';position:absolute;background-image:url(../img/arr_right.png);background-size:cover;width:9px;height:12px;left:3px;right:0;top:0;bottom:0;margin:auto;}
 .jak{position: relative;}
+.page_5 .title_page{color:#AB07F9;font-size:64px;}
+.substrate{background:#403A3A;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.72), inset -4px -4px 2px rgba(96, 93, 93, 0.63);border-radius: 21px;padding:10px 15px;}
+.substrate_circle{background-color:#1d1a1a;padding:10px;border-radius:50%;width:116px;height:116px;}
+.circle_info{width:100%;height:100%;background: linear-gradient(149.21deg, #3F3838 17.27%, #4F4949 83.64%), #403A3A;box-shadow: inset -16px -16px 20px rgba(0, 0, 0, 0.43), inset 14px 14px 16px rgba(151, 149, 149, 0.63);border-radius:50%;}
+.subscribe_text{background: #373131;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.72), inset -4px -4px 2px rgba(96, 93, 93, 0.63);border-radius: 21px;padding:10px 20px;}
+.text_info{font-size:18px;font-family:'segoe',sans-serif;color:#D7D4D4;line-height:21px;letter-spacing: 0.1em;font-style:normal;font-weight:600;}
+.text_info span{font-style:italic;}
+
 
 
 @media(min-width:992px){
@@ -106,16 +114,19 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 @media(max-width:1199px){
   .name_tab{font-size:20px;}
   .date_stat,.status{font-size:16px;}
+  .page_5 .title_page{font-size:55px;;}
 }
 @media(max-width:991px){
   .page_2 .title_page{font-size:50px;}
   .page_4 .title_page{font-size:33px;}
+  .page_5 .title_page{font-size:40px;}
 }
 @media(max-width:767px){
   .box_image{height:100%;}
   .page_4 .title_page{font-size:35px;}
   .page_4 .today_boxx{padding:5px;}
   #slider_kab .slider_item{padding:15px 0;}
+  .page_5 .title_page{font-size:45px;}
 }
 @media(max-width:400px){
   .page_2 .title_page{font-size:40px;}
@@ -125,5 +136,6 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .text_content_box{padding:13px 6px;}
   .box_image{border-radius:15px;}
   .page_4 .title_page{font-size:30px;}
+  .page_5 .title_page{font-size:30px;}
 }
 
