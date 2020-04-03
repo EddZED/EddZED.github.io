@@ -168,7 +168,19 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .txt_modal{font-size:18px;font-family:'segoe_bold',sans-serif;color:#5E5B5B;}
 .btn_ok:hover,.btn_ok:focus{background: linear-gradient(90deg, #FFFFFF -23.75%, rgba(255, 255, 255, 0) 158.94%), #E53BAB;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);outline:none;}
 .box_blank{background: linear-gradient(90deg, #FFFFFF 1.68%, #F3EDF0 51.89%, #FFFFFF 111.79%);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 6px rgba(0, 0, 0, 0.1), inset 0px 4px 4px #FFFFFF;border-radius: 15px;font-size:24px;color:#6C6B6B;padding:5px 10px;}
-
+.green_name{font-size:14px;font-family:'press_start',sans-serif;color:#17CD55;letter-spacing: -0.05em;text-shadow: 1px 1px 2px rgba(37, 37, 37, 0.82);}
+.blue_name{font-size:14px;font-family:'press_start',sans-serif;color:#70C5EA;letter-spacing: -0.05em;text-shadow: 1px 1px 2px rgba(37, 37, 37, 0.82);}
+.head_prof{font-size:24px;font-family:'segoe_bold',sans-serif;color:#6B6A6A;}
+.nik_hidden input[type="checkbox"]{display:none;}
+.txt_hid{position:relative;font-size:14px;font-family:'segoe',sans-serif;color:#6B6A6A;}
+.txt_hid:before{content:'';position:absolute;width:18px;height:18px;background: #C4C4C4;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);top:0;bottom:0;margin:auto;right:-30px;}
+.txt_hid:after{content:'';position:absolute;width:29px;height:44px;background-image:url(../img/galka.png);background-size:cover;top:-22px;bottom:0;margin:auto;right:-37px; opacity:0;transition:opacity .3s;}
+.nik_hidden input[type="checkbox"]:checked + .txt_hid:after{opacity:1;}
+.view_depo{background: #DAD9D9;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.39);border-radius: 10px;padding:10px 25px;text-align:center;}
+.nums_depo{font-family:'segoe_bold',sans-serif;font-size:24px;color:#E664C2;}
+.dep_txt{font-family:'segoe_bold',sans-serif;color:#6B6A6A;font-size:18px;}
+.currency{border-radius:18px;background-color:#000;box-shadow: -1px -1px 3px 3px rgba(0,0,0,.3);padding:10px;}
+.curen_btn{width:50px;height:50px;border:none;border-radius:50px;background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #DCDBDB;box-shadow:inset 0px -4px 4px rgba(0, 0, 0, 0.25);display:flex;align-items:center;justify-content:center;}
 
 
 

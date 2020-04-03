@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-12 mt-3">
                   <div class="btn_block">
-                    <a href="#" data-toggle="modal" data-target="#modal_purchase" class="btn_body">Обратная связь</a>
+                    <a href="#" data-toggle="modal" data-target="#modal_deposit" class="btn_body">Обратная связь</a>
                   </div>
                 </div>
               </div>
@@ -214,7 +214,7 @@
           </div>
         </div>
         <div class="box_btn_submit">
-          <button type="submit" class="play_btn"></button>
+          <button type="submit" data-dismiss="modal" class="play_btn"></button>
         </div>
       </div>
       <div class="box_consent">
@@ -254,6 +254,88 @@
     </div>
   </div>
 </div>
+
+<!-- модалка отказ -->
+<div class="modal fade" id="modal_rejectioт" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body pb-5">
+        <p class="txt_modal">Вы уже преобрели Бланк Участия в данном розыгрыше. Приобретение дополнительных Бланков доступно в розыгрышах:</p>
+        <p class="green_name">Get Your Prize II</p>
+        <p class="blue_name">Get Your Prize III</p>
+        <div class="box_btn_ok">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="btn_ok"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- модалка "профиль" -->
+<div class="modal fade" id="modal_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <div class="col">
+            <form class="form_ent">
+              <div class="head_form d-flex justify-content-start w-100">
+                <p class="head_prof">Профиль</p>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-8 col-10">
+                  <label class="w-100 position-relative">
+                    <input type="mail" name="mail_ent" class="input_form w-100" placeholder="e-mail"> 
+                    <span class="circle_activ"></span>
+                  </label>
+                  <label class="w-100 position-relative mt-4">
+                    <input type="passsword" name="password" class="input_form w-100" placeholder="пароль">
+                    <span class="circle_activ"></span>
+                  </label> 
+                </div>
+                <label class="nik_hidden pl-md-3 mt-4">
+                  <input type="checkbox">
+                  <div class="txt_hid">Скрыть мойник в случае выигрыша</div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box_btn_submit">
+          <button type="submit" data-dismiss="modal" class="play_btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- модалка депозит -->
+<div class="modal fade" id="modal_deposit" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <div class="col px-md-5">
+            <div class="head_form d-flex justify-content-center w-100">
+              <p class="head_prof text-center">Ваш Депозит</p>
+            </div>
+            <div class="view_depo mt-2">
+              <p class="nums_depo m-0">1000 <span>GYP</span></p>
+            </div>
+            <p class="dep_txt text-center mt-3">пополнить депозит</p>
+            <div class="currency d-flex justify-content-around">
+              <button type="button" class="curen_btn">
+                
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
