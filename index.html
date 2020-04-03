@@ -191,11 +191,11 @@
               <div class="head_form d-flex justify-content-start w-100">
                 <label class="btn_form pl-lg-3">
                   <input type="radio" name="entrance" class="" value="1" checked>
-                  <div class="txt_radio">Вход</div>
+                  <div id="entrance" class="txt_radio">Вход</div>
                 </label>
                 <label class="btn_form pl-3 pl-lg-4">
                   <input type="radio" name="entrance" class="" value="0">
-                  <div class="txt_radio">Регистрация</div>
+                  <div id="registr" class="txt_radio">Регистрация</div>
                 </label>
               </div>
               <div class="row mt-3">
@@ -217,6 +217,9 @@
           <button type="submit" class="play_btn"></button>
         </div>
       </div>
+      <div class="box_consent">
+
+      </div>
     </div>
   </div>
 </div>
@@ -228,5 +231,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/carusel.js"></script>
+  <script>
+    $(document).ready(function(){
+	    $("#registr").click(function(){
+		    $(".box_consent").toggleClass("consent_height");
+	    });
+      $("#entrance").click(function(){
+		    $(".box_consent").removeClass("consent_height");
+	    });
+    });
+  </script>
 </body>
 </html>

@@ -137,8 +137,8 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .page_9 .blue_txt_2{font-size:18px;font-family:'segoe_bold', sans-serif;color:#87D9F3;}
 .page_9 .num_blanck{color:rgba(45, 161, 244, 0.91);}
 .page_9 .attention{border-color:#2DA1F4;}
-.modal-content{background: linear-gradient(180deg, #0A0909 0%, #232222 100%);box-shadow: inset 6px 6px 16px #292929, inset -6px -6px 16px #0A0909;border-radius: 43px;padding:50px;}
-.modal-body{position:relative; padding:10px 30px 50px;background: linear-gradient(180deg, #FFFFFF 0%, #DCDBDB 61.99%);box-shadow:inset 6px 4px 32px rgba(255, 255, 255, 0.68), inset -4px -4px 16px #F7F7F7;border-radius: 19px;}
+.modal-content{background: linear-gradient(180deg, #0A0909 0%, #232222 100%);box-shadow: inset 6px 6px 16px #292929, inset -6px -6px 16px #0A0909;border-radius: 43px;padding:50px 50px 10px;}
+.modal-body{z-index:2;position:relative; padding:10px 30px 50px;background: linear-gradient(180deg, #FFFFFF 0%, #DCDBDB 61.99%);box-shadow:inset 6px 4px 32px rgba(255, 255, 255, 0.68), inset -4px -4px 16px #F7F7F7;border-radius: 19px;}
 .btn_form{cursor:pointer;}
 .txt_radio{font-size:24px;font-family:'segoe_bold',sans-serif;color:#6B6A6A;transition:color .3s;}
 .btn_form input[type="radio"]{display:none;}
@@ -153,6 +153,10 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .play_btn:after{content:'';position:absolute;width:35px;height:40px;top:0;bottom:0;left:8px;right:0;margin:auto;background-image:url(../img/play_img_pass.png);background-size:cover;transition:background .1s;}
 .play_btn:hover,.play_btn:focus{background: linear-gradient(206.57deg, #FFFFFF 6.25%, rgba(255, 255, 255, 0) 83.33%), #CB168D;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);outline:none;}
 .play_btn:hover:after{background-image:url(../img/play_img_activ.png);}
+.box_consent{background: linear-gradient(180deg, #FFFFFF 0%, #DCDBDB 61.99%);box-shadow: inset 6px 4px 32px rgba(255, 255, 255, 0.68), inset -4px -4px 16px #F7F7F7;border-radius: 19px;padding:20px;z-index:1;position:relative;top:-40px;height:0;transition:height .5s;}
+.consent_height{height:150px;}
+
+
 
 
 @media(min-width:992px){
