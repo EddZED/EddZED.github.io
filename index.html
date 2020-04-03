@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-12 mt-5">
                   <div class="btn_block">
-                    <a href="" class="btn_body">Вход / регистрация</a>
+                    <a href="#" data-toggle="modal" data-target="#modal_antrance" class="btn_body">Вход / регистрация</a>
                   </div>
                 </div>
                 <div class="col-12 mt-3">
@@ -178,7 +178,54 @@
   </div>
 
 
+  
+
+<!-- модалка вход/регистрация -->
+<div class="modal fade" id="modal_antrance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <div class="col">
+            <form class="form_ent">
+              <div class="head_form d-flex justify-content-start w-100">
+                <label class="btn_form pl-lg-3">
+                  <input type="radio" name="entrance" class="" value="1" checked>
+                  <div class="txt_radio">Вход</div>
+                </label>
+                <label class="btn_form pl-3 pl-lg-4">
+                  <input type="radio" name="entrance" class="" value="0">
+                  <div class="txt_radio">Регистрация</div>
+                </label>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-8 col-10">
+                  <label class="w-100 position-relative">
+                    <input type="mail" name="mail_ent" class="input_form w-100" placeholder="e-mail"> 
+                    <span class="circle_activ"></span>
+                  </label>
+                  <label class="w-100 position-relative mt-4">
+                    <input type="passsword" name="password" class="input_form w-100" placeholder="пароль">
+                    <span class="circle_activ"></span>
+                  </label> 
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box_btn_submit">
+          <button type="submit" class="play_btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/carusel.js"></script>
 </body>

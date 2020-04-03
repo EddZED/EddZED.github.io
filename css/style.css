@@ -137,9 +137,22 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
 .page_9 .blue_txt_2{font-size:18px;font-family:'segoe_bold', sans-serif;color:#87D9F3;}
 .page_9 .num_blanck{color:rgba(45, 161, 244, 0.91);}
 .page_9 .attention{border-color:#2DA1F4;}
-
-
-
+.modal-content{background: linear-gradient(180deg, #0A0909 0%, #232222 100%);box-shadow: inset 6px 6px 16px #292929, inset -6px -6px 16px #0A0909;border-radius: 43px;padding:50px;}
+.modal-body{position:relative; padding:10px 30px 50px;background: linear-gradient(180deg, #FFFFFF 0%, #DCDBDB 61.99%);box-shadow:inset 6px 4px 32px rgba(255, 255, 255, 0.68), inset -4px -4px 16px #F7F7F7;border-radius: 19px;}
+.btn_form{cursor:pointer;}
+.txt_radio{font-size:24px;font-family:'segoe_bold',sans-serif;color:#6B6A6A;transition:color .3s;}
+.btn_form input[type="radio"]{display:none;}
+.btn_form input[type="radio"]:checked + .txt_radio{color: #FF248D;text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.53);}
+.input_form{position:relative;background: #DAD9D9;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.39);border-radius: 10px;padding:5px 10px;font-size:14px;color:#000;font-family:'segoe',sans-serif;border:none;outline:none;}
+.input_form[placeholder]{font-size:14px;color:#3D3939;font-family:'segoe',sans-serif;}
+.circle_activ{position:absolute;right:-35px;top:0;bottom:0;margin:auto;width:27px;height:27px;background: #DDBCCC;box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:50%;transition:background .3s;}
+.input_form:hover .input_form:focus{box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);}
+.input_form:focus + .circle_activ{background: #FF5CAA;}
+.box_btn_submit{position:absolute;width:94px;height:94px;background-color:#0A0909;border-radius:50%;top:0;bottom:0;margin:auto;right:-15px;box-shadow:-1px -1px 4px 4px rgba(0,0,0,.3);padding:8px;}
+.play_btn{width:100%;height:100%;position:relative;background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.3) 100%), #DCDBDB;box-shadow: inset -2px -4px 4px rgba(0, 0, 0, .6);border-radius:50%;border:none;outline:none;}
+.play_btn:after{content:'';position:absolute;width:35px;height:40px;top:0;bottom:0;left:8px;right:0;margin:auto;background-image:url(../img/play_img_pass.png);background-size:cover;transition:background .1s;}
+.play_btn:hover,.play_btn:focus{background: linear-gradient(206.57deg, #FFFFFF 6.25%, rgba(255, 255, 255, 0) 83.33%), #CB168D;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);outline:none;}
+.play_btn:hover:after{background-image:url(../img/play_img_activ.png);}
 
 
 @media(min-width:992px){
@@ -157,6 +170,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   #slider_kab .slide_1:not(.slick-active){padding-top:70px;left:50px !important;top:-65px !important;}
   #slider_kab .slide_2:not(.slick-active){padding-top:70px;left:0 !important;top:-40px !important;z-index:4;}
   #slider_kab .slide_3:not(.slick-active){padding-top:70px;left:50px !important;top:-65px !important;z-index:-1 !important;}
+  
 }
 @media(max-width:1199px){
   .name_tab{font-size:20px;}
@@ -170,6 +184,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .page_5 .title_page{font-size:40px;}
   .page_6 .title_page{font-size:40px;}
   .page_6 .sub_title{font-size:22px;}
+  .modal-content{padding:50px 40px;}
 }
 @media(max-width:767px){
   .box_image{height:100%;}
@@ -181,9 +196,12 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .page_7 .title_page{font-size: 27px;}
   .page_8 .title_page {font-size: 25px;}
   .page_9 .title_page{font-size:25px;}
+  .modal-content{padding:50px 30px;}
 }
 @media(max-width:575px){
   .page_7 .title_page{font-size:24px;}
+  .modal-content{padding:50px 20px;}
+  .box_btn_submit{top:auto;left:0;right:0;bottom:-50px;}
 }
 @media(max-width:400px){
   .page_2 .title_page{font-size:40px;}
@@ -195,5 +213,7 @@ body{background:linear-gradient(180deg, #272626 0%, #232222 100%);background-rep
   .page_4 .title_page{font-size:30px;}
   .page_5 .title_page{font-size:30px;}
   .page_6 .title_page{font-size:30px;}
+  .modal-content{padding:50px 10px;}
+  .modal-body{padding:10px 10px 40px;}
 }
 
