@@ -1,0 +1,17 @@
+@font-face{font-family:'mons_semibold';src:url(../font/Montserrat-SemiBold.ttf);}
+body{font-family:'mons_semibold',sans-serif;font-size:;}
+.header{padding:0 0 50px;box-shadow:inset 0 0 76px rgba(45,46,55,1);background-color:rgba(66,69,84,.96);}
+.nav-item{position:relative;}
+.nav-item:before{content:'';position:absolute;width:13px;height:13px;top:0;bottom:0;margin:auto;left:-14px;background-image:url(../img/circle.png);background-size:cover;}
+.nav-link span{color:#fff;text-transform:uppercase;font-size:12px;letter-spacing:.5px;position:relative;}
+.nav-link span:before{content:'';position:absolute;width:0;height:2px;background-color:#fff;bottom:-2px;right:0;transition:all .5s;}
+.nav-link span:hover:before{width:100%;left:0;}
+
+
+
+
+
+
+
+
+
