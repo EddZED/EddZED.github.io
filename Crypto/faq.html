@@ -6,6 +6,7 @@
   <title>CryptoCity</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 <body>
   <header class="header">
@@ -34,17 +35,128 @@
             </ul>
           </div>
           <div class="col-lg-2">
-            
+            <div class="box_balance">
+              <p class="you_balance text-center m-0">Ваш баланс:</p>
+              <p class="many text-center m-0">5607 BTC</p>
+            </div>
           </div>
         </div>
       </nav>
     </div>
   </header>
-
+  <section id="first_block" class="marg_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="sidebar">
+            <div class="box_icon">
+              <button class="btn_settings"><i class="zmdi zmdi-settings"></i></button>
+              <button class="btn_sign"><i class="zmdi zmdi-sign-in"></i></button>
+            </div>
+            <div class="profile_info">
+              <div class="status_prof text-center">
+                <img src="img/avatar.png" class="img-fluid" alt="аватар пользователя">
+              </div>
+              <p class="text-center name_user m-0">Simonnilemo</p>
+              <div class="level_box d-flex justify-content-around">
+                <span class="name_lvl">Professional</span>
+                <i class="zmdi zmdi-circle"></i>
+                <span class="lvl">5 уровень</span>
+              </div>
+            </div>
+            <div class="menu_sidebar pt-3">
+              <div class="header_menu">
+                <div class="btn_menu_collapse d-flex align-items-center justify-content-between"">
+                  <button type="button" class="w-100 menu_btn d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#box_nenu" aria-expanded="true" aria-controls="#box_nenu">Меню <i class="zmdi zmdi-menu"></i></button>
+                </div>
+              </div>
+              <div id="box_nenu" class="menu_content collapse show">
+                <ul class="list-unstyled">
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/home_icon.png" class="img-fluid pr-3" alt="мой кабинет"> Мой кабинет</a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/msg_icon.png" class="img-fluid pr-3" alt="мои сообщения"> Мои сообщения  </a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/frend_icon.png" class="img-fluid pr-3" alt="мои друзья"> Мои друзья</a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/part_icon.png" class="img-fluid pr-3" alt="партнеры"> Партнеры</a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu" data-toggle="collapse" data-target="#bonus_drop" aria-expanded="false" aria-controls="#bonus_drop"><img src="img/prize_icon.png" class="img-fluid pr-3" alt="партнеры">Бонусы<span class="carret"><i class="zmdi zmdi-caret-down"></i></a></span></li>
+                  <li class="menu_item_side flex-column text-left collapse" id="bonus_drop">
+                    <a href="#" class="link_menu">Бонус 1</a>
+                    <a href="#" class="link_menu">Бонус 2</a>
+                    <a href="#" class="link_menu">Бонус 3</a>
+                  </li>
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/part_icon.png" class="img-fluid pr-3" alt="партнеры"> Партнеры</a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu"><img src="img/frend_icon.png" class="img-fluid pr-3" alt="мои друзья"> Мои друзья</a></li>
+                  <li class="menu_item_side"><a href="#" class="link_menu" data-toggle="collapse" data-target="#bonus_drop_2" aria-expanded="false" aria-controls="#bonus_drop_2"><img src="img/prize_icon.png" class="img-fluid pr-3" alt="партнеры">Бонусы<span class="carret"><i class="zmdi zmdi-caret-down"></i></a></span></li>
+                  <li class="menu_item_side flex-column text-left collapse" id="bonus_drop_2">
+                    <a href="#" class="link_menu">Бонус 1</a>
+                    <a href="#" class="link_menu">Бонус 2</a>
+                    <a href="#" class="link_menu">Бонус 3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="search_block">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="inp_box px-3">
+                  <label class="w-100 position-relative m-0">
+                    <input type="text" class="inp_search w-100" placeholder="Поиск">
+                    <button type="search" class="btn_search"><i class="zmdi zmdi-search"></i></button>
+                  </label>
+                </div>
+              </div>
+              <div class="col-lg-4 pl-lg-0">
+                <p class="gray_text m-0">Не нашли ответ на вопрос?</p>
+                <p class="gray_text pt-2 m-0">Перейдите в <a href="#"" class="orange_link">Тикет систему <i class="zmdi zmdi-long-arrow-right"></i></a> </p>
+              </div>
+            </div> 
+          </div>
+          <div class="faq_block mt-4">
+            <div class="shad px-3 pb-3">
+              <h1 class="name_title m-0 py-0">вопрос-ответ</h1>
+              <button class="btn_faq">?</button>
+            </div>
+            <div class="container mt-3">
+              <div id="faq_1" class="faq_cont" data-toggle="collapse" data-target="#sub_faq" aria-expanded="true" aria-controls="#sub_faq">
+                <img src="img/faq_item_1.png" class="img-fluid img_faq">
+                <p class="title_faq m-0 pl-3">Часто задаваемые вопросы</p>
+                <span class="arrow"><i class="zmdi zmdi-chevron-right"></i></span>
+              </div>
+              <div id="sub_faq" class="collapse show sub_faq">
+                <div class="question" data-toggle="collapse" data-target="#answer" aria-expanded="false" aria-controls="answer" aria-labelledby="faq_1">
+                  <p class="name_quest"><i class="zmdi zmdi-circle-o"></i> Что такое FAQ?</p>
+                  <span></span><span></span>
+                </div>
+                <div id="answer" class="answer collapse" aria-labelledby="sub_faq">
+                  <div class="block_answ">
+                    <p class="txt_answer m-0">Клиент считается пенсионером, если на карту Банка за последние 30 дней были целевые зачисления.
+                      По платежам в адрес коммунальных и телекоммуникационных компаний на сумму до 10 000 в месяц комиссия за использование кредитных средств не взимается.</p>
+                  </div>
+                </div>
+                <div class="question" data-toggle="collapse" data-target="#answer_2" aria-expanded="false" aria-controls="answer_2" aria-labelledby="faq_1">
+                  <p class="name_quest"><i class="zmdi zmdi-circle-o"></i> Вопрос №2?</p>
+                  <span></span><span></span>
+                </div>
+                <div id="answer_2" class="answer collapse" aria-labelledby="sub_faq">
+                  <div class="block_answ">
+                    <p class="txt_answer m-0">Клиент считается пенсионером, если на карту Банка за последние 30 дней были целевые зачисления.
+                      По платежам в адрес коммунальных и телекоммуникационных компаний на сумму до 10 000 в месяц комиссия за использование кредитных средств не взимается.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
 
   </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 
