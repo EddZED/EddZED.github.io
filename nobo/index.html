@@ -6,11 +6,12 @@
   <title>NOBO</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 <body>
   <header class="header">
     <div class="container p-0">
-      <nav class="navbar navbar-expand-lg scrolling-navbar navbar-light">
+      <nav class="navbar navbar-expand-lg scrolling-navbar navbar-light py-3">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav,#nav"
@@ -32,22 +33,34 @@
                 <a class="nav-link" href="#"><span>Контакты</span></a>
               </li>
             </ul>
-            <div class="cont_header text-center text-lg-right">
-              <a href="tel:+79200267476" class="phone_header_1"></a>
-              <a href="tel:+78312128207" class="phone_header_2"></a>
-              <input type="search" placeholder="Поиск">
+            <div class="cont_header col-lg-2 d-flex align-items-center">
+              <a href="tel:+79200267476" class="mr-3"><img src="img/phone_icon.png" class="img-fluid" alt="телефон"></a>
+              <a href="mailto:info@info.ru" class="mr-2"><img src="img/mail_icon.png" class="img-fluid" alt="почтовый ящик"></a>
+            </div>
+            <div class="search_block">
+              <label class="lbl_srch">
+                <input type="search" class="input_search" placeholder="Поиск">
+                <button type="button" class="search_btn"><img src="img/search_icon.png" class="img-fluid" alt="поиск"></button>
+              </label>
             </div>
           </div>
         </div>
       </nav>
     </div>
-    <nav class="navbar navbar-expand-lg bg_red p-0">
+    <nav class="navbar navbar-expand-lg bg_red p-0 py-xl-3">
       <div class="container">
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav justify-content-between align-items-center text-center w-100">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><span>Конвекторы</span></a>
+          <ul class="navbar-nav justify-content-between align-items-center text-center w-100 second_menu">
+            <li class="nav-item position-relative">
+              <a id="conv" class="nav-link" data-toggle="collapse" data-target="#submenu" aria-expanded="false" href="#" aria-controls="conv"><span>Конвекторы</span><i class="zmdi zmdi-chevron-right"></i></a>
             </li>
+            <div id="submenu" class="sub_menu collapse" aria-expanded="false" aria-controls="conv">
+              <ul class="list-unstyled">
+                <li class="nav-item py-1"><a class="nav-link" href="#">первый пункт</a></li>
+                <li class="nav-item py-1"><a class="nav-link" href="#">второй пункт</a></li>
+                <li class="nav-item py-1"><a class="nav-link" href="#">третий пункт</a></li>
+              </ul>
+            </div>
             <li class="nav-item">
               <a class="nav-link" href="#"><span>Декоративные панели</span></a>
             </li>
