@@ -12,22 +12,32 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .sub_menu{position:absolute;background-color:#DE052A;padding:0 15px 10px;top:55px;transition:all.3s;}
 #conv i{position:absolute;transition:all .3s;top:13px;margin:auto;right:-7px;}
 #conv[aria-expanded="true"] i{transform:rotateZ(90deg);}
-.intro{background-image:url(../img/bg_intro.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.intro{background-image:url(../img/bg_intro.jpg);background-size:cover;background-position:center bottom;background-repeat:no-repeat;}
 .box_fl{padding-top:250px;}
-.text_intro{font-size:22px;font-weight:300;text-transform:uppercase;color:#fff;text-align:center;letter-spacing:0.03em;}
-.text_intro_2{font-size:32px;font-weight:300;text-transform:uppercase;color:#fff;text-align:center;letter-spacing:0.02em;}
-.year{font-size:80px;font-weight:300;letter-spacing:0.01em;color:#fff;line-height:90px;}
-.year span{border-bottom:2px solid #fff;transform:rotateZ(-90deg);display:inline-block;}
+.text_intro{font-size:22px;font-weight:300;text-transform:uppercase;color:#fff;text-align:center;letter-spacing:0.03em;line-height:16px;}
+.text_intro_2{font-size:32px;font-weight:300;text-transform:uppercase;color:#fff;text-align:center;}
+.year{font-size:80px;font-weight:300;letter-spacing:0.01em;color:#fff;line-height:90px;position:absolute;border-bottom:2px solid #fff;transform:rotateZ(-90deg);display:inline-block;left:-118px;bottom:55px;}
+.btn_menu{border:none;background-color:transparent;outline:none;position:relative;width:35px;height:21px;padding:0;}
+.btn_menu:focus{outline:none;}
+.btn_menu span{position:absolute;width:35px;height:2px;background-color:#DE052A;left:0;transition:all .3s;}
+.btn_menu span:nth-of-type(1){top:0;}
+.btn_menu span:nth-of-type(3){bottom:0;}
+.btn_menu[aria-expanded="true"] span:nth-of-type(1){top:10px;transform:rotateZ(-45deg);}
+.btn_menu[aria-expanded="true"] span:nth-of-type(2){opacity:0;margin-left:100%;}
+.btn_menu[aria-expanded="true"] span:nth-of-type(3){bottom:9px;transform:rotateZ(45deg);}
 
 
 
 
-
-
-
-
-
-
+@media(max-width:1199px){
+  .year{left:-146px}
+}
 @media(max-width:991px){
-  .sub_menu{position:relative;}
+  .sub_menu{position:relative;top:auto;}
+  #conv i{right:-15px;}
+}
+@media(max-width:767px) {
+  .text_intro{font-size:16px;}
+  .text_intro_2{font-size:25px;}
+  .year{font-size:65px;bottom:40px;left:-137px;}
 }
