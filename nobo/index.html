@@ -54,9 +54,9 @@
       </nav>
     </div>
     <nav class="navbar navbar-expand-lg bg_red p-0 py-xl-3">
-      <div class="container px-0">
+      <div class="container">
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav justify-content-between align-items-lg-center text-left text-lg-center w-100 second_menu">
+          <ul class="navbar-nav justify-content-between align-items-lg-center text-left text-lg-center w-100 second_menu px-3 px-lg-0">
             <li class="nav-item position-relative">
               <a id="conv" class="nav-link" data-toggle="collapse" data-target="#submenu" aria-expanded="false" href="#" aria-controls="conv"><span>Конвекторы</span><i class="zmdi zmdi-chevron-right"></i></a>
             </li>
@@ -243,18 +243,73 @@
   <section id="form" class="form">
     <div class="container">
       <div class="row">
-        <p class="head_form">Подпишитесь , чтобы быть в курсе всего первым!</p>
+        <p class="head_form px-3">Подпишитесь , чтобы быть в курсе всего первым!</p>
         <form class="callback w-100">
-          <fildset>
-            <input type="text" name="name" class="input_form" placeholder="Имя">
-            <input type="text" name="mail" class="input_form" placeholder="E-mail">
-            <button type="submit" class="btn_subs">Подписаться</button>
+          <fildset class="row m-0">
+            <div class="col-md-3">
+              <input type="text" name="name" class="input_form w-100" placeholder="Имя">
+            </div>
+            <div class="col-md-3 mt-4 mt-md-0">
+              <input type="text" name="mail" class="input_form w-100" placeholder="E-mail">
+            </div>
+            <div class="col-md-3 mt-4 mt-md-0">
+              <button type="submit" class="btn_subs w-100">Подписаться</button>
+            </div>
           </fildset>
         </form>
       </div>
     </div>
   </section>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <img src="img/logo.png" class="img-fluid" alt="логотип еомпании NOBO">
+        </div>
+        <div class="col-lg-9 pt-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">NOBO</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Наша история</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Гарантия</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Связаться с нами</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">Наши продукты</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Термостаты</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Конвекторы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Аксессуары</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Система управления</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">Обслуживание клиентов</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Вопросы и ответы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Маркетинговые ресурсы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Связаться с нами</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Технологии</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 text-lg-right">
+              <p class="head_foot_menu m-0">Свяжитесь с нами</p>
+              <ul class="list-unstyled pt-1">
+                <li class="menu-item"><a href="tel:+79031574444" class="link_foot font_norm">+7(903) 157 - 44 - 44</a></li>
+                <div class="text-lg-right">
+                  <a href="№" class="soc_link mr-2"><img src="img/face_icon.png" class="img-fluid" alt="фейсбук"></a>
+                  <a href="№" class="soc_link"><img src="img/insta_icon.png" class="img-fluid" alt="фейсбук"></a>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="m-0 text-left text-md-center w-100 pt-3 px-3 privacy">© 2020 /<br class="d-sm-none"> <a href="">Политика конфиденциальности</a> /<br class="d-sm-none"> Все права защищены</p>
+      </div>
+    </div>
+  </footer>
 
 
 
