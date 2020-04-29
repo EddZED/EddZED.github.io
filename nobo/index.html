@@ -13,7 +13,7 @@
     <div class="container p-0">
       <nav class="navbar navbar-expand-lg scrolling-navbar navbar-light py-md-3">
         <div class="container">
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-3 px-0 col-6">
             <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid"></a>
           </div>
           <div class="cont_header col d-flex align-items-center justify-content-end d-lg-none">
@@ -24,7 +24,7 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span></span><span></span><span></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
             <ul class="navbar-nav justify-content-around align-items-center text-center w-100">
               <li class="nav-item">
                 <a class="nav-link" href="#"><span>Главная</span></a>
@@ -39,7 +39,7 @@
                 <a class="nav-link" href="#"><span>Контакты</span></a>
               </li>
             </ul>
-            <div class="cont_header col-lg-2 align-items-center justify-content-end d-none d-lg-flex">
+            <div class="cont_header col-lg-2 align-items-center justify-content-end">
               <a href="tel:+79200267476" class="mr-3"><img src="img/phone_icon.png" class="img-fluid" alt="телефон"></a>
               <a href="mailto:info@info.ru" class="mr-2"><img src="img/mail_icon.png" class="img-fluid" alt="почтовый ящик"></a>
             </div>
@@ -54,9 +54,9 @@
       </nav>
     </div>
     <nav class="navbar navbar-expand-lg bg_red p-0 py-xl-3">
-      <div class="container">
+      <div class="container px-0">
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav justify-content-between align-items-center text-center w-100 second_menu">
+          <ul class="navbar-nav justify-content-between align-items-lg-center text-left text-lg-center w-100 second_menu">
             <li class="nav-item position-relative">
               <a id="conv" class="nav-link" data-toggle="collapse" data-target="#submenu" aria-expanded="false" href="#" aria-controls="conv"><span>Конвекторы</span><i class="zmdi zmdi-chevron-right"></i></a>
             </li>
@@ -82,7 +82,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><span>Преимущества</span></a>
             </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Главная</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Информация</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Наша история</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Контакты</span></a>
+            </li>
           </ul>
+          <div class="search_block text-center d-lg-none">
+            <label class="lbl_srch">
+              <input type="search" class="input_search w-100" placeholder="Поиск">
+              <button type="button" class="search_btn"><img src="img/search_icon.png" class="img-fluid" alt="поиск"></button>
+            </label>
+          </div>
         </div>
       </div>
     </nav>
@@ -90,11 +108,11 @@
   <section id="intro" class="intro">
     <div class="container">
       <div class="row">
-        <div class="offset-6 offset-lg-7 col-6 col-lg-5 text-right pt-4 py-lg-5">
+        <div class="offset-6 offset-lg-7 col-6 col-lg-5 text-right pt-4 py-lg-5 px-0">
           <img src="img/logo.png" class="img-fluid" alt="логотип компании nobo">
         </div>
         <div class="box_fl d-flex w-100">
-          <div class="offset-lg-8 offset-md-6 offset-5 col-lg-4 col-md-6 col-7 text-center pl-0">
+          <div class="offset-lg-8 offset-md-6 offset-5 col-lg-4 col-md-6 col-7 text-center pl-0 pr-md-0">
             <span class="year">2020</span>
             <p class="text_intro m-0">разработано в норвегии</p>
             <p class="text_intro_2 m-0">сделано в европе</p>
@@ -104,6 +122,143 @@
       </div>
     </div>
   </section>
+  <section id="adventages" class="adventages">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-xl-4 col-6 d-flex align-items-center">
+              <img src="img/icon_1.png" class="img-fluid pr-2" alt="конвектор №1 в России">
+              <p class="desc_adv m-0">Конвектор<br><span>№1 в России</span></p>
+            </div> 
+            <div class="col-xl-2 col-6 d-flex align-items-center">
+              <img src="img/icon_2.png" class="img-fluid pr-2" alt="КПД 99%">
+              <p class="desc_adv m-0">КПД<br><span>99%</span></p>
+            </div>
+            <div class="col-xl-3 col-6 d-flex align-items-center mt-3 mt-xl-0">
+              <img src="img/icon_3.png" class="img-fluid pr-2" alt="ресурс 30 лет">
+              <p class="desc_adv m-0">Ресурс<br><span>30 лет</span></p>
+            </div>
+            <div class="col-xl-3 col-6 d-flex align-items-center mt-3 mt-xl-0">
+              <img src="img/icon_4.png" class="img-fluid pr-2" alt="гарантия 10 лет">
+              <p class="desc_adv m-0">Гарантия<br><span>10 лет</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-xl-5 col-12 order-xl-1 order-3 d-flex align-items-center justify-content-center justify-content-xl-start mt-3 mt-xl-0">
+              <img src="img/icon_5.png" class="img-fluid pr-2" alt="Интеллектуальный термостат">
+              <p class="desc_adv m-0">Интеллектуальный<br><span>термостат</span></p>
+            </div>
+            <div class="col-xl-4 col-6 order-xl-2 order-1 d-flex align-items-center mt-3 mt-lg-0">
+              <img src="img/icon_6.png" class="img-fluid pr-2" alt="Разработано в Норвегии">
+              <p class="desc_adv m-0">Разработано<br><span>в Норвегии</span></p>
+            </div>
+            <div class="col-xl-3 col-6 order-xl-3 order-2 d-flex align-items-center mt-3 mt-lg-0">
+              <img src="img/icon_7.png" class="img-fluid pr-2" alt="Сделано в UK">
+              <p class="desc_adv m-0">Сделано<br><span>в UK</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about_us" class="about_us">
+    <div class="red_line">
+      <div class="container">
+        <div class="row">
+          <h3 class="title_head px-3">Всё о NOBO</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about_text">
+    <div class="container">
+      <div class="row pt-lg-5 pt-4">
+        <div class="col-lg-6">
+          <p class="text_content">NOBO — один из крупнейших производителей электрических энергоэффективных конвекторов Европы.<br><br>Бренд Nobo принадлежит Glen
+          Dimplex Nordic - норвежской компании, которая является крупнейшим в мире разработчиком, производителем, а также
+          поставщиком энергосберегающего оборудования и решений для электрического отопления.<br><br> Компания имеет дочерние филиалы,
+          работающие в Норвегии, Швеции, Финляндии, Дании и Ирландии, а экспортирует производимую продукцию в более чем 25 стран
+          по всему миру.<br><br> В течение нескольких десятилетий NOBO является международным лидером в области решений для электрического
+          отопления с инновационными конвекторами и системами управления.<br><br> Электрические конвекторы NOBO и напольные отопительные
+          системы работают без проблем с интеллектуальными термостатами и приемниками для обеспечения оптимального комфорта при
+          эффективном снижении затрат на электроэнергию.<br><br> На Российском рынке продукция NOBO представлена электрическими
+          конвекторами серии Nordic, Viking и Oslo, а также интеллектуальной системой управления Energy Control.</p>
+        </div>
+        <div class="col-lg-6">
+          <p class="text_content">История компании берет свое начало с 1918 года. Первое производство было открыто в городе Тронхейм (Норвегия) и первым
+          продуктом стало изготовление металлических ведер. Это производство позволило получить ценный опыт в обработке листового
+          металла. В 1929 году была изготовлена первая установка водяного отопления, а в 1939 — первый электрический
+          теплоизлучательный прибор. С 1947 года в NOBO началось серийное производство конвекторов.<br><br> Сегодня в компании работают
+          около 200 человек, а производственные площади составляют 17 000 кв. м. Ассортимент продукции не ограничивается
+          конвекторами. NOBO также производит энергоуправляющие устройства (термостаты, автоматические системы контроля), тепловые
+          насосы и прямоточные котлы.<br><br> Продукция NOBO пользуется спросом более чем в 25 странах мира. Отличное качество и высокий
+          уровень дизайна продукции позволяет компании занимать лидирующие позиции на рынке.<br><br> Вся продукция, производимая на заводе
+          Nobo, проходит 100% контроль качества. Каждый конвектор проверяется в рабочем режиме при максимальной нагрузке на работу
+          системы защиты от перегрева.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="catal">
+    <div class="container py-5">
+      <div class="row align-items-end pt-lg-5">
+        <div class="col-12 pb-5">
+          <h2 class="head_red">Каталог</h2>
+        </div>
+        <div class="w-100 py-4"></div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box_goods text-center">
+            <img src="img/goods_1.png" class="img-fluid img_goods pb-3" alt="">
+            <p class="name_goods text-center m-0">Декоративные панели</p>
+            <a href="#" class="link_all_goods py-2">Смотреть все товары<i class="zmdi zmdi-arrow-right pl-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mt-5 mt-sm-0 pt-3 pt-sm-0">
+          <div class="box_goods text-center">
+            <img src="img/goods_2.png" class="img-fluid img_goods pb-3" alt="">
+            <p class="name_goods text-center m-0">Серия OSL</p>
+            <a href="#" class="link_all_goods py-2">Смотреть все товары<i class="zmdi zmdi-arrow-right pl-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0 pt-3 pt-lg-0">
+          <div class="box_goods text-center">
+            <img src="img/goods_3.png" class="img-fluid img_goods pb-3" alt="">
+            <p class="name_goods text-center m-0">Серия NORDIC</p>
+            <a href="#" class="link_all_goods py-2">Смотреть все товары<i class="zmdi zmdi-arrow-right pl-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mt-5 mt-lg-0 pt-3 pt-lg-0">
+          <div class="box_goods text-center">
+            <img src="img/goods_4.png" class="img-fluid img_goods pb-3" alt="">
+            <p class="name_goods text-center m-0">Серия VIKING (2 вида)</p>
+            <a href="#" class="link_all_goods py-2">Смотреть все товары<i class="zmdi zmdi-arrow-right pl-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="form" class="form">
+    <div class="container">
+      <div class="row">
+        <p class="head_form">Подпишитесь , чтобы быть в курсе всего первым!</p>
+        <form class="callback">
+          <fildset>
+            <input type="text" placeholder="">
+          </fildset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
 
 
 
