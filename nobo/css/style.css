@@ -102,6 +102,11 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .flip_cont,.front,.back{width:100%;height:370px;}
 .catal_link{color:#DE052A;font-size:30px;font-weight:300;text-decoration:underline;}
 .catal_link:hover{color:#000;}
+.intro_history{background-image:url(../img/bg_history.jpg);background-position:center;background-size:cover;padding:50px 0;height:511px;}
+.font_size_his{font-size:30px;}
+
+
+
 
 
 
