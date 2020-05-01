@@ -137,6 +137,12 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .lin_hei{line-height:18px;}
 .bold_red{font-size:20px;font-weight:500;color:#DE052A;}
 .desc_hub{font-size:18px;font-weight:300;line-height:16px;}
+.intro_advant{background-image:url(../img/bg_adventages.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;height:403px;padding-top:310px;}
+.num_big{font-size:50px;font-weight:900;color:#DE052A;line-height:57px;}
+.red_adv_bold{font-size:20px;color:#DE052A;font-weight:500;line-height:20px;}
+.light_adv{font-size:18px;font-weight:200;line-height:20px;}
+.marg_desctop{margin-top:-153px;}
+
 
 
 @media(max-width:1199px){
@@ -148,8 +154,10 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .sub_menu{position:relative;top:auto;}
   #conv i{right:15px;}
   .intro_sistem .title_head{font-size:25px;}
+  .intro_advant .title_head{font-size:25px;}
   .pad_shem{padding-top:0;}
   .pos_right_dect{position: relative;padding-top:40px;}
+  .marg_desctop{margin-top:0;}
 }
 @media(max-width:767px) {
   .text_intro{font-size:16px;}
@@ -171,6 +179,7 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .intro_category{background-image:url(../img/bg_category_mobile.jpg);padding:50px 0 100px;}
   .intro_info{background-image:url(../img/bg_info_mobile.jpg);padding:50px 0 0;height:543px;}
   .intro_sistem{background-image:url(../img/bg_sistem_mobile.jpg);padding:50px 0 0;height:543px;}
+  .intro_advant{background-image:url(../img/bg_adventages_mobile.jpg);padding:50px 0 0;height:543px;}
 }
 @media(max-width:400px){
   .btn_menu span:nth-of-type(1){top:2px;}
