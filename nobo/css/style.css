@@ -121,8 +121,11 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .item_side{border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);}
 .link_side{display:inline-block;color:#000;font-weight:300;text-decoration:none;padding:10px 0;}
 .item_side:hover .link_side{color:#DE052A;}
-
-
+.txt_contact{font-size:20px;font-weight:300;}
+.link_cont_phone{font-size:16px;color:#DE052A;font-weight:normal;}
+.link_cont_phone:hover{color:#DE052A;text-decoration:underline;}
+.contact_form input{padding:10px;}
+.btn_submit{font-size:22px;font-weight:500;color:#fff;display:inline-block;border:none;background-color:#DE052A;border-radius:10px;padding:5px 50px;}
 
 @media(max-width:1199px){
   .year{left:-146px}
