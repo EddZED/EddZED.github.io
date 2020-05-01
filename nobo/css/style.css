@@ -54,6 +54,31 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .font_norm{font-weight:normal;}
 .privacy{font-size:16px;color:rgba(0, 0, 0, 0.5);}
 .privacy a{color:rgba(0, 0, 0, 0.5);}
+.intro_category{background-image:url(../img/bg_category.jpg);background-size:cover;background-position:center top;padding:80px 0 350px;}
+.intro_head{color:#DE052A;font-size:22px;font-weight:500;}
+.intro_head span{font-size:50px;font-weight:bold;vertical-align:middle;}
+.breadcrumb{background-color:transparent;}
+.breadcrumb-item a{color:rgba(0, 0, 0, 0.5);}
+.breadcrumb-item.active{color:#DE052A;}
+.head_page{font-size:40px;color:#DE052A;font-weight:bold;position:relative;padding-left:70px;padding-right:15px;}
+.circle_red{position:absolute;width:44px;height:44px;border-radius:50%;background-color:#DE052A;top:0;bottom:0;margin:auto;left:15px;}
+.circle_red:before{content:'';position:absolute;width:20px;height:20px;border-radius:50%;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;}
+.circle_red:after{content:'';position:absolute;width:45px;height:4px;top:0;bottom:0;left:0;margin:auto;transform:rotateZ(-45deg);background-color:#fff;}
+.bg_gray{background-color:#F1F1F1;}
+.head_tab{font-size:15px;color:rgba(0, 0, 0, 0.5);}
+.name_model{font-size:18px;font-weight:300;color:#DE052A;}
+.buy_btn{color:#fff;background-color:#DE052A;border-radius:4px;width:100%;display:inline-block;font-size:16px;border:1px solid transparent;transition:all .3s;}
+.buy_btn:hover{color:#000;text-decoration:none;background-color:transparent;border-color:#000;}
+.border_bottom{border-bottom:2px solid rgba(0, 0, 0, 0.17);}
+.img_bord{border-radius:50%;border:3px solid #DE052A;}
+.txt_img{font-size:20px;color:#000;line-height:18px;}
+.desc_img{font-size:16px;color:#000;}
+
+
+
+
+
+
 
 @media(max-width:1199px){
   .year{left:-146px}
@@ -67,12 +92,24 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .text_intro{font-size:16px;}
   .text_intro_2{font-size:25px;}
   .year{font-size:65px;bottom:40px;left:-137px;}
+  .name_model{font-size:13px;}
+  .txt_tab{font-size:13px;}
+  .buy_btn{font-size:13px;}
+  .desc_adv{font-size:15px;}
+  .head_page{font-size:26px;padding-left:50px;}
+  .circle_red{width:26px;height:26px;left:15px;}
+  .circle_red:before{width:12px;height:12px;top:0;bottom:0;left:0;right:0;margin:auto;}
+  .circle_red:after{width:27px;height:3px;top:0;bottom:0;left:0;margin:auto;transform:rotateZ(-45deg);background-color:#fff;}
+}
+@media(max-width:575px){
+  .intro_category{background-image:url(../img/bg_category_mobile.jpg);padding:50px 0 100px;}
 }
 @media(max-width:400px){
   .btn_menu span:nth-of-type(1){top:2px;}
   .text_intro{font-size:12px;}
   .text_intro_2{font-size:18px;}
   .year{font-size:40px;bottom:27px;left:-90px;line-height:55px;}
+
 }
 
 
