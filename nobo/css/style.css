@@ -111,9 +111,16 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .circle_faq:before{content:'';position:absolute;width:9px;height:9px;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;border-radius:50%;}
 .circle_faq:after{content:'';position:absolute;width:22px;height:2px;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;transform:rotateZ(-45deg);transition:all .5s ease-in-out;}
 .faq[aria-expanded="true"] .circle_faq:after{transform:rotateZ(-360deg)}
-
-
-
+.intro_info{background-image:url(../img/bg_info.jpg);background-size:cover;background-position:center center;height:373px;padding-top:270px;}
+.data_bg{color:#fff;font-size:20px;font-weight:300;background-image:url(../svg/bg_date.svg);background-size:100%;background-repeat:no-repeat;width:168px;height:64px;display: inline-block;vertical-align: middle;text-align: left;padding-top: 18px;padding-left: 20px;}
+.head_info{font-size:30px;color:#DE052A;font-weight:bold;}
+.midl_weight{font-weight:500;}
+.col_red{color:#DE052A;}
+.border-bottom{border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);}
+.head_side_right{font-size:24px;color:#DE052A;font-weight:300;line-height:30px;}
+.item_side{border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);}
+.link_side{display:inline-block;color:#000;font-weight:300;text-decoration:none;padding:10px 0;}
+.item_side:hover .link_side{color:#DE052A;}
 
 
 
@@ -138,9 +145,12 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .circle_red:before{width:12px;height:12px;top:0;bottom:0;left:0;right:0;margin:auto;}
   .circle_red:after{width:27px;height:3px;top:0;bottom:0;left:0;margin:auto;transform:rotateZ(-45deg);background-color:#fff;}
   .title_head{font-size:25px;}
+  .data_bg{width:104px;height:39px;font-size:13px;padding-top:10px;padding-left:12px;}
+  .head_info{font-size:26px;}
 }
 @media(max-width:575px){
   .intro_category{background-image:url(../img/bg_category_mobile.jpg);padding:50px 0 100px;}
+  .intro_info{background-image:url(../img/bg_info_mobile.jpg);padding:50px 0 0;height:543px;}
 }
 @media(max-width:400px){
   .btn_menu span:nth-of-type(1){top:2px;}
