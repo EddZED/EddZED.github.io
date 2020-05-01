@@ -104,7 +104,13 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .catal_link:hover{color:#000;}
 .intro_history{background-image:url(../img/bg_history.jpg);background-position:center;background-size:cover;padding:50px 0;height:511px;}
 .font_size_his{font-size:30px;}
-
+.name_quest{position:relative;color:#DE052A;font-size:20px;line-height:20px;padding-left:35px;}
+.faq{cursor:pointer;}
+.answer{padding-left:35px;}
+.circle_faq{position:absolute;width:21px;height:21px;background-color:#DE052A;top:0;left:0;bottom:0;margin:auto;border-radius:50%;}
+.circle_faq:before{content:'';position:absolute;width:9px;height:9px;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;border-radius:50%;}
+.circle_faq:after{content:'';position:absolute;width:22px;height:2px;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;transform:rotateZ(-45deg);transition:all .5s ease-in-out;}
+.faq[aria-expanded="true"] .circle_faq:after{transform:rotateZ(-360deg)}
 
 
 
