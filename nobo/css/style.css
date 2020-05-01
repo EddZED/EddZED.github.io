@@ -126,14 +126,30 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .link_cont_phone:hover{color:#DE052A;text-decoration:underline;}
 .contact_form input{padding:10px;}
 .btn_submit{font-size:22px;font-weight:500;color:#fff;display:inline-block;border:none;background-color:#DE052A;border-radius:10px;padding:5px 50px;}
+.intro_sistem{background-image:url(../img/bg_sistem.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;height:373px;padding-top:270px;}
+.sist_circl{position:absolute;width:29px;height:29px;background-color:#DE052A;top:0;left:0;border-radius:50%;}
+.sist_circl:before{content:'';position:absolute;width:11px;height:11px;background-color:#fff;top:0;bottom:0;left:0;right:0;margin:auto;border-radius:50%;}
+.sist_circl:after{content:'';position:absolute;width:30px;height:2px;background-color:#fff;top:0;bottom:0;left:0;margin:auto;transform:rotateZ(-45deg);}
+.pos_right_dect{position:absolute;top:0;right:0;}
+.pad_shem{padding-top:50px;}
+.gray{padding:15px 0;background-color:#F1F1F1}
+.red_txt{color:#DE052A;}
+.lin_hei{line-height:18px;}
+.bold_red{font-size:20px;font-weight:500;color:#DE052A;}
+.desc_hub{font-size:18px;font-weight:300;line-height:16px;}
+
 
 @media(max-width:1199px){
   .year{left:-146px}
   .name_goods{font-size:17px;}
+  .pad_shem{padding-top:180px;}
 }
 @media(max-width:991px){
   .sub_menu{position:relative;top:auto;}
   #conv i{right:15px;}
+  .intro_sistem .title_head{font-size:25px;}
+  .pad_shem{padding-top:0;}
+  .pos_right_dect{position: relative;padding-top:40px;}
 }
 @media(max-width:767px) {
   .text_intro{font-size:16px;}
@@ -154,6 +170,7 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 @media(max-width:575px){
   .intro_category{background-image:url(../img/bg_category_mobile.jpg);padding:50px 0 100px;}
   .intro_info{background-image:url(../img/bg_info_mobile.jpg);padding:50px 0 0;height:543px;}
+  .intro_sistem{background-image:url(../img/bg_sistem_mobile.jpg);padding:50px 0 0;height:543px;}
 }
 @media(max-width:400px){
   .btn_menu span:nth-of-type(1){top:2px;}
