@@ -142,6 +142,10 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .red_adv_bold{font-size:20px;color:#DE052A;font-weight:500;line-height:20px;}
 .light_adv{font-size:18px;font-weight:200;line-height:20px;}
 .marg_desctop{margin-top:-153px;}
+.intro_termo{background-image:url(../img/bg_termostat.jpg);background-size:cover;background-position:center center;height:373px;padding-top:280px;}
+.name_termostat{font-size:30px;font-weight:300;line-height:21px;}
+
+
 
 
 
@@ -180,6 +184,7 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .intro_info{background-image:url(../img/bg_info_mobile.jpg);padding:50px 0 0;height:543px;}
   .intro_sistem{background-image:url(../img/bg_sistem_mobile.jpg);padding:50px 0 0;height:543px;}
   .intro_advant{background-image:url(../img/bg_adventages_mobile.jpg);padding:50px 0 0;height:543px;}
+  .intro_termo{background-image:url(../img/termosta_mobile.jpg);padding:65px 0 0;height:543px;}
 }
 @media(max-width:400px){
   .btn_menu span:nth-of-type(1){top:2px;}
