@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-lg scrolling-navbar navbar-light py-md-3">
+        <div class="container">
+          <div class="col-lg-2 px-0 col-6">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid"></a>
+          </div>
+          <div class="cont_header col d-flex align-items-center justify-content-end d-lg-none">
+            <a href="tel:+79200267476" class="mr-3"><img src="img/phone_icon.png" class="img-fluid" alt="телефон"></a>
+            <a href="mailto:info@info.ru" class="mr-2"><img src="img/mail_icon.png" class="img-fluid"
+                alt="почтовый ящик"></a>
+          </div>
+          <button class="navbar-toggler btn_menu" type="button" data-toggle="collapse" data-target="#navbarNav,#nav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav justify-content-center align-items-center text-center w-100">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#"><span>Главная</span></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#"><span>Информация</span></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#"><span>Наша история</span></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#"><span>Контакты</span></a>
+              </li>
+            </ul>
+            <div class="cont_header d-flex  col-lg-2 align-items-end justify-content-end">
+              <a href="tel:+79200267476" class="mr-3"><img src="svg/phone.svg" class="img-fluid" alt="телефон"></a>
+              <a href="mailto:info@info.ru" class="mr-2"><img src="svg/mail.svg" class="img-fluid"
+                  alt="почтовый ящик"></a>
+            </div>
+            <div class="search_block col-lg-3 text-center">
+              <label class="lbl_srch">
+                <input type="search" class="input_search w-100" placeholder="Поиск">
+                <button type="button" class="search_btn"><i class="zmdi zmdi-search"></i></button>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav class="navbar navbar-expand-lg bg_red p-0 py-xl-3">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="nav">
+          <ul
+            class="navbar-nav justify-content-between align-items-lg-center text-left text-lg-center w-100 second_menu px-3 px-lg-0">
+            <li class="nav-item position-relative">
+              <a id="conv" class="nav-link" data-toggle="collapse" data-target="#submenu" aria-expanded="false" href="#"
+                aria-controls="conv"><span>Конвекторы</span><i class="zmdi zmdi-chevron-right"></i></a>
+            </li>
+            <div id="submenu" class="sub_menu collapse" aria-expanded="false" aria-controls="conv">
+              <ul class="list-unstyled">
+                <li class="nav-item py-1"><a class="nav-link" href="#">первый пункт</a></li>
+                <li class="nav-item py-1"><a class="nav-link" href="#">второй пункт</a></li>
+                <li class="nav-item py-1"><a class="nav-link" href="#">третий пункт</a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Декоративные панели</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Системы управления</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Аксессуары</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Интелектуальные термостаты</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Преимущества</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Главная</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Информация</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Наша история</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+          <div class="search_block text-left d-lg-none px-3">
+            <label class="lbl_srch">
+              <input type="search" class="input_search text-left pl-2 pt-2 w-100" placeholder="Поиск">
+              <button type="button" class="search_btn"><img src="img/search_icon.png" class="img-fluid"
+                  alt="поиск"></button>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container py-4">
+      <div class="row">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+            <li class="breadcrumb-item"><a href="#">Аксессуары</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Декоративная панель NDG4 072</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section id="card_goods">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pt-lg-4">
+          <div class="row">
+            <p class="name_akses text-center w-100 d-md-none px-3">Декоративная панель NDG4 072</p>
+            <div class="tab-pane fade show active" id="item1" role="tabpanel" aria-labelledby="type1">
+              <div class="row align-items-lg-stretch w-100 m-0">
+                <div class="col-lg-10">
+                  <div class="tab-content justify-content-center" id="content_mat">
+                    <div class="tab-pane text-center text-lg-left fade show active" id="img1" role="tabpanel" aria-labelledby="mat1">
+                      <img src="img/foto_goods_1.png" class="img-fluid" alt="дом с облицовкой">
+                    </div>
+                    <div class="tab-pane text-center text-lg-left fade" id="img2" role="tabpanel"
+                      aria-labelledby="mat2">
+                      <img src="img/foto_goods_1.png" class="img-fluid" alt="дом с облицовкой">
+                    </div>
+                    <div class="tab-pane text-center text-lg-left fade" id="img3" role="tabpanel"
+                      aria-labelledby="mat3">
+                      <img src="img/foto_goods_1.png" class="img-fluid" alt="дом с облицовкой">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 px-md-0 pt-5 pt-lg-0">
+                  <ul class="nav nav-tabs justify-content-between height_desctop" id="mat-list" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active p-0" id="mat1" data-toggle="tab" href="#img1" role="tab"
+                        aria-controls="item1" aria-selected="true">
+                        <img src="img/foto_min_3.png" class="img-fluid" alt="материал">
+                      </a>
+                    </li>
+                    <li class="nav-item pt-lg-3">
+                      <a class="nav-link p-0" id="mat2" data-toggle="tab" href="#img2" role="tab" aria-controls="item1"
+                        aria-selected="false">
+                        <img src="img/foto_min_2.png" class="img-fluid" alt="материал">
+                      </a>
+                    </li>
+                    <li class="nav-item pt-lg-3">
+                      <a class="nav-link p-0" id="mat3" data-toggle="tab" href="#img3" role="tab" aria-controls="item1"
+                        aria-selected="false">
+                        <img src="img/foto_min_1.png" class="img-fluid" alt="материал">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row pt-5 pt-md-0">
+            <p class="name_akses d-none d-md-block px-3">Декоративная панель NDG4 072</p>
+            <div class="col-lg-8 col-6">
+              <p class="akses_desk">Серия / Группа</p>
+            </div>
+            <div class="col-lg-4 col-6">
+              <p class="akses_val">Аксессуары</p>
+            </div>
+            <div class="col-lg-8 col-6">
+              <p class="akses_desk">Габариты (ШxВxГ), без кронштейна</p>
+            </div>
+            <div class="col-lg-4 col-6">
+              <p class="akses_val">780х455х50 мм</p>
+            </div>
+            <div class="col-lg-8 col-6">
+              <p class="akses_desk">Страна производителя</p>
+            </div>
+            <div class="col-lg-4 col-6">
+              <p class="akses_val">Норвегия</p>
+            </div>
+            <div class="col-lg-8 col-6">
+              <p class="akses_desk">Вес</p>
+            </div>
+            <div class="col-lg-4 col-6">
+              <p class="akses_val">Вес 4.20 к</p>
+            </div>
+          </div>
+          <div class="row align-items-center pt-3">
+            <div class="col-lg-4 col-6">
+              <div class="quantity">
+                <button class="btn_quant" value="1">+</button>
+                <span class="num_quant px-2">1</span>
+                <button class="btn_quant" value="0">-</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <p class="price_akses m-0">5500 <span>₽</span></p>
+            </div>
+            <div class="col-lg-4 order-md-1 order-2 pt-4 pt-lg-0 px-5 px-lg-0">
+              <button type="button" class="btn_subs w-100">Заказать</button>
+            </div>
+            <div class="col text-center order-md-2 order-1  text-md-right pt-4">
+              <a href="#" download="" class="download_link"><img src="svg/pdf_icon.svg" class="img-fluid pr-3" alt="техническая документация">Техническая документация</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center pt-5">
+        <div class="col-lg-5 col-6">
+          <div class="row align-content-center">
+            <div class="col-lg-5 d-flex align-items-center">
+              <img src="svg/icon_1.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Скандинавский минималистский стиль</p>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center pt-4 pt-lg-0">
+              <img src="svg/icon_2.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Супер точный термостат</p>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center pt-4 pt-lg-0">
+              <img src="svg/icon_3.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Бесшумная работа</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-6">
+          <div class="row">
+            <div class="col-lg-3 d-flex align-items-center">
+              <img src="svg/icon_4.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Экономично, даже в режиме ожидания</p>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center pt-4 pt-lg-0">
+              <img src="svg/icon_5.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Пожизненная гарантия</p>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center pt-4 pt-lg-0">
+              <img src="svg/icon_6.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Защита от воды</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-flex align-items-center">
+              <img src="svg/icon_7.svg" class="img-fluid pr-1" alt="скандинавский стиль">
+              <p class="blu_min_txt m-0">Безопасно для детей</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <div class="name_akses">Описание товара</div>
+          <p class="light pt-4">Дизайнерские стеклянные фронтальные панели из прочного закаленного стекла для конвекторов
+            Nobo серии Oslo. Панели легко снимаются, моются и не требуют особого ухода.<br><br> Панели представлены в трех
+            цветах: белый, антрацит и синий. Можно подобрать или сменить на любой цвет. Так же панели выступают в
+            качестве снижения температуры передней поверхности конвектора</p>
+        </div>  
+      </div>
+    </div>
+  </section>
+  <section id="slider_1">
+    <div class="container">
+      <h2 class="name_akses pb-5">Совместимые конвекторы<br> для Декоративная панель NDG4 072</h2>
+      <div class="row align-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="box_goods_sl text-center">
+            <img src="img/img_sl_1.png" class="img-fluid" alt="">
+            <p class="desc_img light pt-4">Конвекторы серии Oslo</p>
+            <a href="#" class="link_sl pt-2">NTE4S 05</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="box_goods_sl text-center">
+            <img src="img/img_sl_1.png" class="img-fluid" alt="">
+            <p class="desc_img light pt-4">Конвекторы серии Oslo</p>
+            <a href="#" class="link_sl pt-2">NTE4S 05</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="box_goods_sl text-center">
+            <img src="img/img_sl_1.png" class="img-fluid" alt="">
+            <p class="desc_img light pt-4 m-0">Настенный электрообогреватель<br> серии Oslo</p>
+            <a href="#" class="link_sl pt-2">NTE4S 05</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="slider_2">
+    <div class="container">
+      <h2 class="name_akses py-5">Рекомендуемые товары</h2>
+      <div class="row align-content-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="box_goods_sl text-center">
+            <img src="img/rec_1.png" class="img-fluid" alt="">
+            <p class="desc_img light">Центр управления<br> энергопотреблением</p>
+            <a href="#" class="link_sl pt-2">HUB</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="box_goods_sl text-center">
+            <img src="img/rec_2.png" class="img-fluid" alt="">
+            <p class="desc_img light m-0">Приемник нагревателя панели системы управления энергией</p>
+            <a href="#" class="link_sl pt-2">NCU2R</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <div class="box_goods_sl text-center">
+            <img src="img/rec_3.png" class="img-fluid" alt="">
+            <p class="desc_img light m-0">Нагреватель Nobo 750 Вт с таймером, термостатом и колесиками</p>
+            <a href="#" class="link_sl pt-2">NTL4T07-FS4</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <div class="box_goods_sl text-center">
+            <img src="img/rec_3.png" class="img-fluid" alt="">
+            <p class="desc_img light m-0">Нагреватель Nobo 750 Вт с таймером, термостатом и колесиками</p>
+            <a href="#" class="link_sl pt-2">NTL4T07-FS40</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="form" class="form">
+    <div class="container">
+      <div class="row">
+        <p class="head_form px-3">Подпишитесь , чтобы быть в курсе всего первым!</p>
+        <form class="callback w-100">
+          <fildset class="row m-0">
+            <div class="col-md-3">
+              <input type="text" name="name" class="input_form w-100" placeholder="Имя">
+            </div>
+            <div class="col-md-3 mt-4 mt-md-0">
+              <input type="text" name="mail" class="input_form w-100" placeholder="E-mail">
+            </div>
+            <div class="col-md-3 mt-4 mt-md-0">
+              <button type="submit" class="btn_subs w-100">Подписаться</button>
+            </div>
+          </fildset>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <img src="img/logo.png" class="img-fluid" alt="логотип еомпании NOBO">
+        </div>
+        <div class="col-lg-9 pt-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">NOBO</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Наша история</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Гарантия</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Связаться с нами</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">Наши продукты</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Термостаты</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Конвекторы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Аксессуары</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Система управления</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <p class="head_foot_menu light m-0">Обслуживание клиентов</p>
+              <ul class="list-unstyled pt-3">
+                <li class="menu-item"><a href="#" class="link_foot">Вопросы и ответы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Маркетинговые ресурсы</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Связаться с нами</a></li>
+                <li class="menu-item"><a href="#" class="link_foot">Технологии</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 text-lg-right">
+              <p class="head_foot_menu m-0">Свяжитесь с нами</p>
+              <ul class="list-unstyled pt-1">
+                <li class="menu-item"><a href="tel:+79031574444" class="link_foot font_norm">+7(903) 157 - 44 - 44</a>
+                </li>
+                <div class="text-lg-right">
+                  <a href="№" class="soc_link mr-2"><img src="svg/face.svg" class="img-fluid" alt="фейсбук"></a>
+                  <a href="№" class="soc_link"><img src="svg/insta.svg" class="img-fluid" alt="фейсбук"></a>
+              </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="m-0 text-left text-md-center w-100 pt-3 px-3 privacy">© 2020 /<br class="d-sm-none"> <a
+            href="">Политика конфиденциальности</a> /<br class="d-sm-none"> Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+ </html>
