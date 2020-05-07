@@ -1,6 +1,6 @@
-@font-face{font-family:'',sans-serif;}
 body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .bg_red{background-color:#DE052A;}
+.navbar{padding-left:0;padding-right:0;}
 .navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,1);font-weight:300;font-style:normal;}
 .lbl_srch{position:relative;}
 .input_search{border:none;border-bottom:1px solid rgba(0,0,0,.5);}
@@ -12,6 +12,8 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .search_btn:focus{outline:none;}
 .second_menu .nav-item .nav-link{color:#fff;font-weight:bold;}
 .sub_menu{position:absolute;background-color:#DE052A;padding:0 15px 10px;top:55px;transition:all.3s;}
+.second_menu .nav-item .nav-link{font-size:16px;}
+#conv{padding-left:0;}
 #conv i{position:absolute;transition:all .3s;top:13px;margin:auto;right:-7px;transform:rotateZ(90deg);}
 #conv[aria-expanded="true"] i{transform:rotateZ(0deg);}
 .intro{background-image:url(../img/bg_intro.jpg);background-size:cover;background-position:center bottom;background-repeat:no-repeat;}
@@ -66,7 +68,8 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .circle_red:after{content:'';position:absolute;width:45px;height:4px;top:0;bottom:0;left:0;margin:auto;transform:rotateZ(-45deg);background-color:#fff;}
 .bg_gray{background-color:#F1F1F1;}
 .head_tab{font-size:15px;color:rgba(0, 0, 0, 0.5);}
-.name_model{font-size:18px;font-weight:300;color:#DE052A;}
+.name_model{font-size:18px;font-weight:300;color:#DE052A;display:inline-block;}
+.name_model:hover{color:#000;}
 .buy_btn{color:#fff;background-color:#DE052A;border-radius:4px;width:100%;display:inline-block;font-size:16px;border:1px solid transparent;transition:all .3s;}
 .buy_btn:hover{color:#000;text-decoration:none;background-color:transparent;border-color:#000;}
 .border_bottom{border-bottom:2px solid rgba(0, 0, 0, 0.17);}
@@ -144,8 +147,23 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
 .marg_desctop{margin-top:-153px;}
 .intro_termo{background-image:url(../img/bg_termostat.jpg);background-size:cover;background-position:center center;height:373px;padding-top:280px;}
 .name_termostat{font-size:30px;font-weight:300;line-height:21px;}
-
-
+.box_gabarits{padding:0 15px;width:100%;}
+.size_1{width:35%;height:30px;}
+.size_2{width:45%;height:30px;}
+.size_3{width:55%;height:30px;}
+.size_4{width:70%;height:30px;}
+.size_5{width:85%;height:30px;}
+.size_6{width:100%;height:30px;}
+.convector{border:1px solid #ccc;display:inline-block;position:relative;font-size:12px;color:#ccc;text-align:center;z-index:0;transition:all .3s;}
+.convector:before{content:'';position:absolute;height:1px;left:4px;right:4px;top:3px;background-color:#ccc;}
+.convector:after{content:'';position:absolute;height:1px;left:4px;right:4px;top:6px;background-color:#ccc;}
+.convector span{position: absolute;left:0;right:0;margin:auto;bottom:2px;}
+.convector:hover{border-color:#000;color:#000;text-decoration:none;transform:scale(1.2);z-index:2;}
+.convector:hover:before{background-color:#000;}
+.convector:hover:after{background-color:#000;}
+.convector_hover{border-color:#000;color:#000;transform:scale(1.2);z-index:2;}
+.convector_hover:before{background-color:#000;}
+.convector_hover:after{background-color:#000;}
 
 
 
@@ -153,6 +171,12 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .year{left:-146px}
   .name_goods{font-size:17px;}
   .pad_shem{padding-top:180px;}
+  .size_1{width:35%;height:50px;}
+.size_2{width:45%;height:50px;}
+.size_3{width:55%;height:50px;}
+.size_4{width:70%;height:50px;}
+.size_5{width:85%;height:50px;}
+.size_6{width:100%;height:50px;}
 }
 @media(max-width:991px){
   .sub_menu{position:relative;top:auto;}
@@ -162,6 +186,7 @@ body{color:#000;font-size:18px;font-family:'Roboto',sans-serif;}
   .pad_shem{padding-top:0;}
   .pos_right_dect{position: relative;padding-top:40px;}
   .marg_desctop{margin-top:0;}
+  .navbar{padding-left:15px;padding-right:15px;}
 }
 @media(max-width:767px) {
   .text_intro{font-size:16px;}
