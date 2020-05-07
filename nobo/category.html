@@ -185,12 +185,31 @@
           </div>
         </div>
         <div class="col-lg-3 d-none d-lg-block pt-4">
-          <img src="img/size.png" class="img-fluid" alt="размеры">
+          <div class="row justify-content-end">
+            <div class="box_gabarits text-right mt-2 mt-xl-2">
+              <a href="#" id="conv_1" class="convector size_1"><span>540x400</span></a>
+            </div>
+            <div class="box_gabarits text-right mt-2 mt-xl-0">
+              <a href="#" id="conv_2" class="convector size_2"><span>625x400</span></a>
+            </div>
+            <div class="box_gabarits text-right mt-2 mt-xl-0">
+              <a href="#" id="conv_3" class="convector size_3"><span>725x400</span></a>
+            </div>
+            <div class="box_gabarits text-right mt-2 mt-xl-0">
+              <a href="#" id="conv_4" class="convector size_4"><span>925x400</span></a>
+            </div>
+            <div class="box_gabarits text-right mt-2 mt-xl-0">
+              <a href="#" id="conv_5" class="convector size_5"><span>1025x400</span></a>
+            </div>
+            <div class="box_gabarits text-right mt-2 mt-xl-0">
+              <a href="#" id="conv_6" class="convector size_6"><span>1125x400</span></a>
+            </div>
+          </div>
         </div>
         <div class="col-lg-9 border_bottom pb-4 pt-4">
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-              <p class="name_model m-0">Конвектор NOBO NTL4S 05</p>
+              <a href="#" id="mod_1" class="name_model">Конвектор NOBO NTL4S 05</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">0.50</p>
@@ -210,7 +229,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-              <p class="name_model m-0">Конвектор NOBO NTL4S 07</p>
+              <a href="#" id="mod_2" class="name_model">Конвектор NOBO NTL4S 07</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">0.75</p>
@@ -230,7 +249,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-               <p class="name_model m-0">Конвектор NOBO NTL4S 10</p>
+               <a href="#" id="mod_3" class="name_model">Конвектор NOBO NTL4S 10</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">1.00</p>
@@ -250,7 +269,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-              <p class="name_model m-0">Конвектор NOBO NTL4S 12</p>
+              <a href="#" id="mod_4" class="name_model">Конвектор NOBO NTL4S 12</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">1.25</p>
@@ -270,7 +289,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-              <p class="name_model m-0">Конвектор NOBO NTL4S 15</p>
+              <a href="#" id="mod_5" class="name_model">Конвектор NOBO NTL4S 15</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">1.50</p>
@@ -290,7 +309,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-md-4 col-3">
-              <p class="name_model m-0">Конвектор NOBO NTL4S 20</p>
+              <a href="#" id="mod_6" class="name_model m-0">Конвектор NOBO NTL4S 20</a>
             </div>
             <div class="col-md-2 col-1">
               <p class="light txt_tab m-0">2.00</p>
@@ -496,5 +515,43 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('#mod_1').mouseover(function(){
+      $('#conv_1').addClass('convector_hover');
+    });
+    $('#mod_1').mouseout(function(){
+      $('#conv_1').removeClass('convector_hover');
+    });
+    $('#mod_2').mouseover(function(){
+      $('#conv_2').addClass('convector_hover');
+    });
+    $('#mod_2').mouseout(function(){
+      $('#conv_2').removeClass('convector_hover');
+    });
+    $('#mod_3').mouseover(function(){
+      $('#conv_3').addClass('convector_hover');
+    });
+    $('#mod_3').mouseout(function(){
+      $('#conv_3').removeClass('convector_hover');
+    });
+    $('#mod_4').mouseover(function(){
+      $('#conv_4').addClass('convector_hover');
+    });
+    $('#mod_4').mouseout(function(){
+      $('#conv_4').removeClass('convector_hover');
+    });
+    $('#mod_5').mouseover(function(){
+      $('#conv_5').addClass('convector_hover');
+    });
+    $('#mod_5').mouseout(function(){
+      $('#conv_5').removeClass('convector_hover');
+    });
+    $('#mod_6').mouseover(function(){
+      $('#conv_6').addClass('convector_hover');
+    });
+    $('#mod_6').mouseout(function(){
+      $('#conv_6').removeClass('convector_hover');
+    });
+    </script>
 </body>
 </html>
