@@ -47,7 +47,7 @@
 .slick-dots{z-index:0;}
 #modal_web .phone-zir{position: relative;}
 #modal_web .phone-zir:after{left:22px;top:13px;}
-#modal_web select{font-size:18px;color:#666e82;}
+#modal_web select{font-size:18px;color:#666e82;font-family:'MullerLight',sans-serif;}
 #modal_web .btn_order{font-size: 14px;}
 
 @media(min-width:992px){
