@@ -69,7 +69,11 @@
                 <div class="phone-zir">
                   <input type="tel" name="phone" class="form_page_cons zir mt-0 mb-3" id="phone4" placeholder="Телефон">
                 </div>
-                <input type="text" name="mag" class="form_page_cons mt-0 mb-3" placeholder="Адрес сайта (если есть)">
+                <select class="form_page_cons mt-0 pr-4 py-4 w-100">
+                  <option class="py-2" value="1" selected>Сайт-визитка</option>
+                  <option class="py-2" value="2">Landing-Page</option>
+                  <option class="py-2" value="3">Интернет магазин</option>
+                </select>
                 <label class="pt-2">
                   <input type="checkbox" class="inp_cons_form-prodv" name="consent" checked>
                   <span class="text_label_form_cons">Согласен с <a href="">условиями обработки данных</a></span>
@@ -115,17 +119,18 @@
               </div>
             </div>
             <div class="py-5 d-lg-none text-center">
-              <a href="#modal2" data-toggle="modal" class="btn_order p-4 px-5">Получить консультацию</a>  
+              <a href="#modal2" data-toggle="modal" class="btn_order py-3 px-3 px-md-4">Получить консультацию</a>  
             </div>
           </div>
         </div>
       </div>
-      <img src="img_2/bg_right_web.png" class="bg_right_web" alt="">
+      <img src="img_2/bg_right_web.png" class="bg_right_web d-none d-lg-block" alt="">
+      <img src="img/bg-home-1right.png" class="bg_right_web_mobile d-lg-none" alt="">
     </div>
   </section>
   <section id="tasks_web">
     <div class="container">
-      <h2 class="middle_head_web text-center pb-5 w-100">Какие задачи решает веб-аналитика?</h2>
+      <h2 class="middle_head_web text-center pt-xl-5 pb-5 w-100">Какие задачи решает<br class="d-md-none"> веб-аналитика?</h2>
       <div class="row align-items-center">
         <div class="col-lg-3 col-md-6 pt-md-4">
           <div class="box_tasks_item text-center">
@@ -154,8 +159,8 @@
       </div>
     </div>
   </section>
-  <section id="service_web">
-    <img src="img/bg-footer1.png" class="bg_service_web" alt="">
+  <section id="service_web" class="bg_gray_img">
+    <img src="img_2/top_web_img.png" class="bg_service_web" alt="">
     <div class="container">
       <p class="red_head text-center w-100">маркетинговое агенство</p>
       <h3 class="big_head_web text-center pb-4 w-100">Услуги веб-аналитики</h3>
@@ -280,14 +285,1286 @@
         </div>
       </div>
     </div>
+    <img src="img_2/top_web_img.png" class="bg_service_web_bottom" alt="">
   </section>
+  <section id="portfolio" class="py-5 web_portf">
+    <div class="container px-0 px-sm-3">
+      <div class="row justify-content-center align-items-center pt-lg-5">
+        <div class="col-lg-6">
+          <p class="red_head let_space d-none w-100 d-lg-block">наши работы</p>
+          <h2 class="big_head text-center text-md-left pb-sm-5"><span>Наши</span><span> кейсы</span></h2>
+        </div>
+        <div class="col-lg-6 d-none d-sm-block">
+          <ul class="nav filter clearfix justify-content-between w-100 nav-pills mb-3" id="port_tab">
+            <li data-filter="all">
+              <a class="nav-link all active" data-toggle="pill" aria-selected="true">Все работы</a>
+            </li>
+            <li data-filter="market">
+              <a class="nav-link market" data-filter="pill" data-toggle="pill" aria-selected="false">Маркетинг</a>
+            </li>
+            <li data-filter="seo">
+              <a class="nav-link seo" data-filter="pill" data-toggle="pill" aria-selected="false">СЕО</a>
+            </li>
+            <li data-filter="web">
+              <a class="nav-link web" data-filter="pill" data-toggle="pill" aria-selected="false">Веб аналитика</a>
+            </li>
+          </ul>
+        </div>
 
 
+      </div>
+      <div class="row d-none d-lg-flex justify-content-end px-3">
+        <a href="#" class="btn_order btn_com">Все кейсы</a>
+      </div>
+      <div class="position-relative">
+        <div class="arrow_slide_keys w-100" id="slide_arrow_4">
+          <a class="carousel-control-prev prev_icon" id="keys_left" role="button" data-slide="prev">
+            <span class="" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next next_icon" id="keys_right" role="button" data-slide="next">
+            <span class="" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <ul class="slider">
+        <li class="seo">seo1
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="seo">seo2
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="seo">seo3
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="seo">seo4
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="market">market1
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="market">market2
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="market">market3
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="market">market4
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block text-center">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="web">web1
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="web">web2
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="web">web3
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="web">web4
+          <div class="w-100 d-flex justify-content-start justify-content-sm-center">
+            <a href="#" class="link_red">rem-kol.ru</a>
+          </div>
+          <p class="head_slide_portfolio pt-4 w-100 text-center"><a href="">Создание и продвижение сайта запчастей для
+              детских колясок</a></p>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <div class="row w-100 text-left align-items-center">
+            <div class="col-lg-7 d-none d-sm-block">
+              <p class="head_slide_work">Проведенные работы:</p>
+              <ul class="list-unstyled list_work">
+                <li><i class="fas fa-circle pr-2"></i>Сбор СЯ - 1150 запросов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка структуры сайта и подготовка прототипов</li>
+                <li><i class="fas fa-circle pr-2"></i>Разработка индивидуального дизайна и логотипа</li>
+                <li><i class="fas fa-circle pr-2"></i>Подготовка контента на страницы услуг</li>
+                <li><i class="fas fa-circle pr-2"></i>Верстка и программирование сайта</li>
+                <li><i class="fas fa-circle pr-2"></i>Наполнение и оптимизация и др.</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 px-0 px-sm-3">
+              <img src="img/portfolio_1.png" class="img-fluid" alt="">
+              <div class="d-sm-none mask_mob"></div>
+              <div class="position-absolute d-flex justify-content-center align-items-center d-sm-none btn_mobile">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                  <a href="#" id="" class="btn_order px-5 py-3">Подробнее</a>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width:95%;" class="d-none d-sm-block">
+          <p class="head_slide_work w-100 text-left p-3">итоги:</p>
+          <div class="row w-100 jusstify-content-between align-items-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_1">
+                    <p class="red_num_itogi m-0">85<span>%</span></p>
+                    <p class="red_text_itogi m-0">в ТОП 10</p>
+                    <p class="gray_text_itogi m-0">по яндекс<br>и google</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_2">
+                    <p class="purple_num_itogi pb-1 pt-2 m-0">450</p>
+                    <p class="purple_text_itogi m-0">ЗАКАЗОВ</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>с сайта</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="box_itogi itogi_bg_3">
+                    <p class="orange_num_itogi pb-1 pt-3 m-0">10 000</p>
+                    <p class="orange_text_itogi m-0">визитов</p>
+                    <p class="gray_text_itogi m-0">в месяц<br>из пс</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-block">
+              <div class="d-flex justify-content-center mt-3 mt-lg-0 w-100">
+                <a href="#" id="" class="btn_order px-0 py-3 w-100">Подробнее</a>
+              </div>
+              <div class="d-flex justify-content-center w-100">
+                <a href="#" id="link_com" class="w-100 py-3"><span>Посмотреть отзыв</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-
-
-
-
+      <div class="row d-lg-none d-flex justify-content-center pt-4 px-3">
+        <a href="#" class="btn_order btn_com">Все кейсы</a>
+      </div>
+    </div>
+  </section>
+  <div class="bg_comments">
+    <img src="img/bg-section-home3-3.png" class="img-fluid bg_comts">
+    <section id="comments" class="pb-5 marg_2">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <p class="red_head d-none w-100 text-center d-lg-block pl-0 pt-5">маркетинговое агенство</p>
+          <h2 class="big_head w-100 text-center px-3"><span>Отзывы</span></h2>
+          <h3 class="middle_head px-3"><span>и</span> <span>благодарственные письма</span></h3>
+        </div>
+        <div class="row d-none d-lg-flex justify-content-end pt-3 pb-5">
+          <a href="#" class="btn_order btn_com">Все отзывы</a>
+        </div>
+        <div class="row position-relative justify-content-center">
+          <div class="arrow_slide_com w-100" id="slide_arrow_3">
+            <a class="carousel-control-prev prev_icon" id="com_left" role="button" data-slide="prev">
+              <span class="" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next next_icon" id="com_right" role="button" data-slide="next">
+              <span class="" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="owl-carousel justify-content-center text-center pt-5 pt-lg-0" id="comments_carousel">
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+            <div class="item_carousel text-center">
+              <img src="img/com_1.png" class="max-w p-3" alt="благодарность">
+            </div>
+          </div>
+          <div class="row d-lg-none justify-content-center pt-5 pb-5">
+            <a href="#" class="btn_order btn_com">Все отзывы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </section>
+  <section id="form_keys_block">
+    <div class="container">
+      <div class="row position-relative px-3">
+        <p class="head_form text-center text-lg-left w-100 pl-lg-5 pt-5"><span>Станьте</span> <span>нашим</span>
+          <span>клиентом</span></p>
+        <p class="purple_text_form text-center w-100 text-lg-left pl-lg-5">Заполните форму, чтобы получить бесплатную
+          консультацию.</p>
+        <form id="form_keys" class="w-100 px-sm-5 py-sm-4">
+          <fieldset>
+            <div class="col-lg-6 px-0">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="name" placeholder="Имя" class="input_form">
+                </div>
+                <div class="col-lg-6 phone-zir pt-4 py-lg-0">
+                  <input type="tel" id="phone_keys" name="phone" placeholder="Телефон" class="input_form">
+                </div>
+                <div class="col pt-4">
+                  <textarea class="input_form" placeholder="Кратко опишите, чтобы вы хотели"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center text-center text-lg-left py-2 py-sm-5">
+              <div class="col">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
+                  <label class="custom-control-label privaci" for="defaultChecked2">Согласен с <a href="">условиями
+                      обработки данных</a></label>
+                </div>
+                <div class="w-100 d-flex justify-content-center justify-content-lg-start pt-4">
+                  <button href="#!" id="calc_btn" class="btn_order px-5 border-none">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <img src="img/image-right-slide.png" class="img-fluid bg_form_keys m-auto">
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="bg_dots_footer">
+      <div class="container position-relative py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-7 text-center text-md-left">
+                <img src="img/logo_foot.png" class="img-fluid" alt="логотип подвал">
+                <div class="link_tel_foot_box py-4">
+                  <a href="tel:+74993757704" class="">+7 (499) 375-77-04</a><br>
+                  <a href="tel:88003017704" class="">8 (800) 301-77-04</a>
+                </div>
+                <a href="#modal1" data-toggle="modal" class="btn_order p-3">Заказать звонок</a>
+                <div class="mail_box_foot text-left pt-5 pb-3">
+                  <a href="mailto:info@vividseo.ru" class="mail_foot">info@vividseo.ru</a>
+                </div>
+                <p class="text-left" style="color:#aaafb3">Москва, 1-й Люберецкий проезд, 2с1, офис 307</p>
+                <p class="text-left" style="color:#aaafb3">Пн-Пт: 10.00 - 19.00</p>
+                <hr class="d-md-none">
+              </div>
+              <div class="col-md-5 l_height pt-lg-5">
+                <p class="name_menu_foot">О нас</p>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="item_foot_menu">О компании</a></li>
+                  <li><a href="#" class="item_foot_menu">Наша команда</a></li>
+                  <li><a href="#" class="item_foot_menu">Вакансии</a></li>
+                  <li><a href="#" class="item_foot_menu">Блог</a></li>
+                  <li><a href="#" class="item_foot_menu">Новости</a></li>
+                  <li><a href="#" class="item_foot_menu">Контакты</a></li>
+                </ul>
+                <hr class="d-md-none">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 l_height pt-lg-5">
+            <div class="row">
+              <div class="col-md-7">
+                <p class="name_menu_foot">Продвижение сайтов</p>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="item_foot_menu">Комплексное продвижение</a></li>
+                  <li><a href="#" class="item_foot_menu">Продвижение по ключевым словам</a></li>
+                  <li><a href="#" class="item_foot_menu">Продвижение ИМ</a></li>
+                  <li><a href="#" class="item_foot_menu">Молодым сайтам</a></li>
+                  <li><a href="#" class="item_foot_menu">Базовая оптимизация</a></li>
+                  <li><a href="#" class="item_foot_menu">SEO-аудит</a></li>
+                </ul>
+                <hr class="d-md-none">
+              </div>
+              <div class="col-md-5">
+                <p class="name_menu_foot">Веб-разработка</p>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="item_foot_menu">Одностраничный сайт</a></li>
+                  <li><a href="#" class="item_foot_menu">Сайт-визитка</a></li>
+                  <li><a href="#" class="item_foot_menu">Корпоративный сайт</a></li>
+                  <li><a href="#" class="item_foot_menu">Landing-Page</a></li>
+                  <li><a href="#" class="item_foot_menu">Интернет-магазин</a></li>
+                  <li><a href="#" class="item_foot_menu">Доработка сайта</a></li>
+                  <li><a href="#" class="item_foot_menu">Техническая поддержка</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#header">
+          <div class="arrow_up_content text-center">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        </a>
+      </div>
+      <div class="bootom_footer">
+        <div class="container">
+          <div class="row box_bottom col_rev justify-content-center m-0">
+            <div class="offset-lg-3 col-lg-6 text-center privaci_foot pt-4">
+              <p class="text_bot_foot">© 2018-2019 <a href="#">VIVIDSEO</a> - Все права защищены</p>
+            </div>
+            <hr class="d-lg-none w-100">
+            <div class="col-lg-3 social text-center text-lg-right w-100 pt-4">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mdb.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/readmore.min.js"></script>
+  <script src="js/carousel_tarif_start.js"></script>
+  <script src="js/carousel_tarif_standart.js"></script>
+  <script src="js/carousel_one_optimiz.js"></script>
+  <script src="js/carousel_comments.js"></script>
+  <script src="js/carousel_bl.js"></script>
+  <script src="js/carousel_brend.js"></script>
+  <script src="js/open_win_price_2.js"></script>
+  <script defer src="js/custom.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#btn_serv').on('click', function () {
+        $('#click_menu').addClass('d-none').removeClass('d-block');
+      })
+      $('#back_menu').on('click', function () {
+        $('#click_menu').addClass('d-block').removeClass('d-none');
+      });
+      return;
+    })
+  </script>
+  <script>
+    $(function () {
+      $('.dropdown-toggle').dropdown();
+      $('.dropdown-menu ul .menu-item').click(function (e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.second-button').on('click', function () {
+
+        $('body').toggleClass('show-menu');
+        $('.animated-icon2').toggleClass('open');
+      });
+    });
+    $(document).ready(function () {
+      $('.catal').on('click', function () {
+
+        $('.navigation-catalog').toggleClass('second_menu_open');
+      });
+    });
+    $(document).ready(function () {
+      $('.promotion').on('click', function () {
+
+        $('.promotions').toggleClass('active');
+      });
+    });
+    $(document).ready(function () {
+      $('.work').on('click', function () {
+
+        $('.works').toggleClass('active');
+      });
+    });
+    $(document).ready(function () {
+      $('.analitic').on('click', function () {
+
+        $('.analitics').toggleClass('active');
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#link_1').on('click', function () {
+
+        $('#win_1').toggleClass('d-block');
+      });
+      $('#close_left').on('click', function () {
+
+        $('#win_1').toggleClass('d-block');
+      });
+      $('#link_2').on('click', function () {
+
+        $('#win_2').toggleClass('d-block');
+      });
+      $('#close_center').on('click', function () {
+
+        $('#win_2').toggleClass('d-block');
+      });
+      $('#link_3').on('click', function () {
+
+        $('#win_3').toggleClass('d-block');
+      });
+      $('#close_right').on('click', function () {
+
+        $('#win_3').toggleClass('d-block');
+      });
+      $('#link_4').on('click', function () {
+
+        $('#win_4').toggleClass('d-block');
+      });
+      $('#close_left_2').on('click', function () {
+
+        $('#win_4').toggleClass('d-block');
+      });
+      $('#link_5').on('click', function () {
+
+        $('#win_5').toggleClass('d-block');
+      });
+      $('#close_center_2').on('click', function () {
+
+        $('#win_5').toggleClass('d-block');
+      });
+      $('#link_6').on('click', function () {
+
+        $('#win_6').toggleClass('d-block');
+      });
+      $('#close_right_2').on('click', function () {
+
+        $('#win_6').toggleClass('d-block');
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $('#select_sv').change(function () {
+        var type = $('#select_sv :selected').val();
+        $("#phone_in").toggleClass('d-none');
+        $("#mail_in").toggleClass('d-block');
+      })
+    });
+  </script>
+  <script>
+    $(function () {
+      $('#select_sv_mob').change(function () {
+        var type1 = $('#select_sv_mob :selected').val();
+        $("#phone_in1").toggleClass('d-none');
+        $("#mail_in1").toggleClass('d-block');
+      })
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $(function () {
+      $("#phone").mask("+7 (999) 999-99-99");
+      $("#phone1").mask("+7 (999) 999-99-99");
+      $("#phone_in").mask("+7 (999) 999-99-99");
+      $("#phone_in1").mask("+7 (999) 999-99-99");
+      $("#phone_keys").mask("+7 (999) 999-99-99");
+      $("#phone2").mask("+7 (999) 999-99-99");
+      $("#phone3").mask("+7 (999) 999-99-99");
+      $("#phone4").mask("+7 (999) 999-99-99");
+    });
+  </script>
+
+  <script
+    src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js">
+  </script>
+  <script src="js/roll.js"></script>
+  <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+  <script id="rendered-js">
+    $(function () {
+
+      $(".slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: true,
+        prevArrow: $('#keys_left'),
+        nextArrow: $('#keys_right'),
+        centerPadding: '60px',
+        dots: true,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+              centerMode: false,
+              centerPadding: '0px'
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              dots: false,
+              centerMode: false,
+              centerPadding: '0px'
+            }
+          }
+        ]
+      });
+
+
+      $(".filter li").on('click', function () {
+        var filter = $(this).data('filter');
+        $(".slider").slick('slickUnfilter');
+
+        if (filter == 'seo') {
+          $(".slider").slick('slickFilter', '.seo');
+        } else
+        if (filter == 'market') {
+          $(".slider").slick('slickFilter', '.market');
+        } else
+        if (filter == 'web') {
+          $(".slider").slick('slickFilter', '.web');
+        } else
+        if (filter == 'all') {
+
+          $(".slider").slick('slickUnfilter');
+        }
+
+      });
+
+    });
+  </script>
 </body>
 </html>

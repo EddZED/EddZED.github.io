@@ -5,7 +5,8 @@
 .head_web{font-size:48px;;}
 .dark_bg_form{background-color:#082231;text-align:center;padding:50px 30px 60px;border-radius:50px;}
 #cons_web .phone-zir{position: relative;}
-.phone-zir:after{left:22px;top:10px;}
+#cons_web .phone-zir:after{left:22px;top:17px;}
+#cons_web select{color:#666e82;font-size:18px;font-family:'MullerLight',sans-serif;}
 .box_img_adv{background-color:#fff;border-radius:50%;padding:8px;width:110px;height:110px;margin:auto;}
 .border_circ{border: 1px dashed;width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;}
 .color_red{border-color:#ef3b58;}
@@ -21,7 +22,7 @@
 #service_web{padding:200px 0 100px;position:relative;}
 #service_web .red_head{padding-left:0;}
 .big_head_web{font-size:60px;font-family:'MullerRegular',sans-serif;color:#333333;}
-.bg_service_web{position:absolute;max-width:100%;z-index:-1;left:0;top:50px;}
+.bg_service_web{position:absolute;z-index:-1;left:0;top:50px;}
 .box_view_service{padding:25px 25px 10px;background-color:#fff;border:1px solid;border-radius:20px;}
 .bor_col_purp{border-color:#6c60c2;}
 .num_web{position:relative;}
@@ -39,6 +40,39 @@
 .orng_num_web{color:#ff8257;left:0;top:0px;}
 .bor_col_green{border-color:#79d28e;}
 .green_num_web{color:#79d28e;right:0;top:0;}
+.bg_service_web_bottom{position: absolute;transform:rotateZ(180deg);bottom:0;left:0;z-index:-1;}
+.bg_gray_img{background-image:url(../img_2/bg_gray_img.png);background-size:auto 65%;background-repeat:no-repeat;background-position:center center;}
+#web_first .btn_order{display:inline-block;}
+.slick-slider .slick-track,.slick-slider .slick-list{z-index:1;}
+.slick-dots{z-index:0;}
+
+
+
+
+
+@media(min-width:992px){
+  .web_portf #slide_arrow_4{top:750px;}
+}
+
+@media(max-width:991px){
+  .middle_head_web{font-size:30px;}
+  .big_head_web{font-size:48px;}
+  .bg_right_web_mobile{position:absolute;right:-256px;top:75px;transform:rotateZ(-28deg);z-index:-1;}
+  .head_web{font-size:48px;}
+}
+@media(max-width:767px){
+  .big_head_web{font-size:30px;}
+  .num_web_all{font-size:74px;}
+  .box_view_service{padding:25px 15px 10px;}
+  #service_web .red_head{font-size:12px;}
+  .web_first{padding-bottom:0;}
+  #web_first .btn_order{font-size:14px;width:100%;}
+  #service_web{padding-top:90px;padding-bottom:0;}
+  .head_web{font-size:32px;}
+}
+@media(max-width:575px){
+  .head_web{font-size:24px;}
+}
 
 
 
