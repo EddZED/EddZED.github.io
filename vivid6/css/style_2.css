@@ -70,6 +70,7 @@
 .ar_bl i{color:#b3edeb;}
 .num_web_1{color:#b3edeb;}
 .head_name_web_creat{font-size:18px;font-family:'MullerBold',sans-serif;text-transform:uppercase;color:#333333;}
+.strategy{background-image: url(../img_2/bg_gray_img.png);background-size: 100% 50%;background-repeat: no-repeat;background-position: center center;}
 .strategy .num_web_all{left:0;}
 .margin_box_creat{margin-top:70px;}
 .num_web_2{color:#ffacac;}
@@ -87,10 +88,23 @@
 .bord_gr{border-color:#a6e7b5;}
 .bl_gr{background-color:#a6e7b5;}
 .num_web_5{color:#a6e7b5;}
-
-
-
-
+.view_sait{padding:100px 0;position: relative;overflow: hidden;}
+.link_view_sait{display:block;border:1px solid #4adad3;padding:20px 15px 15px 35px;background-color:#fff;border-radius:4px;transition:all .5s;height:100%;}
+.link_view_sait .name_answer_redline{text-transform:uppercase;}
+.link_view_sait .txt_link_view{font-size:14px;color:#666e82;position:relative;}
+.more_det{font-size:14px;color:#666e82;border-bottom:1px solid #ef3b58;text-transform:uppercase;text-align:right;position:relative;}
+.more_det i{margin-right:100%;opacity:0;position:absolute;color:#fff;font-size:20px;right:0;}
+.link_view_sait:hover{background-color:#4adad3;transform:scale(1.05);transition:all .3s;}
+.link_view_sait:hover .name_answer_redline{color:#fff;}
+.link_view_sait:hover .name_answer_redline:after{background-color:#fff;}
+.link_view_sait:hover .txt_link_view{color:#fff;}
+.link_view_sait:hover .more_det{color:#fff;border-color:transparent;padding-right:30px;}
+.link_view_sait:hover .more_det i{margin-right:auto;opacity:1;}
+.bg_service_web_bottom_2{position:absolute;transform:rotateZ(180deg);bottom:0;z-index:-1;}
+.block_form_2{background-image: url(../img/dot.png);background-blend-mode: screen;height:100%;background-color:#082231;padding:20px 30px;border-radius:50px;position:relative;overflow: hidden;z-index:0;}
+.bluebox{height:100%;border:2px solid #5e34fc;border-radius:10px;padding:15px;}
+.redbox{height:100%;border:2px solid #ef3b58;border-radius:10px;padding:15px;}
+.birbox{height:100%;border:2px solid #4adad3;border-radius:10px;padding:15px;}
 
 
 @media(min-width:992px){
@@ -115,6 +129,7 @@
   #service_web{padding-top:90px;padding-bottom:0;}
   .head_web{font-size:32px;}
   .name_answer_redline:after{left:0;right:0;margin:auto;}
+  .view_sait{padding:0;}
 }
 @media(max-width:575px){
   .head_web{font-size:24px;}
