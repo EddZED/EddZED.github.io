@@ -49,10 +49,16 @@
 #modal_web .phone-zir:after{left:22px;top:13px;}
 #modal_web select{font-size:18px;color:#666e82;font-family:'MullerLight',sans-serif;}
 #modal_web .btn_order{font-size: 14px;}
-
-
-
-
+.title_dev{font-size:48px;}
+.title_dev span:nth-of-type(1){font-family:'MullerBold',sans-serif !important;}
+.title_dev span:nth-of-type(2){font-family:'MullerRegular',sans-serif !important;}
+.box_why_web{border:1px solid;border-radius:4px;padding:15px 0;height:100%;}
+.blu_col{border-color:#4adad3;}
+.name_answer_redline{font-size:21px;color:#082231;font-family:'MullerBold',sans-serif;position:relative;}
+.name_answer_redline:after{content:'';position:absolute;height:3px;width:45px;background-color:#ef3b58;left:0;bottom:-10px;}
+.prp_col{border-color:#7a8dd9;}
+.redb_col{border-color:#ef3b58;}
+.yell_col{border-color:#ffc700;}
 
 
 
@@ -75,6 +81,7 @@
   #web_first .btn_order{font-size:14px;width:100%;}
   #service_web{padding-top:90px;padding-bottom:0;}
   .head_web{font-size:32px;}
+  .name_answer_redline:after{left:0;right:0;margin:auto;}
 }
 @media(max-width:575px){
   .head_web{font-size:24px;}
