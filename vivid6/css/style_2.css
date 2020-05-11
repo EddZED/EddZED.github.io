@@ -41,7 +41,7 @@
 .bor_col_green{border-color:#79d28e;}
 .green_num_web{color:#79d28e;right:0;top:0;}
 .bg_service_web_bottom{position: absolute;transform:rotateZ(180deg);bottom:0;left:0;z-index:-1;}
-.bg_gray_img{background-image:url(../img_2/bg_gray_img.png);background-size:auto 65%;background-repeat:no-repeat;background-position:center center;}
+.bg_gray_img{background-image:url(../img_2/bg_gray_img.png);background-size:auto 65%;background-repeat:no-repeat;background-position:center center;overflow:hidden;}
 #web_first .btn_order{display:inline-block;}
 .slick-slider .slick-track,.slick-slider .slick-list{z-index:1;}
 .slick-dots{z-index:0;}
