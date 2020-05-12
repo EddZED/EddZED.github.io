@@ -60,20 +60,24 @@
     </video>
      -->
     <img src="img_2/bg_video.jpg" class="video_bg"><!--удалить при добавлении видео-->
+    <img src="img_2/bg_video_mobile.jpg" class="video_bg_mob" alt="">
       <div class="container py-5">
         <div class="row align-items-center">
           <div class="col-lg-5 d-none d-lg-block">
-            <form class="consult_promo dark_bg_form" id="cons_web">
+            <form class="consult_promo dark_bg_form wow fadeInLeft" id="cons_web">
               <fieldset>
                 <input type="text" name="name" class="form_page_cons mb-3 mt-0" placeholder="Имя">
                 <div class="phone-zir">
                   <input type="tel" name="phone" class="form_page_cons zir mt-0 mb-3" id="phone4" placeholder="Телефон">
                 </div>
-                <select class="form_page_cons mt-0 pr-4 py-4 w-100">
+                <div class="carret">
+                  <i class="fas fa-caret-down"></i>
+                <select class="form_page_cons mt-0 pr-4  w-100">
                   <option class="py-2" value="1" selected>Сайт-визитка</option>
                   <option class="py-2" value="2">Landing-Page</option>
                   <option class="py-2" value="3">Интернет магазин</option>
                 </select>
+                </div>
                 <label class="pt-2">
                   <input type="checkbox" class="inp_cons_form-prodv" name="consent" checked>
                   <span class="text_label_form_cons">Согласен с <a href="">условиями обработки данных</a></span>
@@ -85,8 +89,8 @@
             </form>
           </div>
           <div class="col-lg-7">
-            <p class="desc_min_txt line_h">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <div class="row align-items-center">
+            <p class="desc_min_txt line_h">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<span class="d-none d-sm-block"> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span> </p>
+            <div class="row align-items-center wow fadeInUp">
               <div class="col-md-3">
                 <div class="box_img_adv">
                   <div class="border_circ color_red text-center">
@@ -128,7 +132,7 @@
       <img src="img/bg-home-1right.png" class="bg_right_web_mobile d-lg-none" alt="">
     </div>
   </section>
-  <section>
+  <section class="wow fadeInUp">
     <div class="container">
       <div class="row justify-content-center py-5">
         <div class="col px-0 px-md-3">
@@ -156,7 +160,7 @@
       <div class="row py-5">
         <h2 class="middle_head w-100 text-center pb-5 px-3"><span>Что</span><span> важно</span><span> учесть</span><span> при</span><span> разработке</span><span> сайта?</span></h2>
         <div class="col-lg-6">
-          <div class="box_why_web blu_col pl-xl-5 pr-lg-4 px-lg-4 px-3">
+          <div class="box_why_web blu_col pl-xl-5 pr-lg-4 px-lg-4 px-3 wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4 text-center text-md-left">
                 <img src="img_2/why_web_1.png" class="img-fluid" alt>
@@ -175,7 +179,7 @@
           </div>
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <div class="box_why_web prp_col  pl-xl-5 pr-lg-4 px-lg-4 px-3">
+          <div class="box_why_web prp_col  pl-xl-5 pr-lg-4 px-lg-4 px-3 wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4 text-center text-md-left">
                 <img src="img_2/why_web_2.png" class="img-fluid" alt>
@@ -195,7 +199,7 @@
           </div>
         </div>
         <div class="col-lg-6 mt-4">
-          <div class="box_why_web redb_col  pl-xl-5 pr-lg-4 px-lg-4 px-3">
+          <div class="box_why_web redb_col  pl-xl-5 pr-lg-4 px-lg-4 px-3 wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4 text-center text-md-left">
                 <img src="img_2/why_web_3.png" class="img-fluid" alt>
@@ -215,7 +219,7 @@
           </div>
         </div>
         <div class="col-lg-6 mt-4">
-          <div class="box_why_web yell_col  pl-xl-5 pr-lg-4 px-lg-4 px-3">
+          <div class="box_why_web yell_col  pl-xl-5 pr-lg-4 px-lg-4 px-3 wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4 text-center text-md-left">
                 <img src="img_2/why_web_4.png" class="img-fluid" alt>
@@ -247,7 +251,7 @@
     <div class="container">
       <p class="red_head text-center pl-0 w-100">маркетинговое агенство</p>
       <h3 class="big_head_web text-center pb-4 w-100">Стратегия создания сайта</h3>
-      <div class="box_ceation ar_bl">
+      <div class="box_ceation ar_bl wow fadeInUp">
         <div class="border_line bl_green"></div>
         <div class="content_card">
           <div class="col-lg-4">
@@ -270,7 +274,7 @@
         </div>
         <span class="arrow_down ar_bl"><i class="fas fa-arrow-down"></i></span>
       </div>
-      <div class="box_ceation bord_rose margin_box_creat">
+      <div class="box_ceation bord_rose margin_box_creat wow fadeInUp">
         <div class="border_line bl_rose"></div>
         <div class="content_card">
           <div class="col-lg-4">
@@ -294,7 +298,7 @@
       </div>
       <div class="row margin_box_creat">
         <div class="col-lg-6">
-          <div class="box_ceation bord_prp">
+          <div class="box_ceation bord_prp wow fadeInUp">
             <div class="border_line bl_prp"></div>
             <div class="content_card">
               <div class="col-lg-4">
@@ -315,7 +319,7 @@
           </div>
         </div>
         <div class="col-lg-6 margin_top_creat_mobi">
-          <div class="box_ceation bord_yel">
+          <div class="box_ceation bord_yel wow fadeInUp" data-wow-delay=".2s">
             <div class="border_line bl_yel"></div>
             <div class="content_card">
               <div class="col-lg-4">
@@ -339,7 +343,7 @@
           </div>
         </div>
       </div>
-      <div class="box_ceation bord_gr margin_box_creat">
+      <div class="box_ceation bord_gr margin_box_creat wow fadeInUp">
         <div class="border_line bl_gr"></div>
         <div class="content_card">
           <div class="col-lg-4">
@@ -366,7 +370,7 @@
       <h2 class="middle_head_web w-100 text-center pb-5">Какой сайт подойдет Вашему бизнесу?</h2>
       <div class="row">
         <div class="col-lg-6">
-          <a class="link_view_sait">
+          <a class="link_view_sait wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4">
                 <img src="img_2/view_1.png" class="img-fluid" alt="">
@@ -385,7 +389,7 @@
           </a>
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <a class="link_view_sait">
+          <a class="link_view_sait wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4 pt-3">
                 <img src="img_2/view_2.png" class="img-fluid" alt="">
@@ -406,7 +410,7 @@
           </a>
         </div>
         <div class="col-lg-6 mt-4">
-          <a class="link_view_sait">
+          <a class="link_view_sait wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4">
                 <img src="img_2/view_3.png" class="img-fluid" alt="">
@@ -427,7 +431,7 @@
           </a>
         </div>
         <div class="col-lg-6 mt-4">
-          <a class="link_view_sait">
+          <a class="link_view_sait wow fadeInUp">
             <div class="row align-items-center">
               <div class="col-md-4">
                 <img src="img_2/view_4.png" class="img-fluid" alt="">
@@ -494,13 +498,20 @@
       <h2 class="middle_head_web w-100 text-center pb-3 pb-md-5">Наиболее востребованные CMS</h2>
       <div class="row align-items-center">
         <div class="col-md-4 text-center">
-          <img class="img-fluid" src="img_2/cms_1.png" alt="битрикс">
+          <a class="box_cms red_bg">
+            <img class="img-fluid cms_hov" src="img_2/cms_1.png" alt="битрикс">
+            <img class="img-fluid cms_non" src="img_2/cms_nothov.png" alt="битрикс">
+          </a>
         </div>
         <div class="col-md-4 text-center pt-4 pt-md-0">
-          <img class="img-fluid" src="img_2/cms_2.png" alt="битрикс">
+          <a class="box_cms">
+            <img class="img-fluid" src="img_2/cms_2.png" alt="ворд пресс">
+          </a>
         </div>
         <div class="col-md-4 text-center pt-4 pt-md-0">
-          <img class="img-fluid" src="img_2/cms_3.png" alt="битрикс">
+          <a class="box_cms bord">
+            <img class="img-fluid" src="img_2/cms_3.png" alt="modx">
+          </a>
         </div>
       </div>
     </div>
@@ -541,11 +552,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-5 pt-3 pt-lg-0">
+                <div class="col-lg-6 pt-3 pt-lg-0">
                   <textarea class="input_form h-100 px-3" placeholder="Индивидуальные пожелания..."></textarea>
                 </div>
               </div>
-              <div class="row align-items-center py-2 py-sm-5">
+              <div class="row align-items-center py-2 py-sm-4">
                 <div class="col-lg-4">
                   <div class="w-100">
                     <button href="#" id="calc_btn"
@@ -565,7 +576,7 @@
               </div>
             </fieldset>
           </form>
-          <img src="img/hand.png" class="img_form" alt="">
+          <img src="img/hand.png" class="img_form d-none d-lg-block" alt="">
         </div>
       </div>
     </div>
@@ -1489,7 +1500,7 @@
   </section>
   <div class="bg_comments">
     <img src="img/bg-section-home3-3.png" class="img-fluid bg_comts">
-    <section id="comments" class="pb-5 marg_2">
+    <section id="comments" class="pb-5 marg_3">
       <div class="container">
         <div class="row justify-content-center text-center">
           <p class="red_head d-none w-100 text-center d-lg-block pl-0 pt-5">маркетинговое агенство</p>
@@ -1665,7 +1676,7 @@
       </div>
     </div>
   </footer>
-  <!--форма консультация страницы веб-аналитики-->
+  <!--форма консультация страницы веб-разработки-->
   <div class="overlay open">
     <div class="modal open-phone-block open show" id="modal_web">
       <div class="overley2">
@@ -1675,7 +1686,7 @@
             <fieldset class="form__hide-success content-form">
               <input type="text" name="name" class="form_page_cons mb-3 mt-0" placeholder="Имя">
               <div class="phone-zir">
-                <input type="tel" name="phone" class="form_page_cons zir mt-0 mb-3" id="phone4" placeholder="Телефон">
+                <input id="phone_an" type="tel" name="phone" class="form_page_cons zir mt-0 mb-3" id="phone4" placeholder="Телефон">
               </div>
               <select class="form_page_cons mt-0 pr-4 py-3 w-100">
                 <option class="py-2" value="1" selected>Сайт-визитка</option>
@@ -1935,6 +1946,8 @@
     $("#phone_keys").mask("+7 (999) 999-99-99");
     $("#phone2").mask("+7 (999) 999-99-99");
     $("#phone3").mask("+7 (999) 999-99-99");
+    $("#phone4").mask("+7 (999) 999-99-99");
+    $("#phone_an").mask("+7 (999) 999-99-99");
   });
 </script>
 
