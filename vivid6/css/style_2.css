@@ -120,7 +120,7 @@
   .num_web_3,.num_web_4{top:0;}
 }
 @media(max-width:767px){
-  .big_head_web{font-size:30px;}
+  .big_head_web,.title_dev{font-size:30px;}
   .num_web_all{font-size:74px;}
   .box_view_service{padding:25px 15px 10px;}
   #service_web .red_head{font-size:12px;}
