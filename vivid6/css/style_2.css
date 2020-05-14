@@ -120,7 +120,9 @@
 
 
 
-
+@media(min-width:1800px){
+  .video_bg{width:100%;}
+}
 @media(min-width:1199px){
   .bg_right_web{top:-500px;}
 }
