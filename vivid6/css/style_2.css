@@ -110,7 +110,7 @@
 .video_bg_mob{display:none;}
 .box_cms{display:flex;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;;min-height:200px;align-items:center;justify-content:center;border: 1px solid transparent;border-radius:15px;position: relative;}
 .box_cms:hover{background-color:#ef3b58;}
-.cms_hov,.cms_non{position:absolute;}
+.cms_hov,.cms_non{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
 .box_cms:hover .cms_hov{display:flex;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;}
 .box_cms:hover .cms_non{display:none;}
 .box_cms:not(:hover) .cms_hov{display:none;}
