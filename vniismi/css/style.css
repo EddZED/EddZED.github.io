@@ -1,10 +1,13 @@
+@font-face{font-family:'Gothem-black';src:url(../font/GothamPro-Black.ttf);}
 html{scroll-behavior:smooth;}
 body{margin:0;padding:0;}
 .header{max-width:1680px;margin:auto;padding:0 15px;}
-
-
-
-
+.navbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:15px 0;}
+.navbar-brand{display:flex;align-items:center;text-decoration:none;}
+.name_brand{margin:0;font-size:13px;line-height:14px;text-transform:uppercase;color:#18176B;font-family:'Gothem-black';font-weight:bold;padding-left:8px;}
+.navbar-toggler{display:none;}
+.navbar-collapse{display:flex;align-items:center;justify-content:space-between;}
+.navbar-nav{list-style:none;display:flex;padding-left:0;}
 
 
 
