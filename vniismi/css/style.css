@@ -14,24 +14,34 @@ body{margin:0;padding:0;}
 .nav-link{display:block;padding:10px 20px;text-decoration:none;font-family:'Gothem-black';font-size:13px;color:#18176B;text-transform:uppercase;letter-spacing:0.08em;}
 .nav-link:hover{color:#ED6932;}
 .list-unstyled{list-style:none;padding-left:7px;}
-.menu_dropdown{box-shadow:0 5px 5px #eee;position:absolute;left:0;padding:0 10px;opacity:0;top:40px;left:60px;}
+.menu_dropdown{box-shadow:0 5px 5px #eee;position:absolute;left:0;padding:0 10px;top:40px;left:60px;}
+.dropdown:not(:hover) + .menu_dropdown{display:none;}
 .dropdown:hover + .menu_dropdown{height:auto;transition:all .3s ease;opacity:1;z-index:10;background-color:#ffff;display:block;}
+.dropdown + .menu_dropdown:hover{display:block;}
 .subitem{padding:5px;width:100%;}
 .drop_link{font-size:16px;font-family:'Gothem-light';font-style:normal;letter-spacing:-0.01em;line-height:24px;padding:5px 15px;}
 .drop_link:hover{color:#ED6932;text-decoration:none;}
 .w-100{width:100%;}
-.cont_header{display:flex;align-items:center;}
+.cont_header{display:flex;align-items:center;padding-left:10px;}
 .phone_header{font-size:13px;color:#ED6932;font-family:'Gothem-black';letter-spacing:0.04em;text-decoration:none;display:block;}
 .phone_header:hover{text-decoration:underline;}
 .link_leng{font-size:14px;font-family:'Gothem-light';color:#18176B;opacity:.5;text-decoration:none;transition:all .3s;}
 .link_leng:hover{opacity:1;}
-.search_label{position:relative;}
-.search_inp{border:none;background-color:#fff;padding:10px 5px;}
+.search_label{position:relative;width:100%;}
+.search_inp{border:none;background-color:#fff;padding:10px 5px;width:153px;}
 .search_inp:focus{outline:none;}
 .search_img{position:absolute;right:0;cursor:pointer;top:4px;bottom:0;margin:auto;}
 .mobile_phone{display:none;}
+.right_block{display:flex; align-items:center;}
 
 
+
+@media(min-width:1400px){
+  .leng_block{padding:0 55px 0 20px;}
+}
+@media(min-width:1200px){
+  .leng_block{padding:0 10px 0 20px;}
+}
 @media(max-width:1199px){
   .search_block{display:none;}
   .nav-link{padding:10px;}
@@ -39,4 +49,8 @@ body{margin:0;padding:0;}
 @media(max-width:991px){
   .leng_block{display:none;}
   .nav-link{padding:10px 0;}
+  .cont_header{padding-left:0;}
+}
+@media(max-width:767px){
+  .collapse:not(.show){display:none;}
 }
