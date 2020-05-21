@@ -56,15 +56,30 @@
         <a href="#" class="link_leng">EN</a>
       </div>
       <div class="cont_header">
-        <a href="tel:+74999482880" class="phone_header"><span>8 499 948 28 80</span><img src="svg/phone_mobile.svg" class="mobile_phone"></a><br>
+        <a href="tel:+74999482880" class="phone_header"><span class="mobile-none">8 499 948 28 80</span><img src="svg/phone_mobile.svg" class="mobile_phone"></a><br>
       </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <button id="btn_menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
+
+
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+    $('#btn_menu').click(function(){
+    $('#navbarNav').toggleClass('show');
+    });
+    });
+  </script>
 </body>
 </html>
