@@ -33,9 +33,19 @@ body{margin:0;padding:0;}
 .navbar-toggler span:nth-of-type(1){top:2px;}
 .navbar-toggler span:nth-of-type(3){bottom:0;}
 .flex_container{width:100%;display:flex;position: relative;}
-.company_block{background-color:#18176B;padding:20px;flex:.5;min-height:100%;display:flex;}
+.company_block{background-color:#18176B;padding:20px;flex:.5;min-height:100%;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;}
 .img_block{position: relative;background-color:#ccc;flex:.5;}
 .img-fluid{max-width:100%;}
+.title_text{color:#fff;text-transform:uppercase;font-family:'Gothem-black';letter-spacing:0.01em;width:100%;margin:0;padding-bottom:30px;z-index:1;}
+.link_intro{display:inline-block;color:#fff;position:relative;font-size:16px;font-family:'Gothem-medium';text-decoration:none;transition:all .3s}
+.link_intro:nth-of-type(2){margin-top:30px;}
+.link_intro i{position:absolute;top:0;bottom:0;margin:auto;left:-15px;font-size:17px;color:#ED6932;}
+.link_intro:hover{color:#ED6932;transform:translateX(20px);}
+.link_intro:before{content:'';position:absolute;width:0;height:1px;left:0;top:8px;background-color:#ED6932;transition:width .3s;}
+.link_intro:hover:before{width:20px;left:-30px;}
+.bg_mask_mobile{display:none;}
+
+
 
 
 
@@ -46,6 +56,8 @@ body{margin:0;padding:0;}
 }
 @media(min-width:1200px){
   .leng_block{padding:0 10px 0 20px;}
+  .title_text{font-size:88px;line-height:88px;padding:}
+  .company_block{padding:0 30px 0 100px;}
 }
 @media(min-width:768px){
   .menu_dropdown{box-shadow:0 5px 5px #eee;position:absolute;left:0;padding:0 10px;top:40px;left:60px;}
@@ -57,13 +69,16 @@ body{margin:0;padding:0;}
 @media(max-width:1199px){
   .search_block{display:none;}
   .nav-link{padding:10px;}
+  .title_text{font-size:80px;line-height:80px;}
+  .company_block{padding:0 30px 0 60px;}
 }
 @media(max-width:991px){
   .leng_block{display:none;}
   .nav-link{padding:10px 0;}
   .cont_header{padding-left:0;}
   .img_block{display:none;}
-  .company_block{flex:1;}
+  .company_block{flex:1;padding:100px 30px 100px 100px;background-image:url(../img/inro_img.jpg);background-size:cover;background-position:center top;}
+  .bg_mask_mobile{display:block;position:absolute;width:100%;height:100%;z-index:0;left:0;}
 }
 @media(max-width:767px){
   .collapse:not(.show){display:none;}
@@ -74,6 +89,8 @@ body{margin:0;padding:0;}
   .list-unstyled{padding-left:0;}
   .subitem{width:auto;}
   .menu_dropdown{position:relative;transition:all .3s;}
+  .title_text{font-size:70px;line-height:70px;}
+  .company_block{padding:100px 30px;}
 }
 @media(max-width:400px){
   .mobile-none{display:none;}
