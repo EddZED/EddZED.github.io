@@ -100,7 +100,59 @@
       </div>
     </div>
   </section>
-
+  <section id="production" class="production">
+    <div class="container">
+      <h2 class="head_section">Продукция</h2>
+      <div class="row rev_mobile">
+        <div class="block_tabs">
+          <div class="tabs_links">
+            <a href="#tab_1" class="tab_item">вкладка 1</a>
+            <a href="#tab_2" class="tab_item">вкладка 2</a>
+            <a href="#tab_3" class="tab_item">вкладка 3</a>
+          </div>
+          <div class="item_block" id="tab_3">
+            <div class="sescription">
+              <p class="">описание 3</p>
+              <p class="">описание 3</p>
+              <div class="btn_box">
+                <a href="" class="btn">оставить запрос</a>
+                <a href="" class="btn">подробнее</a>
+              </div>
+            </div>
+            <div class="img_goods text-center">
+              <img src="img/img_tabs.png">3
+            </div>
+          </div>
+          <div class="item_block" id="tab_2">
+            <div class="sescription">
+              <p class="">описание 2</p>
+              <p class="">описание 2</p>
+              <div class="btn_box">
+                <a href="" class="btn">оставить запрос</a>
+                <a href="" class="btn">подробнее</a>
+              </div>
+            </div>
+            <div class="img_goods text-center">
+              <img src="img/img_tabs.png">2
+            </div>
+          </div>
+          <div class="item_block" id="tab_1">
+            <div class="sescription">
+              <p class="">описание 1</p>
+              <p class="">описание 1</p>
+              <div class="btn_box">
+                <a href="" class="btn">оставить запрос</a>
+                <a href="" class="btn">подробнее</a>
+              </div>
+            </div>
+            <div class="img_goods text-center">
+              <img src="img/img_tabs.png">1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -111,6 +163,14 @@
     $(function(){
     $('#btn_menu').click(function(){
     $('#navbarNav').toggleClass('show');
+    });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+    $(".tab_item").click(function () {
+    $(".tab_item").removeClass("active");
+    $(this).addClass("active");        
     });
     });
   </script>
