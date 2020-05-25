@@ -6,6 +6,8 @@
   <title>ВНИИСМИ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
   <header class="header">
@@ -248,12 +250,39 @@
     <div class="container">
       <h2 class="head_section">Свяжитесь с нами</h2>
       <div class="row">
-
+        <div class="form_block">
+          <p class="txt_content">чтобы начать сотрудничать или задать вопросы о процессах и продуктах компании</p>
+        </div>
+        <div class="form_block">
+          <form>
+            <fildset class="form_flex">
+              <laabel class="label"><span>Контактный телефон</span>
+                <input type="text" class="input_form" placeholder="">
+              </laabel>
+              <laabel class="label"><span>E-mail</span>
+                <input type="mail" class="input_form" placeholder="">
+              </laabel>
+              <textarea type="text" class="bl_txt" placeholder="Опишите вашу задачу"></textarea>
+              <div class="submit_btn_block mt-5">
+                <a href="#" class="btn_feedback">Отправить</a>
+                <p class="txt_content pl-3">Нажимая на кнопку, вы соглашаетесь на обработку <a href="" class="privacy">персональных данных</a></p>
+              </div>
+            </fildset>
+          </form>
+        </div>
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </footer>
+
+
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/slick.js"></script>
   <script>
     $(function(){
     $('#btn_menu').click(function(){
