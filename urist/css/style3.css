@@ -40,7 +40,20 @@ html, body{height:100%;}
 .greeting__text-body{background-color:#373D44;padding:85px 30px;}
 .greeting__title{color:#fff;font-size:24px;font-weight:bold;font-family:'pt-serif';line-height:36px;}
 .greeting__desc{color:#fff;font-size:16px;line-height:21px;}
-
+.our__service-block{padding:40px 0;}
+.content__title{font-size:32px;font-family:'pt-serif';font-weight:bold;line-height:36px;color:#333;padding:0 15px;}
+.two_line{position:relative;}
+.two_line:before{content:'';position:absolute;left:15px;bottom:-10px;height:1px;width:238px;background-color:#373D44;}
+.two_line:after{content:'';position:absolute;left:15px;bottom:-17px;height:1px;width:171px;background-color:#373D44;}
+.link__service-block{position:relative;display:block;}
+.service__link-body{position:relative;display:inline-block;}
+.blue_frame{border:2px solid #008EFF;position:absolute;width:100%;height:100%;left:13px;top:13px;}
+.service__link-content{display:flex;align-items:center;text-align:center;justify-content: center;}
+.service__link-name{color:#fff;font-size:16px;position:relative;font-weight: bold;text-transform: uppercase;}
+.service__link-name:before{content:'';position:absolute;height:1px;width:114px;left:0;right:0;margin:auto;bottom:-7px;background-color:#fff;}
+.nothover_mask{position:absolute;top:0;left:0;opacity:1;transition:all .3s;}
+.hover_mask{position:absolute;left:0;top:0;opacity:0;transition:all .3s;}
+.link__service-block:hover .hover_mask{opacity:1;}
 
 
 
@@ -48,12 +61,15 @@ html, body{height:100%;}
 
 @media(max-width:1199px){
   .intro_slider-header,.intro_slider-subhead{font-size:70px;}
+  .service__link-name{font-size:14px;}
 }
 @media(max-width:991px){
   .intro_slider-header,.intro_slider-subhead{font-size:60px;}
   .greeting__text{padding-top:0;}
   .greeting__block:after{height:calc(100% - 45px);}
   .greeting__text-body{padding:35px 30px;}
+  .mobile-align-center{justify-content:center;text-align:center;}
+  .service__link-name{font-size:16px;}
 }
 @media(max-width:767px) {
   .intro_slider-header,.intro_slider-subhead {font-size: 50px;}
