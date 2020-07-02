@@ -315,7 +315,46 @@
 			 </div>	 
 			 <div class="row py-5">
 				 <div class="table_block">
-					 
+					 <div class="table_height">
+						 <table class="table_dark">
+							 <thead class="table_dark-head">
+								 <tr>
+									 <th>Вид услуги</th>
+									 <th>Стоимость</th>
+								 </tr>
+							 </thead>
+							 <tbody class="table_dark-body">
+								 <tr>
+									 <th>Консультация по телефону</th>
+									 <th>бесплатно</th>
+								 </tr>
+								 <tr>
+									 <th>Консультация в офисе</th>
+									 <th>1000 рублей/час</th>
+								 </tr>
+								 <tr>
+									 <th>Правовой анализ документов и подготовка правового заключения<br> в письменном виде</th>
+									 <th>от 1000 рублей</th>
+								 </tr>
+								 <tr>
+									 <th>Подготовка заявлений/жалоб</th>
+									 <th>от 2000 рублей</th>
+								 </tr>
+								 <tr>
+									 <th>Подготовка искового заявления</th>
+									 <th>от 2000 рублей</th>
+								 </tr>
+								<tr>
+									<th>Разовый выезд юриста в суд</th>
+									<th>5000 рублей</th>
+								</tr>
+							 </tbody>
+						 </table>
+					 </div>
+					 <div class="block_btn-height">
+						 <p class=""></p>
+						 <a href="#!" class="btn_height">показать все цены</a>
+					 </div>
 				 </div>
 			 </div>
 		 </div>
@@ -329,7 +368,11 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/intro_slider.js"></script>
   <script type="text/javascript" src="js/slider_specialist.js"></script>
-  
+  <script>
+		$('.btn_height').click(function () {
+				$('.table_height').toggleClass('table_max-height');
+			});
+	</script>
   
 </body>
 </html>

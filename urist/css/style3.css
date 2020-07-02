@@ -76,9 +76,12 @@ html, body{height:100%;}
 .block_icon-adv{position: relative;background-color:#008EFF;width:94px;height:94px;}
 .block_black-frame{position:absolute;width:100%;height:100%;border: 1px solid #373D44;left:8px;top:8px;display: flex;align-items:center;justify-content:center;}
 .price_service_family{padding:0 0 50px;}
-.table_block{padding:0 15px;}
-
-
+.table_block{padding:0 15px;width:100%;}
+.table_dark{width:100%;background-color:#373D44;}
+.table_dark-head{background-color:#515860;}
+.table_dark-head th,.table_dark-body th{padding:15px 30px;color:#fff;}
+.table_height{max-height:300px;transition:all 1s ease;overflow: hidden;}
+.table_max-height{max-height:999px;}
 
 @media(max-width:1199px){
   .intro_slider-header,.intro_slider-subhead{font-size:70px;}
