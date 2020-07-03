@@ -18,7 +18,7 @@ html, body{height:100%;}
 .btn_consult{display:block;background-color:#008EFF;color:#fff;text-transform:uppercase;padding:10px 40px;transition:all .3s;}
 .btn_consult:hover{color:#fff;text-decoration:none;background-color:#0983ff;}
 .white_min-desc{color:#fff;font-size:12px;font-family:'Open Sans';}
-.bottom_link{position: absolute;left:0;right:0;bottom:30px;margin:auto;width:40px;animation: arrow 2s infinite ease-in-out;transition:all 2s;}
+.bottom_link{position: absolute;left:0;right:0;bottom:60px;margin:auto;width:40px;animation: arrow 2s infinite ease-in-out;transition:all 2s;}
 @keyframes arrow{
    0%{
      transform:translateY(5px);

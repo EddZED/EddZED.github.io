@@ -715,7 +715,7 @@
 						<fieldset>
 							<form class="form_call-order" method="get" action="">
 								<input type="text" class="input_form" placeholder="Ваше имя">
-								<input id="phone_call" type="tel" class="input_form mt-4" placeholder="Телефон">
+								<input id="phone_call_2" type="tel" class="input_form mt-4" placeholder="Телефон">
 								<textarea class="input_form h-text mt-4" placeholder="Суть дела"></textarea>
 								<div class="chekbox_block mt-5">
 									<input id="privacy_2" class="chek_form" type="checkbox" name="">
@@ -747,10 +747,17 @@
   <script type="text/javascript" src="js/intro_slider.js"></script>
   <script type="text/javascript" src="js/slider_specialist.js"></script>
   <script type="text/javascript" src="js/slider_comments.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
   <script>
 		$('.btn_height').click(function () {
 				$('.table_height').toggleClass('table_max-height');
 			});
+	</script>
+	<script>
+		$(function(){
+		$("#phone_call").mask("+7 (999) 999-99-99");
+		$("#phone_call_2").mask("+7 (999) 999-99-99");
+		});
 	</script>
   
 </body>
