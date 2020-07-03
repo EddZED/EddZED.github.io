@@ -403,7 +403,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 mt-5">
 					<div class="how_work-content">
-						<a href="#" class="btn_height white_btn">обратный звонок</a>
+						<a href="#" data-toggle="modal" data-target="#call_order" class="btn_height white_btn">обратный звонок</a>
 					</div>
 				</div>
 			</div>
@@ -671,6 +671,43 @@
 			 </div>
 		 </div>
 	 </section>
+
+
+
+
+	<div class="modal fade" id="call_order" tabindex="-1" role="dialog"	aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="border_modal">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  <div class="modal-body">
+						<p class="title_modal pt-3">Заказать обратный звонок</p>
+						<fieldset>
+							<form class="form_call-order" method="get" action="">
+								<input type="text" class="input_form" placeholder="Ваше имя">
+								<input id="phone_call" type="tel" class="input_form mt-4" placeholder="Телефон">
+								<div class="chekbox_block mt-5">
+									<input id="privacy" class="chek_form" type="checkbox" name="">
+									<label for="privacy" class="label_form">Настоящим подтверждаю согласие с условиями политики конфиденциальности</label>
+								</div>
+							</form>
+						</fieldset>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
 
 
 
