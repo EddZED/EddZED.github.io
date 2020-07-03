@@ -24,7 +24,7 @@
 						  <h1 class="intro_slider-header text-center">Профессиональный юрист</h1>
 							<h2 class="intro_slider-subhead text-center">по семейным спорам</h2>
 							<div class="btn_box-intro">
-								<a href="" class="btn_consult">получить консультацию</a>
+								<a href="" data-toggle="modal" data-target="#order_work" class="btn_consult">получить консультацию</a>
 							</div>
 							<p class="white_min-desc mt-3">*Консультация по телефону бесплатно</p>
 						</div>
@@ -655,7 +655,7 @@
 						   <p class="title_contact">по почте</p>
 						   <a href="mailto:info@myt-pravo.ru" class="phone_link-cont">info@myt-pravo.ru</a>
 						   <p class="title_contact mt-4">или заполнив форму:</p>
-						   <a href="#" class="btn_consult">получить консультацию</a>
+						   <a href="#" data-toggle="modal" data-target="#order_work" class="btn_consult">получить консультацию</a>
 						 </div>
 					 </div>
 				 </div>
@@ -675,7 +675,7 @@
 
 
 
-	<div class="modal fade" id="call_order" tabindex="-1" role="dialog"	aria-hidden="true">
+	<div class="modal fade pr-0" id="call_order" tabindex="-1" role="dialog"	aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="border_modal">
@@ -692,6 +692,7 @@
 									<input id="privacy" class="chek_form" type="checkbox" name="">
 									<label for="privacy" class="label_form">Настоящим подтверждаю согласие с условиями политики конфиденциальности</label>
 								</div>
+								<button type="submit" class="btn_consult">отправить</button>
 							</form>
 						</fieldset>
 				  </div>
@@ -700,6 +701,35 @@
 		</div>
 	</div>
 
+	<div class="modal fade pr-0" id="order_work" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="border_modal">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="modal-body">
+						<p class="title_modal pt-3">Обсудим Ваше дело</p>
+						<p class="subtitl_form">Мы можем обсудить по телефону суть Вашего дела абсолютно бесплатно. И уже после бесплатной консультации Вы примете
+						решение о необходимости наших услуг.</p>
+						<fieldset>
+							<form class="form_call-order" method="get" action="">
+								<input type="text" class="input_form" placeholder="Ваше имя">
+								<input id="phone_call" type="tel" class="input_form mt-4" placeholder="Телефон">
+								<textarea class="input_form h-text mt-4" placeholder="Суть дела"></textarea>
+								<div class="chekbox_block mt-5">
+									<input id="privacy_2" class="chek_form" type="checkbox" name="">
+									<label for="privacy_2" class="label_form">Настоящим подтверждаю согласие с условиями политики
+										конфиденциальности</label>
+								</div>
+								<button type="submit" class="btn_consult">отправить</button>
+							</form>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
