@@ -35,6 +35,7 @@ html, body{height:100%;}
 .breadcrumb-item a{color:#666;}
 .breadcrumb-item.active{color:#666666;font-size:12px;text-decoration:none;}
 .greeting__block{position:relative;}
+.greeting__body{width:100%;}
 .greeting__block:after{content:'';position:absolute;border:2px solid #008EFF;width:calc(100% - 27px);height:calc(100% - 62px);top:0;bottom:0;left:0;right:0;margin:auto;}
 .greeting__text{padding:10px 0 10px 0;}
 .greeting__text-body{background-color:#373D44;padding:85px 30px;}
@@ -59,7 +60,7 @@ html, body{height:100%;}
 .list_features{list-style:none;padding-left:35px;}
 .list_features li{position:relative;}
 .list_features li:before{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background-color:#008EFF;top:4px;bottom:0;margin:auto;left:-15px;}
-.gray_block{padding:0 15px;position: relative;}
+.gray_block{padding:15px;position: relative;overflow:hidden;}
 .gray_block-body{background-color:#373D44;padding:60px 45px 50px;position:relative;display:flex;align-items:center;}
 .white-middle-text{color:#fff;font-family:'pt-serif';font-size:21px;line-height:21px;}
 .our_specialist{padding:0 0 50px;}
@@ -108,13 +109,14 @@ html, body{height:100%;}
 .answer_question{padding:0 0 50px;}
 .block_deck-video{padding:20px 20px;background-color:#373D44;text-align:center;}
 .min_txt{font-size:16px;font-weight:normal;font-family:'open sans';}
-.our_blog-link{display:flex;transition:all .3s;}
+.our_blog-link{transition:all .3s;}
 .our_blog-body{background-color:#373D44;padding:32px 25px 20px;position: relative;display: flex;flex-direction: column;justify-content: center;transition:all .3s;}
 .date{color:#fff;font-size:12px;font-family:'open sans';position:absolute;left:25px;top:20px;}
 .our_blog-txt{color:#fff;font-size:14px;line-height:19px;margin:0;}
 .our_blog{padding:0 0 50px;}
 .our_blog-link:hover{text-decoration:none;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 .our_blog-link:hover .our_blog-body{background-color:#008EFF;}
+.our_blog-link.row{display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin:0;}
 .results{padding:0 0 50px;}
 .results_link{display: flex;flex-direction: column;border:1px solid #373D44;transition:all .3s;padding:20px 15px 15px 25px;}
 .txt_gray{color:#666666;left:auto;top:auto;}
@@ -227,11 +229,17 @@ html, body{height:100%;}
   .greeting__block:after{width:calc(100% - 56px);}
   .border_block .btn_consult{font-size:14px;}
   .link__service-block{padding-right:13px;}
-  .gray_block{padding:0 38px 0 25px;}
+  .gray_block{padding:0 28px 15px 15px;}
   .table_height{max-height:381px;}
   .answer_question,.price_service_family,.our_blog{padding:0 0 30px;}
   .our__service-block{padding:50px 0 10px;}
   .features{padding:0 0 10px}
   .content_slider-com:before{width:90%;}
   .content_slider-com:after{width:90%;}
+  .service__link-body{display:block;}
+  .nothover_mask{width:100%;height:100%;}
+  .hover_mask{display:none;}
+}
+@media(max-width:450px){
+  .mob_width{width:100%;}
 }
