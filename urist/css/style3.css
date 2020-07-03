@@ -190,4 +190,5 @@ html, body{height:100%;}
   .greeting__body{padding:0 15px;}
   .greeting__foto{padding:0;}
   .greeting__block:after{width:calc(100% - 56px);}
+  .border_block .btn_consult{font-size:14px;}
 }
