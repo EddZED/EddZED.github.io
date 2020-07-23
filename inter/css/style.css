@@ -1,0 +1,9 @@
+html{scroll-behavior:smooth;}
+.block_contact-header{display:flex;flex-direction:column;justify-content:center;text-align:center;}
+.link_phone-header,.link_mail-header{display:inline-block;}
+
+
+
+
+
+
