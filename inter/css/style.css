@@ -1,6 +1,38 @@
+@font-face{font-family:'open-sans';src:url(../font/opensans.ttf);}
 html{scroll-behavior:smooth;}
+body{font-family:'Open Sans';font-size:12px;}
 .block_contact-header{display:flex;flex-direction:column;justify-content:center;text-align:center;}
-.link_phone-header,.link_mail-header{display:inline-block;}
+.link_phone-header,.link_mail-header{display:inline-block;line-height:16px;}
+.link_phone-header{color:#000;}
+.link_mail-header{color:#212F64;}
+.label_search{position:relative;}
+.input_search-header{border:none;outline:none;border-radius:20px;background-color:#EDEDED;padding:5px 15px;}
+.btn_search{position:absolute;right:5px;top:0;bottom:0;margin:auto;background-color:transparent;border:none;}
+.btn_search:hover,.btn_search:focus{outline:none;}
+.input_search-header::-webkit-input-placeholder{font-family:12px;color:rgba(0,0,0,.2);}
+.input_search-header::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input_search-header::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input_search-header:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input_search-header:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input_search-header:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input_search-header:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input_search-header:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input_search-header:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+.personal_account a,.language_block a{color:#212F64;line-height:16px;}
+.personal_account{}
+.personal_account-btn{display:inline-block;text-align:center;}
+.language_block{display:inline-block;}
+.language_block-ru{padding-right:10px;position:relative;}
+.language_block-ru:after{content:'|';position:absolute;right:0;color:}
+.header-bottom-bg {
+  background-image: url(../img/bg_header.jpg);
+  background-size: cover;
+  background-position: center center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 44.07%, #FFFFFF 132.21%), #8F9EB5;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
 
 
 
