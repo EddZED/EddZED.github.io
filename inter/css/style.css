@@ -49,16 +49,16 @@ body{font-family:'Open Sans';font-size:12px;}
 .block_icon-item{justify-content:center;align-items:center;display:flex;flex-direction:column;padding:0 15px;}
 .text-contetn{color:#383838;line-height:16px;}
 .logistic{padding:70px 0;background-image:url(../img/bg_section.jpg);background-size:cover;background-position:center center;}
-.gray_bg{background-color:#EAEAEA;padding:50px 0;}
+.gray_bg{background-color:#EAEAEA;padding:70px 0;}
 .sheme_work{padding:60px 0 70px;}
 .time{padding:70px 0;background-image:url(../img/bg_section_2.jpg);background-size:cover;background-position:center center;}
-
-
-
-
-
-
-
+.name_input{white-space: nowrap;}
+.input_form{display:inline-block;width:100%;border:none;outline:none;border-radius:3px;padding:5px 15px;}
+.txt_ar{min-height:110px;}
+.box_privacy-chek{display:flex;align-items:center;}
+.link_privacy{display:block;color:#04477B;}
+.order_form-btn{border:1px solid transparent;background-color:#212F64;border-radius:8px;padding:8px 25px;color:#fff;font-size:14px;line-height:19px;transition:all .3s;}
+.order_form-btn:hover{border-color:#212F64;background-color:#fff;color:#212F64;}
 
 
 @media(max-width:991px){
@@ -78,4 +78,5 @@ body{font-family:'Open Sans';font-size:12px;}
 }
 @media(max-width:565px){
   .width_mobile{width:100%;}
+  .lbl_form{flex-wrap:wrap;}
 }
