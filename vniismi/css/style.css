@@ -113,7 +113,7 @@ body{margin:0;padding:0;}
 .bl_txt[:placeholder]{font-size:16px;color:#57576B;opacity:.5;font-family:'Gothem-medium';}
 .bl_txt{margin-top:40px;width:100%;border:none;border-bottom:1px solid #18176B;font-size:16px; color:#18176B;font-family:'Gothem-medium';}
 .bl_txt:focus,.input_form{outline:none;}
-
+.slider_item{display:block;}
 
 
 @media(min-width:1400px){
