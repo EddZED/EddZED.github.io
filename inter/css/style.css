@@ -25,7 +25,7 @@ body{font-family:'Open Sans';font-size:12px;}
 .language_block-ru{padding-right:10px;position:relative;}
 .language_block-ru:after{content:'|';position:absolute;right:0;color:}
 .header-bottom-bg{background:transparent;}
-.header_menu-block{position:relative;}
+.header_menu-block{position:relative;min-height:60px;}
 .nav-item .nav-link{color:#fff;font-size:18px;line-height:25px;font-weight:bold;}
 .intro{min-height:447px;background-image:url(../img/bg_header.jpg);background-size:cover;background-position:center center;margin-top:-57px;}
 .btn_menu{display:none;position:relative;transition:all .3s;}
@@ -81,6 +81,10 @@ body{font-family:'Open Sans';font-size:12px;}
 .mail_img{position:relative;}
 .mail_img:before{content:'';position:absolute;width:15px;height:12px;background-image:url(../img/mail.png);background-size:cover;left:-18px;top:4px;}
 .border_dached{position:absolute;border:1px dashed #869DCA;width:48%;height:1px;top:32px;right:-38px;}
+.bg_menu-other-page{width:100%;background-image:url(../img/bg_header.jpg);background-size:cover;background-position:top center;margin-top:-62px;min-height:60px;}
+
+
+
 
 
 
@@ -94,6 +98,7 @@ body{font-family:'Open Sans';font-size:12px;}
   .pad_md{padding-top:5px;}
   .block_icon-features{justify-content:center;}
   .width_mobile{width:33%;}
+  .bg_menu-other-page{display:none;}
 }
 @media(max-width:767px){
   .block_link-service{margin-left:0;margin-right:0;}
