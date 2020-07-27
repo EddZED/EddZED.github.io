@@ -130,6 +130,13 @@ body{font-family:'Open Sans';font-size:12px;}
 .block_file_btn{display:inline-flex;flex-direction:column;}
 .ar_list{transition:all .3s;}
 .link_list-left[aria-expanded="false"] + .ar_list{transform:rotateX(180deg);}
+.list_kons{font-size:14px;color:#383838;padding-left:18px;line-height:30px;}
+
+
+
+
+
+
 
 @media(max-width:991px){
   .navbar{padding:0;}
