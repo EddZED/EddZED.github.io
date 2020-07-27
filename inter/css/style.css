@@ -112,16 +112,16 @@ body{font-family:'Open Sans';font-size:12px;}
 .tab_traffic .nav-item:hover{background-color:#7C8EAA;}
 .tab_traffic .nav-item:hover .nav-link{text-decoration:none;color:#fff}
 .tab_traffic .nav-link{border:none;}
-.tab_traffic .nav-tabs{border-bottom:2px solid#7C8EAA;}
+.tab_traffic.nav-tabs{border-bottom:2px solid#7C8EAA;}
 .tab_destination{border:none;}
 .tab_destination .nav-link{border:none;}
 .tab_destination .nav-item{padding:5px 15px;}
 .tab_destination .nav-item .nav-link{display:inline-block;background-color:#fff;border:1px solid #DFEBFF;border-radius:20px;font-size:12px;line-height:16px;text-transform:uppercase;color:#383838;font-weight:normal;}
 .tab_destination .nav-item .active.nav-link{background-color:#DFEBFF;}
-
-
-
-
+.tab-time thead tr th{background-color:#F0F0F0;text-align:center;}
+.tab-time tr th{padding:4px 20px;text-align:left;font-size:12px;font-weight:normal;color:#383838;}
+.tab-time tbody tr:last-of-type{border-bottom:1px solid #EEEEEE;}
+.tab-time tbody tr th{border-left:1px solid#eeeeee;border-right:1px solid #eee;}
 
 
 @media(max-width:991px){
