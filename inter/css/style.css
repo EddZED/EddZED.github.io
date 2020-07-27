@@ -122,6 +122,12 @@ body{font-family:'Open Sans';font-size:12px;}
 .tab-time tr th{padding:4px 20px;text-align:left;font-size:12px;font-weight:normal;color:#383838;}
 .tab-time tbody tr:last-of-type{border-bottom:1px solid #EEEEEE;}
 .tab-time tbody tr th{border-left:1px solid#eeeeee;border-right:1px solid #eee;}
+.content_docs{font-size:14px;color:#383838;line-height:33px;}
+.content_docs span{font-weight:bold;}
+.download_file{display:inline-flex;align-items:center;color:#212F64;font-size:12px;}
+.download_file span{font-size:11px;color:#B4B4B4;}
+.download_file:hover{text-decoration:none;}
+.block_file_btn{display:inline-flex;flex-direction:column;}
 
 
 @media(max-width:991px){
