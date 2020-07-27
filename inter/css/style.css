@@ -128,7 +128,8 @@ body{font-family:'Open Sans';font-size:12px;}
 .download_file span{font-size:11px;color:#B4B4B4;}
 .download_file:hover{text-decoration:none;}
 .block_file_btn{display:inline-flex;flex-direction:column;}
-
+.ar_list{transition:all .3s;}
+.link_list-left[aria-expanded="false"] + .ar_list{transform:rotateX(180deg);}
 
 @media(max-width:991px){
   .navbar{padding:0;}
