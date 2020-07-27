@@ -95,6 +95,11 @@ body{font-family:'Open Sans';font-size:12px;}
 .page-item:hover .page-link{font-weight:bold;color:#212F64;border-color:#212F64;}
 .news_block-content{position:relative;max-height:115px;overflow:hidden;transition:max-height .5s;}
 .news_block-content.height_all{max-height:999px;}
+.breadcrumb{background-color:transparent;}
+.breadcrumb .breadcrumb-item {font-size:10px;line-height:14px;}
+.breadcrumb-item a{color:#212F64;}
+.breadcrumb .breadcrumb-item.active{font-size:10px;line-height:14px;color:#191919;}
+
 
 @media(max-width:991px){
   .navbar{padding:0;}
