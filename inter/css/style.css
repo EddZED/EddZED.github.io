@@ -88,9 +88,13 @@ body{font-family:'Open Sans';font-size:12px;}
 .data_news{position:absolute;color:#7C7C7C;font-size:12px;right:15px;top:5px;}
 .link_fullnews{color:#212F64;font-size:14px;line-height:19px;}
 .height_desc{height:100%;}
-
-
-
+.pagination{background-color:#F5F5F5;}
+.page-item.disabled .page-link{background-color:transparent;border-color:transparent;}
+.page-item .page-link{background-color:transparent;border:none;color:#383838;font-size:15px;padding:7px 15px;transition:all .3s;border-bottom:3px solid transparent;}
+.page-item.active .page-link{background-color:transparent;font-size:15px;font-weight:bold;color:#212F64;border-color:#212F64;}
+.page-item:hover .page-link{font-weight:bold;color:#212F64;border-color:#212F64;}
+.news_block-content{position:relative;max-height:115px;overflow:hidden;transition:max-height .5s;}
+.news_block-content.height_all{max-height:999px;}
 
 @media(max-width:991px){
   .navbar{padding:0;}
