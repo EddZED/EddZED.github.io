@@ -90,7 +90,7 @@ body{font-family:'Open Sans';font-size:12px;}
 .height_desc{height:100%;}
 .pagination{background-color:#F5F5F5;}
 .page-item.disabled .page-link{background-color:transparent;border-color:transparent;}
-.page-item .page-link{background-color:transparent;border:none;color:#383838;font-size:15px;padding:7px 15px;transition:all .3s;border-bottom:3px solid transparent;}
+.page-item .page-link{background-color:transparent;border:none;color:#383838;font-size:15px;padding:7px 16px;transition:all .3s;border-bottom:3px solid transparent;}
 .page-item.active .page-link{background-color:transparent;font-size:15px;font-weight:bold;color:#212F64;border-color:#212F64;}
 .page-item:hover .page-link{font-weight:bold;color:#212F64;border-color:#212F64;}
 .news_block-content{position:relative;max-height:115px;overflow:hidden;transition:max-height .5s;}
@@ -118,6 +118,10 @@ body{font-family:'Open Sans';font-size:12px;}
 .tab_destination .nav-item{padding:5px 15px;}
 .tab_destination .nav-item .nav-link{display:inline-block;background-color:#fff;border:1px solid #DFEBFF;border-radius:20px;font-size:12px;line-height:16px;text-transform:uppercase;color:#383838;font-weight:normal;}
 .tab_destination .nav-item .active.nav-link{background-color:#DFEBFF;}
+.img_active{display:block;}
+.img_hover{display:none;}
+.tab_traffic .nav-item .active.nav-link .img_hover{display:block;}
+.tab_traffic .nav-item .active.nav-link .img_active{display:none;}
 .tab-time thead tr th{background-color:#F0F0F0;text-align:center;}
 .tab-time tr th{padding:4px 20px;text-align:left;font-size:12px;font-weight:normal;color:#383838;}
 .tab-time tbody tr:last-of-type{border-bottom:1px solid #EEEEEE;}
@@ -149,16 +153,20 @@ body{font-family:'Open Sans';font-size:12px;}
   .block_icon-features{justify-content:center;}
   .width_mobile{width:33%;}
   .bg_menu-other-page{display:none;}
+  .tab_destination .nav-item{padding:5px;}
 }
 @media(max-width:767px){
   .block_link-service{margin-left:0;margin-right:0;}
   .pad-sm{padding-top:5px;}
   .link_horizont{flex-direction:column;}
   .width_mobile{width:50%;}
-  .data_news{bottom:0;top:auto;}
+  .data_news{bottom:-1px;top:auto;}
   .height_desc{height:auto;}
 }
 @media(max-width:565px){
   .width_mobile{width:100%;}
   .lbl_form{flex-wrap:wrap;}
+  .tab-time{width:100%;}
+  .tab_destination .nav-item{width:100%;}
+  .tab_destination .nav-item .nav-link{width:100%;text-align:center;}
 }
