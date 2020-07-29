@@ -82,7 +82,7 @@
                         реализации программы по вашей заявке составит от 2 до 6 месяцев. После заполнения заявки, вы
                         получите персональное предложение от клуба Frendex в личном сообщении. После внесения средств на
                         счет, программа начнет работать в соответсвии с заключенными условиями</p>
-                        <button class="btn_order ml-2 mt-3" type="submit"><span>Оставить заявку</span></button>
+                        <button class="btn_order ml-2 mt-3" type="button" data-toggle="modal" data-target="#modal-order"><span>Оставить заявку</span></button>
                       </div>
                     </div>
                   </fieldset>
@@ -98,8 +98,20 @@
     </section>
 
 
-
-
+    <!--Модалка-->
+    <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby=""
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content d-flex align-items-center justify-content-center flex-column">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img class="img-fluid" src="img/close.png" alt="крестик"></span>
+          </button>
+          <img class="img-fluid" src="img/galka.png" alt="заявка принята">
+          <p class="title_modal pt-3">Заявка принята</p>
+          <p class="text_content">В ближайшее время<br>с вами свяжется менеджер</p>
+        </div>
+      </div>
+    </div>
 
 
 

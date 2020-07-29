@@ -33,11 +33,12 @@ body{font-family:'PT sans';}
 .btn_order{display:inline-block;border:none;outline:none;background:#4552F3;border-radius: 8px;padding:20px 40px;font-size:16px;line-height:21px;color:#fff;letter-spacing:0.01em;transform:skew(-10deg);border:1px solid transparent;transition:all .3s;}
 .btn_order span{transform:skew(10deg);display:inline-block;}
 .btn_order:hover{border-color:#4552F3;background:transparent;}
+.btn_order:focus{outline:none;}
 .whtspc{white-space: nowrap;}
 .btn_condition:nth-of-type(1){margin-bottom:0;}
-
-
-
+.modal-content{background: #121420;box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);border-radius: 18px;padding:60px 20px 30px;text-align:center;}
+.close{position:absolute;top:20px;right:30px;}
+.title_modal{font-size:22px;line-height:28px;letter-spacing:0.01em;color:#fff;}
 
 @media(max-width:767px){
   .btn_condition{padding-right:20px;}
