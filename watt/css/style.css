@@ -1,8 +1,8 @@
 html{scroll-behavior: smooth;}
 .header_menu{display:flex;width:100%;padding:10px 15px;}
-.header_menu-desctop{display:flex;list-style:none;margin:0;}
-
-
+.header_menu-desctop{display:flex;list-style:none;margin:0;justify-content:space-between;padding:0 15px;}
+.header_menu-desctop .menu_item-desc{padding:5px 15px;}
+.box_right{display:flex;justify-content:space-between;}
 
 
 
