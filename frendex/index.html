@@ -22,11 +22,11 @@
                         <input type="radio" class="inp_condition" name="condition" value="new">
                         <span class="name_btn">новый</span>
                       </label>
-                      <label class="btn_condition pr-0 pr-md-3 m-0">
+                      <label class="btn_condition inp_block pr-0 pr-md-3 m-0">
                         <input type="radio" class="inp_condition" name="condition"  value="used" checked>
                         <span class="name_btn">подержанный</span>
                       </label>
-                      <input type="text" class="input_form mt-3 mt-md-0" placeholder="Введите год выпуска ТС">
+                      <input type="text" id="used_car" class="input_form inp_none mt-3 mt-md-0" placeholder="Введите год выпуска ТС">
                     </div>
                     <div class="price_auto pt-4 pt-lg-5 col-lg-9">
                       <p class="text_content">Выберите стоимость автомобиля</p>
@@ -124,7 +124,6 @@
         from: val
         });
         });
-
-    </script>
+     </script>
   </body>
 </html>
