@@ -13,25 +13,31 @@
       <div class="container">
         <div class="row">
           <nav class="header_menu">
-            <div class="col-8 col-sm-6">
+            <div class="col-8 col-sm-6 py-2">
               <div class="row justify-content-between">
                 <a href="#" class="header_menu-logo"><img class="img-fluid" src="img/logo.png" alt="watt group"></a>
-                <input type="text" class="input_searach-header" placeholder="Поиск">
+                <label for="" class="label_search m-0">
+                  <input type="text" class="input_searach-header" placeholder="Поиск">
+                  <button class="btn_search"><img class="img-fluid" src="img/searach_icon.png" alt="поиск"></button>
+                </label>
               </div>
             </div>
-            <div class="col-4 col-sm-6">
+            <div class="col-4 col-sm-6 py-2">
               <div class="row align-items-center justify-content-end">
                 <ul class="header_menu-desctop">
-                  <li class="menu_item-desc"><a href="" class="menu_link-desc">Каталог</a></li>
-                  <li class="menu_item-desc"><a href="" class="menu_link-desc">Акции</a></li>
-                  <li class="menu_item-desc"><a href="" class="menu_link-desc">Новинки</a></li>
-                  <li class="menu_item-desc"><a href="" class="menu_link-desc">Контакты</a></li>
+                  <li class="menu_item-desc"><a href="#" class="menu_link-desc">Каталог</a></li>
+                  <li class="menu_item-desc"><a href="#" class="menu_link-desc">Акции</a></li>
+                  <li class="menu_item-desc"><a href="#" class="menu_link-desc">Новинки</a></li>
+                  <li class="menu_item-desc"><a href="#" class="menu_link-desc">Контакты</a></li>
                 </ul>
                 <div class="box_right">
                   <a href="#" class="cart mr-2"><img src="img/cart.png" alt=""></a>
                   <button class="burger_menu"><span></span></button>
                 </div>
               </div>
+            </div>
+            <div class="header_menu-hidden">
+
             </div>
           </nav>
         </div>
@@ -46,5 +52,17 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('.burger_menu').click(function () {
+    $('.header_menu-hidden').toggleClass('active');
+    $('.burger_menu').toggleClass('active');
+    });
+  </script>
+  <script>
+    $('.menu_link-desc').click(function () {
+      $('.menu_link-desc').removeClass('active');
+      $(this).toggleClass('active');
+    });
+  </script>
 </body>
 </html>
