@@ -73,6 +73,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .cart{z-index:2;}
   .blue_text{color:#000;}
   .hidden_menu-list{justify-content:flex-start;padding-left:0;}
+  .menu_item-list{display:none;}
   .header_menu-logo{display:flex;flex:0 0 130px;}
   .menu_link-hidden{letter-spacing: 0.03em;font-family:'futura_medium';font-weight:normal;}
   .menu_item-hidden:not(:nth-of-type(1)){padding-top:15px;}
