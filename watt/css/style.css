@@ -3,6 +3,7 @@
 @font-face{font-family:'futura_medium';src:url(../font/FuturaPT-Medium.ttf);}
 html{scroll-behavior: smooth;}
 body{overflow-x:hidden;font-family:'futura_light';}
+.wrapper{overflow:hidden;}
 .lock{overflow:hidden;}
 .header_menu{display:flex;width:100%;position:relative;align-items:flex-end;padding:0 15px;}
 .header_menu-desctop{display:flex;list-style:none;margin:0;justify-content:space-between;padding:0 15px;}
@@ -80,19 +81,19 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .discount{display:inline-flex;position:absolute;width:46px;height:46px;border-radius:50%;background-color:#D30000;font-size:14px;line-height:18px;font-family:'futura_medium';font-weight:bold;color:#fff;top:10px;right:10px;align-items:center;justify-content:center;}
 .stocks{padding:50px 0;}
 .text_content_2{font-size:17px;line-height:28px;font-family:'futura_medium';color:#3A3A3A;letter-spacing:0.02em;}
-.stocks .box_catalog{display:flex;height:auto;}
+.stocks .box_catalog{display:flex;max-height:393px;}
 .stocks_day-img{position:relative;text-align:right;right:-50px;}
 .month_stock-block{background-color:#B0D7F4;padding:30px 10px 30px 30px;position:relative;}
 .margin_top-min{margin-top:-80px;}
-
-
-
-
-
-
-
-
-
+.subscription_form{border: 0.3px solid #3A3A3A;background:#fff;padding:20px;}
+.text_subscrip{font-weight: 450;font-size: 17px;line-height: 20px;letter-spacing: 0.02em;color: #BABABA;font-family:'futura_medium';}
+.input_form-block{position:relative;display:flex;justify-content:space-between;padding-bottom:5px;border-bottom:0.6px solid #3A3A3A;}
+.input_form{border:none;width:100%;}
+.input_form:focus, .input_form:hover{outline:none;}
+.btn_light{border:none;background-color:transparent;font-size:17px;line-height:20px;letter-spacing:0.02em;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
+.adventages{padding:50px 0;}
+.title_adventages{font-size:17px;line-height:22px;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
+.desc_adventages{font-size:15px;line-height:17px;color:#BABABA;}
 
 
 @media(min-width:768px){
@@ -107,6 +108,8 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .label_search, .header_menu-desctop{display:none;}
   .header_menu-hidden{width:70%;}
   .header_menu-hidden.active{right:-20%;}
+  .month_stock-block, .subscription_form{padding-left:15px;padding-right:15px;}
+  .stocks .box_catalog{height:auto;}
 }
 @media(max-width:767px){
   .header_menu-hidden{width:100%;}
@@ -130,6 +133,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .title_content{font-size:26px;}
   .img_light{position:relative;}
   .nav_slider{justify-content:center;}
+  .stocks, .recomended_goods{padding-top:0;}
 }
 @media(max-width:576px){
   .burger_menu.active:before{top:17px;}
