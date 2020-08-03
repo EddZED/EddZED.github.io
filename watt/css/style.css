@@ -18,7 +18,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .header_menu-desctop .menu_item-desc .menu_link-desc:before{content:'';position:absolute;bottom:0;right:0;width:0%;background-color:#5796C6;height:4px;transition:width .3s ease;}
 .header_menu-desctop .menu_item-desc .menu_link-desc:hover:before, .header_menu-desctop .menu_item-desc .menu_link-desc.active:before{width:100%;left:0;}
 .header_menu-hidden{width:50%;height:100vh;background-color:#F7FAFC;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);position:absolute;top:0;right:-150%;transition:all .3s;opacity:0;}
-.header_menu-hidden.active{right:-10%;opacity:1;}
+.header_menu-hidden.active{right:-10%;opacity:1;z-index:1;}
 .burger_menu{z-index:2;position:relative;border:none;outline:none;background-color:transparent;width:35px;padding:10px 5px;transition:all .3s;}
 .burger_menu span{position:absolute;width:100%;height:3px;background:#3A3A3A;left:0;transition:all .3s;}
 .burger_menu:before, .burger_menu:after{content:'';position:absolute;width:100%;height:3px;background:#3A3A3A;left:0;transition:all .3s;}
@@ -48,6 +48,19 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .link_social li a{color:#5796c6;font-size:25px;opacity:.7;transition:all .3s;}
 .link_social li a:hover{opacity:1;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 .search_mobile{border:none;background-color:transparent;}
+.social_link-intro .link_social{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.title_intro{font-size:40px;font-family:'futura_medium';font-weight:bold;color:#000;line-height:44px;}
+.content_text{font-size:16px;line-height:19px;font-family:'futura_medium';color:#000;}
+.slider_item{position:relative;}
+.title_slider{position:absolute;background-color:#fff;bottom:0;right:0;padding:15px 60px 15px 30px;}
+.name_goods-slider{font-size:16px;line-height:21px;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
+.nav_slider{display:flex;justify-content:flex-end;width:100%;}
+.link_to{font-size:16px;line-height:21px;font-family:'futura_medium';font-weight:bold;color:#5796C6;opacity:1;}
+.link_to:hover{text-decoration:none;opacity:.7;color:#5796C6;}
+
+
+
+
 
 
 @media(min-width:768px){
@@ -80,7 +93,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .hidden_menu-list .blue_text {padding-top:30px;}
   .hidden_menu-list .block_contact{padding-top:20px;}
   .contact_link{font-size:17px;letter-spacing:0.03em;color:#5796C6;padding-top:15px;}
-  .link_social{position:absolute;right:0;bottom:0;flex-direction:column;align-items:center;}
+  .hidden_menu-list.link_social{position:absolute;right:0;bottom:0;flex-direction:column;align-items:center;}
 }
 @media(max-width:576px){
   .burger_menu.active:before{top:17px;}
