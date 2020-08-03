@@ -3,7 +3,6 @@
 @font-face{font-family:'futura_medium';src:url(../font/FuturaPT-Medium.ttf);}
 html{scroll-behavior: smooth;}
 body{overflow-x:hidden;font-family:'futura_light';}
-.wrapper{}
 .lock{overflow:hidden;}
 .header_menu{display:flex;width:100%;position:relative;align-items:flex-end;padding:0 15px;}
 .header_menu-desctop{display:flex;list-style:none;margin:0;justify-content:space-between;padding:0 15px;}
@@ -17,8 +16,8 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .header_menu-desctop .menu_item-desc .menu_link-desc:hover{text-decoration:none;}
 .header_menu-desctop .menu_item-desc .menu_link-desc:before{content:'';position:absolute;bottom:0;right:0;width:0%;background-color:#5796C6;height:4px;transition:width .3s ease;}
 .header_menu-desctop .menu_item-desc .menu_link-desc:hover:before, .header_menu-desctop .menu_item-desc .menu_link-desc.active:before{width:100%;left:0;}
-.header_menu-hidden{width:50%;height:100vh;background-color:#F7FAFC;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);position:absolute;top:0;right:-150%;transition:all .3s;opacity:0;}
-.header_menu-hidden.active{right:-10%;opacity:1;z-index:1;}
+.header_menu-hidden{width:50%;height:100vh;background-color:#F7FAFC;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);position:absolute;top:0;right:-150%;transition:all .3s;opacity:0;visibility: hidden;}
+.header_menu-hidden.active{right:-10%;opacity:1;z-index:1;visibility:visible;}
 .burger_menu{z-index:2;position:relative;border:none;outline:none;background-color:transparent;width:35px;padding:10px 5px;transition:all .3s;}
 .burger_menu span{position:absolute;width:100%;height:3px;background:#3A3A3A;left:0;transition:all .3s;}
 .burger_menu:before, .burger_menu:after{content:'';position:absolute;width:100%;height:3px;background:#3A3A3A;left:0;transition:all .3s;}
@@ -70,6 +69,31 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .min{font-size:20px;}
 .midl{font-size:22px;}
 .recomended_goods{padding:50px 0;}
+.card_goods{position:relative;display:flex;flex-direction:column;justify-content:space-between;background-color:#FAFAFA;transition:all .3s;height:100%;}
+.card_goods:hover{box-shadow:0px 4px 20px rgba(0, 0, 0, 0.2);text-decoration:none;}
+.block_desc-goods{width:100%;background-color:#fff;padding:20px 15px;position:relative;}
+.name_goods-card{font-size:14px;line-height:18px;font-family:'futura_medium';font-weight:bold;color:#3A3A3A;}
+.price_goods-card{font-size:14px;line-height:18px;font-family:'futura_medium';font-weight:450;color:#BABABA;}
+.block_img-goods{display:flex;align-items:center;justify-content:center;height:100%;}
+.link_cart-card{display:inline-block;position:absolute;top:27px;right:15px;opacity:0;transition:opacity .3s ease;}
+.card_goods:hover .link_cart-card{opacity:1;}
+.discount{display:inline-flex;position:absolute;width:46px;height:46px;border-radius:50%;background-color:#D30000;font-size:14px;line-height:18px;font-family:'futura_medium';font-weight:bold;color:#fff;top:10px;right:10px;align-items:center;justify-content:center;}
+.stocks{padding:50px 0;}
+.text_content_2{font-size:17px;line-height:28px;font-family:'futura_medium';color:#3A3A3A;letter-spacing:0.02em;}
+.stocks .box_catalog{display:flex;height:auto;}
+.stocks_day-img{position:relative;text-align:right;right:-50px;}
+.month_stock-block{background-color:#B0D7F4;padding:30px 10px 30px 30px;position:relative;}
+.margin_top-min{margin-top:-80px;}
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width:768px){
   .h-md-100{height:100% !important;}
@@ -101,7 +125,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .hidden_menu-list .blue_text {padding-top:30px;}
   .hidden_menu-list .block_contact{padding-top:20px;}
   .contact_link{font-size:17px;letter-spacing:0.03em;color:#5796C6;padding-top:15px;}
-  .hidden_menu-list.link_social{position:absolute;right:0;bottom:0;flex-direction:column;align-items:center;}
+  .hidden_menu-list .link_social{position:absolute;right:0;bottom:0;flex-direction:column;align-items:center;}
   .name_catalog{font-size:20px;line-height:20px;}
   .title_content{font-size:26px;}
   .img_light{position:relative;}
