@@ -6,6 +6,7 @@
   <title>WATT Group</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
@@ -13,7 +14,7 @@
       <div class="container">
         <div class="row">
           <nav class="header_menu">
-            <div class="col-8 col-sm-6 py-2">
+            <div class="col-7 col-sm-6 py-2">
               <div class="row justify-content-between">
                 <a href="#" class="header_menu-logo"><img class="img-fluid" src="img/logo.png" alt="watt group"></a>
                 <label for="" class="label_search m-0">
@@ -22,7 +23,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-4 col-sm-6 py-2">
+            <div class="col-5 col-sm-6 py-2">
               <div class="row align-items-center justify-content-end">
                 <ul class="header_menu-desctop">
                   <li class="menu_item-desc"><a href="#" class="menu_link-desc">Каталог</a></li>
@@ -31,13 +32,50 @@
                   <li class="menu_item-desc"><a href="#" class="menu_link-desc">Контакты</a></li>
                 </ul>
                 <div class="box_right">
-                  <a href="#" class="cart mr-2"><img src="img/cart.png" alt=""></a>
+                  <button class="search_mobile d-lg-none mr-2"><img class="img-fluid" src="img/searach_icon-mobile.png" alt="поиск"></button>
+                  <a href="#" class="cart mr-3"><img src="img/cart.png" alt=""></a>
                   <button class="burger_menu"><span></span></button>
                 </div>
               </div>
             </div>
             <div class="header_menu-hidden">
-
+              <div class="container h-md-100">
+                <div class="row h-md-100 pt-5">
+                  <div class="col-md-10 pt-3 pt-md-5">
+                    <ul class="hidden_menu-list">
+                      <li class="menu_item-hidden">
+                        <a href="#" class="w-100 menu_link-hidden" type="button" data-toggle="collapse" data-target="#catalog_list" aria-expanded="true" aria-controls="catalog_list">Каталог<img class="img-fluid arrow d-none d-md-block" src="img/up-arrow.png" alt=""></a>
+                        <ul id="catalog_list" class="menu_item-list d-none d-md-block collapse show">
+                          <li class="menu_item"><a href="#" class="">Уличные светильники</a></li>
+                          <li class="menu_item"><a href="#" class="">Управление светом</a></li>
+                          <li class="menu_item"><a href="#" class="">Светильники ЖКХ</a></li>
+                          <li class="menu_item"><a href="#" class="">Светильники для школ</a></li>
+                          <li class="menu_item"><a href="#" class="">Комплектующие</a></li>
+                          <li class="menu_item"><a href="#" class="">Кроштейн и крипёж</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">Акции</a></li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">Новинки</a></li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">Оплата и доставка</a></li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">Новинки</a></li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">О компании</a></li>
+                      <li class="menu_item-hidden"><a href="#" class="menu_link-hidden">Контакты</a></li>
+                      <p class="blue_text m-0">контакты</p>
+                      <div class="block_contact">
+                        <a href="tel:+74957409878" class="contact_link">+7 (495) 740-98-78</a>
+                        <a href="mailto:info@wattgroup.ru" class="contact_link">info@wattgroup.ru</a>
+                      </div>
+                      <p class="blue_text d-none d-md-block pt-2">соц.сети</p>
+                      <ul class="link_social pb-3">
+                        <li class=""><a href="" class=""><i class="fab fa-instagram"></i></a></li>
+                        <li class=""><a href="" class=""><i class="fab fa-vk"></i></a></li>
+                        <li class=""><a href="" class=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class=""><a href="" class=""><i class="fas fa-envelope"></i></a></li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
@@ -52,10 +90,12 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
   <script>
     $('.burger_menu').click(function () {
     $('.header_menu-hidden').toggleClass('active');
     $('.burger_menu').toggleClass('active');
+    $('body').toggleClass('lock');
     });
   </script>
   <script>
