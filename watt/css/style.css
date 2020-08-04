@@ -110,6 +110,11 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .breadcrumb-item a:hover{text-decoration:none;opacity:.7;}
 .breadcrumb-item.active{color:#5796C6;font-size:16px;line-height:21px;font-family:'futura_medium';}
 .line_height{line-height:20px;}
+.block_type{background:#3A3A3A;transition:all .3s;}
+.type_name{font-size:16px;line-height:21px;color:#fff;font-family:'futura_medium';font-weight:bold;text-transform:uppercase;text-align:center;padding:5px 0;}
+.street_light_block{padding:0 0 50px;}
+.street_light_block .card_goods:hover .block_type{background:#5796C6;}
+.new{background:#19B400;text-transform:uppercase;}
 
 
 
