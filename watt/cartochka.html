@@ -143,18 +143,49 @@
                 <p class="green_text"><img src="img/galka.png" class="img-fluid pr-3" alt="">Есть в наличии</p>
               </div>
             </div>
-            <label for="select" class="select">
-              <input type="radio" name="list" value="not_changed" id="bg" checked />
-              <input type="radio" name="list" value="not_changed" id="select">
-              <label class="bg" for="bg"></label>
-              <div class="items">
-                <input type="radio" name="list" value="first_value" id="list[0]">
-                <label for="list[0]">First option</label>
-                <input type="radio" name="list" value="second_value" id="list[1]">
-                <label for="list[1]">Second loooooong option</label>
-                <span id="text">Select something...</span>
+            <div class="row">
+              <div class="col-lg-12 col-8">
+                <form action="">
+                  <p class="power">Мощность</p>
+                  <select name="" id="" class="select">
+                    <option value="">100вт</option>
+                    <option value="">200вт</option>
+                    <option value="">250вт</option>
+                    <option value="">400вт</option>
+                  </select>
+                </form>
               </div>
-          </label>
+              <div class="col-lg-2 col-4 pt-lg-5">
+                <div class="counter_block">
+                  <input type="text" class="input_counter" value="1">
+                  <span class="up"><img src="img/coun_up.png" class="img-fluid c_up" alt=""></span>
+                  <span class="down"><img src="img/count_down.png" class="img-fluid c_down" alt=""></span>
+                </div>
+              </div>
+              <div class="col-lg-9 col-12 text-center text-lg-left pt-5">
+                <button class="blue_btn">Добавить в корзину</button>
+              </div>
+            </div>
+            <table class="characteristic pt-lg-5 pt-4">
+              <thead>
+                <tr class="mb-3">
+                  <th>Потребляемая мощност</th>
+                  <th>48 Вт</th>
+                </tr>
+                <tr class="mb-3">
+                  <th>Цвет свечения</th>
+                  <th>Белый</th>
+                </tr>
+                <tr class="mb-3">
+                  <th>Габаритные размеры</th>
+                  <th>400х106х56 мм</th>
+                </tr>
+                <tr>
+                  <th>Гарантия</th>
+                  <th>5 лет</th>
+                </tr>
+              </thead>
+            </table>
           </div>
         </div>
       </div>
@@ -247,7 +278,24 @@
         $(this).toggleClass('active');
       });
     </script>
-
+    <script>
+      $(document).ready(function() {
+		$('.down').click(function () {
+			var $input = $(this).parent().find('input');
+			var count = parseInt($input.val()) - 1;
+			count = count < 1 ? 1 : count;
+			$input.val(count);
+			$input.change();
+			return false;
+		});
+		$('.up').click(function () {
+			var $input = $(this).parent().find('input');
+			$input.val(parseInt($input.val()) + 1);
+			$input.change();
+			return false;
+		});
+	});
+    </script>
 
 
     </body>
