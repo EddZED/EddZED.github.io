@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>УКарточка товара</title>
+  <title>Карточка товара</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/all.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet">
+  <link href="css/slick-theme.css" rel="stylesheet">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header">
@@ -98,7 +99,66 @@
         </nav>
       </div>
     </div>
-
+    <section class="card_goods-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="view_window-slider">
+              <div class="slider_card-item">
+                <img class="img-fluid py-4" src="img/svet1.png" alt="">
+              </div>
+              <div class="slider_card-item">
+                <img class="img-fluid py-4" src="img/svet2.png" alt="">
+              </div>
+              <div class="slider_card-item">
+                <img class="img-fluid py-4" src="img/svet3.png" alt="">
+              </div>
+            </div>
+            <div class="min_card-slider pt-2">
+              <div class="slider_min-item">
+                <div class="col_sl">
+                  <img class="img-fluid py-3 " src="img/svet1_min.png" alt="">
+                </div>
+              </div>
+              <div class="slider_min-item">
+                <div class="col_sl">
+                  <img class="img-fluid py-3" src="img/svet2_min.png" alt="">
+                </div>
+              </div>
+              <div class="slider_min-item">
+                <div class="col_sl">
+                  <img class="img-fluid py-3" src="img/svet3_min.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h1 class="title_card-goods">ВГ СТРИТ 48</h1>
+            <p class="text_content_2 line_height">Идейные соображения высшего порядка, а также укрепление и развитие структуры в значительной степени обуславливает создание новых предложений.</p>
+            <div class="block_price-existence py-3">
+              <div class="col-md-4 col-6 px-0">
+                <p class="price_card">4 200₽</p>
+              </div>
+              <div class="col-md-8 col-6 px-0">
+                <p class="green_text"><img src="img/galka.png" class="img-fluid pr-3" alt="">Есть в наличии</p>
+              </div>
+            </div>
+            <label for="select" class="select">
+              <input type="radio" name="list" value="not_changed" id="bg" checked />
+              <input type="radio" name="list" value="not_changed" id="select">
+              <label class="bg" for="bg"></label>
+              <div class="items">
+                <input type="radio" name="list" value="first_value" id="list[0]">
+                <label for="list[0]">First option</label>
+                <input type="radio" name="list" value="second_value" id="list[1]">
+                <label for="list[1]">Second loooooong option</label>
+                <span id="text">Select something...</span>
+              </div>
+          </label>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -172,6 +232,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/card_slider.js"></script>
     <script>
       $('.burger_menu').click(function () {
         $('.header_menu-hidden').toggleClass('active');
