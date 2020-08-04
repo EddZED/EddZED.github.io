@@ -105,6 +105,11 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .time_work{font-size:17px;line-height:20px;letter-spacing:0.03em;color:#3A3A3A;font-family:'futura_medium';font-weight:450;}
 .bttom_line{width:100%;background:#3A3A3A;opacity:.5;}
 .bottom_text{font-size:15px;color:#3A3A3A;line-height:25px;letter-spacing:0.03em;font-family:'futura_medium';}
+.breadcrumb{background:transparent;}
+.breadcrumb-item a{color:#BABABA;font-size:16px;line-height:21px;font-weight:bold;}
+.breadcrumb-item a:hover{text-decoration:none;opacity:.7;}
+.breadcrumb-item.active{color:#5796C6;font-size:16px;line-height:21px;font-family:'futura_medium';}
+.line_height{line-height:20px;}
 
 
 
