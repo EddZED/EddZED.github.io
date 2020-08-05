@@ -168,6 +168,20 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .btn_promo:hover{opacity:.7;text-decoration:none;color:#5796C6;}
 .btn_like{font-size:17px;line-height:20px;letter-spacing:0.05em;font-weight:bold;text-transform:uppercase;color:#3A3A3A;display:flex;align-items:center;transition:all .3s;justify-content:center;}
 .btn_like:hover{opacity:.7;text-decoration:none;color:#3A3A3A;}
+.name_colum{font-size:26px;line-height:20px;letter-spacing: 0.05em;text-transform: uppercase;color: #3A3A3A;font-weight:bold;font-family:'futura_medium';}
+.gray_text-form{font-size:17px;line-height:20px;letter-spacing: 0.05em;color: #BABABA;}
+.inp_order-form{display:inline-block;border:none;border-bottom:1px solid #BABABA;width:100%;margin-bottom:20px;}
+.inp_order-form::-webkit-input-placeholder{color:#BABABA;}
+.inp_order-form:focus{outline:none;}
+.inp_order-form.color{color:#BABABA;padding-bottom:3px;}
+.info_price-oder{display:flex;flex-direction: column;justify-content: space-between;border:1px solid #3A3A3A;min-height:205px;margin-bottom:35px;}
+.over_price{padding:0 15px;}
+.over_price tbody{display:;flex-direction: column;padding:0 15px;}
+.over_price tbody tr{border-bottom:1px solid #BABABA;margin: 0 15px;display: flex;flex-direction: row;justify-content: space-between;align-items:center;}
+.over_price tbody tr th{padding:15px 15px;font-size:18px;line-height:20px;color:#3A3A3A;font-weight:bold;}
+.over_price tbody tr th:nth-of-type(2){font-size:26px;line-height:33px;color:#BABABA;}
+.over_price .dark_col{color:#3A3A3A !important;}
+
 
 @media(min-width:768px){
   .h-md-100{height:100% !important;}
