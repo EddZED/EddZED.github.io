@@ -149,6 +149,12 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .btn_tab-card{font-size:20px;line-height:20px;letter-spacing: 0.05em;text-transform: uppercase;color: #3A3A3A;font-weight:bold;font-family:'futura_medium';border-bottom:5px solid transparent;padding-bottom:4px;}
 .btn_tab-card:hover{opacity:.7;border-color:#5796C6;text-decoration:none;color: #3A3A3A;}
 .btn_tab-card[aria-expanded="true"]{border-color:#5796C6;}
+.desctop_cart{border-bottom:1px solid #BABABA;margin:0;}
+.cart_name-column{font-size:18px;line-height:20px;color:#3A3A3A;font-family:'futura_medium';}
+
+
+
+
 
 
 
