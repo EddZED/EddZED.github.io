@@ -80,7 +80,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .card_goods:hover .link_cart-card{opacity:1;}
 .discount{display:inline-flex;position:absolute;width:46px;height:46px;border-radius:50%;background-color:#D30000;font-size:14px;line-height:18px;font-family:'futura_medium';font-weight:bold;color:#fff;top:10px;right:10px;align-items:center;justify-content:center;}
 .stocks{padding:50px 0;}
-.text_content_2{font-size:17px;line-height:28px;font-family:'futura_medium';color:#3A3A3A;letter-spacing:0.02em;}
+.text_content_2{font-size:17px;line-height:28px;font-weight:bold;color:#3A3A3A;letter-spacing:0.02em;}
 .stocks .box_catalog{display:flex;max-height:393px;}
 .stocks_day-img{position:relative;text-align:right;right:-50px;}
 .month_stock-block{background-color:#B0D7F4;padding:30px 10px 30px 30px;position:relative;}
@@ -146,9 +146,9 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .characteristic{display:inline-block;}
 .characteristic tr th:nth-of-type(1){color:#BABABA;font-size:17px;line-height:33px;padding-right:20px;}
 .characteristic tr th:nth-of-type(2){font-size: 17px;color:#3A3A3A;}
-
-
-
+.btn_tab-card{font-size:20px;line-height:20px;letter-spacing: 0.05em;text-transform: uppercase;color: #3A3A3A;font-weight:bold;font-family:'futura_medium';border-bottom:5px solid transparent;padding-bottom:4px;}
+.btn_tab-card:hover{opacity:.7;border-color:#5796C6;text-decoration:none;color: #3A3A3A;}
+.btn_tab-card[aria-expanded="true"]{border-color:#5796C6;}
 
 
 
