@@ -51,6 +51,10 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .social_link-intro .link_social{display:flex;flex-direction:column;justify-content:center;align-items:center;}
 .title_intro{font-size:40px;font-family:'futura_medium';font-weight:bold;color:#000;line-height:44px;}
 .content_text{font-size:16px;line-height:19px;font-family:'futura_medium';color:#000;}
+.slider_block{width:100%;}
+.arrow_slider{position: relative;display:flex;align-items:center;}
+.arrow_slider .slick-next, .arrow_slider .slick-prev{position: relative !important;left:auto !important;right:auto !important;top:auto !important;bottom:auto !important;}
+.pos_num{padding-bottom: 7px;padding-left: 19px;}
 .slider_item{position:relative;}
 .title_slider{position:absolute;background-color:#fff;bottom:0;right:0;padding:15px 60px 15px 30px;}
 .name_goods-slider{font-size:16px;line-height:21px;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
