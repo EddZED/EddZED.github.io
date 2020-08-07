@@ -63,7 +63,8 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .link_to:hover{text-decoration:none;opacity:.7;color:#5796C6;}
 .title_content{font-size:35px;line-height:50px;letter-spacing: 0.13em;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
 .block_catalog{padding:50px 0;}
-.box_catalog{position:relative;background-color:#F2F3CA;padding:30px 0px 5px;display:flex;height:100%;flex-wrap:wrap;}
+.box_catalog{position:relative;background-color:#F2F3CA;padding:30px 0px 5px;display:flex;height:100%;flex-wrap:wrap;transition:all .3s;}
+.box_catalog:hover{box-shadow:0 0 20px 5px rgba(0,0,0,.2);cursor: pointer;}
 .num_catalog{font-size:18px;line-height:20px;letter-spacing: 0.13em;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';}
 .name_catalog{font-weight: 450;font-size: 24px;line-height: 35px;letter-spacing: 0.13em;text-transform: uppercase;color: #3A3A3A;font-family:'futura_medium';}
 .link_catal {font-weight: 600;font-size: 20px;line-height: 22px;letter-spacing: 0.02em; text-transform: uppercase;color: #3A3A3A;font-family:'futura_medium';border-bottom:1px solid #000;display:inline-block;transition:all .3s;z-index:1;}
