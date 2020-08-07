@@ -51,6 +51,10 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .social_link-intro .link_social{display:flex;flex-direction:column;justify-content:center;align-items:center;}
 .title_intro{font-size:40px;font-family:'futura_medium';font-weight:bold;color:#000;line-height:44px;}
 .content_text{font-size:16px;line-height:19px;font-family:'futura_medium';color:#000;}
+.slider_block{width:100%;}
+.arrow_slider{position: relative;display:flex;align-items:center;}
+.arrow_slider .slick-next, .arrow_slider .slick-prev{position: relative !important;left:auto !important;right:auto !important;top:auto !important;bottom:auto !important;}
+.pos_num{padding-bottom: 7px;padding-left: 19px;}
 .slider_item{position:relative;}
 .title_slider{position:absolute;background-color:#fff;bottom:0;right:0;padding:15px 60px 15px 30px;}
 .name_goods-slider{font-size:16px;line-height:21px;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
@@ -59,7 +63,8 @@ body{overflow-x:hidden;font-family:'futura_light';}
 .link_to:hover{text-decoration:none;opacity:.7;color:#5796C6;}
 .title_content{font-size:35px;line-height:50px;letter-spacing: 0.13em;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';font-weight:bold;}
 .block_catalog{padding:50px 0;}
-.box_catalog{position:relative;background-color:#F2F3CA;padding:30px 0px 5px;display:flex;height:100%;flex-wrap:wrap;}
+.box_catalog{position:relative;background-color:#F2F3CA;padding:30px 0px 5px;display:flex;height:100%;flex-wrap:wrap;transition:all .3s;}
+.box_catalog:hover{box-shadow:0 0 20px 5px rgba(0,0,0,.2);cursor: pointer;}
 .num_catalog{font-size:18px;line-height:20px;letter-spacing: 0.13em;text-transform:uppercase;color:#3A3A3A;font-family:'futura_medium';}
 .name_catalog{font-weight: 450;font-size: 24px;line-height: 35px;letter-spacing: 0.13em;text-transform: uppercase;color: #3A3A3A;font-family:'futura_medium';}
 .link_catal {font-weight: 600;font-size: 20px;line-height: 22px;letter-spacing: 0.02em; text-transform: uppercase;color: #3A3A3A;font-family:'futura_medium';border-bottom:1px solid #000;display:inline-block;transition:all .3s;z-index:1;}
@@ -230,6 +235,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .img_light{position:relative;}
   .nav_slider{justify-content:center;}
   .stocks, .recomended_goods{padding-top:0;}
+  .card_goods{box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);}
 }
 @media(max-width:576px){
   .burger_menu.active:before{top:17px;}
