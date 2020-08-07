@@ -1,0 +1,3 @@
+$('#slider_block').slick({
+  
+});

@@ -100,11 +100,14 @@
     <section class="order_content pb-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-lg-5 px-0">
             <h2 class="title_content w-100 text-center text-lg-left pb-3 pb-lg-4">Контакты</h2>
             <div class="text-center w-100 d-lg-none">
+              <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94c63cd6bcd4dc8749ddcb7755542f817671aa0e1c73070cb401d7c957594c18&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false">
+              </script>
             </div>
-            <div class="row align-items-center pt-4">
+            <div class="row align-items-center px-3 px-lg-0 pt-4">
               <div class="col-2 text-left">
                 <img src="img/marker.png" class="img-fluid" alt="">
               </div>
@@ -142,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-7 pt-5 pt-lg-0">
+          <div class="col-lg-7 pt-5 pt-lg-0 d-none d-lg-block">
             <script type="text/javascript" charset="utf-8" async
               src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94c63cd6bcd4dc8749ddcb7755542f817671aa0e1c73070cb401d7c957594c18&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
           </div>
@@ -150,6 +153,29 @@
         <div class="row justify-content-center pt-5">
           <div class="col-lg-10">
             <h2 class="title_content w-100 text-center pb-3 pb-lg-4">напишите нам</h2>
+            <form action="" class="">
+              <fieldset>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <input type="text" class="inp_order-form" placeholder="Имя">
+                  </div>
+                  <div class="col-lg-4">
+                    <input type="text" class="inp_order-form" placeholder="E-mail">
+                  </div>
+                  <div class="col-lg-4">
+                    <input type="text" class="inp_order-form" placeholder="Телефон">
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea type="text" class="inp_order-form" placeholder="Напишите нам" style="height:40px;"></textarea>
+                  </div>
+                </div>
+                <div class="row justify-content-center pt-4">
+                  <div class="col-lg-4">
+                    <button class="light_btn w-100">отправить</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>
