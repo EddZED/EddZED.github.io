@@ -235,6 +235,7 @@ body{overflow-x:hidden;font-family:'futura_light';}
   .img_light{position:relative;}
   .nav_slider{justify-content:center;}
   .stocks, .recomended_goods{padding-top:0;}
+  .card_goods{box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);}
 }
 @media(max-width:576px){
   .burger_menu.active:before{top:17px;}
