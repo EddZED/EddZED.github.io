@@ -36,12 +36,22 @@ body{font-size:14px;color:#303030;}
 .block_faq{position:relative;}
 .girl{position:absolute;bottom:-20px;left:0;right:0;margin:auto;}
 .service{padding:100px 0;}
+.estimation{padding:100px 0 0;overflow:hidden;}
+.estimation .sub_title{font-size:40px;}
+.num_midle{font-size:60px;font-family:'palatino_regular';color:#455b5f;line-height:67px;}
+.form_body{position:relative;border-radius:10px;box-shadow:0 0 20px 7px rgba(69,91,95,.15);padding:30px;height:100%;}
+.color_title{color:#455b5f;font-weight:bold;}
+.inp_form{width:100%;padding:20px 30px;border-radius:5px;border:none;outline:none;box-shadow:inset 0 4px 7px rgba(49,58,60,.15);}
+.inp_form::-webkit-input-placeholder{font-family:'Open Sans',sans-serif;font-size:14px;color:rgba(48,48,48,.5);}
+.border-none{border:none;}
+.estimation .nav-tabs{border:none;}
+.estimation .nav-tabs .nav-link{border:none;background:;padding:20px 25px;box-shadow:inset 0 4px 6px rgba(0,0,0,.15);border-radius:8px;font-size:14px;font-family:'Open Sans';font-weight:bold;color:rgba(48,48,48,.45);}
+.estimation .nav-tabs .nav-link.active{border:none;background:linear-gradient(0deg, #f2d180, #fdedbf);border-radius:8px;color:#a79972;}
+.estimation .nav-tabs:hover .nav-link{border:none;}
 
 
-.eks_img{position:absolute;top:175px;left:150px;right:0;margin:auto;max-width:70%;z-index:-1;}
-.skew_btn{font-size:24px;font-family:'bebas_bold',sans-serif;padding:15px 30px;box-shadow:inset 0 5px 10px #fff4b7,inset 0 -5px 15px rgba(95,74,0,.4), 0 10px 10px rgba(95,74,0,.2);transition:all.3s;transform:skewX(-20deg);}
-.not_transf{display:inline-block;}
-.skew_btn .not_transf{transform:skewX(20deg);}
+
+
 
 
 .rob_reg{font-family:'roboto_reg',sans-serif;}
@@ -102,8 +112,7 @@ body{font-size:14px;color:#303030;}
 .price{font-size:80px;font-family:'bebas_bold',sans-serif;color:#fff;}
 .price span{font-size:40px;color:#fff;opacity:1;text-transform:none;font-family:'myr_reg',sans-serif;}
 .foto_title s{text-transform:none;font-family:'myr_reg',sans-serif;}
-.inp_form{width:100%;padding:20px 30px;border-radius:5px;border:none;outline:none;box-shadow:inset 5px 5px 7px rgba(0,0,0,.2);}
-.inp_form[placeholder]{font-family:'roboto_light',sans-serif;font-size:20px;}
+
 .btn_form{font-size:24px;border:none;box-shadow: inset 0 5px 5px #fff4b7, inset 0 -5px 5px rgba(95,74,0,.4);transition: all.3s;padding:17px 0;}
 .bot_foot .bebas_bold,.bot_foot .rob_light,.bot_foot .phone_link{color:#fff;}
 .modal-body{position:relative;padding:0;}
@@ -148,10 +157,11 @@ body{font-size:14px;color:#303030;}
   .centr_mobile{text-align:center !important;}
   .title_name{font-size:27px;}
   .intro{padding-top:100px;}
-  .service, .search{padding:50px 0;}
+  .service, .search, .estimation{padding:50px 0;}
   .footer{padding-top:50px;}
   .price{font-size:50px;}
-  .search .sub_title{font-size:27px;}
+  .search .sub_title, .estimation .sub_title{font-size:27px;}
+  .estimation .nav-tabs .nav-item{width:100%;text-align:center;}
 
 }
 @media(max-width:475px){
