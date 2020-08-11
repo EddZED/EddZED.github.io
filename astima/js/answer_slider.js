@@ -1,0 +1,1 @@
+$('.test__slider').slick({})
