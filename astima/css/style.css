@@ -27,12 +27,15 @@ body{font-size:14px;color:#303030;}
 .link_service{color:#79abb6;font-size:14px;text-decoration:underline;transition:all .3s;}
 .box_service:hover .link_service{text-decoration:none;}
 .pos_ser_2{bottom:-10px;right:-10px;position:relative;}
-.img_pos-5{position:absolute;bottom:-40px;right:-40px;}
-.search{padding:70px 0;position: relative;background-color:#f9f9f9;}
+.img_pos-5{position:absolute;bottom:-40px;right:-40px;z-index:-1;}
+.search{padding:70px 0;position: relative;background-color:#f9f9f9;overflow:hidden;}
 .search .sub_title{font-size:40px;}
-
-
-
+.questio_item{display:flex;align-items:center;}
+.question{font-size:80px;color:#79abb6;font-family:'palatino_bold';}
+.italic_bold{font-size:22px;font-family:'palatino_bold-italic';color:#2c2c2c;}
+.block_faq{position:relative;}
+.girl{position:absolute;bottom:-20px;left:0;right:0;margin:auto;}
+.service{padding:100px 0;}
 
 
 .eks_img{position:absolute;top:175px;left:150px;right:0;margin:auto;max-width:70%;z-index:-1;}
@@ -46,7 +49,7 @@ body{font-size:14px;color:#303030;}
 #bulit{padding:140px 0 50px;}
 .line_h{line-height:22px;}
 .img_bul_2{position:absolute;bottom:-15px;right:-50px; }
-#service{padding:100px 0;}
+
 .box_service{position:relative;display:flex;align-items:center;box-shadow:0 5px 15px rgba(0,0,0,.2);border-radius:5px;height:100%;cursor:pointer;overflow:hidden;}
 .link_serv{color:#ffd800;font-family:'roboto_bold',sans-serif;padding-bottom:1px;border-bottom:2px solid transparent;}
 .box_service:hover .link_serv{border-color:#ffd800;color:#ffd800;}
@@ -129,6 +132,7 @@ body{font-size:14px;color:#303030;}
 }
 @media(max-width:991px){
   .navbar{background-color:#fff;box-shadow:0 0 15px 20px rgba(255,255,255,1);}
+  .girl{display:none;}
 }
 @media(max-width:767px){
   .pos_top{top:0;}
@@ -142,13 +146,12 @@ body{font-size:14px;color:#303030;}
   .box_description_5{top:175px;left:0;}
   .bot_foot .name_block{display:none;}
   .centr_mobile{text-align:center !important;}
-  .title_name{font-size:36px !important;}
-  #intro{padding-top:100px;}
-  #service{padding-top:50px;}
-  #equipment{padding-top:60px;}
-  #slider{padding-top:60px;padding-bottom:10px;}
+  .title_name{font-size:27px;}
+  .intro{padding-top:100px;}
+  .service, .search{padding:50px 0;}
   .footer{padding-top:50px;}
   .price{font-size:50px;}
+  .search .sub_title{font-size:27px;}
 
 }
 @media(max-width:475px){
