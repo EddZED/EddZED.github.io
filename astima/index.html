@@ -120,7 +120,7 @@
 			</div>
   	  <div class="row">
 				<div class="col-lg-3">
-					<div class="box_service fl_col" data-toggle="modal" data-target="#">
+					<div class="box_service fl_col" data-toggle="modal" data-target="#service_1">
 						<div class="mobile_const">
 							<img src="img/key.png" class="img-fluid key_position" alt="Оценка недвижимого имущества">
 						</div>
@@ -133,7 +133,7 @@
   	  	<div class="col-lg-9">
   	  	  <div class="row h-100">
   	  	  	<div class="col-md-7 mt-4 mt-lg-0">
-  	  	  	  <div class="box_service" data-toggle="modal" data-target="#">
+  	  	  	  <div class="box_service" data-toggle="modal" data-target="#service_2">
   	  	  	  	<div class="block_text pl-lg-4 pl-3">
   	  	  	  	  <p class="name_service m-0">Оценка бизнеса,
 									нематериальных
@@ -144,7 +144,7 @@
   	  	  	  </div>
   	  	  	</div>
   	  	  	<div class="col-md-5 mt-4 mt-lg-0">
-  	  	  	  <div class="box_service" data-toggle="modal" data-target="#">
+  	  	  	  <div class="box_service" data-toggle="modal" data-target="#service_3">
   	  	  	  	<div class="block_text pl-lg-4 pl-3">
   	  	  	  	  <p class="name_service m-0">Судебные экспертизы</p>
   	  	  	  	  <a href="#" class="link_service">Узнать подробнее</a>
@@ -153,7 +153,7 @@
   	  	  	  </div>	
   	  	  	</div>
   	  	  	<div class="col-md-5 mt-4">
-  	  	  	  <div class="box_service" data-toggle="modal" data-target="#">
+  	  	  	  <div class="box_service" data-toggle="modal" data-target="#service_4">
   	  	  	  	<div class="block_text pl-lg-4 pl-3">
   	  	  	  	  <p class="name_service m-0">Оценка движимого имущества</p>
   	  	  	  	  <a href="#" class="link_service">Узнать подробнее</a>
@@ -162,7 +162,7 @@
   	  	  	  </div>	
   	  	  	</div>
   	  	  	<div class="col-md-7 mt-4">
-  	  	  	  <div class="box_service py-5" data-toggle="modal" data-target="#">
+  	  	  	  <div class="box_service py-5" data-toggle="modal" data-target="#service_5">
   	  	  	  	<div class="block_text pl-lg-4 pl-3">
   	  	  	  	  <p class="name_service m-0">Оценка для оспаривания<br> кадастровой стоимости</p>
   	  	  	  	  <a href="#" class="link_service">Узнать подробнее</a>
@@ -436,8 +436,8 @@
 												<p class="text_content w-100 text-center pt-4 pt-lg-5 m-0">Вопрос 4</p>
 												<p class="title_slider w-100 text-center">В какой срок необходимо провести оценку?</p>
 												<div class="row justify-content-end">
-													<div class="col-lg-10 pl-4">
-													  <div class="row">
+													<div class="col-lg-10">
+													  <div class="row pl-5">
 															<div class="col-md-6">
 																<label class="box_radio pt-3">
 																	<input name="time" type="radio" class="">
@@ -487,7 +487,7 @@
 										<div class="nav_slider text-center py-5">
 										</div>
 							    </div>
-							    <div class="col-md-4 pr-0">
+							    <div class="col-md-4 d-none d-lg-block pr-0">
 								    <div class="right_block p-3 pt-4">
 											<p class="title_slider text-center">В конце теста<br>вас ждут бонусы:</p>
 								    </div>
@@ -535,11 +535,11 @@
 	</section>
   <footer class="footer">
   	<div class="container">
-  	  <div class="row justify-content-center justify-content-md-between">
+  	  <div class="row align-items-center justify-content-center flex-column flex-lg-row justify-content-lg-between">
 				<img class="img-fluid" src="img/logo_foot.png" alt="Астима">
-				<a href="#" class="privacy">Политика конфиденциальности</a>
+				<a href="#" class="privacy mt-4 mt-lg-0">Политика конфиденциальности</a>
 				<div class="text-center text-md-right">
-					<p class="txt_foot">Астима 2020<br>	Все права защищены.</p>
+					<p class="txt_foot mt-4 mt-lg-4">Астима 2020<br>	Все права защищены.</p>
 				</div>
 			</div>
   	</div>
@@ -551,41 +551,26 @@
   aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-body px-4">
+      <div class="modal-body pb-4 px-4">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
-        <p class="text-center head_ord pt-4">Чтобы оставить заявку,
-пожалуйста, заполните
-поля ниже:</p>
+				<p class="italic_bold color_title text-center pt-md-3">Оставьте заявку,</p>
+				<p class="text-content text-center">мы перезвоним вам и подробно
+					расскажем, как будем работать
+					с вашей задачей</p>
         <form>
           <fieldset>
-            <input type="text" name="name" class="inp_form" placeholder="Введите Ваше имя">
-            <input type="tel" name="phone" class="inp_form mt-3" placeholder="Введите телефон">
-            <div class="btn_block my-3">
-              <button type="submit" class="btn_header btn_form w-100 h-100">оставить заявку</button>
-            </div>
+							<input type="text" name="name" class="inp_form" placeholder="Введите Ваше имя">
+							<input type="text" name="tel" class="inp_form mt-3" placeholder="Введите Ваш телефон">
+							<button type="submit" class="btn_header yellow_btn border-none mt-3">Оставить заявку</button>
           </fieldset>
         </form>
       </div>
     </div>
   </div>
 </div>
-<!-- Modal privacy -->
-<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="headModal"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body px-4">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <img src="img/close.png" class="img-fluid" alt="крестик">
-        </button>
-        <p class="text-center priv_head pt-4">Политика конфиденциальности:</p>
-        <p class="priv_text">Тут текст политики конфиденцциальности и бла бла бла....</p>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- Modal service_1 -->
 <div class="modal fade" id="service_1" tabindex="-1" role="dialog" aria-labelledby="headModal"
   aria-hidden="true">
@@ -597,20 +582,24 @@
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
         <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_1.jpg" class="img-fluid img_serv" alt="строительные работы">
+          <img src="img/home_img.png" class="img-fluid img_serv" alt="оценка недвижимости">
         </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Строительные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled m-0">
-            <li class="list_item">Рытье котлованов под частные дома, заборы, бассейны, гаражные и выгребные ямы</li>
-            <li class="list_item">Разработка траншей под трубы, кабели</li>
-            <li class="list_item">Устройство щебеночного основания</li>
-            <li class="list_item">Асфальтирование</li>
+        <div class="col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
+          <p class="header_service m-0">Оценка недвижимого имущества</p>
+          <p class="text_content w-100 text-left">Проводим независимую оценку недвижимого
+						имущества:</p>
+          <ul class="list-unstyled">
+            <li class="list_item">При судебных спорах</li>
+            <li class="list_item">Для оформления страховки</li>
+            <li class="list_item">При реорганизации предприятияя</li>
+						<li class="list_item">При банкротстве предприятия</li>
+						<li class="list_item">При продаже недвижимости</li>
+						<li class="list_item">Для залога и др.</li>
           </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
+          <p class="text_content w-100 text-left">Для бесплатной консультации оставьте заявку,
+						и мы перезвоним в удобное для Вас время</p>
+          <div class="text-left w-100 mt-3">
+            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header yellow_btn d-inline px-4">Оставить заявку</a>
           </div>
         </div>
         </div>
@@ -629,18 +618,22 @@
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
         <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_2.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
+          <img src="img/home_2.jpg" class="img-fluid img_serv" alt="оценка недвижимости">
         </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Ландшафтные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Рыхлению мерзлого грунта</li>
-            <li class="list_item">Установке бордюров, устройству газонов</li>
+        <div class="col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
+          <p class="header_service text-left m-0">Оценка бизнеса,
+						нематериальных активов </p>
+          <p class="text_content w-100 text-left">Проводим независимую оценку бизнеса для:</p>
+          <ul class="list-unstyled">
+            <li class="list_item">Обоснования инвестиций в бизнес</li>
+            <li class="list_item">При банкротстве компании</li>
+            <li class="list_item">Определения платежеспособности</li>
+						<li class="list_item">Определения цены акций и др.</li>
           </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
+          <p class="text_content w-100 text-left">Для бесплатной консультации оставьте заявку,
+						и мы перезвоним в удобное для Вас время</p>
+          <div class="text-left w-100 mt-3">
+            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header yellow_btn d-inline px-4">Оставить заявку</a>
           </div>
         </div>
         </div>
@@ -659,20 +652,20 @@
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
         <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_3.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
+          <img src="img/sud.jpg" class="img-fluid img_serv" alt="оценка недвижимости">
         </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Погрузочно-разгрузочные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Погрузка и разгрузка строительных материалов</li>
-            <li class="list_item">Погрузка и разгрузка почвы, грунта</li>
-            <li class="list_item">Захват и передвижение больших объемов грузов</li>
-            <li class="list_item">Подготовка и перемешивание почвы при дорожных работах</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
+        <div class="col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
+          <p class="header_service text-left">Судебные экспертизы </p>
+          <p class="text_content w-100 text-left">Сформируем грамотное заключение эксперта
+						и защитим Ваши интересы в суде. Бесплатно
+						проконсультируем как правильно сформировать
+						вопрос для проведения судебной экспертизы
+						и поможем выбрать правильное решение
+						Вашей задачи </p>
+          <p class="text_content w-100 text-left">Для бесплатной консультации оставьте заявку,
+						и мы перезвоним в удобное для Вас время</p>
+          <div class="text-left w-100 mt-3">
+            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header yellow_btn d-inline px-4">Оставить заявку</a>
           </div>
         </div>
         </div>
@@ -691,18 +684,24 @@
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
         <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_4.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
+          <img src="img/car.jpg" class="img-fluid img_serv" alt="оценка недвижимости">
         </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Вскрытие асфальта, бетона</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Вскрытию дорожного покрытия, асфальта</li>
-            <li class="list_item">Вскрытию бетонного покрытия, оснований, перекрытий, плит</li>
+        <div class="col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
+          <p class="header_service">Оценка движимого имущества</p>
+          <p class="text_content w-100 text-left">Проводим независимую оценку движимого
+						имущества: </p>
+          <ul class="list-unstyled">
+            <li class="list_item">При судебных спорах</li>
+            <li class="list_item">Для оформления страховки</li>
+            <li class="list_item">При реорганизации предприятияя</li>
+						<li class="list_item">При банкротстве предприятия</li>
+						<li class="list_item">При переоценке основных средств компании</li>
+						<li class="list_item">Для залога и др.</li>
           </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
+          <p class="text_content w-100 text-left">Для бесплатной консультации оставьте заявку,
+						и мы перезвоним в удобное для Вас время</p>
+          <div class="text-left w-100 mt-3">
+            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header yellow_btn d-inline px-4">Оставить заявку</a>
           </div>
         </div>
         </div>
@@ -721,21 +720,25 @@
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
         <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_5.jpg" class="img-fluid img_serv" alt="Уборка снега, мусора">
+          <img src="img/spor.jpg" class="img-fluid img_serv" alt="Оценка для оспаривания
+					кадастровой стоимости">
         </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Уборка снега, мусора</p>
-          <p class="rob_reg w-100 text-left">Оказываем услуги по уборке снега и мусора:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">На территории дачного участка</li>
-            <li class="list_item">Во дворах многоквартирных и частных домов</li>
-            <li class="list_item">На территориях торговых центров, офисных
-зданийв</li>
-            <li class="list_item">На территориях общественного пользования</li>
+        <div class="col-lg-6 d-flex align-items-center align-items-lg-start flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
+          <p class="header_service text-left">Оценка для оспаривания
+						кадастровой стоимости</p>
+          <p class="text_content w-100 text-left">Проводим оценку для оспаривания кадастровой
+						стоимости:</p>
+          <ul class="list-unstyled">
+            <li class="list_item">Чтобы снизить налоги</li>
+            <li class="list_item">Уменьшить плату за аренду</li>
+            <li class="list_item">Уменьшить стоимость выкупа из государственной
+							собственности и др.</li>
           </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
+          <p class="text_content w-100 text-left">Для бесплатного анализа вероятности снижения
+						кадастровой стоимости объекта, оставьте заявку,
+						и мы перезвоним в удобное для Вас время</p>
+          <div class="text-left w-100 mt-3">
+            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header yellow_btn d-inline px-4">Оставить заявку</a>
           </div>
         </div>
         </div>

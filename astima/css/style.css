@@ -156,13 +156,13 @@ body{font-size:14px;color:#303030;}
 .btn_form{font-size:24px;border:none;box-shadow: inset 0 5px 5px #fff4b7, inset 0 -5px 5px rgba(95,74,0,.4);transition: all.3s;padding:17px 0;}
 .bot_foot .bebas_bold,.bot_foot .rob_light,.bot_foot .phone_link{color:#fff;}
 .modal-body{position:relative;padding:0;}
-.modal-dialog .modal-content{border-radius:5px;box-shadow:5px 5px 15px rgba(0,0,0,.2);overflow:hidden;}
+.modal-dialog .modal-content{border-radius:10px;box-shadow:0 0 30px 10px rgba(0,0,0,.2);overflow:hidden;}
 .img_serv{position:relative;left:-1px;}
 .close{width:14px;height:14px;position:absolute;top:15px;right:20px;z-index:999;opacity:1;}
 .close:focus{outline:none;}
-.header_service{font-size:24px;font-family:'bebas_bold',sans-serif;text-transform:uppercase;}
-.list_item{position:relative;padding-left:20px;font-family:'roboto',sans-serif;}
-.list_item:before{content:'';position:absolute;width:9px;height:9px;border-radius:50%;background-color:#ffd800;top:5px;left:0;}
+.header_service{font-size:22px;font-family:'palatino_bold';text-align:center;color:#455b5f;}
+.list_item{position:relative;padding-left:20px;font-size: 14px;font-weight: lighter;font-family: 'Open Sans',sans-serif;color: #455b5f;}
+.list_item:before{content:'';position:absolute;width:12px;height:12px;border-radius:50%;background-image:url(../img/elops.png);background-size:cover;top:5px;left:0;}
 .head_ord{font-size:20px;font-family:'roboto_reg',sans-serif;}
 .privaci{color:#ffd800;}
 .privaci:hover{color:#ffd800;text-decoration:underline;}
