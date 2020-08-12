@@ -89,9 +89,9 @@ body{font-size:14px;color:#303030;}
 .name_rad:before{content:'';position:absolute;left:-30px;width:20px;height:20px;border-radius:50%;box-shadow:inset 0 2px 7px 1px rgba(48,48,48,.2);}
 .name_rad:after{content:'';position:absolute;left:-30px;width:20px;height:20px;border-radius:50%;background-image:url(../img/chek_rad.png);background-size:cover;opacity:0;transition:all .3s;}
 .box_radio input[type="radio"]:checked + .name_rad:after{opacity:1;}
-
-
-
+.index_per{border:none;width:28px;display:inline;font-size:14px;font-family:'Open Sans',sans-serif;}
+.progress{border-radius:10px;background-color:#fff;box-shadow:inset 0 2px 7px 3px rgba(48,48,48,.2);}
+.progress-bar{background-color:#f4e4ad;box-shadow:inset 0 -2px 7px 3px rgba(48,48,48,.2);}
 
 
 .rob_reg{font-family:'roboto_reg',sans-serif;}
