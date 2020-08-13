@@ -3,6 +3,6 @@ $('.slider_test').on('afterChange', function(event, slick, currentSlide){
 });
 $(".btn_slide").click(function() {
   var $price = $(".index_per");
-  $price.val(parseInt($price.val()) + 20 );
+  $price.val(parseInt($price.val()) + 25 );
   $price.change();
 });
