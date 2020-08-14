@@ -4,6 +4,7 @@ html{scroll-behavior:smooth;}
 @font-face {font-family:'palatino_regular';src:url(../font/palatino-linotype-regular.ttf);}
 @font-face {font-family:'sans_reg';src:url(../font/Open-SansRegular.ttf);}
 @font-face {font-family:'sans_light';src:url(../font/Open-SansLight.ttf);}
+@font-face {font-family:'sans_bold';src:url(../font/Open-SansBold.ttf);}
 body{font-size:14px;color:#303030;}
 .navbar{box-shadow:none;padding-top:15px !important;padding-bottom:15px !important;}
 .top-nav-collapse{background-color:rgba(255,255,255,.96);padding:2px 0 !important;transition:all.7s;box-shadow:0 5px 10px rgba(0,0,0,.1)}
@@ -97,6 +98,11 @@ body{font-size:14px;color:#303030;}
 .index_per{border:none;width:28px;display:inline;font-size:14px;color:rgba(48,48,48,.4);}
 .progress{border-radius:10px;background-color:#fff;box-shadow:inset 0 2px 7px 3px rgba(48,48,48,.2);}
 .progress-bar{background-color:#f4e4ad;box-shadow:inset 0 -2px 7px 3px rgba(48,48,48,.2);}
+.img_sl-1{position:absolute;top:0;left:-10px;}
+.sans_bold{font-size:14px;font-family:'sans_bold';color:#455b5f;}
+.sans_light{font-size:14px;font-family:'sans_light';color:#455b5f;}
+.img_sl-2{position:absolute;bottom:30px;right:-23px;}
+
 
 
 .rob_reg{font-family:'roboto_reg',sans-serif;}
@@ -171,7 +177,7 @@ body{font-size:14px;color:#303030;}
 .head_ord{font-size:20px;font-family:'roboto_reg',sans-serif;}
 .privaci{color:#ffd800;}
 .privaci:hover{color:#ffd800;text-decoration:underline;}
-.menu_item a{color:#303030;font-size:20px;font-family:'bebas_bold',sans-serif;border-bottom:2px solid transparent;}
+.menu_item a{color:#303030;font-size:20px;font-family:'palatino_regular',sans-serif;border-bottom:2px solid transparent;}
 .menu_item a:hover, .menu_item a:focus{border-color:#ffd800;}
 .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{overflow-y:hidden !important;}
 .navbar:not(.top-nav-collapse) .navbar-toggler[aria-expanded="true"] + .navbar-collapse.show{background-color:#fff;box-shadow:0 0 20px 20px rgba(255,255,255,1);transition:all.2s;}
@@ -201,8 +207,8 @@ body{font-size:14px;color:#303030;}
   .bot_foot .name_block{display:none;}
   .centr_mobile{text-align:center !important;}
   .title_name{font-size:27px;}
-  .intro{padding-top:100px;}
-  .service, .search, .estimation{padding:50px 0;}
+  .intro{padding:100px 0 30px;}
+  .service, .search, .estimation, .answer{padding:50px 0;}
   .footer{padding-top:50px;}
   .price{font-size:50px;}
   .search .sub_title, .estimation .sub_title, .answer .sub_title{font-size:27px;}

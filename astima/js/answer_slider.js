@@ -4,6 +4,5 @@ $('.slider_test').slick({
   dots: false,
   arrow: true,
   prevArrow: false,
-  nextArrow: $('.btn_slide'),
-  adaptiveHeight: true
+  nextArrow: $('.btn_slide')
 })
