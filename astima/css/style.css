@@ -101,7 +101,7 @@ body{font-size:14px;color:#303030;}
 .img_sl-1{position:absolute;top:0;left:-10px;}
 .sans_bold{font-size:14px;font-family:'sans_bold';color:#455b5f;}
 .sans_light{font-size:14px;font-family:'sans_light';color:#455b5f;}
-.img_sl-2{position:absolute;bottom:30px;right:-23px;}
+.img_sl-2{position:absolute;bottom:30px;right:-17px;}
 
 
 
@@ -229,7 +229,7 @@ body{font-size:14px;color:#303030;}
   .box_description_5{top:50%;}
   .price{font-size:40px;}
   .name_service{padding-top:15px;}
-  .pos_ser_2{padding-bottom:15px;}
+  .pos_ser_2{padding-bottom:15px;right:0;left:0;margin:0;}
 }
 @media(max-width:360px){
   .box_service{display:block !important;}
