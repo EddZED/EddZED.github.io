@@ -14,9 +14,8 @@ $('.min_card-slider').slick({
   slidesToScroll: 0,
   asNavFor: '.view_window-slider',
   dots: false,
-  infinite: false,
+  infinite: true,
   centerMode: true,
   centerPadding: '0',
-  focusOnSelect: true,
-  slickRemove: 'index'
+  focusOnSelect: true
 });
