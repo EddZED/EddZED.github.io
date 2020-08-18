@@ -68,9 +68,9 @@ body{font-size:14px;color:#303030;}
 .name_chekbox:after{content:'';position:absolute;left:-30px;width:20px;height:20px;background-image:url(../img/gal_sl.png);background-size:cover;top:0;opacity:0;}
 .chek_box input[type="checkbox"]:checked + .name_chekbox:after{opacity:1;}
 .btn_slide{display: inline-block;border:none;width:auto;padding:15px 25px;}
-.contact{position:relative;}
+.contact{position:relative;padding:40px 0;}
 .map{position:absolute;left:0;top:0;width:100%;}
-.block_contact-footer{background-color:#fff;border-radius:10px;padding:15px;}
+.block_contact-footer{background-color:#fff;border-radius:10px;padding:15px;box-shadow:0 10px 50px 0 rgba(41,53,56,.4);}
 .title_contact{font-size:30px;color:#455b5f;font-family:'palatino_bold-italic';font-weight:bold;}
 .sub_title_light{font-size:22px;font-family:'Open Sans';font-weight:lighter;color:#455b5f;}
 .min_sans{font-size:14px;font-family:'Open Sans';color:#455b5f;}
