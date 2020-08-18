@@ -11,10 +11,10 @@ $('.view_window-slider').slick({
 });
 $('.min_card-slider').slick({
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 0,
   asNavFor: '.view_window-slider',
   dots: false,
-  infinite: true,
+  infinite: false,
   centerMode: true,
   centerPadding: '0',
   focusOnSelect: true,

@@ -19,7 +19,8 @@ body{font-size:14px;color:#303030;}
 .sub_title{font-size:30px;font-family:'palatino_bold-italic';color:#79abb6;}
 .yellow_btn{background:linear-gradient(0deg, #f2d180, #fdedbf);box-shadow:0 4px 0 -1px #dcbf74;width:100%;padding:18px 0;text-align:center;font-size:22px;}
 .text_content{font-size:14px;font-weight:lighter;font-family:'sans_light';color:rgba(51, 126, 139, 0.8);}
-.text_content span{font-weight:bold;}
+.text_content.color_2{color:rgba(61,91,95,.8);}
+.text_content span{font-family:'sans_bold';}
 .box_bulit{padding:10px 20px;transform:skewX(5deg);border-radius:8px;position:relative;z-index:1;opacity:.8;background-color:#fff;height:100%;}
 .box_content{position:relative;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;text-align:left;transform:skewX(-5deg);width:100%;}
 .big_num{font-size:60px;font-family:'palatino_regular';color:#455b5f;}
