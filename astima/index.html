@@ -71,7 +71,7 @@
 						<div class="col-md-6">
 							<div class="box_bulit">
 								<div class="box_content">
-									<p class="m-lg-0"><span class="big_num">10+</span><span class="min_num"> лет</span></p>
+									<p class="m-lg-0 mb-0"><span class="big_num">10+</span><span class="min_num"> лет</span></p>
 									<p class="text_content color_2">опыта в независимой оценке имеют
 									специалисты нашей компании</p>
 								</div>
@@ -80,7 +80,7 @@
 						<div class="col-md-6 pt-4 pt-md-0">
 							<div class="box_bulit">
 								<div class="box_content">
-									<p class="m-lg-0"><span class="big_num">500+</span><span class="min_num"> млн.р</span></p>
+									<p class="m-lg-0 mb-0"><span class="big_num">500+</span><span class="min_num"> млн.р</span></p>
 									<p class="text_content color_2">суммарно сэкономили клиентам оценщики
 									компании за свою практику</p>
 								</div>
@@ -179,7 +179,7 @@
   	<div class="container">
 			<h2 class="title_name w-100 text-center px-3 m-0">Знаем, как непросто найти</h2>
 			<p class="sub_title w-100 text-center">надежную компанию для оценки</p>
-  	  <div class="block_faq pl-5 pl-lg-0 pt-lg-5">
+  	  <div class="block_faq pl-4 pl-lg-0 pt-lg-5">
 				<div class="row justify-content-center">
 					<div class="col-lg-3 col-sm-6">
 						<div class="questio_item">
@@ -530,20 +530,22 @@
 	</section>
 	<section id="contact" class="contact">
 		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A656465a379e2836d9d1fd9e2d0a7c255124c6023c49922c2174aad60fd49f6e6&amp;width=100%25&amp;height=1000&amp;lang=ru_RU&amp;scroll=false"></script>
+			<script type="text/javascript" charset="utf-8" async
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A656465a379e2836d9d1fd9e2d0a7c255124c6023c49922c2174aad60fd49f6e6&amp;width=100%25&amp;height=1000&amp;lang=ru_RU&amp;scroll=false">
+			</script>
 		</div>
 		<div class="container py-5">
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
 					<div class="block_contact-footer">
-						<p class="title_contact text-center pt-lg-4 m-0">Остались вопросы?</p>
-						<p class="sub_title_light text-center mb-3">Свяжитесь с нами любым
+						<p class="title_contact text-center pt-lg-4 pt-3 m-0">Остались вопросы?</p>
+						<p class="sub_title_light text-center pt-2 mb-3">Свяжитесь с нами любым
 						удобным способом:</p>
-						<p class="min_sans text-center pt-1 mb-2">По телефону:</p>
-						<a href="tel:+78000000000" class="link_foot">8 800 000 00 00</a>
-						<p class="min_sans text-center mb-2">По e-mail:</p>
-						<a href="mailto:astima@ocenka.ru" class="link_foot">astima@ocenka.ru</a>
-						<p class="min_sans text-center mb-2">Лично по адресу:</p>
+						<p class="min_sans text-center pt-1 mb-1">По телефону:</p>
+						<a href="tel:+78000000000" class="link_foot mb-3">8 800 000 00 00</a>
+						<p class="min_sans text-center mb-1">По e-mail:</p>
+						<a href="mailto:astima@ocenka.ru" class="link_foot mb-3">astima@ocenka.ru</a>
+						<p class="min_sans text-center mb-1">Лично по адресу:</p>
 						<p class="regular_adres text-center mb-3">Екатеринбург,<br>Юмашева 7, оф. 301</p>
 						<p class="min_sans text-center mb-2">В месенджерах</p>
 						<div class="social_block">
@@ -551,7 +553,7 @@
 							<a href="#" class="social_link vb_link mx-3"><img class="img-fluid" src="img/vb.png" alt="вайбер"></a>
 							<a href="#" class="social_link sk_link"><img class="img-fluid" src="img/skype.png" alt="вайбер"></a>
 						</div>
-						<p class="min_sans text-center">Или оставьте заявку и мы сами	вам перезвоним:</p>
+						<p class="min_sans text-center pt-4">Или оставьте заявку и мы сами	вам перезвоним:</p>
 						<div class="text-center pb-3">
 							<a href="#" data-toggle="modal" data-target="#order" class="btn_header yellow_btn px-3 w-auto">Оставить заявку</a>
 						</div>
@@ -565,7 +567,7 @@
   	<div class="container">
   	  <div class="row align-items-center justify-content-center flex-column flex-lg-row justify-content-lg-between">
 				<img class="img-fluid" src="img/logo_foot.png" alt="Астима">
-				<a href="#" class="privacy mt-4 mt-lg-0">Политика конфиденциальности</a>
+				<a href="#" data-toggle="modal" data-target="#privacy" class="privacy mt-4 mt-lg-0">Политика конфиденциальности</a>
 				<div class="text-center text-md-right">
 					<p class="txt_foot mt-4 mt-lg-4">Астима 2020<br>	Все права защищены.</p>
 				</div>
@@ -598,7 +600,20 @@
     </div>
   </div>
 </div>
-
+<!-- Modal privacy -->
+<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="headModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body px-4">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<img src="img/close.png" class="img-fluid" alt="крестик">
+				</button>
+				<p class="text-center header_service pt-4">Политика конфиденциальности:</p>
+				<p class="text_content">Тут текст политики конфиденцциальности и бла бла бла....</p>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Modal service_1 -->
 <div class="modal fade" id="service_1" tabindex="-1" role="dialog" aria-labelledby="headModal"
   aria-hidden="true">
