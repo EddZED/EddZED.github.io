@@ -13,40 +13,59 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-dark">
         <div class="container">
-        <div class="row">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремстрой"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">О компании</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Каталог</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Закупки</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <form class="form-inline">
-            <div class="md-form my-0">
-              <input class="form-control mr-sm-2" type="text" aria-label="Search">
+          <div class="row align-items-center w-100">
+            <div class="col-lg-4">
+              <div class="row align-items-center justify-content-between">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремстрой"></a>
+                <div class="d-flex align-items-center">
+                <form class="d-lg-none">
+                  <div class="">
+                    <input class="form-control d-none mr-sm-2" type="text" aria-label="Search">
+                    <button type="submit" class="btn_search"><img class="img-fluid" src="img/search_icon.png"
+                        alt=""></button>
+                  </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                  aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
-        </div>
+            <div class="col-lg-8">
+              <div class="row align-items-center">
+              <div class="collapse navbar-collapse justify-content-center" id="basicExampleNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Закупки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+               <form class="d-lg-block d-none">
+                 <div class="">
+                   <input class="form-control d-none mr-sm-2" type="text" aria-label="Search">
+                   <button type="submit" class="btn_search"><img class="img-fluid" src="img/search_icon.png"
+                       alt=""></button>
+                 </div>
+               </form>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
