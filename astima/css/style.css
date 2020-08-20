@@ -25,7 +25,7 @@ body{font-size:14px;color:#303030;}
 .box_content{position:relative;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;text-align:left;transform:skewX(-5deg);width:100%;}
 .big_num{font-size:60px;font-family:'palatino_regular';color:#455b5f;}
 .min_num{font-size:30px;font-family:'palatino_regular';color:#455b5f;line-height:30px;line-height:10px;}
-.img_intro{position:absolute;top:-35px;left:-80px;z-index:1;}
+.img_intro{position:absolute;top:-35px;left:-50px;z-index:1;min-width:115%;}
 .sertificate{display:flex;align-items:center;}
 .key_position{position: relative;top:-20px;right:-30px;}
 .name_service{font-size:22px;font-family:'palatino_bold';color:#455b5f;}
@@ -55,7 +55,7 @@ body{font-size:14px;color:#303030;}
 .estimation .nav-tabs .nav-link.active{border:none;background:linear-gradient(0deg, #f2d180, #fdedbf);border-radius:8px;color:#a79972;box-shadow:none;}
 .estimation .nav-tabs:hover .nav-link{border:none;}
 .answer{padding:100px 0;background:#4b5a5e;}
-.answer .sub_title{font-size:40px;}
+.answer .sub_title{font-size:40px;line-height:47px;}
 .slider_test{overflow:hidden;}
 .body_test{position:relative;border-radius:10px;box-shadow:0 0 50px 10px rgba(41,53,56,.8);background-color:#fff;}
 .right_block{height:100%;width:100%;background:linear-gradient(0deg, #87a8b3, #d5ecf4);border-radius:0 10px 10px 0;position:relative;right:-1px;}
@@ -72,11 +72,11 @@ body{font-size:14px;color:#303030;}
 .map{position:absolute;left:0;top:0;width:100%;}
 .block_contact-footer{background-color:#fff;border-radius:10px;padding:15px;box-shadow:0 10px 50px 0 rgba(41,53,56,.4);}
 .title_contact{font-size:30px;color:#455b5f;font-family:'palatino_bold-italic';font-weight:bold;}
-.sub_title_light{font-size:22px;font-family:'Open Sans';font-weight:lighter;color:#455b5f;}
+.sub_title_light{font-size:22px;font-family:'Open Sans';font-weight:lighter;color:#455b5f;line-height:27px;}
 .min_sans{font-size:14px;font-family:'Open Sans';color:#455b5f;}
 .link_foot{display:block;text-align:center;font-size:22px;font-family:'palatino_regular';color:#455b5f;}
 .link_foot:hover{color:#455b5f;text-decoration:underline;}
-.regular_adres{font-size:22px;font-size:22px;font-family:'palatino_regular';color:#455b5f;}
+.regular_adres{font-size:22px;font-family:'palatino_regular';color:#455b5f;line-height:27px;}
 .social_block{display:flex;align-items:center;justify-content:center;}
 .social_link{display:flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:4px;transition:all .3s;}
 .social_link:hover{box-shadow:0 0 3px 1px rgba(0,0,0,.2);}
@@ -103,21 +103,11 @@ body{font-size:14px;color:#303030;}
 .sans_bold{font-size:14px;font-family:'sans_bold';color:#455b5f;}
 .sans_light{font-size:14px;font-family:'sans_light';color:#455b5f;}
 .img_sl-2{position:absolute;bottom:30px;right:-17px;}
-
-
-
-.rob_reg{font-family:'roboto_reg',sans-serif;}
-.img_bul{position:absolute;bottom:-5px;right:-25px;z-index:-1;}
-#bulit{padding:140px 0 50px;}
-.line_h{line-height:22px;}
-.img_bul_2{position:absolute;bottom:-15px;right:-50px; }
-
 .box_service{position:relative;display:flex;align-items:center;box-shadow:0 5px 30px rgba(0,0,0,.15);border-radius:5px;height:100%;cursor:pointer;overflow:hidden;}
-.link_serv{color:#ffd800;font-family:'roboto_bold',sans-serif;padding-bottom:1px;border-bottom:2px solid transparent;}
-.box_service:hover .link_serv{border-color:#ffd800;color:#ffd800;}
-.pos_top{position:relative;top:-8px;}
-.pos_img{position:relative;top:0;left:0;}
-.abs{position:absolute;right:20px;}
+
+
+
+
 .fl_col{flex-direction:column;justify-content:center;}
 #equipment{padding:100px 0 70px;position:relative;background-image:url(../img/bg_eks.jpg);background-size:cover;background-position:center top;}
 #equipment .title_name, #equipment .sub_title{color:#fff;}
@@ -177,8 +167,7 @@ body{font-size:14px;color:#303030;}
 .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{overflow-y:hidden !important;}
 .navbar:not(.top-nav-collapse) .navbar-toggler[aria-expanded="true"] + .navbar-collapse.show{background-color:#fff;box-shadow:0 0 20px 20px rgba(255,255,255,1);transition:all.2s;}
 .navbar:not(.top-nav-collapse) .navbar-toggler[aria-expanded="true"] + .navbar-collapse.collapsing{background-color:#fff;box-shadow:0 0 20px 20px rgba(255,255,255,1);transition:all.2s;}
-.priv_text{font-size:16px;font-family:'roboto_reg',sans-serif;}
-.priv_head{font-size:20px;font-family:'bebas_bold',sans-serif;}
+
 @media(min-width:1200px){
 	
 }
@@ -204,13 +193,17 @@ body{font-size:14px;color:#303030;}
   .box_description_5{top:175px;left:0;}
   .bot_foot .name_block{display:none;}
   .centr_mobile{text-align:center !important;}
-  .title_name{font-size:27px;}
+  .title_name{font-size:27px;line-height:30px;}
+  .sub_title{font-size:23px;}
   .intro{padding:100px 0 30px;}
-  .service, .search, .estimation, .answer{padding:50px 0;}
+  .service, .search, .estimation, .answer{padding:30px 0;}
   .footer{padding-top:50px;}
   .price{font-size:50px;}
-  .search .sub_title, .estimation .sub_title, .answer .sub_title{font-size:27px;}
+  .search .sub_title, .estimation .sub_title, .answer .sub_title{font-size:23px;line-height:25px;}
   .estimation .nav-tabs .nav-item{width:100%;text-align:center;}
+  .name_service{font-size:18px;line-height:22px;}
+  .title_contact{font-size:23px;line-height:25px;}
+  .sub_title_light{font-size:17px;line-height:20px;}
 }
 @media(max-width:475px){
   .box_description_4{top:80%;}
@@ -220,7 +213,7 @@ body{font-size:14px;color:#303030;}
   .centr_mobile{margin-top:15px;}
 }
 @media(max-width:400px){
-  .box_service{flex-direction:column;padding-bottom:20px;}
+  .box_service{flex-direction:column;padding-bottom:20px;text-align:center;}
   .abs{top:50px;right:10px;}
   .img_mob{left:0%;}
   .box_description_1{top:-25px;}
@@ -230,7 +223,7 @@ body{font-size:14px;color:#303030;}
   .box_description_5{top:50%;}
   .price{font-size:40px;}
   .name_service{padding-top:15px;}
-  .pos_ser_2{padding-bottom:15px;right:0;left:0;margin:0;}
+  .pos_ser_2{padding-bottom:15px;right:auto;left:auto;}
 }
 @media(max-width:360px){
   .box_service{display:block !important;}

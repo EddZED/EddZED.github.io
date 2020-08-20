@@ -11,11 +11,12 @@ $('.view_window-slider').slick({
 });
 $('.min_card-slider').slick({
   slidesToShow: 3,
-  slidesToScroll: 0,
+  slidesToScroll: 1,
   asNavFor: '.view_window-slider',
   dots: false,
-  infinite: true,
-  centerMode: true,
+  centerMode: false,
   centerPadding: '0',
+  draggable: true,
+  swipeToSlide: true,
   focusOnSelect: true
 });
