@@ -1,18 +1,34 @@
 html{scroll-behavior: smooth;}
-@font-face{}
-body{}
+@font-face{font-family:'sfui_reg';src: url(../font/SFUIDisplay-Regular.ttf);}
+@font-face{font-family:'sfui_light';src: url(../font/SFUIDisplay-Light.ttf);}
+body{font-family:'sfui_light';}
 .intro{height:100vh;background-image:url(../img/intro_bg.jpg);background-size:cover;background-position:center center;position:relative;}
 .navbar{box-shadow:none;}
 .navbar.scrolling-navbar{padding-top:40px;}
 .btn_search{background:transparent;border:none;}
 .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link{background-color:transparent;}
-.navbar.navbar-dark .navbar-nav .nav-item.active{position:relative;}
-.nav-item.active:before{content:'';position:absolute;width:100%;height:7px;background-color:#CC9B55;bottom:10px;}
+.navbar.navbar-dark .navbar-nav .nav-item.active{position:relative;transition:all .5s;}
+.nav-item:before{opacity:0;left:0;width:0;transition:all .5s;}
+.nav-item.active:before{content:'';position:absolute;width:100%;height:7px;background-color:#CC9B55;bottom:10px;opacity:1;left:0;}
+.navbar-nav .nav-item .nav-link{font-size:16px;font-family:'sfui_reg';color:#fff;}
+.bg_mobile{background:#24262E;height:100%;overflow:scroll;display:block;}
+.name_mobile-menu{font-size:17px;line-height:20px;letter-spacing:0.07em;text-transform:uppercase;color:#CC9B55;padding-left:5px;padding-top:40px;}
+.phone_link-mobile{font-size:14px;font-family:'sfui_light';color:#fff;}
+.phone_link-mobile:hover{color:#fff;opacity:.8;}
+.button_block{position:absolute;height:100%;left:0;display:flex;flex-direction:column;justify-content:center;transition:all .5s}
+.link_block{display:inline-flex;background:#0F0D0D;color:#CC9B55;font-size:10px;flex-direction:column;align-items:center;text-align:center;padding:5px 3px;border-radius: 0px 5px 5px 0px;min-width:61px;left:0;transition:all .3s;z-index:9999;}
+.link_block:hover{color:#CC9B55;transform:translateX(20px);}
 
 
 
 
 
-
-
-
+@media(max-width:991px){
+  .navbar.scrolling-navbar{padding-top:10px;}
+  .nav-item.active:before{display:none;}
+  .navbar-nav .nav-item .nav-link{font-size:14px;font-family:'sfui_light';}
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{max-height:100% !important;}
+  .button_block{right:0;left:auto;justify-content:start;padding-top:150px;}
+  .link_block{border-radius: 5px 0px 0px 5px;}
+  .link_block:hover{transform:translateX(-20px);}
+}
