@@ -28,7 +28,7 @@ body{font-family:'sfui_light';}
   .nav-item.active:before{display:none;}
   .navbar-nav .nav-item .nav-link{font-size:14px;font-family:'sfui_light';}
   .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{max-height:100% !important;}
-  .button_block{right:0;left:auto;justify-content:start;padding-top:150px;}
+  .button_block{right:0;left:auto;justify-content:start;padding-top:90px;}
   .link_block{border-radius: 5px 0px 0px 5px;}
   .link_block:hover{transform:translateX(-20px);}
 }

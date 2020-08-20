@@ -99,7 +99,7 @@
       </nav>
     </header>
     <section class="intro">
-      <div class="button_block">
+      <div class="button_block d-none d-lg-flex">
         <a href="" class="link_block"><img src="img/phone.png" class="img-fluid pb-1" alt="">Позвоните<br>нам</a>
         <a href="" class="link_block mt-1"><img src="img/mail.png" class="img-fluid pb-1" alt=""> Напишите<br>нам</a>
       </div>
@@ -118,6 +118,7 @@
     $('.btn_mob').click(function () {
         $('.navbar').toggleClass('bg_mobile');
         $('body').toggleClass('overflow-hidden');
+        $('.button_block').toggleClass('d-none');
     });
     $('.nav-item').click(function () {
       $('.nav-item').removeClass('active')
