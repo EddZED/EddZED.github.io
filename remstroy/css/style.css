@@ -25,7 +25,7 @@ body{font-family:'sfui_light';}
 .block_social-desctop{position:absolute;right:0;top:0;bottom:0;margin:auto;display:flex;flex-direction:column;justify-content:center;}
 .block_social-desctop .social_link{transform:rotateZ(-90deg);display:inline-block;margin:40px 0;color:#fff;font-size:12px;font-family:'sfui_reg';}
 .block_social-desctop .social_link:hover{opacity:.8;}
-
+.pad_top{padding-top:170px;}
 
 
 
@@ -38,4 +38,16 @@ body{font-family:'sfui_light';}
   .button_block{right:0;left:auto;justify-content:start;padding-top:90px;}
   .link_block{border-radius: 5px 0px 0px 5px;}
   .link_block:hover{transform:translateX(-20px);}
+  .title_page{font-size:52px;}
 }
+@media(max-width:767px){
+  .pad_top{padding-top:150px;}
+  .title_page{font-size:35px;line-height:45px;letter-spacing:0.04em;}
+  .intro{background-position:-440px center;}
+}
+
+
+
+
+
+
