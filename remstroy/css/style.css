@@ -26,8 +26,10 @@ body{font-family:'sfui_light';}
 .block_social-desctop .social_link{transform:rotateZ(-90deg);display:inline-block;margin:40px 0;color:#fff;font-size:12px;font-family:'sfui_reg';}
 .block_social-desctop .social_link:hover{opacity:.8;}
 .pad_top{padding-top:170px;}
-
-
+.burger{position: relative;width:20px;height:2px;background:#fff;display:inline-block;top:7px;height:100%;}
+.btn_mob{display:inline-block;justify-content:center;}
+.burger:before{content:'';position:absolute;width:26px;height:2px;background:#fff;bottom:0;}
+.burger:after{content:'';position:absolute;width:26px;height:2px;background:#fff;top:0;}
 
 
 @media(max-width:991px){
