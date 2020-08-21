@@ -1,6 +1,8 @@
 html{scroll-behavior: smooth;}
 @font-face{font-family:'sfui_reg';src: url(../font/SFUIDisplay-Regular.ttf);}
 @font-face{font-family:'sfui_light';src: url(../font/SFUIDisplay-Light.ttf);}
+@font-face{font-family:'sfui_bold';src: url(../font/SFUIDisplay-Bold.ttf);}
+@font-face{font-family:'sfui_thin';src: url(../font/SFUIDisplay-Thin.ttf);}
 body{font-family:'sfui_light';}
 .intro{height:100vh;background-image:url(../img/intro_bg.jpg);background-size:cover;background-position:center center;position:relative;}
 .navbar{box-shadow:none;}
@@ -18,6 +20,11 @@ body{font-family:'sfui_light';}
 .button_block{position:absolute;height:100%;left:0;display:flex;flex-direction:column;justify-content:center;transition:all .5s}
 .link_block{display:inline-flex;background:#0F0D0D;color:#CC9B55;font-size:10px;flex-direction:column;align-items:center;text-align:center;padding:5px 3px;border-radius: 0px 5px 5px 0px;min-width:61px;left:0;transition:all .3s;z-index:9999;}
 .link_block:hover{color:#CC9B55;transform:translateX(20px);}
+.title_page{font-size:49px;line-height:56px;letter-spacing:0.05em;color:#fff;font-family:'sfui_bold';}
+.sub_title{font-size:17px;color:#fff;line-height:20px;font-family:'sfui_reg';}
+.block_social-desctop{position:absolute;right:0;top:0;bottom:0;margin:auto;display:flex;flex-direction:column;justify-content:center;}
+.block_social-desctop .social_link{transform:rotateZ(-90deg);display:inline-block;margin:40px 0;color:#fff;font-size:12px;font-family:'sfui_reg';}
+.block_social-desctop .social_link:hover{opacity:.8;}
 
 
 
