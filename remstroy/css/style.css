@@ -125,6 +125,8 @@ body{font-family:'sfui_light';}
   .white_title{font-size:30px;line-height:36px;}
   .footer{padding:30px 0;}
   .about_us{padding:40px 0;}
+  .content{padding:40px 0;}
+  .pad_y-50{padding:40px 15px;}
 }
 @media(max-width:495px){
   .box_service.bg_2{margin-top:26px;}
