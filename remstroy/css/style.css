@@ -41,7 +41,7 @@ body{font-family:'sfui_light';}
 .title_content-big{font-size:36px;line-height:43px;text-align:center;color:#0F0D0D;font-family:'sfui_semi';}
 .catalog{padding:40px 0;background:linear-gradient(180deg,#fff 60%, #F5F1F1 40%);}
 .middle_text{font-size:20px;line-height:28px;text-align:center;color:#0F0D0D;font-family:'sfui_reg';}
-.box_service{display:block;position:relative;margin:0 -7px;width:180px;height:270px;box-shadow:0px 4px 10px rgba(15, 13, 13, 0.2);}
+.box_service{display:block;position:relative;margin:0 -7px;width:218px;height:270px;box-shadow:0px 4px 10px rgba(15, 13, 13, 0.2);}
 .card_item{background-color:#000;transform:skew(-7deg);padding:0 20px;position:absolute;bottom:25px;left:-6px;transition:all .3s;height:60px;display:flex;align-items:center;min-width:163px;}
 .card_item:before{content:'';position:absolute;left:0;top:-7px;width:70%;height:3px;background-color:#000}
 .card_item:after{content:'';position:absolute;right:0;bottom:-7px;width:70%;height:3px;background-color:#000}
@@ -53,7 +53,7 @@ body{font-family:'sfui_light';}
 .box_service:focus .name_service{color:#000;}
 .box_service.bg_1{background-image:url(../img/cat-1.png);background-size:auto 100%;background-repeat:no-repeat;background-position:0 0;}
 .box_service.bg_2{background-image:url(../img/cat-2.png);background-size:auto 100%;background-repeat:no-repeat;background-position:0 0;}
-.box_service.bg_3{background-image:url(../img/cat-3.png);background-size:auto 100%;background-repeat:no-repeat;background-position:-23px 0;}
+.box_service.bg_3{background-image:url(../img/cat-3.png);background-size:auto 100%;background-repeat:no-repeat;background-position:0 0;}
 .box_service.bg_4{background-image:url(../img/cat-4.png);background-size:auto 100%;background-repeat:no-repeat;background-position:0 0;}
 .box_service.bg_5{background-image:url(../img/cat-5.png);background-size:auto 100%;background-repeat:no-repeat;background-position:0 0;}
 .catalog_full{background-color:#F5F1F1;padding:40px 0 0;}
@@ -110,7 +110,10 @@ body{font-family:'sfui_light';}
 
 
 
-
+@media(max-width:1199px){
+  .box_service{width:180px;}
+  .box_service.bg_3{background-position:-23px 0;}
+}
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
   .nav-item.active:before{display:none;}
