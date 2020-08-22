@@ -88,7 +88,7 @@ body{font-family:'sfui_light';}
 .link_provacy:hover{color:#CC9B55;text-decoration:none;}
 .foot_menu-item .adres{color:#fff;font-size:14px;}
 /* page 2 */
-.company_intro{min-height:450px;background-image:url(../img/bg_about.jpg);background-size:cover;background-position:center center;position:relative;padding-top:60px;}
+.company_intro{min-height:450px;background-image:url(../img/bg_about.jpg);background-size:cover;background-position:center center;position:relative;}
 .content{padding:80px 0 100px;}
 .deliv_info{border-bottom:1px solid #fff;background-color:#0F0D0D;padding: 0 0;}
 .foto_dev{position:absolute;right:0;bottom:0;max-width:100%;}
@@ -96,6 +96,10 @@ body{font-family:'sfui_light';}
 .font-2{font-size:20px;}
 .block_phone-link a{color:#CC9B55;font-size:16px;text-decoration:none;}
 .block_phone-link a:hover{opacity:.8;}
+/*page 3*/
+.catalog_intro{min-height:450px;background-image:url(../img/bg_catal.jpg);background-size:cover;background-position:center center;position:relative;}
+.pad_top-2{padding-top:190px;}
+.offers{background-color:#F5F1F1;padding:40px 0 0;}
 
 
 
