@@ -104,6 +104,12 @@ body{font-family:'sfui_light';}
 .list_offer{list-style:none;position:relative;}
 .list_offer li{position:relative;line-height:26px;}
 .list_offer li:before{content:'';position:absolute;width:40px;height:1px;background-color:#CC9B55;left:-40px;top:13px;}
+/* page 4*/
+.category_intro{min-height:450px;background-image:url(../img/bg_category.jpg);background-size:cover;background-position:center center;position:relative;}
+
+
+
+
 
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
