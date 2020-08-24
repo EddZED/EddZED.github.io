@@ -4,5 +4,6 @@ $('.slider_test').slick({
   dots: false,
   arrow: true,
   prevArrow: false,
+  draggable: false,
   nextArrow: $('.btn_slide')
 })
