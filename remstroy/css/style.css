@@ -156,6 +156,14 @@ body{font-family:'sfui_light';}
 /*page 6*/
 .delivery_intro{min-height:450px;background-image:url(../img/bg_delivery.jpg);background-size:cover;background-position:center center;position:relative;}
 .name_brend{font-size:18px;color:#CC9B55;line-height:20px;font-family:'sfui_semi';}
+/*page 7*/
+.zakup_intro{min-height:450px;background-image:url(../img/bg_zakup.jpg);background-size:cover;background-position:center center;position:relative;}
+
+
+
+
+
+
 
 
 
@@ -176,6 +184,7 @@ body{font-family:'sfui_light';}
   .link_block:hover{transform:translateX(-20px);}
   .title_page{font-size:52px;}
   .line_left{border:none;}
+  .line_left.zakup_bl{border-left: 2px solid #CC9B55;}
   .box_service{margin:0 15px;}
   .foto_dev{position:relative;}
   .catalog_full{background-image:none;}
