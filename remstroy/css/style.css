@@ -158,7 +158,8 @@ body{font-family:'sfui_light';}
 .name_brend{font-size:18px;color:#CC9B55;line-height:20px;font-family:'sfui_semi';}
 /*page 7*/
 .zakup_intro{min-height:450px;background-image:url(../img/bg_zakup.jpg);background-size:cover;background-position:center center;position:relative;}
-
+/*page 8*/
+.contacty_intro{min-height:450px;background-image:url(../img/bg_contact.jpg);background-size:cover;background-position:center center;position:relative;}
 
 
 
