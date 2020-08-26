@@ -160,9 +160,9 @@ body{font-family:'sfui_light';}
 .zakup_intro{min-height:450px;background-image:url(../img/bg_zakup.jpg);background-size:cover;background-position:center center;position:relative;}
 /*page 8*/
 .contacty_intro{min-height:450px;background-image:url(../img/bg_contact.jpg);background-size:cover;background-position:center center;position:relative;}
-
-
-
+.input_order{display:inline-block;border:none;outline:none;padding:17px 20px;border-bottom:1px solid #0F0D0D;width:100%;font-size:16px;color:#000;}
+.input_order::-webkit-input-placeholder{font-size:16px;color:#000;opacity:.5;font-family:'sfui_light';line-height:20px;}
+.btn_form.btn_submit{position:relative;box-shadow:0px 4px 10px rgba(204, 155, 85, 0.4);padding:10px 70px;font-size:16px;}
 
 
 
