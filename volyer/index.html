@@ -5,30 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content=""/>
-	<title>Аренда экскаватора</title>
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	  <title>Вольеры</title>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/mdb.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
 		<link href="css/slick.css" rel="stylesheet">
 		<link href="css/slick-theme.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-  	<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
+  <header> 
+  	<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-dark">
 	  <div class="container">
-		<a class="navbar-brand d-none d-md-block mr-0" href="#"><img src="img/logo.png" class="img-fluid" alt="аренда экскаватора"></a>
-    <a href="" class="phone_link d-md-none mr-4"><img src="img/icon_phone.png" class="">8 900 042 33 89</a>
-		<div class="name_block d-none d-md-block text-left text-sm-center text-lg-left pl-lg-3">
-		  <p class="bebas_bold d-block m-0">ип кульнев е.в.</p>
-		  <p class="rob_light d-block m-0">15 лет занимаемся<br>благоустройством территорий</p>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand" href="#"><img src="" class="img-fluid" alt="">LOGO</a>
+		<button class="navbar-toggler btn_menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
-			  <div class="col text-center text-lg-right">
-          <div class="menu_mobile pt-4 d-lg-none">
+			  <div class="header_menu w-100 justify-content-lg-end pb-4 pb-lg-0">
+          <div class="menu_mobile d-lg-none">
             <ul class="list-unstyled">
               <li class="menu_item"><a href="#intro">Главная</a></li>
               <li class="menu_item"><a href="#service">Услуги</a></li>
@@ -36,21 +30,27 @@
               <li class="menu_item"><a href="#slider">Отзывы</a></li>
               <li class="menu_item"><a href="" data-toggle="modal" data-target="#order">Заказать</a></li>
             </ul>
-          </div>
-			    <a href="" class="phone_link mr-4"><img src="img/icon_phone.png" class="">8 900 042 33 89</a>
-			    <a href="#" data-toggle="modal" data-target="#order" class="btn_header">перезвоните мне</a>
+					</div>
+					<div class="block_phone">
+					  <a href="" class="phone_link mr-lg-4">8 800 000 00 00</a>
+					  <div class="time_work">
+							<span id="btn1" class="circl no_open d-none">Сейчас закрыты</span>
+							<span id="btn2" class="circl open d-none">Сейчас работаем</span>
+					  </div>
+					</div>
+			    <a href="#" data-toggle="modal" data-target="#order" class="btn_header mt-3 mt-lg-0">Перезвонить Вам?</a>
 			  </div>
 		  </div>
 	  </div>
 	</nav>
   </header>
 <div class="overflow-hidden">
-  <section id="intro">
+  <section id="intro" class="intro">
   	<div class="container">
   	  <div class="row">
   	  	<div class="col-lg-6 text-lg-left text-center">
-  	  	  <h1 class="title_name">Почасовая аренда экскаватора-погрузчика в Екатеринбурге</h1>
-  	  	  <p class="sub_title">Минимальный срок аренды - 4 часа</p>
+  	  	  <h1 class="title_name">Изготовим вольер для вашего питомца</h1>
+  	  	  <p class="sub_title">За 3 дня с гарантией 10 лет</p>
   	  	  <a href="#equipment" class="btn_header skew_btn mt-3"><span class="not_transf">подробнее об экскаваторе</span></a>
   	    </div>
   	  </div>
@@ -584,6 +584,16 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/slick.min.js"></script>
-  
+  <script>
+		$('.btn_menu').click(function(){
+			$('.navbar').toggleClass('bg_menu-mobile')
+		})
+	</script>
+	<script>
+		var data = new Date();
+		var body = document.getElementById('btn1');
+		if (data.getHours() > 20 && data.getHours() < 8) {document.getElementById("btn1").classList.toggle("d-none");}else{
+			document.getElementById("btn2").classList.toggle("d-none");}
+	</script>
 </body>
 </html>
