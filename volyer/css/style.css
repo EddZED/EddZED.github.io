@@ -1,6 +1,7 @@
 html{scroll-behavior:smooth;}
 @font-face {font-family:bebas_bold;src:url(../font/BebasNeueBold.otf);}
 @font-face {font-family:museo-5;src:url(../font/MuseoSansCyrl-500.ttf);}
+@font-face {font-family:museo-7;src:url(../font/MuseoSansCyrl-700.ttf);}
 @font-face {font-family:museo-3;src:url(../font/MuseoSansCyrl-300.ttf);}
 @font-face {font-family:bebas_book;src:url(../font/BebasNeueBook.otf);}
 @font-face {font-family:bebas_light;src:url(../font/BebasNeueLight.otf);}
@@ -15,13 +16,13 @@ body{font-size:14px;color:#303030;}
 .navbar{box-shadow:none;padding:15px 0;}
 .navbar.scrolling-navbar{padding:15px 0;transition:all .5s;}
 .navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0,0,0,.8);padding-top:5px;padding-bottom:5px;transition:all.7s;box-shadow:0 5px 10px rgba(0,0,0,.1)}
-.intro{position:relative;background-image:url(../img/bg_intro.png);background-size:cover;background-position:center top;background-repeat:no-repeat;padding:250px 0;z-index:0;}
+.intro{position:relative;background-image:url(../img/bg_intro.jpg);background-size:cover;background-position:center top;background-repeat:no-repeat;padding:250px 0;z-index:0;}
 .phone_link{color:#fff;display:inline-block;font-size:30px;line-height:30px;font-family:'bebas_bold';transition:all.3s;z-index:1;}
 .phone_link:hover{text-decoration:none;color:#fff;opacity:.7;}
 .header_menu{display:flex;}
 .title_name{font-size:70px;line-height:80px;font-family:'bebas_bold';text-transform:uppercase;color:#fff;}
 .sub_title{font-size:26px;font-family:'museo-5';color:#fff;}
-.btn_header{font-family:'museo-3';display:inline-flex;align-items:center;color:#2c2c2c;padding:10px 20px;background-color:#ffe17b;border-radius:8px;box-shadow:inset 0 -24px 17px 1px rgba(255, 191, 58, 1);transition:all.3s;}
+.btn_header{font-family:'museo-3';display:inline-flex;align-items:center;color:#2c2c2c;padding:10px 40px;background-color:#ffe37e;border-radius:8px;box-shadow:inset 0 -24px 17px 1px rgba(255, 193, 63, 1);transition:all.3s;}
 .btn_header:hover{color:#2c2c2c;text-decoration:none;box-shadow:inset 0 -50px 20px 10px rgba(255, 191, 58, 1);}
 .open, .no_open{font-size:16px;color:#fff;font-family:'museo-5';display:inline-block;padding-left:16px;}
 .circl{position:relative;}
@@ -30,19 +31,25 @@ body{font-size:14px;color:#303030;}
 .circl.no_open:after{background-color:red;}
 .navbar-toggler{border:none;}
 .navbar-toggler:focus{outline:none;}
-.bg_menu-mobile{background-color:rgba(0,0,0,.7);}
+.bg_menu-mobile{background-color:rgba(0,0,0,.92);}
 .menu_mobile .menu_item{padding-bottom:15px;}
 .menu_mobile .menu_item a{color:#fff;}
+.shadow_btn{box-shadow:inset 0 -24px 17px 1px rgba(255, 193, 63, 1), 0 11px 30px -2px rgba(255, 227, 125, 1);}
+.shadow_btn:hover{box-shadow:inset 0 -50px 20px 10px rgba(255, 191, 58, 1), 0 11px 30px -2px rgba(255, 227, 125, 1);}
+.style_bold{text-transform:uppercase;font-size:16px;font-family:'museo-7';line-height:24px;padding:20px 40px;}
 .black_txt{color:#2c2c2c;}
+.min_white-txt{font-size:16px;font-family:'museo-3';color:#fff;}
 .goods{padding:50px 0;}
 .goods .nav-tabs{border:none;}
-.goods .nav-tabs .nav-link{border:none;background:;padding:20px 25px;box-shadow:inset 0 4px 6px rgba(0,0,0,.15);border-radius:8px;font-size:14px;font-family:'Open Sans';font-weight:bold;color:rgba(48,48,48,.45);}
-.goods .nav-tabs .nav-link.active{border:none;background:linear-gradient(0deg, #f2d180, #fdedbf);border-radius:8px;color:#a79972;box-shadow:none;}
+.goods .nav-tabs .nav-link{border:none;background:#ededed;padding:20px 25px;box-shadow:inset 0 4px 6px rgba(0,0,0,.15);border-radius:8px;font-size:14px;font-family:'Open Sans';font-weight:bold;color:rgba(44,44,44,.6);}
+.goods .nav-tabs .nav-link.active{border:none;background:linear-gradient(0deg, #f2d180, #fdedbf);border-radius:8px;color:#2c2c2c;box-shadow:none;}
 .goods .nav-tabs:hover .nav-link{border:none;}
-.card_goods{display:block;position:relative;}
-.card_foods-body{background-color:#fff;box-shadow:0 7px 20px rgba(22,22,22,.1);padding:15px;border-radius:8px;}
-
-
+.card_goods{display:flex;position:relative;width:100%;height:100%;}
+.card_goods:hover{text-decoration:none;}
+.card_goods-body{background-color:#fff;box-shadow:0 7px 20px rgba(22,22,22,.1);padding:35px 15px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;width:100%;}
+.name_goods{font-size:26px;text-transform:uppercase;font-family:'bebas_bold';color:#2c2c2c;}
+.desc_goods{font-size:16px;font-family:'museo-3';color:#2c2c2c;}
+.desc_goods span{font-family:'museo-7';}
 
 
 
@@ -54,6 +61,9 @@ body{font-size:14px;color:#303030;}
 }
 @media(max-width:991px){
   .header_menu{flex-direction:column;justify-content:center;text-align:center;align-items:center;}
+  .title_name{font-size:60px;line-height:60px;}
 }
-
+@media(max-width:767px){
+  .title_name{font-size:40px;line-height:45px;}
+}
 
