@@ -51,6 +51,12 @@ body{font-size:14px;color:#303030;}
 .desc_goods{font-size:16px;font-family:'museo-3';color:#2c2c2c;}
 .desc_goods span{font-family:'museo-7';}
 .text_content{font-size:26px;font-family:'museo-5';color:#2c2c2c;}
+.adventages{padding:50px 0;}
+.card_advent{display:flex;flex-direction:column;justify-content:space-between;align-items:center;}
+.light_text{font-family:'museo-3';}
+.text_min{font-size:16px;color:#2c2c2c;}
+.our_work{padding:80px 0;background-image:url(../img/bg_our.jpg);background-size:cover;background-position:center center;}
+
 
 
 @media(max-width:1440px){
