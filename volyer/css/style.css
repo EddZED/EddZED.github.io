@@ -21,7 +21,7 @@ body{font-size:14px;color:#303030;}
 .phone_link{color:#fff;display:inline-block;font-size:30px;line-height:30px;font-family:'bebas_bold';transition:all.3s;z-index:1;}
 .phone_link:hover{text-decoration:none;color:#fff;opacity:.7;}
 .header_menu{display:flex;}
-.title_name{font-size:70px;line-height:80px;font-family:'bebas_bold';text-transform:uppercase;color:#fff;}
+.title_name{font-size:70px;line-height:75px;font-family:'bebas_bold';text-transform:uppercase;color:#fff;}
 .sub_title{font-size:26px;font-family:'museo-5';color:#fff;}
 .btn_header{font-family:'museo-3';display:inline-flex;align-items:center;color:#2c2c2c;padding:10px 40px;background-color:#ffe37e;border-radius:8px;box-shadow:inset 0 -24px 17px 1px rgba(255, 193, 63, 1);transition:all.3s;}
 .btn_header:hover{color:#2c2c2c;text-decoration:none;box-shadow:inset 0 -50px 20px 10px rgba(255, 191, 58, 1);}
@@ -68,8 +68,8 @@ body{font-size:14px;color:#303030;}
 .slick-dots li.slick-active button{background-color:#ffe37e;box-shadow:inset 0 -3px 6px 0 rgba(255, 193, 63, 1);opacity:1;}
 .slick-dots{}
 .slick-prev, .slick-next{}
-
-
+.director{padding:100px 0;}
+.footer{padding:40px 0 50px;background-color:#e8e8e8;}
 
 
 @media(max-width:1440px){
