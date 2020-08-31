@@ -14,6 +14,7 @@ html{scroll-behavior:smooth;}
 @font-face {font-family:roboto_bold;src:url(../font/RobotoBold.ttf);}
 @font-face {font-family:myr_reg;src:url(../font/MyriadProRegular.ttf);}
 body{font-size:14px;color:#303030;}  
+body.modal-open{padding-right:0 !important;}
 .navbar{box-shadow:none;padding:15px 0;}
 .navbar.scrolling-navbar{padding:15px 0;transition:all .5s;}
 .navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0,0,0,.8);padding-top:5px;padding-bottom:5px;transition:all.7s;box-shadow:0 5px 10px rgba(0,0,0,.1)}
@@ -37,6 +38,7 @@ body{font-size:14px;color:#303030;}
 .menu_mobile .menu_item a{color:#fff;}
 .shadow_btn{box-shadow:inset 0 -24px 17px 1px rgba(255, 193, 63, 1), 0 11px 30px -2px rgba(255, 227, 125, 1);}
 .shadow_btn:hover{box-shadow:inset 0 -50px 20px 10px rgba(255, 191, 58, 1), 0 11px 30px -2px rgba(255, 227, 125, 1);}
+.shadow_btn:focus{outline:none;}
 .style_bold{text-transform:uppercase;font-size:16px;font-family:'museo-7';line-height:24px;padding:20px 40px;}
 .black_txt{color:#2c2c2c;}
 .min_white-txt{font-size:16px;font-family:'museo-3';color:#fff;}
@@ -83,8 +85,40 @@ body{font-size:14px;color:#303030;}
 .link_home:hover{text-decoration:none;color:#303030;border-color:rgba(48,48,48,1);}
 .dir_foto{position:absolute;left:-30px;bottom:-98px;}
 .l_height{line-height:32px;}
-
-
+.modal-content{border-radius:10px;}
+.modal_title{font-size:26px;color:#2c2c2c;font-family:'museo-5';text-align:center;}
+.close{position:absolute;top:20px;right:20px;z-index:10;}
+.close:focus{outline:none;}
+.inp_form{width:100%;display:inline-block;border:none;border-radius:10px;box-shadow:inset 0 7px 20px rgba(0,0,0,.08);padding:30px 15px;text-align:center;}
+.inp_form::-webkit-input-placeholder{font-size:16px;font-family:'museo-1';color:rgba(44,44,44,.6);}
+.inp_form:focus{outline:none;}
+.modal .style_bold{padding:30px;text-align:center;justify-content:center;border:none;}
+.modal .style_bold:focus{outline:none;}
+.progress{border-radius:10px;background-color:#fff;box-shadow:inset 0 2px 7px 3px rgba(48,48,48,.2);}
+.progress-bar{background-color:#ffc749;box-shadow:inset 0 4px 5px 3px rgba(255,255,255,.5);}
+.index_per{border:none;width:15px;display:inline;font-size:16px;font-family:'museo-1';color:rgba(48,48,48,.6);}
+.sl-1{font-size:16px;font-family:'museo-1';color:rgba(48,48,48,.6);}
+.slider_item_2:focus{outline:none;}
+.slider_item_2 .title_slider{font-size:26px;font-family:'bebas_bold';text-transform:uppercase;color:#;}
+.box_radio{position:relative;cursor:pointer;display:block;width:100%;}
+.box_radio input[type="radio"]{display:none;}
+.name_rad{position:relative;font-size:16px;font-family:'museo-3';color:rgba(48,48,48,.6);line-height:40px;transition:all .3s;}
+.name_rad:before{content:'';position:absolute;left:-30px;width:15px;height:15px;border-radius:50%;border:1px solid rgba(48,48,48,.6);top:2px;}
+.box_radio:hover .name_rad{color:rgba(48,48,48,1);}
+.box_radio:hover .name_rad:before{border-color:rgba(48,48,48,1);}
+.name_rad:after{content:'';position:absolute;top:5px;left:-27px;width:9px;height:9px;border-radius:50%;background-color:#ffc749;opacity:0;transition:all .3s;}
+.box_radio input[type="radio"]:checked + .name_rad:after{opacity:1;}
+.box_radio input[type="radio"]:checked + .name_rad{color:rgba(48,48,48,1);}
+.box_radio input[type="radio"]:checked + .name_rad:before{border-color:rgba(48,48,48,1);}
+.chek_box{position:relative;cursor:pointer;width:100%;}
+.name_chekbox{position:relative;font-size:16px;font-family:'museo-3';color:rgba(48,48,48,.6);line-height:40px;}
+.chek_box input[type="checkbox"]{display:none;}
+.name_chekbox:before{content:'';position:absolute;width:20px;height:20px;left: -30px;top:0;border:1px solid rgba(48,48,48,.6);}
+.name_chekbox:after{content:'';position:absolute;left:-30px;width:20px;height:20px;background-image:url(../img/gal_sl.png);background-size:cover;top:0;opacity:0;}
+.chek_box input[type="checkbox"]:checked + .name_chekbox:after{opacity:1;}
+.chek_box input[type="checkbox"]:checked + .name_chekbox{color:rgba(48,48,48,1);}
+.mod_2{display:block !important;opacity:0 !important;z-index:-10 !important;}
+.mod_2.show{opacity:1;z-index:9999 !important;}
 
 
 

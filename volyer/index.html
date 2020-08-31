@@ -100,7 +100,7 @@
 							<div class="col-lg-9">
 								<div class="row justify-content-center">
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid" src="img/img_1.png" alt="вольер">
 												<p class="name_goods mb-2 pt-3">стандартный вольер</p>
@@ -111,7 +111,7 @@
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid" src="img/img_2.png" alt="вольер">
 												<p class="name_goods mb-2 pt-3">Вольер с будкой</p>
@@ -122,7 +122,7 @@
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid pb-2" src="img/img_3.png" alt="вольер">
 												<p class="name_goods mb-2 pt-3">с окном для кормления</p>
@@ -133,7 +133,7 @@
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid pb-5" src="img/img_4.png" alt="вольер">
 												<p class="name_goods mb-2 pt-4">Вольер с зимником</p>
@@ -144,7 +144,7 @@
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid pb-2" src="img/img_5.png" alt="вольер">
 												<p class="name_goods mb-2 pt-3">с територией для выгула</p>
@@ -155,7 +155,7 @@
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-6 py-3">
-										<a href="#" class="card_goods">
+										<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 											<div class="card_goods-body text-center">
 												<img class="img-fluid pb-5" src="img/img_6.png" alt="вольер">
 												<p class="name_goods mb-2 pt-3">для двух питомцев</p>
@@ -172,7 +172,7 @@
 					<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<div class="row">
 							<div class="col-lg-3 col-md-6 py-3">
-								<a href="#" class="card_goods">
+								<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 									<div class="card_goods-body text-center">
 										<img class="img-fluid pb-3" src="img/img_7.png" alt="вольер">
 										<p class="name_goods mb-2 pt-3">для маленьких собак</p>
@@ -183,7 +183,7 @@
 								</a>
 							</div>
 							<div class="col-lg-3 col-md-6 py-3">
-								<a href="#" class="card_goods">
+								<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 									<div class="card_goods-body text-center">
 										<img class="img-fluid pb-3" src="img/img_8.png" alt="вольер">
 										<p class="name_goods mb-2 pt-3">для средних собак</p>
@@ -194,7 +194,7 @@
 								</a>
 							</div>
 							<div class="col-lg-3 col-md-6 py-3">
-								<a href="#" class="card_goods">
+								<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 									<div class="card_goods-body text-center">
 										<img class="img-fluid pb-4" src="img/img_9.png" alt="вольер">
 										<p class="name_goods mb-2 pt-3">для крупных собак</p>
@@ -205,7 +205,7 @@
 								</a>
 							</div>
 							<div class="col-lg-3 col-md-6 py-3">
-								<a href="#" class="card_goods">
+								<a href="#" data-toggle="modal" data-target="#order" class="card_goods">
 									<div class="card_goods-body text-center">
 										<img class="img-fluid pb-3" src="img/img_10.png" alt="вольер">
 										<p class="name_goods mb-2 pt-3">Вольер
@@ -221,7 +221,7 @@
 				<div class="col-lg-9 pt-4 text-center">
 					<p class="text_content w-100">Чтобы быстро рассчитать стоимость вашего вольера,
 						пожалуйста, пройдите короткий тест из 5 вопросов</p>
-					<a href="#" class="btn_header shadow_btn style_bold">пройти тест</a>
+					<a href="#" id="btn_test" data-toggle="modal" data-target="#test" class="btn_header shadow_btn style_bold">пройти тест</a>
 				</div>
   	  </div>
   	</div>
@@ -332,7 +332,8 @@
 										бы мы вас не послушались то потом бы просто выбросили
 										деньги на ветер</p>
 								</div>
-								<a href="#" class="btn_header shadow_btn style_bold my-4">хочу такой же вольер</a>
+								<a href="#" data-toggle="modal" data-target="#order" class="btn_header shadow_btn style_bold my-4">хочу такой же
+									вольер</a>
 							</div>
 						</div>
 					</div>
@@ -369,7 +370,8 @@
 										простая. Скоро у Ронды появятся щенки, так мы всем
 										покупателям щенков вас посоветуем. Спасибо</p>
 								</div>
-								<a href="#" class="btn_header shadow_btn style_bold my-4">хочу такой же вольер</a>
+								<a href="#" data-toggle="modal" data-target="#order" class="btn_header shadow_btn style_bold my-4">хочу такой же
+									вольер</a>
 							</div>
 						</div>
 					</div>
@@ -401,7 +403,8 @@
 										к зиме решим расширить вольер зимником, еще не решили.
 										Но если будем, то однозначно снова обратимся к вам</p>
 								</div>
-								<a href="#" class="btn_header shadow_btn style_bold my-4">хочу такой же вольер</a>
+								<a href="#" data-toggle="modal" data-target="#order" class="btn_header shadow_btn style_bold my-4">хочу такой же
+									вольер</a>
 							</div>
 						</div>
 					</div>
@@ -425,7 +428,8 @@
 						и даже домашних сов. Мы точно знаем, что самое главное – комфорт
 						и безопасность вашего питомца, поэтому в первую очередь продумываем
 						вольеры с учетом потребностей животных</p>
-					<a href="#" class="btn_header shadow_btn style_bold my-4 ml-lg-3">задать вопрос директору</a>
+					<a href="#" data-toggle="modal" data-target="#order" class="btn_header shadow_btn style_bold my-4 ml-lg-3">задать
+						вопрос директору</a>
 				</div>
 				<div class="col-lg-5 text-right">
 					<img class="img-fluid dir_foto" src="img/man.png" alt="">
@@ -448,7 +452,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 text-center">
-					<a href="#" class="privacy">Политика конфиденциальности</a>
+					<a href="#" data-toggle="modal" data-target="#privacy" class="privacy">Политика конфиденциальности</a>
 				</div>
 				<div class="col-lg-4 text-center text-lg-right">
 					<p class="dev_txt m-0">Разработка сайта:</p>
@@ -462,21 +466,20 @@
 <!-- Modal order -->
 <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="headModal"
   aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
+  <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
-      <div class="modal-body px-4">
+      <div class="modal-body px-lg-5">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
-        <p class="text-center head_ord pt-4">Чтобы оставить заявку,
-пожалуйста, заполните
-поля ниже:</p>
+        <p class="text-center modal_title pt-4">Пожалуйста, ведите свои
+				контактные данные:</p>
         <form>
           <fieldset>
             <input type="text" name="name" class="inp_form" placeholder="Введите Ваше имя">
             <input type="tel" name="phone" class="inp_form mt-3" placeholder="Введите телефон">
             <div class="btn_block my-3">
-              <button type="submit" class="btn_header btn_form w-100 h-100">оставить заявку</button>
+              <button type="submit" class="btn_header shadow_btn style_bold w-100">оставить заявку</button>
             </div>
           </fieldset>
         </form>
@@ -485,7 +488,7 @@
   </div>
 </div>
 <!-- Modal privacy -->
-<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="headModal"
+<div class="modal mod_2 fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="headModal"
   aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -493,169 +496,194 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
-        <p class="text-center priv_head pt-4">Политика конфиденциальности:</p>
+        <p class="text-center modal_title pt-4">Политика конфиденциальности:</p>
         <p class="priv_text">Тут текст политики конфиденцциальности и бла бла бла....</p>
       </div>
     </div>
   </div>
 </div>
-<!-- Modal service_1 -->
-<div class="modal fade" id="service_1" tabindex="-1" role="dialog" aria-labelledby="headModal"
+<!-- Modal test -->
+<div class="modal fade" id="test" tabindex="-1" role="dialog" aria-labelledby="headModal"
   aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-body px-lg-5">
+        <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
           <img src="img/close.png" class="img-fluid" alt="крестик">
         </button>
-        <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_1.jpg" class="img-fluid img_serv" alt="строительные работы">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Строительные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled m-0">
-            <li class="list_item">Рытье котлованов под частные дома, заборы, бассейны, гаражные и выгребные ямы</li>
-            <li class="list_item">Разработка траншей под трубы, кабели</li>
-            <li class="list_item">Устройство щебеночного основания</li>
-            <li class="list_item">Асфальтирование</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
-          </div>
-        </div>
+        <div class="body_test">
+        	<form method="get" action="" class="">
+        		<fieldset>
+        				<div class="col-12">
+        					<p class="dev_txt sl-1 w-100 text-center pt-4">Осталось <input class="index_per"
+        							value="5">из 5</p>
+        					<div class="progress mb-5">
+        						<div class="progress-bar" style="width:1%;" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+        							aria-valuemax="100"></div>
+        					</div>
+        					<div class="slider_test init_sl">
+										<div class="slider_item_2">
+											<p class="title_slider w-100 text-center">1. Какого размера нужен вольер?</p>
+											<div class="row justify-content-center">
+												<div class="col-lg-8">
+													<div class="row pl-5">
+														<div class="col-md-6">
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">2000*2000 мм</span>
+															</label>
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">2000*4000 мм</span>
+															</label>
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">2000*6000 мм</span>
+															</label>
+														</div>
+														<div class="col-md-6">
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">2000*3000 мм</span>
+															</label>
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">2000*5000 мм</span>
+															</label>
+															<label class="box_radio pt-3">
+																<input name="time" type="radio" class="">
+																<span class="name_rad">Другой размер</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="nav_slider w-100 d-flex justify-content-center pt-4">
+												<button type="button" class="btn_header shadow_btn style_bold btn_slide">Следующий вопрос</button>
+											</div>
+										</div>
+        						<div class="slider_item_2">
+        							<p class="title_slider w-100 text-center">2. На сколько питомцев будет вольер?</p>
+        							<div class="row justify-content-center">
+        								<div class="col-lg-6">
+        									<div class="row pl-5">
+        										<div class="col-md-6">
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">На одного</span>
+        											</label>
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">На трех</span>
+        											</label>
+        										</div>
+        										<div class="col-md-6">
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">На двух</span>
+        											</label>
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">Другое</span>
+        											</label>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							<div class="nav_slider w-100 d-flex justify-content-center pt-4">
+        								<button type="button" class="btn_header shadow_btn style_bold btn_slide">Следующий вопрос</button>
+        							</div>
+        						</div>
+        						<div class="slider_item_2">
+											<p class="title_slider w-100 text-center">3.­ Какие опции нужно включить?</p>
+											<p class="dev_txt w-100 text-center">Выберите один или несколько вариантов</p>
+        							<div class="row justify-content-center">
+        								<div class="col-lg-5 pl-5">
+        									<label class="chek_box pt-3">
+        										<input name="" type="checkbox" class="">
+        										<span class="name_chekbox">Окно для кормления</span>
+        									</label>
+        									<label class="chek_box pt-3">
+        										<input name="" type="checkbox" class="">
+        										<span class="name_chekbox">Территорию для выгула</span>
+        									</label>
+        									<label class="chek_box pt-3">
+        										<input name="" type="checkbox" class="">
+        										<span class="name_chekbox">Обработку антисептиком</span>
+													</label>
+												</div>
+												<div class="col-lg-5 pl-5">
+        									<label class="chek_box pt-3">
+        										<input name="" type="checkbox" class="">
+        										<span class="name_chekbox">Будку</span>
+        									</label>
+        									<label class="chek_box pt-3">
+        										<input name="" type="checkbox" class="">
+        										<span class="name_chekbox">Зимник</span>
+        									</label>
+        								</div>
+        							</div>
+        							<div class="nav_slider w-100 d-flex justify-content-center pt-4">
+        								<button type="button" class="btn_header shadow_btn style_bold btn_slide">Следующий вопрос</button>
+        							</div>
+        						</div>
+        						<div class="slider_item_2">
+        							<p class="title_slider w-100 text-center">4. С каких сторон будет решетка?</p>
+        							<div class="row justify-content-center">
+        								<div class="col-lg-8">
+        									<div class="row pl-5">
+        										<div class="col-md-6">
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">Только спереди</span>
+        											</label>
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">Спереди и по бокам
+        													с двух сторон</span>
+        											</label>
+        										</div>
+        										<div class="col-md-6">
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">Спереди и сбоку</span>
+        											</label>
+        											<label class="box_radio pt-3">
+        												<input name="time" type="radio" class="">
+        												<span class="name_rad">Со всех сторон</span>
+        											</label>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							<div class="nav_slider w-100 d-flex justify-content-center pt-4">
+        								<button type="button" class="btn_header shadow_btn style_bold btn_slide">Следующий вопрос</button>
+        							</div>
+        						</div>
+        						<div class="slider_item_2">
+        							<p class="title_slider w-100 text-center">5. Пожалуйста, введите ваши данные</p>
+        							<div class="row justify-content-center">
+        								<div class="col-lg-6">
+        									<input type="text" name="name" class="inp_form" placeholder="Введите Ваше имя">
+        									<input type="text" name="tel" class="inp_form mt-3" placeholder="Введите Ваш телефон">
+        									<button type="submit" class="btn_header shadow_btn w-100 px-0 style_bold mt-3">Узнать стоимость</button>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			
+        		</fieldset>
+        	</form>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Modal service_2 -->
-<div class="modal fade" id="service_2" tabindex="-1" role="dialog" aria-labelledby="headModal"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <img src="img/close.png" class="img-fluid" alt="крестик">
-        </button>
-        <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_2.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Ландшафтные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Рыхлению мерзлого грунта</li>
-            <li class="list_item">Установке бордюров, устройству газонов</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal service_3 -->
-<div class="modal fade" id="service_3" tabindex="-1" role="dialog" aria-labelledby="headModal"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <img src="img/close.png" class="img-fluid" alt="крестик">
-        </button>
-        <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_3.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Погрузочно-разгрузочные работы</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Погрузка и разгрузка строительных материалов</li>
-            <li class="list_item">Погрузка и разгрузка почвы, грунта</li>
-            <li class="list_item">Захват и передвижение больших объемов грузов</li>
-            <li class="list_item">Подготовка и перемешивание почвы при дорожных работах</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal service_4 -->
-<div class="modal fade" id="service_4" tabindex="-1" role="dialog" aria-labelledby="headModal"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <img src="img/close.png" class="img-fluid" alt="крестик">
-        </button>
-        <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_4.jpg" class="img-fluid img_serv" alt="Ландшафтные работы">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Вскрытие асфальта, бетона</p>
-          <p class="rob_reg w-100 text-left">Занимаемся такими видами работ, как:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">Вскрытию дорожного покрытия, асфальта</li>
-            <li class="list_item">Вскрытию бетонного покрытия, оснований, перекрытий, плит</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal service_5 -->
-<div class="modal fade" id="service_5" tabindex="-1" role="dialog" aria-labelledby="headModal"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <img src="img/close.png" class="img-fluid" alt="крестик">
-        </button>
-        <div class="col-lg-6 text-center text-lg-left px-0">
-          <img src="img/service_5.jpg" class="img-fluid img_serv" alt="Уборка снега, мусора">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center flex-column justify-content-center py-3 py-lg-0 px-5 pl-lg-3 pr-5">
-          <p class="header_service w-100 text-left m-0">Уборка снега, мусора</p>
-          <p class="rob_reg w-100 text-left">Оказываем услуги по уборке снега и мусора:</p>
-          <ul class="list-unstyled w-100 m-0">
-            <li class="list_item">На территории дачного участка</li>
-            <li class="list_item">Во дворах многоквартирных и частных домов</li>
-            <li class="list_item">На территориях торговых центров, офисных
-зданийв</li>
-            <li class="list_item">На территориях общественного пользования</li>
-          </ul>
-          <p class="rob_thin w-100 text-left">и другими видами услуг</p>
-          <div class="text-left w-100 mt-2">
-            <a href="" data-toggle="modal" data-target="#order" data-dismiss="modal" aria-label="close" class="btn_header btn_form px-4">заказать услугу</a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
 
 
   <script src="js/jquery.min.js"></script>
@@ -663,10 +691,18 @@
   <script src="js/mdb.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/slider_comments.js"></script>
+	<script src="js/slider_test.js"></script>
+	<script src="js/progress.js"></script>
   <script>
 		$('.btn_menu').click(function(){
 			$('.navbar').toggleClass('bg_menu-mobile')
-		})
+		});
+		$('#btn_test').click(function(){
+		$('.slider_test').addClass('init_sl')
+		});
+		$('#close').click(function(){
+		$('.slider_test').removeClass('init_sl')
+		});
 	</script>
 	<script>
 		var data = new Date();
