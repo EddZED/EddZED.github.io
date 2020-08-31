@@ -42,7 +42,7 @@ body.modal-open{padding-right:0 !important;}
 .style_bold{text-transform:uppercase;font-size:16px;font-family:'museo-7';line-height:24px;padding:20px 40px;}
 .black_txt{color:#2c2c2c;}
 .min_white-txt{font-size:16px;font-family:'museo-3';color:#fff;}
-.goods{padding:50px 0;}
+.goods{padding:50px 0;position:relative;}
 .goods .nav-tabs{border:none;}
 .goods .nav-tabs .nav-link{border:none;background:#ededed;padding:20px 25px;box-shadow:inset 0 4px 6px rgba(0,0,0,.15);border-radius:8px;font-size:14px;font-family:'Open Sans';font-weight:bold;color:rgba(44,44,44,.6);}
 .goods .nav-tabs .nav-link.active{border:none;background:linear-gradient(0deg, #f2d180, #fdedbf);border-radius:8px;color:#2c2c2c;box-shadow:none;}
@@ -54,7 +54,7 @@ body.modal-open{padding-right:0 !important;}
 .desc_goods{font-size:16px;font-family:'museo-3';color:#2c2c2c;}
 .desc_goods span{font-family:'museo-7';}
 .text_content{font-size:26px;font-family:'museo-5';color:#2c2c2c;}
-.adventages{padding:50px 0;}
+.adventages{padding:100px 0 50px;position:relative;}
 .card_advent{display:flex;flex-direction:column;justify-content:space-between;align-items:center;}
 .light_text{font-family:'museo-3';}
 .text_min{font-size:16px;color:#2c2c2c;}
@@ -74,7 +74,7 @@ body.modal-open{padding-right:0 !important;}
 .our_work .slick-prev:hover img, .our_work .slick-next:hover img{filter:none;}
 .our_work .slick-prev{left:-175px;right:0;margin:auto;}
 .our_work .slick-next{left:0;right:-175px;margin:auto;}
-.director{padding:100px 0 60px;}
+.director{padding:100px 0 60px;position:relative;}
 .footer{padding:30px 0;background-color:#e8e8e8;}
 .phone_footer, .mail_footer{font-size:16px;color:#2c2c2c;font-family:'museo-5';}
 .phone_footer:hover, .mail_footer:hover{text-decoration:underline;color:#2c2c2c;}
@@ -117,8 +117,17 @@ body.modal-open{padding-right:0 !important;}
 .name_chekbox:after{content:'';position:absolute;left:-30px;width:20px;height:20px;background-image:url(../img/gal_sl.png);background-size:cover;top:0;opacity:0;}
 .chek_box input[type="checkbox"]:checked + .name_chekbox:after{opacity:1;}
 .chek_box input[type="checkbox"]:checked + .name_chekbox{color:rgba(48,48,48,1);}
-.mod_2{display:block !important;opacity:0 !important;z-index:-10 !important;}
-.mod_2.show{opacity:1;z-index:9999 !important;}
+.wrap-modal-slider{padding: 0 30px;opacity: 0;transition: all 0.3s;}
+.wrap-modal-slider.open{opacity: 1;}
+.list_1{position:absolute;top:30px;left:6%;z-index:-1;}
+.list_2{position:absolute;top:130px;right:4%;z-index:-1;}
+.list_3{position:absolute;top:100px;left:5%;z-index:-1;}
+.list_4{position:absolute;bottom:40px;right:7%;z-index:-1;}
+.list_5{position:absolute;bottom:180px;left:6%;z-index:-1;}
+.list_6{position:absolute;top:200px;right:7%;z-index:-1;}
+
+
+
 
 
 
@@ -136,13 +145,15 @@ body.modal-open{padding-right:0 !important;}
   .header_menu{flex-direction:column;justify-content:center;text-align:center;align-items:center;}
   .title_name{font-size:60px;line-height:60px;}
   .dir_foto{position:relative;bottom:-46px;left:auto;}
-  .director{padding-bottom:0;}
+  .director{padding-bottom:0;padding-top:30px;}
+  .adventages{padding-top:50px;padding-bottom:0;}
 }
 @media(max-width:767px){
   .title_name{font-size:40px;line-height:45px;}
   .card_goods{padding:0 15px;}
   .dir_foto{bottom:-41px;}
   .our_work .style_bold{padding:20px 0;width:100%;text-align:center;justify-content:center;}
+  .our_work{padding:130px 0 60px;}
 }
 @media(max-width:575px){
   .goods .nav-tabs .nav-item{width:100%;text-align:center;}

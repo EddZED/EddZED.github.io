@@ -8,4 +8,12 @@ $('.init_sl').slick({
   draggable: false,
   nextArrow: $('.btn_slide')
 })
-$('.modal-open .modal .init_sl').slick('SetPosition')
+
+$(document).ready(function () {
+  $('.init_sl').slick();
+});
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('.init_sl').slick('setPosition');
+  $('.wrap-modal-slider').addClass('open');
+})
