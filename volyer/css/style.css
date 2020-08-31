@@ -56,37 +56,62 @@ body{font-size:14px;color:#303030;}
 .card_advent{display:flex;flex-direction:column;justify-content:space-between;align-items:center;}
 .light_text{font-family:'museo-3';}
 .text_min{font-size:16px;color:#2c2c2c;}
-.our_work{padding:120px 0;background-image:url(../img/bg_our.jpg);background-size:cover;background-position:center center;}
+.our_work{padding:230px 0;background-image:url(../img/bg_our.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;}
 .comments{padding:0 15px;position:relative;}
-.slider_item{padding:0 15px;position:relative;background-color:#fff;border-radius:10px;}
+.slider_item{padding:0 15px;position:relative;background-color:#fff;border-radius:10px;overflow:hidden;}
 .desc_work{position:relative;max-height:315px;overflow-y:scroll;}
 .bold_min-txt{font-size:16px;color:#2c2c2c;font-family:'museo-5';}
 .light_min-txt{font-size:16px;color:#2c2c2c;font-family:'museo-1';}
-.slider_nav{position: relative;width:100%;}
-.slick-dots li button{width:15px;height:15px;background:transparent;border:1px solid #ffc546;}
-.slick-dots li button:hover{background-color:rgba(0,0,0,.15);}
-.slick-dots li.slick-active button{background-color:#ffe37e;box-shadow:inset 0 -3px 6px 0 rgba(255, 193, 63, 1);opacity:1;}
-.slick-dots{}
-.slick-prev, .slick-next{}
-.director{padding:100px 0;}
-.footer{padding:40px 0 50px;background-color:#e8e8e8;}
+.our_work .slider_nav{position: relative;width:100%;}
+.our_work .slick-dots li button{width:15px;height:15px;background:transparent;border:1px solid #ffc546;}
+.our_work .slick-dots li button:hover{background-color:rgba(0,0,0,.15);}
+.our_work .slick-dots li.slick-active button{background-color:#ffe37e;box-shadow:inset 0 -3px 6px 0 rgba(255, 193, 63, 1);opacity:1;}
+.our_work .slick-prev:before, .our_work .slick-next:before{display:none;} 
+.our_work .slick-prev, .our_work .slick-next{width:60px;height:60px;top:33px;z-index:1;}
+.our_work .slick-prev img, .our_work .slick-next img{filter:drop-shadow(0 9px 10px rgba(255, 227, 125, 1));transition:all .3s;}
+.our_work .slick-prev:hover img, .our_work .slick-next:hover img{filter:none;}
+.our_work .slick-prev{left:-175px;right:0;margin:auto;}
+.our_work .slick-next{left:0;right:-175px;margin:auto;}
+.director{padding:100px 0 60px;}
+.footer{padding:30px 0;background-color:#e8e8e8;}
+.phone_footer, .mail_footer{font-size:16px;color:#2c2c2c;font-family:'museo-5';}
+.phone_footer:hover, .mail_footer:hover{text-decoration:underline;color:#2c2c2c;}
+.privacy{font-size:16px;color:#303030;font-family:'museo-1';text-decoration:none;border-bottom:1px solid rgba(48,48,48,.4);transition:all .3s;}
+.privacy:hover{text-decoration:none;color:#303030;border-color:rgba(48,48,48,1);}
+.dev_txt{font-size:16px;font-family:'museo-1';color:#303030;}
+.link_home{font-size:16px;color:#303030;font-family:'museo-1';text-decoration:none;border-bottom:1px solid rgba(48,48,48,.4);transition:all .3s;}
+.link_home:hover{text-decoration:none;color:#303030;border-color:rgba(48,48,48,1);}
+.dir_foto{position:absolute;left:-30px;bottom:-98px;}
+.l_height{line-height:32px;}
 
 
-@media(max-width:1440px){
-  .intro{padding:200px 0;}
+
+
+
+@media(min-width:1440px){
+ 
+}
+@media(max-width:1439px) {
+  .intro {padding: 190px 0;}
 }
 @media(max-width:1200px){
-  .intro{padding:150px 0;}
+  .intro{padding:120px 0;}
+  .dir_foto{left:0;bottom:-92px;}
 }
 @media(max-width:991px){
   .header_menu{flex-direction:column;justify-content:center;text-align:center;align-items:center;}
   .title_name{font-size:60px;line-height:60px;}
+  .dir_foto{position:relative;bottom:-46px;left:auto;}
+  .director{padding-bottom:0;}
 }
 @media(max-width:767px){
   .title_name{font-size:40px;line-height:45px;}
   .card_goods{padding:0 15px;}
+  .dir_foto{bottom:-41px;}
+  .our_work .style_bold{padding:20px 0;width:100%;text-align:center;justify-content:center;}
 }
 @media(max-width:575px){
   .goods .nav-tabs .nav-item{width:100%;text-align:center;}
   .goods .nav-tabs .nav-item:nth-of-type(2){margin-top:15px;}
+  .dir_foto{bottom:0;}
 }
