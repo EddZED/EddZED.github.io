@@ -39,7 +39,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#">Контакты</a>
                     </li>
-                  </ul>
+                  </ul>  
                   <div class="header_contact">
                     <a href="tel:+78000000000" class="phone_link-mobile">8 800 000 00 00</a>
                     <a href="#" data-toggle="modal" data-target="" class="">Перезвонить Вам?</a>
@@ -51,7 +51,13 @@
         </div>
       </nav>
     </header>
-  
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
   
   
   </div>
@@ -59,5 +65,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script>
+    $('.nav-item').click(function(){
+      $('.nav-item').removeClass('active');
+      $(this).toggleClass('active');
+    })
+  </script>
 </body>
 </html>

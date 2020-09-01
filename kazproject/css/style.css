@@ -1,10 +1,15 @@
 @font-face{font-family: 'open_sans-reg';src:url(../font/OpenSans-Regular.ttf);}
+@font-face{font-family: 'open_sans-bold';src:url(../font/OpenSans-Bold.ttf);}
 html{scroll-behavior:smooth;}
 body{font-family:'open_sans-reg';color:#303030;}
 .wrapper{overflow-x:hidden;}
 .navbar.scrolling-navbar{box-shadow:none; padding-top:40px;}
-.navbar.navbar-dark .menu .nav-item .nav-link{color:#303030;}
-
+.navbar.navbar-dark .menu .nav-item{padding:5px 10px;}
+.navbar.navbar-dark .menu .nav-item .nav-link{color:#303030;padding:0;font-family:'open_sans-bold';}
+.navbar.navbar-dark .menu .nav-item.active .nav-link{border-bottom:2px solid #247b67;color:#247b67;transition:all .3s;}
+.navbar.navbar-dark .menu .nav-item .nav-link:hover{color:#247b67;border-bottom:2px solid #247b67;}
+.navbar.navbar-dark .menu .nav-item.active .nav-link:hover{color:#247b67;}
+.header_contact{display:flex;flex-direction:column;align-items:flex-end;}
 
 
 
