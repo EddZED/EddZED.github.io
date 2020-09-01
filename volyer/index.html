@@ -31,11 +31,10 @@
               <li class="menu_item"><a href="" data-toggle="modal" data-target="#order">Заказать</a></li>
             </ul>
 					</div>
-					<div class="block_phone">
-					  <a href="" class="phone_link mr-lg-5">8 800 000 00 00</a>
+					<div class="block_phone text-center mr-lg-5">
+					  <a href="" class="phone_link">8 800 000 00 00</a>
 					  <div class="time_work">
-							<span id="btn1" class="circl no_open d-none">Сейчас закрыты</span>
-							<span id="btn2" class="circl open d-none">Сейчас работаем</span>
+							<span class="open">Пн - Пт с 9:00 до 20:00</span>
 					  </div>
 					</div>
 			    <a href="#" data-toggle="modal" data-target="#order" class="btn_header mt-3 mt-lg-0">Перезвонить Вам?</a>
@@ -716,7 +715,7 @@
 	<script>
 		var data = new Date();
 		var body = document.getElementById('btn1');
-		if (data.getHours() > 20 && data.getHours() < 8) {document.getElementById("btn1").classList.toggle("d-none");}else{
+		if (data.getHours() > 20 && data.getHours() < 9) {document.getElementById("btn1").classList.toggle("d-block");}else{
 			document.getElementById("btn2").classList.toggle("d-none");}
 	</script>
 </body>
