@@ -52,6 +52,7 @@ body{font-family:'open_sans-reg';color:#303030;}
   .box_name{top:45%;}
 }
 @media(max-width:575px){
+   .intro{height:auto;padding-top:80px;}
   .box_name{top:65%;z-index:2;}
   .btn_main{padding:25px 0;width:100%;text-align:center;}
   .title_intro{font-size:23px;}
