@@ -10,7 +10,7 @@
   <link href="css/slick-theme.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body>  
   <div class="wrapper">
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
@@ -35,7 +35,7 @@
                   id="basicExampleNav">
                   <ul class="navbar-nav text-center">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#intro">Главная<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">О бизнес-тренере</a>
@@ -52,7 +52,7 @@
                   </ul>  
                   <div class="header_contact">
                     <a href="tel:+78000000000" class="phone_link-header">8 800 000 00 00</a>
-                    <a href="#" data-toggle="modal" data-target="" class="">Перезвонить Вам?</a>
+                    <a href="#" data-toggle="modal" data-target="" class="link_order">Перезвонить Вам?</a>
                   </div>
                 </div>
               </div>
@@ -61,12 +61,37 @@
         </div>
       </nav>
     </header>
-    <section class="intro">
-      <div class="container">
-        <div class="row">
-
+    <section id="intro" class="intro">
+      
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-5 height_mobile order-2 order-lg-1">
+            <img class="girl_intro" src="img/girl.png" alt="бизнес-тренер">
+            <div class="box_name">
+              <div class="dir_name"><span>Алёна Казакова</span></div>
+              <div class="dir_desc"><span>Практикующий бизнес-тренер</span></div>
+            </div>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2">
+            <div class="row h-100 align-items-center">
+              <div class="col">
+                <p class="light_sans-midle left_line pl-5 m-0">За 1 тренинг <img class="img-fluid pl-2 pb-3" src="img/watch.png" alt="за 1 тренинг"></p>
+                <h1 class="title_intro">Помогу повысить личную
+                  эффективность, сплотить коллектив,
+                  и увеличить продажи отдела </h1>
+                <div class="block_btn-intro pt-4">
+                  <a href="#" data-toggle="modal" data-target="#" class="btn_main">Записаться на консультацию</a>
+                  <div class="w-100"></div>
+                  <span class="transparent_txt mt-4"><img class="img-fluid curve d-none d-sm-block" src="img/curve.png" alt=""> На ней я расскажу, какой
+                    тренинг подойдет именно вам
+                    и чем он будет вам полезен</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <img class="cloud_intro" src="img/cloud.png" alt="облака">
     </section>
   
   
@@ -79,6 +104,9 @@
     $('.nav-item').click(function(){
       $('.nav-item').removeClass('active');
       $(this).toggleClass('active');
+    });
+    $('.btn_mob').click(function(){
+      $('.navbar').toggleClass('bg_white')
     })
   </script>
 </body>

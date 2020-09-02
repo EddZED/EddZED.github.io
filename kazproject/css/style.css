@@ -1,25 +1,59 @@
 @font-face{font-family: 'open_sans-reg';src:url(../font/OpenSans-Regular.ttf);}
 @font-face{font-family: 'open_sans-bold';src:url(../font/OpenSans-Bold.ttf);}
+@font-face{font-family: 'open_sans-light';src:url(../font/OpenSans-Light.ttf);}
 html{scroll-behavior:smooth;}
 body{font-family:'open_sans-reg';color:#303030;}
 .wrapper{overflow-x:hidden;}
-.navbar.scrolling-navbar{box-shadow:none; padding-top:40px;}
+.navbar.scrolling-navbar{box-shadow:none; padding-top:30px;}
+.navbar.top-nav-collapse{background-color:rgba(255,255,255,.91);}
 .navbar.navbar-light .menu .nav-item{padding:5px 15px;}
 .navbar.navbar-light .menu .nav-item .nav-link{color:#303030;padding:0;font-family:'open_sans-bold';font-size:14px;border-bottom:2px solid transparent;background:transparent;display:inline-block;}
 .navbar.navbar-light .menu .nav-item.active .nav-link{border-bottom:2px solid #247b67;color:#247b67;transition:all .3s;background:transparent;}
 .navbar.navbar-light .menu .nav-item .nav-link:hover{color:#247b67;border-bottom:2px solid #247b67;}
 .navbar.navbar-light .menu .nav-item.active .nav-link:hover{color:#247b67;}
+.bg_white{background-color:rgba(255,255,255,.91);}
 .header_contact{display:flex;flex-direction:column;align-items:flex-end;}
 .phone_link-header{font-size:20px;color:#303030;font-family:'open_sans-bold';}
-
-
-
-
+.link_order{font-size:14px;font-family:'open_sans-bold';color:#247b24;border-bottom:2px solid rgba(36,123,103,.6);transition:all .3s;}
+.link_order:hover{border-color:transparent;color:#247b24;}
+.intro{position:relative;height:100vh;background-image:url(../img/intro_bg.jpg);background-size:cover;background-position:0 0;background-repeat:no-repeat;overflow:hidden;}
+.cloud_intro{position:absolute;bottom:0;left:0;z-index:1;}
+.girl_intro{position:absolute;left:0;top:60px;}
+.light_sans-midle{font-size:20px;font-family:'open_sans-light';}
+.left_line{position:relative;}
+.left_line:before{position:absolute;content:'';top:50%;left:0;width:30px;height:1px;background-color:#303030;opacity:.4;}
+.title_intro{font-size:32px;font-family:'open_sans-bold';letter-spacing:-1px;}
+.block_btn-intro{position:relative;}
+.btn_main{display:inline-block;font-size:14px;font-family:'open_sans-bold';color:#fff;text-transform:uppercase;padding:30px 40px;background-color:#40b699;box-shadow:inset 0 -30px 29px rgba(7,40,29,.7),0 36px 30px -10px rgba(19,87,72,.75);border-radius:10px;transition:all .3s;}
+.btn_main:hover{color:#fff;box-shadow:inset 0 -15px 29px rgba(7,40,29,.8),0 36px 30px 5px rgba(19,87,72,.75);}
+.transparent_txt{font-size:14px;color:rgba(48,48,48,.6);font-family:'open_sans-light';display:inline-block;width:250px;position:relative;float:right;}
+.curve{position:absolute;left:-60%;top:-10px;}
+.box_name{position:absolute;top:80%;right:0;transition:all .3s;}
+.dir_name{position:absolute;z-index:1;background-color:#fff;padding:15px 25px;border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.2);transform:skew(-17deg);bottom:30px;right:0;transition:all .3s;}
+.dir_name span{font-size:20px;font-family:'open_sans-bold';transform:skew(17deg);display:inline-block;white-space:nowrap;}
+.dir_desc{position:absolute;z-index:0;background-color:#fff;padding:20px 25px 15px 25px;border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.2);transform:skew(-17deg);bottom:-20px;right:-25px;transition:all .3s;}
+.dir_desc span{transform:skew(17deg);display:inline-block;font-size:14px;font-family:'open_sans-light';white-space:nowrap;}
 
 
 
 
 @media(max-width:991px){
+  .intro{height:auto;padding-top:130px;}
   .navbar.scrolling-navbar{padding-top:10px;}
+  .navbar.scrolling-navbar.bg_white{padding-bottom:30px;}
   .header_contact{align-items:center;}
+  .girl_intro{top:0;max-width:100%;left:0;right:0;margin:auto;}
+  .height_mobile{min-height:800px;}
+  .box_name{top:35%;right:10%;}
+}
+@media(max-width:767px) {
+  .title_intro{font-size:26px;}
+  .height_mobile{min-height:600px;}
+  .box_name{top:45%;}
+}
+@media(max-width:575px){
+  .box_name{top:65%;z-index:2;}
+  .btn_main{padding:25px 0;width:100%;text-align:center;}
+  .title_intro{font-size:23px;}
+  .height_mobile{min-height:490px;}
 }

@@ -51,7 +51,7 @@
 	  </nav>
   </header>
 <div class="overflow-hidden">
-  <section class="intro">
+  <section id="intro" class="intro">
   	<div class="container">
   	  <div class="row">
   	  	<div class="col-lg-7 text-lg-left text-center">
@@ -797,5 +797,10 @@
   <script src="js/slick.min.js"></script>
 	<script src="js/answer_slider.js"></script>
 	<script src="js/progress.js"></script>
+	<script>
+		$('.menu_item').click(function(){
+			$('.navbar-collapse').removeClass('show');
+		})
+	</script>
 </body>
 </html>
