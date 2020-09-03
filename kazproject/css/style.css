@@ -77,6 +77,12 @@ body{font-family:'open_sans-reg';color:#303030;}
 .slick-prev:before, .slick-next:before{display:none;}
 .slick-arrow:hover, .slick-arrow:focus{opacity:.8;color:#303030;}
 .tarif{position:relative;padding:50px 0;}
+.box_tarif{width:100%;display:block;}
+.box_tarif-header{width:100%;padding:30px 15px;}
+.box_tarif-body{width:100%;padding:30px 20px;}
+
+
+
 
 
 
@@ -90,6 +96,7 @@ body{font-family:'open_sans-reg';color:#303030;}
   .nav_link-social{right:1%;}
   .cirl_page3{max-width:520px;}
   .rezume{background-position:0 -70px;}
+  .card-3{left:0;}
 }
 @media(max-width:991px){
   .intro{height:auto;padding-top:130px;}
