@@ -62,11 +62,14 @@ body{font-family:'open_sans-reg';color:#303030;}
 .block_btn-page3{position:relative;display:flex;align-items:center;justify-content:start;}
 .box_name.page3{bottom:0;left:180px;right:auto;}
 .rezults{padding:70px 0;position:relative;}
-.slider_body{position:relative;}
-.slider_item{padding:20px;}
-
-
-
+.slider_body{position:relative;width:100%;}
+.slider_item{width:100%;}
+.slider_block{box-shadow:0 0 20px 7px rgba(48,48,48,.15);width:100%;padding:30px 15px 100px;}
+.slider_item:focus{outline:none;}
+.bold_text-slider{font-size:26px;font-family:'open_sans-bold';text-align:center;}
+.text_min-light{font-size:14px;font-family:'open_sans-light';line-height:25px;}
+.btn_slider{padding:20px 60px;border-radius:6px;}
+.slick-slide{padding:30px;}
 
 
 
