@@ -1,6 +1,7 @@
 @font-face{font-family: 'open_sans-reg';src:url(../font/OpenSans-Regular.ttf);}
 @font-face{font-family: 'open_sans-bold';src:url(../font/OpenSans-Bold.ttf);}
 @font-face{font-family: 'open_sans-light';src:url(../font/OpenSans-Light.ttf);}
+@font-face{font-family: 'open_sans-extra';src:url(../font/OpenSans-ExtraBold.ttf);}
 html{scroll-behavior:smooth;}
 body{font-family:'open_sans-reg';color:#303030;}
 .wrapper{overflow-x:hidden;}
@@ -33,7 +34,12 @@ body{font-family:'open_sans-reg';color:#303030;}
 .dir_name span{font-size:20px;font-family:'open_sans-bold';transform:skew(17deg);display:inline-block;white-space:nowrap;}
 .dir_desc{position:absolute;z-index:0;background-color:#fff;padding:20px 25px 15px 25px;border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.2);transform:skew(-17deg);bottom:-20px;right:-25px;transition:all .3s;}
 .dir_desc span{transform:skew(17deg);display:inline-block;font-size:14px;font-family:'open_sans-light';white-space:nowrap;}
-
+.nav_link-page{position:absolute;top:0;bottom:0;left:5%;margin:auto;display:flex;align-items:center;justify-content:center;}
+.num_page{position:relative;}
+.num_page .num_page-link{font-size:14px;font-family:'open_sans-reg';color:rgba(48,48,48,.5);}
+.num_page.active .num_page-link{font-family:'open_sans-extra';font-size:20px;}
+.num_page.active{padding-bottom:40px;}
+.num_page.active:before{content:}
 
 
 
