@@ -70,7 +70,7 @@ body{font-family:'open_sans-reg';color:#303030;}
 .text_min-light{font-size:14px;font-family:'open_sans-light';line-height:25px;}
 .btn_slider{padding:20px 60px;border-radius:6px;}
 .slick-slide{padding:30px;}
-.slick-arrow{font-size:14px;color:#000;}
+.slick-arrow{font-size:14px;color:#237a67;}
 .nav_slider{position:absolute;bottom:80px;width:100%;z-index:2;}
 .slick-prev{left:70px;width:auto;}
 .slick-next{right:70px;width:auto;}
@@ -80,7 +80,12 @@ body{font-family:'open_sans-reg';color:#303030;}
 .box_tarif{width:100%;display:block;}
 .box_tarif-header{width:100%;padding:30px 15px;}
 .box_tarif-body{width:100%;padding:30px 20px;}
-
+.block_item{position:absolute;top:30px;right:-40px;}
+.img-item2{position:relative;top:70px;}
+.block_img-slider{width:100%;position:relative;text-align:center;display:block;}
+.btn_video{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;display: inline-block;}
+.view_video{position:absolute;bottom:90px;left:0;right:0;margin:auto;color:#fff;font-size:14px;font-family:'open_sans-reg';width:200px;}
+.curve_2{position:absolute;left:10px;bottom:10px;}
 
 
 
@@ -113,6 +118,9 @@ body{font-family:'open_sans-reg';color:#303030;}
   .cirl_page3{top:0;left:0;right:0;margin:auto;}
   .box_name.page3{bottom:30%;right:50%;}
   .rezume{background-position:0 30px;}
+  .block_item{display:none;}
+  .rezults{padding-bottom:10px;}
+  .tarif{padding:20px;}
 }
 @media(max-width:767px) {
   .title_intro{font-size:26px;}
@@ -120,6 +128,11 @@ body{font-family:'open_sans-reg';color:#303030;}
   .box_name{top:45%;}
   .card-4{left:0;right:0;}
   .card-5{bottom:0;top:0;}
+  .view_video{bottom:60px;}
+  .nav_slider{}
+  .slick-prev span, .slick-next span{display:none;}
+  .bold_text-slider{font-size:18px;}
+  .slick-slide{padding:10px 5px}
 }
 @media(max-width:575px){
   .intro{height:auto;padding-top:80px;}
@@ -132,4 +145,5 @@ body{font-family:'open_sans-reg';color:#303030;}
   .card-5{right:-50px;}
   .card-3{top:0;}
   .situation_card{padding:10px 15px;min-height:175px;}
+  .btn_video{max-width:75px;}
 }
