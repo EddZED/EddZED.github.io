@@ -106,7 +106,7 @@ body{font-family:'open_sans-reg';color:#303030;}
 .gaid{position:relative;padding:50px 0;}
 .price_block{position:relative;}
 .price_block s{font-size:20px;font-family:open_sans-reg;opacity:.5;}
-.order_page{position:relative;padding:150px 0;background-image:url(../img/bg_page7.jpg);background-size:cover;background-repeat:no-repeat;}
+.order_page{position:relative;padding:170px 0;background-image:url(../img/bg_page7.jpg);background-size:cover;background-repeat:no-repeat;}
 .block_form{box-shadow:0 5px 20px rgba(3,3,48,.07);padding:50px 65px;background:#fff;}
 .midle_bold{font-size:20px;font-family:'open_sans-bold';}
 .btn_form{border:none}
@@ -115,7 +115,11 @@ body{font-family:'open_sans-reg';color:#303030;}
 .form_input::-webkit-input-placeholder{font-size:14px;font-family:open_sans-light;color:rgba(48,48,48,.6);padding-left:40px;}
 .block_bootom-girl{position:absolute;bottom:0;right:0;}
 .img_girl_3{max-width:500px;right:-50px}
-.mac_img{position:absolute;bottom:0;right:300px;}
+.mac_img{position:absolute;bottom:0;right:400px;}
+.footer{padding:50px 0;}
+.box_name.page7{position:absolute;right:50%;}
+
+
 
 
 
