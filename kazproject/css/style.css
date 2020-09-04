@@ -118,10 +118,11 @@ body{font-family:'open_sans-reg';color:#303030;}
 .mac_img{position:absolute;bottom:0;right:400px;}
 .footer{padding:50px 0;}
 .box_name.page7{position:absolute;right:50%;}
-
-
-
-
+.footer_phone, .footer_mail{display:block;font-size:20px;font-family:open_sans-light;color:#303030;}
+.modal-body{position: relative;border-radius:4px;padding:20px 30px;}
+.close{position: absolute;top:19px;right:20px;}
+.modal_title{font-size:20px;font-family:open_sans-reg;}
+.modal-sm{max-width:350px !important;}
 
 @media(max-width:1399px){
   .nav_link-page{left:3%;}
@@ -158,6 +159,7 @@ body{font-family:'open_sans-reg';color:#303030;}
   .block_form{padding:30px 20px;}
   .block_bootom-girl{display:none;}
   .order_page{padding:50px 0;}
+  .footer{padding:20px;}
 }
 @media(max-width:767px) {
   .title_intro{font-size:26px;}
@@ -186,4 +188,5 @@ body{font-family:'open_sans-reg';color:#303030;}
   .situation_card{padding:10px 15px;min-height:175px;}
   .btn_video{max-width:75px;}
   .form_input{padding:25px 0;}
+  .modal-sm{max-width:100% !important;}
 }
