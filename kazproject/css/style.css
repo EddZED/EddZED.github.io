@@ -111,7 +111,8 @@ body{font-family:'open_sans-reg';color:#303030;}
 .midle_bold{font-size:20px;font-family:'open_sans-bold';}
 .btn_form{border:none}
 .btn_form:focus{outline:none;}
-.form_input{border:none;width:100%;height:100%;box-shadow:inset 5px 10px 30px rgba(48,48,48,.2);border-radius:10px;padding:30px 0;}
+.form_input{border:none;width:100%;height:100%;box-shadow:inset 5px 10px 30px rgba(48,48,48,.2);border-radius:10px;padding:30px 20px;}
+.form_input:focus{outline:none;}
 .form_input::-webkit-input-placeholder{font-size:14px;font-family:open_sans-light;color:rgba(48,48,48,.6);padding-left:40px;}
 .block_bootom-girl{position:absolute;bottom:0;right:0;}
 .img_girl_3{max-width:500px;right:-50px}
