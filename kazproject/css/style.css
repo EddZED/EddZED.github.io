@@ -190,4 +190,6 @@ body{font-family:'open_sans-reg';color:#303030;}
   .btn_video{max-width:75px;}
   .form_input{padding:25px 0;}
   .modal-sm{max-width:100% !important;}
+  .box_name.page3{right:20%;}
+  .rezume{padding-top:0;}
 }
