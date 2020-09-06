@@ -4,6 +4,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:man_bold;src:url(../font/Manrope-Bold.ttf);}
 @font-face{font-family:man_semi;src:url(../font/Manrope-SemiBold.ttf);}
 body{font-family:man_reg;color:#000;font-size:17px;}
+.wrapper{overflow:hidden;}
 .header{background-color:#F9F9F9;position:relative;}
 .navbar-nav .nav-item{padding:5px 0;}
 .navbar-nav .nav-item .nav-link{padding:5px 0;color:#000;font-family:man_medium;transition:all .3s;}
