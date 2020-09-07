@@ -3,6 +3,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:man_medium;src:url(../font/Manrope-Medium.ttf);}
 @font-face{font-family:man_bold;src:url(../font/Manrope-Bold.ttf);}
 @font-face{font-family:man_semi;src:url(../font/Manrope-SemiBold.ttf);}
+@font-face{font-family:bebas_bold;src:url(../font/BebasNeueBold.otf);}
 body{font-family:man_reg;color:#000;font-size:17px;}
 .wrapper{overflow:hidden;}
 .header{background-color:#F9F9F9;position:relative;}
@@ -15,8 +16,24 @@ body{font-family:man_reg;color:#000;font-size:17px;}
 .intro{position:relative;}
 .intro_view{position:absolute;top:0;left:0;width:100%;height:100%;left:0;right:0;margin:auto;}
 .bg{background-color:#fff;}
+.title_page{font-size:53px;font-family:bebas_bold;color:#1E1919;text-transform:uppercase;letter-spacing:0.03em;line-height:80px;}
+.yelow_bg{position:relative;}
+.yelow_bg:before{content:'';position:absolute;left:-200%;right:0;top:7px;bottom:13px;background-color:#FDE126;z-index:-1;}
+.vertical_line{position:relative;z-index:0;}
+.vertical_line:after{content:'';position:absolute;width:6px;top:7px;bottom:13px;right:-15px;background-color:#1E1919;}
+.sub_title{font-size:42px;color:#1E1919;font-family:man_reg;line-height:53px;}
+.title_padding{padding-top:150px;}
+.btn_order{display:inline-flex;font-size:20px;font-family:man_reg;line-height:30px;text-transform:uppercase;color:#000;align-items:center;padding:7px 40px;border:2px solid #1E1919;background-color:#fff;transition:all .5s;}
+.btn_order img{padding-left:15px;transition:all .3s;}
+.btn_order span{display:inline-block;transition:all .3s;}
+.btn_order:hover{background-color:#FDE126;text-decoration:none;color:#000;}
+.btn_order:focus{border-color:transparent;background-color:#FDE126;outline:none;}
+.btn_order:focus span{transform:translate(30px, 0);outline:none;}
+.btn_order:focus img{transform:translate(30px, 0);opacity:0;}
 
-
+@media(max-width:1199px){
+  .title_page{font-size:46px;line-height:70px;}
+}
 @media(max-width:991px){
   .intro_view{position:relative;}
 }
