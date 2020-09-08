@@ -96,7 +96,7 @@ button.btn_service{border:none;padding:13px 0 9px;}
 .scrolling_box::-webkit-scrollbar-button {  background-color:transparent; }
 .scrolling_box::-webkit-scrollbar-track {  background-color:transparent;}
 .scrolling_box::-webkit-scrollbar-track-piece { background-color: #eee;opacity:.2;border-radius:6px;}
-.scrolling_box::-webkit-scrollbar-thumb { height:10px; background-color: #4230BF; border-radius: 6px;}
+.scrolling_box::-webkit-scrollbar-thumb { height:50px; background-color: #4230BF; border-radius: 6px;}
 .scrolling_box::-webkit-scrollbar-corner { background-color:#4230BF;}
 .scrolling_box::-webkit-resizer { background-color: #4230BF;}
 
