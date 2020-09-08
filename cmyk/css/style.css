@@ -92,6 +92,15 @@ button.btn_service{border:none;padding:13px 0 9px;}
 .block_link-phone{display:flex;align-items:center;justify-content:flex-end;}
 .link_footer{display:block;font-size:16px;color:#1E1919;}
 .link_footer:hover{opacity:.8;text-decoration:none;color:#1E1919;}
+.scrolling_box::-webkit-scrollbar { width: 3px; height: 3px;}
+.scrolling_box::-webkit-scrollbar-button {  background-color: #666; }
+.scrolling_box::-webkit-scrollbar-track {  background-color: #999;}
+.scrolling_box::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+.scrolling_box::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+.scrolling_box::-webkit-scrollbar-corner { background-color: #999;}}
+.scrolling_box::-webkit-resizer { background-color: #666;}
+
+
 
 
 @media(max-width:1199px){
