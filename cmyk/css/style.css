@@ -145,6 +145,16 @@ button.btn_service{border:none;padding:13px 0 9px;}
 .desc_goods{border:1px solid #1E1919;background-color:#f9f9f9;transition:all .5s;color:#1E1919;}
 .desc_goods:hover{text-decoration:none;color:#1E1919;background-color:#FDE126;}
 .desc_goods:focus{border-color:transparent;}
+/*page 5*/
+.intro_cart_2 .title_padding{padding:90px 0;}
+.intro_cart_2 .title_page{font-size:40px;line-height:60px;}
+.intro_cart_2 .yelow_bg:before{top:12px;bottom:16px;}
+
+
+
+
+
+
 
 
 @media(min-width:992px){
@@ -160,6 +170,7 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .intro_cart .title_padding{padding-top:60px;}
   .navbar-nav .nav-item{padding:5px;}
   .content_cart{padding:50px 0;}
+  .intro_cart_2 .title_padding{padding:50px 0;}
 }
 @media(max-width:991px){
   .intro_view{position:relative;}
