@@ -7,8 +7,9 @@ html{scroll-behavior:smooth;}
 body{font-family:man_reg;color:#000;font-size:17px;}
 .wrapper{overflow:hidden;}
 .header{background-color:#F9F9F9;position:relative;}
-.navbar-nav .nav-item{padding:5px 0;}
-.navbar-nav .nav-item .nav-link{padding:5px 0;color:#000;font-family:man_medium;transition:all .3s;}
+.navbar-nav .nav-item{padding:5px 10px;transition:all .3s;}
+.navbar-nav .nav-item.active{background-color:#FDE126;}
+.navbar-nav .nav-item .nav-link{padding:0;color:#000;font-family:man_medium;transition:all .3s;}
 .navbar-nav .nav-item .nav-link:hover{text-decoration:underline;}
 .whats_link{color:#000;font-family:man_medium;display:inline-block;}
 .whats_link:hover{color:#000;text-decoration:underline;}
@@ -99,16 +100,53 @@ button.btn_service{border:none;padding:13px 0 9px;}
 .scrolling_box::-webkit-scrollbar-thumb { height:50px; background-color: #4230BF; border-radius: 6px;}
 .scrolling_box::-webkit-scrollbar-corner { background-color:#4230BF;}
 .scrolling_box::-webkit-resizer { background-color: #4230BF;}
+/*page 2*/
+.intro_page-2 .sub_title{font-size:20px;line-height:30px;}
+.intro_page-2 .yelow_bg:before{top:16px;bottom:21px;}
+.intro_page-2 .yelow_bg:after{top:16px;bottom:21px;}
+.intro_page-2 .title_padding{padding:80px 0;}
+.content_serice{padding:50px 0;}
+.breadcrumb{background-color:transparent;}
+.breadcrumb-item{font-size:16px;line-height:25px;}
+.breadcrumb-item a{color:#1E1919;font-family:man_medium;}
+.breadcrumb-item+.breadcrumb-item::before{content:'>';}
+.breadcrumb-item.active{color:#4230BF;}
+/*page 3*/
+.intro_cart .title_padding{padding-top:120px;}
+.content_cart{padding:80px 0;}
+.left_menu{list-style:none;padding:0;}
+.left_menu .lift_menu-item .left_menu-link{padding:10px 16px;display:inline-block;font-size:17px;line-height:25px;color:#1E1919;font-weight:600;transition:all .3s;width:100%;}
+.left_menu .lift_menu-item .left_menu-link:hover{background-color:#FDE126;text-decoration:none;}
+.left_menu .lift_menu-item .left_menu-link.active{background-color:#FDE126;}
+.btn_sidebar{padding:10px 16px;display:inline-flex;width:100%;justify-content:space-between;background-color:#4230BF;box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);color:#fafafa;font-size:17px;transition:all .5s;}
+.btn_sidebar:hover, .btn_sidebar:focus{text-decoration:none;color:#fafafa;}
+.btn_sideabar img{transition:all .5s;}
+.btn_sidebar[aria-expanded="true"] img{transform:rotateX(180deg);transition:all .5s;}
+.line_cart{padding-left:27px;position:relative;}
+.line_cart:before{content:'';position:absolute;width:20px;height:2px;left:0;top:12px;background-color:#4230BF;}
+.yelow_block.page_cart{height:45%;left:25%;}
+.nav-tabs{border:none;}
+.nav-tabs .nav-item{padding:5px 25px}
+.nav-tabs .nav-item .nav-link{border:none;position:relative;font-size:20px;line-height:25px;font-weight:600;color:#1E1919;padding:0;border-bottom:7px solid transparent;transition:all .3s;display:inline-block;}
+.nav-tabs .nav-item .nav-link.active{border-color:#4230BF;}
+.tab-content .line_cart:before{top:30px;}
 
 
 
 
+@media(min-width:992px){
+  .btn_sidebar.collapsed + .collapse{display:block;}
+}
 @media(max-width:1199px){
   .title_page{font-size:46px;line-height:70px;}
   .sub_title{font-size:35px;}
   .btn_position{bottom:5px;}
   .why{padding-top:0 0 40px;}
   .big_yelow-title{top:-27px;}
+  .intro_page-2 .title_padding{padding:20px 0;}
+  .intro_cart .title_padding{padding-top:60px;}
+  .navbar-nav .nav-item{padding:5px;}
+  .content_cart{padding:50px 0;}
 }
 @media(max-width:991px){
   .intro_view{position:relative;}
@@ -126,6 +164,11 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .question{background-image:none;padding-bottom:50px;}
   .our_work{padding:80px 0 20px;}
   .we_num{padding:30px 0 50px;}
+  .intro_page-2 .title_padding{padding:0;}
+  .intro_page-2 .yelow_bg:before{top:0;bottom:6px;}
+  .intro_page-2 .yelow_bg:after{top:auto;bottom:-16px;}
+  .content_serice{padding:30px 0;}
+  .content_cart{padding:40px 0;}
 }
 @media(max-width:767px){
   .scrolling_box{overflow-x:scroll;flex-wrap:nowrap;}
@@ -133,10 +176,14 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .big_yelow-title{top:315px;line-height:100px;}
   .block_adress, .block_link-phone{justify-content:center;}
   .service{padding:50px 0 10px;}
+  .page_service .scrolling_box{flex-wrap:wrap;overflow-x:hidden;justify-content:center;}
+  .yelow_block.page_cart{height:30%;}
 }
 @media(max-width:575px){
   .btn_order{width:100%;justify-content:center;}
   .big_yelow-title{font-size:62px;line-height:60px;top:20px;}
   .yelow_block.page_why{right:30%;}
   .box_work .btn_work{bottom:0;right:-15px;}
+  .nav.nav-tabs{flex-direction:column;}
+  .nav.nav-tabs .nav-item{padding-left:0;}
 }

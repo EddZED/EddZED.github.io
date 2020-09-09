@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
               <div class="row align-items-center">
                 <div class="collapse navbar-collapse" id="menu_main">
                   <ul class="navbar-nav justify-content-around w-100 text-center">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="#">Услуги<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -398,5 +398,11 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('.nav-item').click(function(){
+      $('.nav-item').removeClass('active');
+      $(this).toggleClass('active');
+    })
+  </script>
 </body>
 </html>
