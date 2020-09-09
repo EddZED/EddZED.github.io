@@ -114,7 +114,7 @@ button.btn_service{border:none;padding:13px 0 9px;}
 /*page 3*/
 .intro_cart .title_padding{padding-top:120px;}
 .content_cart{padding:80px 0;}
-.left_menu{list-style:none;padding:0;}
+.left_menu{list-style:none;padding:0;background-color:#fafafa;box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);}
 .left_menu .lift_menu-item .left_menu-link{padding:10px 16px;display:inline-block;font-size:17px;line-height:25px;color:#1E1919;font-weight:600;transition:all .3s;width:100%;}
 .left_menu .lift_menu-item .left_menu-link:hover{background-color:#FDE126;text-decoration:none;}
 .left_menu .lift_menu-item .left_menu-link.active{background-color:#FDE126;}
@@ -149,10 +149,38 @@ button.btn_service{border:none;padding:13px 0 9px;}
 .intro_cart_2 .title_padding{padding:90px 0;}
 .intro_cart_2 .title_page{font-size:40px;line-height:60px;}
 .intro_cart_2 .yelow_bg:before{top:12px;bottom:16px;}
-
-
-
-
+.table_price{width:100%;background-color:#fafafa;box-shadow:0px 4px 5px rgba(0, 0, 0, 0.1);}
+.table_price thead{background-color:#FDE126;}
+.table_price thead tr th{font-size:20px;line-height:25px;color:#1E1919;font-weight:600;font-family:man_medium;}
+.table_price tr th{text-align:center;padding:15px 0;width:33.33333%;}
+.table_price tr th:not(:last-of-type){border-right:1px solid #1E1919;}
+.table_price tbody tr th{font-size:19px;font-family:man_reg;}
+/*page 6*/
+.content_about{position:relative;padding:80px 0;}
+.midle_bold{font-size:30px;line-height:50px;font-family:bebas_bold;letter-spacing:0.04em;color:#1E1919;}
+.our_comand{padding:40px 0;}
+.manager .box_work .btn_work{bottom:20px;right:-15px;width:90%;}
+.manager .box_work:hover .btn_work{background-color:#321DBF;}
+.min_text-prof{font-size:14px;line-height:19px;color:#1e1919;letter-spacing:-1px;}
+.phone_manager{display:block;color:#4230BF;font-size:16px;text-align:left;}
+.phone_manager:hover{color:#4230BF;}
+.director{padding:50px 0;}
+.name_director{text-transform:uppercase;font-size:20px;font-family:bebas_bold;line-height:19px;color:#1e1919;}
+.cadry .yelow_block{left:-200%;right:80%;height:30%;bottom:50px;}
+.director .phone_manager{text-align:left;}
+.page_about{padding:100px 0 50px;}
+/*page 7*/
+.intro_cart_3 .title_padding{padding:100px 0;}
+.intro_cart_3 .title_page{font-size:40px;}
+/*page 8*/
+.cart_contact .title_padding{padding:100px 0;}
+.cart_contact .title_page{font-size:48px;line-height:59px;}
+.cart_contact .yelow_bg:before{left:-500%;top:5px;}
+.cart_contact .vertical_line:after{top:5px;bottom:16px;}
+.contacty_content{position:relative;padding:60px 0;}
+.purple_txt{font-size:25px;line-height:30px;color:#4230BF;font-family:bebas_bold;text-transform:uppercase;}
+.contact_txt{font-size:20px;color:#000;line-height:25px;}
+.black_link_phone{font-size:20px;color:#1E1919;line-height:25px;}
 
 
 
@@ -171,6 +199,8 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .navbar-nav .nav-item{padding:5px;}
   .content_cart{padding:50px 0;}
   .intro_cart_2 .title_padding{padding:50px 0;}
+  .intro_cart_3 .title_padding{padding:70px 0;}
+  .cart_contact .title_padding{padding:70px 0;}
 }
 @media(max-width:991px){
   .intro_view{position:relative;}
@@ -195,6 +225,13 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .content_cart{padding:40px 0;}
   .content_goods{padding:40px 0;}
   .goods{padding:0 0 40px;}
+  .content_about{padding:40px 0;}
+  .phone_manager{text-align:center;}
+  .director .yelow_block{bottom:25px;}
+  .page_about{padding:40px 0;}
+  .our_work.portfolio_page{padding-top:10px;}
+  .cart_contact .title_padding{padding:0;}
+  .cart_contact .yelow_bg:before{right:-500%;}
 }
 @media(max-width:767px){
   .scrolling_box{overflow-x:scroll;flex-wrap:nowrap;}
@@ -204,6 +241,11 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .service{padding:50px 0 10px;}
   .page_service .scrolling_box{flex-wrap:wrap;overflow-x:hidden;justify-content:center;}
   .yelow_block.page_cart{height:30%;}
+  .table_price thead tr th{font-size:12px;}
+  .table_price tbody tr th{font-size:16px;}
+  .car_izd.nav.nav-tabs{flex-direction:column;}
+  .car_izd.nav.nav-tabs .nav-item{padding-left:0;}
+  .content_cart{padding:20px 0;}
 }
 @media(max-width:575px){
   .btn_order{width:100%;justify-content:center;}
@@ -212,4 +254,5 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .box_work .btn_work{bottom:0;right:-15px;}
   .nav.nav-tabs{flex-direction:column;}
   .nav.nav-tabs .nav-item{padding-left:0;}
+  .phone_manager{text-align:left;}
 }
