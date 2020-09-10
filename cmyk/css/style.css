@@ -246,6 +246,7 @@ button.btn_service{border:none;padding:13px 0 9px;}
   .car_izd.nav.nav-tabs{flex-direction:column;}
   .car_izd.nav.nav-tabs .nav-item{padding-left:0;}
   .content_cart{padding:20px 0;}
+  .page_about{padding-top:0;}
 }
 @media(max-width:575px){
   .btn_order{width:100%;justify-content:center;}
