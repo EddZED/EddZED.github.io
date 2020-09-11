@@ -1,5 +1,44 @@
 html{scroll-behavior:smooth;}
+@font-face{font-family:gil_heavy;src:url(../font/Gilroy-Heavy.ttf);}
+@font-face{font-family:gil_semi;src:url(../font/Gilroy-SemiBold.ttf);}
+@font-face{font-family:gil_light;src:url(../font/Gilroy-UltraLight.ttf);}
 body{}
+.wrapper{overflow:hidden;}
+.navbar{box-shadow:none;}
+.navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;}
+.block_menu-contact{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;}
+.social_phone-contact{display:flex;flex-wrap:nowrap;align-items:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
