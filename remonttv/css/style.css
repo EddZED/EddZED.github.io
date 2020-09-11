@@ -3,9 +3,11 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:gil_semi;src:url(../font/Gilroy-SemiBold.ttf);}
 @font-face{font-family:gil_light;src:url(../font/Gilroy-UltraLight.ttf);}
 @font-face{font-family:gil_reg;src:url(../font/gilroy-regular.ttf);}
+@font-face{font-family:gil_bold;src:url(../font/Gilroy-Bold.ttf);}
+@font-face{font-family:gil_medium;src:url(../font/Gilroy-Medium.ttf);}
 body{color:#1A1919;}
 .wrapper{overflow:hidden;}
-.navbar{box-shadow:none;background-color:transparent;transition:all .5s;top:0;}
+.navbar{box-shadow:none;background-color:transparent;transition:all .3s;top:0;}
 .navbar.scrolling-navbar{padding-top:25px;}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
 .navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;padding:5px 0;position:relative;overflow:visible;}
@@ -28,6 +30,31 @@ body{color:#1A1919;}
 .navbar.navbar-light .navbar-toggler-icon span:after{content:'';position:absolute;bottom:-10px;left:0;right:0;height:2px;width:100%;background-color:#00A19D;transition:all .3s;}
 .bg_mobile{background-color:#FFD644;}
 .min_head{font-size:17px;line-height:20px;font-family:gil_semi;}
+.intro{position:relative;}
+.intro_main{padding:110px 0 50px;}
+.block_img-intro{position:relative;min-height:530px;}
+.block_img-intro .img_intro{position:absolute;max-width:115%;right:0;}
+.title_page{font-size:95px;font-family:gil_heavy;letter-spacing:0.24em;line-height:121px;}
+.sub_title{font-size:30px;line-height:36px;letter-spacing:0.02em;font-family:gil_bold;}
+.text_content{font-size:17px;line-height:20px;font-family:gil_reg;}
+.btn_box{position:relative;width:100%;}
+.btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
+.btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
+.btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
+.ultra_txt{font-family:gil_light;font-size:20px;line-height:23px;color:#787878;}
+.min_bold{font-family:gil_bold;font-size:16px;line-height:19px;}
+.txt_medium{font-size:16px;line-height:19px;font-family:gil_medium;}
+.pea_bg{position:relative;}
+.pea_bg:before{content:'';position:absolute;width:91px;height:182px;background-image:url(../img/pea.png);background-size:cover;background-repeat:no-repeat;left:5px;top:0;z-index:-1;}
+.free_cons{display:inline-flex;position:absolute;top:0;right:0;width:291px;height:95px;border-radius:15px;background: #E40000;box-shadow: 0px 4px 30px rgba(228, 0, 0, 0.36);align-items:center;justify-content:center;color:#f7f7f7;font-size:22px;line-height:26px;text-align:center;font-family:gil_semi;z-index:2;transition: all .3s;}
+.free_cons:hover{color:#f8f8f8;}
+.red_price{display:none;}
+
+
+
+
+
+
 
 
 
@@ -39,6 +66,9 @@ body{color:#1A1919;}
 @media(max-width:1199px){
   .social_phone-contact .link_phone{font-size:20px;}
   .navbar.scrolling-navbar{padding-top:20px;}
+  .block_img-intro .img_intro{max-width:110%;}
+  .intro_main .title_page{font-size:90px;line-height:115px;letter-spacing:0.18em;}
+  .block_img-intro{min-height:485px;}
 }
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
@@ -52,11 +82,21 @@ body{color:#1A1919;}
   .block_mobile-mesendger{display:flex;align-items:center;flex-wrap:nowrap;transition:all .3s;}
   .bg_mobile .block_mobile-mesendger{opacity:0;z-index:-10;}
   .bg_mobile.navbar{overflow-y:scroll;top:0;max-height:100%;}
+  .free_cons{width:177px;height:58px;font-size:13px;}
+  .block_img-intro .img_intro{max-width:110%;right: auto;left: -20px;}
+  .red_price{display:inline-flex;align-items:center;justify-content:center;position:absolute;left:0;bottom:-75px;width:145px;height:45px;background: #E40000;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);border-radius: 15px;font-size:20px;line-height:15px;color:#f7f7f7;text-align:center;font-family:gil_semi;}
+  .block_img-intro{min-height:300px;}
+  .pea_bg:before{background-image:none;}
 }
+@media(max-width:767px){
+  .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px;}
+  .intro_main .sub_title{font-size:24px;line-height:25px;text-align:center;}
+  .block_img-intro .img_intro{max-width:125%;}
+  .mobile_padding-top{padding-top:100px;}
+}
+@media(max-width:576px){
 
-
-
-
+}
 
 
 
