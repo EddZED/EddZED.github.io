@@ -2,21 +2,57 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:gil_heavy;src:url(../font/Gilroy-Heavy.ttf);}
 @font-face{font-family:gil_semi;src:url(../font/Gilroy-SemiBold.ttf);}
 @font-face{font-family:gil_light;src:url(../font/Gilroy-UltraLight.ttf);}
-body{}
+@font-face{font-family:gil_reg;src:url(../font/gilroy-regular.ttf);}
+body{color:#1A1919;}
 .wrapper{overflow:hidden;}
-.navbar{box-shadow:none;}
+.navbar{box-shadow:none;background-color:transparent;transition:all .5s;top:0;}
+.navbar.scrolling-navbar{padding-top:25px;}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
-.navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;}
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;padding:5px 0;position:relative;overflow:visible;}
+.navbar.navbar-light .navbar-nav .nav-item{overflow:visible;}
 .block_menu-contact{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;}
+.link_masadge{display:inline-block;transition:all .3s;}
+.link_masadge:hover{filter:drop-shadow(0 0 3px rgba(0,0,0,.4));}
 .social_phone-contact{display:flex;flex-wrap:nowrap;align-items:center;}
+.social_phone-contact .link_phone{display:inline-block;font-family:'Roboto';font-size:23px;font-weight:normal;line-height:27px;color:#1A1919;}
+.social_phone-contact .link_phone span{font-weight:500;}
+.social_phone-contact .link_phone:hover{color:inherit;opacity:.7;}
+.order_call-block{display:;}
+.order_call-link{font-size:17px;line-height:20px;font-family:gil_light;color:#00A19D;font-weight:normal;}
+.order_call-link span{border-bottom:1px dashed #00A19D;transition:all .3s;}
+.order_call-link:hover{color:#00A19D;}
+.order_call-link:hover span{border-color:transparent;}
+.navbar.navbar-light .navbar-toggler-icon{background-image:none;position:relative;width:28px;height:28px;background-color:transparent;}
+.navbar.navbar-light .navbar-toggler-icon span{position:absolute;top:0;bottom:0;left:0;right:0;height:2px;width:100%;margin:auto;background-color:#00A19D;transition:all .3s;}
+.navbar.navbar-light .navbar-toggler-icon span:before{content:'';position:absolute;top:-10px;left:0;right:0;height:2px;width:100%;background-color:#00A19D;transition:all .3s;}
+.navbar.navbar-light .navbar-toggler-icon span:after{content:'';position:absolute;bottom:-10px;left:0;right:0;height:2px;width:100%;background-color:#00A19D;transition:all .3s;}
+.bg_mobile{background-color:#FFD644;}
+.min_head{font-size:17px;line-height:20px;font-family:gil_semi;}
 
 
 
-
-
-
-
-
+@media(min-width:992px){
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover:before{width:110%;left:0;}
+  .navbar.navbar-light .navbar-nav .nav-item.active .nav-link:before{content:'';position:absolute;left:0;width:110%;height:4px;background-color:#00A19D;bottom:0;}
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link:before{content:'';position:absolute;right:-12px;width:0;bottom:0;height:4px;overflow-x:visible;background-color:#00A19D;transition:all .5s;}
+}
+@media(max-width:1199px){
+  .social_phone-contact .link_phone{font-size:20px;}
+  .navbar.scrolling-navbar{padding-top:20px;}
+}
+@media(max-width:991px){
+  .navbar.scrolling-navbar{padding-top:10px;}
+  .bg_mobile.navbar-light .navbar-toggler-icon span, .bg_mobile.navbar-light .navbar-toggler-icon span:before, .bg_mobile.navbar-light .navbar-toggler-icon span:after{background-color:#000;}
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link{padding:13px 0;font-size:25px;line-height:26px;}
+  .block_menu-contact{align-items:flex-start;padding:0 0 30px;}
+  .navbar-nav{padding-top:20px;}
+  .link_phone, .mail_link{font-size:17px;line-height:17px;color:#1A1919;font-family:gil_reg;}
+  .link_phone:hover, .mail_link:hover{color:#1A1919;}
+  .link_phone:focus, .mail_link:focus{opacity:.8;}
+  .block_mobile-mesendger{display:flex;align-items:center;flex-wrap:nowrap;transition:all .3s;}
+  .bg_mobile .block_mobile-mesendger{opacity:0;z-index:-10;}
+  .bg_mobile.navbar{overflow-y:scroll;top:0;max-height:100%;}
+}
 
 
 
