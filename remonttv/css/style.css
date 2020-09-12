@@ -106,8 +106,8 @@ body{color:#1A1919;}
 @media(max-width:420px){
   .block_img-intro{min-height:240px;}
   .red_price{bottom:-100px;}
-  .mobile_padding-top{padding-top:100px;}
-  .block_img-intro .img_intro{max-width:115%;right:auto;}
+  .mobile_padding-top{padding-top:115px;}
+  .block_img-intro .img_intro{max-width:105%;right:auto;}
   .intro_main{padding-top:115px;}
   .intro_main .title_page{letter-spacing:0.09em;line-height:80px;}
 }
