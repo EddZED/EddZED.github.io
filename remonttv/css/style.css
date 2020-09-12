@@ -6,7 +6,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:gil_bold;src:url(../font/Gilroy-Bold.ttf);}
 @font-face{font-family:gil_medium;src:url(../font/Gilroy-Medium.ttf);}
 body{color:#1A1919;}
-.wrapper{overflow:hidden;}
+.wrapper{overflow-x:hidden;}
 .navbar{box-shadow:none;background-color:transparent;transition:all .3s;}
 .navbar.scrolling-navbar{padding-top:25px;}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
