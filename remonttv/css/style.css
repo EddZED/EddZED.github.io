@@ -49,8 +49,6 @@ body{color:#1A1919;}
 .free_cons{display:inline-flex;position:absolute;top:0;right:0;width:291px;height:95px;border-radius:15px;background: #E40000;box-shadow: 0px 4px 30px rgba(228, 0, 0, 0.36);align-items:center;justify-content:center;color:#f7f7f7;font-size:22px;line-height:26px;text-align:center;font-family:gil_semi;z-index:2;transition: all .3s;}
 .free_cons:hover{color:#f8f8f8;}
 .red_price{display:none;}
-.navbar.fixed-top .navbar-collapse,
-.navbar.sticky-top .navbar-collapse{max-height:100%;}
 
 
 
