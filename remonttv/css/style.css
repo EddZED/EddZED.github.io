@@ -32,7 +32,7 @@ body{color:#1A1919;}
 .min_head{font-size:17px;line-height:20px;font-family:gil_semi;}
 .intro{position:relative;}
 .intro_main{padding:110px 0 50px;}
-.block_img-intro{position:relative;min-height:530px;}
+.block_img-intro{position:relative;min-height:500px;}
 .block_img-intro .img_intro{position:absolute;max-width:115%;right:0;}
 .title_page{font-size:95px;font-family:gil_heavy;letter-spacing:0.24em;line-height:121px;}
 .sub_title{font-size:30px;line-height:36px;letter-spacing:0.02em;font-family:gil_bold;}
