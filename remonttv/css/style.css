@@ -7,7 +7,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:gil_medium;src:url(../font/Gilroy-Medium.ttf);}
 body{color:#1A1919;}
 .wrapper{overflow:hidden;}
-.navbar{box-shadow:none;background-color:transparent;transition:all .3s;top:0;}
+.navbar{box-shadow:none;background-color:transparent;transition:all .3s;}
 .navbar.scrolling-navbar{padding-top:25px;}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
 .navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;padding:5px 0;position:relative;overflow:visible;}
