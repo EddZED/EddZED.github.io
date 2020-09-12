@@ -31,16 +31,16 @@ body{color:#1A1919;}
 .bg_mobile{background-color:#FFD644;}
 .min_head{font-size:17px;line-height:20px;font-family:gil_semi;}
 .intro{position:relative;}
-.intro_main{padding:110px 0 50px;}
+.intro_main{padding:130px 0 50px;}
 .block_img-intro{position:relative;min-height:500px;}
 .block_img-intro .img_intro{position:absolute;max-width:115%;right:0;}
 .title_page{font-size:95px;font-family:gil_heavy;letter-spacing:0.24em;line-height:121px;}
 .sub_title{font-size:30px;line-height:36px;letter-spacing:0.02em;font-family:gil_bold;}
 .text_content{font-size:17px;line-height:20px;font-family:gil_reg;}
-.btn_box{position:relative;width:100%;}
-.btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
-.btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
-.btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
+.intro_main .btn_box{position:relative;width:100%;padding-top:40px;}
+.intro_main .btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
+.intro_main .btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
+.intro_main .btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
 .ultra_txt{font-family:gil_light;font-size:20px;line-height:23px;color:#787878;}
 .min_bold{font-family:gil_bold;font-size:16px;line-height:19px;}
 .txt_medium{font-size:16px;line-height:19px;font-family:gil_medium;}
@@ -49,7 +49,8 @@ body{color:#1A1919;}
 .free_cons{display:inline-flex;position:absolute;top:0;right:0;width:291px;height:95px;border-radius:15px;background: #E40000;box-shadow: 0px 4px 30px rgba(228, 0, 0, 0.36);align-items:center;justify-content:center;color:#f7f7f7;font-size:22px;line-height:26px;text-align:center;font-family:gil_semi;z-index:2;transition: all .3s;}
 .free_cons:hover{color:#f8f8f8;}
 .red_price{display:none;}
-
+.navbar.fixed-top .navbar-collapse,
+.navbar.sticky-top .navbar-collapse{max-height:100%;}
 
 
 
@@ -68,7 +69,8 @@ body{color:#1A1919;}
   .navbar.scrolling-navbar{padding-top:20px;}
   .block_img-intro .img_intro{max-width:110%;}
   .intro_main .title_page{font-size:90px;line-height:115px;letter-spacing:0.18em;}
-  .block_img-intro{min-height:485px;}
+  .block_img-intro{min-height:455px;}
+  .intro_main .btn_box{padding-top:25px;}
 }
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
@@ -87,18 +89,34 @@ body{color:#1A1919;}
   .red_price{display:inline-flex;align-items:center;justify-content:center;position:absolute;left:0;bottom:-75px;width:145px;height:45px;background: #E40000;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);border-radius: 15px;font-size:20px;line-height:15px;color:#f7f7f7;text-align:center;font-family:gil_semi;}
   .block_img-intro{min-height:300px;}
   .pea_bg:before{background-image:none;}
+  .block_img-intro .img_intro{max-width:70%;right:0;margin:auto;}
+  .mobile_padding-top{padding-top:130px;}
+  .intro_main .btn_box{padding-top:10px;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px;}
   .intro_main .sub_title{font-size:24px;line-height:25px;text-align:center;}
-  .block_img-intro .img_intro{max-width:125%;}
+  .block_img-intro .img_intro{max-width:90%;}
+  .mobile_padding-top{padding-top:105px;}
+}
+@media(max-width:575px){
+  .block_img-intro{min-height:270px;}
+  .intro_main .title_page{letter-spacing:0.19em;}
+}
+@media(max-width:420px){
+  .block_img-intro{min-height:240px;}
+  .red_price{bottom:-100px;}
   .mobile_padding-top{padding-top:100px;}
+  .block_img-intro .img_intro{max-width:115%;right:auto;}
+  .intro_main{padding-top:115px;}
+  .intro_main .title_page{letter-spacing:0.09em;line-height:80px;}
 }
-@media(max-width:576px){
-
+@media(max-width:350px){
+  .block_img-intro .img_intro{max-width:115%;}
+  .red_price{bottom:-50px;}
+  .mobile_padding-top{padding-top:80px;}
+  .intro_main .sub_title{font-size:19px;}
 }
-
-
 
 
 
