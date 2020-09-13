@@ -63,7 +63,7 @@ body{color:#1A1919;}
 .iz_txt{font-size:30px;line-height:36px;width:100%;font-family:gil_semi;color:#00A19D;}
 .remont{position:relative;padding:80px 0;}
 .card_remont{display:flex;flex-direction:column;justify-content:space-between;background-color:#fff;box-shadow:0px 4px 50px rgba(0, 0, 0, 0.15);border-radius: 10px;padding:25px 15px;height:100%;transition:all .3s;}
-.title_card-name{font-size:22px;line-height:27px;font-family:gil_bold;white-space:nowrap;}
+.title_card-name{font-size:22px;line-height:27px;font-family:gil_bold;}
 .remont_list{list-style:none;padding-left:15px;}
 .remont_list li{position:relative;font-size:17px;line-height:20px;padding-bottom:20px;}
 .remont_list li:before{content:'';position:absolute;width:6px;height:6px;background-color:#00A19D;left:-13px;top:7px;border-radius:50%;}
