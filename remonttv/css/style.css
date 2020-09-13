@@ -38,10 +38,10 @@ body{color:#1A1919;}
 .title_page{font-size:95px;font-family:gil_heavy;letter-spacing:0.24em;line-height:121px;}
 .sub_title{font-size:30px;line-height:36px;letter-spacing:0.02em;font-family:gil_bold;}
 .text_content{font-size:17px;line-height:20px;font-family:gil_reg;}
-.intro_main .btn_box{position:relative;width:100%;padding-top:40px;}
-.intro_main .btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
-.intro_main .btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
-.intro_main .btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
+.btn_box{position:relative;width:100%;padding-top:40px;}
+.btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
+.btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
+.btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
 .ultra_txt{font-family:gil_light;font-size:20px;line-height:23px;color:#787878;}
 .min_bold{font-family:gil_bold;font-size:16px;line-height:19px;}
 .txt_medium{font-size:16px;line-height:19px;font-family:gil_medium;}
@@ -63,17 +63,18 @@ body{color:#1A1919;}
 .iz_txt{font-size:30px;line-height:36px;width:100%;font-family:gil_semi;color:#00A19D;}
 .remont{position:relative;padding:80px 0;}
 .card_remont{display:flex;flex-direction:column;justify-content:space-between;background-color:#fff;box-shadow:0px 4px 50px rgba(0, 0, 0, 0.15);border-radius: 10px;padding:25px 15px;height:100%;transition:all .3s;}
-.title_card-name{font-size:22px;line-height:27px;font-family:gil_bold;}
+.title_card-name{font-size:21px;line-height:27px;font-family:gil_bold;}
 .remont_list{list-style:none;padding-left:15px;}
 .remont_list li{position:relative;font-size:17px;line-height:20px;padding-bottom:20px;}
 .remont_list li:before{content:'';position:absolute;width:6px;height:6px;background-color:#00A19D;left:-13px;top:7px;border-radius:50%;}
 .price_card{font-size:24px;line-height:28px;color:#00A19D;font-family:gil_medium;}
-
-
-
-
-
-
+.ultra_txt{font-size:17px;line-height:19px;font-family:gil_light;color:#000;}
+.card_remont-order{background-color:#FFD644;}
+.phone_card-remont{display:block;font-size:25px;color:#1A1919;line-height:29px;font-family:gil_bold;text-align:center;}
+.phone_card-remont:hover{opacity:.7;color:#1A1919;}
+.black_btn{display:block;color:#fff;font-size:17px;line-height:20px;text-align:center;width:100%;background-color:#1A1919;border-radius:10px;padding:10px 0;font-family:gil_semi;transition:all .3s;}
+.black_btn:hover{background-color:#515058;color:#fff}
+.black_btn:active{background: linear-gradient(180deg, #515058 0%, #000000 100%);color:#fff;}
 
 
 
@@ -132,6 +133,7 @@ body{color:#1A1919;}
   .left_circl{padding-left:10px;}
   .remont{padding:40px 0;}
   .card_remont{padding:0;}
+  .card_remont-order{padding:25px 15px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
