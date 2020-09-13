@@ -15,11 +15,6 @@ $('.slider_rezults').slick({
       settings: {
         appendArrows: $('nav_sl')
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-      }
     }
   ]
 });

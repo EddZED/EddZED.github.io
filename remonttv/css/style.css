@@ -79,7 +79,6 @@ body{color:#1A1919;}
 .slider_rezults{background-image:url(../img/bg_slider-rezults.png);background-size:auto 100%;background-repeat:no-repeat;background-position:top center;padding:50px 0;display:flex;justify-content:center;overflow:hidden;}
 .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{max-height:500px;}
 .rezults_item{text-align:center;}
-.rezults_item.slick-slide.slick-cloned{transition:all .3s;}
 .rezults_item.slick-slide{display:flex;justify-content:center;transition:all .5s;opacity:.3;transform:translateX(0) scale(.8);}
 .rezults_item.slick-slide.slick-current{opacity:1;z-index:1;transform:translateX(0) scale(1);transition:all .5s;}
 .slider_rezults .slick-track{display:flex;align-items:center;}
@@ -100,6 +99,19 @@ body{color:#1A1919;}
 .slick_arrow-2:focus{outline:none;}
 .slick_arrow-2.slick-prev-2 {left:-80px;}
 .slick_arrow-2.slick-next-2 {right:-80px;}
+.we_have{position:relative;padding:80px 0;background-color:#F7F7F7;}
+.bg_we{position:relative;background-image:url(../img/circl-2.png);background-repeat:no-repeat;background-size:auto;background-position:center center;}
+.color_yelow-sub{font-size:40px;line-height:48px;color:#FFD644;font-family:gil_semi;}
+.title_block-big{font-size:75px;letter-spacing:0.15em;line-height:76px;}
+.have_item{width:100%;}
+.card_have-content{padding:30px 25px;}
+.block_content-sl{display:flex;flex-direction:column;overflow:hidden;justify-content:space-between;align-items:start;border-radius:10px;background-color:#fff;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);}
+.have_item.slick-current{padding-top:240px;}
+.have_item:focus{outline:none;}
+.name_have{font-size:30px;line-height:36px;color:#000;font-family:gil_semi;}
+.text_content_2{font-size:20px;line-height:23px;color:#000;}
+
+
 
 
 
@@ -108,6 +120,9 @@ body{color:#1A1919;}
   .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover:before{width:110%;left:0;}
   .navbar.navbar-light .navbar-nav .nav-item.active .nav-link:before{content:'';position:absolute;left:0;width:110%;height:4px;background-color:#00A19D;bottom:0;}
   .navbar.navbar-light .navbar-nav .nav-item .nav-link:before{content:'';position:absolute;right:-12px;width:0;bottom:0;height:4px;overflow-x:visible;background-color:#00A19D;transition:all .5s;}
+  .pad-right{padding-right:30px;}
+  .pad-top{padding-top:150px;}
+  .pad-left{padding-left:30px;}
 }
 @media(max-width:1199px){
   .social_phone-contact .link_phone{font-size:20px;}
@@ -161,6 +176,9 @@ body{color:#1A1919;}
   .card_remont{padding:0;}
   .card_remont-order{padding:25px 15px;}
   .rezults{padding:40px 0;}
+  .title_block-big{font-size:50px;letter-spacing:0.12em;line-height:76px;}
+  .color_yelow-sub{font-size:31px;line-height:37px;}
+  .we_have{padding:40px 0;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
