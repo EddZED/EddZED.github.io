@@ -51,7 +51,7 @@ body{color:#1A1919;}
 .free_cons:hover{color:#f8f8f8;}
 .red_price{display:none;}
 .which{padding:80px 0;position:relative;background-color:#F7F7F7;}
-.which .pea_bg-main{position:absolute;max-width:100%;top:-20px;right:0;}
+.which .pea_bg-main{position:absolute;max-width:100%;top:-20px;right:15px;}
 .title_block{font-size:42px;line-height:52px;font-family:gil_black;}
 .left_circl{position:relative;z-index:1;}
 .left_circl:before{content:'';position:absolute;left:-30px;top:-20px;width:70px;height:70px;background-image:url(../img/circle.png);background-size:cover;background-repeat:no-repeat;z-index:-1;}
@@ -75,7 +75,7 @@ body{color:#1A1919;}
 .black_btn{display:block;color:#fff;font-size:17px;line-height:20px;text-align:center;width:100%;background-color:#1A1919;border-radius:10px;padding:10px 0;font-family:gil_semi;transition:all .3s;}
 .black_btn:hover{background-color:#515058;color:#fff}
 .black_btn:active{background: linear-gradient(180deg, #515058 0%, #000000 100%);color:#fff;}
-.rezults{position:relative;padding:80px 0;}
+.rezults{position:relative;padding:40px 0 80px;}
 
 
 
