@@ -94,7 +94,7 @@ body{color:#1A1919;}
 .rezults_item.slick-slide.slider1:not(.slick-current){transform:translateX(100px) scale(.8);}
 .rezults_item.slick-slide.slider3:not(.slick-current){transform:translateX(-100px) scale(.8);}
 .slider_rezults .slick-next:before{display:none;}
-.slider_rezults .slick-prev:after{display:none;}
+.slider_rezults .slick-prev:before{display:none;}
 .nav_sl{width:100%;position:relative;}
 .slick_arrow-2{position:absolute;border:none;background-color:transparent;left:0;right:0;margin:auto;top:-15px;}
 .slick_arrow-2:focus{outline:none;}
