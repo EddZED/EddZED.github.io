@@ -75,6 +75,11 @@ body{color:#1A1919;}
 .black_btn{display:block;color:#fff;font-size:17px;line-height:20px;text-align:center;width:100%;background-color:#1A1919;border-radius:10px;padding:10px 0;font-family:gil_semi;transition:all .3s;}
 .black_btn:hover{background-color:#515058;color:#fff}
 .black_btn:active{background: linear-gradient(180deg, #515058 0%, #000000 100%);color:#fff;}
+.rezults{position:relative;padding:80px 0;}
+
+
+
+
 
 
 
@@ -134,6 +139,7 @@ body{color:#1A1919;}
   .remont{padding:40px 0;}
   .card_remont{padding:0;}
   .card_remont-order{padding:25px 15px;}
+  .rezults{padding:40px 0;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
