@@ -13,6 +13,7 @@
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight:true,
     appendDots: $('.nav_sl-mobile'),
     appendArrows: $('.nav_sl-mobile'),
     nextArrow: '<button type = "button" class = "slick-next btn_next"><img src="img/right_2.png" class="img-fluid"></ button>',
