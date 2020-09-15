@@ -7,7 +7,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:gil_medium;src:url(../font/Gilroy-Medium.ttf);}
 @font-face{font-family:gil_black;src:url(../font/Gilroy-Black.ttf);}
 body{color:#1A1919;}
-.wrapper{overflow-x:hidden;}
+.wrapper{overflow:hidden;}
 .navbar{box-shadow:none;background-color:transparent;transition:all .3s;}
 .navbar.scrolling-navbar{padding-top:25px;}
 .navbar.scrolling-navbar.top-nav-collapse {background:linear-gradient(180deg, rgba(255, 255, 255, .7)60%, rgba(255,255,255,0));backdrop-filter: blur(6px);}
@@ -175,10 +175,24 @@ body{color:#1A1919;}
 .nav_sl .slick-prev-com{left:-80px;}
 .nav_sl .slick-next-com{right:-80px;}
 .head_block-title_2{position:absolute;left:15px;top:-25%;}
-.order_block{position:relative;padding:80px 0;background-color:#00A19D;}
+.order_block{position:relative;padding:80px 0 50px;background-color:#00A19D;}
 .pea_order{position:absolute;z-index:0;left:0;bottom:-80px;}
-
-
+.mix_text{font-size:24px;color:#f7f7f7;line-height:28px;font-family:gil_light;}
+.mix_text span{font-family:gil_reg;}
+.radiobox{position:relative;}
+.radiobox:hover{cursor:pointer;}
+.radiobox input[type="radio"]{display:none;}
+.radiobox .radio_name{color:#f7f7f7;font-size:17px;line-height:20px;position:relative;font-family:gil_reg;padding-left:30px;}
+.radiobox .radio_name:before{content:'';position:absolute;width:20px;height:20px;border:.5px solid #f7f7f7;left:0;top:1px;}
+.radiobox .radio_name:after{content:'';position:absolute;width:18px;height:18px;background-color:#FFD644;left:1px;top:2px;opacity:0;transition:all .3s;}
+.radiobox input[type="radio"]:checked + .radio_name:after{opacity:1;}
+.bg_pea-form{position:relative;}
+.bg_pea-form:before{content:'';position:absolute;width:222px;height:75px;background-image:url(../img/pea_rows.png);background-size:auto 100%;left:-30px;bottom:-0;}
+.input_form{display:inline-block;padding:15px;border:1px solid #f7f7f7;border-radius:100px;background-color:transparent;color:#FFD644;font-size:18px;line-height:22px;width:100%;}
+.input_form::-webkit-input-placeholder{color:#FFD644;font-size:18px;line-height:22px;}
+.input_form:focus{outline:none;}
+.btn_form{display:inline-block;border:none;outline:none;text-transform:uppercase;color:#f7f7f7;background-color:#FFD644;padding:15px 0;border-radius:100px;width:100%;}
+.btn_form:focus{outline:none;}
 
 
 
@@ -257,6 +271,8 @@ body{color:#1A1919;}
   .we_have{padding:40px 0 100px;}
   .num_slider{left:35%;}
   .comments{padding:40px 0;}
+  .bg_pea-form:before{background-image:none;}
+  .order_block{padding:60px 0 30px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}

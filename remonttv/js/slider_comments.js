@@ -4,7 +4,7 @@ $('.slider_coments').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arows: true,
-  infinite: false,
+  infinite: true,
   variableWidth: true,
   initialSlide: 1,
   nextArrow: '<button type = "button" class = "slick-next d-none d-xl-block"><img src="img/arr_right.png" class="img-fluid"></ button>',
