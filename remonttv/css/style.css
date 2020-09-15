@@ -193,6 +193,15 @@ body{color:#1A1919;}
 .input_form:focus{outline:none;}
 .btn_form{display:inline-block;border:none;outline:none;text-transform:uppercase;color:#f7f7f7;background-color:#FFD644;padding:15px 0;border-radius:100px;width:100%;}
 .btn_form:focus{outline:none;}
+.how_us{position:relative;padding:80px 0 0;}
+.how_us .color_yelow-sub{color:#FFD644;}
+.block_adress{position:absolute;background-color:#fff;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);height:250px;width:480px;padding:30px 20px;top:0;bottom:0;margin:auto;left:0;display:flex;align-items:center;flex-wrap:wrap;z-index:10;}
+.mix_text.adres_mix{font-size:17px;color:#1A1919;}
+.circl_map-bg{position:absolute;right:0;top:-100px;z-index:-1;right:25px;}
+
+
+
+
 
 
 
@@ -217,6 +226,7 @@ body{color:#1A1919;}
   .have_item{width:418px !important;}
   .have_item.it-2{margin-left:93px;}
   .have_item.pad-top{padding-top:210px;}
+  .how_us .title_block-big{font-size:65px;}
 }
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
@@ -252,6 +262,9 @@ body{color:#1A1919;}
   .head_block-title{position:relative;}
   .pea_we, .pea_we-2{display:none;}
   .head_block-title_2{position:relative;top:auto;}
+  .block_adress{flex-direction:column;width:90%;bottom:auto;top:-80px;right:0;}
+  .card_block-adres{height:220px;}
+  .circl_map-bg{right:0;left:0;margin:auto;top:-30px;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px;}
@@ -273,6 +286,9 @@ body{color:#1A1919;}
   .comments{padding:40px 0;}
   .bg_pea-form:before{background-image:none;}
   .order_block{padding:60px 0 30px;}
+  .how_us{padding:40px 0 10px;}
+  .how_us .title_block-big{font-size:55px;}
+  .mix_text.adres_mix{font-size:15px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
@@ -280,6 +296,8 @@ body{color:#1A1919;}
   .name_have{font-size:23px;line-height:27px;}
   .text_content_2{font-size:15px;}
   .we_have{background-size:auto 123%;background-position: center top;}
+  .how_us .title_block-big{font-size:39px;letter-spacing:0.05em;line-height:44px;}
+  .how_us .color_yelow-sub{font-size:24px;line-height:30px;}
 }
 @media(max-width:500px){
   .slider_rezults .slick-list{width:284px;}
