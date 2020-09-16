@@ -10,10 +10,11 @@ body{color:#1A1919;}
 .wrapper{overflow:hidden;}
 .navbar{box-shadow:none;background-color:transparent;transition:all .3s;}
 .navbar.scrolling-navbar{padding-top:25px;}
-.navbar.scrolling-navbar.top-nav-collapse {background:linear-gradient(180deg, rgba(255, 255, 255, .7)60%, rgba(255,255,255,0));backdrop-filter: blur(6px);}
+.navbar.scrolling-navbar.top-nav-collapse {background:linear-gradient(180deg, rgba(255, 255, 255, .7)60%, rgba(255,255,255,.5));backdrop-filter: blur(6px);}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
 .navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;padding:5px 0;position:relative;overflow:visible;}
 .navbar.navbar-light .navbar-nav .nav-item{overflow:visible;}
+.text_mobile-header{font-size:11px;line-height:12px;width:100%;text-align:center;letter-spacing:0.04em;text-transform:uppercase;color:#00A190;font-family:roboto;font-weight:bold;}
 .block_menu-contact{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;}
 .link_masadge{display:inline-block;transition:all .3s;}
 .link_masadge:hover{filter:drop-shadow(0 0 3px rgba(0,0,0,.4));}
