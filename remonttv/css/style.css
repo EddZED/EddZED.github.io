@@ -11,7 +11,6 @@ body{color:#1A1919;}
 .navbar{box-shadow:none;background-color:transparent;transition:all .3s;}
 .navbar.scrolling-navbar{padding-top:25px;}
 .navbar.scrolling-navbar.top-nav-collapse {background:linear-gradient(180deg, rgba(255, 255, 255, .7)60%, rgba(255,255,255,.5));backdrop-filter: blur(6px);}
-.navbar.scrolling-navbar.top-nav-collapse.bg_mobile{background:#FFD644 !important;}
 .navbar.navbar-light .navbar-nav .nav-item.active .nav-link{background-color:transparent;}
 .navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#1A1919;font-family:gil_semi;padding:5px 0;position:relative;overflow:visible;}
 .navbar.navbar-light .navbar-nav .nav-item{overflow:visible;}
@@ -267,6 +266,7 @@ body{color:#1A1919;}
   .block_adress{flex-direction:column;width:90%;bottom:auto;top:-80px;right:0;left:0;}
   .card_block-adres{height:220px;}
   .circl_map-bg{right:0;left:0;margin:auto;top:-30px;}
+  .navbar.scrolling-navbar.top-nav-collapse.bg_mobile{background:#FFD644 !important;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px;}
