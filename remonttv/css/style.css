@@ -309,6 +309,7 @@ body{color:#1A1919;}
   .num_slider{top:-29px;}
   .title_block-big{letter-spacing:0.09em;}
   .color_yelow-sub{font-size:29px;}
+  .block_adress{height:272px;}
 }
 @media(max-width:420px){
   .block_img-intro{min-height:240px;}
