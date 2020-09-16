@@ -10,7 +10,7 @@ body{font-family:man_reg;color:#000;font-size:17px;}
 .navbar-nav .nav-item{padding:5px 10px;transition:all .3s;}
 .navbar-nav .nav-item.active{background-color:#FDE126;}
 .navbar-nav .nav-item .nav-link{padding:0;color:#000;font-family:man_medium;transition:all .3s;}
-.navbar-nav .nav-item .nav-link:hover{text-decoration:underline;}
+.navbar-nav .nav-item:hover {text-decoration:none;background-color:#FDE126;}
 .whats_link{color:#000;font-family:man_medium;display:inline-block;}
 .whats_link:hover{color:#000;text-decoration:underline;}
 .phone_header, .mail_header{display:inline-block;width:100%;color:#4230BF;font-size:16px;}
