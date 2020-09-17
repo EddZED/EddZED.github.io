@@ -233,8 +233,8 @@ body{color:#1A1919;}
 .price{position:relative;padding:30px 0 60px;}
 .price .card_remont-order{flex-direction:row;}
 .price .card_remont-order .ultra_txt{font-size:17px;}
-
-
+.width_modal{max-width:709px;}
+.width_modal .modal-content{border-radius:10px;}
 
 @media(min-width:1200px){
 }
@@ -340,6 +340,7 @@ body{color:#1A1919;}
   .price{position:relative;padding:10px 0 40px;}
   .price .mobile_toggle{font-size:16px;}
   .price .price_card{font-size:18px;white-space:nowrap;}
+  .width_modal{max-width:100%;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}

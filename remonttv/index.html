@@ -91,7 +91,7 @@
                         <p class="min_head d-lg-none pt-3 mb-2">E-mail:</p>
                         <a href="mailto:mail@mail.ru" class="mail_link d-lg-none"><img src="img/black_mail.png" class="img-fluid pr-2" alt="">mail@mail.ru</a>
                         <div class="order_call-block d-none d-lg-block pt-2">
-                          <a href="#" data-toogle="modal" data-target="#" class="order_call-link"><img src="img/phone.png" class="img-fluid pr-2" alt=""><span>Перезвоним за 5 минут</span></a>
+                          <a href="#" data-toggle="modal" data-target="#modal_order" class="order_call-link"><img src="img/phone.png" class="img-fluid pr-2" alt=""><span>Перезвоним за 5 минут</span></a>
                         </div>
                       </div>
                     </div>
@@ -124,7 +124,7 @@
               </div>
             </div>
             <div class="btn_box">
-              <a href="#" class="btn_main">узнать стоимость</a>
+              <a href="#" data-toggle="modal" data-target="#modal_order" class="btn_main">узнать стоимость</a>
             </div>
           </div>
           <div class="col-lg-6 order-lg-2 order-1">
@@ -819,7 +819,28 @@
       </div>
     </footer>
 
-
+    <!-- Modal -->
+<div class="modal fade" id="modal_order" tabindex="-1" role="dialog" aria-labelledby="modal_order"
+aria-hidden="true">
+<div class="modal-dialog width_modal" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Оставьте заявку</h5>
+      <p class="yelow_txt-modal">и получите бесплатную диагностику</p>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
 
 
   </div>
