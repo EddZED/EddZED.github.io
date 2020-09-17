@@ -68,7 +68,7 @@ body{color:#1A1919;}
 .remont_list li{position:relative;font-size:17px;line-height:20px;padding-bottom:20px;}
 .remont_list li:before{content:'';position:absolute;width:6px;height:6px;background-color:#00A19D;left:-13px;top:7px;border-radius:50%;}
 .price_card{font-size:24px;line-height:28px;color:#00A19D;font-family:gil_medium;}
-.ultra_txt{font-size:17px;line-height:19px;font-family:gil_light;color:#000;}
+.card_remont-order .ultra_txt{font-size:17px;line-height:19px;font-family:gil_light;color:#000;}
 .card_remont-order{background-color:#FFD644;}
 .phone_card-remont{display:block;font-size:25px;color:#1A1919;line-height:29px;font-family:gil_bold;text-align:center;}
 .phone_card-remont:hover{opacity:.7;color:#1A1919;}
@@ -230,6 +230,9 @@ body{color:#1A1919;}
 .link_page-contact{font-size:17px;color:#1A1919;font-family:gil_reg;}
 .page_contact .block_adress{width:280px;left:auto;right:-180px;}
 .page_contact .pea_contact-page{right:-50px;position:absolute;bottom:0;}
+.price{position:relative;padding:30px 0 60px;}
+.price .card_remont-order{flex-direction:row;}
+.price .card_remont-order .ultra_txt{font-size:17px;}
 
 
 
@@ -334,6 +337,9 @@ body{color:#1A1919;}
   .acquaint{padding:0 0 20px;}
   .how_us.page_contact .title_block{font-size:39px;}
   .how_us.page_contact .color_yelow-sub{font-size:25px;}
+  .price{position:relative;padding:10px 0 40px;}
+  .price .mobile_toggle{font-size:16px;}
+  .price .price_card{font-size:18px;white-space:nowrap;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
