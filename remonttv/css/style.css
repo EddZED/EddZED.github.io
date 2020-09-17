@@ -204,9 +204,24 @@ body{color:#1A1919;}
 .link_menu-footer{display:block;color:#f7f7f7;font-size:17px;line-height:17px;font-family:gil_reg;padding:10px 0;}
 .allright{font-size:16px;color:#f7f7f7;line-height:17px;}
 /*page 2*/
-
-
-
+.intro_ustroystva{position:relative;margin-top:93px;padding:60px 0;background-image:url(../img/bg_intro-ustroystva.jpg);background-size:cover;background-position:center center;}
+.blur_box{width:100%;background-color:rgba(255,255,255,.55);border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);padding:35px 30px 20px;}
+.blur_block-name{font-size:40px;line-height:48px;font-family:gil_bold;}
+.font_20 li{font-size:20px;line-height:23px;}
+.breadcrumb{background-color:#fff;}
+.breadcrumb-item+.breadcrumb-item::before{content:'>';}
+.breadcrumb-item a{color:#000;font-size:19px;line-height:22px;transition:all 3s;}
+.breadcrumb-item a:hover{color:#000;color:#00A19D;}
+.breadcrumb-item.active{color:#00A19D;font-size:19px;line-height:22px;}
+.problem{position:relative;padding:0 0 40px;}
+.gil_reg{font-family:gil_reg;}
+.input_form-2{display:inline-block;width:100%;background-color:#F2F2F2;border-radius:10px;font-size:17px;color:#000;padding:15px 20px;border:none;}
+.input_form-2:focus{outline:none;}
+.input_form-2::-webkit-input-placeholder{color:rgba(0,0,0,.5);font-size:17px;font-family:gil_light;}
+.problem .btn_box .btn_main{border:none;padding:17px 0 15px;}
+.problem .radio_name{color:#1A1919;}
+.problem .radio_name:before{border-color:#000;}
+.problem .radio_name:after{background-color:#00A19D;}
 
 
 @media(min-width:1200px){
@@ -230,6 +245,10 @@ body{color:#1A1919;}
   .have_item.it-2{margin-left:93px;}
   .have_item.pad-top{padding-top:210px;}
   .how_us .title_block-big{font-size:65px;}
+  .blur_block-name{font-size:35px;}
+  .problem .radio_name{font-size:15px;}
+  .problem .radio_name:before{top:-1px;}
+  .problem .radio_name:after{top:0;}
 }
 @media(max-width:991px){
   .navbar.scrolling-navbar{padding-top:10px;}
@@ -293,6 +312,7 @@ body{color:#1A1919;}
   .how_us{padding:40px 0 10px;}
   .how_us .title_block-big{font-size:55px;}
   .mix_text.adres_mix{font-size:15px;}
+  .problem{padding-bottom:20px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
@@ -302,6 +322,7 @@ body{color:#1A1919;}
   .we_have{background-size:auto 123%;background-position: center top;}
   .how_us .title_block-big{font-size:39px;letter-spacing:0.05em;line-height:44px;}
   .how_us .color_yelow-sub{font-size:24px;line-height:30px;}
+  .problem .sub_title{font-size:26px;}
 }
 @media(max-width:500px){
   .slider_rezults .slick-list{width:284px;}
