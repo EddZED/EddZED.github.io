@@ -223,9 +223,9 @@ body{color:#1A1919;}
 .problem .radio_name:before{border-color:#000;}
 .problem .radio_name:after{background-color:#00A19D;}
 .red_price.page_2{right:15px;top:0;display:inline-flex;align-items:center;justify-content:center;position:absolute;width:145px;height:45px;background: #E40000;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);border-radius: 15px;font-size:20px;line-height:15px;color:#f7f7f7;text-align:center;font-family:gil_semi;}
-
-
-
+/*page 3*/
+.crumb.page_company{margin-top:100px;}
+.acquaint{padding:0 0 60px;}
 
 
 
@@ -326,6 +326,7 @@ body{color:#1A1919;}
   .mix_text.adres_mix{font-size:15px;}
   .problem{padding-bottom:20px;}
   .intro_ustroystva{margin-top:100px;}
+  .acquaint{padding:0 0 20px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
@@ -361,6 +362,7 @@ body{color:#1A1919;}
   .sl-comments{width:315px;}
   .sl-comments .text_content{font-size:15px;}
   .intro_ustroystva{margin-top:120px;}
+  .we_have{padding-top:20px;}
 }
 @media(max-width:350px){
   .block_img-intro .img_intro{max-width:115%;}
