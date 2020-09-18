@@ -824,19 +824,45 @@
 aria-hidden="true">
 <div class="modal-dialog width_modal" role="document">
   <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Оставьте заявку</h5>
-      <p class="yelow_txt-modal">и получите бесплатную диагностику</p>
+    <div class="container position-relative py-4 py-lg-5 px-md-4 px-lg-5">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+        <img class="img-fluid p-2" src="img/close.png" alt="закрыть">
       </button>
-    </div>
-    <div class="modal-body">
-      
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
+      <form method="get" action="">
+        <fieldset>
+          <div class="row align-items-lg-center justify-content-center">
+            <div class="col-12">
+              <p class="title_modal m-0">Оставьте заявку</p>
+              <p class="syb_title-yelow">и получите бесплатную диагностику!</p>
+            </div>
+            <div class="col-lg-7">
+              <input type="text" class="input_form-2 w-100 mb-3" placeholder="Ваше имя">
+              <input type="text" class="input_form-2 w-100 mb-3" placeholder="Номер телефона">
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <label class="radiobox w-100 py-1">
+                <input class="" type="radio" name="message" value="0">
+                <span class="radio_name">Сообщение в WhatsApp</span>
+              </label>
+              <label class="radiobox w-100 py-1">
+                <input class="" type="radio" name="message" value="1">
+                <span class="radio_name">Сообщение в Telegram</span>
+              </label>
+              <label class="radiobox w-100 py-1">
+                <input class="" type="radio" name="message" value="2">
+                <span class="radio_name">Сообщение в Viber</span>
+              </label>
+              <label class="radiobox w-100 py-1">
+                <input class="" type="radio" name="message" value="3" checked>
+                <span class="radio_name">Позвоните мне!</span>
+              </label>
+            </div>
+            <div class="col-12 btn_box text-center pt-3">
+              <button type="submit" class="btn_main">отправить</a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
   </div>
 </div>

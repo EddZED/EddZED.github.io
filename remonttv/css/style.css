@@ -39,7 +39,7 @@ body{color:#1A1919;}
 .sub_title{font-size:30px;line-height:36px;letter-spacing:0.02em;font-family:gil_bold;}
 .text_content{font-size:17px;line-height:20px;font-family:gil_reg;}
 .btn_box{position:relative;width:100%;padding-top:40px;}
-.btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;}
+.btn_box .btn_main{display:inline-block;padding:15px 40px 12px;font-size:17px;line-height:21px;text-transform:uppercase;color:#f7f7f7;font-family:gil_bold;background: linear-gradient(180deg, #71EBE8 0%, #00A19D 100%);border-radius: 100px;box-shadow:0px 4px 5px rgba(0, 161, 157, 0.2);transition:all .5s;text-align:center;}
 .btn_box .btn_main:hover{background:linear-gradient(180deg, #71EBE8 0%, #71EBE8 100%);}
 .btn_box .btn_main:active{background:linear-gradient(180deg, #00A19D 0%, #00A19D 100%)}
 .ultra_txt{font-family:gil_light;font-size:20px;line-height:23px;color:#787878;}
@@ -235,7 +235,13 @@ body{color:#1A1919;}
 .price .card_remont-order .ultra_txt{font-size:17px;}
 .width_modal{max-width:709px;}
 .width_modal .modal-content{border-radius:10px;}
-
+.width_modal .radio_name{color:#1A1919;}
+.width_modal .radio_name:before{border-color:#000;}
+.width_modal .radio_name:after{background-color:#00A19D;}
+.width_modal .btn_box .btn_main{border:none;padding:17px 80px 15px;}
+.title_modal{font-size:46px;font-family:gil_black;line-height:57px;letter-spacing:0.2em;}
+.syb_title-yelow{color:#FFD644;font-size:26px;line-height:30px;gil_medium;}
+.close{position:absolute;top:20px;right:25px;}
 @media(min-width:1200px){
 }
 @media(min-width:992px){
@@ -341,6 +347,8 @@ body{color:#1A1919;}
   .price .mobile_toggle{font-size:16px;}
   .price .price_card{font-size:18px;white-space:nowrap;}
   .width_modal{max-width:100%;}
+  .title_modal{font-size:30px;}
+  .syb_title-yelow{font-size:20px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px;}
