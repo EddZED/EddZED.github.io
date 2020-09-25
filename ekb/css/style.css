@@ -1,12 +1,25 @@
 html{scroll-behavior:smooth;}
 body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background-color:#1E1919;}
-.intro_img{max-width:952px;position:absolute;top:0;left:-300px;animation: img_fly 8s infinite;}
+.wrapper{overflow:hidden;}
+.intro{padding:0 0 50px;position:relative;}
+.intro_img{max-width:952px;position:absolute;top:0;left:-300px;animation: img_fly 8s infinite;margin:0;padding:0;z-index:-1;}
 @keyframes img_fly {
   0% {transform:translateY(0);transition:all 3s;}
   50% {transform:translateY(15px);transition:all 3s;}
   100% {transform:translateY(0);transition:all 6s;}
 }
-
+.phone_link{font-size:22px;color:#fff;font-weight:600;text-decoration:none;}
+.text_link{font-size:12px;font-weight:400;color:rgba(255,255,255,.5);}
+.text_link .order_call{color:rgba(255,255,255,.5);transition:all .3s;}
+.text_link .order_call:hover{color:rgba(255,255,255,.8);}
+.title_intro{font-size:52px;color:#fff;line-height:1.2;font-weight:600;letter-spacing:0.2px;}
+.padidng_desctop{padding:130px 15px 50px;}
+.sub_title-text{font-size:18px;color:#fff;font-weight:300;line-height:1.65;}
+.btn_green{display:inline-block;width:100%;padding:20px 35px;color:#fff;font-size:16px;text-transform:uppercase;letter-spacing:2.5px;font-weight:700;background-color:#00ecbc;border-radius:100px;text-decoration:none;}
+.social_link{display:inline;text-decoration:none;width:auto;}
+.name_project{font-size:20px;color:#fff;letter-spacing:.5px;line-height:1.55;font-weight:600;}
+.link_project{font-size:14px;color:rgba(255,255,255,.5);line-height:1.55;font-weight:400;text-decoration:none;transition:all .3s;}
+.link_project:hover{color:rgba(255,255,255,.8);}
 
 
 
