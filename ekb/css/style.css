@@ -1,7 +1,11 @@
 html{scroll-behavior:smooth;}
-body{}
-
-
+body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background-color:#1E1919;}
+.intro_img{max-width:952px;position:absolute;top:0;left:-300px;animation: img_fly 8s infinite;}
+@keyframes img_fly {
+  0% {transform:translateY(0);transition:all 3s;}
+  50% {transform:translateY(15px);transition:all 3s;}
+  100% {transform:translateY(0);transition:all 6s;}
+}
 
 
 
