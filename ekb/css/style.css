@@ -15,14 +15,33 @@ body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background
 .title_intro{font-size:52px;color:#fff;line-height:1.2;font-weight:600;letter-spacing:0.2px;}
 .padidng_desctop{padding:130px 15px 50px;}
 .sub_title-text{font-size:18px;color:#fff;font-weight:300;line-height:1.65;}
-.btn_green{display:inline-block;width:100%;padding:20px 35px;color:#fff;font-size:16px;text-transform:uppercase;letter-spacing:2.5px;font-weight:700;background-color:#00ecbc;border-radius:100px;text-decoration:none;}
+.btn_green{display:inline-block;text-align:center;width:100%;padding:20px 35px;color:#fff;font-size:16px;text-transform:uppercase;letter-spacing:2.5px;font-weight:700;background-color:#00ecbc;border-radius:100px;text-decoration:none;}
 .social_link{display:inline;text-decoration:none;width:auto;}
 .name_project{font-size:20px;color:#fff;letter-spacing:.5px;line-height:1.55;font-weight:600;}
 .link_project{font-size:14px;color:rgba(255,255,255,.5);line-height:1.55;font-weight:400;text-decoration:none;transition:all .3s;}
 .link_project:hover{color:rgba(255,255,255,.8);}
+.whatido{position:relative;padding:60px 0;background-color:#1e1010;}
+.name_block{text-transform:uppercase;font-size:10px;letter-spacing:.5px;font-weight:400;color:rgba(255,255,255,.5);}
+.title_name{font-size:36px;color:#fff;line-height:1.55;font-weight:600;letter-spacing:.5px;}
+.name_service{font-size:20px;font-weight:400;color:#fff;}
+.text_content{font-size:14px;color:rgba(255,255,255,.5);letter-spacing:.3px;font-weight:300;line-height:1.75;}
+.why{position:relative;padding:60px 0;}
+.portfolio{position:relative;padding:60px 0 0;}
+.folio_tab{display:flex;list-style:none;padding:0;justify-content:space-around;}
+.folio_card{min-height:300px;display:block;background-size:105% auto;background-repeat:no-repeat;background-position:center center;transition:all .5s;}
+.folio_card:hover{background-size:115% auto;}
+.link_1{background-image:url(../img/img_1.png);}
+.link_2{background-image:url(../img/img_2.png);background-size:140% auto;}
+.link_2:hover{background-size:150% auto;}
+.link_3{background-image:url(../img/img_3.png);}
+.link_4{background-image:url(../img/img_4.png);}
+.link_5{background-image:url(../img/img_5.png);}
+.link_6{background-image:url(../img/img_6.png);}
+.link_7{background-image:url(../img/img_7.png);background-position:center top;}
+.about_me{position:relative;padding:60px 0;}
 
 
 
-
-
-
+@media(max-width:767px){
+  .folio_card{min-height:533px;}
+}
