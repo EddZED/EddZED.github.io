@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebEkb</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
-</head>
+</head>  
 <body>
   <div class="wrapper">
     <header class="header">
-      <nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark">
+      <nav class="navbar navbar-expand-lg  scrolling-navbar navbar-dark">
         <div class="container px-md-3">
           <div class="row align-items-center w-100 m-0">
             <div class="col-lg-4 px-0">
@@ -34,7 +35,7 @@
             </div>
             <div class="col-lg-8 pl-1 pr-0">
               <div class="row align-items-center">
-                <div class="collapse navbar-collapse justify-content-end justify-content-lg-between px-3"
+                <div class="collapse navbar-collapse justify-content-end px-3"
                   id="basicExampleNav">
                   <ul class="navbar-nav d-none">
                     <li class="nav-item active">
@@ -44,10 +45,10 @@
                       <a class="nav-link" href="#">О компании</a>
                     </li>
                   </ul>
-                  <div class="col-lg-6 text-center">
+                  <div class="block_phone text-right">
                     <a href="tel:+70000000000" class="phone_link">+7 000 000 00 00</a>
+                    <p class="text_link m-0">Я могу сам <a href="#" data-toggle="modal" data-target="#" class="order_call">позвонить тебе</a></p>
                   </div>
-                  <p class="text_link m-0">Я могу сам <a href="#" data-toggle="modal" data-target="#" class="order_call">позвонить тебе</a></p>
                 </div>
               </div>
             </div>
@@ -69,23 +70,23 @@
           <div class="col-lg-4 position-relative">
             <img src="img/laptop.webp" class="intro_img" alt="">
           </div>
-          <div class="col-12">
+          <div class="col-12 z_ind">
             <div class="row align-items-center">
               <div class="col-lg-4">
                 <a href="#" class="btn_green">сразу к портфолио</a>
               </div>
               <div class="col-lg-4">
                 <div class="row">
-                  <a href="#" class="social_link">vk</a>
-                  <a href="#" class="social_link">insta</a>
-                  <a href="#" class="social_link">behanse</a>
-                  <a href="#" class="social_link">hz</a>
-                  <a href="#" class="social_link">tg</a>
+                  <a href="#" class="social_link mx-3"><i class="fab fa-vk"></i></a>
+                  <a href="#" class="social_link mx-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social_link mx-3"><i class="fab fa-behance"></i></a>
+                  <a href="#" class="social_link mx-3"><i class="fas fa-globe"></i></a>
+                  <a href="#" class="social_link mx-3"><i class="fab fa-telegram-plane"></i></a>
                 </div>
               </div>
               <div class="col-lg-4 text-right">
                 <p class="name_project mb-1">Сайт для астролога</p>
-                <a href="" class="link_project">Смотреть проект</a>
+                <a href="" class="link_project">Смотреть проект <img class="img-fluid" src="svg/arrow.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -94,8 +95,8 @@
     </section>
     <section id="service" class="whatido">
       <div class="container">
-        <span class="name_block">услуги</span>
-        <h2 class="title_name">Что я делаю?</h2>
+        <span class="name_block"><img class="img-fluid pr-3" src="svg/line.svg" alt=""> услуги</span>
+        <h2 class="title_name pt-3">Что я делаю?</h2>
         <div class="row pt-4">
           <div class="col-lg-8">
             <div class="row">
@@ -103,8 +104,8 @@
                 <img src="img/laptop-2.webp" class="img-fluid" alt="">
               </div>
               <div class="col-md-6 pb-4">
-                <img src="img/" class="img-fluid" alt="">
-                <p class="name_service">UI/UX & Веб дизайн</p>
+                <img src="svg/icon_1.svg" class="img-fluid" alt="">
+                <p class="name_service pt-3">UI/UX & Веб дизайн</p>
                 <p class="text_content">Проектирую многостраничные сайты и интернет-магазины для бизнеса. Погружаюсь в проект и делаю удобный и красивый сайт решающий все необходимые бизнес-задачи.</p>
               </div>
               <div class="col-md-6 pb-4">
@@ -112,8 +113,8 @@
                 <p class="text_content">Не просто красивая картинка - а удобный и эффективный одностраничный сайт, побуждающий клиентов к целевому действию и оставляющий приятные впечатления о компании.</p>
               </div>
               <div class="col-md-6 pb-4">
-                <img src="img/" class="img-fluid" alt="">
-                <p class="name_service">Сайты с нуля</p>
+                <img src="svg/icon-3.svg" class="img-fluid" alt="">
+                <p class="name_service pt-3">Сайты с нуля</p>
                 <p class="text_content">ПРазрабатываю молниеносно быстро грузящиеся адаптивные сайты с нуля, с натяжкой на CMS и готовые для SEO полностью под ключ.</p>
               </div>
             </div>
@@ -121,12 +122,12 @@
           <div class="col-lg-4">
             <div class="row flex-lg-column justify-content-between h-100">
               <div class="col-lg-12 col-md-6 pb-4">
-                <img src="img/" class="img-fluid" alt="">
-                <p class="name_service">Сайты на Тильде</p>
+                <img src="img/icon-2.png" class="img-fluid" alt="">
+                <p class="name_service pt-3">Сайты на Тильде</p>
                 <p class="text_content">Делаю аккуратные сайты на Тильде и других конструкторах, с уникальным и адаптивным дизайном за короткий срок.</p>
               </div>
               <div class="col-lg-12 col-md-6 pb-4">
-                <img src="img/" class="img-fluid" alt="">
+                <img src="svg/icon-4.svg" class="img-fluid" alt="">
                 <p class="name_service">Дизайн логотипов</p>
                 <p class="text_content">Проанализую ваш бизнес и его целевую аудиторию, и создам стильный и современный логотип, точно бьющий по аудитории и запоминающийся на подкорке.</p>
               </div>
@@ -137,27 +138,27 @@
     </section>
     <section class="why">
       <div class="container">
-        <span class="name_block">почему я</span>
-        <h2 class="title_name">Кратко: почему стоит работать<br> именно со мной?</h2>
+        <span class="name_block"><img class="img-fluid pr-3" src="svg/line.svg" alt=""> почему я</span>
+        <h2 class="title_name pt-3">Кратко: почему стоит работать<br> именно со мной?</h2>
         <div class="row pt-lg-5 pt-4">
           <div class="col-lg-3 col-md-6 text-center">
-            <img src="img/" class="img-fluid" alt="">
-            <p class="name_service">Всегда на связи</p>
+            <img src="svg/icon-5.svg" class="img-fluid" alt="">
+            <p class="name_service pt-3">Всегда на связи</p>
             <p class="text_content">Всегда нахожусь на связи и стараюсь оперативно отвечать на сообщения и звонки в рабочее время, а зачастую и за его границами.</p>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <img src="img/" class="img-fluid" alt="">
-            <p class="name_service">Не пропадаю</p>
+            <img src="svg/icon-6.svg" class="img-fluid" alt="">
+            <p class="name_service pt-3">Не пропадаю</p>
             <p class="text_content">Если я по каким то причинам срываю сроки и не успеваю доделать проект - я всегда постараюсь заранее об этом предупредить а не отмалчиваться и игнорить, и предоставить дизайнера на замену, чтобы он успел все в срок.</p>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <img src="img/" class="img-fluid" alt="">
-            <p class="name_service">Никаких сюрпризов</p>
+            <img src="svg/icon-7.svg" class="img-fluid" alt="">
+            <p class="name_service pt-3">Никаких сюрпризов</p>
             <p class="text_content">Стоимость или срок проекта по среди работы магическим способом не увеличится - все это обговаривается и утверждается заранее и не изменится по ходу, если не изменился изначальный объем работы.</p>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <img src="img/" class="img-fluid" alt="">
-            <p class="name_service">Полностью прозрачно</p>
+            <img src="svg/icon-8.svg" class="img-fluid" alt="">
+            <p class="name_service pt-3">Полностью прозрачно</p>
             <p class="text_content">Перед началом работы я даю клиенту ссылку на проект - там он в реальном времени может наблюдать за ходом работы, и в любой момент сможет узнать на каком этапе сейчас проект.</p>
           </div>
         </div>
@@ -165,8 +166,8 @@
     </section>
     <section class="portfolio">
       <div class="container">
-        <span class="name_block">портфолио</span>
-        <h2 class="title_name">Мое портфолио</h2>
+        <span class="name_block"><img class="img-fluid pr-3" src="svg/line.svg" alt=""> портфолио</span>
+        <h2 class="title_name pt-3">Мое портфолио</h2>
         <div class="row pt-4">
           <div class="col-12">
             <ul class="folio_tab" id="tab-folio">
@@ -177,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 px-0">
             <a href="#" class="folio_card link_1"></a>
@@ -207,8 +208,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <span class="name_block">обо мне</span>
-            <h2 class="title_name">Том Трунов</h2>
+            <span class="name_block"><img class="img-fluid pr-3" src="svg/line.svg" alt=""> обо мне</span>
+            <h2 class="title_name pt-3">Том Трунов</h2>
             <p class="sub_title-text">Более 30-ти лет занимаюсь дизайном сайтов и интерфейсов. Работал с компаниями, локальными брендами и студиями из России, СНГ, Европы, Азии и Антарктиды. Так же являюсь постоянным исполнителем заказов от Space X и Tesla Motor Group... NASA - так же постоянный клиент :-)</p>
           </div>
           <div class="col-lg-5">
@@ -226,5 +227,6 @@
 
   </div>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
 </body>
 </html>
