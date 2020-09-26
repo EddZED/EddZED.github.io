@@ -43,7 +43,7 @@ body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background
 .name_service{font-size:20px;font-weight:400;color:#fff;}
 .text_content{font-size:14px;color:rgba(255,255,255,.5);letter-spacing:.3px;font-weight:300;line-height:1.75;}
 .why{position:relative;padding:60px 0;background-color:#191a1c;}
-.portfolio{position:relative;padding:60px 0 0;}
+.portfolio{position:relative;padding:60px 0 0;background-color:#191a1c;}
 .folio_tab{display:flex;list-style:none;padding:0;justify-content:space-around;}
 .folio_card{min-height:356px;display:block;background-size:105% auto;background-repeat:no-repeat;background-position:center center;transition:all .5s;}
 .folio_card:hover{background-size:115% auto;}
@@ -55,7 +55,7 @@ body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background
 .link_5{background-image:url(../img/img_5.png);}
 .link_6{background-image:url(../img/img_6.png);}
 .link_7{background-image:url(../img/img_7.png);background-position:center top;}
-.about_me{position:relative;padding:60px 0;}
+.about_me{position:relative;padding:60px 0;background-color:#17181b;}
 
 
 
