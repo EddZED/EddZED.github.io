@@ -45,11 +45,11 @@ body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background
 .why{position:relative;padding:60px 0;background-color:#191a1c;}
 .portfolio{position:relative;padding:60px 0 0;background-color:#191a1c;}
 .folio_tab{display:flex;list-style:none;padding:0;justify-content:space-around;}
-.folio_card{min-height:356px;display:block;background-size:105% auto;background-repeat:no-repeat;background-position:center center;transition:all .5s;}
-.folio_card:hover{background-size:115% auto;}
+.folio_card{min-height:340px;display:block;background-size:120% auto;background-repeat:no-repeat;background-position:center center;transition:all .5s;}
+.folio_card:hover{background-size:125% auto;}
 .link_1{background-image:url(../img/img_1.png);}
-.link_2{background-image:url(../img/img_2.png);background-size:140% auto;}
-.link_2:hover{background-size:150% auto;}
+.link_2{background-image:url(../img/img_2.png);background-size:150% auto;}
+.link_2:hover{background-size:155% auto;}
 .link_3{background-image:url(../img/img_3.png);}
 .link_4{background-image:url(../img/img_4.png);}
 .link_5{background-image:url(../img/img_5.png);}
@@ -62,18 +62,50 @@ body{font-size:14px;font-family: 'Gotham',Arial,sans-serif;color:#fff;background
 .folio_tab .nav-item .nav-link:hover{color:#00ecbc;border-color:#00ecbc;}
 .big_num{font-size:36px;color:#fff;font-family:Gothem_bold;}
 .name_num{font-size:15px;color:#fff;font-family:Gothem_bold;}
-.rezume{background-image:url(../img/vetka.webp);background-size:100% auto;padding:20px 0 40px;}
+.rezume{background-image:url(../img/vetka.webp);background-size:auto 100%;background-position:center center;background-repeat:no-repeat;padding:25px 0 65px;}
 .plus{position:absolute;left:-10px;top:30px;width:15px;height:15px;}
 .contact{position:relative;padding:60px 0;background-color:#191a1c;}
-.footer{position:relative;background-color:#000;padding:60px 0;}
-
-
-
-
-
+.title_text{font-size:18px;font-family:Gothem_light;color:rgba(255,255,255,.5);}
+.mail_contact, .phone_contact{font-size:24px;color:#fff;font-family:Gothem_bold;text-decoration:none;}
+.mail_contact:hover, .phone_contact:hover{opacity:.7;color:#fff;}
+.footer{position:relative;background-color:#0B0C0D;padding:60px 0;}
+.name_foot{font-size:14px;color:#fff;font-family:Gothem_light;}
+.link_footer{display:block;color:rgba(255,255,255,.5);font-size:14;font-family:Gothem_light;text-decoration:none;transition:all .3s;padding-top:15px;}
+.link_footer:hover{color:rgba(255,255,255,.8);}
+.subfoot{padding:10px 0;background-color:#000;}
+.burger{width:30px;height:3px;background-color:rgba(255,255,255,.5);display:inline-block;outline:none;position:relative;}
+.burger:before{content:'';position:absolute;width:30px;height:3px;background-color:rgba(255,255,255,.5);left:0;top:-10px;}
+.burger:after{content:'';position:absolute;width:30px;height:3px;background-color:rgba(255,255,255,.5);left:0;top:10px;}
+.btn_mob{border:none;display:inline-flex;align-items:center;height:40px;transition:all .3s;}
+.btn_mob:hover{color:rgba(255,255,255,.8);}
+.btn_mob:focus{outline:none;}
 @media(max-width:1199px){
   .folio_card{min-height:300px;}
 }
-@media(max-width:767px){
-  .folio_card{min-height:533px;}
+@media(max-width:991px){
+  .folio_card{min-height:220px;}
 }
+@media(max-width:767px){
+  .folio_card{min-height:500px;}
+  .padidng_desctop {padding: 101px 15px 50px;}
+  .portfolio{padding-top:;}
+}
+@media(max-width:575px){
+  .folio_card{min-height:350px;}
+  .title_intro{font-size:30px;}
+  .padidng_desctop {padding: 80px 15px 50px;}
+  .intro{padding:30px 0 50px;}
+  .header .navbar{top:10px;}
+}
+@media(max-width:420px){
+  .folio_card{min-height:250px;}
+}
+@media(max-width:350px){
+  .folio_card{min-height:230px;}
+}
+
+
+
+
+
+
