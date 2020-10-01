@@ -1,0 +1,38 @@
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI';}
+.top_header{background-color:#f5f5f5;padding:15px 0;}
+.block_logo-header{display:flex;align-items:center;padding:0 0 0 15px;}
+.name_logo{text-transform:uppercase;font-size:15px;color:#70737E;padding-left:10px;border-left:1px solid #70737E;line-height:20px;}
+.block_contaxt-header{display:inline-flex;flex-direction:column;}
+.mail_header{font-size:16px;color:#1771E6;}
+.phone_header{font-size:26px;color:#70737E;line-height:32px;display:flex;align-items:center;transition:all .3s;}
+.phone_header:hover{color:#000;text-decoration:none;}
+.block_adres-header{display:inline-flex;flex-direction:column;}
+.adress_header{font-size:13px;line-height:16px;color:#000;line-height:16px;}
+.time_work{color:#70737E;font-size:14px;line-height:16px;}
+.time_work span{color:#000;font-size:15px;}
+.block_cart-header{padding:0 15px 0 0;}
+.btn_orange{font-size:16px;color:#fafafa;background-color:#E84C3D;border-radius:7px;padding: 10px 20px 12px 20px;transition:all .3s;}
+.btn_orange:hover{box-shadow:0px 4px 18px rgba(232, 76, 61, 0.3);color:#fafafa;text-decoration:none;}
+.btn_orange:active{box-shadow:inset 0px 4px 8px rgba(0, 0, 0, 0.08);}
+.menu_header{position:relative;background-color:#fff;box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.08);}
+.btn_menu{position:relative;padding:10px;display:flex;align-items:center;}
+.burger{position:relative;width:25px;height:1px;background-color:#3D3E44;}
+.burger:before{content:'';position:absolute;width:25px;height:1px;background-color:#3D3E44;left:0;top:-7px;}
+.burger:after{content:'';position:absolute;width:25px;height:1px;background-color:#3D3E44;left:0;top:7px;}
+.menu_desctop{list-style:none;padding-left:0;display:flex;align-items:center;margin:0;justify-content:space-between;width:100%;}
+.item_menu .link_menu{display:inline-block;padding:16px 0;font-size:18px;color:#3D3E44;line-height:18px;}
+.block_search{display:flex;width:60px;align-items:flex-end;text-align:right;}
+.search{position:relative;}
+.search_btn{position:absolute;top:0;right:0;}
+.input_search{border:0;width:40px;}
+
+
+@media(max-width:991px){
+  .block_adres-header{display:none;}
+  .menu_desctop{display:none;}
+  .menu_header{padding:10px 0;}
+}
+@media(max-width:575px){
+  
+}
