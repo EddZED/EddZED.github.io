@@ -13,28 +13,42 @@
       <div class="top_header">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="block_logo-header">
+            <div class="block_logo-header col-md-5 col-7">
               <a href="#" class="navbar-brand"><img src="img/logo.png" class="img-fluid" alt="уралразбор"></a>
               <span class="name_logo d-none d-lg-block">автозапчасти<br>для иномарок</span>
             </div>
-            <div class="block_contaxt-header">
-              <a href="mailto:uralrazborka@mail.ru" class="mail_header d-none d-md-block"><img src="img/mail.png" class="img-fluid pr-2" alt=""> uralrazborka@mail.ru</a>
-              <a href="tel:+73432007779" class="phone_header"><img src="img/phone.png" class="img-fluid pr-2" alt=""><span class="d-none d-md-block">8 343 200 77 79</span></a>
-            </div>
-            <div class="block_adres-header">
-              <p class="adress_header m-0">г.Екатеринбург ул.Маневровая, 41</p>
-              <p class="time_work pt-2 m-0">Режим работы:<br><span>ПН - ПТ с 9:00 до 17:00</span></p>
-            </div>
-            <div class="block_cart-header">
-              <a href="#" class="btn_orange"><img src="img/cart.png" class="img-fluid" alt=""><span class="d-none d-sm-block">Корзина</span></a>
+            <div class="col-md-7 col-5 pl-0">
+              <div class="row align-items-center justify-content-end">
+                <div class="block_contaxt-header pr-0 pr-md-3 pr-lg-1">
+                  <a href="mailto:uralrazborka@mail.ru" class="mail_header d-none d-md-block"><img src="img/mail.png" class="img-fluid pr-2" alt=""> uralrazborka@mail.ru</a>
+                  <a href="tel:+73432007779" class="phone_header"><img src="img/phone.png" class="pr-2" alt=""><span class="d-none d-md-block">8 343 200 77 79</span></a>
+                </div>
+                <div class="block_adres-header pr-lg-1">
+                  <p class="adress_header m-0">г.Екатеринбург ул.Маневровая, 41</p>
+                  <p class="time_work pt-2 m-0">Режим работы:<br><span>ПН - ПТ с 9:00 до 17:00</span></p>
+                </div>
+                <div class="block_cart-header">
+                  <a href="#" class="btn_orange"><img src="img/cart.png" class="img-fluid p-1" alt=""><span class="">Корзина</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="menu_header">
         <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <a href="#" data-toggle="collapse" class="btn_menu"><span class="burger"></span></a>
+          <div class="row align-items-center justify-content-between position-relative">
+            <a href="#" class="btn_menu"><span class="burger"></span></a>
+            <div id="menu" class="menu_collapse">
+              <ul class="menu_collapse-mobile">
+                <li class="item_menu"><a href="#" class="link_menu">Каталог Б/У</a></li>
+                <li class="item_menu"><a href="#" class="link_menu">Новые кузовные запчасти</a></li>
+                <li class="item_menu"><a href="#" class="link_menu">Новые стекла</a></li>
+                <li class="item_menu"><a href="#" class="link_menu">Выкуп авто</a></li>
+                <li class="item_menu"><a href="#" class="link_menu">О компании</a></li>
+                <li class="item_menu"><a href="#" class="link_menu">Контакты</a></li>
+              </ul>
+            </div>
             <div class="col">
               <ul class="menu_desctop">
                 <li class="item_menu"><a href="#" class="link_menu">Каталог Б/У</a></li>
@@ -65,5 +79,16 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('.btn_menu').click(function(){
+      $('.menu_collapse').toggleClass('active');
+    });
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest('.menu_header').length == 0) {
+            $('.menu_collapse').removeClass('active');
+        }
+    });
+  </script>
 </body>
 </html>
