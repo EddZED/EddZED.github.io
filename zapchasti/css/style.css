@@ -60,9 +60,9 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .bold_title{font-size:41px;line-height:50px;font-family:segoe_bold;color:#3D3E44;}
 .text_content{font-size:18px;line-height:25px;color:#70737E;font-family:segoe_light;}
 .pad_quest{padding:90px 0 150px;}
-.order_form-block{box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.08);border-radius: 10px;padding:20px;position:relative;z-index:2;background-color:#fff;top:-20px;}
+.order_form-block{box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.08);border-radius: 10px;padding:30px;position:relative;z-index:2;background-color:#fff;top:-20px;}
 .order_form-block:before{content:'';position:absolute;left:15px;right:15px;top:-5px;height:5px;border-radius:10px 10px 0 0;background-color:#E84C3D;z-index:0;}
-.name_form{font-size:34px;}
+.name_form{font-size:34px;line-height:36px;color:#161616;font-family:segoe_light;}
 
 
 @media(max-width:991px){
