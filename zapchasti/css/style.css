@@ -127,6 +127,9 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .table_parts tbody tr th:nth-of-type(2){width:60%;display:inline-block;font-size:15px;color:#70737E;font-family:segoe_light;}
 .font_style .price_table{font-size:22px !important;line-height:25px !important;font-family:segoe_semibold !important;color:#E84C3D !important;}
 .engines{padding:10px 0 50px;}
+.delivery{padding:30px 0 60px;}
+
+
 
 
 @media(max-width:991px){
