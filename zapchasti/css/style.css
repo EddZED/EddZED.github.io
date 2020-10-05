@@ -120,8 +120,13 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .card_parts-item:hover{text-decoration:none;box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.2);}
 .name_card-parts{font-size:17px;color:#3D3E44;line-height:19px;font-family:segoe_semibold;text-align:left;}
 .catalog_parts{padding:10px 0 40px;}
-
-
+.table_parts{display:block;width:100%;padding-bottom:20px;}
+.table_parts tbody{width:100%;display:block;}
+.table_parts tbody tr{width:100%;display:inline-flex;}
+.table_parts tbody tr th:nth-of-type(1){width:40%;display:inline-block;font-size:15px;color:#70737E;font-family:segoe_semibold;}
+.table_parts tbody tr th:nth-of-type(2){width:60%;display:inline-block;font-size:15px;color:#70737E;font-family:segoe_light;}
+.font_style .price_table{font-size:22px !important;line-height:25px !important;font-family:segoe_semibold !important;color:#E84C3D !important;}
+.engines{padding:10px 0 50px;}
 
 
 @media(max-width:991px){
