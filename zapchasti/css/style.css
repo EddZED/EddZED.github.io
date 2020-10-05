@@ -4,6 +4,7 @@ html{scroll-behavior:smooth;}
 @font-face{font-family:'segoe_light';src:url(../font/SegoeUI-Light.ttf);}
 @font-face{font-family:'segoe_bold';src:url(../font/SegoeUI-Bold.ttf);}
 body {font-family:'segoe_reg';background-color:#fff;}
+.wrapper{overflow:hidden;}
 .top_header{background-color:#f5f5f5;padding:15px 0;}
 .block_logo-header{display:flex;align-items:center;padding:0 0 0 15px;}
 .name_logo{text-transform:uppercase;font-size:15px;color:#70737E;padding-left:10px;border-left:1px solid #70737E;line-height:20px;font-family:segoe_light;}
@@ -128,8 +129,36 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .font_style .price_table{font-size:22px !important;line-height:25px !important;font-family:segoe_semibold !important;color:#E84C3D !important;}
 .engines{padding:10px 0 50px;}
 .delivery{padding:30px 0 60px;}
-
-
+.description_goods{padding:20px 0 50px;}
+.slider-item{padding:10px;}
+.slider-item-card{background-color:#fff;border-radius:10px;box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.08);padding:10px 0px 0;}
+.slick-list{overflow:visible;}
+.big_name-parts{font-size:30px;line-height:46px;font-family:segoe_semibold;color:#3D3E44;}
+.table td, .table th{padding:5px 0;}
+.table th{width:50%;}
+.table{color:#70737E;}
+.btn_orange-card{padding:10px 0 9px 0;display:inline-block;width:100%;}
+.btn_orange-question{padding:10px 0 9px 0;display:inline-block;width:100%;border:1px solid #E84C3D;background-color:#fff;color:#E84C3D;}
+.btn_orange-question:hover{background-color:#E84C3D;color:#fff;}
+.contacty{background-color:#fff;padding:20px 0 50px;}
+.bold_text{font-size:22px;line-height:20px;font-family:segoe_semibold;color:#3D3E44;}
+.link_phone{font-size:18px;line-height:18px;color:#1771E6;}
+.form_questions{padding:60px 0;background: linear-gradient(180deg, #F5F5F5 0%, rgba(255, 255, 255, 0) 75.7%);}
+.label_input{position:relative;margin-bottom:15px;}
+.custom_input{display:inline-block;width:100%;padding:25px 15px 10px 15px;background-color:#ECF1F7;border-radius:10px;border:none;color: #3D3E44;font-size:16px;font-family:segoe_reg;}
+.custom_input::-webkit-input-placeholder{font-size:16px;color:#3D3E44;font-family:segoe_semibold;}
+.custom_input:focus{outline:none;}
+.placeholder{position:absolute;font-size:14px;color:#70737E;font-family:segoe_light;top:5px;left:15px;}
+.text_area{min-height:121px;}
+.privacy_check{position:relative;}
+.privacy_check:hover{cursor:pointer;}
+.inp_chek[type="checkbox"]{display:none;}
+.checkbox{position:relative;font-size:14px;color:#3D3E44;font-family:segoe_light;line-height:14px;display:inline-block;padding-left:30px;}
+.checkbox:before{content:'';position:absolute;width:22px;height:23px;left:0;top:0;bottom:0;margin:auto;border-radius:4px;box-shadow:inset 0 0 10px -1px rgba(0,0,0,.2);}
+.checkbox:after{content:'';position:absolute;width:22px;height:23px;left:0;top:0;bottom:0;margin:auto;border-radius:4px;background-color:#E84C3D;background-image:url(../img/checked.png);background-size:60% 60%;background-position:center center;background-repeat:no-repeat;opacity:0;transition:all .3s;}
+.inp_chek[type="checkbox"]:checked + .checkbox:after{opacity:1;}
+.form_questions .btn_orange{border:none;}
+.form_questions .btn_orange:focus{outline:none;}
 
 
 @media(max-width:991px){
@@ -140,6 +169,7 @@ body {font-family:'segoe_reg';background-color:#fff;}
   .car{position:relative;left:auto;bottom:auto;max-width:100%;}
   .question{padding:0 0 50px;}
   .ing_comp{position:relative;}
+  .description_goods{padding-top:0;}
 }
 @media(max-width:767px){
   .title_page{font-size:34px;text-align:center;line-height:35px;}
@@ -150,6 +180,12 @@ body {font-family:'segoe_reg';background-color:#fff;}
   .name_form{font-size:28px;line-height:28px;}
   .titl_catal{font-size:28px;line-height:30px;}
   .block_info{flex-direction:column;}
+  .slider-item{padding:7px;}
+  .big_name-parts{font-size:26px;line-height:28;}
+  .contacty{padding:10px 0 30px;}
+  .link_phone{display:block;}
+  .form_questions{padding:40px 0;}
+  .head_section{font-size:34px;line-height:36px;}
 }
 @media(max-width:575px){
   .block_cart-header .btn_orange{padding:2px 6px 7px 6px;}
