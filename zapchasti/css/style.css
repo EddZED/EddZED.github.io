@@ -174,7 +174,7 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .orange_text-cart{font-size:27px;line-height:28px;font-family:segoe_semibold;color:#E02421;}
 .name_cart-category{font-size:18px;line-height:30px;font-family:segoe_semibold;color:#3D3E44;opacity:.5;}
 .itog{font-size:22px;line-height:30px;color:#3D3E44;font-family:segoe_semibold;opacity:.5;}
-
+.order_regisstration{padding:10px 0 50px;}
 
 
 @media(max-width:991px){
