@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Корзина</title>
+  <title>Оформление заказа</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
@@ -108,8 +108,80 @@
       <section class="order_regisstration">
         <div class="container">
           <p class="head_section w-100 text-center pb-2 pb-lg-5">Оформление заказа</p>
-          <div class="row">
-
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <form method="get" action="">
+                <fieldset>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="label_input">
+                        <span class="placeholder">Имя, фамилия*</span>
+                        <input class="custom_input" type="text" name="" placeholder="Иван Иванов">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="label_input">
+                        <span class="placeholder">Контактный телефон*</span>
+                        <input class="custom_input" type="text" name="" placeholder="8 (903) 123-12-12">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="label_input">
+                        <span class="placeholder">E-mail*</span>
+                        <input class="custom_input" type="text" name="" placeholder="mail@mail.ru">
+                      </label>
+                      <label class="label_input mb-md-0">
+                        <span class="placeholder">Ваш город*</span>
+                        <input class="custom_input" type="text" name="" placeholder="Екатеринбург">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="label_input h-100 mb-md-0">
+                        <span class="placeholder">Ваш комментарий к заказу**</span>
+                        <textarea class="custom_input text_area h-100" type="text" name=""></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col-md-6 text-center text-md-left">
+                      <p class="midle_font">Способ доставки:</p>
+                      <label class="label_deliv mb-3">
+                        <input class="radiobox" type="radio" name="deliv">
+                        <span class="radio_chek">Самомывоз</span>
+                      </label>
+                      <label class="label_deliv mb-3">
+                        <input class="radiobox" type="radio" name="deliv" checked>
+                        <span class="radio_chek">Транспортная компания</span>
+                      </label>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                      <p class="midle_font">Способ оплаты:</p>
+                      <label class="label_deliv label_payment mb-3">
+                        <input class="radiobox" type="radio" name="pay">
+                        <span class="radio_chek">Безналичный расчёт</span>
+                      </label>
+                      <label class="label_deliv mb-3">
+                        <input class="radiobox" type="radio" name="pay" checked>
+                        <span class="radio_chek">Транспортная компания</span>
+                      </label>
+                    </div>
+                    <div class="col-12 text-center pt-4">
+                      <label class="privacy_check">
+                        <input class="inp_chek" type="checkbox" checked>
+                        <span class="checkbox">Я принимаю условия передачи информации</span>
+                      </label>
+                      <div class="row justify-content-center pt-4">
+                        <div class="col-lg-4 col-md-6">
+                          <button type="submit" class="btn_orange border-none d-block text-center w-100">Оформить заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </section>

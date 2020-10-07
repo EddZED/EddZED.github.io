@@ -175,7 +175,14 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .name_cart-category{font-size:18px;line-height:30px;font-family:segoe_semibold;color:#3D3E44;opacity:.5;}
 .itog{font-size:22px;line-height:30px;color:#3D3E44;font-family:segoe_semibold;opacity:.5;}
 .order_regisstration{padding:10px 0 50px;}
-
+.midle_font{font-size:22px;line-height:30px;color:#3D3E44;font-family:segoe_semibold;}
+.label_deliv{position:relative;cursor:pointer;display:block;}
+.radiobox[type="radio"]{display:none;}
+.radio_chek{position:relative;font-size:18px;color:#3D3E44;letter-spacing:0.01em;line-height:26px;font-family:segoe_light;padding-left:35px;}
+.radio_chek:before{content:'';position:absolute;width:27px;height:27px;border-radius:50%;border:1px solid #3D3E44;left:0;}
+.radio_chek:after{content:'';position:absolute;width:19px;height:19px;border-radius:50%;background-color:#E84C3D;left:4px;top:3px;transition:all .3s;opacity:0;}
+.radiobox[type="radio"]:checked + .radio_chek:after{opacity:1;}
+.border-none{border:none;}
 
 @media(max-width:991px){
   .block_adres-header{display:none;}
