@@ -87,7 +87,7 @@ body {font-family:'segoe_reg';background-color:#fff;}
 .number_parts{font-size:15px;line-height:17px;color:#888;font-family:inherit;}
 .name_parts{font-size:24px;line-height:26px;color:#3D3E44;}
 .desc_parts{font-size:15px;line-height:20px;color:#70737E;font-family:inherit;}
-.btn_gray{display:block;background-color:#ECF1F7;border-radius:10px;padding:13px;font-size:18px;line-height:18px;font-family:segoe_semibold;text-align:center;transition:all .3s;color:#1771E6;}
+.btn_gray{display:block;background-color:#ECF1F7;border-radius:10px;padding:13px;font-size:18px;line-height:18px;font-family:segoe_semibold;text-align:center;transition:all .3s;color:#1771E6;cursor: pointer;}
 .card_goods:hover{text-decoration:none;}
 .card_goods:hover .btn_gray{box-shadow:0px 4px 15px rgba(33, 33, 33, 0.12);text-decoration:none;}
 .card_goods:active .btn_gray{background-color:#1771E6;color:#fff;}
