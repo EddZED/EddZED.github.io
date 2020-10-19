@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content=""/>
+	<title>YMB Group</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <script>
+        var abi = [
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "createReferralContract",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [],
+                "name": "getMyReferralContract",
+                "outputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ];
+        var address = "0xf920aa3FaEA7111D56c2592742fb88CE129149Fc";//подставить адрес контракта
+        var currentContract = web3.eth.contract(abi).at(address);
+    </script>
+</head>
+<body>
+
+  <header class="header">
+  	<nav class="navbar navbar-expand-lg">
+	  <div class="container mobile_rev">
+		<a class="navbar-brand" href="index.php"><img src="img/logo.png" class="img-fluid"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav justify-content-start w-100">
+			<li class="nav-item">
+			  <a class="nav-link" href="index.php#who_are_we"><span>О проекте</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.php#earn"><span>Как это работает?</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="modal" data-target="#support" href="#"><span>Поддержка</span></a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  </header>
+  <section id="intro">
+    <img src="img/neyro_bg.png" class="top_bg d-none d-lg-block">
+  	<img src="img/mobile_neyro.png" class="top_bg_mob d-lg-none">
+  	<div class="container" style="min-height:500px">
+    <div>
+        <p>Для получения токенов переведите ETH на этот адрес:</p>
+        <p id="contractAddress" style="color:#6b6bbf">0xf920aa3FaEA7111D56c2592742fb88CE129149Fc</p>
+    </div>
+    <div>
+        <p>Получить реферальный адрес</p>
+        <form name="GetReferral">
+            <input type="button" name="send" value="Подключить MetaMask" class="btn_gradient" style="border:0">
+        </form>
+        <div id="refAddress" style="display:none;">
+            <p>Ваш реферальный адрес:</p>
+            <p id="output"></p>
+        </div>
+        <div id="txLink" style="display:none;">
+            <p>Подождите, идет создание реферального адреса...</p>
+            <p>Посмотреть прогресс на Etherscan:</p>
+            <a id="outLink" target="_blank"></a>
+
+        </div>
+    </div>
+    <script>
+        var button = document.GetReferral.send;
+        button.addEventListener("click", function (e) {
+            switch (e.target.value) {
+                case "Подключить MetaMask":
+                    if (typeof web3 == "undefined") {
+                        var f = confirm("MetaMask не обнаружен!\nНажмите OK чтобы перейти к установке MetaMask");
+                        if (f) {
+                            window.open("https://metamask.io/", "_blank");
+                        }
+                    }
+                    else {
+                        ethereum.enable();
+                        currentContract.getMyReferralContract(function (error, value) {
+                            if (!error) {
+                                console.log(value);
+                                if (value != "0x0000000000000000000000000000000000000000") {
+                                    var output = document.getElementById("output");
+                                    var refDiv = document.getElementById("refAddress");
+                                    output.textContent = value;
+                                    refDiv.style.display = "block";
+                                    document.GetReferral.style.display = "none";
+                                }
+                                else {
+                                    document.GetReferral.send.value = "Создать адрес";
+                                }
+                            }
+                            else {
+                                alert("Произошла ошибка! \nПерезагрузите страницу!");
+                            }
+                        });
+                    }
+                    break;
+                case "Создать адрес":
+                    currentContract.createReferralContract(function (error, value) {
+                        if (!error) {
+                            console.log(value);
+                            document.GetReferral.send.value = "Показать адрес";
+                            var output = document.getElementById("outLink");
+                            var linkDiv = document.getElementById("txLink");
+                            output.textContent = value;
+                            output.setAttribute("href", "https://etherscan.io/tx/" + value);
+                            linkDiv.style.display = "block";
+                            output.setAttribute("f", "false");
+                            document.GetReferral.style.display = "none";
+                            setTimeout(checkTx, 3000, value);
+                        }
+                        else {
+                            alert("Произошла ошибка! \nПерезагрузите страницу!");
+                        }
+                    });
+                    break;
+                case "Показать адрес":
+                    currentContract.getMyReferralContract(function (error, value) {
+                        if (!error) {
+                            console.log(value);
+                            if (value != "0x0000000000000000000000000000000000000000") {
+                                var output = document.getElementById("output");
+                                var refDiv = document.getElementById("refAddress");
+                                var linkDiv = document.getElementById("txLink");
+                                output.textContent = value;
+                                refDiv.style.display = "block";
+                                document.GetReferral.style.display = "none";
+                                linkDiv.style.display = "none";
+                            }
+                        }
+                        else {
+                            alert("Произошла ошибка! \nПерезагрузите страницу!");
+                        }
+                    });
+            }
+        });
+        function checkTx(value) {
+            var output = document.getElementById("outLink");
+            var f = output.getAttribute("f");
+            web3.eth.getTransactionReceipt(value, function (error, value) {
+                var output = document.getElementById("outLink");
+                if (value != null) {
+                    output.setAttribute("f", "true");
+                }
+            });
+            f = output.getAttribute("f");
+            console.log(f);
+            if (f == "true") {
+                currentContract.getMyReferralContract(function (error, value) {
+                    if (!error) {
+                        console.log(value);
+                        if (value != "0x0000000000000000000000000000000000000000") {
+                            var output = document.getElementById("output");
+                            var refDiv = document.getElementById("refAddress");
+                            var linkDiv = document.getElementById("txLink");
+                            output.textContent = value;
+                            refDiv.style.display = "block";
+                            document.GetReferral.style.display = "none";
+                            linkDiv.style.display = "none";
+                        }
+                    }
+                });
+            }
+            else {
+                setTimeout(checkTx, 3000, value);
+            }
+        }
+
+    </script>
+    <p></p>
+	<p></p>
+	</div>
+	<footer class="footer">
+  	<div class="container">
+  	  <div class="row justify-content-between mob_column align-items-center px-3">
+  	  	<a href=""><img src="img/logo.png" class="img-fluid" alt=""></a>
+  	  	<a data-toggle="modal" data-target="#support" href="#" class="support mt-4 mt-md-0">Написать в поддержку</a>
+  	  	<div class="cont_block text-center text-md-right mt-4 mt-md-0">
+  	  	  <a href="mailto:ymb-group@gmail.ru" class="text_content">ymb-group@gmail.ru</a><br>
+  	  	  <a href="https://api.whatsapp.com/send?phone=+19055169071"><img src="img/whats.png" class="img-fluid pr-3"></a>
+  	  	  <a href="https://t.me/YMB_group"><img src="img/teleg.png" class="img-fluid"></a>
+  	  	</div>
+  	  </div>
+  	</div>
+  </footer>
+	</section>
+	 
+
+
+<!-- Modal support-->
+<div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"></span><span></span>
+      </button>
+      <div class="modal-body">
+        <p class="header_modal text-center">Пожалуйста, заполните поля ниже, и мы ответим на Ваш вопрос в ближайшее время</p>
+        <form class="form__form callback-form" id="callbackForm" action="#">
+			<fieldset class="form__fields form__hide-success" style="border:0px">
+            <input type="text" name="name" class="input_modal" placeholder="Введите ваше имя" required>
+            <input type="text" name="mail" class="input_modal mt-2" placeholder="Введите ваш E-mail" required>
+            <textarea name="message" class="input_modal mt-2" placeholder="Введите Ваш вопрос"></textarea>
+            <input type="hidden" name="go" value="callback">
+			<div class="box_btn w-100 mt-2">
+              <button type="send" class="btn_gradient w-100">задать вопрос</button> 
+            </div>
+          </fieldset>
+        </form>
+        <p class="w-100 text-center pt-4 header_modal">Или напишите нам в мессенджере:</p>
+        <div class="text-center w-100">
+          <a href="https://api.whatsapp.com/send?phone=+19055169071"><img src="img/whats.png" class="img-fluid pr-3"></a>
+          <a href="https://t.me/YMB_group"><img src="img/teleg.png" class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mdb.min.js"></script>	
+  <script src="js/call.js"></script>	
+</body>
+</html>

@@ -1,0 +1,173 @@
+@font-face {font-family:'AvenirNextCyr-Demi';src: url("../font/AvenirNextCyr-Demi.ttf");}
+@font-face {font-family:'AvenirNextCyr-Bold';src: url("../font/AvenirNextCyr-Bold.ttf");}
+@font-face {font-family:'AvenirNextCyr-Regular';src: url("../font/AvenirNextCyr-Regular.ttf");}
+@font-face {font-family:'AvenirNextCyr-Medium';src: url("../font/AvenirNextCyr-Medium.ttf");}
+@font-face {font-family:'AvenirNextCyr-Light';src: url("../font/AvenirNextCyr-Light.ttf");}
+html, body{height:100%;font-family:'AvenirNextCyr-Demi',sans-serif;margin:0;}
+html {scroll-behavior: smooth;}
+.navbar{box-shadow:none;width:100%;z-index:999;}
+.link-logo{margin-left:38px;font-size:36px;font-family:'AvenirNextCyr-Bold', serif;color:#fff !important;text-transform:uppercase;}
+.link-logo:hover{opacity:0.7;transition:.35s;}
+.phone-link{font-size:30px;font-family:'AvenirNextCyr-Regular', sans-serif;}
+.btn-style{background-color:#4a77fe;color:#fff;box-shadow:none;font-size:14px;border-radius:5px;}
+.btn-style:hover, .btn-style:focus{box-shadow:none;color:#fff;opacity:0.9;}
+/*menu*/
+.menu{background:#000;left:-450px;height:100%;position:fixed;width:450px;z-index:99999999;font-family:'AvenirNextCyr-Bold', sans-serif;} 
+.background{ height:100%;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;} 
+.menu ul{border-top:0px solid #555;list-style:none;margin:0;} 
+.menu li{position:relative;border-bottom:0px solid #555;padding-bottom:3px;padding-left:20px;padding-top:3px;} 
+.menu li:hover{cursor:pointer;}
+.menu li:before{content:'';position:absolute;width:28px;height:21px;left:-30px;top:5px;background-image:url(../img/kaska.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.menu a{color:#fff;font-size:18px;text-decoration:none;text-transform:uppercase;} 
+.menu a:hover{opacity:0.6;}
+.icon-close{cursor:pointer;padding-left:10px;padding-top:10px;padding-bottom:6px;} 
+.icon-menu{z-index:999999;position:absolute;color:#fff;padding-top:9px;cursor:pointer;font-family:'Open Sans', sans-serif;font-size:20px;padding-left:0px;text-decoration:none;text-transform:uppercase;} 
+.icon-menu img{margin-right:5px;}
+.hamburger-box{position:relative;width:30px;height:25px;padding:3px 4px;display:inline-block;-webkit-box-sizing:content-box;box-sizing:content-box;background-color:transparent;border:2px solid #000;z-index:1;} 
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{width:30px;height:3px;position:absolute;border-radius:6px;background-color:#fff;top:14px;} 
+.hamburger-inner:before{left:0;transition:transform .125s cubic-bezier(.6, .04, .98, .335), top .05s linear .125s, left .125s ease-in .175s;} 
+.hamburger-inner:before{top:8px;} 
+.hamburger-inner:after{top:-8px;right:0;transition:transform .125s cubic-bezier(.6, .04, .98, .335), top .05s linear .125s, right .125s ease-in .175s;} 
+.hamburger-inner:after{bottom:-10px;} 
+.hamburger-inner:after, .hamburger-inner:before{display:block;content:"";}
+/*end menu*/
+.bg_content{background-image:url(../img/bg_top.png);width:100%;height:800px;background-repeat:no-repeat;background-size:cover;background-position:center right;}
+.head_banner{font-size:80px;color:#fff;font-family:'AvenirNextCyr-Bold', sans-serif;font-weight:600;padding-top:200px;}
+.txt_banner{font-size:30px;color:#fff;font-family:'AvenirNextCyr-Medium', sans-serif;font-weight:600;padding-top:70px;}
+.btn_banner{box-shadow:none;background-color:#fdb200;color:#fff;font-size:18px;text-transform:uppercase;text-shadow: 2px 2px 6px #464444;border-radius:5px;}
+.btn_banner:hover, .btn_banner:focus{box-shadow:none;color:#fff;opacity:0.9;}
+.bg_content_2{background-image:url(../img/bg_cont.png);background-repeat:no-repeat;background-size:cover;background-position:center left;}
+.head_content{font-size:30px;font-family:'AvenirNextCyr-Bold',sans-serif;position:relative;}
+.head_content:after{content:'';position:absolute;width:49px;height:46px;background-image:url(../img/kaska_2.png);background-size:100% 100%;top:5px;left:0px;}
+.line{position:relative;}
+.line:before{position:absolute;content:'';bottom:-10px;left:0;width:100%;height:10px;background:linear-gradient(90deg, #444443 50%, #feef44 50%);background-size:30px 100%;transform: skewX(-45deg);}
+.box_goods{width:100%;background-color:#fff;padding:20px;border-radius:5px;box-shadow: 0px 0px 10px #eee;transition:.3s;}
+.box_goods:hover{background-color:transparent;transition:.3s;}
+.img_goods{width:100%;}
+.img_goods_2{width:100%;}
+.head_goods{font-size:21px;font-family:'AvenirNextCyr-Bold',sans-serif;text-transform:uppercase;}
+.goods_link{width:100%;color:#323242;position:relative;display:inherit;transition:.5s;}
+.hover_bg{background-color:rgba(0,0,0,0.6);width:100%;height:100%;border-radius:5px;}
+.hover_hand{opacity:0;position:absolute;top:-50px;bottom:0;margin:auto;right:0;left:0;transition:.5s;}
+.hover_title{position:absolute;opacity:0;bottom:25px;left:0;right:0;font-size:21px;font-family:'AvenirNextCyr-Bold';color:#fff;text-transform:uppercase;transition:.5s;}
+.hover_bg{position:absolute;opacity:0;top:0;bottom:0;left:0;right:0;margin:auto;transition:.5s;}
+.goods_link:hover{color:#323242;}
+.goods_link:hover .hover_bg,
+.goods_link:hover .hover_hand,
+.goods_link:hover .hover_title{opacity:1;transition:.5s;}
+.our_work{background-color:#fff;width:100%;}
+.head_content_2{font-size:30px;font-family:'AvenirNextCyr-Bold',sans-serif;position:relative;}
+.img_work{width:100%;}
+.about_comp{background-image:url(../img/bg_company.png);background-size:cover;background-repeat:no-repeat;}
+.txt_cont{font-size:18px;}
+.img_comp{width:80%;}
+.img_comp_2{width:70%;}
+.bg_order{width:100%;background-color:#fff;}
+.head_order{font-size:36px;font-family:'AvenirNextCyr-Bold',sans-serif;text-transform:uppercase;}
+.order{width:100%;border:10px solid transparent;border-image:10 repeating-linear-gradient(-45deg, #000, #000 20px, #ffb400 20px, #ffb400 40px);}
+.head_form{font-size:36px;font-family:'AvenirNextCyr-Bold',sans-serif;font-weight:600;}
+.help_txt{font-size:24px;font-family:'AvenirNextCyr-Regular',sans-serif;}
+.form-input{padding:10px;width:100%;height:50px;background-color:#fafafa;border:2px solid #ccc;}
+.btn_order{width:100%;font-size:24px;background-color:#ffb400;box-shadow:none;color:#fff;text-transform:uppercase;padding:10px 10px;}
+.btn_order:hover, .btn_order:focus{box-shadow:none;}
+.img-form{width:90%;}
+.comments{background-image:url(../img/bg_comments.png);background-size:cover;background-repeat:no-repeat;}
+.box_cooment{width:100%;padding:15px 20px;background-color:#fff;box-shadow:0px 0px 10px #ccc;border-radius:10px;}
+.name_comment{font-size:24px;font-family:'AvenirNextCyr-Bold',sans-serif;}
+.text_adv{font-size:18px;font-family:'AvenirNextCyr-Bold', sans-serif;text-transform:uppercase;}
+.footer{background-color:#363636;width:100%; height:100px;}
+.txt_foot{font-size:24px;color:#fff; }
+.link_up{text-decoration:underline;}
+.link_up:hover{color:#FFF;text-decoration:underline;opacity:0.7;}
+.top-nav-collapse{background-image:url(../img/bg_header_2.png);background-size:cover;background-repeat:no-repeat;}
+.bg_header_2{z-index:1;width:100%;height:95px;background-image:url(../img/bg_header_2.png);background-size:cover;background-repeat:no-repeat;background-position:center left;}
+.breadcrumb{background-color:transparent;font-size:18px;font-family:'AvenirNextCyr-Bold',sans-serif;text-transform:uppercase;}
+.breadcrumb-item>a{color:#000;}
+.breadcrumb-item+.breadcrumb-item::before{content:'-';color:#000; }
+.active{color:#bababb;}
+.bg_content_3{background-image:url(../img/bg_content_3.png); }
+.our_service{margin-top:115px;width:100%;border-width:10px;border-style:solid;border-color:transparent;border-image:10 repeating-linear-gradient(-45deg, #000, #000 10px, #feef44 10px, #feef44 20px);}
+.list_service{font-size:18px;font-family:'AvenirNextCyr-Bold',sans-serif;}
+.left_menu{list-style:none;}
+.left_menu li{position:relative;color:#000;}
+.left_menu li:before{content:'';position:absolute;left:-30px;top:5px;width:18px;height:16px;background-image:url(../img/molotok.png);background-repeat:no-repeat;}
+.left_menu li:hover{opacity:0.7;}
+.head_content_3{font-size:48px;font-family:'AvenirNextCyr-Bold',sans-serif;position:relative;}
+.line_2:after{content:'';position:absolute;width:49px;height:46px;background-image:url(../img/kaska_2.png);background-size:100% 100%;top:4px;left:-17px;}
+.txt-content{font-size:18px;font-family:'AvenirNextCyr-Regular',sans-serif;padding-top:20px;}
+.txt_head{font-size:36px;font-family:'AvenirNextCyr-Bold',sans-serif;}
+.box_table{overflow-x:auto;position:relative;}
+.price{width:80%;margin-left:10%;}
+.bg{background-color: #f1bc03;color:#000;}
+.h-40{height:40px;}
+.bg-gray{background-color: #fafafa;}
+.txt-price{font-size:18px;font-family:'AvenirNextCyr-Regular',sans-serif;margin-left:10%;}
+.txt_contact{font-size:18px;font-family:'AvenirNextCyr-Regular',sans-serif;font-style:italic;}
+.strong{font-family:'AvenirNextCyr-Bold',sans-serif;font-style:normal;}
+.btn_form_contact{width: 100%;height: 40px;background-color: transparent;border: 1px solid#cecece;border-radius: 3px;outline: none !important;}
+.madal_window{position:absolute;background-color:rgba(0,0,0,0.3);width:100%;height:100%;) }
+.window{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;width:500px;height:500px;}
+#myBtn {display:none;position:fixed;bottom:20px;right:30px;z-index:99;width:50px;height:50px;outline:none;background-color:transparent;background-image:url(../img/arrow_up.png);background-size:100% 100%;background-position:center center;  color: white;cursor: pointer;padding: 15px;border-radius: 50%;border:2px solid #ffb400;font-size: 18px;transition:.3s;}
+#myBtn:hover{background-color:rgba(0,0,0,0.1);transition:.3s; }
+#modal1{width: 30%;height: 370px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;padding: 0px;position: fixed;background: rgb(244, 190, 0,0.9);border: 3px solid #000;background-size:100% 100%;color: #000;}
+#modal2{width: 40%;height: 400px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;padding: 0px;position: fixed;background: rgb(244, 190, 0,0.9);border: 3px solid #000;background-size:100% 100%;color: #000;}
+.pad-modal{padding:15px;}
+.btn-close-new{float:right;background-color:rgb(255,255,255,0);border:none;color:#000;font-weight:700;position:absolute;top:5px;right:5px;}
+.input-modal{padding:6px 12px;border: 1px solid #b7b7b7;width:100%;background:#ebebeb;margin-bottom:10px;}
+
+
+@media(max-width:991px){
+	.navbar-nav{flex-direction:row;}
+	.head_banner{font-size:60px;}
+	.bg_content{height:700px;}
+	.img_goods_2{width:30%;}
+	.our_service{margin-top:0;}
+    .link-logo{margin-left:45px;}
+    .btn_order_call{display:none;}
+}
+@media(max-width:767px){
+	.txt_banner{padding-top:45px;font-size:25px;}
+	.pad_mobile{padding-left:15px !important;padding-right:15px !important;}
+	.img_comp, .img_comp_2{display:none;}
+	.img-form{display:none;}
+}
+@media(max-width:679px){
+	.bg_header_2{height:147px;}
+}
+@media(max-width:600px){
+	.head_banner{padding-top:150px;}
+	.txt_banner{padding-top:0;font-size:25px;}
+}
+@media(max-width:500px){
+	.menu a{font-size:18px;}
+	.menu li{padding-top:0;padding-bottom:0;}
+	.link-logo{font-size:30px;}
+	.bg_header_2{height:130px;}
+}
+@media(max-width:450px){
+.menu{background:#000;left:-450px;height:100%;position:fixed;width:100%;z-index:99999999;font-family:'AvenirNextCyr-Bold', sans-serif;} 
+}
+@media(max-width:400px){
+	.phone-link{font-size:25px;}
+	.bg_header_2{height:120px;}
+	.btn_banner{font-size:16px;}
+}
+@media(max-width:355px){
+	.head_content_3{font-size:35px;}
+	.head_banner{font-size:40px;}
+	.txt_banner{font-size:20px;}
+	.link-logo{font-size:25px;}
+	.phone-link{font-size:20px;}
+	.bg_content{height:600px;}
+}
+
+
+
+
+
+
+
+
+
+
+

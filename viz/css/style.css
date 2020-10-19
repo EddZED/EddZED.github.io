@@ -1,0 +1,27 @@
+html{scroll-behavior:smooth;}
+@font-face {font-family:letosans;src:url(../font/LetoSans.otf);}
+body{font-family:'letosans',sans-serif;background-color:#fff;color:#5C5C5C;}
+.nav-tabs .nav-link{border:none !important;}
+.nav-link{color:#5C5C5C;}
+.nav-link:hover,.nav-tabs .nav-link.active{color:#000;}
+.nav-tabs, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{border:none;}
+#menu_slider .nav-item .nav-link{font-size:11px;line-height:15px;}
+.name_item{font-size:36px;line-height:20px;text-transform:uppercase;}
+.name_material{font-size:10px;}
+#menu_slider .nav-item .nav-link{position:relative;padding:5px 10px;}
+#menu_slider .nav-item .nav-link:after{position:absolute;content:'.';vertical-align:middle;top:2px;right:0;}
+.not_after:after{display:none;}
+.bg_gray{width:100%;background-color:#F4F5FC;color:#000;}
+.name_page{color:#000;font-size:36px;text-transform:uppercase;line-height:42px;}
+.description{font-size:16px;line-height:24px;color:#000;letter-spacing:0.05em;}
+
+@media(max-width:991px){
+	.name_page{font-size:28px;}
+	.description{font-size:14px;}
+}
+@media(max-width:767px){
+	#menu_slider .nav-item .nav-link{font-size:9px;line-height:10px;}
+	.name_item{font-size:16px;font-weight:600;text-transform:none;}
+	.name_page{font-size:22px;}
+	.description{font-size:12px;}
+}

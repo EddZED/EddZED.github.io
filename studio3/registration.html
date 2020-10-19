@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content=""/>
+	<title>Registration</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="block">
+      <div class="row h-100 px-3 align-items-center justify-content-between">
+        <span class="logo"></span>	
+        <a href="" data-toggle="modal" data-target="#error"><img src="img/menu_icon.png" class="img-fluid" alt="menu"></a>
+      </div>
+    </div>
+  </header>
+  <div class="block pt-3 py-lg-5">
+  	<div class="row align-items-center text-center">
+  		<div class="col-xl-5">
+  		  <h1 class="header_page">Регистрация</h1>
+  		  <form class="form_reg pt-2 pt-lg-5" action="">
+  		  	<fieldset>
+            <div class="form_item">
+  		  	    <input type="tel" id="phone_reg" name="" class="inp_st" required="true" placeholder="  ">
+  		  	    <label class="label_form" for="phone_reg">Ваш номер телефона</label>
+            </div>
+            <div class="form_item">
+              <input type="text" id="first_name" name="" class="inp_st" required="true" placeholder=" ">
+              <label class="label_form" for="first_name">Ваше Имя</label>
+            </div>
+            <div class="form_item">
+              <input type="text" id="last_name" name="" class="inp_st" required="true" placeholder=" ">
+              <label class="label_form" for="last_name">Ваша Фамилия</label>
+            </div>
+  		  	  <div class="form_item">
+  		  	    <input type="text" id="patronymic" name="" class="inp_st st3" required="true" placeholder=" ">
+  		  	    <label class="label_form" for="patronymic">Ваше Отчество</label>
+            </div>
+  		  	</fieldset>
+  		  </form>
+  		  <p class="head_two text-left mb-1 mb-lg-3 pt-2 pt-lg-4 pl-1">Вы</p>
+  		  <label class="choice text-left mt-1 pl-1 w-100">
+			<input type="radio" name="you" required="true">
+			<div class="choice_text">Я преподаватель</div>
+		  </label>
+		  <label class="choice text-left mt-2 mt-lg-3 pl-1 w-100">
+			<input type="radio" name="you" required="true">
+			<div class="choice_text">Я ученик</div>
+		  </label>
+		  <button type="submit" class="btn_sms mt-3 mt-lg-4 d-lg-none">Получить SMS-код</button>
+      <div class="form_item d-flex align-items-center text-left mb-0 mt-3 px-0">
+        <input type="text" id="sms" name="" class="inp_st inp_sms st3 " required="true" placeholder=" ">
+        <label class="label_form notz" for="sms">SMS-Код подтверждения</label>
+        <button class="update ml-2"><img src="img/arrow_circle.png" class="img-fluid"><span class="time">54</span><span class="time_back">Вы сможете повторно запросить код <br>через <b>54 секунды</b></span></button>
+      </div>
+      <button type="submit" class="btn_reg mt-4">Зарегистрироваться</button>
+  		</div>
+  		<div class="col-xl-7 d-none d-lg-block">
+  		  <img src="img/bg_img.png" class="img-fluid" alt="">
+  		</div>
+      <p class="personal_data pl-3 pt-3 pt-lg-5">Регистрируясь, вы даете согласие на <a href="#">обработку персональных данных</a></p>
+  	</div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title m-0" id="exampleModalLabel">Упси!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal_txt">Произошел сбой</p><br><br>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn_reg btn_sms">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+  $(function(){
+  $("#phone_reg").mask("+7(999)999-9999");
+  $("#sms").mask("9 9 9 9 9 9");
+  });
+  </script>
+</body>
+</html>
