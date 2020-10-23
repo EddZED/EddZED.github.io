@@ -1,5 +1,7 @@
 @font-face{font-family:manrope_bold;src:url(../font/Manrope-Bold.ttf);}
 @font-face{font-family:manrope_semi;src:url(../font/Manrope-SemiBold.ttf);}
+@font-face{font-family:manrope_extra;src:url(../font/Manrope-ExtraBold.ttf);}
+@font-face{font-family:manrope_medium;src:url(../font/Manrope-Medium.ttf);}
 html{scroll-behavior: smooth;}
 body{background-color:#262742;}
 .wrapper{overflow:hidden;}
@@ -16,6 +18,14 @@ body{background-color:#262742;}
 .navbar-toggler-icon span{position:relative;width:30px;height:3px;width:100%;left:0;background-color:rgba(140, 142, 192, 0.6);display:inline-block;transition:all .3s ease-in 0s;}
 .navbar-toggler-icon span:before{content:'';position:absolute;width:30px;height:3px;background-color:rgba(140, 142, 192, 0.6);top:-8px;left:0;transform:rotateZ(0deg);transition:all .3s ease-in  .1s;}
 .navbar-toggler-icon span:after{content:'';position:absolute;width:30px;height:3px;background-color:rgba(140, 142, 192, 0.6);bottom:-8px;left:0;transform:rotateZ(0deg);transition:all .3s ease-in  .1s;}
+.intro{padding:100px 0;}
+.title_page{font-size:36px;line-height:49px;letter-spacing:0.015em;color:#fff;font-family:manrope_semi;}
+.title_page span{color:#008AD8;}
+.sub_title{font-size:16px;line-height:22px;letter-spacing:0.015em;color:#8C8EC0;font-family:manrope_semi;}
+.btn_content{padding:14px 25px;text-transform:none;font-size:16px;line-height:22px;letter-spacing:0.015em;color:#fff;border-radius:5px;}
+.blue_btn{background: #008AD8;box-shadow: 0px 22px 44px -12px rgba(0, 138, 216, 0.25);}
+.how{padding:50px 0 70px;background-color:#2C2D4B;}
+.title_section{font-size:16px;line-height:22px;letter-spacing:0.1em;color:#fff;font-family:manrope_semi;text-transform:uppercase;}
 
 
 
@@ -24,8 +34,16 @@ body{background-color:#262742;}
   .btn_mob.active .navbar-toggler-icon span{background-color:transparent;}
   .btn_mob.active .navbar-toggler-icon span:before{top:0;transform:rotateZ(45deg);}
   .btn_mob.active .navbar-toggler-icon span:after{bottom:0;transform:rotateZ(-45deg);}
+  .intro{padding:50px 0;}
+  .title_page, .sub_title{text-align:center;}
+  .btn_block-intro{text-align:center;}
 }
-
-
+@media(max-width:767px){
+  .title_page{font-size:30px;line-height:36px;}
+  .intro{padding:30px 0 50px;}
+}
+@media(max-width:575px){
+  .btn_content{width:100%;margin-top:15px;}
+}
 
 
