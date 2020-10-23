@@ -24,7 +24,7 @@ body{background-color:#262742;}
 .sub_title{font-size:16px;line-height:22px;letter-spacing:0.015em;color:#8C8EC0;font-family:manrope_semi;}
 .btn_content{padding:14px 25px;text-transform:none;font-size:16px;line-height:22px;letter-spacing:0.015em;color:#fff;border-radius:5px;}
 .blue_btn{background: #008AD8;box-shadow: 0px 22px 44px -12px rgba(0, 138, 216, 0.25);}
-.how{padding:50px 0 70px;background-color:#2C2D4B;}
+.how{padding:50px 0 60px;background-color:#2C2D4B;}
 .title_section{font-size:16px;line-height:22px;letter-spacing:0.1em;color:#fff;font-family:manrope_semi;text-transform:uppercase;}
 .money_item{display:block;border-radius:5px;background-color:#008AD8;background-size:cover;background-position:center center;height:100%;padding:25px;transition:all .3s;}
 .how_bg1{background-image:url(../img/bg1.jpg);}
@@ -33,6 +33,10 @@ body{background-color:#262742;}
 .how_bg4{background-image:url(../img/bg4.jpg);}
 .money_item span{font-size:22px;line-height:30px;letter-spacing:0.015em;font-family:manrope_semi;color:#fff;}
 .money_item:hover{transform:translateY(-2%);text-decoration:none;box-shadow:0 3px 5px rgba(0, 0, 0, 0.2);}
+.news{padding:50px 0;}
+.link_block{display:inline-flex;flex-direction:column;justify-content:space-between;background-color:#343556;border-radius:5px;overflow:hidden;}
+.content_block-card{padding:25px;display:flex;flex-direction:column;justify-content:space-between;height:100%;}
+
 
 
 
