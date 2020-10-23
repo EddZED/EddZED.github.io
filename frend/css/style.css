@@ -13,7 +13,6 @@ body{background-color:#262742;}
 .nav-item .nav-link{color:rgba(140, 142, 192, 0.6);font-size:12px;font-family:manrope_semi;letter-spacing:0.015em;padding:15px 25px;transition:all .3s;position:relative;border-bottom:1px solid transparent;display:inline-block;}
 .nav-item .nav-link:hover{color:#8C8EC0;}
 .nav-item.active .nav-link{color:#8C8EC0;border-color:#008AD8;}
-.navbar-collapse{}
 .btn_mob:focus{outline:none;}
 .navbar-toggler-icon span{position:relative;width:30px;height:3px;width:100%;left:0;background-color:rgba(140, 142, 192, 0.6);display:inline-block;transition:all .3s ease-in 0s;}
 .navbar-toggler-icon span:before{content:'';position:absolute;width:30px;height:3px;background-color:rgba(140, 142, 192, 0.6);top:-8px;left:0;transform:rotateZ(0deg);transition:all .3s ease-in  .1s;}
@@ -43,6 +42,22 @@ body{background-color:#262742;}
 .link_more{display:inline-block;font-size:12px;color:#008AD8;font-family:manrope_bold;line-height:16px;letter-spacing:0.015em;}
 .vlog{padding:0 0 80px;}
 .footer{background-color:#2C2D4B;padding:35px 0 20px;}
+.logo_footer{display:flex;align-items:center;}
+.logo_footer span{color:#fff;font-size:20px;font-family:manrope_medium;}
+.logo_footer:hover{text-decoration:none;}
+.adres_footer{font-size:14px;line-height:19px;color:rgba(140, 142, 192, 0.65);font-family:manrope_bold;}
+.menu_footer{color:#fff;font-size:14px;font-family:manrope_bold;}
+.footer_link{display:block;font-size:14px;line-height:19px;letter-spacing:0.015px;color:#8C8EC0;font-family:manrope_bold;transition:all .3s;;}
+.footer_link:hover{color:#fff;text-decoration:none;}
+.work_time{font-size:14px;color:#8C8EC0;font-family:manrope_bold;line-height:19px;letter-spacing:0.015em;}
+.work_time span{opacity:.4;}
+.work_time a{opacity:.7;color:#8C8EC0;}
+.line_bottom{width:100%;height:1px;background-color:#3D3E5F;}
+.allright{font-size:12px;line-height:16px;letter-spacing:0.015em;color:#8C8EC0;}
+.privacy_link{font-size:12px;line-height:16px;color:rgba(140, 142, 192, 0.55);transition:all .3s;}
+.privacy_link:hover{color:rgba(140, 142, 192, 0.8);}
+.link_social{color:#8C8EC0;font-size:16px;}
+.link_social:hover{color:#fff;}
 
 
 @media(max-width:991px){
@@ -54,6 +69,8 @@ body{background-color:#262742;}
   .title_page, .sub_title{text-align:center;}
   .btn_block-intro{text-align:center;}
   .money_item{min-height:110px;}
+  .block_footer-link{width:100%;text-align:center;}
+  .social_footer-link{width:100%;text-align:center;}
 }
 @media(max-width:767px){
   .title_page{font-size:30px;line-height:36px;}
