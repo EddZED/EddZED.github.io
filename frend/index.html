@@ -5,157 +5,76 @@
   <meta name="viewport" content="width=ё, initial-scale=1.0">
   <title>Frendex</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/ion.rangeSlider.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
   <body>
-    <section class="bgrnd">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <ul class="nav align-items-center nav-tabs group_btn" id="myTab" role="tablist">
-              <li class="nav-item col-lg-2 pl-0 pr-1">
-                <a class="nav-link whtspc active" id="operations-tab" data-toggle="tab" href="#operations" role="tab"
-                  aria-controls="operations" aria-selected="true">Все операции</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="devident-tab" data-toggle="tab" href="#devident" role="tab"
-                  aria-controls="avia" aria-selected="false">Мои девиденты</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab"
-                  aria-controls="" aria-selected="false">Вывод доходов</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Мои инвестиции</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Все инвестиции</a>
-              </li>
-              <li class="nav-item col-lg-2 pl-1 pr-0 pt-3 pt-lg-0">
-                <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Инвестиции моей страницы</a>
-              </li>
-            </ul>
-            <div class="tab-content pt-5" id="info_tab-dest">
-              <div class="tab-pane fade show active" id="operations" role="tabpanel" aria-labelledby="operations-tab">
-                <p class="title_content pb-4">Автомобильная программа FX - авто</p>
-                <form method="get" action="">
-                  <fieldset>
-                    <p class="text_content pb-4">Выберите состояние автомобиля</p>
-                    <div class="d-flex align-items-center flex-wrap">
-                      <label class="btn_condition pr-md-3">
-                        <input type="radio" class="inp_condition" name="condition" value="new">
-                        <span class="name_btn">новый</span>
-                      </label>
-                      <label class="btn_condition pr-0 pr-md-3 m-0">
-                        <input type="radio" class="inp_condition" name="condition"  value="used" checked>
-                        <span class="name_btn">подержанный</span>
-                      </label>
-                      <input type="text" class="input_form mt-3 mt-md-0" placeholder="Введите год выпуска ТС">
-                    </div>
-                    <div class="price_auto pt-4 pt-lg-5 col-lg-9">
-                      <p class="text_content">Выберите стоимость автомобиля</p>
-                      <input type="text" class="js-range-slider" name="my_range" value="" />
-                      <div class="extra-controls align-items-center flex-wrap d-flex pt-3">
-                        <span class="price_txt pr-3">Стоимость автомобиля составляет</span>
-                        <div class="place">
-                          <input type="text" class="js-input input_form" value="0" />
-                          <span class="rub">руб.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="madel_auto-block pt-4 pt-lg-5">
-                      <p class="text_content px-3">Выберите марку и модель автомобиля</p>
-                      <div class="d-flex align-items-center flex-wrap pt-3">
-                        <div class="col-lg-4 col-md-6">
-                          <input type="text" class="input_form w-100" placeholder="Введите марку автомобиля">
-                        </div>
-                        <div class="col-lg-4 col-md-6 pt-3 pt-md-0">
-                          <input type="text" class="input_form w-100" placeholder="Введите модель автомобиля">
-                        </div>
-                      </div>
-                      <div class="col-lg-8 pt-lg-5">
-                        <p class="decription pt-3">Пожалуйста, заполните заявку на автомобиль с учетом ваших пожеланий. Срок
-                        реализации программы по вашей заявке составит от 2 до 6 месяцев. После заполнения заявки, вы
-                        получите персональное предложение от клуба Frendex в личном сообщении. После внесения средств на
-                        счет, программа начнет работать в соответсвии с заключенными условиями</p>
-                        <button class="btn_order ml-2 mt-3" type="button" data-toggle="modal" data-target="#modal-order"><span>Оставить заявку</span></button>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="top_nav">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-3">
+                <a href="" class="brand"><img src="img/logo.png" class="img-fluid" alt=""></a>
               </div>
-              <div class="tab-pane fade" id="devident" role="tabpanel" aria-labelledby="devident-tab">
-                <p class="txt_content">2</p>
+              <div class="col-9 text-right">
+                <div class="login_block">
+                  <a href="#" class="btn_dark">Вход</a>
+                  <a href="#" class="btn_dark">Регистрация</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container d-lg-none">
+            <button class="navbar-toggler btn_mob" type="button" data-toggle="collapse" data-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><span></span></span>
+            </button>
+          </div>
+          <div class="container">
+            <div class="collapse navbar-collapse justify-content-start" id="menu">
+              <ul class="navbar-nav justify-content-center justify-content-lg-between">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Главная страница<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Видеоблог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Офисы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Презентации</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Мероприятия</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-
-    <!--Модалка-->
-    <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby=""
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-        <div class="modal-content d-flex align-items-center justify-content-center flex-column">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><img class="img-fluid" src="img/close.png" alt="крестик"></span>
-          </button>
-          <img class="img-fluid" src="img/galka.png" alt="заявка принята">
-          <p class="title_modal pt-3">Заявка принята</p>
-          <p class="text_content">В ближайшее время<br>с вами свяжется менеджер</p>
-        </div>
-      </div>
     </div>
-
-
-
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/ion.rangeSlider.min.js"></script>
     <script>
-      var $range = $(".js-range-slider"),
-      $input = $(".js-input"),
-      instance,
-      min = 0,
-      max = 10000000;
-
-      $range.ionRangeSlider({
-      skin: "big",
-      type: "single",
-      min: min,
-      max: max,
-      from: 500000,
-      onStart: function(data) {
-      $input.prop("value", data.from);
-      },
-      onChange: function(data) {
-      $input.prop("value", data.from);
-      }
+      $('.nav-item').click(function(){
+        $('.nav-item').removeClass('active');
+        $(this).addClass('active');
+        $('.navbar-collapse').removeClass('show');
+        $('.btn_mob').removeClass('active');
       });
-
-      instance = $range.data("ionRangeSlider");
-
-      $input.on("change keyup", function() {
-      var val = $(this).prop("value");
-
-      // validate
-      if (val < min) { val=min; } else if (val> max) {
-        val = max;
-        }
-
-        instance.update({
-        from: val
-        });
-        });
-
+      $('.btn_mob').click(function(){
+        $(this).toggleClass('active');
+      })
     </script>
   </body>
 </html>
