@@ -34,10 +34,15 @@ body{background-color:#262742;}
 .money_item span{font-size:22px;line-height:30px;letter-spacing:0.015em;font-family:manrope_semi;color:#fff;}
 .money_item:hover{transform:translateY(-2%);text-decoration:none;box-shadow:0 3px 5px rgba(0, 0, 0, 0.2);}
 .news{padding:50px 0;}
-.link_block{display:inline-flex;flex-direction:column;justify-content:space-between;background-color:#343556;border-radius:5px;overflow:hidden;}
-.content_block-card{padding:25px;display:flex;flex-direction:column;justify-content:space-between;height:100%;}
-
-
+.link_block{display:inline-flex;flex-direction:column;justify-content:space-between;background-color:#343556;border-radius:5px;overflow:hidden;height:100%;}
+.link_block:hover{text-decoration:none;}
+.content_block-card{padding:15px 25px 20px;display:flex;flex-direction:column;justify-content:space-between;height:100%;}
+.min_head{display:flex;align-items:center;justify-content:space-between;font-size:10px;line-height:14px;letter-spacing:0.015em;color:rgba(140, 142, 192, 0.55);;}
+.title_card{font-family:manrope_bold;font-size:18px;line-height:25px;letter-spacing:0.015em;color:#fff;}
+.body_text{font-size:12px;font-family:manrope_bold;line-height:16px;letter-spacing:0.015em;color:#8C8EC0;}
+.link_more{display:inline-block;font-size:12px;color:#008AD8;font-family:manrope_bold;line-height:16px;letter-spacing:0.015em;}
+.vlog{padding:0 0 80px;}
+.footer{background-color:#2C2D4B;padding:35px 0 20px;}
 
 
 @media(max-width:991px){
@@ -53,9 +58,12 @@ body{background-color:#262742;}
 @media(max-width:767px){
   .title_page{font-size:30px;line-height:36px;}
   .intro{padding:30px 0 50px;}
+  .how{padding:30px 0;}
+  .vlog{padding:0 0 40px;}
 }
 @media(max-width:575px){
   .btn_content{width:100%;margin-top:15px;}
+  .content_block-card{padding:15px 15px 10px;}
 }
 
 
