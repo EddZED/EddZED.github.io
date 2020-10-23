@@ -65,7 +65,7 @@ body{background-color:#262742;}
 .block_img-bg{background-image:url(../img/bg_about.png);background-size:cover;background-position:center center;}
 .intro_about{padding:35px 0;}
 .middle_title{font-size:24px;line-height:33px;letter-spacing:0.015em;color:#fff;font-family:manrope_bold;}
-.about, .news{padding:0 0 80px;}
+.about, .news, .video{padding:0 0 80px;}
 .page-link{display:inline-flex;background-color:#343556;border-radius:5px;border:none;position:relative;width:40px;height:40px;min-width:40px;align-items:center;justify-content:center;color:#fff;font-family:manrope_extra;transition:all .3s;margin:0 2px;}
 .page-link.dots{background-color:transparent;}
 
@@ -86,7 +86,7 @@ body{background-color:#262742;}
   .title_page{font-size:30px;line-height:36px;}
   .intro{padding:30px 0 50px;}
   .how{padding:30px 0;}
-  .vlog, .about, .news{padding:0 0 40px;}
+  .vlog, .about, .news, .video{padding:0 0 40px;}
   .intro_about{padding:25px 0 10px;}
 }
 @media(max-width:575px){
