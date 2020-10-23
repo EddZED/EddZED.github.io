@@ -60,6 +60,14 @@ body{background-color:#262742;}
 .privacy_link:hover{color:rgba(140, 142, 192, 0.8);}
 .link_social{color:#8C8EC0;font-size:16px;}
 .link_social:hover{color:#fff;}
+.block_logo{display:flex;align-items:center;justify-content:center;padding:40px 0}
+.big_label{font-size:56px;color:#fff;line-height:72px;font-family:manrope_medium;}
+.block_img-bg{background-image:url(../img/bg_about.png);background-size:cover;background-position:center center;}
+.intro_about{padding:35px 0;}
+.middle_title{font-size:24px;line-height:33px;letter-spacing:0.015em;color:#fff;font-family:manrope_bold;}
+.about{padding:0 0 80px;}
+
+
 
 
 @media(max-width:991px){
@@ -78,7 +86,7 @@ body{background-color:#262742;}
   .title_page{font-size:30px;line-height:36px;}
   .intro{padding:30px 0 50px;}
   .how{padding:30px 0;}
-  .vlog{padding:0 0 40px;}
+  .vlog, .about{padding:0 0 40px;}
 }
 @media(max-width:575px){
   .btn_content{width:100%;margin-top:15px;}
