@@ -76,7 +76,7 @@ body{background-color:#262742;}
   .btn_mob.active .navbar-toggler-icon span:before{top:0;transform:rotateZ(45deg);}
   .btn_mob.active .navbar-toggler-icon span:after{bottom:0;transform:rotateZ(-45deg);}
   .intro{padding:50px 0;}
-  .title_page, .sub_title{text-align:center;}
+  .intro .title_page, .intro .sub_title{text-align:center;}
   .btn_block-intro{text-align:center;}
   .money_item{min-height:110px;}
   .block_footer-link{width:100%;text-align:center;}
@@ -87,10 +87,12 @@ body{background-color:#262742;}
   .intro{padding:30px 0 50px;}
   .how{padding:30px 0;}
   .vlog, .about{padding:0 0 40px;}
+  .intro_about{padding:25px 0 10px;}
 }
 @media(max-width:575px){
   .btn_content{width:100%;margin-top:15px;}
   .content_block-card{padding:15px 15px 10px;}
+  .big_label{font-size:45px;}
 }
 
 
