@@ -71,6 +71,11 @@ body{background-color:#262742;}
 .midle_title-section{font-size:28px;color:#fff;line-height:38px;letter-spacing:0.015em;font-family:manrope_bold;}
 .block_img-ivent{border-radius:5px;overflow:hidden;}
 
+/*grid css*/
+.item_list{display: grid;  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;grid-auto-flow: column;}
+.item{background:#fff;margin:2px 5px;}
+
 
 
 @media(max-width:991px){
