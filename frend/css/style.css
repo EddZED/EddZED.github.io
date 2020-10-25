@@ -76,8 +76,9 @@ body{background-color:#262742;}
 .letter{font-size:30px;line-height:41px;letter-spacing:0.015em;color:#fff;font-family:manrope_bold;text-transform:uppercase;display:block;}
 .link_city{font-size:18px;color:#666791;letter-spacing:0.015em;line-height:25px;font-family:manrope_bold;transition:all .3s;display:block;}
 .link_city:hover{color:#fff;text-decoration:none;}
-
-
+.label_search{position:relative;}
+.btn_search{position:absolute;top:3px;right:20px;border:none;background-color:transparent;transition:all .3s;}
+.btn_search:hover{filter: drop-shadow(0 0 5px rgba(255,255,255,.3));}
 
 @media(max-width:991px){
   .nav-item{padding-right:0;text-align:center;}
@@ -99,6 +100,7 @@ body{background-color:#262742;}
   .vlog, .about, .news, .video, .present, .events, .info_event{padding:0 0 40px;}
   .intro_about{padding:25px 0 10px;}
   .dark_block{flex:0 0 49%;}
+  .input_search::-webkit-input-placeholder{font-size:12px;}
 }
 @media(max-width:575px){
   .btn_content{width:100%;margin-top:15px;}
