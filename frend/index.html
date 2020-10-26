@@ -67,7 +67,10 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-7">
-                <h1 class="title_page">Инвестиционная платформа <span>нового поколения</span></h1>
+                <div class="type-js">
+                  <h1 class="title_page text-js">Инвестиционная платформа</h1>
+                </div>
+                <h2 class="title_page"><span class="anim_text">нового поколения</span></h2>
                 <div class="row">
                   <div class="col-lg-9">
                     <p class="sub_title pt-2">Frendex - закрытый инвестиционный клуб, благодаря которому каждый желающий может начать
@@ -81,7 +84,7 @@
                 </div>
               </div>
               <div class="col-lg-5 text-center pt-5 pt-lg-0">
-                <img class="img-fluid" src="img/intro.png" alt="платформа">
+                <img class="img-fluid hover_img" src="img/intro.png" alt="платформа">
               </div>
             </div>
           </div>
@@ -90,28 +93,28 @@
           <div class="container">
             <h2 class="title_section">Как мы зарабатываем?</h2>
             <div class="row pt-4">
-              <div class="col-lg-3 col-md-6 pb-3">
+              <div class="col-lg-3 col-md-6 pb-4">
                 <a href="" class="money_item how_bg1">
                   <span>Торги на Forex и фондовом рынке</span>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 pb-3">
+              <div class="col-lg-3 col-md-6 pb-4">
                 <a href="" class="money_item how_bg2">
                   <span>Строительство и поставка</span>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 pb-3">
+              <div class="col-lg-3 col-md-6 pb-4">
                 <a href="" class="money_item how_bg3">
                   <span>Инвестиции в стартапы</span>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 pb-3">
+              <div class="col-lg-3 col-md-6 pb-4">
                 <a href="" class="money_item how_bg4">
                   <span>Криптовалюта</span>
                 </a>
               </div>
             </div>
-          </div>
+          </div>  
         </section>
         <section class="news">
           <div class="container">
@@ -442,7 +445,43 @@
       });
       $('.btn_mob').click(function(){
         $(this).toggleClass('active');
-      })
+      });
+      let bg = document.querySelector('.hover_img');
+        window.addEventListener('mousemove', function (e) {
+          let x = e.clientX / window.innerWidth;
+          let y = e.clientY / window.innerHeight;
+          bg.style.transform = 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)';
+        });
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+              "position": "relative",
+              "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+              thhis.css("opacity", 1);
+              thhis.prev().removeAttr("style");
+              thhis.text("");
+              for (var i = 0; i < amntOfChars; i++) {
+                (function (i, char) {
+                  setTimeout(function () {
+                    newString += char;
+                    thhis.text(newString);
+                  }, i * typingSpeed);
+                })(i + 1, text[i]);
+              }
+            }, 0);
+          }
+          $(document).ready(function () { 
+              autoType(".type-js", 90);
+            });
+            
     </script>
   </body>
 </html>
