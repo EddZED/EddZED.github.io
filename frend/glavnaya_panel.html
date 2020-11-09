@@ -196,6 +196,7 @@
       $input = $(".js-input"),
       $input2 = $(".js-input2"),
       instance,
+      instance2,
       min = 100,
       max = 50000;
 
@@ -216,7 +217,7 @@
     });
 
     instance = $range.data("ionRangeSlider");
-    $range2 = $range.data("ionRangeSlider");
+    instance2 = $range.data("ionRangeSlider");
 
     $input.on("change keyup", function () {
       var val = $(this).prop("value");
