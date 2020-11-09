@@ -19,6 +19,7 @@
 .input_modal{width:100%;border:none;outline:none;border-radius:5px;background-color:#1F2032;padding:7px 15px;text-align:left;position:relative;overflow:hidden;}
 .btn_gradient{background: linear-gradient(180deg, #3B73EE 0%, #2D63DA 100%);}
 .min_dark{font-size:14px;color:545577;opacity:.6;}
+.close:focus{outline:none;}
 @media(max-width:565px){
   .score_input{padding-left:10px;text-align:left;}
   .score_input span{font-size:12px;}
