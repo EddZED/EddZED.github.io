@@ -134,28 +134,31 @@
                 <form method="get" action="">
                   <fieldset>
                     <div class="row">
-                      <div class="col-lg-6">
+                      <div class="col-xxl-6 col-lg-6 mb-3">
                         <label for="" class="range_1">
                           <div class="place">
-                            <p class="title_cabinet m-0">Сумма в $</p>
+                            <p class="title_cabinet mb-sm-0">Сумма в $</p>
                             <div class="position-relative">
-                              <input type="text" class="js-input input_cab-rang" value="0" />
+                              <input type="text" class="js-input input_cab-rang" value="100" />
                               <span class="currency_range">$</span>
                             </div>
                           </div>
-                          <input type="text" class="js-range-slider" name="my_range" value="" />
+                          <input type="text" class="js-range-slider" name="my_range" value=" "/>
                         </label>
                       </div>
-                      <div class="col-lg-6">
-                        <label for="" class="range_1">
+                      <div class="col-xxl-6 col-lg-6 mb-3">
+                        <label for="" class="range_1 range_2">
                           <div class="place">
-                            <p class="title_cabinet m-0">Сумма в USDT</p>
+                            <p class="title_cabinet mb-sm-0">Сумма в USDT</p>
                             <div class="position-relative">
-                              <input type="text" class="js-input2 input_cab-rang" value="0" />
+                              <input type="text" class="js-input2 input_cab-rang" value="100" />
                             </div>
                           </div>
-                          <input type="text" class="js-range-slider jrs2" name="my_range" value="" />
+                          <input type="text" class="js-range-slider" name="my_range" value=" "/>
                         </label>
+                      </div>
+                      <div class="col-12 text-center pt-3">
+                        <a href="#" class="btn_dark btn_content text-center blue_btn px-5">Инвестировать</a>
                       </div>
                     </div>
                   </fieldset>
@@ -191,33 +194,34 @@
     })
   </script>
   <script>
+    var custom_values = [100 + "$", 500 + "$", 1000 + "$", 5000 + "$", 10000 + "$", 20000 + "$", 50000 + "$"];
     var $range = $(".js-range-slider"),
-      $range2 = $(".jrs2"),
       $input = $(".js-input"),
       $input2 = $(".js-input2"),
       instance,
-      instance2,
       min = 100,
       max = 50000;
 
     $range.ionRangeSlider({
       skin: "big",
       type: "single",
+      grid: false,
+      step: 1000,
       min: min,
       max: max,
+      to: 100,
       from: 50000,
       onStart: function (data) {
         $input.prop("value", data.from);
-        $input2.prop("value", data.from + 2000);
+        $input2.prop("value", data.from * 1.2);
       },
       onChange: function (data) {
         $input.prop("value", data.from);
-        $input2.prop("value", data.from + 2000);
+        $input2.prop("value", data.from * 1.2);
       }
     });
 
     instance = $range.data("ionRangeSlider");
-    instance2 = $range.data("ionRangeSlider");
 
     $input.on("change keyup", function () {
       var val = $(this).prop("value");
@@ -231,7 +235,6 @@
         from: val
       });
     });
-
   </script>
 </body>
 </html>
