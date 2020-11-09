@@ -1,5 +1,5 @@
 .bg_cabinet{background-color:#21223B;min-height:100vh;}
-.container_main{max-width:1920px;margin:0 auto;height:96vh;display:flex;}
+.container_main{max-width:1920px;margin:0 auto;height:95vh;display:flex;}
 .sidebar{display:inline-flex;width:300px;position:relative;flex-direction:column;justify-content:space-between;background-color:inherit;padding:30px 30px;height:96vh;transition:max-height .3s ease;}
 .brand_link{color:#fff;font-family:tt_norms;font-size:22px;line-height:26px;}
 .brand_link:hover{text-decoration:none;color:#fff;}
