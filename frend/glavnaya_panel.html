@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ё, initial-scale=1.0">
+  <title>Модалки</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_modal.css" rel="stylesheet">
+  <link href="css/style_cabinet.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper bg_cabinet">
+    <div class="container_main">
+      <aside class="sidebar">
+        <div class="top_bar">
+          <div class="barand_bar text-center pb-3">
+            <a href="#" class="brand_link"><img class="img-fluid pr-2" src="img/logo_modal.png" alt="френдекс">FrendeX</a>
+          </div>
+          <nav class="left_menu">
+            <ul class="list-unstyled">
+              <li class="Left_menu-item active">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-1"></span>
+                  Инвестиции
+                </a>
+              </li>
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-2"></span>
+                  Мои инвесторы
+                </a>
+              </li>
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-3"></span>
+                  Финансы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bottom_ber">
+          <a href="#" class="exit_btn"><img class="img-fluid" src="" alt=""></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script>
+    $('.Left_menu-item').click(function(){
+      $('.Left_menu-item').removeClass('active');
+      $(this).toggleClass('active');
+    })
+  </script>
+</body>
+</html>

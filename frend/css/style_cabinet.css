@@ -1,0 +1,22 @@
+.bg_cabinet{background-color:#21223B;min-height:100vh;}
+.container_main{max-width:1920px;margin:0 auto;height:100vh;}
+.sidebar{display:inline-flex;width:300px;position:relative;flex-direction:column;justify-content:space-between;background-color:inherit;padding:30px 30px;}
+.brand_link{color:#fff;font-family:tt_norms;font-size:22px;line-height:26px;}
+.menu_item-link{display:flex;align-items:center;padding:3px 5px;color:#505492;font-size:18px;line-height:21px;font-family:tt_norms;border-radius:6px;transition:all .3s;}
+.menu_item-link .icon_item{width:40px;height:40px;position:relative;border-radius:6px;background-color:rgba(41, 43, 77, 0.4);background-size:20px 20px;background-repeat:no-repeat;background-position:center center;transition:all .3s;}
+.menu_item-link .icon_item-1{background-image:url(../img/invest_static.png);}
+.menu_item-link:hover{text-decoration:none;color:#fff;background-color:#292B4D;}
+.menu_item-link:hover .icon_item{background-color:transparent;}
+.menu_item-link:hover .icon_item-1{background-image:url(../img/invest_active.png);}
+.Left_menu-item.active .menu_item-link{color:#fff;background-color:#292B4D;}
+.Left_menu-item.active .menu_item-link .icon_item {background-color:transparent;}
+.Left_menu-item.active .menu_item-link .icon_item-1 {background-image:url(../img/invest_active.png);}
+.Left_menu-item{margin-bottom:15px;}
+.menu_item-link .icon_item-2{background-image:url(../img/my_statick.png);}
+.menu_item-link:hover .icon_item-2{background-image:url(../img/my_active.png);}
+.Left_menu-item.active .menu_item-link .icon_item-2 {background-image:url(../img/my_active.png);}
+.menu_item-link .icon_item-3{background-image:url(../img/fin_static.png);}
+.menu_item-link:hover .icon_item-3{background-image:url(../img/fin_active.png);}
+.Left_menu-item.active .menu_item-link .icon_item-3{background-image:url(../img/fin_active.png);}
+
+
