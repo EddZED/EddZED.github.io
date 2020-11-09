@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=ё, initial-scale=1.0">
-  <title>Модалки</title>
+  <title>Главная панель</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/all.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -19,6 +19,7 @@
           <div class="barand_bar text-center pb-3">
             <a href="#" class="brand_link"><img class="img-fluid pr-2" src="img/logo_modal.png" alt="френдекс">FrendeX</a>
           </div>
+          <button class="side_menu"><span></span></button>
           <nav class="left_menu">
             <ul class="list-unstyled">
               <li class="Left_menu-item active">
@@ -78,7 +79,11 @@
     $('.Left_menu-item').click(function(){
       $('.Left_menu-item').removeClass('active');
       $(this).toggleClass('active');
-    })
+    });
+    $('.side_menu').click(function(){
+      $('.sidebar').toggleClass('active');
+      $('.side_menu').toggleClass('active');
+    });
   </script>
 </body>
 </html>
