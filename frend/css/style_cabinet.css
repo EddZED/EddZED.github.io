@@ -42,7 +42,7 @@
 
 @media(max-width:991px){
   .container_main{flex-direction:column;}
-  .sidebar{width:0;padding:0;overflow:hidden;position:absolute;top:50px;left:0;height:100%;}
+  .sidebar{width:0;padding:0;overflow:hidden;position:absolute;top:55px;left:0;height:100%;}
   .side_menu{display:flex;}
   .sidebar.active{width:300px;z-index:2;}
   .left_menu{padding:10px 15px;}
