@@ -98,36 +98,36 @@
         <div class="container_cab pt-0">
           <section class="fin_page"">
             <div class="row">
-              <div class="col-lg-10 collapse" id="fin_page">
+              <div class="col-xl-10 collapse" id="fin_page">
                 <ul class="nav align-items-center nav-tabs group_btn" id="myTab" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" id="operations-tab" data-toggle="tab" href="#operations" role="tab" aria-controls="operations" aria-selected="true">Все операции</a>
+                    <a class="nav-link hid_list active" id="operations-tab" data-toggle="tab" href="#operations" role="tab" aria-controls="operations" aria-selected="true">Все операции</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="devident-tab" data-toggle="tab" href="#devident" role="tab" aria-controls="avia" aria-selected="false">Мои девиденты</a>
+                    <a class="nav-link hid_list" id="devident-tab" data-toggle="tab" href="#devident" role="tab" aria-controls="avia" aria-selected="false">Мои девиденты</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Вывод доходов</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Вывод доходов</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои инвестиции</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои инвестиции</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Все инвестиции</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Все инвестиции</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Инвестиции моей страницы</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Инвестиции моей страницы</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Реферальные начисления</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Реферальные начисления</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои карьерные бонусы</a>
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои карьерные бонусы</a>
                   </li>
                 </ul>
               </div>
-              <div class="col-11">
-                <div class="tab-content pt-5" id="info_tab-dest">
+              <div class="col-xl-11">
+                <div class="tab-content pt-lg-5" id="info_tab-dest">
                   <div class="tab-pane fade show active" id="operations" role="tabpanel" aria-labelledby="operations-tab">
                     pfujkjdjr
                   </div>
@@ -167,6 +167,18 @@
     $('.l_cab').click(function(){
       $('.profile_item').toggleClass('active');
     });
+    $('.hid_list').click(function(){
+      $('#fin_page').removeClass('show');
+    });
+    $('.profile_item-link').click(function () {
+        $('.profile_item').removeClass('active');
+      });
+    $('.walet_user').click(function () {
+        $('.profile_item').removeClass('active');
+      });
+    $('.user_logo').click(function () {
+        $('.profile_item').removeClass('active');
+      });
   </script>
 </body>
 
