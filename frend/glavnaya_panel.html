@@ -134,7 +134,7 @@
                 <form method="get" action="">
                   <fieldset>
                     <div class="row">
-                      <div class="col-xxl-6 col-lg-6 mb-3">
+                      <div class="col-xxl-6 col-xl-6 mb-3">
                         <label for="" class="range_1">
                           <div class="place">
                             <p class="title_cabinet mb-sm-0">Сумма в $</p>
@@ -146,7 +146,7 @@
                           <input type="text" class="js-range-slider" name="my_range" value=" "/>
                         </label>
                       </div>
-                      <div class="col-xxl-6 col-lg-6 mb-3">
+                      <div class="col-xxl-6 col-xl-6 mb-3">
                         <label for="" class="range_1 range_2">
                           <div class="place">
                             <p class="title_cabinet mb-sm-0">Сумма в USDT</p>
@@ -154,7 +154,7 @@
                               <input type="text" class="js-input2 input_cab-rang" value="100" />
                             </div>
                           </div>
-                          <input type="text" class="js-range-slider" name="my_range" value=" "/>
+                          <input type="text" class="js-range-slider jsr" name="my_range" value=" "/>
                         </label>
                       </div>
                       <div class="col-12 text-center pt-3">
@@ -194,38 +194,54 @@
     })
   </script>
   <script>
-    var custom_values = [100 + "$", 500 + "$", 1000 + "$", 5000 + "$", 10000 + "$", 20000 + "$", 50000 + "$"];
-    var $range = $(".js-range-slider"),
+   var $range = $(".js-range-slider"),
+      $range2 = $(".jsr"),
       $input = $(".js-input"),
       $input2 = $(".js-input2"),
       instance,
+      instance2,
       min = 100,
       max = 50000;
 
     $range.ionRangeSlider({
       skin: "big",
       type: "single",
-      grid: false,
-      step: 1000,
       min: min,
       max: max,
-      to: 100,
       from: 50000,
       onStart: function (data) {
         $input.prop("value", data.from);
-        $input2.prop("value", data.from * 1.2);
+        $input2.prop("value", data.from);
       },
       onChange: function (data) {
         $input.prop("value", data.from);
-        $input2.prop("value", data.from * 1.2);
+        $input2.prop("value", data.from);
       }
     });
-
+      $range2.ionRangeSlider({
+        skin: "big",
+        type: "single",
+        min: min,
+        max: max,
+        from: 50000,
+        onStart: function (data) {
+          $input.prop("value", data.from);
+          $input2.prop("value", data.from);
+        },
+        onChange: function (data) {
+          $input.prop("value", data.from);
+          $input2.prop("value", data.from);
+        },
+        onUpdate:function(data){
+          
+        }
+      });
     instance = $range.data("ionRangeSlider");
+    instance = $range2.data("ionRangeSlider");
 
     $input.on("change keyup", function () {
       var val = $(this).prop("value");
-      
+
       // validate
       if (val < min) { val = min; } else if (val > max) {
         val = max;
