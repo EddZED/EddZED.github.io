@@ -63,6 +63,35 @@
 .input_cab-rang{border:none;background-color:#21223B;border-radius:5px;padding:5px;text-align:center;width:150px;font-size:22px;color:#fff;}
 .currency_range{font-size:22px;color:#3B73EE;position:absolute;left:29px;top:6px;font-family:tt_norms;}
 .place{display:flex;justify-content:space-between;align-items:center;}
+.content_cabinet::-webkit-scrollbar {opacity:0;}
+/*style finansy-page*/
+.fin_page .group_btn{border:none;}
+.fin_page .group_btn .nav-item{margin-bottom:10px;padding-right:10px;}
+.fin_page .group_btn .nav-item .nav-link{background: #252742;border: 1px solid #303255;border-radius:5px;font-size:18px;font-weight:bold;line-height:21px;letter-spacing:0.02em;text-align:center;color:#fff;padding:10px 20px 11px 20px;font-family:tt_norms;transition:all .3s;}
+.fin_page .group_btn .nav-item .active.nav-link{background:#252742;border-color:rgba(59, 115, 238, 0.6);}
+.fin_page .group_btn .nav-item .nav-link:hover{background:#252742;border-color:rgba(59, 115, 238, 0.6);}
+.header_finansy{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;position:relative;}
+.profile_item{display:flex;align-items:center;}
+.profile_item-user{display:flex;align-items:center;border-left:1px solid #303255;padding:0 10px;}
+.walet_user{display:flex;}
+.profile_item-link{color:#fff;font-size:14px;font-family:tt_norms;margin:0 5px;padding:5px 15px;border:1px solid #303255;border-radius:5px;transition:all .3s;}
+.profile_item-link:last-of-type{margin-right:10px;}
+.profile_item-link:hover{border-color:#3B73EE;color:#fff;text-decoration:none;}
+.profile_item-link.bord_none{border:none;}
+.profile_item-link.bord_none:hover{opacity:.6;}
+.walet_user{display:flex;align-items:center;padding-right:5px;transition:all .3s;}
+.walet_user:hover{text-decoration:none;opacity:.7;}
+.walet_user span{font-size:18px;padding-right:5px;display:inline-block;}
+.walet_user span:nth-of-type(1){color:#fff;}
+.walet_user span:nth-of-type(2){color:#3B73EE;}
+.user_logo{width:40px;height:40px;display:flex;align-items:center;justify-content:center;}
+.user_logo img{filter:drop-shadow(0 0 0 rgba(255,255,255,0));transition:all .3s;}
+.user_logo:hover img{filter:drop-shadow(0 0 5px rgba(255,255,255,.2));}
+.btn_hidden-section{display:none;}
+.l_cab{display:none;}
+/*________________*/
+
+
 
 
 
@@ -74,8 +103,16 @@
 @media(min-width:1300px){
   .link_field{padding-bottom:50px;}
 }
+@media(min-width:1200px){
+  .fin_page .collapse{display:flex;}
+}
 @media(max-width:1199px){
   .title_link{font-size:26px;}
+  .profile_item{justify-content:space-between;width:100%;}
+  .profile_item-link.bord_none{padding-left:0;margin-left:0;}
+  .btn_hidden-section{display:block;width:50px;height:40px;border-radius:5px;background-color:#292742;border:1px solid #3B73EE;color:#fff;}
+  .btn_hidden-section:focus{outline:transparent;}
+  .block_hid_btn{display:flex;align-items:center;}
 }
 @media(max-width:991px){
   .container_main{flex-direction:column;height:95vh;}
@@ -87,10 +124,17 @@
   .bottom_bar{padding:0 15px 30px 15px;}
   .container_cab{padding:30px 30px;}
   .content_cabinet{padding:30px 20px}
+  
 }
 @media(max-width:767px){
   .container_cab{padding:30px 20px;}
   .content_cabinet{padding:30px 15px}
+  .fin_page .btn_condition{padding-right:20px;}
+  .profile_item{width:auto;display:none;overflow: hidden;position:absolute;top:0;right:10px;flex-direction:column-reverse;z-index:99;padding:15px;border:1px solid #000;border-radius:5px;flex-direction:column-reverse;background-color:#252742;}
+  .profile_item.active{display:flex;}
+  .profile_item-link{width:100%;text-align:center;margin:5px 0 !important;padding-left:0;padding-right:0;}
+  .block_hid_btn{width:100%;position:relative;}
+  .l_cab{display:block;position:absolute;top:0;bottom:0;margin:auto;right:-30px;width:40px;height:40px;}
 }
 @media(max-width:565px){
   .place{flex-direction:column;}
@@ -100,6 +144,8 @@
   .container_main{height:92vh;}
   .container_cab{padding:30px 15px;}
   .content_cabinet{padding:30px 10px}
+  .fin_page .group_btn .nav-item{width:100%;}
+  .fin_page .group_btn .nav-item .nav-link{font-size:16px;width:100%;}
 }
 
 
