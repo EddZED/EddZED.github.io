@@ -102,7 +102,7 @@
                 клуба FrendeX выбрали несколько ниш, гарантирующих постоянную прибыль. Мы выбрали именно эти сферы бизнеса, поскольку
                 являемся экспертами в данных направлениях.</p>
               <p class="title_cabinet pt-md-5">Автомобильная программа</p>
-              <div class="wrapper_auto-form">
+              <div class="wrapper_auto-form mb-3">
                 <form method="get" action="">
                   <fieldset>
                     <div class="row justify-content-between">
@@ -149,7 +149,7 @@
                             <div class="col-xl-8">
                               <div class="row align-items-center">
                                 <div class="col-xk-7 px-0 position-relative d-inline-block">
-                                  <input type="text" class="js-input input_cab-rang" id="val_1" onkeyup="val_2.value = this.value" value="6500" />
+                                  <input type="text" class="js-input input_cab-rang" id="val_1" onkeyup="val_2.value = this.value" value="6500" max="400000" maxlength="6"/>
                                   <span class="currency_range">FX$</span>
                                 </div>
                                 <div class="col-xl-5 px-0 position-relative ">
@@ -181,6 +181,25 @@
                     </div>
                   </fieldset>
                 </form>
+              </div>
+              <div class="wrapper_auto-form p-4">
+                <div class="row align-items-center">
+                  <div class="col-xl-3">
+                    <p class="title_cabinet mb-0">Kia Sportage, 2016</p>
+                    <p class="min_white_txt mb-0">Остлаось 19 дней</p>
+                  </div>
+                  <div class="col-xl-9">
+                    <div class="time_line">
+                      <div class="bg_line-time">
+                        <span class="time_marker"></span>
+                      </div>
+                      <div class="d-flex justify-content-between pt-2">
+                        <span class="data_time">01.01.2020</span>
+                        <span class="data_time">01.01.2020</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +259,7 @@
     type: "single",
     min: min,
     max: max,
-    from: 400000,
+    from: 255000,
     onStart: function (data) {
       $input.prop("value", data.from);
       $input2.prop("value", data.from);

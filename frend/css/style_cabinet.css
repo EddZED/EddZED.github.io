@@ -151,6 +151,12 @@
 .wrapper_auto-form .range .irs--big .irs-min:after{content:'FX$';position:absolute;right:-23px;top:1px;color:#505492;}
 .wrapper_auto-form .range .irs--big .irs-max:after{content:'FX$';position:absolute;right:-23px;top:1px;color:#505492;}
 .wrapper_auto-form .range .irs--big .irs-max{right:20px;}
+.min_white_txt{font-size:14px;color:#fff;font-family:tt_norms;}
+.time_line{position:relative;}
+.bg_line-time{position:relative;width:100%;height:2px;background-color:#3F426C;border-radius:2px;}
+.time_marker{position:absolute;height:4px;width:70%;top:-1px;border-color:0;margin:auto;left:0;background:linear-gradient(90deg, #C4C4C4 0%, #3B73EE 0.01%, #1C48A9 100%);}
+.data_time{font-size:14px;color:#505492;font-family:tt_norms;}
+
 /*________________*/
 
 
