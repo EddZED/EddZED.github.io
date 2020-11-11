@@ -139,11 +139,11 @@
                           <div class="place">
                             <p class="title_cabinet mb-sm-0">Сумма в $</p>
                             <div class="position-relative">
-                              <input type="text" class="js-input input_cab-rang" value="100" />
+                              <input type="text" class="js-input input_cab-rang" id="val_1" onkeyup="val_2.value = this.value" maxlength="5" />
                               <span class="currency_range">$</span>
                             </div>
                           </div>
-                          <input type="text" class="js-range-slider" name="my_range" value=" "/>
+                          <input type="text" class="js-range-slider" id="val_4" value=" "/>
                         </label>
                       </div>
                       <div class="col-xxl-6 col-xl-6 mb-3">
@@ -151,10 +151,10 @@
                           <div class="place">
                             <p class="title_cabinet mb-sm-0">Сумма в USDT</p>
                             <div class="position-relative">
-                              <input type="text" class="js-input2 input_cab-rang" value="100" />
+                              <input type="text" class="js-input2 input_cab-rang" id="val_2" onkeyup="val_1.value = this.value"  maxlength="5" />
                             </div>
                           </div>
-                          <input type="text" class="js-range-slider jsr" name="my_range" value=" "/>
+                          <input type="text" class="js-range-slider jsr" maxlength=""/>
                         </label>
                       </div>
                       <div class="col-12 text-center pt-3">
@@ -195,7 +195,6 @@
   </script>
   <script>
    var $range = $(".js-range-slider"),
-      $range2 = $(".jsr"),
       $input = $(".js-input"),
       $input2 = $(".js-input2"),
       instance,
@@ -208,7 +207,7 @@
       type: "single",
       min: min,
       max: max,
-      from: 50000,
+      from: 30000,
       onStart: function (data) {
         $input.prop("value", data.from);
         $input2.prop("value", data.from);
@@ -216,29 +215,12 @@
       onChange: function (data) {
         $input.prop("value", data.from);
         $input2.prop("value", data.from);
+      },
+      onUpdate: function (data) {
+
       }
     });
-      $range2.ionRangeSlider({
-        skin: "big",
-        type: "single",
-        min: min,
-        max: max,
-        from: 50000,
-        onStart: function (data) {
-          $input.prop("value", data.from);
-          $input2.prop("value", data.from);
-        },
-        onChange: function (data) {
-          $input.prop("value", data.from);
-          $input2.prop("value", data.from);
-        },
-        onUpdate:function(data){
-          
-        }
-      });
     instance = $range.data("ionRangeSlider");
-    instance = $range2.data("ionRangeSlider");
-
     $input.on("change keyup", function () {
       var val = $(this).prop("value");
 
@@ -251,6 +233,19 @@
         from: val
       });
     });
+    instance2 = $range.data("ionRangeSlider");
+      $input.on("change keyup", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < min) { val = min; } else if (val > max) {
+          val = max;
+        }
+
+        instance2.update({
+          from: val
+        });
+      });
   </script>
 </body>
 </html>

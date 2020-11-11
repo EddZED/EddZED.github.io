@@ -148,12 +148,12 @@
                             </div>
                             <div class="col-xl-8">
                               <div class="row align-items-center">
-                                <div class="col-lg-7 px-0 position-relative d-inline-block">
-                                  <input type="text" class="js-input input_cab-rang" value="6500" />
+                                <div class="col-xk-7 px-0 position-relative d-inline-block">
+                                  <input type="text" class="js-input input_cab-rang" id="val_1" onkeyup="val_2.value = this.value" value="6500" />
                                   <span class="currency_range">FX$</span>
                                 </div>
-                                <div class="col-lg-5 px-0 position-relative ">
-                                  <input type="text" class="input_cab-rang-2" value="6500" disabled />
+                                <div class="col-xl-5 px-0 position-relative ">
+                                  <input type="text" class="input_cab-rang-2" id="val_2" onkeyup="val_1.value = this.value" value="6500" disabled />
                                   <span class="currency_range">=₽</span>
                                 </div>
                               </div>
@@ -168,7 +168,14 @@
                       </div>
                       <div class="col-xl-4">
                         <div class="right_part">
-
+                          <div class="top_text">
+                            <p class="title_cabinet mb-sm-0">Предложение от FrendeX</p>
+                            <p class="min_text-dark mb-0 pt-3">Первоначальный взнос: <span>30000</span></p>
+                            <p class="min_text-dark">Срок получения авто: <span>100 дней</span></p>
+                          </div>
+                          <div class="bottom_button">
+                            <button type="submit" href="#" class="btn_dark btn_content text-center w-100 blue_btn btn_save px-5">Сформировать предложение</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -224,7 +231,7 @@
     $input = $(".js-input"),
     $input2 = $(".input_cab-rang-2"),
     instance,
-    instance2,
+    instance2 = instance,
     min = 6500,
     max = 400000;
 
@@ -241,23 +248,24 @@
     onChange: function (data) {
       $input.prop("value", data.from);
       $input2.prop("value", data.from);
-    }
+    },
+    onUpdate: function (data) {
+    },
   });
   instance = $range.data("ionRangeSlider");
-  instance = $range2.data("ionRangeSlider");
-
   $input.on("change keyup", function () {
     var val = $(this).prop("value");
-
     // validate
     if (val < min) { val = min; } else if (val > max) {
       val = max;
     }
-
     instance.update({
       from: val
     });
   });
+  $input2.on('change keyup', function () {
+      var val = $input.val(this.value);
+    });
 </script>
 
 </html>

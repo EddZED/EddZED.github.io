@@ -131,7 +131,7 @@
 .wrapper_cabinet .score_input{background-color:rgba(51, 52, 88, 0.24);border:1px solid #4A4B7D;}
 .wrapper_cabinet .score_input span{color:#7072AF;}
 .wrapper_auto-form{background-color:rgba(33, 34, 59, 0.34);border-radius:5px;}
-.right_part{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background-image:url(../img/bg_fx.jpg);background-image:cover;background-position:center center;border-radius:5px;}
+.right_part{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background-image:url(../img/bg_fx.jpg);background-position:center center;background-size:cover;border-radius:5px;}
 .form_fx-title{font-size:22px;color:#fff;line-height:26px;font-family:tt_norms;}
 .type_auto{position:relative;cursor:pointer;margin-bottom:5px;}
 .type_auto input[type=radio]{display:none;}
@@ -142,9 +142,15 @@
 .input_model_auto{margin:0 5px;}
 .wrapper_auto-form .currency_range{left:15px;}
 .wrapper_auto-form .input_cab-rang{min-width:200px;}
-.input_cab-rang-2{border:none;border-radius:5px;padding:5px;text-align:center;font-size:22px;color:#fff;width:100%;background-color:transparent;text-align:left;}
-.input_cab-rang-2 + .currency_range{left:-25px;}
-
+.wrapper_auto-form .input_cab-rang:focus{outline:none;}
+.input_cab-rang-2{border:none;border-radius:5px;padding:5px 5px 5px 40px;text-align:center;font-size:22px;color:#fff;width:100%;background-color:transparent;text-align:left;}
+.input_cab-rang-2 + .currency_range{left:10px;}
+.top_text .min_text-dark{font-size:14px;line-height:17px;color:rgba(255, 255, 255, 0.35);font-family:tt_norms;}
+.top_text .min_text-dark span{color:#fff;}
+.wrapper_auto-form .range .irs--big .irs-min, .wrapper_auto-form .range .irs--big .irs-max{display:block;top:25px;color:#505492;font-size:14px;background-color:transparent;font-family:tt_norms;}
+.wrapper_auto-form .range .irs--big .irs-min:after{content:'FX$';position:absolute;right:-23px;top:1px;color:#505492;}
+.wrapper_auto-form .range .irs--big .irs-max:after{content:'FX$';position:absolute;right:-23px;top:1px;color:#505492;}
+.wrapper_auto-form .range .irs--big .irs-max{right:20px;}
 /*________________*/
 
 
