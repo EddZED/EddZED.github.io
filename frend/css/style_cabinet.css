@@ -186,8 +186,19 @@
 .card_invest-partners.card_7{background: linear-gradient(180deg, rgba(121, 150, 224, 0.85) 0%, rgba(104, 150, 218, 0.85) 100%);box-shadow: 0px -2px 63px -30px #A0C0F9;}
 .card_invest-partners.card_7 .invest_name{color:#A1BAF5;}
 .sea_bg{background: linear-gradient(0deg, rgba(160, 186, 245, 0.26), rgba(160, 186, 245, 0.26));border-color:#A0BAF5;}
-
-
+.inform_investors .card{background-color:transparent;border:none;margin-bottom:15px;}
+.inform_investors .card-header{border:none;}
+.inform_investors .btn.btn-link{display:block;width:100%;padding:10px 25px;text-align:left;border-radius:5px;background-color:#2F3052;border:none;font-size:18px;color:#fff;position:relative;}
+.inform_investors .btn.btn-link:focus,.inform_investors .btn.btn-link:active{outline:none;box-shadow:none;text-decoration:none;}
+.inform_investors .btn.btn-link:hover{text-decoration:none;}
+.inform_investors .card-body{background-color:rgba(47, 48, 82, 0.47);margin-bottom:15px;border-radius:5px;}
+.table_item-info{display:flex;border-bottom:1px solid #3E4071;padding: 15px 0; align-items:center;}
+.user_logo-table{width:65px;height:65px;display:inline-block;}
+.name_investor_table{font-size:22px;line-height:26px;font-family:tt_norms;color:#fff;text-align:center;}
+.name_investor_table-phone{color:#40426D;font-size:18px;line-height:21px;font-family:tt_norms;text-align:center;}
+.table_item-info:last-of-type{border-color:transparent;}
+.inform_investors .btn.btn-link span{position:absolute;top:10px;right:20px;opacity:.2;transition:all .3s;}
+.inform_investors .btn.btn-link[aria-expanded=true] span{transform:rotateZ(180deg);}
 
 /*________________*/
 
@@ -256,6 +267,7 @@
   .type_auto{width:100%;}
   .input_model_auto{width:100%;margin:5px;text-align:center;}
   .input_model_auto input::-webkit-input-placeholder{text-align:center;}
+  .table_item-info{flex-direction:column;}
 }
 @media(max-width:565px){
   .place{flex-direction:column;}
