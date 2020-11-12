@@ -97,9 +97,11 @@
         <div class="container_cab pt-0">
           <div class="row">
             <div class="col-xl-10">
-              <p class="dark_cab-text">В условиях кризиса стабильно высокий доход достижим только при грамотном отборе доходных
+              <p class="dark_cab-text">В условиях кризиса стабильно высокий доход достижим только при грамотном отборе
+                доходных
                 направлений бизнеса. Эксперты
-                клуба FrendeX выбрали несколько ниш, гарантирующих постоянную прибыль. Мы выбрали именно эти сферы бизнеса, поскольку
+                клуба FrendeX выбрали несколько ниш, гарантирующих постоянную прибыль. Мы выбрали именно эти сферы
+                бизнеса, поскольку
                 являемся экспертами в данных направлениях.</p>
               <p class="title_cabinet text-center text-xl-left pt-md-5">Автомобильная программа</p>
               <div class="wrapper_auto-form mb-3">
@@ -108,12 +110,14 @@
                     <div class="row justify-content-between">
                       <div class="col-xl-8">
                         <div class="left_part">
-                          <div class="row align-items-center justify-content-center justify-content-xl-start text-center text-xl-left p-3 pl-lg-4 pl-lg-5">
+                          <div
+                            class="row align-items-center justify-content-center justify-content-xl-start text-center text-xl-left p-3 pl-lg-4 pl-lg-5">
                             <div class="col-xl-6">
                               <p class="form_fx-title mb-2">Состояние автомобиля</p>
-                            </div>  
+                            </div>
                             <div class="col-xl-6">
-                              <div class="row text-center text-xl-left align-items-center justify-content-center justify-content-xl-start px-3">
+                              <div
+                                class="row text-center text-xl-left align-items-center justify-content-center justify-content-xl-start px-3">
                                 <label class="type_auto mx-2">
                                   <input class="" type="radio" name="type_auto" value="1">
                                   <span>Поддержанный</span>
@@ -123,7 +127,7 @@
                                   <span>Новый</span>
                                 </label>
                               </div>
-                            </div>  
+                            </div>
                           </div>
                           <div class="row align-items-center p-3 pl-lg-4 pl-lg-5">
                             <div class="col-xl-4 text-center text-xl-left">
@@ -148,12 +152,16 @@
                             </div>
                             <div class="col-xl-8 pt-2 pt-xl-0">
                               <div class="row align-items-center justify-content-start column_midle">
-                                <div class="col-xl-7 col-12 px-0 position-relative text-center text-xl-left d-inline-block">
-                                  <input type="text" class="js-input input_cab-rang w-75" id="val_1" onkeyup="val_2.value = this.value" value="6500" max="400000" maxlength="6"/>
+                                <div
+                                  class="col-xl-7 col-12 px-0 position-relative text-center text-xl-left d-inline-block">
+                                  <input type="text" class="js-input input_cab-rang w-75" id="val_1"
+                                    onkeyup="val_2.value = this.value" value="6500" max="400000" maxlength="6" />
                                   <span class="currency_range">FX$</span>
                                 </div>
-                                <div class="col-xl-5 col-12 px-0 position-relative text-center text-xl-left d-inline-block">
-                                  <input type="text" class="input_cab-rang-2" id="val_2" onkeyup="val_1.value = this.value" value="6500" disabled />
+                                <div
+                                  class="col-xl-5 col-12 px-0 position-relative text-center text-xl-left d-inline-block">
+                                  <input type="text" class="input_cab-rang-2" id="val_2"
+                                    onkeyup="val_1.value = this.value" value="6500" disabled />
                                   <span class="currency_range">=₽</span>
                                 </div>
                               </div>
@@ -174,7 +182,9 @@
                             <p class="min_text-dark">Срок получения авто: <span>100 дней</span></p>
                           </div>
                           <div class="bottom_button">
-                            <button type="submit" href="#" class="btn_dark btn_content text-center w-100 blue_btn btn_save px-0">Сформировать предложение</button>
+                            <button type="submit" href="#"
+                              class="btn_dark btn_content text-center w-100 blue_btn btn_save px-0">Сформировать
+                              предложение</button>
                           </div>
                         </div>
                       </div>
@@ -242,47 +252,6 @@
     });
     $('.user_logo').click(function () {
       $('.profile_item').removeClass('active');
-    });
-  </script>
-  <script>
-    var $range = $(".js-range-slider"),
-      $input = $(".js-input"),
-      $input2 = $(".input_cab-rang-2"),
-      instance,
-      instance2 = instance,
-      min = 6500,
-      max = 400000;
-
-    $range.ionRangeSlider({
-      skin: "big",
-      type: "single",
-      min: min,
-      max: max,
-      from: 255000,
-      onStart: function (data) {
-        $input.prop("value", data.from);
-        $input2.prop("value", data.from);
-      },
-      onChange: function (data) {
-        $input.prop("value", data.from);
-        $input2.prop("value", data.from);
-      },
-      onUpdate: function (data) {
-      },
-    });
-    instance = $range.data("ionRangeSlider");
-    $input.on("change keyup", function () {
-      var val = $(this).prop("value");
-      // validate
-      if (val < min) { val = min; } else if (val > max) {
-        val = max;
-      }
-      instance.update({
-        from: val
-      });
-    });
-    $input2.on('change keyup', function () {
-      var val = $input.val(this.value);
     });
   </script>
 </body>
