@@ -199,8 +199,23 @@
 .table_item-info:last-of-type{border-color:transparent;}
 .inform_investors .btn.btn-link span{position:absolute;top:10px;right:20px;opacity:.2;transition:all .3s;}
 .inform_investors .btn.btn-link[aria-expanded=true] span{transform:rotateZ(180deg);}
-
 /*________________*/
+/*style intro page */
+.wrapper_intro{width:100%;height:100vh;overflow:hidden;background-image:url(../img/bg_intro-page.jpg);background-size:cover;background-position:center center;}
+.wrapper_intro .container_main{height:100%;flex-direction:column;justify-content:space-between;padding-top:50px;}
+.social_bar-btn{display:flex;align-items:center;}
+.link_social-intro{font-size:18px;color:#fff;opacity:.4;display:inline-block;margin:0 8px;transition:all .3s;}
+.wrapper_intro .profile_item-link{border:2px solid #3356AD;padding:5px 20px;font-size:20px;}
+.title_intro-page{font-size:60px;line-height:71px;text-align:center;color:#fff;font-family:tt_norms;}
+.title_intro-page span{color:#3B73EC;}
+.sub_title-intro-page{font-size:26px;line-height:31px;text-align:center;color:#5C5E85;font-family:tt_norms;}
+.wrapper_intro .blue_btn {width:100%;font-size:26px;padding:25px 0 27px 0;background: linear-gradient(180deg, #3B73EE 0%, #2F66DD 100%);line-height:31px;}
+.wrapper_intro .blue_btn:hover{background: linear-gradient(180deg, #3B73EE 100%, #2F66DD 0%)}
+.entrace_ac{display:inline-block;width:100%;text-align:center;font-size:26px;line-height:31px;font-family:tt_norms;padding:25px 0;color:#8283AC;transition:all .3s;}
+.entrace_ac:hover{text-decoration:none;color:#fff;}
+/*________________*/
+
+
 
 @media(min-width:1600px){
   .col-xxl-3{-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;}
@@ -247,6 +262,7 @@
   .table_block{overflow-x:scroll;}
   .input_model_auto{width:48%;}
   .wrapper_auto-form .currency_range{left:110px;}
+  .wrapper_intro .container_main{padding-top:20px;}
   
 }
 @media(max-width:767px){
@@ -268,6 +284,10 @@
   .input_model_auto{width:100%;margin:5px;text-align:center;}
   .input_model_auto input::-webkit-input-placeholder{text-align:center;}
   .table_item-info{flex-direction:column;}
+  .title_intro-page{font-size:47px;line-height:55px;}
+  .sub_title-intro-page{font-size:22px;}
+  .entrace_ac{margin-top:20px;}
+  .wrapper_intro .blue_btn, .entrace_ac{font-size:22px;line-height:25px;padding:15px 0;}
 }
 @media(max-width:565px){
   .place{flex-direction:column;}
@@ -279,6 +299,14 @@
   .content_cabinet{padding:30px 10px}
   .wrapper_auto-form .currency_range{left:20px;}
   .wrapper_auto-form .input_cab-rang{width:100% !important;min-width:auto;}
+  .wrapper_intro .profile_item-link{font-size:16px;padding:5px 10px;}
+  .title_intro-page{font-size:35px;line-height:42px;}
+  .sub_title-intro-page{font-size:18px;line-height:25px;}
+  .entrace_ac{margin-top:20px;}
+  .wrapper_intro .blue_btn, .entrace_ac{font-size:18px;line-height:25px;padding:15px 0;}
+}
+@media(max-width:450px){
+  .title_intro-page{font-size:32px;line-height:38px;}
 }
 
 
