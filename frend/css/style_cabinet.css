@@ -156,10 +156,40 @@
 .bg_line-time{position:relative;width:100%;height:2px;background-color:#3F426C;border-radius:2px;}
 .time_marker{position:absolute;height:4px;width:70%;top:-1px;border-color:0;margin:auto;left:0;background:linear-gradient(90deg, #C4C4C4 0%, #3B73EE 0.01%, #1C48A9 100%);}
 .data_time{font-size:14px;color:#505492;font-family:tt_norms;}
+/*________________*/
+/*page my imvestors*/
+.card_invest{display:flex;align-items:center;justify-content:space-between;padding:20px;border-radius:5px;text-decoration:none;transition:all .3s;flex-direction:column;font-family:tt_norms;position:relative;height:100%;min-height:204px;}
+.card_invest:hover{text-decoration:none;transform:translateY(-2px);}
+.card_invest-status-ser{background: linear-gradient(180deg, rgba(233, 233, 233, 0.85) 0%, rgba(169, 169, 169, 0.85) 100%);box-shadow: 0px 15px 56px -12px rgba(173, 173, 173, 0.19);}
+.card_invest-status:hover{box-shadow: 0px 15px 30px -12px rgba(173, 173, 173, 0.2);}
+.card_invest-logo{width:65px;height:65px;border:3px solid #9E9E9E;border-radius:50%;overflow:hidden;background-color:transparent;display:flex;align-items:center;justify-content: center;}
+.you_status{font-size:18px;color: rgba(0, 0, 0, 0.3);line-height:21px;font-family:inherit;display:inline-block;}
+.level_manager{font-size:26px;line-height:31px;font-family:inherit;color:#474747;display:inline-block;text-align:center;}
+.icon_right-card{position:absolute;width:24px;height:24px;top:17px;right:17px;opacity:.6;}
+.invest_name{color: #98C1FF;font-size:18px;line-height:21px;font-family:inherit;display:inline-block;text-align:center;}
+.white_info-card{color:#fff;font-size:26px;line-height:31px;font-family:inherit;display:inline-block;padding-bottom:20px;text-align:center;}
+.card_invest-partners.card_2{background: linear-gradient(180deg, rgba(120, 174, 255, 0.85) 0%, rgba(94, 158, 255, 0.85) 100%);box-shadow: 0px -2px 63px -30px rgba(98, 157, 246, 0.57);}
+.block_top-card{display:flex;align-items:center;flex-direction:column;flex-direction:column;}
+.bl_bg{background: linear-gradient(0deg, rgba(126, 177, 255, 0.39), rgba(126, 177, 255, 0.39));border-color:#7EB1FF;}
+.rose_bg{background: linear-gradient(0deg, rgba(200, 119, 255, 0.56), rgba(200, 119, 255, 0.56));border-color:#C877FF;}
+.card_invest-partners.card_3{background: linear-gradient(180deg, rgba(182, 82, 241, 0.85) 0%, rgba(194, 93, 228, 0.85) 100%);box-shadow: 0px -2px 63px -30px rgba(255, 139, 250, 0.57);}
+.card_invest-partners.card_3 .invest_name{color:#D58AFF;}
+.card_invest-partners.card_4{background: linear-gradient(180deg, rgba(231, 116, 80, 0.85) 0%, rgba(232, 125, 91, 0.85) 100%);box-shadow: 0px -2px 63px -30px rgba(255, 180, 126, 0.57);}
+.card_invest-partners.card_4 .invest_name{color:#FFAD9C;}
+.orange_bg{background: linear-gradient(0deg, rgba(255, 152, 130, 0.6), rgba(255, 152, 130, 0.6));border-color:#FF9882;}
+.yelow_bg{background: linear-gradient(0deg, rgba(254, 231, 160, 0.67), rgba(254, 231, 160, 0.67));border-color:#FEE7A0;}
+.card_invest-partners.card_5{background: linear-gradient(180deg, rgba(222, 199, 118, 0.85) 0%, rgba(203, 171, 90, 0.85) 100%);box-shadow: 0px -2px 63px -30px rgba(255, 227, 126, 0.57);}
+.card_invest-partners.card_5 .invest_name{color:#FFF0C4;}
+.prpl_bg{background: linear-gradient(0deg, rgba(175, 154, 255, 0.65), rgba(175, 154, 255, 0.65));border-color:#AF9AFF;}
+.card_invest-partners.card_6{background: linear-gradient(180deg, rgba(135, 121, 224, 0.85) 0%, rgba(134, 104, 218, 0.85) 100%);box-shadow: 0px -2px 63px -30px #9D88F5;}
+.card_invest-partners.card_6 .invest_name{color:#C1B0FF;}
+.card_invest-partners.card_7{background: linear-gradient(180deg, rgba(121, 150, 224, 0.85) 0%, rgba(104, 150, 218, 0.85) 100%);box-shadow: 0px -2px 63px -30px #A0C0F9;}
+.card_invest-partners.card_7 .invest_name{color:#A1BAF5;}
+.sea_bg{background: linear-gradient(0deg, rgba(160, 186, 245, 0.26), rgba(160, 186, 245, 0.26));border-color:#A0BAF5;}
+
+
 
 /*________________*/
-
-
 
 @media(min-width:1600px){
   .col-xxl-3{-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;}

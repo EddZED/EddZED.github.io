@@ -245,46 +245,46 @@
     });
   </script>
   <script>
-    var $range = $(".js-range-slider"),
-      $input = $(".js-input"),
-      $input2 = $(".input_cab-rang-2"),
-      instance,
-      instance2 = instance,
-      min = 6500,
-      max = 400000;
+  var $range = $(".js-range-slider"),
+    $input = $(".js-input"),
+    $input2 = $(".input_cab-rang-2"),
+    instance,
+    instance2 = instance,
+    min = 6500,
+    max = 400000;
 
-    $range.ionRangeSlider({
-      skin: "big",
-      type: "single",
-      min: min,
-      max: max,
-      from: 255000,
-      onStart: function (data) {
-        $input.prop("value", data.from);
-        $input2.prop("value", data.from);
-      },
-      onChange: function (data) {
-        $input.prop("value", data.from);
-        $input2.prop("value", data.from);
-      },
-      onUpdate: function (data) {
-      },
+  $range.ionRangeSlider({
+    skin: "big",
+    type: "single",
+    min: min,
+    max: max,
+    from: 255000,
+    onStart: function (data) {
+      $input.prop("value", data.from);
+      $input2.prop("value", data.from);
+    },
+    onChange: function (data) {
+      $input.prop("value", data.from);
+      $input2.prop("value", data.from);
+    },
+    onUpdate: function (data) {
+    },
+  });
+  instance = $range.data("ionRangeSlider");
+  $input.on("change keyup", function () {
+    var val = $(this).prop("value");
+    // validate
+    if (val < min) { val = min; } else if (val > max) {
+      val = max;
+    }
+    instance.update({
+      from: val
     });
-    instance = $range.data("ionRangeSlider");
-    $input.on("change keyup", function () {
-      var val = $(this).prop("value");
-      // validate
-      if (val < min) { val = min; } else if (val > max) {
-        val = max;
-      }
-      instance.update({
-        from: val
-      });
-    });
-    $input2.on('change keyup', function () {
+  });
+  $input2.on('change keyup', function () {
       var val = $input.val(this.value);
     });
-  </script>
+</script>
 </body>
 
 </html>
