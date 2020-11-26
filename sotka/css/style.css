@@ -1,0 +1,20 @@
+@font-face{font-family:'Acrom-regular';src:url(../font/Acrom-Regular.ttf);}
+@font-face{font-family:'Acrom-medium';src:url(../font/Acrom-Medium.ttf);}
+html{scroll-behavior:smooth;}
+body{font-family:Acrom-regular;}
+
+.right_block-call{display:flex;justify-content:space-between;align-items:center;}
+.navbar-nav .nav-item .nav-link{color:#1C1E29;font-size:14px;}
+.right_block-call .phone_link{font-size:18px;line-height:22px;color:#1C1E29;font-family:'Acrom-medium';display:inline-block;padding-right:15px;}
+.btn_red{display:inline-block;color:#F9FAFC;font-family:'Acrom-medium';background-color:#EE3D48;border-radius:15px;font-size:14px;padding:12px 10px;transition:all .3s;}
+.btn_red:hover{text-decoration:none;color:#fff;}
+
+
+
+
+
+
+
+
+
+

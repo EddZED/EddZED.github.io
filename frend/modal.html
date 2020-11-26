@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ё, initial-scale=1.0">
+  <title>Модалки</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_modal.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper" style="height:100vh;">
+    <div class="container h-100">
+      <div class="row h-100 justify-content-around align-items-center">
+        <a href="#" type="button" data-toggle="modal" data-target="#modal_1" class="btn_dark">Модалка 1</a>
+        <a href="#" type="button" data-toggle="modal" data-target="#modal_2" class="btn_dark">Модалка 2</a>
+        <a href="#" type="button" data-toggle="modal" data-target="#modal_3" class="btn_dark">Модалка 3</a>
+      </div>
+    </div>
+  </div> 
+
+
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center pt-3"><img class="img-fluid pr-2" src="img/logo_modal.png" alt="френдекс">FrendeX</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.png" alt="закрыть">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text_modal mb-2">Вы можете пополнить свой баланс в клубе<br>FrendeX на сумму</p>
+          <div class="pay pb-2 pb-md-4">
+            <span class="big_num">1000</span>
+            <span class="currency">btc</span>
+          </div>
+          <p class="text_modal pt-3">Для того, чтобы пополнить баланс просто скопируйте адрес кошелька</p>
+          <div class="score_input mb-2 mb-md-4">
+            <span id="score">3624vf2342378fbwef73454534fdfg</span>
+            <button type="button" class="btn_copy"><img class="img-fluid" src="img/copy.png" alt="копировать"></button>
+          </div>
+          <p class="dark_text pt-3">Для пополнения осталось</p>
+          <div class="timer pb-lg-4">
+            <span class="big_num">20</span>
+            <span class="separator">:</span>
+            <span class="big_num">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal_2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center pt-3"><img class="img-fluid pr-2" src="img/logo_modal.png"
+              alt="френдекс">FrendeX</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.png" alt="закрыть">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text_modal mb-2"><span id="username">Руслан</span>, баланс вашего доходного счета составляет 350.68 FX$. Вы можете вывести минимум 10FX$ на свой BTC кошелек.</p>
+          <form method="get" action="" class="">
+            <fieldset>
+              <input class="input_modal mb-3" type="text" name="" placeholder="Введите свой BTC-кошелек">
+              <input class="input_modal mb-3" type="text" name="" placeholder="Укажите сумму для вывода">
+            </fieldset>
+            <div class="btn_block pt-3">
+              <a href="#" class="btn_dark btn_content blue_btn btn_gradient">Вывести средства</a>
+            </div>
+            <p class="dark_text min_dark pt-3">Вы получите уведомление о статусе заявки на вывод</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal_3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center pt-3"><img class="img-fluid pr-2" src="img/logo_modal.png"
+              alt="френдекс">FrendeX</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.png" alt="закрыть">
+          </button>
+        </div>
+        <div class="modal-body pt-2 mb-2">
+          <p class="text_modal mb-2">Заявка на вывод успешно принята в обработку. Вывод осуществляется в течение 48 часов.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>

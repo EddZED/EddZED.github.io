@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ё, initial-scale=1.0">
+  <title>Финансы</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ion.rangeSlider.css" rel="stylesheet">
+  <link href="css/all.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_modal.css" rel="stylesheet">
+  <link href="css/style_cabinet.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper bg_cabinet">
+    <div class="container_main">
+      <div class="mobile_header d-lg-none">
+        <div class="brand_bar text-center py-1">
+          <a href="#" class="brand_link"><img class="img-fluid pr-2" src="img/logo_modal.png" alt="френдекс">FrendeX</a>
+        </div>
+        <button class="side_menu"><span></span></button>
+      </div>
+      <aside class="sidebar">
+        <div class="top_bar">
+          <div class="brand_bar d-none d-lg-block text-center pb-3">
+            <a href="#" class="brand_link"><img class="img-fluid pr-2" src="img/logo_modal.png"
+                alt="френдекс">FrendeX</a>
+          </div>
+          <nav class="left_menu">
+            <ul class="list-unstyled">
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-1"></span>
+                  Инвестиции
+                </a>
+              </li>
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-2"></span>
+                  Мои инвесторы
+                </a>
+              </li>
+              <li class="Left_menu-item active">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-3"></span>
+                  Финансы
+                </a>
+              </li>
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-4"></span>
+                  FX Auto
+                </a>
+              </li>
+              <li class="Left_menu-item">
+                <a href="#" class="menu_item-link">
+                  <span class="icon_item mr-3 icon_item-5"></span>
+                  Профиль
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bottom_bar">
+          <a href="#" class="exit_btn">
+            <span class="icon_exit mr-3"></span>
+            Выйти
+          </a>
+        </div>
+      </aside>
+      <div class="content_cabinet">
+        <div class="container_cab pt-0 pt-lg-4">
+          <div class="header_finansy pb-lg-3">
+            <div class="order-xl-1 order-md-2 pt-md-3 pt-xl-0 block_hid_btn">
+              <p class="title_cabinet pr-3 pr-xl-0 mb-0">Финансы</p>
+              <button class="btn_hidden-section" data-toggle="collapse" data-target="#fin_page"><i class="fas fa-chevron-down"></i></button>
+              <button class="l_cab"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="profile_item order-xl-2 order-md-1">
+              <a href="#" class="profile_item-link bord_none">Вывести доходы</a>
+              <a href="#" class="profile_item-link">Реинвестировать</a>
+              <a href="#" class="profile_item-link">Ивестировать</a>
+              <div class="profile_item-user">
+                <a href="#" class="walet_user">
+                  <img class="img-fluid pr-2" src="img/walet.png" alt="кошелек">
+                  <span>227</span>
+                  <span>FX$</span>
+                </a>
+                <a href="#" class="user_logo">
+                  <img class="img-fluid" src="img/user_logo.png" alt="пользователь">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_cab pt-0">
+          <section class="fin_page"">
+            <div class="row">
+              <div class="col-xl-10 collapse" id="fin_page">
+                <ul class="nav align-items-center nav-tabs group_btn" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link hid_list active" id="operations-tab" data-toggle="tab" href="#operations" role="tab" aria-controls="operations" aria-selected="true">Все операции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="devident-tab" data-toggle="tab" href="#devident" role="tab" aria-controls="avia" aria-selected="false">Мои девиденты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Вывод доходов</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои инвестиции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Все инвестиции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Инвестиции моей страницы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Реферальные начисления</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hid_list" id="" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Мои карьерные бонусы</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-11">
+                <div class="tab-content pt-lg-5" id="info_tab-dest">
+                  <div class="tab-pane fade show active" id="operations" role="tabpanel" aria-labelledby="operations-tab">
+                    <canvas id="myChart"></canvas>
+                    <div class="table_block pt-5">
+                      <table class="table_block-info">
+                        <thead>
+                          <tr>
+                            <th>сумма</th>
+                            <th>статус</th>
+                            <th>дата</th>
+                            <th>время</th>
+                            <th>описание</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>18.68 <span>FX$</span></th>
+                            <th><img class="img-fluid" src="img/status_ok.png" alt="статус операции"></th>
+                            <th>29.09.<br class="d-xl-none">2020</th>
+                            <th>00:17:34</th>
+                            <th>Начисление ежедневной дивидендной доходной части
+                              <span class="btn_mor-info"><img class="img-fluid" src="img/more_info.png" alt="больше информации"></span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>18.68 <span>FX$</span></th>
+                            <th><img class="img-fluid" src="img/status_ok.png" alt="статус операции"></th>
+                            <th>29.09.2020</th>
+                            <th>00:17:34</th>
+                            <th class="table_min-text">Начисление ежедневной дивидендной доходной части в размере<br> 1.09% на депозит в сумме 1778.76FX$, открытый 24.04.2019
+                              <span class="btn_mor-info"><img class="img-fluid" src="img/more_info.png" alt="больше информации"></span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>18.68 <span>FX$</span></th>
+                            <th><img class="img-fluid" src="img/status_time.png" alt="статус операции"></th>
+                            <th>29.09.2020</th>
+                            <th>00:17:34</th>
+                            <th>Начисление ежедневной дивидендной доходной части
+                              <span class="btn_mor-info"><img class="img-fluid" src="img/more_info.png" alt="больше информации"></span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>18.68 <span>FX$</span></th>
+                            <th><img class="img-fluid" src="img/status_error.png" alt="статус операции"></th>
+                            <th>29.09.2020</th>
+                            <th>00:17:34</th>
+                            <th>Начисление ежедневной дивидендной доходной части
+                              <span class="btn_mor-info"><img class="img-fluid" src="img/more_info.png" alt="больше информации"></span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>18.68 <span>FX$</span></th>
+                            <th><img class="img-fluid" src="img/status_error.png" alt="статус операции"></th>
+                            <th>29.09.2020</th>
+                            <th>00:17:34</th>
+                            <th>Начисление ежедневной дивидендной доходной части
+                              <span class="btn_mor-info"><img class="img-fluid" src="img/more_info.png" alt="больше информации"></span>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="devident" role="tabpanel" aria-labelledby="devident-tab">
+                    <p class="txt_content">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer_cabinet">
+      <a href="#" class="privacy_cab">Пользовательское соглашение</a>
+    </footer>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    $('.Left_menu-item').click(function () {
+      $('.Left_menu-item').removeClass('active');
+      $(this).toggleClass('active');
+    });
+    $('.side_menu').click(function () {
+      $('.sidebar').toggleClass('active');
+      $('.side_menu').toggleClass('active');
+    });
+    $('.Left_menu-item').click(function () {
+      $('.sidebar').removeClass('active');
+      $('.side_menu').removeClass('active');
+    });
+    $('.l_cab').click(function(){
+      $('.profile_item').toggleClass('active');
+    });
+    $('.hid_list').click(function(){
+      $('#fin_page').removeClass('show');
+    });
+    $('.profile_item-link').click(function () {
+        $('.profile_item').removeClass('active');
+      });
+    $('.walet_user').click(function () {
+        $('.profile_item').removeClass('active');
+      });
+    $('.user_logo').click(function () {
+        $('.profile_item').removeClass('active');
+      });
+  </script>
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    Chart.defaults.global.defaultFontFamily = "tt_norms";
+    Chart.defaults.global.defaultFontSize = 18;
+      
+      var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: ['19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+          datasets: [{
+            label: '',
+            backgroundColor: 'rgba(58, 110, 228, 0.3)',
+            borderColor: '#3B73EE',
+            pointRadius: 10,
+            fill: true,
+            lineTension: 0,
+            pointBackgroundColor:'#3C73EE',
+            pointBorderColor:'#578BFF',
+            pointBorderWidth: 6,
+            pointHoverRadius: 10,
+            data: [0.5, 1.1, 1.5, 1.4, 1.6, 1.7, 1.5]
+          }],
+        },
+
+        // Configuration options go here
+        options: {
+          legend: {
+            display: false,
+            position: 'bottom'
+          },
+          tooltips: {
+            enabled: true,
+            backgroundColor:'#323354',
+            titleFontSize: 12,
+            bodyFontSize: 12
+          },
+          scales: {
+            xAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+      
+  </script>
+</body>
+
+</html>

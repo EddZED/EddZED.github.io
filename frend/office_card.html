@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=ё, initial-scale=1.0">
-  <title>Офисы</title>
+  <title>Офис города</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/all.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -73,9 +73,32 @@
             </div>
           </div>
         </section>
-        <section class="office">
+        <section class="office_card">
           <div class="container">
-            
+            <div class="row pb-3">
+              <div class="col">
+                <form method="get" action="">
+                  <fieldset>
+                    <label for="" class="w-100 label_search">
+                      <input class="input_search" type="text" name="" placeholder="" value="Казань">
+                      <button class="btn_search"><img src="img/search.png" class="img-fluid p-3" alt=""></button>
+                    </label>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="row text-center text-lg-left">
+              <div class="col-lg-6 pl-lg-5">
+                <p class="midle_title-section">Офис компании Frendex в Казани</p>
+                <p class="office_adress mb-2">Адрес: <span> Казань, Россия, ул. Опоавповаповоп д.90</span></p>
+                <p class="office_adress">Телефон: <span><a href="tel:+79999999999" class="">+79999999999</a></span></p>
+              </div>
+              <div class="col-lg-6">
+                <a href="№" class="link_map">
+                  <img class="img-fluid" src="img/map.jpg" alt="">
+                  <span>Смотреть на картах</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -157,7 +180,7 @@
       });
       $('.btn_mob').click(function(){
         $(this).toggleClass('active');
-      })
+      });
     </script>
   </body>
 </html>
