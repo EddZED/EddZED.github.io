@@ -58,8 +58,8 @@ body{font-family:'Acrom-regular';color:#000;}
 .num_bold{font-size:16px;line-height:22px;color:#fff;font-family:Acrom-medium;}
 .footer_block{padding:20px 15px 40px;}
 .light_text-content{font-size:14px;font-family:Acrom-light;}
-
-
+.sl-count{position:absolute;display:inline-block;bottom:35px;left:50%;transform:translateX(-50%);padding:9px 15px;background-color:#1C1E29;border-radius:15px;color:#fff;;}
+.sl-count span{font-size:14px;font-family:Acrom-bold;}
 
 @media(min-width:1200px){
   .mobile_width{width:100%;}

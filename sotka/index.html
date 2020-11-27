@@ -172,6 +172,7 @@
                     </li>
                   </ul>
                 </div>
+                <div class="sl-count"><span class="sl-count__current">1</span>/<span class="sl-count__total"></span></div>
               </div>
             </div>
             <div class="col-lg-4 px-0">
@@ -275,6 +276,13 @@
       arrows: false,
       dots: false
     });
+  </script>
+  <script>
+    var slider = $('.slider_example');
+	$('.sl-count__total').text( slider.slick("getSlick").slideCount);
+	$(".slider_example").on('afterChange', function(event, slick, currentSlide){
+	     $(".sl-count__current").text(currentSlide + 1);
+	});
   </script>
 </body>
 </html>
