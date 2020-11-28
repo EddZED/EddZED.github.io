@@ -87,6 +87,20 @@ body{font-family:'Acrom-regular';color:#000;}
 .text_area:focus{outline:none;}
 .label_text{position:relative;width:100%;}
 .label_text span{position:absolute;left:20px;top:13px;font-size:10px;text-transform:uppercase;line-height:10px;color:#1C1E29;font-family:Acrom-light;z-index:1;text-transform:none;}
+.best_offers{padding:80px 0;}
+.card_offers{display:flex;flex-direction:column;background-color:#F9FAFC;border-radius:15px;overflow:hidden;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);}
+.body_card-offers{padding:20px 12px;}
+.name_card{font-size:16px;color:#1C1E29;line-height:17px;font-family:Acrom-bold;}
+.min_norm-txt{font-size:12px;line-height:15px;color:#6d7080;font-family:Acrom-light;}
+.min_norm-txt span{color:#343C6A;font-family:Acrom-bold;}
+.white_inner-box{padding:15px;background-color:#fff;border-radius:15px;}
+.micro_text-inner{font-size:10px;line-height:12px;font-family:Acrom-light;color:#6d7080;}
+.micro_text-inner span{font-family:Acrom-medium;color:#FF7848;}
+.blue_btn{display:inline-block;background-color:#343C6A;border-radius:10px;color:#F9FAFC;font-size:14px;text-align:center;width:100%;padding:10px 0;transition:all .3s;}
+.blue_btn:hover{text-decoration:none;color:#fff;background-color:#FF7848;}
+
+
+
 
 
 
@@ -94,6 +108,7 @@ body{font-family:'Acrom-regular';color:#000;}
 
 @media(min-width:1200px){
   .mobile_width{width:100%;}
+  .container, .container-lg, .container-md, .container-sm, .container-xl{max-width:1170px;}
 }
 @media(max-width:1199px){
   .block_type-info{flex-direction:column;align-items:start;}
@@ -121,6 +136,7 @@ body{font-family:'Acrom-regular';color:#000;}
   .form_page{padding:15px 10px;}
   .min_title-page{font-size:30px;}
   .interaction{padding:40px 0;}
+  .best_offers{padding:40px 0;}
 }
 @media(max-width:575px){
   
