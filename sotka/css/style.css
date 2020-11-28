@@ -101,10 +101,18 @@ body{font-family:'Acrom-regular';color:#000;}
 .card_more-offers{padding:25px 15px;background-image:url(../img/bg_more-offer.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:15px;height:100%;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);display:flex;justify-content:center;align-items:center;}
 .title_white-bold{font-size:26px;line-height:28px;color:#fff;font-family:Acrom-bold;}
 .light_txt{font-family:Acrom-light;}
-
-
-
-
+.partners{padding:40px 0;}
+.partners_box{display:flex;flex-wrap:nowrap;justify-content:space-between;padding:35px 15px;margin:0 -15px 0 -15px;}
+.partners_item{flex:0 0 19%;min-width:210px;border-radius:15px;background-color:#F9FAFC;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);padding:15px;display:flex;flex-direction:column;justify-content:space-between;text-align:center;transition:all .3s;margin:0 5px;}
+.partners_item:hover{box-shadow: 0px 6px 40px 2px rgba(33, 32, 25, 0.2);text-decoration:none;}
+.comments{padding:40px 0;}
+.comments_item{background-color:#F9FAFC;border-radius:15px;height:100%;padding:25px 30px;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);}
+.orange_title{font-size:16px;line-height:22px;color:#FF7848;font-family:Acrom-bold;}
+.callback{padding:80px 0;background-color:#343C6A;}
+.big_white-txt{font-size:36px;line-height:40px;color:#F9FAFC;font-family:Acrom-bold;}
+.input_callback input{border:none;border-bottom:1px solid #F9FAFC;background-color:transparent;width:100%;padding:10px 0 15px;}
+.input_callback input::-webkit-input-placeholder{color:#F9FAFC;font-size:16px;line-height:20px;}
+.footer{padding:40px 0;}
 
 
 @media(min-width:1200px){
@@ -122,6 +130,14 @@ body{font-family:'Acrom-regular';color:#000;}
   .scroll_box::-webkit-scrollbar-corner { background-color: #999;}
   .scroll_box::-webkit-resizer { background-color: transparent;}
   .scroll_box{flex-wrap:nowrap;overflow-x:scroll;}
+  .partners_box{overflow-x:scroll;}
+  .partners_box::-webkit-scrollbar {height: 10px;}
+  .partners_box::-webkit-scrollbar-button {  background-color:transparent; }
+  .partners_box::-webkit-scrollbar-track {  background-color:transparent;}
+  .partners_box::-webkit-scrollbar-track-piece { background-color: rgba(255,120,72,.2);}
+  .partners_box::-webkit-scrollbar-thumb { height: 50px; background-color: #FF7848; border-radius: 15px;}
+  .partners_box::-webkit-scrollbar-corner { background-color: #999;}
+  .partners_box::-webkit-resizer { background-color: transparent;}
 }
 @media(max-width:991px){
   .btn_menu.active .navbar-toggler-icon{background-color:transparent;}
@@ -132,6 +148,7 @@ body{font-family:'Acrom-regular';color:#000;}
   .right_block-call .phone_link{padding-right:0;}
   .tab_nav-example{position:relative;display:inline-block;left:auto;bottom:auto;margin:15px 0;}
   .sl-count{bottom:82px;}
+  .partners_box{padding:25px 15px;}
 }
 @media(max-width:767px){
   .input_label-search .border_right{border:none;}
@@ -146,6 +163,7 @@ body{font-family:'Acrom-regular';color:#000;}
   .min_title-page{font-size:30px;}
   .interaction{padding:40px 0;}
   .best_offers{padding:40px 0;}
+  .big_white-txt{font-size:30px;line-height:32px;}
 }
 @media(max-width:575px){
   
