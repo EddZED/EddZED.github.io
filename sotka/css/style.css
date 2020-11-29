@@ -118,6 +118,32 @@ body{font-family:'Acrom-regular';color:#000;}
 .contact_footer{text-align:right;}
 .link_footer-contact{font-size:14px;color:#1C1E29;text-decoration:none;display:block;}
 .social_block{display:none;}
+.breadcrumb{background-color:transparent;}
+.breadcrumb .breadcrumb-item a{font-size:14px;color:#1C1E29;}
+.breadcrumb .breadcrumb-item.active{font-size:14px;color:#1C1E29;font-family:Acrom-light;}
+.title_block-catalog{padding:0 0 35px}
+.top_title-block{background-image:url(../img/bg_top-block.png);background-size:cover;background-repeat:no-repeat;background-position:center center;padding:20px 30px;border-radius:15px;display:flex;align-items:center;justify-content:space-between;}
+.middle_white-title{font-size:28px;line-height:30px;font-family:roboto;margin:0;color:#F9FAFC;}
+.rezult_search{font-size:14px;line-height:17px;font-family:roboto;font-weight:lighter;color:#F9FAFC;margin:0;}
+.sort-item{position:relative;border:1px solid rgba(52, 60, 106, 0.4);border-radius:15px;width:100%;overflow:hidden;}
+.name_sort{background-color:#EDEDED;display:inline-block;width:100%;height:100%;padding:10px 0 10px 0;font-size:14px;font-family:roboto;font-weight:lighter;color:#1C1E29;text-align:center;}
+.selext_sort{border:none;width:100%;font-size:14px;color:#1C1E29;padding:10px 0;}
+.selext_sort:focus, .selext_sort:active{outline:none;}
+.card_catalog{display:flex;border-radius:15px;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);overflow:hidden;}
+.info_card-block{padding:5px 15px;display:flex;flex-direction:column;justify-content:center;}
+.name_card-catalog{font-size:18px;line-height:18px;font-family:roboto;color:#1C1E29;font-weight:500;}
+.decriotion_text-catalog span{font-weight:600;}
+.decriotion_text-catalog{font-size:12px;font-family:roboto;color:#1C1E29;line-height:17px;font-weight:400;}
+.red_price-catalog{font-size:12px;line-height:17px;font-family:roboto;font-weight:600;color:#EE3D48;}
+.btn_blue-catalog{font-size:12px;line-height:14px;color:#F9FAFC;display:inline-block;width:100%;border-radius:15px;background-color:#343C6A;padding:11px 0;text-align:center;transition:all .3s;font-family:roboto;font-weight:500;border:1px solid transparent}
+.btn_blue-catalog:hover{background-color:#fff;color:#343C6A;border-color:#343C6A;text-decoration:none;}
+.btn_blue-catalog.bg_white{background-color:#fff;color:#343C6A;border-color:#343C6A;}
+.btn_blue-catalog.bg_white:hover{background-color:#343C6A;color:#fff;border-color:#343C6A;}
+.page-item .page-link{border:none;background-color:#fff;font-size:18px;line-height:16px;font-family:roboto;color:#1C1E29;transition:all .3s;}
+.page-item:first-child .page-link{border-radius:15px;padding:10px 20px;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);border-radius:15px;margin-right:20px;}
+.page-item:last-child .page-link{border-radius:15px;padding:10px 20px;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);border-radius:15px;margin-left:20px;}
+.page-item .page-link:hover{color:#FF7848;}
+{background-color:#fff;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);padding:12px 20px;}
 
 @media(min-width:1200px){
   .mobile_width{width:100%;}
@@ -142,6 +168,8 @@ body{font-family:'Acrom-regular';color:#000;}
   .partners_box::-webkit-scrollbar-thumb { height: 50px; background-color: #FF7848; border-radius: 15px;}
   .partners_box::-webkit-scrollbar-corner { background-color: #999;}
   .partners_box::-webkit-resizer { background-color: transparent;}
+  .card_catalog{flex-direction:column;}
+  .mobile_img-catalog{width:100%;}
 }
 @media(max-width:991px){
   .btn_menu.active .navbar-toggler-icon{background-color:transparent;}
@@ -158,6 +186,7 @@ body{font-family:'Acrom-regular';color:#000;}
   .link_footer{margin-bottom:10px;}
   .social_block{display:flex;align-items:center;justify-content:center;}
   .social{margin:0 15px;}
+  .title_block-catalog{padding:0 0 15px}
 }
 @media(max-width:767px){
   .input_label-search .border_right{border:none;}
@@ -173,7 +202,9 @@ body{font-family:'Acrom-regular';color:#000;}
   .interaction{padding:40px 0;}
   .best_offers{padding:40px 0;}
   .big_white-txt{font-size:30px;line-height:32px;}
+  .top_title-block{flex-direction:column;align-items:start;padding:15px;}
+  .middle_white-title{font-size:24px;}
 }
 @media(max-width:575px){
-  
+  .name_sort{font-size:12px;padding:11px 0;}
 }
