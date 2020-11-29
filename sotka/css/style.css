@@ -139,10 +139,10 @@ body{font-family:'Acrom-regular';color:#000;}
 .btn_blue-catalog:hover{background-color:#fff;color:#343C6A;border-color:#343C6A;text-decoration:none;}
 .btn_blue-catalog.bg_white{background-color:#fff;color:#343C6A;border-color:#343C6A;}
 .btn_blue-catalog.bg_white:hover{background-color:#343C6A;color:#fff;border-color:#343C6A;}
-.page-item .page-link{border:none;background-color:#fff;font-size:18px;line-height:16px;font-family:roboto;color:#1C1E29;transition:all .3s;}
-.pagination{border-radius:15px;padding:10px 20px;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);border-radius:15px;margin-right:20px;display:inline-flex;}
+.page-item .page-link{border:none;background-color:#fff;font-size:18px;line-height:16px;font-family:roboto;color:#1C1E29;transition:all .3s;padding:10px 15px}
+.pagination{border-radius:15px;padding:10px;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);border-radius:15px;margin-right:20px;display:inline-flex;}
 .page-item .page-link:hover{color:#FF7848;}
-
+.gray_block-item{width:100%;display:block;min-height:240px;background-color:#E3E3E3;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);border-radius:15px;}
 
 
 
@@ -206,7 +206,10 @@ body{font-family:'Acrom-regular';color:#000;}
   .big_white-txt{font-size:30px;line-height:32px;}
   .top_title-block{flex-direction:column;align-items:start;padding:15px;}
   .middle_white-title{font-size:24px;}
+  .pagination{padding:5px;}
+  .page-item .page-link{font-size:16px;}
 }
 @media(max-width:575px){
   .name_sort{font-size:12px;padding:11px 0;}
+  .page-item .page-link{padding:6px 7px}
 }
