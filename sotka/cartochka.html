@@ -92,20 +92,23 @@
       <section class="example_work slider_card-page">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <div class="block_tabs-example text-center">
                 <div class="tab-content" id="set_tab-prof">
                   <div class="tab-pane fade show active" id="slider_tab" role="tabpanel" aria-labelledby="slider_tab">
                     <div class="slider-box">
                       <div class="slider_example">
                         <div class="slider_example-item">
-                          <img src="img/img_slider-card.jpg" class="img-fluid" alt="">
+                          <img src="img/img_slider-card.jpg" class="img-fluid d-none d-sm-block" alt="">
+                          <img class="img-fluid d-sm-none" src="img/slider_mobile.jpg" alt="">
                         </div>
                         <div class="slider_example-item">
-                          <img src="img/img_slider-card.jpg" class="img-fluid" alt="">
+                          <img src="img/img_slider-card.jpg" class="img-fluid d-none d-sm-block" alt="">
+                          <img class="img-fluid d-sm-none" src="img/slider_mobile.jpg" alt="">
                         </div>
                         <div class="slider_example-item">
-                          <img src="img/img_slider-card.jpg" class="img-fluid" alt="">
+                          <img src="img/img_slider-card.jpg" class="img-fluid d-none d-sm-block" alt="">
+                          <img class="img-fluid d-sm-none" src="img/slider_mobile.jpg" alt="">
                         </div>
                       </div>
                     </div>
@@ -128,9 +131,26 @@
                 </div>
                 <div class="sl-count"><span class="sl-count__current">1</span>/<span class="sl-count__total"></span></div>
               </div>
+              <div class="map_img-block d-none d-lg-block pt-3">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="box_shadow-map">
+                      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A601f10329b5c2d7fa38e2bcd345be703c477baa2bf1aed084aa6898fe7d466f0&amp;width=100%25&amp;height=208&amp;lang=ru_RU&amp;scroll=false"></script>
+                      <span class="name_map">Карта панорама</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="box_shadow-map">
+                      <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A601f10329b5c2d7fa38e2bcd345be703c477baa2bf1aed084aa6898fe7d466f0&amp;width=100%25&amp;height=208&amp;lang=ru_RU&amp;scroll=false"></script>
+                      <span class="name_map">Карта кадастр</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 px-0">
-              <div class="slider_description">
+            <div class="col-lg-3 px-0">
+              <div class="slider_description slider_desc_card">
                 <div class="px-3 pb-3">
                   <div class="substrade">
                     <div class="header_title-block">
@@ -161,35 +181,57 @@
                   </div>
                 </div>
                 <div class="px-3 pb-3">
-                  <div class="substrade">
-                    <div class="header_title-block">
-                      <p class="title_content">Название примера</p>
-                      <p class="text_content m-0"><img src="img/marker_input1.png" class="img-fluid pr-2" alt="">Адрес данного примера будет здесь</p>
-                    </div>
-                    <div class="midle_blue-block">
-                      <div class="row">
-                        <div class="col-6">
-                          <p class="min_text-white m-0">Рыночная цена</p>
-                          <p class="num_bold">1 000 000 ₽</p>
-                        </div>
-                        <div class="col-6">
-                          <p class="min_text-white m-0">Цена покупки</p>
-                          <p class="num_bold">950 000 ₽</p>
-                        </div>
-                        <div class="col-6">
-                          <p class="min_text-white m-0">Площадь</p>
-                          <p class="num_bold m-0">300 m²</p>
-                        </div>
-                        <div class="col-6">
-                          <p class="min_text-white m-0">Выгода</p>
-                          <p class="num_bold m-0">50 000 ₽</p>
-                        </div>
+                  <div class="header_title-block">
+                    <p class="title_content mb-0">Название примера</p>
+                  </div>
+                  <div class="midle_blue-block">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="min_text-white mb-1">Рыночная цена</p>
+                        <p class="num_bold">1 000 000 ₽</p>
+                      </div>
+                      <div class="col-12">
+                        <p class="min_text-white mb-1">Цена покупки</p>
+                        <p class="num_bold m-0">950 000 ₽</p>
                       </div>
                     </div>
-                    <div class="footer_block">
-                      <p class="light_text-content">Задача организации, в особенности же начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки дальнейших направлений развития. Не следует, однако забывать, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                      <a href="" class="btn_orange text-center w-100">Узнать больше</a>
+                  </div>
+                  <div class="footer_block">
+                    <div class="manager_name">
+                      <span>Менеджер</span>
+                      <p class="name_text mb-0">Имя Фамилия</p>
                     </div>
+                    <p class="text-content light_txt mb-1 pt-3">Телефон</p>
+                    <a href="tel:+74957736540" class="link_phone_manager">8 495 773 65 40</a>
+                    <a href="" class="btn_orange text-center w-100 mt-3">Подробнее</a>
+                    <a href="" class="btn_orange text-center btn_orang-invert mt-3 w-100">Поделиться</a>
+                  </div>
+                </div>
+                <div class="px-3 pb-3">
+                  <div class="header_title-block">
+                    <p class="title_content mb-0">Название примера</p>
+                  </div>
+                  <div class="midle_blue-block">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="min_text-white mb-1">Рыночная цена</p>
+                        <p class="num_bold">1 000 000 ₽</p>
+                      </div>
+                      <div class="col-12">
+                        <p class="min_text-white mb-1">Цена покупки</p>
+                        <p class="num_bold m-0">950 000 ₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer_block">
+                    <div class="manager_name">
+                      <span>Менеджер</span>
+                      <p class="name_text mb-0">Имя Фамилия</p>
+                    </div>
+                    <p class="text-content light_txt mb-1 pt-3">Телефон</p>
+                    <a href="tel:+74957736540" class="link_phone_manager">8 495 773 65 40</a>
+                    <a href="" class="btn_orange text-center w-100 mt-3">Подробнее</a>
+                    <a href="" class="btn_orange text-center btn_orang-invert mt-3 w-100">Поделиться</a>
                   </div>
                 </div>
               </div>
@@ -197,8 +239,153 @@
           </div>
         </div>
       </section>
-
-
+      <section class="best_offers">
+        <div class="container">
+          <h2 class="title_page min_title-page">Спец предложения поблизости</h2>
+          <div class="row justify-content-center pt-4">
+            <div class="col-xl-9 mb-3 mb-xl-0">
+              <div class="row scroll_box">
+                <div class="col-xl-4 col-md-6 col-10">
+                  <div class="card_offers">
+                    <div class="header_card-offers text-center">
+                      <img class="img-fluid" src="img/offer1.jpg" alt="">
+                    </div>
+                    <div class="body_card-offers">
+                      <p class="name_card mb-2">Земли населенных пунктов</p>
+                      <p class="min_norm-txt"><span>Адрес:</span> осковская область, Шаховской район, с/п Серединское, д.
+                        Репотино, ул.
+                        Придорожная.</p>
+                      <div class="white_inner-box mb-3">
+                        <p class="micro_text-inner mb-1">Рыночная стоимость: <span>800.000 рублей</span></p>
+                        <p class="micro_text-inner mb-1">Цена покупки: <span>81.000 рублей</span></p>
+                        <p class="micro_text-inner mb-0">Скидка на сегодня:<span>45.000 рублей</span></p>
+                      </div>
+                      <a href="#" class="blue_btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-10">
+                  <div class="card_offers">
+                    <div class="header_card-offers text-center">
+                      <img class="img-fluid" src="img/offer2.jpg" alt="">
+                    </div>
+                    <div class="body_card-offers">
+                      <p class="name_card mb-2">Земли населенных пунктов</p>
+                      <p class="min_norm-txt"><span>Адрес:</span> осковская область, Шаховской район, с/п Серединское, д.
+                        Репотино, ул.
+                        Придорожная.</p>
+                      <div class="white_inner-box mb-3">
+                        <p class="micro_text-inner mb-1">Рыночная стоимость: <span>800.000 рублей</span></p>
+                        <p class="micro_text-inner mb-1">Цена покупки: <span>81.000 рублей</span></p>
+                        <p class="micro_text-inner mb-0">Скидка на сегодня:<span>45.000 рублей</span></p>
+                      </div>
+                      <a href="#" class="blue_btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-10">
+                  <div class="card_offers">
+                    <div class="header_card-offers text-center">
+                      <img class="img-fluid" src="img/offer3.jpg" alt="">
+                    </div>
+                    <div class="body_card-offers">
+                      <p class="name_card mb-2">Земли населенных пунктов</p>
+                      <p class="min_norm-txt"><span>Адрес:</span> осковская область, Шаховской район, с/п Серединское, д.
+                        Репотино, ул.
+                        Придорожная.</p>
+                      <div class="white_inner-box mb-3">
+                        <p class="micro_text-inner mb-1">Рыночная стоимость: <span>800.000 рублей</span></p>
+                        <p class="micro_text-inner mb-1">Цена покупки: <span>81.000 рублей</span></p>
+                        <p class="micro_text-inner mb-0">Скидка на сегодня:<span>45.000 рублей</span></p>
+                      </div>
+                      <a href="#" class="blue_btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card_more-offers">
+                <div class="box_inner-offer">
+                  <p class="title_white-bold">Больше предложений?</p>
+                  <p class="text_content light_txt text-white pb-2">В день у нас добавляется более 200 участков. Подпишитесь
+                    на рассылку. Как только у нас появится подходящий Вам участок,
+                    мы сразу его Вам вышлем на почту!</p>
+                  <a href="#" class="btn_orange w-100 text-center">Посмотреть</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="container">
+          <h2 class="title_page min_title-page">Отзывы</h2>
+          <div class="row pt-4">
+            <div class="col-xl-4 col-md-6 mb-3 mb-xl-0">
+              <div class="comments_item">
+                <p class="orange_title"><img src="img/comment_icon.png" class="img-fluid" alt=""> Фамилия Имя</p>
+                <p class="text_content m-0">Повседневная практика показывает, что начало повседневной работы по формированию
+                  позиции играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+                  Разнообразный и богатый опыт рамки и место обучения рамки.</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-3 mb-xl-0">
+              <div class="comments_item">
+                <p class="orange_title"><img src="img/comment_icon.png" class="img-fluid" alt=""> Фамилия Имя</p>
+                <p class="text_content m-0">Повседневная практика показывает, что начало повседневной работы по формированию
+                  позиции играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+                  Разнообразный и богатый опыт рамки и место обучения рамки.</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-3 mb-xl-0">
+              <div class="comments_item">
+                <p class="orange_title"><img src="img/comment_icon.png" class="img-fluid" alt=""> Фамилия Имя</p>
+                <p class="text_content m-0">Повседневная практика показывает, что начало повседневной работы по формированию
+                  позиции играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+                  Разнообразный и богатый опыт рамки и место обучения рамки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="title_page min_title-page">Наши партнёры</h2>
+          <div class="partners_box">
+            <a href="" class="partners_item">
+              <div class="block_img-part">
+                <img src="img/partner1.png" class="img-fluid" alt="">
+              </div>
+              <p class="name_card">Название компании</p>
+            </a>
+            <a href="" class="partners_item">
+              <div class="block_img-part">
+                <img src="img/partner2.png" class="img-fluid pt-3" alt="">
+              </div>
+              <p class="name_card">Название компании</p>
+            </a>
+            <a href="" class="partners_item">
+              <div class="block_img-part">
+                <img src="img/partner3.png" class="img-fluid pt-4" alt="">
+              </div>
+              <p class="name_card">Название компании</p>
+            </a>
+            <a href="" class="partners_item">
+              <div class="block_img-part">
+                <img src="img/partner4.png" class="img-fluid pt-3" alt="">
+              </div>
+              <p class="name_card">Название компании</p>
+            </a>
+            <a href="" class="partners_item">
+              <div class="block_img-part">
+                <img src="img/partner2.png" class="img-fluid pt-3" alt="">
+              </div>
+              <p class="name_card">Название компании</p>
+            </a>
+          </div>
+        </div>
+      </section>
 
 
     </div>

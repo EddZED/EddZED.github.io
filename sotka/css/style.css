@@ -16,7 +16,7 @@ body{font-family:'Acrom-regular';color:#000;}
 .btn_menu .navbar-toggler-icon span:nth-of-type(1){position:absolute;top:-11px;right:0;width:32px;height:2px;background-color:#343C6A;transition:all .3s;}
 .btn_menu .navbar-toggler-icon span:nth-of-type(2){position:absolute;top:11px;right:0;width:32px;height:2px;background-color:#343C6A;transition:all .3s;}
 .intro{background-image:url(../img/bg_intro.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;padding:20px 0;height:85vh;display:flex;align-items:center;justify-content:start;}
-.text_content{font-size:14px;}
+.text_content{font-size:14px;line-height:17px;}
 .title_page{font-size:44px;font-family:Acrom-bold;color:#343C6A;line-height:50px;}
 .search_item-block{width:100%;background-color:#F9FAFC;border-radius:15px;padding:45px 40px 40px 40px;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);}
 .view_search{width:100%;background-color:#fff;border-radius:15px;border:1px solid #343C6A;padding:7px;}
@@ -145,20 +145,23 @@ body{font-family:'Acrom-regular';color:#000;}
 .gray_block-item{width:100%;display:block;min-height:240px;background-color:#E3E3E3;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);border-radius:15px;}
 .description_card-goods{padding:0 0 20px;}
 .info_contact{display:flex;align-items:center;justify-content:space-between;}
-.begin_blue-txt{font-size:16px;line-height:20px;color:#343C6A;min-width:130px;display:inline-block;}
+.begin_blue-txt{font-size:16px;line-height:20px;color:#343C6A;min-width:130px;display:inline-block;font-family:Acrom-bold;}
 .color_black{color:#4F4F4F;font-family:Acrom-regular;}
 .oraange_bold-text{color:#FF7848;font-size:16px;line-height:20px;font-family:Acrom-bold;}
 .slider_card-page{padding:20px 0;}
 .slider_card-page .min_text-white{font-size:12px;}
 .slider_card-page .num_bold{font-size:20px;}
-.manager_name{border:1px solid rgba(130,130,130,.4);border-radius:10px;padding:10px;}
+.slider_card-page .substrade{height:100%;}
+.slider_desc_card{padding:0;height:100%;}
+.manager_name{border:1px solid rgba(130,130,130,.4);border-radius:10px;padding:3px 15px 10px 15px;}
 .manager_name span{font-size:10px;color:#828282;}
 .manager_name .name_text{color:#343C6A;font-size:16px;line-height:22px;font-family:Acrom-medium;}
 .link_phone_manager{color:#1C1E29;font-size:18px;line-height:22px;transition:all .3s;}
 .link_phone_manager:hover{text-decoration:none;color:#343C6A;}
 .btn_orang-invert{background-color:background: rgba(255, 120, 72, 0.15);border: 1px solid #FF7848;background: rgba(255, 120, 72, 0.15);color:#FF7848;}
-
-
+.btn_orang-invert:hover{color:#FF7848;}
+.box_shadow-map{position:relative;border-radius:15px;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);overflow:hidden;}
+.name_map{position:absolute;display:inline-block;left:40px;top:15px;color:#343C6A;font-size:16px;font-family:Acrom-bold;}
 
 
 @media(min-width:1200px){
