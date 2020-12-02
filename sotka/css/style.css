@@ -175,14 +175,6 @@ body{font-family:'Acrom-regular';color:#000;}
 .checkbox:before{transition:all .3s;}
 .privacy_chek input[type="checkbox"]:checked + .checkbox:before{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background-color:#FF7848;left:0;right:0;top:0;bottom:0;margin:auto;}
 .shadow_btn{box-shadow:0px 3px 12px rgba(52, 60, 106, 0.3);}
-
-
-
-
-
-
-
-/*spec-page style*/
 .introspec-bg{background-image:url(../img/bg_intro-spec.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;padding:0 0 60px;}
 .title_spec{font-size:34px;line-height:36px;color:#343C6A;font-family:Acrom-bold;}
 .type_title{font-size:16px;line-height:19px;color:#343C6A;font-family:Acrom-bold;}
@@ -193,9 +185,9 @@ body{font-family:'Acrom-regular';color:#000;}
 .block_img-help img{border-radius:15px;}
 .services{padding:60px 0;}
 .card_services{display:flex;flex-direction:column;align-items:center;border-radius:15px;background-color:#F9FAFC;box-shadow: 0px 0px 20px 2px rgba(33, 32, 25, 0.1);overflow:hidden;height:100%;}
-.top_block-img-servis{text-align:center;overflow:hidden;width:100%;min-height:171px;}
+.top_block-img-servis{text-align:center;overflow:hidden;width:100%;max-height:171px;}
 .top_block-img-servis img{width:100%;}
-.body_card-services{padding:20px 15px;display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;}
+.body_card-services{padding:10px 15px;display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;}
 .card_name-service{font-size:18px;line-height:17px;color:#343C6A;font-family:Acrom-bold;}
 .price_service{font-size:22px;line-height:25px;color:#FF7848;font-family:Acrom-bold;}
 .card_services .btn_blue-catalog{font-size:14px;border-radius:10px;}
@@ -205,6 +197,10 @@ body{font-family:'Acrom-regular';color:#000;}
 .can_buy-img img{width:100%;}
 .can_buy .card_offers{height:100%;}
 .can_buy .card_name-service{font-size:16px;}
+.box_advantages{padding:35px 30px;border-radius:15px;background-color:#F9FAFC;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);width:100%;height:100%;}
+.advantages .oraange_bold-text{font-size:18px;}
+
+
 
 
 
@@ -260,6 +256,15 @@ body{font-family:'Acrom-regular';color:#000;}
   .nowrap_md::-webkit-scrollbar-thumb { height: 50px; background-color: #FF7848; border-radius: 15px;}
   .nowrap_md::-webkit-scrollbar-corner { background-color: #999;}
   .nowrap_md::-webkit-resizer { background-color: transparent;}
+  .box_advantages{padding:25px 15px;}
+  .advent_mobile_scroll{flex-wrap:nowrap;overflow-x:scroll;}
+  .advent_mobile_scroll::-webkit-scrollbar {height: 10px;}
+  .advent_mobile_scroll::-webkit-scrollbar-button {  background-color:transparent; }
+  .advent_mobile_scroll::-webkit-scrollbar-track {  background-color:transparent;}
+  .advent_mobile_scroll::-webkit-scrollbar-track-piece { background-color: rgba(255,120,72,.2);}
+  .advent_mobile_scroll::-webkit-scrollbar-thumb { height: 50px; background-color: #FF7848; border-radius: 15px;}
+  .advent_mobile_scroll::-webkit-scrollbar-corner { background-color: #999;}
+  .advent_mobile_scroll::-webkit-resizer { background-color: transparent;}
 }
 @media(max-width:767px){
   .input_label-search .border_right{border:none;}
@@ -288,4 +293,5 @@ body{font-family:'Acrom-regular';color:#000;}
 @media(max-width:575px){
   .name_sort{font-size:12px;padding:11px 0;}
   .page-item .page-link{padding:6px 7px}
+  .price_service{font-size:18px;}
 }
