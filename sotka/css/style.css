@@ -199,10 +199,10 @@ body{font-family:'Acrom-regular';color:#000;}
 .can_buy .card_name-service{font-size:16px;}
 .box_advantages{padding:35px 30px;border-radius:15px;background-color:#F9FAFC;box-shadow: 0px 6px 14px 2px rgba(33, 32, 25, 0.07);width:100%;height:100%;}
 .advantages .oraange_bold-text{font-size:18px;}
-
-
-
-
+.img_compit{width:100%;height:auto;border-radius:15px;}
+.sub_title_blue_bold{font-size:25px;line-height:28px;color:#343C6A;font-family:Acrom-bold;}
+.orange_block{background-color:#FF7848;border-radius:0 0 15px 15px;margin-top:15px;padding:20px 15px;}
+.white_num_econom{color:#fff;font-size:16px;line-height:24px;font-family:Acrom-bold;}
 
 
 @media(min-width:1200px){
