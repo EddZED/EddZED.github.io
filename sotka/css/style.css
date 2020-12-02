@@ -203,6 +203,15 @@ body{font-family:'Acrom-regular';color:#000;}
 .sub_title_blue_bold{font-size:25px;line-height:28px;color:#343C6A;font-family:Acrom-bold;}
 .orange_block{background-color:#FF7848;border-radius:0 0 15px 15px;margin-top:15px;padding:20px 15px;}
 .white_num_econom{color:#fff;font-size:16px;line-height:24px;font-family:Acrom-bold;}
+.form_individ .input_form{border-right:1px solid #1C1E29;}
+.form_individ .input_form input{border:none;}
+.form_individ .input_form.bord_none{border-right:none;}
+
+
+
+
+
+
 
 
 @media(min-width:1200px){
@@ -265,6 +274,8 @@ body{font-family:'Acrom-regular';color:#000;}
   .advent_mobile_scroll::-webkit-scrollbar-thumb { height: 50px; background-color: #FF7848; border-radius: 15px;}
   .advent_mobile_scroll::-webkit-scrollbar-corner { background-color: #999;}
   .advent_mobile_scroll::-webkit-resizer { background-color: transparent;}
+  .form_individ .input_form{border-right:none;border-bottom:1px solid #1C1E29;}
+  .form_individ .input_form.bord_none{border-right:none;border-bottom:none;}
 }
 @media(max-width:767px){
   .input_label-search .border_right{border:none;}
