@@ -23,8 +23,8 @@
                 </div>
               </div>
 						</div>
-						<div class="col-lg-8 order-lg-2 order-3 border_desctop-right">
-							<div class="collapse navbar-collapse" id="menu">
+						<div class="col-lg-8 order-lg-2 order-3 border_desctop-right px-0">
+							<div class="row align-items-center d-none d-lg-flex" id="menu">
 								<div class="col-lg-8">
 									<div class="menu_desctop">
 										<ul class="list-unstyled">
@@ -53,10 +53,46 @@
 							<div class="block_basket">
 								<a href="mailto:" class="link_mail mr-3"><img class="img-fluid" src="img/mail.png" alt=""></a>
 								<a href="#" class="basket_btn"><img class="img-fluid pr-3" src="img/cart.png" alt=""><span>3</span></a>
+								<button class="btn_mob"><span></span></button>
 							</div>
 						</div>
 					</div>
-        </div>
+				</div>
+				<div id="menu2" class="mobile_menu">
+					<div class="wrapper_menu">
+						<div class="container">
+							<button class="escape_menu"><img class="img-fluid" src="img/exit_menu.png" alt=""></button>
+							<div class="mobile_menu-content pt-4">
+								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#buyers" aria-expanded="true" aria-controls="buyers">Покупателям <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
+								<ul id="buyers" class="list-unstyled collapse show mb-0">
+									<li class=""><a href="#" class="">О компании</a></li>
+									<li class=""><a href="#" class="">Акции</a></li>
+									<li class=""><a href="#" class="">Новости</a></li>
+									<li class=""><a href="#" class="">Вопрос / Ответ</a></li>
+									<li class=""><a href="#" class="">Контакты</a></li>
+								</ul>
+								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#catal" aria-expanded="false"
+									aria-controls="catal">каталог <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
+								<ul id="catal" class="list-unstyled collapse mb-0">
+									<li class=""><a href="#" class="">Пункт 1</a></li>
+									<li class=""><a href="#" class="">Пункт 2</a></li>
+									<li class=""><a href="#" class="">Пункт 3</a></li>
+									<li class=""><a href="#" class="">Пункт 4</a></li>
+									<li class=""><a href="#" class="">Пункт 5</a></li>
+								</ul>
+								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#decor" aria-expanded="false"
+									aria-controls="decor">оформление <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
+								<ul id="decor" class="list-unstyled collapse mb-0">
+									<li class=""><a href="#" class="">Пункт 1</a></li>
+									<li class=""><a href="#" class="">Пункт 2</a></li>
+									<li class=""><a href="#" class="">Пункт 3</a></li>
+									<li class=""><a href="#" class="">Пункт 4</a></li>
+									<li class=""><a href="#" class="">Пункт 5</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
       </nav>
     </header>
     <section class="rezults">
@@ -686,10 +722,16 @@ aria-hidden="true">
       $('.navbar').toggleClass('bg_mobile');
       $('body').toggleClass('overflow-hidden');
       $('.text_mobile-header').toggleClass('d-none');
+			$('.mobile_menu').addClass('active');
+			$('.block_basket').addClass('mobile_view');
     });
 		$('.menu_item').click(function(){
 			$('.menu_item').removeClass('active');
 			$(this).addClass('active');
+		});
+		$('.escape_menu').click(function(){
+			$('.mobile_menu').removeClass('active');
+			$('.block_basket').removeClass('mobile_view');
 		})
   </script>
 </body>
