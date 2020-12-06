@@ -16,9 +16,9 @@
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
         <div class="container">
           <div class="row align-items-center w-100 m-0">
-            <div class="col-lg-2 col-6 order-1 pl-2">
+            <div class="col-lg-2 col-5 order-1 pl-2">
               <div class="row">
-                <div class="col-lg-12 col-10">
+                <div class="col-lg-12">
                   <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремонт тв"></a>
                 </div>
               </div>
@@ -49,7 +49,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-6 order-lg-3 order-2 pr-0">
+						<div class="col-lg-2 col-7 order-lg-3 order-2 pr-lg-0">
 							<div class="block_basket">
 								<a href="mailto:" class="link_mail mr-3"><img class="img-fluid" src="img/mail.png" alt=""></a>
 								<a href="#" class="basket_btn"><img class="img-fluid pr-3" src="img/cart.png" alt=""><span>3</span></a>
@@ -62,9 +62,9 @@
 					<div class="wrapper_menu">
 						<div class="container">
 							<button class="escape_menu"><img class="img-fluid" src="img/exit_menu.png" alt=""></button>
-							<div class="mobile_menu-content pt-4">
+							<div class="mobile_menu-content pt-4" id="mobile_menu">
 								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#buyers" aria-expanded="true" aria-controls="buyers">Покупателям <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
-								<ul id="buyers" class="list-unstyled collapse show mb-0">
+								<ul id="buyers" class="list-unstyled collapse show mb-0" data-parent="#mobile_menu">
 									<li class=""><a href="#" class="">О компании</a></li>
 									<li class=""><a href="#" class="">Акции</a></li>
 									<li class=""><a href="#" class="">Новости</a></li>
@@ -73,7 +73,7 @@
 								</ul>
 								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#catal" aria-expanded="false"
 									aria-controls="catal">каталог <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
-								<ul id="catal" class="list-unstyled collapse mb-0">
+								<ul id="catal" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
 									<li class=""><a href="#" class="">Пункт 1</a></li>
 									<li class=""><a href="#" class="">Пункт 2</a></li>
 									<li class=""><a href="#" class="">Пункт 3</a></li>
@@ -82,13 +82,24 @@
 								</ul>
 								<a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#decor" aria-expanded="false"
 									aria-controls="decor">оформление <img class="img-fluid pl-4" src="img/arrow_menu.png" alt=""></a>
-								<ul id="decor" class="list-unstyled collapse mb-0">
+								<ul id="decor" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
 									<li class=""><a href="#" class="">Пункт 1</a></li>
 									<li class=""><a href="#" class="">Пункт 2</a></li>
 									<li class=""><a href="#" class="">Пункт 3</a></li>
 									<li class=""><a href="#" class="">Пункт 4</a></li>
 									<li class=""><a href="#" class="">Пункт 5</a></li>
 								</ul>
+								<div class="phone_work mt-3">
+									<div class="phone_icon pr-2">
+										<img class="img-fluid" src="img/phone.png" alt="">
+									</div>
+									<div class="phone_work-block">
+										<a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+										<p class="min_txt">Режим работы с 9:00-18:00</p>
+									</div>
+								</div>
+								<a href="mailto:info@f-cleaning.ru" class="mail_link-mobile"><img class="img-fluid pr-2" src="img/mail_mobile.png" alt=""> info@f-cleaning.ru</a>
+								<p class="adress_contact mb-0 mt-3">117545, Москва,<br> Днепропетровский проезд, 1</p>
 							</div>
 						</div>
 					</div>
@@ -97,360 +108,425 @@
     </header>
     <section class="rezults">
       <div class="container">
-        <div class="d-md-flex align-items-stretch">
-          <div class="col-md-9 px-0 pl-md-2 pl-md-0">
-            <div class="slider_rezults">
-              <div class="rezults_item slider2">
-                <img src="img/banner.png" class="img-fluid">
-              </div>
-              <div class="rezults_item slider2">
-                <img src="img/banner.png" class="img-fluid">
-              </div>
-              <div class="rezults_item slider2">
-                <img src="img/banner.png" class="img-fluid">
-              </div>
-            </div>
-			
-            <div class="nav_sl d-xl-none">
-              <button class="slick_arrow-2 slick-prev-2"><img class="img-fluid" src="img/left_2.png" alt=""></button>
-              <button class="slick_arrow-2 slick-next-2"><img class="img-fluid" src="img/right_2.png" alt=""></button>
-            </div>
-          </div>
-		  <div class="col-md-3 d-flex d-md-block px-0 pl-md-2 pr-md-0">
-			  <div class="col-6 col-md-12 pl-0 px-md-0 pb-2" style="height:50%">
-			    <div class="block-hed">
-				  <div class="text-center">
-				    <img src="img/pay.png" alt="Покупателю">
-				  </div>
-				  <h3>Покупателю</h3>
-				  <p>Техника для уборки в доме и вокруг него</p>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-12 pr-0 px-md-0 pt-md-2" style="height:50%">
-			    <div class="block-hed block-hed2">
-				  <div class="text-center">
-				    <img src="img/action.png" alt="Акции и спецпредложения">
-				  </div>
-				  <h3>акции и спец<br class="br-mob">предложения</h3>
-				  <p>Уборочная техника профессионального назначения</p>
-				</div>
-			  </div>
-			</div>
+        <div class="row">
+					<div class="col-xl-9 mb-3 mb-xl-0">
+						<div class="slider_rezults">
+							<div class="rezults_item slider2">
+								<div class="item_itro-slider">
+									<div class="offset-lg-3 col-lg-9 text-center">
+										<p class="sub_title-slider">Профессиональное клининговое оборудование</p>
+										<h1 class="title_slider pb-lg-4">Наш сервис - ваша выгода</h1>
+										<a href="#" class="link_more-slider">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+							<div class="rezults_item slider2">
+								<div class="item_itro-slider">
+									<div class="offset-lg-3 col-lg-9 text-center">
+										<p class="sub_title-slider">Профессиональное клининговое оборудование</p>
+										<h1 class="title_slider pb-lg-4">Наш сервис - ваша выгода</h1>
+										<a href="#" class="link_more-slider">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+							<div class="rezults_item slider2">
+								<div class="item_itro-slider">
+									<div class="offset-lg-3 col-lg-9 text-center">
+										<p class="sub_title-slider">Профессиональное клининговое оборудование</p>
+										<h1 class="title_slider pb-lg-4">Наш сервис - ваша выгода</h1>
+										<a href="#" class="link_more-slider">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="row flex-xl-column justify-content-between">
+							<div class="col-6 col-xl-12 mb-xl-3">
+								<div class="block-hed text-center h-100">
+									<div class="text-center">
+										<img src="img/pay.png" alt="Покупателю">
+									</div>
+									<h3>Покупателю</h3>
+									<p>Техника для уборки в доме и вокруг него</p>
+								</div>
+							</div>
+							<div class="col-6 col-xl-12">
+								<div class="block-hed block-hed2 text-center h-100">
+									<div class="text-center">
+										<img src="img/action.png" alt="Акции и спецпредложения">
+									</div>
+									<h3>акции и спец<br class="br-mob">предложения</h3>
+									<p>Уборочная техника профессионального назначения</p>
+								</div>
+							</div>
+						</div>
+					</div>
         </div>
-		
-      </div>
-	  
-    </section>
+			</div>
+	  </section>
     <section class="content">
       <div class="container">
-	    <div class="row">
-		  <div class="col-md-3 order-2 order-md-1">
-		    <h2>Популярное</h2>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 mt-md-4 px-md-0">
-			  <div class="product">
-			    <div class="img">
-				  <img src="img/prod1.png" class="img-fluid" alt="" title="">
-				</div>
-				<div class="pr-desc">
-				  <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
-				  <p class="made">Производитель:&nbsp;Prestige (Россия)</p>
-				  <div class="d-flex justify-content-between">
-				    <p class="price">34 900 ₽</p>
-					<button class="add">+</button>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-md-9 order-1 order-md-2">
-		    <div class="w-100 d-flex align-items-end justify-content-between mb-4 mb-md-0">
-			  <h2>Каталог продукции</h2>
-			  <a class="d-none d-md-block">Смотреть весь каталог</a>
-			</div>
-			<div class="row mt-md-4">
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-6 col-md-4">
-			    <div class="category">
-				  <h3>Поломоечные машины</h3>
-				  <div class="text-right">
-				    <img src="img/product1.png" alt="посудомоечные машины" title="Поломоечные машины">
-				  </div>
-				</div>
-			  </div>
-			</div>
+				<div class="row">
+					<div class="col-lg-3 order-2 order-lg-1">
+						<h2>Популярное</h2>
+						<div class="row scrolling_mobile-device pt-4">
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod1.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
+										<p class="made">Производитель: Prestige (Россия)</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">34 900 ₽</p>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod2.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Lindhaus LINDWASH 30</p>
+										<p class="made">Производитель: Lindhaus</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">74 400 ₽</p>
+											<span class="old_price">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod3.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Fiorentini Deluxe 350B</p>
+										<p class="made">Производитель: Fiorentini</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">186 395 ₽</p>
+											<span class="old_price d-none">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod1.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
+										<p class="made">Производитель: Prestige (Россия)</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">34 900 ₽</p>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod2.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Lindhaus LINDWASH 30</p>
+										<p class="made">Производитель: Lindhaus</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">74 400 ₽</p>
+											<span class="old_price">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod3.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Fiorentini Deluxe 350B</p>
+										<p class="made">Производитель: Fiorentini</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">186 395 ₽</p>
+											<span class="old_price d-none">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod2.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Lindhaus LINDWASH 30</p>
+										<p class="made">Производитель: Lindhaus</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">74 400 ₽</p>
+											<span class="old_price">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-10 mb-3">
+								<div class="product">
+									<div class="img">
+										<img src="img/prod3.png" class="img-fluid" alt="" title="">
+									</div>
+									<div class="pr-desc">
+										<p class="name">Fiorentini Deluxe 350B</p>
+										<p class="made">Производитель: Fiorentini</p>
+										<div class="d-flex align-items-center justify-content-between">
+											<p class="price m-0">186 395 ₽</p>
+											<span class="old_price d-none">96 900 ₽</span>
+											<button class="add">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 order-1 order-lg-2">
+						<div class="w-100 d-flex align-items-end justify-content-between mb-3 mb-md-0">
+							<h2>Каталог продукции</h2>
+							<a class="d-none d-lg-block">Смотреть весь каталог</a>
+						</div>
+						<div class="row mt-md-4">
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Поломоечные<br> машины</h3>
+									<div class="text-right w-100">
+										<img src="img/product1.png" class="img_category" alt="Поломоечные машины" title="Поломоечные машины">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Подметальные<br> машины</h3>
+									<div class="text-right w-100">
+										<img src="img/product2.png" class="img_category" alt="Подметальные машины" title="Подметальные машины">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Профессиональные<br> пылесосы</h3>
+									<div class="text-right w-100">
+										<img src="img/product3.png" class="img_category pt-0" alt="Профессиональные пылесосы" title="Профессиональные пылесосы">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Роботы пылесосы для бассеинов</h3>
+									<div class="text-right w-100">
+										<img src="" class="img_category"">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Инверционные<br> барабаны</h3>
+									<div class="text-right w-100">
+										<img src="img/product5.png" class="img_category" alt="Инверционные барабаны" title="Инверционные барабаны">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Аппараты для бахил</h3>
+									<div class="text-right w-100">
+										<img src="img/product6.png" class="img_category img_bottom" alt="Аппараты для бахил" title="Аппараты для бахил">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Перогенераторы</h3>
+									<div class="text-right w-100">
+										<img src="img/product7.png" class="img_category" alt="Перогенераторы" title="Перогенераторы">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Машины для чистки экскалаторов</h3>
+									<div class="text-right w-100">
+										<img src="img/product8.png" class="img_category" alt="Машины для чистки экскалаторов" title="Машины для чистки экскалаторов">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Роторные машины по уходу за полами</h3>
+									<div class="text-right w-100">
+										<img src="img/product9.png" class="img_category" alt="Роторные машины по уходу за полами"
+											title="Роторные машины по уходу за полами">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Машины для<br> чистки ковровых<br> покрытий</h3>
+									<div class="text-right w-100">
+										<img src="img/product10.png" class="img_category" alt="Машины для чистки ковровых покрытий"
+											title="Машины для чистки ковровых покрытий">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Сушилки для<br> ковровых<br> покрытий</h3>
+									<div class="text-right w-100">
+										<img src="img/product11.png" class="img_category" alt="Сушилки для ковровых покрытий"
+											title="Сушилки для ковровых покрытий">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Уборочные<br> тележки</h3>
+									<div class="text-right w-100">
+										<img src="img/product12.png" class="img_category" alt="Уборочные тележки"
+											title="Уборочные тележки">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Мойки<br> высокого<br> давления</h3>
+									<div class="text-right w-100">
+										<img src="img/product13.png" class="img_category" alt="Мойки высокого давления" title="Мойки высокого давления">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Инвентарь для уборки полов</h3>
+									<div class="text-right w-100">
+										<img src="img/product14.png" class="img_category" alt="Инвентарь для уборки полов" title="Инвентарь для уборки полов">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Инвентарь для<br> мытья стёкл</h3>
+									<div class="text-right w-100">
+										<img src="img/product15.png" class="img_category" alt="Инвентарь для мытья стёкл"
+											title="Инвентарь для мытья стёкл">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Инвентарь<br> для уборки<br> улиц</h3>
+									<div class="text-right w-100">
+										<img src="img/product16.png" class="img_category pt-0" alt="Инвентарь для уборки улиц"
+											title="Инвентарь для уборки улиц">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Тележки сервесные,<br> гостинечные</h3>
+									<div class="text-right w-100">
+										<img src="img/product17.png" class="img_category img_bottom" alt="Тележки сервесные, гостинечные"
+											title="Тележки сервесные, гостинечные">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Оборудование<br> туалетных<br> комнат</h3>
+									<div class="text-right w-100">
+										<img src="img/product18.png" class="img_category img_bottom" alt="Оборудование туалетных комнат"
+											title="Оборудование туалетных комнат">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Урны, баки,<br> пепельницы<br> для мусора</h3>
+									<div class="text-right w-100">
+										<img src="img/product19.png" class="img_category img_bottom" alt="Урны, баки, пепельницы для мусора"
+											title="Урны, баки, пепельницы для мусора">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Машинки для чистки обуви</h3>
+									<div class="text-right w-100">
+										<img src="img/product20.png" class="img_category img_bottom" alt="Машинки для чистки обуви"
+											title="Машинки для чистки обуви">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Грязезащитные<br> покрытия</h3>
+									<div class="text-right w-100">
+										<img src="img/product21.png" class="img_category img_bottom" alt="Грязезащитные покрытия"
+											title="Грязезащитные покрытия">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Шкафы сушильные</h3>
+									<div class="text-right w-100">
+										<img src="img/product22.png" class="img_category" alt="Шкафы сушильные"
+											title="Шкафы сушильные">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Моющие средства</h3>
+									<div class="text-right w-100">
+										<img src="img/product23.png" class="img_category img_bottom" alt="Моющие средства" title="Моющие средства">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Измельчитель<br> пищевых<br> отходов</h3>
+									<div class="text-right w-100">
+										<img src="img/product24.png" class="img_category" alt="Измельчитель пищевых отходов" title="Измельчитель пищевых отходов">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Снегоуборочная техника</h3>
+									<div class="text-right w-100">
+										<img src="img/product25.png" class="img_category" alt="Снегоуборочная техника"	title="Снегоуборочная техника">
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-md-4 mb-3">
+								<a href="#" class="category">
+									<h3>Аксессуары и исходные материалы</h3>
+									<div class="text-right w-100">
+										<img src="img/product26.png" class="img_category" alt="Аксессуары и исходные материалы"
+											title="Аксессуары и исходные материалы">
+									</div>
+								</a>
+							</div>
+						</div>
 			<div class="w-100 d-md-flex about">
 			  <div class="col-md-8 px-0 px-md-2 pt-4 pt-md-0 ">
 			    <h2>Почему выбирают именно нас</h2>
@@ -720,6 +796,7 @@ aria-hidden="true">
     });
     $('.btn_mob').click(function(){
       $('.navbar').toggleClass('bg_mobile');
+      $('.btn_mob').addClass('d-none');
       $('body').toggleClass('overflow-hidden');
       $('.text_mobile-header').toggleClass('d-none');
 			$('.mobile_menu').addClass('active');
@@ -732,6 +809,8 @@ aria-hidden="true">
 		$('.escape_menu').click(function(){
 			$('.mobile_menu').removeClass('active');
 			$('.block_basket').removeClass('mobile_view');
+			$('.btn_mob').removeClass('d-none');
+			$('body').removeClass('overflow-hidden');
 		})
   </script>
 </body>

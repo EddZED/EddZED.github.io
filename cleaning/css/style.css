@@ -37,24 +37,31 @@ section a{color:#44A9E1!important;font-size:16px;font-family:open sans semibold}
 .btn_mob span:before{content:'';position:absolute;width:100%;height:2px;background-color:#44A9E1;top:-10px;left:0;}
 .btn_mob span:after{content:'';position:absolute;width:100%;height:2px;background-color:#44A9E1;top:10px;left:0;}
 .btn_mob:focus{outline:none !important;}
+.item_itro-slider{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background-image:url(../img/bg_slider.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;padding:60px 10px;}
+.slider_rezults{display:block;height:100%;border-radius:15px;overflow:hidden;}
+.slick-slider .slick-track, .slick-slider .slick-list{height:100%;}
+.sub_title-slider{font-size:19px;line-height:26px;letter-spacing:0.06em;text-transform:uppercase;font-family:open sans;font-weight:300;}
+.title_slider{font-size:35px;line-height:40px;text-transform:uppercase;font-family:open sans;font-weight:800;color:#33303F;}
+.link_more-slider{display:inline-block;background-color:#44A9E1;border-radius:15px;padding:15px 25px;font-size:19px;line-height:26px;letter-spacing:0.03em;color:#33303F !important;font-family:open sans;font-weight:600;}
+.old_price{font-size:14px;color:#828282;font-family:open sans;font-weight:600;text-decoration:line-through}
+.img_category{padding-top:10px;}
+.img_bottom{bottom:0;position:absolute;right:0;}
 
 
 
 
 
-
-
-
-.block-hed{background:#44A9E1;border-radius:15px;height:100%;color:#33303F;padding:0px 20px;box-shadow:0px 2px 12px rgba(0,0,0,0.15)}
+.block-hed{background:#44A9E1;border-radius:15px;height:100%;color:#33303F;padding:5px 20px;box-shadow:0px 2px 12px rgba(0,0,0,0.15);display:flex;flex-direction:column;justify-content:space-between;}
 .block-hed2{background:#33303F;color:#44A9E1}
 .block-hed h3{font-size:20px;font-family:open sans extra;text-transform:uppercase}
 .block-hed p{font-size:13px;font-family:open sans light;line-height:13px}
 .block-hed2 h3{font-size:19px}
-.category{border-radius:15px;width:100%;padding:0px;background:url(../img/Mask.png);background-size:100% 100%;margin-bottom:30px;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
-.category h3{position:absolute;left:40px;top:20px;font-size:16px;width:60%;color:#fff;font-family:open sans semibold;}
+.category{position:relative;border-radius:15px;min-height:145px;width:100%;height:100%;padding:0px;background:url(../img/Mask.png);background-size:100% 100%;box-shadow:0 2px 12px rgba(0,0,0,0.15);overflow:hidden;display:inline-flex;justify-content:space-between;transition:background .3s;}
+.category:hover{text-decoration:none;background:url(../img/mask_hover.png);background-size:100% 100%;}
+.category h3{position:absolute;left:20px;top:20px;font-size:16px;color:#fff;font-family:open sans semibold;}
 .category img{max-height:170px}
 .product{width:100%;border-radius:15px;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
-.product .img{background:#E6E6E5;padding:20px;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px}
+.product .img{background:#E6E6E5;padding:10px 5px;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px}
 .product .img img{height:120px}
 .product .pr-desc{padding:20px}
 .product .pr-desc .name{font-family:open sans semibold;font-size:13px;color:#33303f}
@@ -155,10 +162,6 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
 .rezults{position:relative;padding:120px 0 80px}
 .slick-next{right:0}
 .slick-prev{left:0}
-.rezults_item.slick-slide.slider1:not(.slick-current){transform:translateX(100px) scale(.8)}
-.rezults_item.slick-slide.slider3:not(.slick-current){transform:translateX(-100px) scale(.8)}
-.slider_rezults .slick-next:before{display:none}
-.slider_rezults .slick-prev:before{display:none}
 .nav_sl{width:100%;position:relative}
 .slick_arrow-2{position:absolute;border:none;background-color:transparent;left:0;right:0;margin:auto;top:-15px}
 .slick_arrow-2:focus{outline:none}
@@ -306,7 +309,6 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .br-mob{display:block}
   .block-hed2{background:#33303F;color:#44A9E1}
   .category h3{left:30px}
-  .category{margin-bottom:15px}
   .pre{width:50%;padding-left:15px;padding-right:15px;float:left;height:160px;}
   h2{margin-bottom:30px}
   .product{margin-bottom:15px}
@@ -328,8 +330,8 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .header_link-mobile img{transition:all .3s;}
   .header_link-mobile[aria-expanded="false"] img{transform:rotateX(180deg);}
   .mobile_menu-content ul li a{font-size:12px;line-height:14px;color:#33303F;font-family:open sans;}
-
-
+  .mail_link-mobile{display:inline-block;margin-top:15px;font-weight: 600;font-size: 15px;line-height:18px;font-family:open sans;color:#33303F;}
+  .adress_contact{font-size:15px;font-weight:600;font-family:open sans;color:#33303F;}
 
 
 
@@ -346,7 +348,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .remont{padding:40px 0}
   .card_remont{padding:0}
   .card_remont-order{padding:25px 15px}
-  .rezults{padding:40px 0}
+  .rezults{padding:95px 0 40px}
   .title_block-big{font-size:50px;letter-spacing:0.12em;line-height:76px}
   .color_yelow-sub{font-size:31px;line-height:37px}
   .we_have{padding:40px 0 100px}
@@ -376,11 +378,11 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .how_us .color_yelow-sub{font-size:24px;line-height:30px}
   .problem .sub_title{font-size:26px}
   .intro_ustroystva{margin-top:140px}
+  .img_category{max-width:100%;padding-top:20px;padding-left:30px;}
+  .category h3{font-size:13px;}
 }
 @media(max-width:500px){
-  .slider_rezults .slick-list{width:284px}
   .rezults_item .block_img{width:284px;height:191px}
-  .slider_rezults{overflow:visible;padding:25px 0}
   .num_slider{left:32%}
   .have_item-2{padding:0}
   .nav_sl-mobile .slick-dots{bottom:0}
@@ -388,6 +390,8 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .title_block-big{letter-spacing:0.09em}
   .color_yelow-sub{font-size:29px}
   .block_adress{height:272px}
+  .sub_title-slider{font-size:15px;}
+  .title_slider{font-size:27px;line-height:32px;}
 }
 @media(max-width:420px){
   .block_img-intro{min-height:240px}
@@ -412,6 +416,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .sl-comments{width:270px}
   .intro_ustroystva{margin-top:110px}
   .pad_top_mobile-order-2{padding-top:170px;min-height:720px}
+  .block-hed p{font-size:12px;}
 }
 
 
