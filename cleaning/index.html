@@ -15,76 +15,48 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
         <div class="container">
-          <div class="row align-items-center justify-content-between w-100 m-0">
-            <div class="col-lg-2 col-6 px-0">
-              <div class="row align-items-center">
+          <div class="row align-items-center w-100 m-0">
+            <div class="col-lg-2 col-6 order-1 pl-2">
+              <div class="row">
                 <div class="col-lg-12 col-10">
-                  <a class="navbar-brand" href="#"><img class="img-fluid pr-lg-4" src="img/logo.png" alt="ремонт тв"></a>
+                  <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремонт тв"></a>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-10 col-6">
-              <div class="row justify-content-end justify-content-lg-center align-items-lg-center">
-                <div class="col-lg-6 px-0 pr-5">
-                  <div class="collapse navbar-collapse justify-content-end justify-content-lg-center" id="menu_1">
-                    <ul class="navbar-nav w-100 justify-content-lg-between">
-                      <li class="nav-item d-none d-lg-block active">
-                        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Каталог</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Сервис</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Доставка</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                      </li>
-                      
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="row justify-content-end">
-                    <div class="collapse navbar-collapse justify-content-end" id="menu_2">
-                      <div class="block_menu-contact">
-					    					<div class="d-flex">
-						  						<div class="relative mr-3">
-														<img src="img/phone.png" alt="телефон">
-						  						</div>
-						  						<div class="relative">
-														<div class="social_phone-contact">
-							  							<a href="tel:+7 (495) 782-63-50" class="link_phone d-none d-lg-block">+7 (495) 782-63-50</a>
-														</div>
-														<div class="order_call-block d-none d-lg-block pt-2 pt-md-0">
-							  							<span>Режим работы с 9:00-18:00</span>
-														</div>
-						  						</div>
-												</div>
-                        <!--<p class="min_head d-lg-none pt-3 mb-2">Телефон:</p>
-                        <a href="tel:+379951231212" class="link_phone d-lg-none"><img src="img/black_phone.png" class="img-fluid pr-2" alt="">+379 (95) 123-12-12</a>
-                        <p class="min_head d-lg-none pt-3 mb-2">E-mail:</p>
-                        <a href="mailto:mail@mail.ru" class="mail_link d-lg-none"><img src="img/black_mail.png" class="img-fluid pr-2" alt="">mail@mail.ru</a>-->
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-				<div class="col-lg-3 px-0">
-				  <div class="d-flex justify-content-end">
-				    <a href="" class="pr-3 d-none d-lg-block"><img src="img/mail.png"></a>
-						<a href="" class="cart d-flex"><img src="img/cart.png" class="pr-2"><span>3</span></a>
-						<button class="navbar-toggler btn_mob d-lg-none" type="button" data-toggle="collapse" data-target="#menu_1, #menu_2"
-                      aria-controls="menu_1 menu_2" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"><span></span></span>
-            </button>
+						</div>
+						<div class="col-lg-8 order-lg-2 order-3 border_desctop-right">
+							<div class="collapse navbar-collapse" id="menu">
+								<div class="col-lg-8">
+									<div class="menu_desctop">
+										<ul class="list-unstyled">
+											<li class="menu_item active"><a href="#">Компания</a></li>
+											<li class="menu_item"><a href="#">Каталог</a></li>
+											<li class="menu_item"><a href="#">Сервис</a></li>
+											<li class="menu_item"><a href="#">Доставка</a></li>
+											<li class="menu_item"><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 px-0">
+									<div class="phone_work">
+										<div class="phone_icon pr-2">
+											<img class="img-fluid" src="img/phone.png" alt="">
+										</div>
+										<div class="phone_work-block">
+											<a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+											<p class="min_txt">Режим работы с 9:00-18:00</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-6 order-lg-3 order-2 pr-0">
+							<div class="block_basket">
+								<a href="mailto:" class="link_mail mr-3"><img class="img-fluid" src="img/mail.png" alt=""></a>
+								<a href="#" class="basket_btn"><img class="img-fluid pr-3" src="img/cart.png" alt=""><span>3</span></a>
+							</div>
+						</div>
 					</div>
-              </div>
-            </div>
-          </div>
+        </div>
       </nav>
     </header>
     <section class="rezults">
@@ -714,7 +686,11 @@ aria-hidden="true">
       $('.navbar').toggleClass('bg_mobile');
       $('body').toggleClass('overflow-hidden');
       $('.text_mobile-header').toggleClass('d-none');
-    })
+    });
+		$('.menu_item').click(function(){
+			$('.menu_item').removeClass('active');
+			$(this).addClass('active');
+		})
   </script>
 </body>
 </html>
