@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категории</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
+        <div class="container">
+          <div class="row align-items-center w-100 m-0">
+            <div class="col-lg-2 col-5 order-1 pl-2">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремонт тв"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 order-lg-2 order-3 border_desctop-right px-0">
+              <div class="row align-items-center d-none d-lg-flex" id="menu">
+                <div class="col-lg-8">
+                  <div class="menu_desctop">
+                    <ul class="list-unstyled">
+                      <li class="menu_item active"><a href="#">Компания</a></li>
+                      <li class="menu_item"><a href="#">Каталог</a></li>
+                      <li class="menu_item"><a href="#">Сервис</a></li>
+                      <li class="menu_item"><a href="#">Доставка</a></li>
+                      <li class="menu_item"><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="phone_work">
+                    <div class="phone_icon pr-2">
+                      <img class="img-fluid" src="img/phone.png" alt="">
+                    </div>
+                    <div class="phone_work-block">
+                      <a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+                      <p class="min_txt">Режим работы с 9:00-18:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-7 order-lg-3 order-2 pr-lg-0">
+              <div class="block_basket">
+                <a href="mailto:" class="link_mail mr-3"><img class="img-fluid" src="img/mail.png" alt=""></a>
+                <a href="#" class="basket_btn"><img class="img-fluid pr-3" src="img/cart.png" alt=""><span>3</span></a>
+                <button class="btn_mob"><span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="mobile_menu">
+          <div class="wrapper_menu">
+            <div class="container">
+              <button class="escape_menu"><img class="img-fluid" src="img/exit_menu.png" alt=""></button>
+              <div class="mobile_menu-content pt-4" id="mobile_menu">
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#buyers"
+                  aria-expanded="true" aria-controls="buyers">Покупателям <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="buyers" class="list-unstyled collapse show mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">О компании</a></li>
+                  <li class=""><a href="#" class="">Акции</a></li>
+                  <li class=""><a href="#" class="">Новости</a></li>
+                  <li class=""><a href="#" class="">Вопрос / Ответ</a></li>
+                  <li class=""><a href="#" class="">Контакты</a></li>
+                </ul>
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#catal"
+                  aria-expanded="false" aria-controls="catal">каталог <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="catal" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">Пункт 1</a></li>
+                  <li class=""><a href="#" class="">Пункт 2</a></li>
+                  <li class=""><a href="#" class="">Пункт 3</a></li>
+                  <li class=""><a href="#" class="">Пункт 4</a></li>
+                  <li class=""><a href="#" class="">Пункт 5</a></li>
+                </ul>
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#decor"
+                  aria-expanded="false" aria-controls="decor">оформление <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="decor" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">Пункт 1</a></li>
+                  <li class=""><a href="#" class="">Пункт 2</a></li>
+                  <li class=""><a href="#" class="">Пункт 3</a></li>
+                  <li class=""><a href="#" class="">Пункт 4</a></li>
+                  <li class=""><a href="#" class="">Пункт 5</a></li>
+                </ul>
+                <div class="phone_work mt-3">
+                  <div class="phone_icon pr-2">
+                    <img class="img-fluid" src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone_work-block">
+                    <a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+                    <p class="min_txt">Режим работы с 9:00-18:00</p>
+                  </div>
+                </div>
+                <a href="mailto:info@f-cleaning.ru" class="mail_link-mobile"><img class="img-fluid pr-2"
+                    src="img/mail_mobile.png" alt=""> info@f-cleaning.ru</a>
+                <p class="adress_contact mb-0 mt-3">117545, Москва,<br> Днепропетровский проезд, 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <section class="breadcrumb_block">
+        <div class="container py-lg-3 py-0">
+          <div class="row">
+            <nav aria-label="breadcrumb" class="px-3">
+              <ol class="breadcrumb pl-0 mb-0">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Категория товара</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="category_content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 pt-2 pt-lg-0">
+              <h2 class="mb-4 d-none d-lg-inline-block">Каталог</h2>
+              <aside class="sidebar">
+                <a href="" class="mobile_filter d-lg-none" data-toggle="collapse" data-target="#sidebar" aria-expanded="true" aria-controls="sidebar">фильтр <img class="img-fluid pl-3" src="img/blue_arrow.png" alt=""></a>
+                <ul id="sidebar" class="list-unstyled collapse show sidebar_link-box mb-0">
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_1.png" alt="поломоечные машины" title="Поломоечные машины">
+                      </div>
+                      Поломоечные машины
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_2.png" alt="Подметальные машины" title="Подметальные машины">
+                      </div>
+                      Подметальные машины
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_3.png" alt="Профессиональные пылесосы" title="Профессиональные пылесосы">
+                      </div>
+                      Профессиональные пылесосы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_4.png" alt="Робаты пылесосы для бассеинов" title="Робаты пылесосы для бассеинов">
+                      </div>
+                      Робаты пылесосы для бассеинов
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_5.png" alt="Инверционные барабаны"
+                          title="Инверционные барабаны">
+                      </div>
+                      Инверционные барабаны
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_6.png" alt="Аппараты для бахил" title="Аппараты для бахил">
+                      </div>
+                      Аппараты для бахил
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_7.png" alt="Перогенераторы" title="Перогенераторы">
+                      </div>
+                      Перогенераторы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_8.png" alt="Машины для чистки экскалаторов" title="Машины для чистки экскалаторов">
+                      </div>
+                      Машины для чистки экскалаторов
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_9.png" alt="Роторные машины по уходу за полами"
+                          title="Роторные машины по уходу за полами">
+                      </div>
+                      Роторные машины по уходу за полами
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_10.png" alt="Машины для чистки ковровых покрытий"
+                          title="Машины для чистки ковровых покрытий">
+                      </div>
+                      Машины для чистки ковровых покрытий
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_11.png" alt="Сушилки для ковровых покрытий"
+                          title="Сушилки для ковровых покрытий">
+                      </div>
+                      Сушилки для ковровых покрытий
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_12.png" alt="Уборочные тележки"
+                          title="Уборочные тележки">
+                      </div>
+                      Уборочные тележки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_13.png" alt="Мойки высокого давления" title="Мойки высокого давления">
+                      </div>
+                      Мойки высокого давления
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_14.png" alt="Инвентарь для уборки полов" title="Инвентарь для уборки полов">
+                      </div>
+                      Инвентарь для уборки полов
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_15.png" alt="Инвентарь для мытья стёкл"
+                          title="Инвентарь для мытья стёкл">
+                      </div>
+                      Инвентарь для мытья стёкл
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_16.png" alt="Инвентарь для уборки улиц"
+                          title="Инвентарь для уборки улиц">
+                      </div>
+                      Инвентарь для уборки улиц
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_17.png" alt="Тележки сервесные, гостинечные"
+                          title="Тележки сервесные, гостинечные">
+                      </div>
+                      Тележки сервесные, гостинечные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_18.png" alt="Оборудование туалетных комнат"
+                          title="Оборудование туалетных комнат">
+                      </div>
+                      Оборудование туалетных комнат
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_19.png" alt="Урны, баки, пепельницы для мусора"
+                          title="Урны, баки, пепельницы для мусора">
+                      </div>
+                      Урны, баки, пепельницы для мусора
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_20.png" alt="Машинки для чистки обуви"
+                          title="Машинки для чистки обуви">
+                      </div>
+                      Машинки для чистки обуви
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_21.png" alt="Грязезащитные покрытия" title="Грязезащитные покрытия">
+                      </div>
+                      Грязезащитные покрытия
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_22.png" alt="Шкафы сушильные" title="Шкафы сушильные">
+                      </div>
+                      Шкафы сушильные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_23.png" alt="Моющие средства" title="Моющие средства">
+                      </div>
+                      Моющие средства
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_24.png" alt="Измельчитель пищевых отходов" title="Измельчитель пищевых отходов">
+                      </div>
+                      Измельчитель пищевых отходов
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_25.png" alt="Аксессуары и исходные материалы"
+                          title="Аксессуары и исходные материалы">
+                      </div>
+                      Аксессуары и исходные материалы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_category">
+                      <div class="min_img-block mr-1">
+                        <img class="img-fluid" src="img/category_26.png" alt="Снегоуборочная техника"
+                          title="Снегоуборочная техника">
+                      </div>
+                      Снегоуборочная техника
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+            <div class="col-lg-9 pt-4 pt-lg-0">
+              <h2>Шкафы сушильные</h2>
+              <div class="row pt-3">
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk1.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk2.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk3.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk4.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk5.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk6.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk1.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk2.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk3.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk4.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk5.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk6.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk1.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk2.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="product">
+                    <div class="img position-relative py-0">
+                      <img src="img/chk3.png" class="img-fluid img_category-page" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <span class="old_price">36 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center py-4">
+                <div class="pagination_block">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item active"><a class="page-link">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link">3</a></li>
+                      <li class="page-item"><a class="page-link">4</a></li>
+                      <li class="page-item"><a class="page-link more">....</a></li>
+                      <li class="page-item"><a class="page-link">32</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <h2 class="pt-3">Лидеры продаж</h2>
+              <div class="row scrolling_mobile-device pt-4">
+                <div class="col-lg-4 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod1.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
+                      <p class="made">Производитель: Prestige (Россия)</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod2.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Lindhaus LINDWASH 30</p>
+                      <p class="made">Производитель: Lindhaus</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">74 400 ₽</p>
+                        <span class="old_price">96 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod3.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Fiorentini Deluxe 350B</p>
+                      <p class="made">Производитель: Fiorentini</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">186 395 ₽</p>
+                        <span class="old_price d-none">96 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="img/logo.png" class="img-fluid" alt="">
+            <p class="mt-2">Интернет-магазин клинингового оборудования</p>
+    
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Покупателям</h3>
+                <ul>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Вопрос / Ответ</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>кАТАЛОГ</h3>
+                <ul>
+                  <li><a href="">Поломоечные машины</a></li>
+                  <li><a href="">Пылесосы</a></li>
+                  <li><a href="">Мойки высокого давления</a></li>
+                  <li><a href="">Уборочный инвентарь</a></li>
+                  <li><a href="">Роботы пылесосы</a></li>
+                  <li><a href="">Грязезащитные покрытия</a></li>
+                  <li><a href="" class="catalog-all">Весь каталог</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>Оформление</h3>
+                <ul>
+                  <li><a href="">Оплата</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Политика конфеденциальности</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-md-right">
+            <div class="row justify-content-start justify-content-md-center justify-content-lg-end">
+              <div class="col text-left text-sm-center text-lg-right">
+                <div
+                  class="block_menu-contact flex-row justify-content-start justify-content-sm-center justify-content-lg-end pt-3 pt-lg-0">
+                  <div class="d-flex align-items-center">
+                    <div class="relative">
+                      <img src="img/phone.png" class="pr-2" alt="телефон">
+                    </div>
+                    <div class="relative">
+                      <div class="social_phone-contact">
+                        <a href="tel:+7 (495) 782-63-50" class="link_phone">+7 (495) 782-63-50</a>
+                      </div>
+                      <div class="order_call-block pt-2 pt-md-0">
+                        <span>Режим работы с 9:00-18:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-start justify-content-sm-center text-left text-sm-center text-lg-right justify-content-lg-end align-items-center mt-2">
+                  <img src="img/mail.png" alt="электронная почта" class="mr-2">
+                  <p class="email">info@f-cleaning.ru</p>
+                </div>
+                <p class="address text-left text-sm-center text-lg-right">117545, Москва, Днепропетровский проезд, 1</p>
+                <h4 class="text-left text-sm-center text-lg-right">Способы оплаты:</h4>
+                <img src="img/pay1.png" alt="способы оплаты">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider_rezults.js"></script>
+    <script src="js/slider_have.js"></script>
+    <script src="js/slider_comments.js"></script>
+    <script>
+      $('.nav-item').click(function () {
+        $('.nav-item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.btn_mob').click(function () {
+        $('.navbar').toggleClass('bg_mobile');
+        $('.btn_mob').addClass('d-none');
+        $('body').toggleClass('overflow-hidden');
+        $('.text_mobile-header').toggleClass('d-none');
+        $('.mobile_menu').addClass('active');
+        $('.block_basket').addClass('mobile_view');
+      });
+      $('.menu_item').click(function () {
+        $('.menu_item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.escape_menu').click(function () {
+        $('.mobile_menu').removeClass('active');
+        $('.block_basket').removeClass('mobile_view');
+        $('.btn_mob').removeClass('d-none');
+        $('body').removeClass('overflow-hidden');
+      });
+      $('.link_category').click(function(){
+        $('.sidebar_link-box').removeClass('show');
+        $('.mobile_filter').attr("aria-expanded",false);
+      })
+    </script>
+    </body>
+    
+    </html>
