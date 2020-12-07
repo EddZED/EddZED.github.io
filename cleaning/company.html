@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Компания</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-light">
+        <div class="container">
+          <div class="row align-items-center w-100 m-0">
+            <div class="col-lg-2 col-5 order-1 pl-2">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" alt="ремонт тв"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 order-lg-2 order-3 border_desctop-right px-0">
+              <div class="row align-items-center d-none d-lg-flex" id="menu">
+                <div class="col-lg-8">
+                  <div class="menu_desctop">
+                    <ul class="list-unstyled">
+                      <li class="menu_item active"><a href="#">Компания</a></li>
+                      <li class="menu_item"><a href="#">Каталог</a></li>
+                      <li class="menu_item"><a href="#">Сервис</a></li>
+                      <li class="menu_item"><a href="#">Доставка</a></li>
+                      <li class="menu_item"><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="phone_work">
+                    <div class="phone_icon pr-2">
+                      <img class="img-fluid" src="img/phone.png" alt="">
+                    </div>
+                    <div class="phone_work-block">
+                      <a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+                      <p class="min_txt">Режим работы с 9:00-18:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-7 order-lg-3 order-2 pr-lg-0">
+              <div class="block_basket">
+                <a href="mailto:" class="link_mail mr-3"><img class="img-fluid" src="img/mail.png" alt=""></a>
+                <a href="#" class="basket_btn"><img class="img-fluid pr-3" src="img/cart.png" alt=""><span>3</span></a>
+                <button class="btn_mob"><span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="mobile_menu">
+          <div class="wrapper_menu">
+            <div class="container">
+              <button class="escape_menu"><img class="img-fluid" src="img/exit_menu.png" alt=""></button>
+              <div class="mobile_menu-content pt-4" id="mobile_menu">
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#buyers"
+                  aria-expanded="true" aria-controls="buyers">Покупателям <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="buyers" class="list-unstyled collapse show mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">О компании</a></li>
+                  <li class=""><a href="#" class="">Акции</a></li>
+                  <li class=""><a href="#" class="">Новости</a></li>
+                  <li class=""><a href="#" class="">Вопрос / Ответ</a></li>
+                  <li class=""><a href="#" class="">Контакты</a></li>
+                </ul>
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#catal"
+                  aria-expanded="false" aria-controls="catal">каталог <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="catal" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">Пункт 1</a></li>
+                  <li class=""><a href="#" class="">Пункт 2</a></li>
+                  <li class=""><a href="#" class="">Пункт 3</a></li>
+                  <li class=""><a href="#" class="">Пункт 4</a></li>
+                  <li class=""><a href="#" class="">Пункт 5</a></li>
+                </ul>
+                <a href="#" class="header_link-mobile py-3" data-toggle="collapse" data-target="#decor"
+                  aria-expanded="false" aria-controls="decor">оформление <img class="img-fluid pl-4"
+                    src="img/arrow_menu.png" alt=""></a>
+                <ul id="decor" class="list-unstyled collapse mb-0" data-parent="#mobile_menu">
+                  <li class=""><a href="#" class="">Пункт 1</a></li>
+                  <li class=""><a href="#" class="">Пункт 2</a></li>
+                  <li class=""><a href="#" class="">Пункт 3</a></li>
+                  <li class=""><a href="#" class="">Пункт 4</a></li>
+                  <li class=""><a href="#" class="">Пункт 5</a></li>
+                </ul>
+                <div class="phone_work mt-3">
+                  <div class="phone_icon pr-2">
+                    <img class="img-fluid" src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone_work-block">
+                    <a href="tel:+74957826350" class="link_header-phone">+7 (495) 782-63-50</a>
+                    <p class="min_txt">Режим работы с 9:00-18:00</p>
+                  </div>
+                </div>
+                <a href="mailto:info@f-cleaning.ru" class="mail_link-mobile"><img class="img-fluid pr-2"
+                    src="img/mail_mobile.png" alt=""> info@f-cleaning.ru</a>
+                <p class="adress_contact mb-0 mt-3">117545, Москва,<br> Днепропетровский проезд, 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <section class="breadcrumb_block">
+        <div class="container py-lg-3 py-0">
+          <div class="row">
+            <nav aria-label="breadcrumb" class="px-3">
+              <ol class="breadcrumb pl-0 mb-0">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Компания</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="company">
+        <div class="container">
+          <h2>О компании</h2>
+          <div class="row pt-lg-4">
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Широкий ассортимент товаров для дома и продукция для промышленных предприятий.</p>
+              <p class="text_content-light">Наша компания специализируется на продаже уборочной техники и современного оборудования. У нас вы можете приобрести
+              профессиональные строительные пылесосы, машинки для чистки обуви и ковровых изделий, автоматические и механические
+              устройства. Большой выбор вендинговых аппаратов. Реализуем машинки для чистки обуви , для организаций, малых
+              предприятий, торговых центров. Ознакомиться с полным ассортиментом продукции можно в каталоге на нашем сайте.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Поломоечные и подметальные машины по разумным ценам.</p>
+              <p class="text_content-light">В продаже имеются поломоечные машины от известных зарубежных производителей. Богатый выбор сетевых и аккумуляторных
+              устройств. В соответствующем разделе каталога представлены самые популярные модели: «Cleanfix», «Lavor», «Fiorentini»,
+              «Сolumbus», «Numatic», «Factory Cat», «Cimel», «Gansow», «Сomac», «AFC», «TSM». Вы найдете товары из Швейцарии, Италии,
+              Германии, США и Китая. Предлагаем самоходные поломоечные машины, райдер-устройства, технику компактных размеров на любой
+              вкус и кошелек.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Роторные машины для уборки помещений.</p>
+              <p class="text_content-light">Поломоечные машины идеально подходят для ежедневной уборки, однако для удаления сложных трудно выводимых пятен, разумным
+              решением будет покупка роторной машины. Отличительны особенности: бережный уход за напольными покрытиями любого типа,
+              чистота и порядок в доме. Демократичные цены и высокое качество товара.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Подметальные и снегоуборочные машины.</p>
+              <p class="text_content-light">Мы предлагаем усовершенствованные модели современной техники: подметальные машины для всесезонного использования.
+              Техника прекрасно справляется с уборкой большого количества снега. В ассортименте снегоуборочные машины различных
+              классов и типом привода. Демократичные цены и высокое качество товара.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Большой выбор парогенераторов, аппаратов высокого давления и инерционных барабанов.</p>
+              <p class="text_content-light">В современном мире на пике популярности бесконтактная уборка помещений. Рады предложить самые современные модели
+              технических изобретений: парогенераторы, мойки высокого давления, автомобильные компактные устройства. Минимойка для
+              автомобиля без особых усилий за несколько минут наведет порядок в салоне. Имеются автомоечные системы для укладки
+              шлангов: инерционные барабаны «Ramex».</p>
+              <p class="header_content pt-3">Техника для уборки эскалаторов.</p>
+              <p class="text_content-light">На нашем сайте представлены машины для чистки эскалаторов – незаменимые устройства для уборки крупных торговых центров и
+              предприятий. На все товары, приобретенные в интернет-магазине, предоставляем гарантию сроком на 12 месяцев.
+              Демократичные цены и высокое качество товара.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Многофункциональные профессиональные пылесосы.</p>
+              <p class="text_content-light">В наличии промышленные и индустриальные пылесосы, которые отлично подходят для сбора сухого мусора и жидкой грязи.
+              Основная задача строительного пылесоса поддержание чистоты в промышленных предприятиях. Они созданы для работы в
+              чрезвычайных условиях, к примеру, если деятельность организации связана с взрывоопасными веществами и радиацией.
+              Эффективно удаляют радиоактивную пыль до мельчайших частиц.</p> 
+              <p class="text_content-light">Реализуем пылесосы для сухой и влажной уборки. Особой
+              популярностью пользуются модели с аквафильтром и моющие аппараты. Мы предлагаем роботы-пылесосы для уборки бассейнов, в
+              частности «Zodiac Vortex», «Dolphin» и вертикальные модели, ранцевые и аккумуляторные устройства, электровеники и другие
+              технические приспособления. В наличии самая современная техника от ведущих производителей мира: «Krausen», «Starmix»,
+              «Numatic», «Cleanfix». Возможно, вас заинтересуют машинки для чистки ковровых изделий. Товар вы найдете в каталоге в
+              соответствующем разделе.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Инвентарь для уборки: сервисные и гостиничные тележки.</p>
+              <p class="text_content-light">Идеальным вариантом для гостиничного бизнеса будет приобретение уборочных и сервисных тележек. Техника предназначена для
+              поддержания чистоты на должном уровне, используется для обслуживания номеров и уборки этажей. Среди сопутствующих
+              товаров вы найдете инвентарь для мытья стекол, лопаты, метла, урны, пепельницы, баки и тележки для сбора и дальнейшей
+              транспортировки мусора.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Сушильные шкафы для одежды и сушильные устройства для обуви.</p>
+              <p class="text_content-light">В наши дни новые технологии стремительно развиваются, появляется масса полезных приспособлений. Готовы предложить вам
+              сушильные шкафы для профессиональной одежды и аппараты для сушки обуви, которые удачно используют в спортивных
+              комплексах, силовых структурах, детских садах. Их устанавливают в офисных помещениях, сфере обслуживания и различных
+              отраслях промышленности.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Практичные покрытия для защиты от грязи.</p>
+              <p class="text_content-light">Мелкий мусор, пыль, грязь неизбежно попадают в помещение и являются постоянными спутниками человека. В каталоге нашего
+              интернет-магазина представлены самые современные системы защиты от грязи. На пике популярности «ProfilGate®» - система,
+              обеспечивающая очистку шин. В наличии модульные грязезащитные покрытия, алюминиевые и оцинкованные грязезащитные
+              решетки. Огромным покупательским спросом пользуются ворсовые покрытия от грязи «Notrax», которые эффективно решают
+              проблему. Актуальное предложение от нашей компании – аппараты для надевания бахил: простота и удобство использования.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="header_content">Диспоузер – незаменимый помощник на кухне.</p>
+              <p class="text_content-light">/* Ежедневно появляются новые разработки для поддержания чистоты, которые существенно облегчают жизнь. Теперь нет
+              необходимости ежедневно выносить мусор. Советуем приобрести измельчитель пищевых отходов под названием диспоузер. Прибор
+              предназначен для использования в бытовых условиях. Полезная вещь, которая пригодится в каждом доме. Монтируется в мойку
+              и подходит для любого типа. Основные преимущества: отсутствие неприятных запахов, экономия времени, чистота и порядок
+              без особых усилий. Хорошим спросом пользуется диспоузер «Status». Ознакомиться с полным ассортиментом продукции вы
+              можете в каталоге. */</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why_us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 order-2 order-lg-1">
+              <h2 class="d-none d-lg-inline-block pb-3">Почему выбирают именно нас</h2>
+              <p>Наша компания специализируется на продаже профессионального уборочного оборудования и уборочной техники -
+                промышленные пылесосы, подметальные и поломоечные машины, мойки высокого давления, фены, роторные машины,
+                машины для
+                чистки ковровых покрытий, а также машинок для чистки обуви и грязезащитных покрытий.</p>
+              <p class="mb-0">Мы предлагаем профессиональное оборудование для клининга от ведущих производителей, которые
+                зарекомендовали себя на
+                российском рынке: CLEANFIX (Швейцария), COLUMBUS (Германия), LAVOR PRO, COMAC, IPC GANSOW (Италия). Это мойки
+                высокого давления, мойки сверхвысокого давления и низкого давления, пылесосы для сухой и влажной уборки,
+                промышленные пылесосы, роторные машины, ковровые экстракторы, поломоечные и подметальные машины, которые
+                используются в офисах, гостиницах, банках, гипермаркетах, </p>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2">
+              <h2 class="d-lg-none">Почему выбирают именно нас</h2>
+              <div class="block_full-img text-center">
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center d-md-flex my-5">
+            <div class="pre">
+              <img src="img/pre1.png" alt="Более 10 лет на рынке">
+              <p>Более 10 лет на рынке</p>
+            </div>
+            <div class="pre">
+              <img src="img/pre2.png" alt="Только проверенные поставщики">
+              <p>Только проверенные поставщики</p>
+            </div>
+            <div class="pre">
+              <img src="img/pre3.png" alt="Быстрая доставка по всей России">
+              <p>Быстрая доставка по всей России</p>
+            </div>
+            <div class="pre">
+              <img src="img/pre4.png" alt="Персональный менеджер">
+              <p>Персональный менеджер</p>
+            </div>
+            <div class="pre">
+              <img src="img/pre5.png" alt="Официальная гарантия на товар">
+              <p>Официальная гарантия на товар</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="img/logo.png" class="img-fluid" alt="">
+            <p class="mt-2">Интернет-магазин клинингового оборудования</p>
+    
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Покупателям</h3>
+                <ul>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Вопрос / Ответ</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>кАТАЛОГ</h3>
+                <ul>
+                  <li><a href="">Поломоечные машины</a></li>
+                  <li><a href="">Пылесосы</a></li>
+                  <li><a href="">Мойки высокого давления</a></li>
+                  <li><a href="">Уборочный инвентарь</a></li>
+                  <li><a href="">Роботы пылесосы</a></li>
+                  <li><a href="">Грязезащитные покрытия</a></li>
+                  <li><a href="" class="catalog-all">Весь каталог</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>Оформление</h3>
+                <ul>
+                  <li><a href="">Оплата</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Политика конфеденциальности</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-md-right">
+            <div class="row justify-content-start justify-content-md-center justify-content-lg-end">
+              <div class="col text-left text-sm-center text-lg-right">
+                <div
+                  class="block_menu-contact flex-row justify-content-start justify-content-sm-center justify-content-lg-end pt-3 pt-lg-0">
+                  <div class="d-flex align-items-center">
+                    <div class="relative">
+                      <img src="img/phone.png" class="pr-2" alt="телефон">
+                    </div>
+                    <div class="relative">
+                      <div class="social_phone-contact">
+                        <a href="tel:+7 (495) 782-63-50" class="link_phone">+7 (495) 782-63-50</a>
+                      </div>
+                      <div class="order_call-block pt-2 pt-md-0">
+                        <span>Режим работы с 9:00-18:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-start justify-content-sm-center text-left text-sm-center text-lg-right justify-content-lg-end align-items-center mt-2">
+                  <img src="img/mail.png" alt="электронная почта" class="mr-2">
+                  <p class="email">info@f-cleaning.ru</p>
+                </div>
+                <p class="address text-left text-sm-center text-lg-right">117545, Москва, Днепропетровский проезд, 1</p>
+                <h4 class="text-left text-sm-center text-lg-right">Способы оплаты:</h4>
+                <img src="img/pay1.png" alt="способы оплаты">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider_rezults.js"></script>
+    <script src="js/slider_have.js"></script>
+    <script src="js/slider_comments.js"></script>
+    <script>
+      $('.nav-item').click(function () {
+        $('.nav-item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.btn_mob').click(function () {
+        $('.navbar').toggleClass('bg_mobile');
+        $('.btn_mob').addClass('d-none');
+        $('body').toggleClass('overflow-hidden');
+        $('.text_mobile-header').toggleClass('d-none');
+        $('.mobile_menu').addClass('active');
+        $('.block_basket').addClass('mobile_view');
+      });
+      $('.menu_item').click(function () {
+        $('.menu_item').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.escape_menu').click(function () {
+        $('.mobile_menu').removeClass('active');
+        $('.block_basket').removeClass('mobile_view');
+        $('.btn_mob').removeClass('d-none');
+        $('body').removeClass('overflow-hidden');
+      })
+    </script>
+    </body>
+    
+    </html>
