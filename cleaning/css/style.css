@@ -365,6 +365,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .slider_nav_mini-img .slick-track{flex-direction:row;}
   .slider_nav-item{max-height:132px;overflow:hidden;}
   .slider_nav-item img{width:100% !important}
+  .nav_description-item{font-size:20px;}
 }
 @media(max-width:991px){
   .cart span{position:absolute;width:25px;height:25px;border-radius:50%;padding:0;text-align:center;right:-7px;bottom:-7px}
@@ -416,6 +417,12 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .company{padding:0;}
   .why_us{padding:30px 0;}
   .name_goods-card{font-size:25px;line-height:30px;}
+  .nav_description-item{font-size:23px;}
+  .nav_description-item:before{display:none;}
+  .nav_decription-goods{flex-direction:column;}
+  .nav_description-item{display:flex;align-items:center;justify-content:space-between;}
+  .nav_description-item img{transition:transform .3s;}
+  .nav_description-item[aria-expanded="false"] img{transform:rotateX(180deg);}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px}

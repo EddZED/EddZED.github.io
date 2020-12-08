@@ -205,33 +205,35 @@
               </div>
             </div>
           </div>
-          <div class="row pt-4">
+          <div class="row pt-lg-4">
             <div class="col-12">
-              <div id="descript_controls" class="nav_decription-goods">
-                <a href="#" data-toggle="collapse" data-target="#desc_item" class="nav_description-item active" aria-expanded="true" aria-controls="desc_item">Описание</a>
-                <a href="#" data-toggle="collapse" data-target="" class="nav_description-item" aria-expanded="true" aria-controls="">Характеристики</a>
-                <a href="#" data-toggle="collapse" data-target="" class="nav_description-item" aria-expanded="true" aria-controls="">Сопутствующие товары</a>
-                <a href="#" data-toggle="collapse" data-target="" class="nav_description-item" aria-expanded="true" aria-controls="">Видео</a>
-                <a href="#" data-toggle="collapse" data-target="" class="nav_description-item" aria-expanded="true" aria-controls="">Доставка</a>
-                <a href="#" data-toggle="collapse" data-target="" class="nav_description-item" aria-expanded="true" aria-controls="">Контакты</a>
-              </div>
+              <div class="nav_decription-goods">
+                <a href="#" data-toggle="collapse" data-target="#desc_item" class="nav_description-item active d-none d-lg-flex" aria-expanded="true" aria-controls="desc_item">Описание</a>
+                <a href="#" data-toggle="collapse" data-target="#haracter_item" class="nav_description-item d-none d-lg-flex" aria-expanded="false" aria-controls="haracter_item">Характеристики</a>
+                <a href="#" data-toggle="collapse" data-target="#subgoods_item" class="nav_description-item d-none d-lg-flex" aria-expanded="false" aria-controls="subgoods_item">Сопутствующие товары</a>
+                <a href="#" data-toggle="collapse" data-target="#video_item" class="nav_description-item d-none d-lg-flex" aria-expanded="false" aria-controls="video_item">Видео</a>
+                <a href="#" data-toggle="collapse" data-target="#delivery_item" class="nav_description-item d-none d-lg-flex" aria-expanded="false" aria-controls="delivery_item">Доставка</a>
+                <a href="#" data-toggle="collapse" data-target="#contact_item" class="nav_description-item d-none d-lg-flex" aria-expanded="false" aria-controls="contact_item">Контакты</a>
             </div>
-            <div class="col-12 pt-4">
-              <div class="description_content-card px-lg-4 py-lg-5 px-2 py-4">
-                <div id="desc_item" class="collapse show" data-parent="#descript_controls">
-                  <p class="content_title">Описание</p>
-                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+            </div>
+            <div class="col-12 pt-lg-4">
+              <div class="description_content" id="descript_controls">
+                <a href="#" data-toggle="collapse" data-target="#desc_item" class="nav_description-item active d-lg-none my-3" aria-expanded="true" aria-controls="desc_item">Описание <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="desc_item" class="description_content-card collapse show" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Описание</p>
+                    <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
                   современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
                   систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
                   типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
                   производственных помещениях и т.д.</p> 
-                  <p class="text_content-light">Усовершенствованная версия машины ROUND 45 E 55 TOUCH включает в себя важное
+                    <p class="text_content-light">Усовершенствованная версия машины ROUND 45 E 55 TOUCH включает в себя важное
                   обновление: система сенсорного управления TOUCH. Основной сенсор расположен по центру ручки, прикасаясь к которой,
                   оператор одним нажатием активирует или отключает рабочие функции машины (вращение щетки и подачу раствора) в
                   предустановленном режиме. Преимуществом такого управления является значительное увеличение показателей эргономики,
                   производительности и надёжности.</p>
-                  <p class="header_content pt-3">Характерные преимущества:</p>
-                  <p class="text_content-light">Сенсорная система управления TOUCH обеспечивает простой контроль над машиной и её рабочими функциями. Два варианта
+                    <p class="header_content pt-3">Характерные преимущества:</p>
+                    <p class="text_content-light">Сенсорная система управления TOUCH обеспечивает простой контроль над машиной и её рабочими функциями. Два варианта
                   щеточного давления 29 или 34 кг для эффективных результатов очистки на любой поверхности пола. Встроенный водяной фильтр
                   предотвращает засорение бака чистой воды. Лоток для сбора крупного мусора предотвращает засорение бака отработанного
                   раствора. Корпус баков выполнен из полиэтилена высокой прочности, устойчивого к ударам. Широкое заливное отверстие и
@@ -239,10 +241,132 @@
                   служит для активации машины. Интуитивно понятная панель управления обеспечивает простой контроль над машиной и её
                   рабочими функциями.</p>
                   <a href="#" class="more_info-link">Подробнее</a>
+                  </div>
+                </div>
+                <a href="#" data-toggle="collapse" data-target="#haracter_item" class="nav_description-item d-lg-none my-3" aria-expanded="false" aria-controls="haracter_item">Характеристики <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="haracter_item" class="description_content-card collapse" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Характеристики</p>
+                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+                    современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
+                    систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
+                    типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
+                    производственных помещениях и т.д.</p> 
+                  </div>
+                </div>
+                <a href="#" data-toggle="collapse" data-target="#subgoods_item" class="nav_description-item d-lg-none my-3" aria-expanded="false" aria-controls="subgoods_item">Сопутствующие товары <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="subgoods_item" class="description_content-card collapse" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Сопутствующие товары</p>
+                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+                    современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
+                    систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
+                    типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
+                    производственных помещениях и т.д.</p> 
+                  </div>
+                </div>
+                <a href="#" data-toggle="collapse" data-target="#video_item" class="nav_description-item d-lg-none my-3" aria-expanded="false" aria-controls="video_item">Видео <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="video_item" class="description_content-card collapse" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Видео</p>
+                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+                    современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
+                    систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
+                    типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
+                    производственных помещениях и т.д.</p>
+                  </div> 
+                </div>
+                <a href="#" data-toggle="collapse" data-target="#delivery_item" class="nav_description-item d-lg-none my-3" aria-expanded="false" aria-controls="delivery_item">Доставка <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="delivery_item" class="description_content-card collapse" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Доставка</p>
+                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+                    современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
+                    систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
+                    типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
+                    производственных помещениях и т.д.</p>
+                  </div> 
+                </div>
+                <a href="#" data-toggle="collapse" data-target="#contact_item" class="nav_description-item d-lg-none my-3" aria-expanded="false" aria-controls="contact_item">Контакты <img src="img/arrow_menu.png" class="img-fluid" alt=""></a>
+                <div id="contact_item" class="description_content-card collapse" data-parent="#descript_controls">
+                  <div class="px-4 py-5">
+                    <p class="content_title">Контакты</p>
+                  <p class="text_content-light pt-3">Поломоечная машина Ghibli Round 45 E 55 TOUCH — новый кабельный аппарат для мойки полов. Данная модель выполнена в
+                    современном дизайне и гарантирует комфорт при ее использовании. Линейка «Round» имеет интерактивную панель, улучшенную
+                    систему прижима щетки, делая Ghibli Round 45 E 55 TOUCH подходящим выбором для эффективных результатов очистки любого
+                    типа пола. Применяется для уборки торговых и офисных центров, спортзалов, площадей большой и средней площади,
+                    производственных помещениях и т.д.</p>
+                  </div> 
                 </div>
               </div>
             </div>
           </div>
+          <h2 class="pt-5 mb-2">Вас может заинтересовать</h2>
+              <div class="row scrolling_mobile-device pt-4">
+                <div class="col-xl-3 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod1.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Машинка для чистки обуви Prestige Compact Black Leather </p>
+                      <p class="made">Производитель: Prestige (Россия)</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">34 900 ₽</p>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod2.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Lindhaus LINDWASH 30</p>
+                      <p class="made">Производитель: Lindhaus</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">74 400 ₽</p>
+                        <span class="old_price">96 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod3.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Fiorentini Deluxe 350B</p>
+                      <p class="made">Производитель: Fiorentini</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">186 395 ₽</p>
+                        <span class="old_price d-none">96 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-10 mb-3">
+                  <div class="product catal">
+                    <div class="img">
+                      <img src="img/prod2.png" class="img-fluid" alt="" title="">
+                    </div>
+                    <div class="pr-desc">
+                      <p class="name">Lindhaus LINDWASH 30</p>
+                      <p class="made">Производитель: Lindhaus</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="price m-0">74 400 ₽</p>
+                        <span class="old_price">96 900 ₽</span>
+                        <button class="add">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </section>
     </div>
@@ -353,6 +477,10 @@
         $('.btn_mob').removeClass('d-none');
         $('body').removeClass('overflow-hidden');
       });
+      $('.nav_description-item').click(function(){
+        $('.nav_description-item').removeClass('active');
+        $(this).toggleClass('active');
+      })
     </script>
     <script>
       $('.slider_nav_big-img').slick({
