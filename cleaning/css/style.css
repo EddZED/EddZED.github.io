@@ -114,6 +114,29 @@ h2:before{position:absolute;content:'';bottom:-7px;left:0;width:100%;height:4px;
 .link_phone-conatact-page{display:inline-block;font-size:15px;font-weight:bold;color:#33303F;line-height:20px;height:100%;}
 .adress-page_contact{font-size:15px;font-weight:600;font-family:open sans;color:#33303F;}
 .block_height{min-height:75px;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.box_content-bascket{border-top:1px solid #44A9E1;}
+.delete_all{border:none;background-color:transparent;text-decoration:underline;font-size:14px;line-height:20px;color:#828282;font-weight:normal;transition:all .3s;}
+.delete_all:hover{color:#000;outline:none;}
+.delete_all:focus{outline:none;}
+.bascket_item{background-color:#fff;box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);border-radius: 15px;padding:15px 15px;}
+.wrapper_cart-item{max-width:100px;max-height:100px;overflow:hidden;border-radius:15px;box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.08);}
+.link_name-goods-cart{font-size:18px;line-height:20px;display:inline-block;color:#33303F;font-weight:bold;}
+.articul_item{font-size:14px;line-height:15px;color:#33303F;}
+.price_cart{font-size:24px;line-height:26px;color:#33303F;font-family:open sans;font-weight:bold;}
+.delivery_block{border-radius:15px;background-color:#fff;box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);padding:30px 15px;}
+.title_deliv{font-size:20px;line-height:23px;font-family:open sans;font-weight:bold;color:#33303F;}
+.radio_content{font-size:14px;line-height:16px;color:#828282;font-weight:bold;display:inline-block;padding-left:23px;transition:all .3s;position:relative;}
+.radiobox{position:relative;cursor:pointer;width:100%;}
+.radiobox input[type="radio"]{display:none;}
+.radio_content:before{content:'';position:absolute;width:18px;height:18px;border-radius:5px;border:1px solid #828282;top:0;bottom:0;left:0;margin:auto;transition:all .3s;}
+.radio_content:after{content:'';position:absolute;width:14px;height:14px;border-radius:5px;background-color:#44A9E1;top:0;bottom:0;left:2px;margin:auto;opacity:0;transition:all .3s;}
+.radiobox input[type="radio"]:checked + .radio_content{color:#44A9E1;}
+.radiobox input[type="radio"]:checked + .radio_content:before{border-color:#44A9E1;}
+.radiobox input[type="radio"]:checked + .radio_content:after{opacity:1;}
+.desc_deliv{font-size:12px;color:#33303F;line-height:15px;padding-left:23px;}
+.size_18{font-size:18px;color:#33303F;line-height:20px;font-weight:bold;}
+.min_blue-price{font-size:24px;line-height:30px;color:#44A9E1;font-weight:bold;}
+.wrapper_form-order{border-radius:15px;background-color:#fff;box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.08);padding:30px 25px;}
 
 
 
@@ -433,6 +456,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .nav_description-item img{transition:transform .3s;}
   .nav_description-item[aria-expanded="false"] img{transform:rotateX(180deg);}
   .blue_title{font-size:18px;line-height:26px;}
+  .box_content-bascket{border:none;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px}
@@ -467,6 +491,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .syb_title-yelow{font-size:20px}
   .block_full-img{min-height:200px;}
   .header_content{font-size:18px;}
+  .wrapper_form-order{padding:25px 10px;}
 }
 @media(max-width:575px){
   .block_img-intro{min-height:270px}
@@ -480,6 +505,9 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .intro_ustroystva{margin-top:140px}
   .img_category{max-width:100%;padding-top:20px;padding-left:30px;}
   .category h3{font-size:13px;}
+  .link_name-goods-cart{font-size:15px;}
+  .bascket_item .counter_block{width:75px;z-index:10;}
+  .price_cart{font-size:22px;}
 }
 @media(max-width:500px){
   .rezults_item .block_img{width:284px;height:191px}
