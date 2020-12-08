@@ -104,10 +104,16 @@ h2:before{position:absolute;content:'';bottom:-7px;left:0;width:100%;height:4px;
 .description_content-card{background-color:#fff;box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.08);border-radius: 15px;width:100%;}
 .content_title{font-size:28px;line-height:34px;font-weight:bold;}
 .more_info-link{font-size:17px;line-height:20px;font-weight:bold;color:#44A9E1;}
-
-
-
-
+.blue_title{font-size:26px;line-height:30px;font-weight:600;color:#44A9E1;}
+.img_service-page{text-align:center;}
+.img_service-page img{border-radius:15px;box-shadow:0px 2px 12px rgba(0, 0, 0, 0.15);}
+.text_content-light span{font-weight:600;color:#33303F;}
+.shodow_wrapper{box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);border-radius: 15px;background-color:#fff;padding:30px 0;}
+.block_contact-page{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.min_txt-2{font-size:13px;color:#828282;line-height:18px;}
+.link_phone-conatact-page{display:inline-block;font-size:15px;font-weight:bold;color:#33303F;line-height:20px;height:100%;}
+.adress-page_contact{font-size:15px;font-weight:600;font-family:open sans;color:#33303F;}
+.block_height{min-height:75px;display:flex;align-items:center;justify-content:center;flex-direction:column;}
 
 
 .block-hed{background:#44A9E1;border-radius:15px;height:100%;color:#33303F;padding:5px 20px;box-shadow:0px 2px 12px rgba(0,0,0,0.15);display:flex;flex-direction:column;justify-content:space-between;}
@@ -423,6 +429,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .nav_description-item{display:flex;align-items:center;justify-content:space-between;}
   .nav_description-item img{transition:transform .3s;}
   .nav_description-item[aria-expanded="false"] img{transform:rotateX(180deg);}
+  .blue_title{font-size:18px;line-height:26px;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px}
