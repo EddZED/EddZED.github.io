@@ -137,6 +137,26 @@ h2:before{position:absolute;content:'';bottom:-7px;left:0;width:100%;height:4px;
 .size_18{font-size:18px;color:#33303F;line-height:20px;font-weight:bold;}
 .min_blue-price{font-size:24px;line-height:30px;color:#44A9E1;font-weight:bold;}
 .wrapper_form-order{border-radius:15px;background-color:#fff;box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.08);padding:30px 25px;}
+.decoration_order{padding:50px 0;}
+.input_order_form{width:100%;position:relative;}
+.input_order_form input{display:inline-block;width:100%;padding:12px 0;color:#BDBDBD;font-size:15px;font-weight:bold;line-height:20px;border:none;transition:color .3s;}
+.input_order_form input:focus{outline:none;color:#44A9E1;}
+.input_order_form span{background-color:#BDBDBD;display:inline-block;position: absolute;left:0;bottom:0;width:100%;height:3px;border-radius:15px;transition:background .3s;}
+.input_order_form input:focus + span{background-color:#44A9E1;}
+.input_order_form input::-webkit-input-placeholder{color:#828282;font-size:15px;font-weight:normal;}
+.input_order_form textarea{display:inline-block;width:100%;padding:12px 0;color:#BDBDBD;font-size:15px;font-weight:bold;line-height:20px;border:none;transition:color .3s;}
+.input_order_form textarea::-webkit-input-placeholder{color:#828282;font-size:15px;font-weight:normal;}
+.input_order_form textarea:focus{outline:none;color:#44A9E1;}
+.input_order_form textarea:focus + span{background-color:#44A9E1;}
+.checkbox{position:relative;cursor:pointer;width:100%;}
+.checkbox input[type="checkbox"]{display:none;}
+.check_content:before{content:'';position:absolute;width:18px;height:18px;border-radius:5px;border:1px solid #828282;top:0;bottom:0;left:0;margin:auto;transition:all .3s;}
+.check_content:after{content:'';position:absolute;width:14px;height:14px;border-radius:5px;background-color:#44A9E1;top:0;bottom:0;left:2px;margin:auto;opacity:0;transition:all .3s;}
+.checkbox input[type="checkbox"]:checked + .check_content{color:#44A9E1;}
+.checkbox input[type="checkbox"]:checked + .check_content:before{border-color:#44A9E1;}
+.checkbox input[type="checkbox"]:checked + .check_content:after{opacity:1;}
+.check_content{font-size:15px;line-height:20px;color:#828282;font-weight:normal;display:inline-block;padding-left:23px;transition:all .3s;position:relative;}
+
 
 
 
@@ -508,6 +528,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .link_name-goods-cart{font-size:15px;}
   .bascket_item .counter_block{width:75px;z-index:10;}
   .price_cart{font-size:22px;}
+  .decoration_order{padding:30px 0;}
 }
 @media(max-width:500px){
   .rezults_item .block_img{width:284px;height:191px}
