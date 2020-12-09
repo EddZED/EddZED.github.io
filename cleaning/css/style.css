@@ -7,7 +7,7 @@ html{scroll-behavior:smooth}
 @font-face{font-family:gil_medium;src:url(../font/Gilroy-Medium.ttf)}
 @font-face{font-family:gil_black;src:url(../font/Gilroy-Black.ttf)}
 body{color:#1A1919;font-family:open sans}
-h2{font-size:25px;line-height:30px;font-family:open sans bold;position:relative;display:inline-block}
+h2{font-size:28px;line-height:30px;font-family:open sans bold;position:relative;display:inline-block}
 h2:before{position:absolute;content:'';bottom:-7px;left:0;width:100%;height:4px;background:#44A9E1}
 .wrapper{overflow:hidden}
 .navbar{box-shadow:none;background-color:transparent;transition:all .3s}
@@ -165,6 +165,11 @@ h2:before{position:absolute;content:'';bottom:-7px;left:0;width:100%;height:4px;
 .color-dark{color:#33303F;}
 .link-contact-page{font-size:14px;line-height:19px;font-family:open sans;font-weight:normal;color:#33303F;}
 .questions_form{padding:60px 0 0;}
+.middle_title{font-size:26px;line-height:30px;color:#33303F;font-family:open sans;font-weight:bold;}
+.blue_text_middle{font-size:16px;font-weight:normal;color:#44A9E1;}
+.box_shadow_wrapper-delivery{border-radius:15px;padding:20px 15px;background-color:#fff;box-shadow:0px 1px 15px rgba(0, 0, 0, 0.08);}
+.gray_box{position:relative;border-radius:15px;overflow:hidden;background-color:#F8F8F8;width:100%;padding:20px 15px 20px 30px;}
+.gray_box:before{content:'';position:absolute;width:12px;height:100%;left:0;top:0;bottom:0;background-color:#44A9E1;}
 
 
 .block-hed{background:#44A9E1;border-radius:15px;height:100%;color:#33303F;padding:5px 20px;box-shadow:0px 2px 12px rgba(0,0,0,0.15);display:flex;flex-direction:column;justify-content:space-between;}
@@ -482,6 +487,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .nav_description-item[aria-expanded="false"] img{transform:rotateX(180deg);}
   .blue_title{font-size:18px;line-height:26px;}
   .box_content-bascket{border:none;}
+  h2{font-size:25px;}
 }
 @media(max-width:767px){
   .intro_main .title_page{font-size:75px;letter-spacing:0.29em;text-align:center;line-height:96px}
