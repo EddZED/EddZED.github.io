@@ -48,7 +48,7 @@
             </div>
             <div class="right_block-call d-none d-lg-flex">
               <a href="tel:+74957736540" class="phone_link">8 495 773 65 40</a>
-              <a href="#" class="btn_red">Заказать звонок</a>
+              <a href="#" class="btn_red" data-toggle="modal" data-target="#order_modal">Заказать звонок</a>
               <button class="navbar-toggler btn_menu" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><span></span></span>
@@ -508,12 +508,82 @@
         </div>
       </div>
     </footer>
-
-
-
-
   </div>
   
+
+
+  <!--modal order call-->
+  <div class="modal fade" id="order_modal" tabindex="-1" role="dialog" aria-labelledby="orderm_modelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Закажите звонок</h5>
+          <p class="white_min_text">Оставьте свой номер телофона и мы обязательно свяжимся с Вами в течении нескольких минут.</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img class="img-fluid" src="img/close_orange.png" alt=""></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-title">Способ связи:</div>
+          <form method="get" action="">
+            <fieldset>
+              <div class="row pt-4">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="radio_btn">
+                        <input name="communication" type="radio" checked>
+                        <span class="radio_cont">Позвонить</span>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="radio_btn">
+                        <input name="communication" type="radio">
+                        <span class="radio_cont">WhatsApp</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="radio_btn">
+                        <input name="communication" type="radio">
+                        <span class="radio_cont">Viber</span>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="radio_btn">
+                        <input name="communication" type="radio">
+                        <span class="radio_cont">Telegram</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="col-md-7 mb-3 mb-md-0">
+                  <label for="" class="input_form padd_place mb-0">
+                    <select class="code_phone">
+                      <option value="">+375</option>
+                      <option value="">+485</option>
+                    </select>
+                    <input type="text" name="" class="phone_input" placeholder="945 111 11 11">
+                  </label>
+                </div>
+                <div class="col-md-5">
+                  <button type="submit" class="btn_orange w-100 text-center px-0"><img src="img/telega.png" class="img-fluid" alt=""> Отправить</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
