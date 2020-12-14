@@ -425,7 +425,7 @@ h4{font-size:16px;font-family:open sans semibold;text-transform:uppercase;line-h
   .link_header-phone{font-size:16px;}
   .min_txt{font-size:12px;}
   .slider_nav_mini-img .slick-track{flex-direction:row;}
-  .slider_nav-item{max-height:132px;overflow:hidden;}
+  .slider_nav-item{max-height:132px;overflow:hidden;margin:0 6px;}
   .slider_nav-item img{width:100% !important}
   .nav_description-item{font-size:20px;}
 }
