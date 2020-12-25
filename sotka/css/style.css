@@ -216,9 +216,29 @@ body{font-family:'Acrom-regular';color:#000;}
 .link_page_contact:hover{text-decoration:none;color:#FF7848;}
 .social_link-item{display:inline-block;margin-right:10px;transition:filter .3s;}
 .social_link-item:hover{filter:drop-shadow(0 0 5px rgba(0,0,0,.3));}
+/*style modal*/
+.modal-content{background-image:url(../img/bg_modal.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:15px;}
+.modal-header{border-bottom:none;padding:40px 35px 0;position:relative;flex-direction:column;}
+.modal-footer{border-top:none;}
+.modal-title{font-size:36px;line-height:40px;font-family:Acrom-bold;color:#F9FAFC;}
+.modal-header .close{position:absolute;top:20px;right:20px;}
+.white_min_text{font-size:14px;color:#F9FAFC;line-height:17px;}
+.modal-body{padding:10px 35px 40px;}
+.modal-body-title{font-size:24px;line-height:26px;color:#F9FAFC;font-family:Acrom-bold;}
+.modal-dialog .radio_cont{color:#fff;border-color:#fff;}
+.modal-dialog .code_phone{border-color:#F9FAFC;}
+.modal-dialog .input_form input{padding:10px 10px 10px 90px;border-color:#F9FAFC;color:#fff;background-color:transparent;}
+.modal-dialog .input_form input::-webkit-input-placeholder{color:#fff;}
+.modal-dialog .btn_orange{font-family:Acrom-regular;}
+
+
+
 @media(min-width:1200px){
   .mobile_width{width:100%;}
   .container, .container-lg, .container-md, .container-sm, .container-xl{max-width:1170px;}
+}
+@media (min-width: 576px){
+.modal-dialog{max-width:570px;} 
 }
 @media(max-width:1199px){
   .block_type-info{flex-direction:column;align-items:start;}
@@ -301,6 +321,9 @@ body{font-family:'Acrom-regular';color:#000;}
   .title_spec{font-size:28px;line-height:30px;}
   .we_help-you{padding:40px 0;}
   .can_buy{padding:40px 0;}
+  .modal-header{padding:25px 15px 0;}
+  .modal-body{padding:0 15px 25px;}
+  .modal-title{font-size:32px;line-height:32px;padding-right:30px;}
 }
 @media(max-width:575px){
   .name_sort{font-size:12px;padding:11px 0;}
