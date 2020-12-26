@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>наMORE</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_body">
+          <div class="header_body_logo">
+            <a href="#" class="header_body_logo_link"><img src="img/logo.png" alt="на море"></a>
+            <button class="btn_menu"><span class="top_line"></span><span class="center_line"></span><span class="bottom_line"></span></button>
+          </div>
+          <div class="header_body_links-content">
+            <div class="header_body_menu">
+              <ul class="body_menu">
+                <li class="body_menu_item"><a href="#" class="body_menu_link">О компании</a></li>
+                <li class="body_menu_item"><a href="#" class="body_menu_link">Прайс</a></li>
+                <li class="body_menu_item"><a href="#" class="body_menu_link">Автопарк</a></li>
+                <li class="body_menu_item"><a href="#" class="body_menu_link">FAQ</a></li>
+                <li class="body_menu_item"><a href="#" class="body_menu_link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header_body_contact">
+              <div class="header_body_contact_item">
+                <a href="tel:+79031111111" class="contact_item_phone">+7 (903) 111-11-11</a>
+                <a href="#" class="btn_link_order">Заказать звонок</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+    
+    </div>
+    <footer class="footer">
+  
+    </footer>
+  </div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('.btn_menu').click(function(){
+      $('.header_body_links-content').toggleClass('active');
+      $('.header_body_logo').toggleClass('active');
+      $(this).toggleClass('active');
+    })
+  </script>
+
+</body>
+</html>
