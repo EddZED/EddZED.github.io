@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper"> 
     <header class="header">
       <div class="container">
         <div class="header_body">
@@ -28,8 +28,15 @@
             </div>
             <div class="header_body_contact">
               <div class="header_body_contact_item">
+                <div class="link_social_mobile">
+                  <a href="#" class="link_social_item"><img class="img-fluid" src="img/insta.png" alt=""></a>
+                  <a href="#" class="link_social_item"><img class="img-fluid" src="img/face.png" alt=""></a>
+                  <a href="#" class="link_social_item"><img class="img-fluid" src="img/vk.png" alt=""></a>
+                  <a href="#" class="link_social_item"><img class="img-fluid" src="img/whats.png" alt=""></a>
+                </div>
                 <a href="tel:+79031111111" class="contact_item_phone">+7 (903) 111-11-11</a>
                 <a href="#" class="btn_link_order">Заказать звонок</a>
+                <a href="mailto:mail@mail.ru" class="dark_link">mail@mail.ru</a>
               </div>
             </div>
           </div>
@@ -37,7 +44,79 @@
       </div>
     </header>
     <div class="content">
-    
+      <section class="intro_page">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2 class="light_text text_lite pt-lg-5 mb-1 mb-lg-3">Такси, доступное каждому</h2>
+              <h1 class="title_page white_page_bold">Междугороднее такси по Крыму. Трансфер до аэропорта</h1> 
+            </div>
+            <div class="col-lg-5">
+              <div class="wrapper_form_order">
+                <p class="title_bold_middle_text mb-lg-4">Заказать такси</p>
+                <form method="get" action="">
+                  <fieldset>
+                    <label class="input_order_form mb-4">
+                      <span>Откуда</span>
+                      <input type="text" placeholder="Введите адресс">
+                    </label>
+                    <label class="input_order_form mb-4">
+                      <span>Куда</span>
+                      <input type="text" placeholder="Введите адресс">
+                    </label>
+                    <label class="input_order_form mb-4">
+                      <span>Класс авто</span>
+                      <input type="text">
+                      <select name="" id="" class="">
+                        <option value="0">Выберите класс автомобиля</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                      </select>
+                    </label>
+                    <label class="input_order_form mb-4">
+                      <span>Телефон</span>
+                      <input type="text" placeholder="Ваш номер телефона">
+                    </label>
+                    <label class="input_order_form date_time_input mb-4">
+                      <div class="input_date">
+                        <span>Дата</span>
+                        <input type="date" name="" placeholder="Дата отправки">
+                      </div>
+                      <div class="input_time">
+                        <span>Время</span>
+                        <input type="time" name="" placeholder="Время отправки">
+                      </div>
+                    </label>
+                    <label class="input_order_form mb-4">
+                      <span>Дополнительные услуги</span>
+                      <input type="text">
+                      <select name="" id="" class="">
+                        <option value="0">Выберите услугу</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </label>
+                    <div class="row">
+                      <div class="col-md-6 order-1">
+                        <label class="checkbox_btn">
+                          <input type="checkbox">
+                          <span>Обратный трансфер</span>
+                        </label>
+                      </div>
+                      <div class="col-md-6 order-lg-2 order-3">
+
+                      </div>
+                      <p class="description_text order-2 order-lg-3"></p>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
   
@@ -53,6 +132,8 @@
     $('.btn_menu').click(function(){
       $('.header_body_links-content').toggleClass('active');
       $('.header_body_logo').toggleClass('active');
+      $('.header_body_menu').toggleClass('container');
+      $('.header_body_contact').toggleClass('container');
       $(this).toggleClass('active');
     })
   </script>
