@@ -166,6 +166,8 @@ body{color:#000;}
   .menu_footer_item{padding-bottom:15px;}
   .contact_gooter{text-align:center;}
   .social_block_footer{justify-content:center;padding-top:15px;}
+  .wrapper_img_faq{min-height:350px;}
+  .padding_top_mible{padding-top:100px;}
 }
 @media(max-width:767px){
   .wrapper_form_order{padding:25px 15px;}
@@ -176,6 +178,8 @@ body{color:#000;}
   .text_content_slider{font-size:18px;line-height:22px;}
   .title_slider_blue{font-size:30px;}
   .header_form{font-size:38px;}
+  .wrapper_img_faq{min-height:250px;}
+  .padding_top_mible{padding-top:70px;}
 }
 @media(max-width:575px){
   .gray_text_slider{font-size:24px;}
