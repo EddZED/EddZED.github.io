@@ -141,7 +141,7 @@ body{color:#000;}
 .body_card_content{width:100%;}
 .text_content_bold{font-size:14px;font-family:gil_normal;font-weight:bold;color:#000;}
 .wrapper_card:hover{text-decoration:none;box-shadow:4px 4px 15px rgba(22, 31, 32, 0.3);}
-
+.page-link{min-width:40px;text-align:center;border:none;margin:0 4px;box-shadow: 4px 4px 15px rgba(22, 31, 32, 0.18);border-radius: 10px !important;background-color:#FBFBFB;font-size:18px;color:#828282;font-family:gil_normal;font-weight:bold;}
 
 
 
