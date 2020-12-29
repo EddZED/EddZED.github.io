@@ -80,6 +80,8 @@ body{color:#000;}
 .slick-next:before{content:'';position:absolute;background-image:url(../img/arrow_right.png);background-size:cover;background-position:center center; background-repeat:no-repeat;width:56px;height:10px;right:0;z-index:20;left:0;top:15px;bottom:0;margin:auto;}
 .slider_section, .about_us, .order_section, .comments, .faq_section, .contacty{padding:0 0 70px;}
 .wrapper_car_about{width:100%;height:100%;background: linear-gradient(89.79deg, #D6DADE 0.22%, #E6E9EB 99.85%);box-shadow: 4px 4px 15px rgba(22, 31, 32, 0.18);border-radius: 20px;display:flex;align-items:center;justify-content:center;padding:10px 20px;position:relative;}
+.wrapper_car_about img{z-index:2;}
+.wrapper_car_about:before{content:'';position:absolute;left:100px;right:100px;top:100px;bottom:100px;background-color:#fff;border-radius:20px;z-index:1;}
 .link_more{font-size:22px;line-height:26px;color:#008080;font-family:gil_normal;font-weight:600;display:inline-block;padding-top:10px;transition:all .3s;}
 .link_more:hover{text-decoration:none;color:#00708C;}
 .wrapper_order_form{background-color:#FBFBFB;box-shadow: 4px 4px 15px rgba(22, 31, 32, 0.18);border-radius: 20px;position:relative;padding:100px 30px 70px;}
@@ -118,9 +120,15 @@ body{color:#000;}
 .link_contact_item{display:inline-block;font-size:15px;line-height:17px;color:#6B6B6B;font-family:gil_ultralight;}
 .text_bold{font-family:gil_normal;}
 .min_blue{font-size:13px;}
+.bullit_box{padding:0 0 70px;}
+.bullit_wrapper{width:100%;border-radius:15px;background-color:#FBFBFB;box-shadow:4px 4px 15px rgba(22, 31, 32, 0.18);padding:10px 5px;display:flex;align-items:center;justify-content:center;flex-direction:column;height:100%;text-align:center;}
+.bullit_text_bold{font-size:56px;line-height:60px;font-family:gil_bold;color:#008080;}
+.bullit_text_min{font-size:22px;line-height:26px;font-family:gil_normal;color:#161F20;}
 
 
-
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {max-width: 1170px;}
+}
 @media(max-width:1199px){
   .scroll_bar{overflow-x:scroll;flex-wrap:nowrap;}
   .scroll_bar::-webkit-scrollbar {height: 10px;}
@@ -167,7 +175,7 @@ body{color:#000;}
   .title_page_bold{font-size:30px;line-height:32px;}
   .big_num{opacity:0;}
   .slider_block_text{padding-top:35px;}
-  .why_choose_us, .slider_section, .about_us, .order_section, .comments, .faq_section, .contacty{padding:0 0 35px;}
+  .why_choose_us, .slider_section, .about_us, .order_section, .comments, .faq_section, .contacty, .bullit_box{padding:0 0 35px;}
   .header_form{font-size:50px;}
   .form_order:before{left:-10px;top:-20px;}
   .menu_footer{flex-direction:column;justify-content:center;}
@@ -177,6 +185,7 @@ body{color:#000;}
   .wrapper_img_faq{min-height:350px;}
   .padding_top_mible{padding-top:100px;}
   .contact_item{padding:20px 15px 15px 20px;}
+  .wrapper_car_about:before{left:50px;right:50px;top:50px;bottom:50px;}
 }
 @media(max-width:767px){
   .wrapper_form_order{padding:25px 15px;}
@@ -189,6 +198,8 @@ body{color:#000;}
   .header_form{font-size:38px;}
   .wrapper_img_faq{min-height:250px;}
   .padding_top_mible{padding-top:70px;}
+  .bullit_text_bold{font-size:44px;line-height:52px;}
+  .bullit_text_min{font-size:14px;line-height:16px;}
 }
 @media(max-width:575px){
   .gray_text_slider{font-size:24px;}
