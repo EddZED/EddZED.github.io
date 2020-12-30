@@ -153,7 +153,7 @@ body{color:#000;}
 .table_price tbody tr:hover{background-color:rgba(0,128,128,.15);}
 .table_price tbody tr th:hover{background-color:#008080;color:#fff;cursor:pointer;}
 .block_table_scroll{width:100%;padding:20px 10px;}
-
+.close{position:absolute;right:20px;top:20px;}
 
 
 @media (min-width: 1200px){

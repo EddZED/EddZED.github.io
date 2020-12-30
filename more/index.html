@@ -37,7 +37,7 @@
                   <a href="#" class="link_social_item"><img class="img-fluid" src="img/whats.png" alt=""></a>
                 </div>
                 <a href="tel:+79031111111" class="contact_item_phone">+7 (903) 111-11-11</a>
-                <a href="#" class="btn_link_order">Заказать звонок</a>
+                <a href="#" data-toggle="modal" data-target="#modal_order" class="btn_link_order">Заказать звонок</a>
                 <a href="mailto:mail@mail.ru" class="dark_link">mail@mail.ru</a>
               </div>
             </div>
@@ -354,8 +354,81 @@
       </div>
     </footer>
   </div>
-
-
+  <!--modal order-->
+  <div class="modal fade" id="modal_order" tabindex="-1" role="dialog" aria-labelledby="modal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="wrapper_form_order">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p class="title_bold_middle_text mb-lg-4">Заказать такси</p>
+        <form method="get" action="">
+          <fieldset>
+            <label class="input_order_form mb-4">
+              <span>Откуда</span>
+              <input type="text" placeholder="Введите адресс">
+            </label>
+            <label class="input_order_form mb-4">
+              <span>Куда</span>
+              <input type="text" placeholder="Введите адресс">
+            </label>
+            <label class="input_order_form mb-4">
+              <span>Класс авто</span>
+              <input type="text">
+              <select name="" id="" class="">
+                <option value="0">Выберите класс автомобиля</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+              </select>
+            </label>
+            <label class="input_order_form mb-4">
+              <span>Телефон</span>
+              <input type="text" placeholder="Ваш номер телефона">
+            </label>
+            <label class="input_order_form date_time_input mb-4">
+              <div class="input_date">
+                <span>Дата</span>
+                <input type="date" name="" placeholder="Дата отправки">
+              </div>
+              <div class="input_time">
+                <span>Время</span>
+                <input type="time" name="" placeholder="Время отправки">
+              </div>
+            </label>
+            <label class="input_order_form mb-4">
+              <span>Дополнительные услуги</span>
+              <input type="text">
+              <select name="" id="" class="">
+                <option value="0">Выберите услугу</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <div class="row align-items-center">
+              <div class="col-md-6 order-1 mb-2">
+                <label class="checkbox_btn">
+                  <input type="checkbox">
+                  <span class="checkbox_item"></span>
+                  <span class="checkbox_text">Обратный трансфер</span>
+                </label>
+              </div>
+              <div class="col-md-6 order-md-2 order-3 mb-2">
+                <button type="submit" class="btn_submit">Заказать такси</button>
+              </div>
+              <div class="col-12 order-2 order-md-3 text-center text-md-left">
+                <p class="description_text">Нажав на кнопку "Заказать такси", вы соглашаетесь с правилами сайта</p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="js/jquery.min.js"></script>
