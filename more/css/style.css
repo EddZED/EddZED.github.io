@@ -142,6 +142,17 @@ body{color:#000;}
 .text_content_bold{font-size:14px;font-family:gil_normal;font-weight:bold;color:#000;}
 .wrapper_card:hover{text-decoration:none;box-shadow:4px 4px 15px rgba(22, 31, 32, 0.3);}
 .page-link{min-width:40px;text-align:center;border:none;margin:0 4px;box-shadow: 4px 4px 15px rgba(22, 31, 32, 0.18);border-radius: 10px !important;background-color:#FBFBFB;font-size:18px;color:#828282;font-family:gil_normal;font-weight:bold;}
+.table_price{width:100%;background-color:#FBFBFB;border-radius:15px;box-shadow:4px 4px 15px rgba(22, 31, 32, 0.18);table-layout:fixed;}
+.table_price thead tr{display:flex;}
+.table_price thead tr th{flex:0 0 12.5%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#008080;font-size:18px;line-height:22px;font-family:gil_normal;font-weight:bold;border-right:1px solid rgba(0,128,128,.15);padding:15px 0;}
+.table_price thead tr th:last-of-type{border-color:transparent;}
+.table_price thead tr{border-bottom:1px solid rgba(0,128,128,.5);;}
+.price_list_content{padding:0 0 70px;}
+.table_price tbody tr{display:flex;transition:all .3s;}
+.table_price tbody tr th{flex:0 0 12.5%;transition:all .3s;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#161F20;font-size:14px;line-height:18px;font-family:gil_light;font-weight:bold;border-right:1px solid rgba(0,128,128,.15);padding:15px 0;}
+.table_price tbody tr:hover{background-color:rgba(0,128,128,.15);}
+.table_price tbody tr th:hover{background-color:#008080;color:#fff;cursor:pointer;}
+.block_table_scroll{width:100%;padding:20px 10px;}
 
 
 
@@ -161,6 +172,8 @@ body{color:#000;}
   .scroll_bar::-webkit-scrollbar-corner { background-color: #999;}
   .scroll_bar::-webkit-resizer { background-color: transparent;}
   .header_form{font-size:70px;}
+  .table_price{overflow-x:scroll;flex-wrap:nowrap;min-width:1170px;}
+  .block_table_scroll{overflow-x:scroll;}
 }
 @media(max-width:991px){
   .header{padding:15px 0;}
@@ -197,7 +210,7 @@ body{color:#000;}
   .title_page_bold{font-size:30px;line-height:32px;}
   .big_num{opacity:0;}
   .slider_block_text{padding-top:35px;}
-  .why_choose_us, .slider_section, .about_us, .order_section, .comments, .faq_section, .contacty, .bullit_box{padding:0 0 35px;}
+  .why_choose_us, .slider_section, .about_us, .order_section, .comments, .faq_section, .contacty, .bullit_box, .price_list_content{padding:0 0 35px;}
   .header_form{font-size:50px;}
   .form_order:before{left:-10px;top:-20px;}
   .menu_footer{flex-direction:column;justify-content:center;}
