@@ -86,7 +86,7 @@
                         <input type="date" name="" placeholder="Дата отправки">
                       </div>
                       <div class="input_time">
-                        <span>Время</span>
+                        <span class="input_time_hid_block">Время</span>
                         <input type="time" name="" placeholder="Время отправки">
                       </div>
                     </label>
@@ -101,6 +101,32 @@
                       </select>
                     </label>
                     <div class="row align-items-center">
+                      <div class="col-6 mb-3 pr-1">
+                        <label class="radio_time_order">
+                          <input type="radio" name="time_order">
+                          <span class="check_time_text">Срочный заказ</span>
+                        </label>
+                      </div>
+                      <div class="col-6 mb-3 pl-1">
+                        <label class="radio_time_order pre_order">
+                          <input type="radio" name="time_order">
+                          <span class="check_time_text">На время</span>
+                        </label>
+                      </div>
+                      <div class="col-12 hidden_block_time">
+                        <label class="input_order_form date_time_input my-2">
+                          <div class="input_date">
+                            <span>Дата</span>
+                            <input type="date" name="" placeholder="Дата отправки">
+                          </div>
+                          <div class="input_time">
+                            <span class="input_time_hid_block">Время</span>
+                            <input type="time" name="" placeholder="Время отправки">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
                       <div class="col-md-6 order-1 mb-2">
                         <label class="checkbox_btn">
                           <input type="checkbox">
@@ -113,22 +139,6 @@
                       </div>
                       <div class="col-12 order-2 order-md-3 text-center text-md-left">
                         <p class="description_text">Нажав на кнопку "Заказать такси", вы соглашаетесь с правилами сайта</p>
-                      </div>
-                    </div>
-                    <div class="row align-items-center">
-                      <div class="col-6">
-                        <label for="" class="radio_time_order">
-
-                          <span class="check_time_text">Срочный заказ</span>
-                          <input type="radio" name="time_order">
-                        </label>
-                      </div>
-                      <div class="col-6">
-                        <label for="" class="radio_time_order pre_order">
-                          
-                          <span class="check_time_text">На время</span>
-                          <input type="radio" name="time_order">
-                        </label>
                       </div>
                     </div>
                   </fieldset>
@@ -460,6 +470,12 @@
     });
     $('.btn_menu').click(function () {
         $('.btn_menu').toggleClass('active');
+      });
+    $('.radio_time_order.pre_order').click(function(){
+      $('.hidden_block_time').addClass('active');
+    });
+    $('.radio_time_order:not(.pre_order)').click(function () {
+        $('.hidden_block_time').removeClass('active');
       });
       $('.slider_stage').slick({
         arrow: true,

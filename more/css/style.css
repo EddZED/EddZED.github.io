@@ -38,7 +38,7 @@ body{color:#000;}
 .input_order_form.date_time_input{border:1px solid #161F20;border-radius:10px;width:100%;padding:7px 15px;font-size:16px;display:flex;}
 .input_order_form.date_time_input input{border:none;padding:0;width:100%;display:inline-block;}
 .input_order_form.date_time_input .input_date{border-right:1px solid #828282;width:50%;}
-.input_order_form.date_time_input .input_time{width:50%;padding-left:15px;}
+.input_order_form.date_time_input .input_time{width:50%;padding-left:15px;position: relative;}
 .checkbox_btn{cursor:pointer;display:flex;align-items:center;}
 .checkbox_btn input[type="checkbox"]{display:none;}
 .checkbox_item{position:relative;display:inline-block;}
@@ -156,9 +156,16 @@ body{color:#000;}
 .close{position:absolute;right:20px;top:20px;}
 .radio_time_order{display:flex;align-items:center;cursor:pointer;position:relative;}
 .radio_time_order input[type="radio"]{display:none;}
-.radio_time_order .check_time_text{font-size:14px;font-family:gil_bold;color:#000;display:inline-flex;width:100%;justify-content:center;padding:5px 0;background-color:#fff;border:1px solid #000;border-radius:8px;transition:all .3s;}
+.check_time_text{position:relative;font-size:14px;font-family:gil_bold;color:#000;display:inline-block;width:100%;text-align:center;padding:5px 0;background-color:#fff;border:1px solid #000;border-radius:8px;transition:all .3s;}
 .radio_time_order .check_time_text:hover{background-color:#000;color:#fff;}
 .radio_time_order input[type="radio"]:checked + .check_time_text {background-color:#000;color:#fff;}
+.hidden_block_time{overflow:hidden;height:0;transition:all .3s;}
+.hidden_block_time.active{height:60px;}
+.input_time_hid_block{top:-13px !important;}
+
+
+
+
 
 
 @media (min-width: 1200px){
