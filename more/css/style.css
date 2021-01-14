@@ -154,6 +154,9 @@ body{color:#000;}
 .table_price tbody tr th:hover{background-color:#008080;color:#fff;cursor:pointer;}
 .block_table_scroll{width:100%;padding:20px 10px;}
 .close{position:absolute;right:20px;top:20px;}
+
+/* new style select and input form*/
+
 .radio_time_order{display:flex;align-items:center;cursor:pointer;position:relative;}
 .radio_time_order input[type="radio"]{display:none;}
 .check_time_text{position:relative;font-size:14px;font-family:gil_bold;color:#000;display:inline-block;width:100%;text-align:center;padding:5px 0;background-color:#fff;border:1px solid #000;border-radius:8px;transition:all .3s;}
@@ -172,7 +175,7 @@ body{color:#000;}
   z-index:11;
   background-color:#fff;
 }
-.name_label{position:absolute;top:-14px;background-color:#fff;left:11px;padding:0 5px;}
+.name_label{position:absolute;top:-14px;background-color:#FBFBFB;left:11px;padding:0 5px;}
 .select__header {
 	border: 1px solid #161F20;
 	cursor: pointer;
@@ -318,7 +321,7 @@ body{color:#000;}
 	font-size: 1em;
 	line-height: 1.1;
 }
-
+.head_service_select{font-size:15px;color:#161F20;background-color:#FBFBFB;display:inline-block;top:-6px;left:11px;padding:0 5px;}
 
 
 
