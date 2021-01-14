@@ -163,6 +163,65 @@ body{color:#000;}
 .hidden_block_time.active{height:60px;}
 .input_time_hid_block{top:-13px !important;}
 
+.select {
+	margin: 0 auto;
+	position: relative;
+	width:100%;
+}
+.select.is-active .select__body {
+  display: block;
+  z-index:11;
+  background-color:#fff;
+}
+.name_label{position:absolute;top:-14px;background-color:#fff;left:11px;padding:0 5px;}
+.select__header {
+	border: 1px solid #161F20;
+	cursor: pointer;
+  display: flex;
+  border-radius:10px;
+}
+.select__current {
+	font-size: 18px;
+	line-height: 24px;
+  padding: 7px 15px;
+  width:100%;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 40px;
+}
+
+.select__body {
+	border: 1px solid #161F20;
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+  top: 100%;
+  border-radius:10px;
+  transition:all .3s;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__item:hover {
+  background-color: #f2f2f2;
+  border-radius:10px;
+}
+
+
+
 
 
 
