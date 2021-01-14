@@ -162,7 +162,6 @@ body{color:#000;}
 .hidden_block_time{overflow:hidden;height:0;transition:all .3s;}
 .hidden_block_time.active{height:60px;}
 .input_time_hid_block{top:-13px !important;}
-
 .select {
 	margin: 0 auto;
 	position: relative;

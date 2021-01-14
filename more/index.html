@@ -405,16 +405,23 @@
               <span>Куда</span>
               <input type="text" placeholder="Введите адресс">
             </label>
-            <label class="input_order_form mb-4">
-              <span>Класс авто</span>
-              <input type="text">
-              <select name="" id="" class="">
-                <option value="0">Выберите класс автомобиля</option>
-                <option value="1">A</option>
-                <option value="2">B</option>
-                <option value="3">C</option>
-              </select>
-            </label>
+            <div class="select mb-4">
+              <div class="select__header">
+                <span class="name_label">Класс авто</span>
+                <span class="select__current"><span class="place_holder">Выберите класс автомобиля</span></span>
+                <div class="select__icon">&times;</div>
+              </div>
+            
+              <div class="select__body">
+                <div class="select__item">Эконом <img src="img/link_1.png" class="img-fluid" alt=""></div>
+                <div class="select__item">Стандарт <img src="img/link_2.png" class="img-fluid" alt=""></div>
+                <div class="select__item">Комфорт <img src="img/link_3.png" class="img-fluid" alt=""></div>
+                <div class="select__item">Бизнес <img src="img/link_4.png" class="img-fluid" alt=""></div>
+                <div class="select__item">Минивен <img src="img/link_5.png" class="img-fluid" alt=""></div>
+                <div class="select__item">Универсал <img src="img/link_6.png" class="img-fluid" alt=""></div>
+                <div class="select__item">VIP <img src="img/link_7.png" class="img-fluid" alt=""></div>
+              </div>
+            </div>
             <label class="input_order_form mb-4">
               <span>Телефон</span>
               <input type="text" placeholder="Ваш номер телефона">
@@ -425,20 +432,44 @@
                 <input type="date" name="" placeholder="Дата отправки">
               </div>
               <div class="input_time">
-                <span>Время</span>
+                <span class="input_time_hid_block">Время</span>
                 <input type="time" name="" placeholder="Время отправки">
               </div>
             </label>
-            <label class="input_order_form mb-4">
-              <span>Дополнительные услуги</span>
-              <input type="text">
-              <select name="" id="" class="">
-                <option value="0">Выберите услугу</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </label>
+            <div class="checkselect mb-4">
+              <label><input type="checkbox" name="brands[]" value="1" checked>Услуга 1</label>
+              <label><input type="checkbox" name="brands[]" value="2">Услуга 2</label>
+              <label><input type="checkbox" name="brands[]" value="3">Услуга 3</label>
+              <label><input type="checkbox" name="brands[]" value="4">Услуга 4</label>
+              <label><input type="checkbox" name="brands[]" value="5">Услуга 5</label>
+              <label><input type="checkbox" name="brands[]" value="6">Услуга 6</label>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-6 mb-3 pr-1">
+                <label class="radio_time_order">
+                  <input type="radio" name="time_order">
+                  <span class="check_time_text">Срочный заказ</span>
+                </label>
+              </div>
+              <div class="col-6 mb-3 pl-1">
+                <label class="radio_time_order pre_order">
+                  <input type="radio" name="time_order">
+                  <span class="check_time_text">На время</span>
+                </label>
+              </div>
+              <div class="col-12 hidden_block_time">
+                <label class="input_order_form date_time_input my-2">
+                  <div class="input_date">
+                    <span>Дата</span>
+                    <input type="date" name="" placeholder="Дата отправки">
+                  </div>
+                  <div class="input_time">
+                    <span class="input_time_hid_block">Время</span>
+                    <input type="time" name="" placeholder="Время отправки">
+                  </div>
+                </label>
+              </div>
+            </div>
             <div class="row align-items-center">
               <div class="col-md-6 order-1 mb-2">
                 <label class="checkbox_btn">
