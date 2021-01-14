@@ -97,16 +97,14 @@
                         <input type="time" name="" placeholder="Время отправки">
                       </div>
                     </label>
-                    <label class="input_order_form mb-4">
-                      <span>Дополнительные услуги</span>
-                      <input type="text">
-                      <select name="" id="" class="">
-                        <option value="0">Выберите услугу</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                      </select>
-                    </label>
+                    <div class="checkselect mb-4">
+                      <label><input type="checkbox" name="brands[]" value="1" checked>Услуга 1</label>
+                      <label><input type="checkbox" name="brands[]" value="2">Услуга 2</label>
+                      <label><input type="checkbox" name="brands[]" value="3">Услуга 3</label>
+                      <label><input type="checkbox" name="brands[]" value="4">Услуга 4</label>
+                      <label><input type="checkbox" name="brands[]" value="5">Услуга 5</label>
+                      <label><input type="checkbox" name="brands[]" value="6">Услуга 6</label>
+                    </div>
                     <div class="row align-items-center">
                       <div class="col-6 mb-3 pr-1">
                         <label class="radio_time_order">
@@ -468,6 +466,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/select.js"></script>
+  <script src="js/input_select.js"></script>
   <script>
     $('.btn_menu').click(function(){
       $('.header_body_links-content').toggleClass('active');
