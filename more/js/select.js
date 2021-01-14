@@ -15,10 +15,10 @@ let select = function () {
   }
 
   function selectChoose() {
-    let text = this.innerText,
+    let contentsel = this.innerHTML;
       select = this.closest('.select'),
       currentText = select.querySelector('.select__current');
-    currentText.innerText = text;
+    currentText.innerHTML = contentsel;
     select.classList.remove('is-active');
 
   }

@@ -185,6 +185,9 @@ body{color:#000;}
 	line-height: 24px;
   padding: 7px 15px;
   width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 .select__icon {
 	align-items: center;
@@ -212,14 +215,17 @@ body{color:#000;}
 	cursor: pointer;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 8px;
+  padding: 7px 15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 .select__item:hover {
   background-color: #f2f2f2;
   border-radius:10px;
 }
-
+.place_holder{font-size:14px;color:#828282;font-family:gil_light;}
 
 
 
