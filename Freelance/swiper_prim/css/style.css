@@ -1,0 +1,316 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	padding: 30px;
+	min-height: 100%;
+}
+/* ------------------ */
+.title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0px 0px 30px 0px;
+}
+
+/* ------------------ */
+
+/* Флекс */
+.block {
+	display: flex;
+}
+.block__side {
+	flex: 0 0 300px;
+	background-color: #77608d;
+}
+.block__body {
+	padding: 0px 0px 0px 30px;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+/* ------------------ */
+
+.image-slider {
+	padding: 30px 0 70px 0;
+}
+.image-slider__wrapper {
+}
+.image-slider__slide {
+}
+.image-slider__image {
+	text-align: center;
+}
+.image-slider__image img {
+	max-width: 100%;
+}
+
+/* Стрелки */
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+	color: #fff;
+	font-size: 80px;
+}
+
+/* Пагинация */
+.image-slider .swiper-pagination {
+	bottom: 30px;
+}
+/* Буллеты */
+.image-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+/* Фракция */
+.image-slider .swiper-pagination-fraction {
+	font-size: 20px;
+	color: #fff;
+}
+
+/* Прогрессбар */
+.image-slider .swiper-pagination-progressbar-fill {
+	background-color: #7a956b;
+}
+
+/* Скролл */
+.image-slider .swiper-scrollbar-drag {
+	cursor: pointer;
+	background-color: #7a956b;
+}
+
+/* Автоширина */
+.image-slider .swiper-slide {
+	/* width: auto; */
+}
+
+/* Мультирядность  */
+/* 
+.image-slider {
+	height: 700px;
+}
+.image-slider .swiper-slide {
+	height: calc((100% - 30px) / 2);
+	overflow: hidden;
+}
+*/
+
+/* Вертикальный слайдер */
+/* 
+.image-slider {
+	padding: 0px 0 0px 0;
+	height: 700px;
+}
+ */
+
+/* Эффкт куб */
+/*
+.image-slider {
+	width: 500px;
+}
+*/
+
+/* Миниатюры (превью) */
+/* 
+.image-mini-slider {
+}
+.image-mini-slider__wrapper {
+}
+.image-mini-slider__slide {
+	opacity: 0.2;
+	transition: opacity 0.3s ease 0s;
+}
+.image-mini-slider__slide.swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.image-mini-slider__image {
+	position: relative;
+	padding: 0px 0px 30% 0px;
+	cursor: pointer;
+}
+.image-mini-slider__image img {
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+ */
+
+/* Слайдер в слайдере */
+/*
+.image-in-slider {
+	height: 450px;
+}
+
+.image-in-slider__wrapper {
+}
+
+.image-in-slider__slide {
+	height: 450px;
+}
+
+.image-in-slider__image img {
+	max-width: 100%;
+}
+*/
+
+/* Передача управления  */
+/* 
+.text {
+	font-size: 25px;
+	line-height: 150%;
+	color: #fff;
+	margin: 50px 0;
+	background-color: #77608d;
+	padding: 10px;
+}
+
+.text-slider {
+}
+.text-slider__wrapper {
+}
+.text-slider__slide {
+	font-size: 25px;
+	line-height: 150%;
+	color: #fff;
+}
+.text-slider__slide h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0px 0px 15px 0px;
+} */
+
+/* Обновление слайдера */
+/* 
+.tabs {
+}
+.tabs__nav {
+	display: flex;
+	margin: 0px -2px;
+}
+.tabs__item {
+	background-color: #794f45;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	flex: 0 1 33.333%;
+	margin: 0px 2px;
+	cursor: pointer;
+}
+.tabs__item._active {
+	background-color: #77608d;
+}
+.tabs__body {
+	padding: 20px 0px 0px 0px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 150%;
+}
+.tabs__block {
+	display: none;
+}
+.tabs__block._active {
+	display: block;
+}
+ */
+/* Параллакс слайдер */
+/* 
+.parallax-slider {
+}
+.parallax-slider__bg {
+	position: absolute;
+	width: 300%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	background: url("../img/05.jpg") top / cover no-repeat;
+}
+.parallax-slider__wrapper {
+}
+
+.parallax-slider__slide {
+	color: #fff;
+	padding: 50px 100px;
+}
+
+.parallax-slider__title {
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0px 0px 20px 0px;
+}
+.parallax-slider__text {
+	font-size: 25px;
+	line-height: 150%;
+	margin: 0px 0px 30px 0px;
+}
+.parallax-slider__button {
+	background-color: #794f45;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 30px;
+	min-height: 50px;
+	font-size: 20px;
+	color: #fff;
+}
+ */
+/* Фракция */
+/* 
+.image-slider__fraction {
+	padding: 10px 0px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #fff;
+}
+.image-slider__current {
+}
+.image-slider__sepparator {
+	margin: 0px 15px;
+}
+.image-slider__total {
+}
+ */
