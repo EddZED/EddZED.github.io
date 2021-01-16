@@ -160,7 +160,7 @@ body {
 	position: relative;
 }
 .screen__content {
-	padding: 25px 25px 25px 25px;
+	padding: 50px 15px 50px 15px;
 	position: relative;
 	z-index: 2;
 	display:flex;
@@ -233,9 +233,41 @@ body {
 	color: rgba(255, 255, 255, 0.6);
 	line-height:165%;
 }
-
-
-
+.transparent_font{
+	font-size:24px;
+	line-height:150%;
+	letter-spacing:0.03em;
+	color:#535353;
+}
+.comtainer{
+	margin:0 auto;
+	padding:0 15px;
+}
+.row{
+	display:flex;
+	margin:0 -15px 0 -15px;
+}
+.col-lg-6{
+	padding:0 15px;
+}
+@media(min-width:1450px){
+	.container{
+		max-width:1382px;
+	}
+}
+@media(min-width:1200px){
+	.container{
+		max-width:920px;
+	}
+}
+@media(min-width:992px){
+	.container{
+		max-width:860px;
+	}
+	.col-lg-6{
+		flex:0 0 50%;
+	}
+}
 
 
 @media (max-width: 767px) {
