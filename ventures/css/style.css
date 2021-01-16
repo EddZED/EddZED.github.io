@@ -356,9 +356,30 @@ a.content_contact:hover{
 .btn_order:hover{
 	box-shadow:none;
 }
-
-
-
+.footer{
+	position:absolute;
+	padding:25px 50px;
+	background-color:#171717;
+	z-index:20;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+}
+.footer_nav{
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+}
+.privacy_block_footer{
+	text-align:right;
+}
+.privacy_link{
+	display:inline-block;
+	color:rgba(255, 255, 255, 0.6);
+	font-size:18px;
+	font-family:cofo_reg;
+}
 
 
 
