@@ -11,21 +11,22 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
-				<nav class="header__menu menu">
-					<a href="" class="menu_link_logo"><img class="img-fluid" src="img/logo.png" alt=""></a>
-					<div class="menu_link_header">
-						<a href="" class="menu__link">О нас</a>
-						<a href="" class="menu__link">преимущества</a>
-						<a href="" class="menu__link">контакты</a>
-						<a href="" class="menu__link">сервис</a>
-					</div>
-				</nav>
-			</header>
 			<main class="page">
 				<div class="page__wrapper">
 					<div class="page__screen screen">
 						<div class="screen__content">
+							<header class="header" id="header">
+								<nav class="header__menu menu">
+									<a href="" class="menu_link_logo"><img class="img-fluid" src="img/logo.png" alt=""></a>
+									<div class="menu_link_header">
+										<a href="" class="menu__link">О нас</a>
+										<a href="" class="menu__link">преимущества</a>
+										<a href="" class="menu__link">контакты</a>
+										<a href="" class="menu__link">сервис</a>
+									</div>
+									<button id="btn_menu" class="btn_menu_nav"><span></span></button>
+								</nav>
+							</header>
 							<div class="intro_slider">
 								<div class="intro_slider_wrapper">
 									<div class="intro_slider_item">
@@ -57,7 +58,7 @@
 							<div class="container height_100">
 								<div class="box_wrapper_conent">
 									<div class="row align-items-center">
-										<div class="col-lg-6">
+										<div class="col-lg-6 mb-5 mb-lg-0">
 											<p class="transparent_font" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%"
 												data-swiper-parallax-duration="1000">Мы - венчурный фонд Frendex Ventures,
 												помогаем проектам ускорить процесс роста</p>
@@ -73,7 +74,7 @@
 											</div>
 										</div>
 										<div class="col-lg-6">
-											<div class="box_border_bg"  data-swiper-parallax-opacity="0" data-swiper-parallax="-100%"
+											<div class="box_border_bg"  data-swiper-parallax-opacity="0" data-swiper-parallax="-10%"
 												data-swiper-parallax-duration="1000">
 												<p class="big_num_white">10</p>
 												<p class="transparent_font mb-3">Проектов в инвестиционном
@@ -94,13 +95,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="page__screen screen">
-						<div class="screen__content">
-							<div class="container_walp">
+					<div class="page__screen screen position-relative">
+						<div class="screen__content screen_three">
+							<div class="container">
 								<div class="row align-items-center">
-									<div class="col-lg-6">
-										<img class="img-fluid" src="img/map.jpg" alt="карта" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%"
-												data-swiper-parallax-duration="1000">
+									<div class="col-lg-6 text-center mb-5 mb-lg-0">
+										<img class="img-fluid map_contact" src="img/map.jpg" alt="карта">
 									</div>
 									<div class="col-lg-6">
 										<p class="head_contact">адрес</p>
@@ -110,9 +110,12 @@
 										<a href="mailto:invest@frendexcapital.com" class="content_contact mb-2">invest@frendexcapital.com</a>
 										<p class="head_contact">ОТПРАВИТЬ ЗАЯВКУ</p>
 										<a href="mailto:request@frendexcapital.com" class="content_contact mb-2">request@frendexcapital.com</a>
+										<div class="block_btn d-lg-none">
+											<a href="" class="btn_order">Оставить заявку</a>
+										</div>
 									</div>
 								</div>
-								<div class="block_btn">
+								<div class="block_btn d-none d-lg-flex">
 									<a href="" class="btn_order">Оставить заявку</a>
 								</div>
 							</div>
@@ -122,18 +125,26 @@
 								<img src="img/bg_main.png" alt="">
 							</div>
 						</div>
-						<footer class="footer" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">
-							<div class="footer_nav">
-								<a href="" class="menu_link_logo"><img class="img-fluid" src="img/logo.png" alt=""></a>
-								<div class="menu_link_footer">
-									<a href="" class="menu__link">О нас</a>
-									<a href="" class="menu__link">преимущества</a>
-									<a href="" class="menu__link">контакты</a>
-									<a href="" class="menu__link">сервис</a>
-								</div>
-								<div class="privacy_block_footer">
-									<a href="№" class="privacy_link">ПОЛИТИКА КОНФИДЕНЦИОНАЛЬНОСТИ</a>
-									<a href="#" class="all_right">Frendex Capital</a>
+						<footer class="footer">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-lg-4 text-center">
+										<a href="" class="menu_link_logo"><img class="img-fluid" src="img/logo.png" alt=""></a>
+									</div>
+									<div class="col-lg-4 mb-3 d-none d-lg-block">
+										<div class="menu_link_footer">
+											<a href="" class="menu__link">О нас</a>
+											<a href="" class="menu__link">преимущества</a>
+											<a href="" class="menu__link">контакты</a>
+											<a href="" class="menu__link">сервис</a>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-3 d-none d-lg-block">
+										<div class="privacy_block_footer text-center text-lg-right">
+											<a href="№" class="privacy_link">ПОЛИТИКА КОНФИДЕНЦИОНАЛЬНОСТИ</a>
+											<a href="#" class="all_right">Frendex Capital</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</footer>
@@ -158,6 +169,12 @@
 				autoplaySpeed: 5000,
 				infinite: true
 			})
+		</script>
+		<script>
+			$('#btn_menu').click(function(){
+				$('.menu_link_header').toggleClass('active');
+				$('.header').toggleClass('active');
+			});
 		</script>
 	</body>
 </html>
