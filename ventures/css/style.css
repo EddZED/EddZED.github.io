@@ -438,7 +438,32 @@ a.content_contact:hover{
 .header.top_nav_bg{
 	background-color:rgba(0,0,0,.7);
 }
-
+.content{
+	position: relative;
+	width:100%;
+	background-color:#171717;
+	padding:85px 0;
+}
+.block_screen_about{
+	position:relative;
+}
+.blur_block{
+	position:relative;
+	padding:20px 25px;
+	background-color:rgba(36, 36, 36, 0.76);
+	backdrop-filter: blur(14px);
+	border-radius:10px;
+	display:inline-block;
+	z-index:10;
+}
+.wrapper_screen_two .header{
+	top:auto;
+}
+.image_bg{
+	position:absolute;
+	left:0;
+	top:0;
+}
 
 
 
