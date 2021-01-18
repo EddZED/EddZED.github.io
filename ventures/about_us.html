@@ -24,13 +24,123 @@
       </header>
       <div class="container">
         <div class="block_screen_about">
-          <img src="img/Rectangle 24.png" class="img-fluid image_bg" alt="">
-          <div class="blur_block">
-
+          <p class="title_block bottom_line right_position mb-4"><span>01 - FRENDEX VENTURES</span></p>
+          <div class="about_screen mt-5">
+            <img src="img/Rectangle 24.png" class="img-fluid image_bg" alt="">
+            <div class="blur_block">
+              <p class="title_about mb-0">Frendex Ventures</p>
+              <p class="text_about">Frendex Ventures был основан в 2016 г управляющими партнерами закрытый инвестиционный клуба Frendex. Фонд - это
+              объединение накопленных знаний, которыми мы делимся с предпринимателями и помогаем ускорить процесс роста. Помимо
+              финансовой отдачи, мы четко осознаем нашу собственную предпринимательскую ответственность за окружающую среду и общество
+              и стремимся внести позитивный вклад в решение глобального кризиса.
+              </p>
+            </div>
+            <img src="img/Rectangle 23.png" class="img-fluid image_bg_2" alt="">
           </div>
+        </div>
+        <div class="block_screen_about pt-3">
+          <p class="title_block text-left bottom_line right mb-4"><span>02 - МИССИЯ</span></p>
+          <div class="about_screen two mt-5">
+            <img src="img/img_3.png" class="img-fluid image_bg_3 d-none d-lg-block" alt="">
+            <div class="blur_block two">
+              <p class="title_about mb-0">Миссия</p>
+              <p class="text_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend non accumsan consectetur libero donec. Amet dolor
+              morbi proin eget aliquet nisl est. Quis lectus consequat mauris mollis scelerisque est. Suscipit aenean amet risus
+              lacinia lacus ante tincidunt in. Ut odio mattis id lectus
+              </p>
+            </div>
+            <img src="img/img_4.png" class="img-fluid image_bg_4" alt="">
+            <span class="text_bg d-none d-md-block">о нас</span>
+          </div>
+        </div>
+        <div class="block_screen_about">
+          <p class="title_block bottom_line right_position mb-4"><span>03 - О ГЛОБАЛЬНОМ РЫНКЕ</span></p>
+          <div class="about_screen mt-5">
+            <img src="img/img_5.png" class="img-fluid image_bg_5" alt="">
+            <div class="blur_block three">
+              <p class="title_about mb-0">Глобальный рынок</p>
+              <p class="text_about">У нас есть глобальный охват, присутствие и доступ к ресурсам на международной арене, данные возможности дают возможность
+              нашим портфельным компаниям лучше понимать возможности роста и расширяться на международном уровне.
+              </p>
+            </div>
+            <img src="img/img_6.png" class="img-fluid image_bg_6" alt="">
+            <span class="text_bg left_text d-none d-lg-block">о нас</span>
+          </div>
+        </div>
+        <div class="block_screen_about last_block_pad">
+          <p class="title_block text-left bottom_line right mb-4"><span>04 - МАСШТАБИРОВАНИЕ</span></p>
+          <div class="about_screen mt-5">
+            <div class="blur_block">
+              <p class="title_about mb-0">Масштабируйте быстрее</p>
+              <p class="text_about">Компании, работающие с Frendex Capital, получают множество дополнительных преимуществ. Помощь по подбору персонала и
+              поиск опытных партнеров. Мы поддерживаем основателей и их команды в разработке маркетинговых и коммуникационных
+              стратегий, помогаем выстраивать стратегию от создания бренда до планирования IPO.
+            </p>
+            </div>
+            <img src="img/Rectangle 23.png" class="img-fluid image_bg_2" alt="">
+          </div>
+        </div>
+        <div class="bottom_block_order">
+          <a href="#" class="btn_order" data-toggle="modal" data-target="#order">Оставить заявку</a>
         </div>
       </div>
     </div>
   </div>
+<!--modal window-->
+<div class="modal" tabindex="-1" role="dialog" id="order">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img class="img-fluid" src="img/close.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="get" action="">
+          <fieldset>
+            <input class="form_order mb-3" type="text" name="" placeholder="Ваше имя">
+            <input class="form_order mb-3" type="text" name="" placeholder="Контакты для обратной связи">
+            <input class="form_order mb-3" type="text" name="" placeholder="Компания находится в...">
+            <input class="form_order mb-3" type="text" name="" placeholder="Моя компания называется...">
+            <input class="form_order mb-3" type="text" name="" placeholder="Описание компании">
+            <input class="form_order mb-3" type="text" name="" placeholder="Отрасль или вертикаль">
+            <label class="label_file form_order" >
+              Прикрепите презентацию
+              <input type="file" name="" placeholder="Отрасль или вертикаль">
+              <img class="img-fluid" src="img/screp.png" alt="">
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn_order" data-toggle="modal" data-target="#order">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $('#btn_menu').click(function () {
+    $('.menu_link_header').toggleClass('active');
+    $('.header').toggleClass('active');
+  });
+</script>
+<script>
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 10) {
+        $('.header').addClass('top_nav_bg');
+      } else {
+        $('.header').removeClass('top_nav_bg');
+      }
+    })
+</script>
+
+
 </body>
 </html>
