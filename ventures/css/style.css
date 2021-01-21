@@ -264,7 +264,7 @@ body {
 	height:100%;
 }
 .screen_two{
-	padding:100px 15px;
+	padding:0 15px;
 }
 .text_adventages{
 	display:flex;
@@ -464,8 +464,19 @@ a.content_contact:hover{
 	left:0;
 	top:0;
 }
-
-
+.link_top_about{
+	font-size:18px;
+	letter-spacing:0.02em;
+	font-family:cofo_reg;
+	text-transform:uppercase;
+	margin:0 20px 0 0;
+	transition:color 0.3s ease 0s;
+	color:rgba(255, 255, 255, 0.6);
+}
+.link_top_about:hover{
+	color:rgba(255, 255, 255, 0.9);
+	text-decoration:none;
+}
 
 
 @media(max-width:1199px){
