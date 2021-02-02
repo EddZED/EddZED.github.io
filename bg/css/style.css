@@ -1,0 +1,30 @@
+body{
+  margin:0;
+  padding:0;
+}
+.container{
+  min-height:100vh;
+  background-color:green;
+  max-width:1120px;
+  border:20px solid #000;
+  margin:0 auto;
+}
+.text_content{
+  font-size:25px;
+}
+@media(max-width:1140px){
+  .container{
+    max-width:700px;
+  }
+}
+@media(max-width:767px){
+  .text_content{
+    font-size:14px;
+  }
+  .container{
+    max-width:600px
+  }
+}
+
+
+

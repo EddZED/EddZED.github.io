@@ -494,7 +494,9 @@ a.content_contact:hover{
 	color:rgba(255, 255, 255, 0.9);
 	text-decoration:none;
 }
-
+.screen_three{
+	padding-bottom:100px;
+}
 
 @media(max-width:1199px){
 	.menu_link_footer .menu__link{
