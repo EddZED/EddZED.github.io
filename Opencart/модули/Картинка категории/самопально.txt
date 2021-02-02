@@ -1,0 +1,28 @@
+catalog/controller/common/menu.php
+
+
+вставить в начале:
+
+ $this->load->model('tool/image');
+
+
+далее находим:
+
+$data['categories'][] = array(
+ 'name' => $category['name'], 
+					
+ 'thumb' => $this->model_tool_image->resize($category['image'], 100, 64),  
+    <----------- вставить					
+ 'children' => $children_data, 
+					
+ 'column' => $category['column'] ? $category['column'] : 1, 
+					
+ 'href' => $this->url->link('product/category', 'path=' . $category['category_id']) 
+
+);
+
+
+
+catalog/theme.../menu.twig
+
+<img src="{{ category.thumb }}" class="img-category" alt="/">

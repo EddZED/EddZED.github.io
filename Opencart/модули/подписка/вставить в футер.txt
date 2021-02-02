@@ -1,0 +1,5 @@
+добавить в каталог / controller / common / footer.php 
+до возврата $ this-> load-> view ('common / footer', $ data); 
+этот код 
+$ data ['pavnewsletter'] = $ this-> load-> controller ('extension / module / pavnewsletter'); 
+и добавьте в footer.twig {{pavnewsletter}}

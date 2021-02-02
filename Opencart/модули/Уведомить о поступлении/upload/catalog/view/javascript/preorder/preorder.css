@@ -1,0 +1,13 @@
+.button-preorder-default + button {
+	width: 60% !important;
+}
+@media (max-width: 767px) {
+	.button-preorder-default + button  {
+		width: 33.33%;
+	}
+}
+@media (max-width: 1200px) {
+	.button-preorder-default + button {
+		width: 33.33%;
+	}
+}

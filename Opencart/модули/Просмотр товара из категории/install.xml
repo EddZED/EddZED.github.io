@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <modification>
+	<name>Быстрый просмотр товара</name>
+	<code>product-quick-preview</code>
+	<version>1.0</version>
+	<author>https://ocmod.net</author>
+    <link>https://ocmod.net</link>
+	
+	<file path="catalog/controller/product/{category,manufacturer,special,search}*.php">
+		<operation>
+			<search><![CDATA[$this->load->model('tool/image');]]></search>
+			<add position="after"><![CDATA[
+				$this->language->load('product/product');		
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[language->load('product/product');]]></search>
+			<add position="before"><![CDATA[
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$data['products'][] = array(]]></search>
+			<add position="before"><![CDATA[
+				$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+				$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');	
+				
+				$stock = $this->language->get('text_stock') . ' ';
+				
+				if ($result['quantity'] <= 0) {
+					$stock .= $result['stock_status'];
+				} elseif ($this->config->get('config_stock_display')) {
+					$stock .= $result['quantity'];
+				} else {
+					$stock .= $this->language->get('text_instock');
+				}
+				
+                $discount_query = $this->model_catalog_product->getProductDiscounts($result['product_id']);
+				
+                $discounts = array();
+                foreach ($discount_query as $discount) {
+                    $discounts[] = array(
+                        'quantity' => $discount['quantity'],
+                        'price'    => $this->currency->format($this->tax->calculate($discount['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency'])
+                    );
+                }
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$data['products'][] = array(]]></search>
+			<add position="after"><![CDATA[
+				'manufacturer'=> $result['manufacturer'],
+				'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+				'model'        => $result['model'],
+				'attribute_groups' => $this->model_catalog_product->getProductAttributes($result['product_id']),
+				'reward'        => $result['reward'],
+				'stock'       => $stock,
+				'points'        => $result['points'],
+				'discounts'   => $discounts,
+				'catdescription'  => html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'),
+				]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/product/{category,manufacturer,special,search}*.php">
+		<operation>
+			<search><![CDATA[// Text]]></search>
+			<add position="after"><![CDATA[
+ 				$_['text_reward']			= 'Бонусные баллы';
+    			$_['text_catpoints']		= 'Цена в Бонусных баллах:';
+    			$_['text_discount']			= ' или более ';    
+			]]></add>
+		</operation>
+	</file>
+	
+	<file path="catalog/view/theme/*/template/product/{category,manufacturer,special,search}*.twig">		
+		<operation>
+			<search><![CDATA[<div class="product-thumb">]]></search>
+			<add position="after"><![CDATA[
+				<div id="{{ product['product_id'] }}" class="modal fade">
+				<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+				<h4 class="modal-title">{{ product['name'] }}</h4>
+				</div>
+				<div class="modal-body">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+				<div class="images"><a href="{{ product['href'] }}"><img src="{{ product['thumb'] }}" alt="{{ product['name'] }}" /></a></div>		
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<ul class="list-unstyled"> 
+				{% if (product['manufacturer']) %} 
+					<li>{{ text_manufacturer }} <a href="{{ product['manufacturers'] }}">{{ product['manufacturer'] }}</a></li>
+				{% endif %} 
+				<li>{{ text_model }} {{ product['model'] }}</li>
+				{% if (product['reward']) %} 
+					<li>{{ text_reward }} {{ product['reward'] }}</li>
+				{% endif %} 
+				<li>{{ product['stock'] }}</li>
+				</ul>
+				{% if (product['price']) %} 
+					<ul class="list-unstyled">
+					{% if (not product['special']) %} 
+						<li>
+						<h2>{{ product['price'] }}</h2>
+						</li>
+						{% else %} 
+						<li><span style="text-decoration: line-through;">{{ product['price'] }}</span></li>
+						<li>
+						<h2>{{ product['special'] }}</h2>
+						</li>
+					{% endif %} 
+					{% if (product['tax']) %} 
+						<li>{{ text_tax }} {{ product['tax'] }}</li>
+					{% endif %} 
+					{% if (product['points']) %} 
+						<li>{{ text_catpoints }} {{ product['points'] }}</li>
+					{% endif %} 
+					{% if (product['discounts']) %} 
+						{% for discount in product['discounts'] %} 
+							<li>{{ discount['quantity'] }}{{ text_discount }}{{ discount['price'] }}</li>
+						{% endfor %} 
+					{% endif %} 
+					</ul>
+				{% endif %} 
+				</div>
+				<div class="row">
+				<div class="col-xs-12">
+				<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab-description" data-toggle="tab">{{ tab_description }}</a></li>
+				{% if (product['attribute_groups']) %} 
+					<li><a href="#tab-specification" data-toggle="tab">{{ tab_attribute }}</a></li>
+				{% endif %} 
+				</ul>
+				<div class="tab-content">
+				<div class="tab-pane active" id="tab-description">{{ product['catdescription'] }}</div>
+				{% if (product['attribute_groups']) %} 
+					<div class="tab-pane" id="tab-specification">
+					<table class="table table-bordered">
+					{% for attribute_group in product['attribute_groups'] %} 
+						<thead>
+						<tr>
+						<td colspan="2"><strong>{{ attribute_group['name'] }}</strong></td>
+						</tr>
+						</thead>
+						<tbody>
+						{% for attribute in attribute_group['attribute'] %} 
+							<tr>
+							<td>{{ attribute['name'] }}</td>
+							<td>{{ attribute['text'] }}</td>
+							</tr>
+						{% endfor %} 
+						</tbody>
+					{% endfor %} 
+					</table>
+					</div>
+				{% endif %} 
+				</div>
+				</div>
+				</div>
+				</div>
+				<div class="modal-footer">
+				
+				<a href="{{ product['href'] }}"><button class="btn btn-default" type="button">Подробнее</button></a>
+				<button type="button" onclick="cart.add('{{ product['product_id'] }}', '{{ product['minimum'] }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+				<button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+				</div>
+				</div>
+				</div>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<div class="image">]]></search>
+			<add position="before"><![CDATA[
+				<button class="btn-modal" type="button" data-toggle="modal" data-target="#{{ product['product_id'] }}">Показать</button>
+			]]></add>
+		</operation>
+	  <operation>
+	  		<search><![CDATA[{{ footer }}]]></search>
+			<add position="after"><![CDATA[
+				<style>
+				.btn-modal {
+					 display: none;
+					 border: none;
+					 background-color: #eee;
+					 color: #888;
+					 line-height: 25px;
+					 font-weight: bold;
+					 text-align: center;
+					 cursor: pointer;
+					 position: absolute;
+					 top: 20%;
+					 left: 35%;
+					 padding: 4px 10px;
+					 -webkit-border-radius: 3px;
+					 -moz-border-radius: 3px;
+					 border-radius: 3px;
+					 text-transform: uppercase;
+					 z-index:99 
+				}
+				 .product-thumb:hover .btn-modal {
+					 display: block;
+				}
+				 .product-list .btn-modal {
+					 top: 31%;
+					 left: 13%;
+				}
+				</style>				
+			]]></add>
+		</operation>
+	</file>
+</modification>

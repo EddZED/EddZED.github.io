@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  	<name>SimplePars</name>
+  	<code>I</code>
+  	<version>0.1</version>
+  	<author>Rassol2</author> 
+
+	<!--controller-->
+	<file path="admin/controller/common/column_left.php" >
+		<operation>
+			<search><![CDATA[if ($this->user->hasPermission('access', 'catalog/download')) {]]></search>
+			<add position="before"><![CDATA[if ($this->user->hasPermission('access', 'catalog/simplepars')) {
+				$catalog[] = array(
+					'name'	   => $this->language->get('SimplePars'),
+					'href'     => $this->url->link('catalog/simplepars', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);
+			}]]></add>
+		</operation>
+	</file>	
+	
+</modification>
