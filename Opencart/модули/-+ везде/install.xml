@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+<name>Количество +/- на любой странице с контролем</name>
+<code>Quantity-plus-minus</code>
+<version>1.0</version>
+<author>https://ocmod.net</author>
+<link>https://ocmod.net</link>
+
+<file path="catalog/controller/product/*.php">
+	<operation error="skip">
+	<search><![CDATA[ $data['products'][] = array( ]]></search>
+	<add position="after"><![CDATA[ 
+	'quantity' => $result['quantity'],
+	'minimum'	  => $result['minimum'],	
+	]]></add>
+	</operation>
+</file>	
+<file path="catalog/controller/extension/module/{latest,special,bestseller}.php">
+	<operation error="skip">
+	<search><![CDATA[ $data['products'][] = array( ]]></search>
+	<add position="after"><![CDATA[ 
+	'quantity' => $result['quantity'],
+	'minimum'	  => $result['minimum'],	
+	]]></add>
+	</operation>
+</file>
+<file path="catalog/controller/extension/module/featured.php">
+	<operation error="skip">
+	<search><![CDATA[ $data['products'][] = array( ]]></search>
+	<add position="after"><![CDATA[ 
+	'quantity' => $product_info['quantity'],
+	'minimum'	  => $product_info['minimum'],	
+	]]></add>
+	</operation>
+</file>	
+<file path="catalog/controller/product/product.php">
+	<operation error="skip">
+	<search><![CDATA[ $data['points'] = $product_info['points']; ]]></search>
+	<add position="after"><![CDATA[ $data['quantity'] = $product_info['quantity']; ]]></add>
+	</operation>
+</file>	
+<file path="catalog/view/theme/*/template/product/*.twig">
+	<operation error="skip">
+	<search><![CDATA[ <div class="button-group"> ]]></search>
+	<add position="before"><![CDATA[ 
+	<div class="quantity_div">
+	<span class="minus">-</span>
+	<input type="text" name="quantity" class="quantity_input" size="2" value="{{ product.minimum }}"  data-maximum="{{ product.quantity }}" />	  
+	<span class="plus">+</span>
+	</div>
+	]]></add>
+	</operation>
+	<operation>
+	<search error="skip"><![CDATA[ onclick="cart.add('{{ product.product_id }}');" ]]></search>
+	<add position="replace"><![CDATA[ onclick="cart.add('{{ product.product_id }}', $(this).parent().parent().find('.quantity_input').val());" ]]></add>
+	</operation>
+</file>
+<file path="catalog/view/theme/*/template/extension/module/{latest,special,bestseller}*.twig">
+	<operation error="skip">
+	<search><![CDATA[ <div class="button-group"> ]]></search>
+	<add position="before"><![CDATA[ 
+	<div class="quantity_div">
+	<span class="minus">-</span>
+	<input type="text" name="quantity" class="quantity_input" size="2" value="{{ product.minimum }}" data-maximum="{{ product.quantity }}" />	  
+	<span class="plus">+</span>
+	</div>
+	]]></add>
+	</operation>
+	<operation>
+	<search error="skip"><![CDATA[ onclick="cart.add('{{ product.product_id }}');" ]]></search>
+	<add position="replace"><![CDATA[ onclick="cart.add('{{ product.product_id }}', $(this).parent().parent().find('.quantity_input').val());" ]]></add>
+	</operation>
+</file>
+<file path="catalog/view/theme/*/template/extension/module/featured.twig">
+	<operation error="skip">
+	<search><![CDATA[ <div class="button-group"> ]]></search>
+	<add position="before"><![CDATA[ 
+	<div class="quantity_div">
+	<span class="minus">-</span>
+	<input type="text" name="quantity" class="quantity_input" size="2" value="{{ product.minimum }}" data-maximum="{{ product.quantity }}" />	  
+	<span class="plus">+</span>
+	</div>
+	]]></add>
+	</operation>
+	<operation>
+	<search error="skip"><![CDATA[ onclick="cart.add('{{ product.product_id }}');" ]]></search>
+	<add position="replace"><![CDATA[ onclick="cart.add('{{ product.product_id }}', $(this).parent().parent().find('.quantity_input').val());" ]]></add>
+	</operation>
+</file>
+<file path="catalog/view/theme/*/template/product/product.twig">
+	<operation error="skip">
+	<search><![CDATA[ <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" /> ]]></search>
+	<add position="replace"><![CDATA[ 
+	<div class="quantity_div">
+	<span class="minus">-</span>
+	<input type="text" name="quantity" class="quantity_input" size="2" value="{{ minimum }}" data-maximum="{{ quantity }}" id="input-quantity" class="form-control" />	  
+	<span class="plus">+</span>
+	</div>
+	]]></add>
+	</operation>
+</file>
+<file path="catalog/view/theme/*/template/common/footer.twig">
+	<operation error="skip">
+	<search><![CDATA[ </body> ]]></search>
+	<add position="before"><![CDATA[ 
+	<script>
+	function quantity_control() {
+	$('.quantity_input').each(function() {
+	$(this).attr('readonly', 'readonly');
+	var minimum = $(this).val();
+	var maximum = $(this).attr('data-maximum');
+	if(maximum <= 0) {
+		$(this).val('0');
+		$(this).parent().parent().find('.button-group').children().first().attr('disabled', 'disabled');
+		if ($('.form-group').length !=0) {
+			$(this).parent().parent().find('#button-cart').attr('disabled', 'disabled');
+		}
+		var text = 'данный товар закончился.';
+	} else {
+		var text = 'данного товара осталось всего ' + maximum + ' шт!'
+	}
+	
+	$(this).next().click(function () {
+	if ((~~$(this).prev().val()+ ~~minimum) <= ~~maximum) {
+		$(this).prev().val(~~$(this).prev().val()+ ~~minimum);
+	} else {
+	if ($(this).parent().find('.stock_warning').length ==0) { $(this).parent().append($('<span class="stock_warning">На нашем складе ' + text + '</span>').fadeIn()); }
+	$(this).parent().find('.stock_warning').fadeIn().delay('2000').fadeOut();
+	}
+	});
+	$(this).prev().click(function () {
+	if ($(this).next().val() > ~~minimum) {
+		$(this).next().val(~~$(this).next().val()- ~~minimum);
+	}
+	});
+	});
+	}
+	$(document).ready(function() {
+		quantity_control();
+	});
+	</script>
+	<style>
+	.quantity_div {display:block; width:80px; height:26px; position:relative; padding:0; text-align:center; margin: 10px auto; line-height:normal !important;}
+	.form-group .quantity_div {display:inline-block; vertical-align:middle;}
+	.quantity_input {text-align:center; width:48px; height:44px !important; margin:0 0px !important; border:solid 0px #d2d2d2; border-radius:0; background:#f4f4f4; color:#555;font-family: 'Montserrat Bold';font-size:16px}
+	.plus, .minus {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 20px;height: 44px;border: none;background: #fcbe2f!important;font-size: 16px!important;line-height: 20px;font-family: 'Montserrat Bold'!important;coursor:pointer;}
+	.stock_warning {position:absolute; z-index:999; left:-49px; bottom:35px; width:180px !important; padding:10px !important; background:#fefefe; background: linear-gradient(to bottom, #fefefe 0%, #f0f0f0 100%); box-shadow: 1px 1px 10px #ccc; line-height:15px; border:solid 1px #ddd; border-radius:10px; display:block; color:#f00 !important; font-size:12px;}
+	</style>
+	]]></add>
+	</operation>
+</file>
+</modification>

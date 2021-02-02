@@ -1,0 +1,344 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+	    <button onclick="$('#input-apply').attr('value', '1'); $('#' + $('#form-preorder').attr('id')).submit();" data-toggle="tooltip" title="{{ button_apply }}" class="btn btn-success"><i class="fa fa-save"></i></button>
+        <button type="submit" form="form-category" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+	    {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+	{% if success %}
+    <div class="alert alert-success"><i class="fa fa-check-circle"></i> {{ success }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+	<div id="success"></div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+	    <ul class="nav nav-tabs">
+		  <li class="active"><a href="#tab-preorder" data-toggle="tab">{{ tab_preorder }}</a></li>
+		  <li><a href="#tab-setting" data-toggle="tab">{{ tab_setting }}</a></li>
+	    </ul>
+	    <div class="tab-content">
+		  <div class="tab-pane active" id="tab-preorder">
+		    <div class="row">
+			  <div class="panel-body">
+			    <div class="pull-right">
+				  <button type="button" data-toggle="tooltip" title="{{ button_send_all }}" class="btn btn-primary" onclick="editPreOrders();"><i class="fa fa-send-o"></i> {{ button_send_all }}</button>
+				  <button type="button" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger" onclick="confirm('{{ text_confirm }}') ? $('#form-preorder-delete').submit() : false;"><i class="fa fa-trash-o"></i> {{ button_delete }}</button>
+			    </div>
+			  </div>
+		    </div>
+		    <div class="row">
+			  <div class="panel-body">
+			    <form action="{{ delete }}" method="post" enctype="multipart/form-data" id="form-preorder-delete">
+			      <div class="table-responsive">
+				    <table class="table table-bordered table-hover">
+				      <thead>
+					    <tr>
+						  <td width="1" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);" /></td>
+					      <td class="text-left">{% if sort == 'name' %}<a href="{{ sort_name }}" class="{{ order|lower }}">{{ column_name }}</a>{% else %}<a href="{{ sort_name }}">{{ column_name }}</a>{% endif %}</td>	
+					      <td class="text-left">{% if sort == 'email' %}<a href="{{ sort_email }}" class="{{ order|lower }}">{{ column_email }}</a>{% else %}<a href="{{ sort_email }}">{{ column_email }}</a>{% endif %}</td>
+						  <td class="text-left">{% if sort == 'phone' %}<a href="{{ sort_phone }}" class="{{ order|lower }}">{{ column_phone }}</a>{% else %}<a href="{{ sort_phone }}">{{ column_phone }}</a>{% endif %}</td>
+					      <td class="text-left">{% if sort == 'date_added' %}<a href="{{ sort_date_added }}" class="{{ order|lower }}">{{ column_date_added }}</a>{% else %}<a href="{{ sort_date_added }}">{{ column_date_added }}</a>{% endif %}</td>
+					      <td class="text-right">{% if sort == 'status' %}<a href="{{ sort_status }}" class="{{ order|lower }}">{{ column_status }}</a>{% else %}<a href="{{ sort_status }}">{{ column_status }}</a>{% endif %}</td>
+					    </tr>
+					  </thead>
+				      <tbody>
+					    {% if preorders %}
+						{% for preorder in preorders %}
+					    <tr>
+					      <td class="text-center">{% if preorder.preorder_id in selected %}<input type="checkbox" name="selected[]" value="{{ preorder.preorder_id }}" checked="checked" />{% else %}<input type="checkbox" name="selected[]" value="{{ preorder.preorder_id }}" />{% endif %}</td>
+					      <td class="text-left">
+						    {{ preorder.name }}
+							{% set option_quantity = true %}
+						    {% for product_option in preorder.product_options %}
+							{% if preorder['product_option'][product_option.product_option_id] is defined %}
+							<br /><br /><strong>{{ product_option.name }}:</strong>
+							{% for product_option_value in product_option.product_option_value %}
+							{% if preorder['product_option'][product_option.product_option_id] is iterable %}
+							{% for option_value in preorder['product_option'][product_option.product_option_id] %}
+							{% if option_value == product_option_value.product_option_value_id %}
+							<span class="label label-{% if product_option_value.quantity %}success{% else %}warning{% set option_quantity = false %}{% endif %}">{{ product_option_value.name }}</span>
+							{% endif %}
+							{% endfor %}
+							{% else %}
+							{% if preorder['product_option'][product_option.product_option_id] == product_option_value.product_option_value_id %}
+							<span class="label label-{% if product_option_value.quantity %}success{% else %}warning{% set option_quantity = false %}{% endif %}">{{ product_option_value.name }}</span>
+							{% endif %}
+							{% endif %}
+							{% endfor %}
+							{% endif %}
+							{% endfor %}
+						  </td>
+					      <td class="text-left">{{ preorder.email }}</td>
+						  <td class="text-left">{{ preorder.phone }}</td>
+					      <td class="text-left">{{ preorder.date_added }}</td>
+					      <td class="text-right" id="status-{{ preorder.preorder_id }}">
+						    {% if preorder.status %}
+							<button type="button" class="btn btn-block btn-success" disabled="disabled">{{ text_notified }}</button>
+							{% else %}
+							{% if preorder.quantity and option_quantity %}
+							<button type="button" onclick="editPreOrder('{{ preorder.preorder_id }}')" class="btn btn-block btn-primary">{{ button_send }}</button>
+							{% else %}
+							<button type="button" class="btn btn-block btn-default" disabled="disabled">{{ text_out_stock }}</button>
+							{% endif %}
+							{% endif %}
+						  </td>
+					    </tr>
+					    {% endfor %}
+					    {% else %}
+					    <tr>
+					      <td class="text-center" colspan="5">{{ text_no_results }}</td>
+					    </tr>
+					    {% endif %}
+				      </tbody>
+				    </table>
+			      </div>
+			    </form>
+			    <div class="row">
+			      <div class="col-sm-6 text-left">{{ pagination }}</div>
+			      <div class="col-sm-6 text-right">{{ results }}</div>
+			    </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="tab-pane" id="tab-setting">
+		    <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-preorder" class="form-horizontal">
+			  <fieldset>
+                <legend>{{ text_general }}</legend>
+			    <input type="hidden" name="module_preorder_apply" id="input-apply" value="0" />
+			    <div class="form-group">
+			      <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+			      <div class="col-sm-10">
+				    <select name="module_preorder_status" id="input-status" class="form-control">
+				      {% if module_preorder_status %}
+				      <option value="1" selected="selected">{{ text_enabled }}</option>
+				      <option value="0">{{ text_disabled }}</option>
+				      {% else %}
+				      <option value="1">{{ text_enabled }}</option>
+				      <option value="0" selected="selected">{{ text_disabled }}</option>
+				      {% endif %}
+				    </select>
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label class="col-sm-2 control-label" for="input-mail-alert">{{ entry_mail_alert }}</label>
+			      <div class="col-sm-10">
+				    <select name="module_preorder_mail_alert" id="input-mail-alert" class="form-control">
+				      {% if module_preorder_mail_alert %}
+				      <option value="1" selected="selected">{{ text_enabled }}</option>
+				      <option value="0">{{ text_disabled }}</option>
+				      {% else %}
+				      <option value="1">{{ text_enabled }}</option>
+				      <option value="0" selected="selected">{{ text_disabled }}</option>
+				      {% endif %}
+				    </select>
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label class="col-sm-2 control-label" for="input-product">{{ entry_product }}</label>
+			      <div class="col-sm-10">
+				    <select name="module_preorder_product" id="input-product" class="form-control">
+				      {% if module_preorder_product %}
+				      <option value="1" selected="selected">{{ text_enabled }}</option>
+				      <option value="0">{{ text_disabled }}</option>
+				      {% else %}
+				      <option value="1">{{ text_enabled }}</option>
+				      <option value="0" selected="selected">{{ text_disabled }}</option>
+				      {% endif %}
+				    </select>
+			      </div>
+			    </div>
+			    <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-stock-status"><span data-toggle="tooltip" title="{{ help_stock_status }}">{{ entry_stock_status }}</span></label>
+                  <div class="col-sm-10">
+                    <select name="module_preorder_stock_status_id" id="input-stock-status" class="form-control">
+				      <option value="0">{{ text_none }}</option>
+					  {% for stock_status in stock_statuses %}
+                      {% if stock_status.stock_status_id == module_preorder_stock_status_id %}
+                      <option value="{{ stock_status.stock_status_id }}" selected="selected">{{ stock_status.name }}</option>
+                      {% else %}
+                      <option value="{{ stock_status.stock_status_id }}">{{ stock_status.name }}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+			    <div class="form-group">
+			      <label class="col-sm-2 control-label" for="input-captcha">{{ entry_captcha }}</label>
+			      <div class="col-sm-10">
+				    <select name="module_preorder_captcha" id="input-captcha" class="form-control">
+				      {% if module_preorder_captcha %}
+				      <option value="1" selected="selected">{{ text_enabled }}</option>
+				      <option value="0">{{ text_disabled }}</option>
+				      {% else %}
+				      <option value="1">{{ text_enabled }}</option>
+				      <option value="0" selected="selected">{{ text_disabled }}</option>
+				      {% endif %}
+				    </select>
+			      </div>
+			    </div>
+			  </fieldset>
+			  <fieldset>
+                <legend>{{ text_form }}</legend>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-email">{{ entry_email }}</label>
+				  <div class="col-sm-10">
+				    <select name="module_preorder_email" id="input-email" class="form-control">
+					  {% if module_preorder_email == 2 %}
+					  <option value="2" selected="selected">{{ text_required }}</option>
+					  <option value="1">{{ text_no_required }}</option>
+					  <option value="0">{{ text_disabled }}</option>
+					  {% elseif module_preorder_email == 1 %}
+					  <option value="2">{{ text_required }}</option>
+					  <option value="1" selected="selected">{{ text_no_required }}</option>
+					  <option value="0">{{ text_disabled }}</option>
+					  {% else %}
+					  <option value="2">{{ text_required }}</option>
+					  <option value="1">{{ text_no_required }}</option>
+					  <option value="0" selected="selected">{{ text_disabled }}</option>
+					  {% endif %}
+					</select>
+				  </div>
+			    </div>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-phone">{{ entry_phone }}</label>
+				  <div class="col-sm-10">
+				    <select name="module_preorder_phone" id="input-phone" class="form-control">
+					  {% if module_preorder_phone == 2 %}
+					  <option value="2" selected="selected">{{ text_required }}</option>
+					  <option value="1">{{ text_no_required }}</option>
+					  <option value="0">{{ text_disabled }}</option>
+					  {% elseif module_preorder_phone == 1 %}
+					  <option value="2">{{ text_required }}</option>
+					  <option value="1" selected="selected">{{ text_no_required }}</option>
+					  <option value="0">{{ text_disabled }}</option>
+					  {% else %}
+					  <option value="2">{{ text_required }}</option>
+					  <option value="1">{{ text_no_required }}</option>
+					  <option value="0" selected="selected">{{ text_disabled }}</option>
+					  {% endif %}
+					</select>
+				  </div>
+			    </div>
+			  </fieldset>
+			  <fieldset>
+                <legend>{{ text_button }}</legend>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-button-catalog">{{ entry_button_catalog }}</label>
+				  <div class="col-sm-10">
+				    <input type="text" name="module_preorder_button_catalog" value="{{ module_preorder_button_catalog }}" placeholder="{{ entry_button_catalog }}" id="input-button-catalog" class="form-control" />
+				    {% if error_button_catalog %}
+				    <div class="text-danger">{{ error_button_catalog }}</div>
+				    {% endif %}
+				  </div>
+			    </div>
+			    <div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-button-type-catalog">{{ entry_button_type_catalog }}</label>
+				  <div class="col-sm-10">
+				    <select name="module_preorder_button_type_catalog" id="input-button-type-catalog" class="form-control">
+					  {% if module_preorder_button_type_catalog == 2 %}
+					  <option value="2" selected="selected">{{ text_icon_text }}</option>
+					  <option value="1">{{ text_no_icon_text }}</option>
+					  <option value="0">{{ text_icon_no_text }}</option>
+					  {% elseif module_preorder_button_type_catalog == 1 %}
+					  <option value="2">{{ text_icon_text }}</option>
+					  <option value="1" selected="selected">{{ text_no_icon_text }}</option>
+					  <option value="0">{{ text_icon_no_text }}</option>
+					  {% else %}
+					  <option value="2">{{ text_icon_text }}</option>
+					  <option value="1">{{ text_no_icon_text }}</option>
+					  <option value="0" selected="selected">{{ text_icon_no_text }}</option>
+					  {% endif %}
+				    </select>
+				  </div>
+			    </div>
+			    <div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-button-product">{{ entry_button_product }}</label>
+				  <div class="col-sm-10">
+				    <input type="text" name="module_preorder_button_product" value="{{ module_preorder_button_product }}" placeholder="{{ entry_button_product }}" id="input-button-product" class="form-control" />
+				    {% if error_button_product %}
+				    <div class="text-danger">{{ error_button_product }}</div>
+				    {% endif %}
+				  </div>
+			    </div>
+			    <div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-button-type-product">{{ entry_button_type_product }}</label>
+				  <div class="col-sm-10">
+				    <select name="module_preorder_button_type_product" id="input-button-type-product" class="form-control">
+					  {% if module_preorder_button_type_product == 2 %}
+					  <option value="2" selected="selected">{{ text_icon_text }}</option>
+					  <option value="1">{{ text_no_icon_text }}</option>
+					  <option value="0">{{ text_icon_no_text }}</option>
+					  {% elseif module_preorder_button_type_product == 1 %}
+					  <option value="2">{{ text_icon_text }}</option>
+					  <option value="1" selected="selected">{{ text_no_icon_text }}</option>
+					  <option value="0">{{ text_icon_no_text }}</option>
+					  {% else %}
+					  <option value="2">{{ text_icon_text }}</option>
+					  <option value="1">{{ text_no_icon_text }}</option>
+					  <option value="0" selected="selected">{{ text_icon_no_text }}</option>
+					  {% endif %}
+				    </select>
+				  </div>
+			    </div>
+			  </fieldset>
+			  <fieldset>
+                <legend>{{ text_sms }}</legend>
+				<div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-api-key">{{ entry_api_key }}</label>
+				  <div class="col-sm-10">
+				    <input type="text" name="module_preorder_api_key" value="{{ module_preorder_api_key }}" placeholder="{{ entry_api_key }}" id="input-api-key" class="form-control" />
+				  </div>
+			    </div>
+			    <div class="form-group">
+				  <label class="col-sm-2 control-label" for="input-sender">{{ entry_sender }}</label>
+				  <div class="col-sm-10">
+				    <input type="text" name="module_preorder_sender" value="{{ module_preorder_sender }}" placeholder="{{ entry_sender }}" id="input-sender" class="form-control" />
+				  </div>
+			    </div>
+			  </fieldset>
+		    </form>
+		  </div>
+	    </div>	
+      </div>
+    </div>
+  </div>
+<script type="text/javascript"><!--
+function editPreOrder(preorder_id) {
+	$.ajax({
+		url: 'index.php?route=extension/module/preorder/editPreOrder&user_token={{ user_token }}&preorder_id=' +  preorder_id,
+		success: function() {
+			location.reload();
+		}
+	});
+}
+
+function editPreOrders() {
+	$.ajax({
+		url: 'index.php?route=extension/module/preorder/editPreOrders&user_token={{ user_token }}',
+		success: function() {
+			location.reload();
+		}
+	});
+}
+//--></script>
+</div>
+{{ footer }}
