@@ -1,5 +1,6 @@
-@font-face{font-family:monserat;src: url(../font/montserrat.ttf);}
+@font-face{font-family:montserrat;src: url(../font/montserrat.ttf);}
 @font-face{font-family:noto_tc;src: url(../font/NotoSerifTC-Bold-Alphabetic.ttf);}
+@font-face{font-family:roboto_cond;src: url(../font/RobotoCondensed-Bold.ttf);}
 html{scroll-behavior: smooth;}
 body{}
 .wrapper{width:100%;overflow-x:hidden;}
@@ -19,12 +20,16 @@ body{}
 .btn_menu{display:none;}
 .menu_block:not(.active){display:block;}
 .intro_block_slider{position:relative;z-index:0;}
+.slider_item{overflow:hidden;}
 .slider_item:focus{outline:none;}
 .slider_intro{position:relative;}
 .content_slider{position:absolute;display:flex;align-items:center;top:0;bottom:0;left:0;right:0;}
-.img_slider{object-fit:cover;height:auto;width:100%;}
-
-
+.img_slider{object-fit:cover;max-height:765px;width:100%;}
+.sub_title_gradient{font-size:20px;line-height:32px;text-transform:uppercase;font-family:roboto_cond;font-weight:bold;letter-spacing:0.22em;background: linear-gradient(45deg, rgba(255,142,106,1)33%, rgba(233,180,44,1)66%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #0B2349;text-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);}
+.main_title{font-size:44px;color:#fff;font-family:noto_tc;font-weight:900;line-height:50px;text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);}
+.white_text_slider{font-size:20px;line-height:25px;font-family:montserrat;letter-spacing:0.04em;font-weight:600;color:#fff;text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);padding-top:15px;}
+.orange_btn{padding:15px 30px;display:inline-block;font-size:18px;line-height:25px;font-family:montserrat;font-weight:bold;color:#fff;background:linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);box-shadow: 0px 4px 18px rgba(40, 119, 176, 0.24);border-radius: 28px;transition:all .3s;}
+.orange_btn:hover{background: linear-gradient(59.6deg, #286FB0 -13.43%, #00ADE3 86.67%);color:#fff;text-decoration:none;}
 
 
 
@@ -46,11 +51,18 @@ body{}
   .btn_menu.active{z-index:999;}
 }
 @media(max-width:991px){
-  
-  
+  .sub_title_gradient{font-size:16px;text-align:center;}
+  .main_title{font-size:35px;text-align:center;line-height:33px;}
+  .content_slider{top:auto;bottom:50px;}
+  .white_text_slider{font-size:15px;}
+}
+@media(max-width:767px){
+  .main_title{font-size:25px;line-height:28px;}
+  .white_text_slider{font-size:12px;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
+  .orange_btn{width:100%;padding:15px 0;font-size:22px;}
 }
 
 
