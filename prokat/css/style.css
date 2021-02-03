@@ -38,6 +38,17 @@ body{background-color:#F8FCFF;}
 .name_card span{display:inline-block;line-height:38px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;text-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);}
 .card_catalog:hover{text-decoration:none;transform:translateY(-5px);}
 .description_card{font-size:18px;line-height:24px;font-family:montserrat;font-weight:500;color:#242A3A;padding:0 25px;text-align:center;}
+.consultation_order__img{min-height:487px;width:100%;object-fit:cover;object-position:center center;}
+.img_bg{position:relative;}
+.consultationn_wrapper{position:absolute;width:100%;height:100%;left:0;top:0;display:flex;align-items:center;}
+.text_block{height:100%;}
+.sub_title_form{font-size:34px;line-height:41px;font-family:noto_tc;font-weight:900;text-transform:none;letter-spacing:0;}
+.white_text_form{font-size:18px;line-height:24px;color:#fff;font-family:montserrat;font-weight:bold;}
+
+
+
+
+
 
 
 
@@ -62,6 +73,8 @@ body{background-color:#F8FCFF;}
   .main_title{font-size:35px;text-align:center;line-height:33px;}
   .content_slider{top:auto;bottom:50px;}
   .white_text_slider{font-size:15px;padding-top:0;text-align:center;line-height:20px;}
+  .catalog{padding:40px 0;}
+  .title_block{text-align:center;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
