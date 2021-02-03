@@ -101,23 +101,35 @@ body{background-color:#F8FCFF;}
   .turn_box.active{max-height:999px;overflow:hidden;height:100%;transition:all .3s;}
   .text_content{font-size:14px;}
   .rental{padding:250px 0 40px;}
+  .title_block{font-size:25px;line-height:30px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
   .white_text_slider{font-size:12px;line-height:13px;}
   .content_slider{bottom:30px;}
   .white_text_form{font-size:14px;}
+  .catamaran_position_right{display:none;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
   .orange_btn{width:100%;padding:15px 0;font-size:22px;text-align:center;}
   .content_slider{bottom:10px;}
   .text_content{font-size:12px;}
+  .text_chek{font-size:9px;}
+  .form_wrapper{padding:35px 20px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
+  .rental{padding:300px 0 40px;}
 }
-
+@media(max-width:380px){
+  .consultationn_wrapper{top:160px;}
+  .rental{padding:330px 0 40px;}
+}
+@media(max-width:350px){
+  .consultationn_wrapper{top:160px;}
+  .rental{padding:350px 0 40px;}
+}
 
 
 
