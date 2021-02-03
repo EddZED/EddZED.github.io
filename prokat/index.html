@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Прокат снаряжения</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,15 +14,15 @@
     <header class="header">
       <nav class="navbar scrolling-navbar">
         <div class="container align-items-center justify-content-between">
-          <div class="col-12 col-lg-2 px-0">
+          <div class="col-12 col-xl-2 px-0">
             <div class="header_logo">
               <a href="#" class="hader_logo__link"><img class="img-fluid" src="img/logo.png" alt=""></a>
               <button class="btn_menu"><span></span></button>
             </div>
           </div>
-          <div class="col-lg-10 menu_block px-lg-0">
-            <div class="row align-items-center">
-              <div class="col-lg-9 px-0">
+          <div class="col-xl-10 menu_block px-xl-0">
+            <div class="row align-items-center mobile_width">
+              <div class="col-xl-9 px-0">
                 <div class="header_menu">
                   <nav class="header_menu__nav">
                     <a href="#" class="header_menu__link">главная</a>
@@ -37,7 +36,7 @@
                   </nav>
                 </div>
               </div>
-              <div class="col-lg-3 px-0">
+              <div class="col-xl-3 px-0">
                 <div class="header_contact">
                   <a href="tel:+78008008080" class="phone_link">8 800 800 80 80</a>
                   <a href="#" class="btn_order btn_order_header">Заказать прокат</a>
@@ -122,6 +121,7 @@
   <script>
     $('.btn_menu').click(function(){
       $('.menu_block').toggleClass('active');
+      $(this).toggleClass('active');
     })
   </script>
   <script>
