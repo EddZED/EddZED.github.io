@@ -20,7 +20,7 @@ body{}
 .slider_item:focus{outline:none;}
 .slider_intro{position:relative;}
 .content_slider{position:absolute;display:flex;align-items:center;top:0;bottom:0;left:0;right:0;}
-.img_slider{object-fit:cover;max-height:100%;width:100%;}
+.img_slider{object-fit:cover;height:auto;width:100%;}
 
 
 
