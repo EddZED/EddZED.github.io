@@ -3,7 +3,7 @@
 @font-face{font-family:roboto_cond;src: url(../font/RobotoCondensed-Bold.ttf);}
 html{scroll-behavior: smooth;}
 body{background-color:#F8FCFF;}
-.wrapper{width:100%;overflow-x:hidden;}
+.wrapper{width:100%;overflow:hidden;}
 .header{position:relative;width:100%;top:0;left:0;background-color:transparent;}
 .navbar{background-color:transparent;box-shadow:none;position:absolute;top:0;left:0;width:100%;z-index: 1;transition:all .3s;}
 .navbar.scrolling-navbar{padding:20px 0;}
@@ -30,6 +30,7 @@ body{background-color:#F8FCFF;}
 .white_text_slider{font-size:20px;line-height:25px;font-family:montserrat;letter-spacing:0.04em;font-weight:600;color:#fff;text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);padding-top:15px;}
 .orange_btn{padding:15px 30px;display:inline-block;font-size:18px;line-height:25px;font-family:montserrat;font-weight:bold;color:#fff;background:linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);box-shadow: 0px 4px 18px rgba(40, 119, 176, 0.24);border-radius: 28px;transition:all .3s;}
 .orange_btn:hover{background: linear-gradient(59.6deg, #286FB0 -13.43%, #00ADE3 86.67%);color:#fff;text-decoration:none;}
+.orange_btn:focus{outline:none;}
 .catalog{position:relative;padding:70px 0;}
 .title_block{font-size:34px;line-height:41px;font-family:noto_tc;color:#242A3a;font-weight:900;}
 .card_catalog{height:100%;transform:translateY(0);transition:all .3s;text-decoration:none;width:100%;background: #FFFFFF;box-shadow: 0px 0px 14px rgba(19, 49, 77, 0.08);border-radius: 15px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;}
@@ -44,6 +45,21 @@ body{background-color:#F8FCFF;}
 .text_block{height:100%;}
 .sub_title_form{font-size:34px;line-height:41px;font-family:noto_tc;font-weight:900;text-transform:none;letter-spacing:0;}
 .white_text_form{font-size:18px;line-height:24px;color:#fff;font-family:montserrat;font-weight:bold;}
+.form_wrapper{background-color:#fff;border-radius:15px;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);padding:40px 30px 40px 30px;}
+.name_form{font-size:20px;line-height:29px;font-family:noto_tc;font-weight:bold;color:#18191D;text-align:center;}
+.form_input{display:inline-block;width:100%;background-color:#F3F8FB;border-radius: 5px;padding:15px 20px;border:none;}
+.form_input:focus{outline-color: rgba(75, 111, 230, 0.6);outline-width:2px;}
+.form_input::-webkit-input-placeholder{font-size:13px;line-height:15px;color:rgba(24, 25, 29, 0.446);font-family:roboto;}
+.checkbox{position:relative;cursor:pointer;display:flex;align-items:center;}
+.checkbox input[type="checkbox"]{display:none;}
+.checked{position:relative;}
+.checked:before{content:'';position:absolute;left:0;top:-11px;width:23px;height:23px;border:2px solid #e5e5e5;border-radius:6px;}
+.checked:after{content:'';position:absolute;left:5px;top:-6px;width:13px;height:13px;background:linear-gradient(59.6deg, #286FB0 -13.43%, #00ADE3 86.67%);border-radius:2px;transition:all .3s;opacity:0;}
+.text_chek{font-size:11px;padding-left:35px;}
+.checkbox input[type="checkbox"]:checked + .checked:after{opacity:1;}
+.privacy{color:rgba(0, 173, 227, 1);text-decoration:underline;}
+.catamaran_position_right{position:absolute;bottom:50px;right:0;z-index:1;transition:all .3s;}
+.rental{padding:70px 0;}
 
 
 
@@ -51,7 +67,9 @@ body{background-color:#F8FCFF;}
 
 
 
-
+@media(max-width:1400px){
+  .catamaran_position_right{z-index:0;}
+}
 @media(max-width:1199px){
   .menu_block{position:absolute;left:0;top:0;overflow:hidden;height:0;transition:all .3s;}
   .header_menu__nav{flex-direction:column;}
@@ -75,18 +93,24 @@ body{background-color:#F8FCFF;}
   .white_text_slider{font-size:15px;padding-top:0;text-align:center;line-height:20px;}
   .catalog{padding:40px 0;}
   .title_block{text-align:center;}
+  .consultationn_wrapper{top:130px;}
+  .sub_title_form{font-size:21px;line-height:25px;}
+  .name_form{font-size:25px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
   .white_text_slider{font-size:12px;line-height:13px;}
   .content_slider{bottom:30px;}
+  .white_text_form{font-size:14px;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
   .orange_btn{width:100%;padding:15px 0;font-size:22px;text-align:center;}
   .content_slider{bottom:10px;}
 }
-
+@media(max-width:400px){
+  .consultationn_wrapper{top:160px;}
+}
 
 
 
