@@ -6,32 +6,43 @@
   <title>Прокат снаряжения</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body>  
   <div class="wrapper">
     <header class="header">
       <nav class="navbar scrolling-navbar">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
+        <div class="container align-items-center justify-content-between">
+          <div class="col-12 col-lg-2 px-0">
             <div class="header_logo">
-              <a href="#" class="hader_logo__link">logo</a>
+              <a href="#" class="hader_logo__link"><img class="img-fluid" src="img/logo.png" alt=""></a>
+              <button class="btn_menu"><span></span></button>
             </div>
-            <div class="header_menu">
-              <nav class="header_menu__nav">
-                <a href="#" class="header_menu__link">главная</a>
-                <a href="#" class="header_menu__link">прокат</a>
-                <a href="#" class="header_menu__link">правила</a>
-                <a href="#" class="header_menu__link">прайс-лист</a>
-                <a href="#" class="header_menu__link">доставка</a>
-                <a href="#" class="header_menu__link">сборка</a>
-                <a href="#" class="header_menu__link">о нас</a>
-                <a href="#" class="header_menu__link">контакты</a>
-              </nav>
-            </div>
-            <div class="header_contact">
-              <a href="tel:+78008008080" class="phone_link">8 800 800 80 80</a>
-              <a href="#" class="btn_order btn_order_header">заказать прокат</a> 
+          </div>
+          <div class="col-lg-10 menu_block px-lg-0">
+            <div class="row align-items-center">
+              <div class="col-lg-9 px-0">
+                <div class="header_menu">
+                  <nav class="header_menu__nav">
+                    <a href="#" class="header_menu__link">главная</a>
+                    <a href="#" class="header_menu__link">прокат</a>
+                    <a href="#" class="header_menu__link">правила</a>
+                    <a href="#" class="header_menu__link">прайс-лист</a>
+                    <a href="#" class="header_menu__link">доставка</a>
+                    <a href="#" class="header_menu__link">сборка</a>
+                    <a href="#" class="header_menu__link">о нас</a>
+                    <a href="#" class="header_menu__link">контакты</a>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-lg-3 px-0">
+                <div class="header_contact">
+                  <a href="tel:+78008008080" class="phone_link">8 800 800 80 80</a>
+                  <a href="#" class="btn_order btn_order_header">Заказать прокат</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -42,15 +53,28 @@
         <div class="slider_inro">
           <div class="slider_item">
             <img src="img/bg-1.jpg" class="img_slider" alt="прокат снаряжения">
-            <div class="container">
-              <div class="row">
+            <div class="container content_slider">
+              <div class="row justify-content-lg-start justify-content-center align-items-center">
                 <div class="col-lg-6">
-                  <div class="content_slider">
-                    <h3 class="sub_title_gradient">доставка снаряжения</h3>
-                    <h1 class="main_title">Прокат катамаранов и снаряжения в Екатеринбурге</h1>
-                    <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения, альпинистского снаряжения, надувных кресел и другого от 1 дня.</p>
-                    <a href="#" data-taggle="modal" data-target="#" class="orange_bnt">Оставить заявку</a>
-                  </div>
+                  <h3 class="sub_title_gradient">доставка снаряжения</h3>
+                  <h1 class="main_title">Прокат катамаранов и снаряжения в Екатеринбурге</h1>
+                  <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения, альпинистского
+                    снаряжения, надувных кресел и другого от 1 дня.</p>
+                  <a href="#" data-taggle="modal" data-target="#" class="orange_bnt">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider_item">
+            <img src="img/bg-2.png" class="img_slider" alt="прокат снаряжения">
+            <div class="container content_slider">
+              <div class="row justify-content-lg-start justify-content-center align-items-center">
+                <div class="col-lg-6">
+                  <h3 class="sub_title_gradient">доставка снаряжения</h3>
+                  <h1 class="main_title">Прокат катамаранов и снаряжения в Екатеринбурге</h1>
+                  <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения, альпинистского
+                    снаряжения, надувных кресел и другого от 1 дня.</p>
+                  <a href="#" data-taggle="modal" data-target="#" class="orange_bnt">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -94,6 +118,27 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/mdb.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $('.btn_menu').click(function(){
+      $('.menu_block').toggleClass('active');
+    })
+  </script>
+  <script>
+    $('.slider_inro').slick({
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: false,
+      arrows: false,
+      infinite: true,
+      fade: true,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      swipe: false,
+      swipeToSlide: false,
+      TouchMove: false
+    });
+  </script>
 </body>
 </html>
