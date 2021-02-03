@@ -60,8 +60,8 @@ body{background-color:#F8FCFF;}
 .privacy{color:rgba(0, 173, 227, 1);text-decoration:underline;}
 .catamaran_position_right{position:absolute;bottom:50px;right:0;z-index:1;transition:all .3s;}
 .rental{padding:70px 0;}
-
-
+.text_content{font-size:18px;line-height:26px;color:#2E3841;font-family:montserrat;font-weight:500;}
+.more_btn, .less_btn{display:none;}
 
 
 
@@ -96,6 +96,11 @@ body{background-color:#F8FCFF;}
   .consultationn_wrapper{top:130px;}
   .sub_title_form{font-size:21px;line-height:25px;}
   .name_form{font-size:25px;}
+  .more_btn, .less_btn{display:inline-block;cursor:pointer;font-size:14px;color:#005F9F;text-decoration:underline;}
+  .turn_box{max-height:0;overflow:hidden;height:100%;transition:all .3s;}
+  .turn_box.active{max-height:999px;overflow:hidden;height:100%;transition:all .3s;}
+  .text_content{font-size:14px;}
+  .rental{padding:250px 0 40px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -107,6 +112,7 @@ body{background-color:#F8FCFF;}
   .img_slider{width:auto;max-height:363px;object-fit:none;}
   .orange_btn{width:100%;padding:15px 0;font-size:22px;text-align:center;}
   .content_slider{bottom:10px;}
+  .text_content{font-size:12px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
