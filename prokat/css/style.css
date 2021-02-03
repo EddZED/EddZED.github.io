@@ -2,7 +2,7 @@
 @font-face{font-family:noto_tc;src: url(../font/NotoSerifTC-Bold-Alphabetic.ttf);}
 @font-face{font-family:roboto_cond;src: url(../font/RobotoCondensed-Bold.ttf);}
 html{scroll-behavior: smooth;}
-body{}
+body{background-color:#F8FCFF;}
 .wrapper{width:100%;overflow-x:hidden;}
 .header{position:relative;width:100%;top:0;left:0;background-color:transparent;}
 .navbar{background-color:transparent;box-shadow:none;position:absolute;top:0;left:0;width:100%;z-index: 1;transition:all .3s;}
@@ -51,18 +51,20 @@ body{}
   .btn_menu.active{z-index:999;}
 }
 @media(max-width:991px){
-  .sub_title_gradient{font-size:16px;text-align:center;}
+  .sub_title_gradient{font-size:16px;text-align:center;line-height:16px;margin-bottom:0;}
   .main_title{font-size:35px;text-align:center;line-height:33px;}
   .content_slider{top:auto;bottom:50px;}
-  .white_text_slider{font-size:15px;}
+  .white_text_slider{font-size:15px;padding-top:0;text-align:center;line-height:20px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
-  .white_text_slider{font-size:12px;}
+  .white_text_slider{font-size:12px;line-height:13px;}
+  .content_slider{bottom:30px;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
-  .orange_btn{width:100%;padding:15px 0;font-size:22px;}
+  .orange_btn{width:100%;padding:15px 0;font-size:22px;text-align:center;}
+  .content_slider{bottom:10px;}
 }
 
 
