@@ -62,8 +62,8 @@ body{background-color:#F8FCFF;}
 .rental{padding:70px 0;}
 .text_content{font-size:18px;line-height:26px;color:#2E3841;font-family:montserrat;font-weight:500;}
 .more_btn, .less_btn{display:none;}
-
-
+.rental{position:relative;background-image:url(../img/bg_water.png);background-size:cover;background-position:center top;}
+.rental_delivery{padding:70px 0 0;}
 
 
 
@@ -102,6 +102,7 @@ body{background-color:#F8FCFF;}
   .text_content{font-size:14px;}
   .rental{padding:250px 0 40px;}
   .title_block{font-size:25px;line-height:30px;}
+  .rental_delivery{padding-top:40px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
