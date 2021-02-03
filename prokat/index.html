@@ -122,7 +122,18 @@
     $('.btn_menu').click(function(){
       $('.menu_block').toggleClass('active');
       $(this).toggleClass('active');
-    })
+    });
+    $('.header_menu__link').click(function (){
+      $('.menu_block').removeClass('active');
+      $('.menu_block').removeClass('active');
+      $('.menu_block').removeClass('active');
+    });
+    $('.phone_link').click(function () {
+        $('.menu_block').removeClass('active');
+      });
+    $('.btn_order_header').click(function () {
+        $('.menu_block').removeClass('active');
+      });
   </script>
   <script>
     $('.slider_inro').slick({
