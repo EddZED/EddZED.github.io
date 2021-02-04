@@ -68,17 +68,15 @@ body{background-color:#F8FCFF;}
 .decription_stage{font-size:18px;line-height:20px;text-align:center;color:#242A3A;font-family:noto_tc;font-weight:bold;}
 .decription_stage span{color:#005F9F;}
 .icon_block{text-align:center;}
-.delivery_order{display:flex;justify-content:space-between;align-items:center;}
+.delivery_order{display:flex;justify-content:space-between;align-items:center;border-radius:10px;background-color:transparent;}
 .upper_text{font-size:20px;line-height:32px;letter-spacing:0.135em;text-transform:uppercase;font-family:roboto_cond;font-weight:bold;color:#005F9F;}
-.background_gradient{border-radius:10px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);}
-.delivery_order{background-color:#F8FCFF;border-radius:10px;}
-.comments{padding:70px 0;}
-.slider_item_content{padding:15px;background-color:#fff;border-radius:10px;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);height:100%;}
+.comments{padding:70px 0;position:relative;}
+.slider_item_content{padding:15px;background-color:#fff;border-radius:10px;height:100%;}
 .slider_item_content:focus{outline:none;}
 .slider_item_nav{background-color:transparent;border-radius:10px;padding:0 15px;}
 .slider_nav_pad{margin:0 -7px;}
 .slider_item_nav:focus{outline:none;}
-.wrapper_autor{position:relative;padding:15px;background-color:#fff;border-radius:10px;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);}
+.wrapper_autor{position:relative;padding:15px;background-color:#fff;border-radius:10px;}
 .name_autor{font-size:18px;line-height:32px;font-family:roboto_cond;font-weight:bold;letter-spacing:0.135em;text-transform:uppercase;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
 .text_comment{font-size:16px;line-height:28px;color:#2E3841;font-family:noto_tc;font-weight:bold;}
 .slider_com_wrap, .slick-list{height:100%;}
@@ -89,6 +87,17 @@ body{background-color:#F8FCFF;}
 .slick_prev{left:-45px;}
 .slick_next{right:-45px;}
 .slick_navigation{position: absolute;width:100%;height:100%;}
+.wrapper_questions_form{background-color:#fff;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);border-radius:10px;padding:10px;}
+.bordered_width{background-color:#fff;border:1px solid rgba(178, 111, 67, .1);border-radius:5px;padding:30px 50px;}
+.title_form_questions{font-size:24px;line-height:34px;font-family:noto_tc;font-weight:normal;color:#18191D;}
+.call_blue_text{font-size:24px;line-height:34px;font-family:noto_tc;font-weight:normal;color:rgba(0, 95, 159, 1);}
+.phone_form{color:rgba(0, 95, 159, 1);}
+.questions_form{padding:50px 0;}
+.bottom_img_bg{width:100%;object-fit:cover;position:absolute;left:0;bottom:0;z-index:-1;max-height:811px;}
+.com_bg_view{width:100%;object-fit:cover;position:absolute;left:0;bottom:100px;z-index:-1;max-height:742px;}
+.wrap_all:before{content:'';position:absolute;margin:auto;height:90%;background-color:#F8FCFF;border-radius:15px;left:40px;right:45px;bottom:-11px;}
+
+
 
 
 
@@ -118,6 +127,7 @@ body{background-color:#F8FCFF;}
   .upper_text{margin-bottom:20px;}
   .slick_prev{left:-40px;}
   .slick_next{right:-40px;}
+  
 }
 @media(max-width:1060px){
   .slick_prev{left:-10px;}
@@ -144,6 +154,7 @@ body{background-color:#F8FCFF;}
   .slick_navigation{left:15px;height:45px;bottom:-41px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius:5px;z-index:1;width:calc(100% - 30px);}
   .slick_prev{left:0;right:70px;margin:auto;}
   .slick_next{left:70px;right:0;margin:auto;}
+  
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -154,6 +165,9 @@ body{background-color:#F8FCFF;}
   .background_gradient{padding:2px;}
   .delivery_order{padding:13px;}
   .upper_text{font-size:27px;}
+  .bordered_width{padding:30px 20px;}
+  .background_gradient{border-radius:10px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);}
+  .delivery_order{background-color:#F8FCFF}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
@@ -162,6 +176,7 @@ body{background-color:#F8FCFF;}
   .text_content{font-size:12px;}
   .text_chek{font-size:9px;}
   .form_wrapper{padding:35px 20px;}
+  .bordered_width{padding:20px 10px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
