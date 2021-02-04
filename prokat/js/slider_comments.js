@@ -2,7 +2,10 @@ $('.slider_com_wrap').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
+  dots: false,
   fade: false,
+  prevArrow: '.slick_prev',
+  nextArrow: '.slick_next',
   asNavFor: '.slider_nav_com'
 });
 $('.slider_nav_com').slick({
@@ -11,5 +14,6 @@ $('.slider_nav_com').slick({
   asNavFor: '.slider_com_wrap',
   dots: false,
   centerMode: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+  arrows: false
 });
