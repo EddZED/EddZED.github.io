@@ -72,6 +72,10 @@ body{background-color:#F8FCFF;}
 .upper_text{font-size:20px;line-height:32px;letter-spacing:0.135em;text-transform:uppercase;font-family:roboto_cond;font-weight:bold;color:#005F9F;}
 .background_gradient{border-radius:10px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);}
 .delivery_order{background-color:#F8FCFF;border-radius:10px;}
+.comments{padding:70px 0;}
+
+
+
 
 
 @media(max-width:1400px){
