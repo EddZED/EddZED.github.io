@@ -73,8 +73,8 @@ body{background-color:#F8FCFF;}
 .background_gradient{border-radius:10px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, rgba(233,180,44,1)86.67%);}
 .delivery_order{background-color:#F8FCFF;border-radius:10px;}
 .comments{padding:70px 0;}
-
-
+.slider_item_content{padding:15px;background-color:#fff;border-radius:10px;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);}
+.slider_item_content:focus{outline:none;}
 
 
 
