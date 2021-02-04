@@ -157,7 +157,6 @@ body{background-color:#F8FCFF;}
   .slick_navigation{left:15px;height:45px;bottom:-41px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius:5px;z-index:1;width:calc(100% - 30px);}
   .slick_prev{left:0;right:70px;margin:auto;}
   .slick_next{left:70px;right:0;margin:auto;}
-  .right_img_1, .right_img_2, .right_img_3, .right_img_4, .right_img_5{display:none;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -180,6 +179,7 @@ body{background-color:#F8FCFF;}
   .text_chek{font-size:9px;}
   .form_wrapper{padding:35px 20px;}
   .bordered_width{padding:20px 10px;}
+  .right_img_1, .right_img_2, .right_img_3, .right_img_4, .right_img_5{display:none;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
