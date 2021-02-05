@@ -252,6 +252,7 @@ body{background-color:#F8FCFF;}
   .img_bg_page_3{max-height:315px;}
   .main_title.contact_page{font-size:35px;line-height:35px;}
   .title_contact{font-size:35px;}
+  .map_box{max-height:319px;overflow:hidden;}
   
 }
 @media(max-width:575px){
