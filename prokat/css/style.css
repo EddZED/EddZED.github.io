@@ -15,7 +15,7 @@ body{background-color:#F8FCFF;}
 .header_contact{display:flex;flex-direction:column;align-items:flex-end;}
 .phone_link{font-size:26px;line-height:18px;letter-spacing:0.08em;color:#fff;font-family:roboto;font-weight:bold;margin-bottom:15px;transition:all .3s;}
 .phone_link:hover{text-decoration:none;color:#ccc;}
-.btn_order{font-size:20px;color:#fff;letter-spacing:0.04em;line-height:25px;display:inline-block;border:2px solid #fff;border-radius:39px;padding:5px 15px;font-family:roboto;font-weight:900;text-align:center;}
+.btn_order{font-size:20px;color:#fff;letter-spacing:0.04em;line-height:25px;display:inline-block;border:3px solid #fff;border-radius:39px;padding:5px 15px;font-family:roboto;font-weight:900;text-align:center;}
 .btn_order:hover{border-color:#ccc;text-decoration:none;color:#ccc;}
 .btn_menu{display:none;}
 .menu_block:not(.active){display:block;}
@@ -103,12 +103,13 @@ body{background-color:#F8FCFF;}
 .right_img_5{position:absolute;left:-312px;bottom:85px;z-index:95;}
 .footer{background: linear-gradient(59.6deg, #286FB0 -13.43%, #00ADE3 86.67%);padding:25px 0;}
 .min_white{font-size:13px;color:#fff;font-family:'Montserrat';font-weight:500;}
+.min_white img{vertical-align:middle;}
 .footer_menu{display:flex;justify-content:space-between;}
 .footer_contact{text-align:right;}
 .footer_adress{font-size:13px;text-transform:uppercase;color:#fff;font-family:roboto;}
 .consultationn_wrapper{z-index:100;}
-
-
+.page_item{display:flex;align-items:center;position:relative;}
+.blue_subtitle{color:#8FEAFF;background:transparent;-webkit-background-clip: text;-webkit-text-fill-color: #8FEAFF;}
 
 
 
@@ -185,6 +186,7 @@ body{background-color:#F8FCFF;}
   .delivery_order{background-color:#F8FCFF}
   .footer_menu{flex-direction:column;align-items:center;}
   .footer_menu .header_menu__link{margin-bottom:10px;}
+  .img_bg_page_2{min-width:680px;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
@@ -195,6 +197,7 @@ body{background-color:#F8FCFF;}
   .form_wrapper{padding:35px 20px;}
   .bordered_width{padding:20px 10px;}
   .right_img_1, .right_img_2, .right_img_3, .right_img_4, .right_img_5{display:none;}
+  .img_bg_page_2 {max-height:315px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
