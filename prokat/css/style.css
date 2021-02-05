@@ -5,7 +5,7 @@ html{scroll-behavior: smooth;}
 body{background-color:#F8FCFF;}
 .wrapper{width:100%;overflow:hidden;}
 .header{position:relative;width:100%;top:0;left:0;background-color:transparent;}
-.navbar{background-color:transparent;box-shadow:none;position:absolute;top:0;left:0;width:100%;z-index: 1;transition:all .3s;}
+.navbar{background-color:transparent;box-shadow:none;z-index: 1;transition:all .3s;}
 .navbar.scrolling-navbar{padding:20px 0;}
 .header_logo{display:flex;align-items:center;justify-content:space-between;}
 .header_menu{display:flex;}
@@ -128,7 +128,7 @@ body{background-color:#F8FCFF;}
 .left_img_page_2{position:absolute;left:-300px;top:+35px;z-index:90;}
 .position_page_2{left:-245px;bottom:40px;}
 .comments.page_twopad{padding-top:30px;}
-
+.navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0, 0, 0, 0.7);}
 
 
 @media(max-width:1400px){
@@ -221,6 +221,7 @@ body{background-color:#F8FCFF;}
   .table_price tbody tr th:not(:first-child){text-align:center;}
   .form_page{padding:50px 0 40px;}
   .comments.page_twopad{padding-top:10px;}
+  .navbar.scrolling-navbar{padding:0;}
   
 }
 @media(max-width:575px){
