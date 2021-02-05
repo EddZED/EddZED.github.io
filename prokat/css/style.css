@@ -129,6 +129,10 @@ body{background-color:#F8FCFF;}
 .position_page_2{left:-245px;bottom:40px;}
 .comments.page_twopad{padding-top:30px;}
 .navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0, 0, 0, 0.7);z-index: 999999;}
+.img_bg_page_3{max-height:456px;transition:all .3s;}
+
+
+
 
 
 @media(max-width:1400px){
@@ -157,6 +161,8 @@ body{background-color:#F8FCFF;}
   .upper_text{margin-bottom:20px;}
   .slick_prev{left:-40px;}
   .slick_next{right:-40px;}
+  .content_slider.page_3{bottom:20px;align-items:flex-end;}
+  .img_bg_page_3{min-height:315px;}
   
 }
 @media(max-width:1060px){
@@ -222,6 +228,7 @@ body{background-color:#F8FCFF;}
   .form_page{padding:50px 0 40px;}
   .comments.page_twopad{padding-top:10px;}
   .navbar.scrolling-navbar{padding:0;}
+  .img_bg_page_3{max-height:315px;}
   
 }
 @media(max-width:575px){
@@ -241,10 +248,12 @@ body{background-color:#F8FCFF;}
   .table_price{margin-top:0;}
   .price_block{padding:0 0 40px;}
   .position_page_2{display:block;}
+  .img_bg_page_3{max-height:315px;object-position:-550px -110px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
   .rental{padding:300px 0 40px;}
+  .img_bg_page_3{max-height:315px;object-position:-750px -110px;}
 }
 @media(max-width:380px){
   .consultationn_wrapper{top:160px;}
