@@ -224,6 +224,7 @@ body{background-color:#F8FCFF;}
   .table_price{margin-top:15px;}
   .position_page_2{left:10px;top:-90px;bottom:auto;}
   .left_img_page_2{left:0;top:-250px;z-index:-1;opacity:.5;}
+  .contact_content{padding:30px 0 50px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -251,7 +252,7 @@ body{background-color:#F8FCFF;}
   .navbar.scrolling-navbar{padding:0;}
   .img_bg_page_3{max-height:315px;}
   .main_title.contact_page{font-size:35px;line-height:35px;}
-  .title_contact{font-size:35px;}
+  .title_contact{font-size:35px;line-height:36px;}
   .map_box{max-height:319px;overflow:hidden;}
   
 }
@@ -274,7 +275,7 @@ body{background-color:#F8FCFF;}
   .position_page_2{display:block;}
   .img_bg_page_3{max-height:315px;object-position:-550px -110px;}
   .main_title.contact_page{padding-bottom:30px;font-size:25px;}
-  .title_contact{font-size:25px;}
+  .title_contact{font-size:25px;line-height:30px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
