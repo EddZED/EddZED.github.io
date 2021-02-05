@@ -95,7 +95,7 @@ body{background-color:#F8FCFF;}
 .questions_form{padding:50px 0;}
 .bottom_img_bg{width:100%;object-fit:cover;position:absolute;left:0;bottom:0;z-index:-1;max-height:811px;}
 .com_bg_view{width:100%;object-fit:cover;position:absolute;left:0;bottom:100px;z-index:-1;max-height:742px;}
-.wrap_all:before{content:'';position:absolute;margin:auto;height:90%;background-color:#F8FCFF;border-radius:15px;left:40px;right:45px;bottom:-11px;}
+.wrap_all:before{content:'';position:absolute;margin:auto;height:90%;background-color:#F8FCFF;border-radius:15px;left:40px;right:45px;bottom:-11px;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);}
 .right_img_1{position:absolute;right:-100px;top:-31px;z-index:0;}
 .right_img_2{position:absolute;right:-100px;bottom:9px;z-index:101;}
 .right_img_3{position:absolute;left:-300px;bottom:-62px;z-index:90;max-width:100%;}
@@ -113,7 +113,7 @@ body{background-color:#F8FCFF;}
 .rental_catamarans{padding:70px 0 0;}
 .bg_rectangle{position:relative;z-index:2;}
 .bg_rectangle:before{content:'';position:absolute;width:236px;height:175px;background: linear-gradient(59.6deg, #286FB0 -13.43%, #00ADE3 86.67%);opacity:.2;border-radius:5px;right:-20px;top:-25px;z-index:-1;}
-.price_block{padding:70px 0;}
+.price_block{padding:70px 0;z-index:100;}
 .table_price{width:100%;margin-top:30px;background-color:transparent;border-collapse: separate;border-spacing:0 8px;}
 .table_price tr th:nth-child(2n){background-color: rgba(255, 125, 83, 0.06);}
 .table_price tr th{background-color:#fff;text-align:center;}
@@ -124,6 +124,11 @@ body{background-color:#F8FCFF;}
 .table_price thead tr th span{display:inline-block;}
 .table_price thead tr th:first-child{padding:20px 0 20px 30px;}
 .table_price tr{min-height:78px;}
+.form_page{padding:70px 0;}
+.left_img_page_2{position:absolute;left:-300px;top:+35px;z-index:90;}
+.position_page_2{left:-245px;bottom:40px;}
+
+
 
 
 @media(max-width:1400px){
@@ -176,7 +181,7 @@ body{background-color:#F8FCFF;}
   .title_block{font-size:25px;line-height:30px;}
   .rental_delivery{padding-top:40px;}
   .slider_com_wrap{z-index:2;}
-  .slick_navigation{left:15px;height:45px;bottom:-41px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius:5px;z-index:1;width:calc(100% - 30px);}
+  .slick_navigation{left:15px;height:45px;bottom:-55px;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius:5px;z-index:1;width:calc(100% - 30px);}
   .slick_prev{left:0;right:70px;margin:auto;}
   .slick_next{left:70px;right:0;margin:auto;}
   .footer_contact{text-align:center;}
@@ -190,6 +195,8 @@ body{background-color:#F8FCFF;}
   .table_price thead tr th:first-child{padding:15px 0 15px 3px;}
   .price_block{padding:20px 0 40px;}
   .table_price{margin-top:15px;}
+  .position_page_2{left:10px;top:-90px;bottom:auto;}
+  .left_img_page_2{left:0;top:-250px;z-index:-1;opacity:.5;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -212,6 +219,8 @@ body{background-color:#F8FCFF;}
   .table_price tbody tr th{font-size:13px;line-height:14px;}
   .table_price tr th{text-align:center;}
   .table_price tbody tr th:not(:first-child){text-align:center;}
+  .form_page{padding:50px 0 40px;}
+  .comments.page_twopad{padding-top:10px;}
   
 }
 @media(max-width:575px){
@@ -230,6 +239,7 @@ body{background-color:#F8FCFF;}
   .table_price tbody tr th:first-child{font-size:9px;line-height:11px;padding:1px 0 1px 2px;}
   .table_price{margin-top:0;}
   .price_block{padding:0 0 40px;}
+  .position_page_2{display:block;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
