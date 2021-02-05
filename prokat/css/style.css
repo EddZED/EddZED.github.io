@@ -128,7 +128,7 @@ body{background-color:#F8FCFF;}
 .left_img_page_2{position:absolute;left:-300px;top:+35px;z-index:90;}
 .position_page_2{left:-245px;bottom:40px;}
 .comments.page_twopad{padding-top:30px;}
-.navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0, 0, 0, 0.7);}
+.navbar.scrolling-navbar.top-nav-collapse{background-color:rgba(0, 0, 0, 0.7);z-index: 999999;}
 
 
 @media(max-width:1400px){
