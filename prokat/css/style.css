@@ -173,6 +173,7 @@ body{background-color:#F8FCFF;}
   .slick_next{left:70px;right:0;margin:auto;}
   .footer_contact{text-align:center;}
   .rental_catamarans{padding:40px 0;}
+  .bg_rectangle:before{width:70%;height:70%;top:auto;bottom:0;right:-15px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
