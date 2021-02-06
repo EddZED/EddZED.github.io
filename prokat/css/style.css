@@ -158,8 +158,15 @@ body{background-color:#F8FCFF;}
 .card_footer{text-align:center;padding-top:10px;}
 .cond_txt_card span{background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
 .text_content.min_txt{font-size:14px;}
-.dewlivery{padding:70px 0;}
+.delivery{padding:70px 0;}
 .padding_delivery_page{padding-top:200px;}
+.price_list_block{padding:70px 0;}
+.header_table_block{padding:20px 0 15px 30px;}
+.price_table_name{font-size:25px;line-height:41px;color:#3F3D56;font-family:noto_tc;font-weight:bold;}
+.price_table_name span{background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
+.line_gradient{margin:5px 0;height:4px;width:100%;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);box-shadow: 1px 18px 23.2195px rgba(107, 117, 123, 0.15);border-radius: 5px;}
+.padding_page_price{padding-top:200px;}
+
 
 @media(max-width:1400px){
   .catamaran_position_right{z-index:0;}
@@ -231,8 +238,10 @@ body{background-color:#F8FCFF;}
   .left_img_page_2{left:0;top:-250px;z-index:-1;opacity:.5;}
   .contact_content{padding:30px 0 50px;}
   .company_pad_page{padding:40px 0 20px !important;}
-  .dewlivery{padding:40px 0;}
+  .delivery{padding:40px 0;}
   .padding_delivery_page{padding-top:0;}
+  .price_list_block{padding:40px 0;}
+  .padding_page_price{padding-top:20px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -262,6 +271,10 @@ body{background-color:#F8FCFF;}
   .main_title.contact_page{font-size:35px;line-height:35px;}
   .title_contact{font-size:35px;line-height:36px;}
   .map_box{max-height:319px;overflow:hidden;}
+  .price_table_name{font-size:16px;line-height:22px;}
+  .header_table_block{padding:0;}
+  .text_content.min_txt{font-size:12px;line-height:19px;}
+  .line_gradient{display:none;}
   
 }
 @media(max-width:575px){
