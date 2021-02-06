@@ -152,6 +152,11 @@ body{background-color:#F8FCFF;}
 .map_wrapper{position:relative;background:linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);padding:1px;}
 .map_box{background-color:#fff;}
 .map_wrapper:before{content:'';position:absolute;right:-40px;top:40px;width:100%;height:100%;background:linear-gradient(59.6deg, rgba(255, 79, 23, 0.12) -13.43%, rgba(255, 129, 89, 0.12) 40.79%, rgba(233, 180, 44, 0.12) 86.67%);z-index:-1;}
+.card_conditions{display:flex;align-items:center;flex-direction:column;justify-content:center;height:100%;padding:15px;background-color:#fff;}
+.card_header{text-align:center;}
+.cond_txt_card{font-size:30px;line-height:41px;color:#242A3A;font-family:noto_tc;font-weight:bold;}
+.card_footer{text-align:center;padding-top:10px;}
+.cond_txt_card span{background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
 
 
 
@@ -182,7 +187,7 @@ body{background-color:#F8FCFF;}
   .upper_text{margin-bottom:20px;}
   .slick_prev{left:-40px;}
   .slick_next{right:-40px;}
-  .content_slider.page_3{bottom:;align-items:center;}
+  .content_slider.page_3{align-items:center;}
   .img_bg_page_3{min-height:315px;}
   
 }
@@ -225,6 +230,7 @@ body{background-color:#F8FCFF;}
   .position_page_2{left:10px;top:-90px;bottom:auto;}
   .left_img_page_2{left:0;top:-250px;z-index:-1;opacity:.5;}
   .contact_content{padding:30px 0 50px;}
+  .company_pad_page{padding:40px 0;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
