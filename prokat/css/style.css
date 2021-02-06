@@ -157,9 +157,9 @@ body{background-color:#F8FCFF;}
 .cond_txt_card{font-size:30px;line-height:41px;color:#242A3A;font-family:noto_tc;font-weight:bold;}
 .card_footer{text-align:center;padding-top:10px;}
 .cond_txt_card span{background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
-
-
-
+.text_content.min_txt{font-size:14px;}
+.dewlivery{padding:70px 0;}
+.padding_delivery_page{padding-top:200px;}
 
 @media(max-width:1400px){
   .catamaran_position_right{z-index:0;}
@@ -230,7 +230,9 @@ body{background-color:#F8FCFF;}
   .position_page_2{left:10px;top:-90px;bottom:auto;}
   .left_img_page_2{left:0;top:-250px;z-index:-1;opacity:.5;}
   .contact_content{padding:30px 0 50px;}
-  .company_pad_page{padding:40px 0;}
+  .company_pad_page{padding:40px 0 20px !important;}
+  .dewlivery{padding:40px 0;}
+  .padding_delivery_page{padding-top:0;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
