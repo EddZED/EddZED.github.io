@@ -40,7 +40,7 @@
               <div class="col-xl-3 px-0">
                 <div class="header_contact">
                   <a href="tel:+78008008080" class="phone_link">8 800 800 80 80</a>
-                  <a href="#" class="btn_order btn_order_header">Заказать прокат</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_quest" class="btn_order btn_order_header">Заказать прокат</a>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@
                   <h1 class="main_title">Прокат катамаранов<br>и снаряжения<br>в Екатеринбурге</h1>
                   <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения,<br> альпинистского
                     снаряжения, надувных кресел и другого от 1 дня.</p>
-                  <a href="#" data-taggle="modal" data-target="#" class="orange_btn">Оставить заявку</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_order" class="orange_btn">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
                   <h1 class="main_title">Прокат катамаранов<br>и снаряжения<br>в Екатеринбурге</h1>
                   <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения,<br> альпинистского
                     снаряжения, надувных кресел и другого от 1 дня.</p>
-                  <a href="#" data-taggle="modal" data-target="#" class="orange_btn">Оставить заявку</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_order" class="orange_btn">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@
                   <h1 class="main_title">Прокат катамаранов<br>и снаряжения<br>в Екатеринбурге</h1>
                   <p class="white_text_slider">Аренда катамаранов, байдарок, палаток, туристического снаряжения,<br> альпинистского
                     снаряжения, надувных кресел и другого от 1 дня.</p>
-                  <a href="#" data-taggle="modal" data-target="#" class="orange_btn">Оставить заявку</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_order" class="orange_btn">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -464,6 +464,83 @@
         </div>
       </div>
     </footer>
+
+
+        <!-- Modal consultation -->
+        <div class="modal fade" id="modal_order" tabindex="-1" role="dialog" aria-labelledby="modal_order" aria-hidden="true">
+          <div class="modal-dialog width_modal" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span></span>
+              </button>
+              <div class="form_wrapper">
+                <p class="name_form pb-lg-4">Получить консультацию</p>
+                <form action="" class="">
+                  <fieldset>
+                    <input class="form_input mb-3" type="text" name="" placeholder="Ваше имя">
+                    <input class="form_input mb-3" type="text" name="" placeholder="Ваш телефон">
+                    <label class="checkbox mt-2">
+                      <input type="checkbox" checked>
+                      <span class="checked"></span>
+                      <span class="text_chek">Я согласен с <a href="№" class="privacy">политикой конфиденциальности</a></span>
+                    </label>
+                    <a href="#" data-taggle="modal" data-target="#" class="orange_btn px-0 w-100 text-center mt-4">Оставить заявку</a>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal questions -->
+        <div class="modal fade" id="modal_quest" tabindex="-1" role="dialog" aria-labelledby="modal_order" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span></span>
+              </button>
+              <div class="wrapper_questions_form">
+                <div class="bordered_width">
+                  <form action="" class="">
+                    <fieldset>
+                      <p class="title_form_questions text-center text-lg-left mb-0">Что-то выбрали? Остались вопросы?</p>
+                      <p class="call_blue_text text-center text-lg-left">Звоните <a href="tel:+79222222222"
+                          class="phone_form">89222222222</a> или оставьте заявку!</p>
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-4">
+                          <input class="form_input mb-3" type="text" name="" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-lg-4">
+                          <input class="form_input mb-3" type="text" name="" placeholder="Ваш телефон">
+                        </div>
+                        <div class="col-lg-4">
+                          <input class="form_input mb-3" type="text" name="" placeholder="Ваш email">
+                        </div>
+                        <div class="col-12 pb-4">
+                          <textarea name="" id="" class="form_input" cols="" rows="1" placeholder="Ваш комментарий"></textarea>
+                        </div>
+                        <div class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1">
+                          <a href="#" data-taggle="modal" data-target="#" class="orange_btn w-100 px-0 text-center">Оставить
+                            заявку</a>
+                        </div>
+                        <div class="col-lg-7 order-1 order-lg-2">
+                          <label class="checkbox mt-2">
+                            <input type="checkbox" checked>
+                            <span class="checked"></span>
+                            <span class="text_chek">Я согласен с <a href="№" class="privacy">политикой конфиденциальности</a></span>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

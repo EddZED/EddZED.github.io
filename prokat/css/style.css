@@ -208,6 +208,10 @@ body{background-color:#F8FCFF;}
 .warning{font-size:21px;line-height:26px;color:#2E3841;font-family:'Montserrat';font-weight:bold;}
 .icon_left{padding-left:50px;position:relative;}
 .icon_left:before{content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:38px;height:38px;background-image:url(../img/info_icon.png);background-size:cover;}
+.modal-content{background:transparent;}
+.close{position:absolute;width:20px;height:20px;top:10px;right:10px;}
+.close span{width:100%;height:2px;background-color:#000;top:10px;bottom:0;margin:auto;display:inline-block;position:relative;transform:rotateZ(-45deg);}
+.close span:before{content:'';position:absolute;width:100%;height:2px;background-color:#000;top:-18px;bottom:0;margin:auto;display:inline-block;position:relative;transform:rotateZ(90deg);left:0;}
 
 
 
@@ -369,6 +373,7 @@ body{background-color:#F8FCFF;}
   .main_title.contact_page{padding-bottom:30px;font-size:30px;}
   .title_contact{font-size:25px;line-height:30px;}
   .position_img_mobile{object-position:-100px 0 !important;object-fit:cover;}
+  .modal-content .form_wrapper{padding:20px 10px;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
