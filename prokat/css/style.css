@@ -92,7 +92,7 @@ body{background-color:#F8FCFF;}
 .title_form_questions{font-size:24px;line-height:34px;font-family:noto_tc;font-weight:normal;color:#18191D;}
 .call_blue_text{font-size:24px;line-height:34px;font-family:noto_tc;font-weight:bold;color:rgba(0, 95, 159, 1);}
 .phone_form{color:rgba(0, 95, 159, 1);}
-.questions_form{padding:50px 0;}
+.questions_form{padding:50px 0 70px;}
 .bottom_img_bg{width:100%;object-fit:cover;position:absolute;left:0;bottom:0;z-index:-1;max-height:811px;}
 .com_bg_view{width:100%;object-fit:cover;position:absolute;left:0;bottom:100px;z-index:-1;max-height:742px;}
 .wrap_all:before{content:'';position:absolute;margin:auto;height:90%;background-color:#F8FCFF;border-radius:15px;left:40px;right:45px;bottom:-11px;box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.08);}
@@ -152,7 +152,7 @@ body{background-color:#F8FCFF;}
 .map_wrapper{position:relative;background:linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);padding:1px;}
 .map_box{background-color:#fff;}
 .map_wrapper:before{content:'';position:absolute;right:-40px;top:40px;width:100%;height:100%;background:linear-gradient(59.6deg, rgba(255, 79, 23, 0.12) -13.43%, rgba(255, 129, 89, 0.12) 40.79%, rgba(233, 180, 44, 0.12) 86.67%);z-index:-1;}
-.card_conditions{display:flex;align-items:center;flex-direction:column;justify-content:center;height:100%;padding:15px;background-color:#fff;}
+.card_conditions{border-radius:10px;display:flex;align-items:center;flex-direction:column;justify-content:center;height:100%;padding:15px;background-color:#fff;}
 .card_header{text-align:center;}
 .cond_txt_card{font-size:30px;line-height:41px;color:#242A3A;font-family:noto_tc;font-weight:bold;}
 .card_footer{text-align:center;padding-top:10px;}
@@ -165,7 +165,19 @@ body{background-color:#F8FCFF;}
 .price_table_name{font-size:25px;line-height:41px;color:#3F3D56;font-family:noto_tc;font-weight:bold;}
 .price_table_name span{background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.68) -13.43%, rgba(255, 129, 89, 0.68) 40.79%, rgba(233, 180, 44, 0.68) 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
 .line_gradient{margin:5px 0;height:4px;width:100%;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);box-shadow: 1px 18px 23.2195px rgba(107, 117, 123, 0.15);border-radius: 5px;}
-.padding_page_price{padding-top:200px;}
+.padding_page_price{padding:200px 0 70px;}
+.page_rules{padding:70px 0;}
+.wrapper_rules{position:relative;border-radius:10px;width:100%;padding:5px;background: linear-gradient(59.6deg, rgba(255, 79, 23, 0.28) -13.43%, rgba(255, 129, 89, 0.28) 40.79%, rgba(233, 180, 44, 0.28) 86.67%);}
+.content_reles{width:100%;height:100%;background-color:#F8FCFF;padding:65px;border-radius:7px;}
+.title_rules{font-size:25px;line-height:26px;color:#000;font-family:'Montserrat';font-weight:500;}
+.block_left_line{width:100%;padding-left:25px;position:relative;}
+.block_left_line:before{left:0;top:0;content:'';position:absolute;width:4px;height:100%;transition:all .3s;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius: 5px;}
+.sub_title_rules{position:relative;font-size:20px;line-height:26px;color:#2E3841;font-family:'Montserrat';font-weight:600;padding-left:50px;}
+.sub_title_rules:before{content:'';position:absolute;width:44px;height:44px;background-image:url(../img/arrow_focus.png);background-size:cover;left:0;top:-9px;}
+
+
+
+
 
 
 @media(max-width:1400px){
@@ -242,6 +254,8 @@ body{background-color:#F8FCFF;}
   .padding_delivery_page{padding-top:0;}
   .price_list_block{padding:40px 0;}
   .padding_page_price{padding-top:20px;}
+  .page_rules{padding:40px 0;}
+  .text_content.min_txt_mobile_content{font-size:14px;line-height:19px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -275,6 +289,7 @@ body{background-color:#F8FCFF;}
   .header_table_block{padding:0;}
   .text_content.min_txt{font-size:12px;line-height:19px;}
   .line_gradient{display:none;}
+  .text_content.min_txt_mobile_content{font-size:12px;line-height:19px;}
   
 }
 @media(max-width:575px){
@@ -295,8 +310,9 @@ body{background-color:#F8FCFF;}
   .price_block{padding:0 0 40px;}
   .position_page_2{display:block;}
   .img_bg_page_3{max-height:315px;object-position:-550px -110px;}
-  .main_title.contact_page{padding-bottom:30px;font-size:25px;}
+  .main_title.contact_page{padding-bottom:30px;font-size:30px;}
   .title_contact{font-size:25px;line-height:30px;}
+  .position_img_mobile{object-position:-100px 0 !important;object-fit:cover;}
 }
 @media(max-width:400px){
   .consultationn_wrapper{top:160px;}
