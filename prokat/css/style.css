@@ -172,11 +172,23 @@ body{background-color:#F8FCFF;}
 .title_rules{font-size:25px;line-height:26px;color:#000;font-family:'Montserrat';font-weight:500;}
 .block_left_line{width:100%;padding-left:25px;position:relative;}
 .block_left_line:before{left:0;top:0;content:'';position:absolute;width:4px;height:100%;transition:all .3s;background: linear-gradient(59.6deg, #FF4F17 -13.43%, #FF8159 40.79%, #E9B42C 86.67%);border-radius: 5px;}
-.sub_title_rules{position:relative;font-size:20px;line-height:26px;color:#2E3841;font-family:'Montserrat';font-weight:600;padding-left:50px;}
+.sub_title_rules{position:relative;font-size:20px;line-height:26px;color:#2E3841;font-family:'Montserrat';font-weight:600;padding-left:60px;}
 .sub_title_rules:before{content:'';position:absolute;width:44px;height:44px;background-image:url(../img/arrow_focus.png);background-size:cover;left:0;top:-9px;}
-
-
-
+.conditions_return{padding-left:60px;}
+.gradient_text_2{font-size:20px;line-height:26px;font-family:'Montserrat';font-weight:bold;background: linear-gradient(59.6deg, #FF4F17  -13.43%, #FF8159 40.79%, #E9B42C 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
+.list_conditions{padding-left:0;list-style:none;counter-reset:num;}
+.list_conditions li{position:relative;font-size:18px;line-height:26px;font-family:'Montserrat';font-weight:500;color:#2E3841;padding-left:20px;}
+.list_conditions li:before{content:counter(num);position:absolute; counter-increment: num;font-size:25px;font-family:noto_tc;font-weight:bold;left:0;top:-4px;background: linear-gradient(59.6deg, #FF4F17  -13.43%, #FF8159 40.79%, #E9B42C 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
+.descriptions_conditions{padding-left:0;width:100%;}
+.text_gradient_conditions{font-size:18px;line-height:23px;color:#2E3841;font-family:'Montserrat';font-weight:500;}
+.text_gradient_conditions span{font-weight:bold;background: linear-gradient(59.6deg, #FF4F17  -13.43%, #FF8159 40.79%, #E9B42C 86.67%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: #242A3a;}
+.sub_title_rules.var_two{font-size:18px;line-height:26px;}
+.list_ciracle_dots{padding-left:30px;list-style:none;}
+.list_ciracle_dots li{position:relative;font-size:18px;line-height:26px;color:#2E3841;font-family:'Montserrat';font-weight:500;}
+.list_ciracle_dots li:before{content:'';position:absolute;width:17px;height:17px;background-image:url(../img/dots.png);background-size:cover;left:-23px;top:4px;}
+.price_fine tr th span{padding-top:10px !important;padding-bottom:10px !important;}
+.price_fine tr th:nth-child(2n){min-width:150px;}
+.attention{font-size:25px;line-height:26px;font-family:'Montserrat';font-weight:bold;color:#2E3841;}
 
 
 
@@ -256,6 +268,7 @@ body{background-color:#F8FCFF;}
   .padding_page_price{padding-top:20px;}
   .page_rules{padding:40px 0;}
   .text_content.min_txt_mobile_content{font-size:14px;line-height:19px;}
+  .attention{font-size:20px;line-height:22px;}
 }
 @media(max-width:767px){
   .main_title{font-size:25px;line-height:28px;}
@@ -290,7 +303,21 @@ body{background-color:#F8FCFF;}
   .text_content.min_txt{font-size:12px;line-height:19px;}
   .line_gradient{display:none;}
   .text_content.min_txt_mobile_content{font-size:12px;line-height:19px;}
-  
+  .wrapper_rules{padding:0;}
+  .content_reles{padding:0;}
+  .title_rules{font-size:20px;line-height:28px;}
+  .sub_title_rules{font-size:14px;line-height:20px;padding-left:25px;}
+  .sub_title_rules:before{width:25px;height:25px;top:-2px;left:-6px;}
+  .gradient_text_2{font-size:14px;line-height:20px;margin-bottom:5px;}
+  .list_conditions li{font-size:12px;}
+  .list_conditions li:before{font-size:18px;top:-2px;}
+  .conditions_return{padding-left:0;}
+  .text_gradient_conditions{font-size:12px;line-height:20px;letter-spacing:0.04em;}
+  .sub_title_rules.var_two{font-size:14px;line-height:20px;letter-spacing:0.04em;}
+  .list_ciracle_dots li{font-size:12px;line-height:20px;letter-spacing:0.04em;}
+  .block_left_line{padding-left:10px;}
+  .more_btn, .less_btn{font-size:12px;}
+  .price_fine tr th:nth-child(2n){min-width:100px;}
 }
 @media(max-width:575px){
   .img_slider{width:auto;max-height:363px;object-fit:none;}
