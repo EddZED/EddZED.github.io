@@ -103,18 +103,21 @@
         <img src="img/top_paper.png" class="paper" alt="">
         <div class="container">
           <h2 class="title_block pb-lg-4 pb-3">меню</h2>
-          <div class="navs_item">
-            <a href="#" class="btn_navs">Новинки</a>
+          <div class="navs_item" id="nav_items">
+            <a href="#" data-toggle="collapse" data-target="#nav_1" class="btn_navs" aria-expanded="false">Новинки</a>
             <a href="#" data-toggle="collapse" data-target="#nav_2" class="btn_navs active" aria-expanded="true">Популярное</a>
-            <a href="#" class="btn_navs">Акции</a>
+            <a href="#" data-toggle="collapse" data-target="#nav_3" class="btn_navs" aria-expanded="false">Акции</a>
           </div>
           <div class="navs_content">
-            <div id="nav_2" class="content_navs_item collapse show">
-              hf p fv sdf sd sdf sdf 
+            <div id="nav_1" class="content_navs_item collapse" aria-labelledby="#nav_items">
+              hf p fv sdf sd sdf sdf   1
             </div>
-            <div id="nav_2" class="content_navs_item collapse show">
-                hf p fv sdf sd sdf sdf 
+            <div id="nav_2" class="content_navs_item collapse show" aria-labelledby="#nav_items">
+                hf p fv sdf sd sdf sdf  2
             </div>
+            <div id="nav_3" class="content_navs_item collapse" aria-labelledby="#nav_items">
+              hf p fv sdf sd sdf sdf  3
+          </div>
           </div>
         </div>
       </section>
