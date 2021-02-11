@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Шаурма</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navbar scrolling-navbar">
+        <div class="container">
+          <div class="col-lg-3 col-6 px-0">
+            <a href="#" class="link_brend">
+              <img class="img-fluid" src="img/logo.png" alt="любимая шаурма"></a>
+          </div>
+          <div class="col-lg-7 mobile_menu px-0">
+            <ul class="menu_top">
+              <a href="#" class="menu_item">Каталог</a>
+              <a href="#" class="menu_item">О нас</a>
+              <a href="#" class="menu_item">Доставка и оплата</a>
+              <a href="#" class="menu_item">Контакты</a>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 px-0">
+            <div class="right_item_block">
+              <a href="#" class="link_item"><img class="img-fluid" src="img/kabinet.png" alt=""></a>
+              <a href="#" class="link_item">
+                <img class="img-fluid" src="img/basket.png" alt="">
+                <span class="basket_item">2</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <section class="intro_page">
+        <div class="container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="body_slide">
+                  <h1 class="title_slide">при покупке 2</h1>
+                  <h2 class="sub_title_slide">3 в подарок</h2>  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="body_slide">
+                  <h1 class="title_slide">при покупке 2</h1>
+                  <h2 class="sub_title_slide">3 в подарок</h2>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+
+    </footer>
+  </div>  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
