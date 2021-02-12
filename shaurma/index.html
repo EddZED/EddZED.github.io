@@ -35,7 +35,7 @@
                 <a href="#" class="menu_item d-lg-none">Картошка</a>
                 <a href="#" class="menu_item d-lg-none">Напитки</a>
                 <a href="#" class="menu_item d-lg-none">Кондитерка</a>
-                <a href="#" class="menu_item d-lg-none">Выпеска</a>
+                <a href="#" class="menu_item d-lg-none">Выпечка</a>
               </div>
               <img src="img/bg_top.jpg" class="bg_menu_mobile" alt="">
             </div>
@@ -103,20 +103,31 @@
         <img src="img/top_paper.png" class="paper" alt="">
         <div class="container">
           <h2 class="title_block pb-lg-4 pb-3">меню</h2>
-          <div class="navs_item" id="nav_items">
-            <a href="#" data-toggle="collapse" data-target="#nav_1" class="btn_navs" aria-expanded="false">Новинки</a>
-            <a href="#" data-toggle="collapse" data-target="#nav_2" class="btn_navs active" aria-expanded="true">Популярное</a>
-            <a href="#" data-toggle="collapse" data-target="#nav_3" class="btn_navs" aria-expanded="false">Акции</a>
-          </div>
-          <div class="navs_content">
-            <div id="nav_1" class="content_navs_item collapse" aria-labelledby="#nav_items">
-              hf p fv sdf sd sdf sdf   1
+      
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="btn_navs" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">Шаурма</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="btn_navs active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">Бургеры</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="btn_navs" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">Выпечка</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+            
             </div>
-            <div id="nav_2" class="content_navs_item collapse show" aria-labelledby="#nav_items">
-                hf p fv sdf sd sdf sdf  2
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
             </div>
-            <div id="nav_3" class="content_navs_item collapse" aria-labelledby="#nav_items">
-              hf p fv sdf sd sdf sdf  3
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+            </div>
           </div>
           </div>
         </div>
@@ -137,7 +148,7 @@
   <script>
     $('.btn_menu').click(function(){
       $('.mobile_menu').toggleClass('active');
-    })
+    });
   </script>
   <script>
     var swiper = new Swiper('.swiper-container', {
@@ -159,17 +170,13 @@
   </script>
   <script>
     $(window).scroll(function() {
-var height = $(window).scrollTop();
-
-     /*Если сделали скролл на 100px задаём новый класс для header*/
-if(height > 0){
-$('.navbar').addClass('bg_nav');
-} else{
-     /*Если меньше 100px удаляем класс для header*/
-$('.navbar').removeClass('bg_nav');
-}
-
-});
+      var height = $(window).scrollTop();
+      if(height > 0){
+      $('.navbar').addClass('bg_nav');
+      } else{
+      $('.navbar').removeClass('bg_nav');
+      }
+    });
   </script>
 </body>
 </html>
