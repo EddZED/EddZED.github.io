@@ -606,6 +606,20 @@
       $('.menu_top_wrap').toggleClass('active');
       $('.navbar').toggleClass('active');
     });
+    $('a.menu_item').click(function(){
+      $('.mobile_menu').removeClass('active');
+      $('body').removeClass('overflow-hidden');
+      $('.menu_top_wrap').removeClass('active');
+      $('.navbar').removeClass('active');
+      $('.link_brend').removeClass('hid_add');
+    });
+    $('.menu_top_wrap .social_link').click(function(){
+      $('.mobile_menu').removeClass('active');
+      $('body').removeClass('overflow-hidden');
+      $('.menu_top_wrap').removeClass('active');
+      $('.navbar').removeClass('active');
+      $('.link_brend').removeClass('hid_add');
+    });
   </script>
   <script>
     var swiper = new Swiper('.swiper-container', {
