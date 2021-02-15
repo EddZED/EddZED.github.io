@@ -67,7 +67,7 @@ body{background-color:#F8FCFF;}
 .btn_more{font-size:18px;line-height:21px;color:#141212;font-family:'Gothem_pro_normal';border-radius:25px;position:relative;text-transform: none;bottom:0;padding:15px 70px;}
 .menu{position:relative;padding:100px 0 110px;}
 .paper_bottom{position:absolute;z-index:-1;object-fit:cover;position: absolute;width:100%;left:0;bottom:-95px;}
-.white_txt{color:#fff;}
+.white_txt{color:#fff !important;}
 .menus_item{position:relative;background-color:transparent;}
 .body_menus_item{display:inline-block;width:100%;padding:65px 15px 15px 15px;border:1px solid #FD9800;border-radius:20px;margin-top:60px;position:relative;background:transparent;transition:all .3s;}
 .img_menus{position:absolute;left:0;right:0;margin:auto;bottom:64px;}
@@ -112,8 +112,18 @@ body{background-color:#F8FCFF;}
 .breadcrumb-item.active{color:#FD9800;}
 .menu_page_2{padding-top:15px;}
 .page_two_list_item{max-width:100%;position:absolute;top:0;right:0;}
-
-
+.name_goods_bold_text{font-size:30px;line-height:29px;letter-spacing:0.04em;text-transform:uppercase;color:#fff;font-family:'Gothem_pro_black';}
+.price_big_bold{font-size:50px;line-height:54px;text-transform:uppercase;font-family:'Gothem_pro_black';color:#000;background:linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.description_goods_tabs .btn_navs{border-color:#000;background-color:#000;color:#fff;}
+.description_goods_tabs .btn_navs.active{border-color:#000;background-color:transparent;color:#fff;}
+.structure_list{list-style:none;padding-left:0;}
+.structure_list li{font-size:15px;line-height:19px;color:#fff;font-family:'Gothem_pro_light';padding-left:20px;position:relative;margin:0 0 20px 0;}
+.structure_list li:before{content:'';position:absolute;left:0;top:0;bottom:0;margin:auto;width:8px;height:8px;background:linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);border-radius:50%;}
+.page_goods_item{padding:0 0 140px;}
+.tastier .name_menu{color:#141212;font-size:15px;line-height:18px;letter-spacing:0.04em;}
+.tastier .menus_item{display:flex;height:100%;}
+.tastier .body_menus_item{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;margin-top:0;}
+.tastier .img_menus{bottom:80px;}
 
 @media(min-width:992px){
   body.overflow-hidden{overflow:visible !important;}
