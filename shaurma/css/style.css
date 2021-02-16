@@ -130,6 +130,16 @@ body{background-color:#F8FCFF;}
 .padding_on_white_bg{padding-top:50px;}
 .menu_content{background-color:#fff;padding:40px 0;}
 .sidebar{position:relative;background-color:#fff;box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.13);border-radius: 8px;overflow:hidden;}
+.left_menu_list{list-style:none;padding-left:0;margin:0;}
+.left_menu_list_link{position:relative;display:flex;transition:all .3s;padding:15px 10px 15px 0px;background:#fff;font-size:19px;line-height:35px;font-family: 'Gothem_pro_normal';color:#4F4F4F;}
+.left_menu_list_link:hover{background:linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);color:#141212;text-decoration:none;}
+.left_menu_list_link.active{background:linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);color:#141212;}
+.left_menu_list_link span{display:inline-block;width:80px;position:relative;left:0;}
+.sidebar_img{position:absolute;left:0;right:0; top:0;bottom:0;margin:auto;max-width:100%;}
+.position_page_menu{top:-100px;right:0;left:auto;}
+
+
+
 
 
 
@@ -182,6 +192,7 @@ body{background-color:#F8FCFF;}
   .page_two_list_item{display:none;}
   .wrapper{background-size:auto;}
   .bread_cramb{margin-top:130px;}
+  .position_page_menu{display:none;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}
@@ -197,6 +208,7 @@ body{background-color:#F8FCFF;}
   .menu{padding-bottom:95px;}
   .paper.bottom_position{top:-63px;}
   .about_us{padding:10px 0 30px;}
+  .page_goods_item{padding-bottom:80px;}
 }
 @media(max-width:565px){
   .swiper-container{padding-top:135px;}
