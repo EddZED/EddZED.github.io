@@ -78,8 +78,9 @@
           <img class="img_slide_bg position_page_menu" src="img/tomat_2.png" alt="">
           <h1 class="title_block pb-lg-4 pb-1">шаурма</h1>
           <div class="row">
-            <div class="col-lg-3 mb-4 mb-lg-0">
-              <aside class="sidebar">
+            <div class="col-lg-3 mb-3 mb-lg-0">
+              <a href="#sidebar" data-toggle="collapse" class="hidden_sideabar d-lg-none" aria-expanded="false" aria-controls="sidebar">Меню <img class="img-fluid" src="img/arrow_down.png" alt=""></a>
+              <aside class="sidebar collapse" id="sidebar">
                 <div class="left_menu">
                   <ul class="left_menu_list">
                     <li class="left_menu_list_item">
@@ -346,6 +347,18 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-12 pt-3 pt-lg-4">
+                  <div class="pagination_page">
+                    <a href="#" class="pagination_page_link d-none d-lg-inline-flex mr-4"><img class="img-fluid pr-3" src="img/arrow_pag_left.png" alt="назад">Назад</a>
+                    <a href="#" class="pagination_page_link">1</a>
+                    <a href="#" class="pagination_page_link">2</a>
+                    <a href="#" class="pagination_page_link">3</a>
+                    <a href="#" class="pagination_page_link">4</a>
+                    <a href="#" class="pagination_page_link">...</a>
+                    <a href="#" class="pagination_page_link">10</a>
+                    <a href="#" class="pagination_page_link d-none d-lg-inline-flex ml-4">Вперёд <img class="img-fluid pl-3" src="img/arrow_pag_right.png" alt="вперед"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -427,6 +440,8 @@
     $('.left_menu_list_link').click(function(){
       $('.left_menu_list_link').removeClass('active');
       $(this).addClass('active');
+      $('.sidebar').removeClass('show');
+      $('.hidden_sideabar').attr('aria-expanded', false);
     });
   </script>
   <script>

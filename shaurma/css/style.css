@@ -137,14 +137,21 @@ body{background-color:#F8FCFF;}
 .left_menu_list_link span{display:inline-block;width:80px;position:relative;left:0;}
 .sidebar_img{position:absolute;left:0;right:0; top:0;bottom:0;margin:auto;max-width:100%;}
 .position_page_menu{top:-100px;right:0;left:auto;}
-
-
-
+.pagination_page{display:flex;align-items:center;justify-content:center;}
+.pagination_page_link{padding:5px;height:100%;min-width:40px;min-height:45px;border-radius:5px;background:transparent;transition:all .3s;margin:0 3px;display:inline-flex;align-items:center;justify-content:center;color:rgba(20, 18, 18, 0.5);font-size:22px;line-height:22px;font-family:'Gothem_pro_bold';}
+.pagination_page_link:hover{text-decoration:none;color:rgba(0, 0, 0, 1);background: linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);}
+.pagination_page_link.active{text-decoration:none;color:rgba(0, 0, 0, 1);background: linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);}
+.hidden_sideabar{display:flex;width:100%;align-items:center;justify-content:space-between;font-size:20px;line-height:22px;font-family:'Gothem_pro_normal';color:#FFBC01;padding:0 0 15px 0;}
+.hidden_sideabar img{filter:drop-shadow(0 5px 2px rgba(0,0,0,.2));transition:all .3s;}
+.hidden_sideabar[aria-expanded="false"] img{transform:rotateZ(180deg);filter:drop-shadow(0 -5px 2px rgba(0,0,0,.2));}
+.hidden_sideabar:hover{color:#FFBC01;text-decoration:none;}
+.hidden_sideabar:active{color:#FFBC01;}
 
 
 
 @media(min-width:992px){
   body.overflow-hidden{overflow:visible !important;}
+  .sidebar.collapse:not(.show){display:block;}
 }
 @media(max-width:1400px){
   .bg_text{font-size:182px;}
@@ -193,6 +200,7 @@ body{background-color:#F8FCFF;}
   .wrapper{background-size:auto;}
   .bread_cramb{margin-top:130px;}
   .position_page_menu{display:none;}
+  .menu_content{padding-top:0px;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}
@@ -209,6 +217,8 @@ body{background-color:#F8FCFF;}
   .paper.bottom_position{top:-63px;}
   .about_us{padding:10px 0 30px;}
   .page_goods_item{padding-bottom:80px;}
+  .padding_on_white_bg{padding-top:30px;}
+  .navbar{padding:10px 0;}
 }
 @media(max-width:565px){
   .swiper-container{padding-top:135px;}
