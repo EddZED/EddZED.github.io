@@ -160,7 +160,10 @@ body{background-color:#F8FCFF;}
 .sub_title_delivery{font-size:16px;line-height:23px;color:#fff;font-family:'Gothem_pro_light';}
 .luk_delivery{position:absolute;top:-90px;right:0;max-width:203px;}
 .wrapper_map{width:100%;overflow:hidden;height:460px;border-radius:10px;background-color:#C4C4C4;z-index:0;}
-.wrapper_block_contact{position:absolute;min-width:320px;padding:20px 15px;background-color:#000;border-radius:10px;z-index:1;top:0;bottom:0;margin:auto;}
+.wrapper_block_contact{position:relative;min-width:320px;padding:20px 15px 30px;background-color:#000;border-radius:10px;z-index:1;top:0;bottom:0;margin:auto;text-align:center;}
+.title_contact{font-size:24px;line-height:25px;color:#FD9800;font-family:'Gothem_pro_normal';}
+
+
 
 
 
@@ -220,6 +223,8 @@ body{background-color:#F8FCFF;}
   .our_advatages{padding-bottom:100px;}
   .img_delivery_intro{position:relative;top:auto;left:auto;max-width:100%;}
   .delivery_pay .title_block{font-size:40px;line-height:44px;}
+  .wrapper_block_contact{min-width:auto;max-width:95%;top:-45px;}
+  .delivery_pay.contact_page{padding-bottom:30px;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}
@@ -242,6 +247,8 @@ body{background-color:#F8FCFF;}
   .our_advatages {padding-bottom:80px;}
   .delivery_pay{padding:0 0 100px;}
   .luk_delivery{max-width:117px;top:-50px;}
+  .delivery_pay.contact_page{padding-bottom:0;}
+  .wrapper_map{height:250px;}
 }
 @media(max-width:565px){
   .swiper-container{padding-top:135px;}
