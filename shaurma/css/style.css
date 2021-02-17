@@ -175,7 +175,34 @@ body{background-color:#F8FCFF;}
 .total_txt_bold{font-size:22px;line-height:30px;color:#141212;font-family:'Gothem_pro_normal';font-weight:normal;}
 .total_price{font-size:32px;line-height:30px;color:#FFBC01;font-family:'Segoe Ui';}
 .btn_escape{background:#fff;border-color:#FFBC01;}
-
+.making_order{padding:20px 0 140px;background-color:#fff;}
+.position_page_order_making{right:-50px; top:-90px;}
+.input_form{position:relative;padding:20px 10px 0px 10px;min-height:65px;border:1px solid #141212;border-radius:10px;width:100%;}
+.input_form span{position:absolute;font-size:12px;color:#70737E;font-family:'Gothem_pro_light';left:10px;top:8px;}
+.input_form input{border:none;width:100%;height:100%;display:inline-block;padding:10px 0 0;}
+.input_form input:focus{outline:none;}
+.input_form input::-webkit-input-placeholder{font-size:15px;line-height:16px;color:#141212;font-family:'Gothem_pro_light';}
+.input_form textarea{width:100%;height:100%;border:none;}
+.input_form textarea:focus{outline:none;}
+.name_radio{font-size:22px;line-height:30px;color:#141212;font-family:'Gothem_pro_normal';font-weight:bold;}
+.radio_checkbox{cursor: pointer;position: relative;}
+.radio_checkbox span{position:relative;font-size:18px;line-height:26px;letter-spacing:0.01em;color:#141212;font-family: 'Gothem_pro_light';padding-left:35px;}
+.radio_checkbox span:before{content:'';position:absolute;width:27px;height:27px;border:1px solid #141212;border-radius:50%;left:0;top:0;bottom:0;margin:auto;}
+.radio_checkbox span:after{content:'';position:absolute;width:19px;height:19px;border-radius:50%;background:linear-gradient(180deg, #FFBC01 0%, #FD9800 100%);left:4px;top:-1px;opacity:0;transition:opacity .3s ease;}
+.radio_checkbox input[type="radio"]{display:none;}
+.radio_checkbox input[type="radio"]:checked + span:after{opacity:1;}
+.check_block{display:flex;flex-direction:column;}
+.checkbox{position:relative;}
+.checkbox span{font-size:14px;line-height:16px;color:#3D3E44;font-family:'Gothem_pro_light';position:relative;padding-left:30px;}
+.checkbox span a{font-size:14px;line-height:16px;color:#3D3E44;font-family:'Gothem_pro_light';}
+.checkbox span:before{content:'';position:absolute;left:0;top:0;bottom:0;margin:auto;width:22px;height:22px;border-radius:5px;border: 1px solid  #3D3E44;}
+.checkbox span:after{content:'';position:absolute;left:0;top:0;bottom:0;margin:auto;width:22px;height:22px;background-image:url(../img/checked.png);background-size:cover;background-position:center center;opacity:0;transition:all .3s;}
+.checkbox input[type="checkbox"]{display:none;}
+.checkbox input[type="checkbox"]:checked + span:after{opacity:1;}
+.checkbox input[type="checkbox"]:checked + span:before{border-color:transparent;}
+button.btn_order:focus{outline:none;}
+.btn_txt{font-size:13px;line-height:13px;color:#141212;font-family: 'Gothem_pro_bold';}
+.btn_txt:hover{color:inherit;text-decoration:none;opacity:.7;}
 
 
 
@@ -196,6 +223,7 @@ body{background-color:#F8FCFF;}
   .img_slider_1{right:0;} 
   .bg_text{font-size:150px;}
   .comp_size{font-size:50px;}
+  .position_page_order_making{right:-100px;top:-100px;}
 }
 @media(max-width:991px){
   .mobile_menu{position:absolute;bottom:0;left:-100%;justify-content:start;overflow:hidden;width:0;transition:all .3s;z-index:-1;}
@@ -239,6 +267,7 @@ body{background-color:#F8FCFF;}
   .wrapper_block_contact{min-width:auto;max-width:95%;top:-45px;}
   .delivery_pay.contact_page{padding-bottom:30px;}
   .cart_content{padding:0 0 60px;}
+  .position_page_order_making{display:none;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}

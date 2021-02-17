@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Корзина</title>
+  <title>Регистрация</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -69,129 +69,64 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb padding_on_white_bg">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+              <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
             </ol>
           </nav>
         </div>
       </section>
-      <section class="cart_content">
+      <section class="making_order">
         <div class="container position-relative">
-          <img class="img_slide_bg position_page_menu" src="img/tomat_2.png" alt="">
-          <h1 class="title_block pb-lg-4 pb-1">Корзина</h1>
-          <div class="row ">
-            <div class="offset-lg-2 col-lg-10 d-none d-lg-block">
-              <div class="row">
-                <div class="col-lg-7">
-                  <p class="gray_text">Товар</p>
-                </div>
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <p class="gray_text">Количество</p>
-                    </div>
-                    <div class="col-lg-6">
-                      <p class="gray_text">Стоимость</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="wrapper_cart_item mb-3">
-                <div class="row align-items-center">
-                  <div class="col-lg-2 col-4 text-center">
-                    <img class="img-fluid" src="img/cart_item_1.png" alt="шаурма">
-                  </div>
-                  <div class="col-lg-6 col-8">
-                    <div class="d-flex flex-column">
-                      <span class="weight cart_item">500гр</span>
-                      <a href="#" class="link_cart_item">Шаурма “Папа Гриль”</a>
-                      <p class="description_goods d-none d-sm-block pt-2">Армянский лаваш/ куриное мясо гриль/ свежие помидоры/ салат<br>/чесночный соус/томатный соус</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-3 mt-lg-0">
-                    <div class="row">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <p class="gray_text d-lg-none mb-0">Количество</p>
-                          <div class="item_counter_delete">
-                            <div class="counter_btn">
-                              <button>-</button>
-                              <span>1</span>
-                              <button>+</button>
-                            </div>
-                            <button class="delete_goods_btn"><img class="img-fluid" src="img/delete.png" alt="удалить"></button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <p class="gray_text d-lg-none mb-0">Стоимость</p>
-                          <span class="price_cart_page">560 ₽</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper_cart_item mb-3">
-                <div class="row align-items-center">
-                  <div class="col-lg-2 col-4 text-center">
-                    <img class="img-fluid" src="img/cart_item_2.png" alt="шаурма">
-                  </div>
-                  <div class="col-lg-6 col-8">
-                    <div class="d-flex flex-column">
-                      <span class="weight cart_item">500гр</span>
-                      <a href="#" class="link_cart_item">Шаурма “Папа Гриль”</a>
-                      <p class="description_goods d-none d-sm-block pt-2">Армянский лаваш/ куриное мясо гриль/ свежие помидоры/
-                        салат<br>/чесночный соус/томатный соус</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-3 mt-lg-0">
-                    <div class="row">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <p class="gray_text d-lg-none mb-0">Количество</p>
-                          <div class="item_counter_delete">
-                            <div class="counter_btn">
-                              <button>-</button>
-                              <span>1</span>
-                              <button>+</button>
-                            </div>
-                            <button class="delete_goods_btn"><img class="img-fluid" src="img/delete.png" alt="удалить"></button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <p class="gray_text d-lg-none mb-0">Стоимость</p>
-                          <span class="price_cart_page">560 ₽</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="img_slide_bg position_page_order_making" src="img/tomat_2.png" alt="">
+          <h1 class="title_block pb-lg-4 pb-1">личный кабинет</h1>
           <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-7 pt-4">
-              <div class="total_block">
-                <p class="total_txt_bold mb-0">Итого к оплате</p>
-                <p class="total_price mb-0">1 120 ₽</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center pt-3 pt-lg-5">
-            <div class="col-lg-7 col-md-8">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <a href="#" class="btn_order btn_more w-100 px-0">Оформить заказ</a>
-                </div>
-                <div class="col-6">
-                  <a href="#" class="btn_order btn_more btn_escape w-100 px-0">Вернуться к каталогу</a>
-                </div>
-              </div>
+            <div class="col-lg-10">
+              <p class="name_radio text-center mb-4">Регистрация</p>
+              <form action="">
+                <fieldset>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="input_form">
+                        <span>Имя Фамилия*</span>
+                        <input type="text" name="name" placeholder="Иван Иванов">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="input_form">
+                        <span>Логин*</span>
+                        <input type="phone" name="name">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="input_form">
+                        <span>Пароль*</span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="input_form">
+                        <span>Повторить пароль*</span>
+                        <input type="text">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center pt-3">
+                    <div class="col-lg-6 col-md-8 text-center">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span>Я принимаю <a href="#" class="">условия передачи информации</a></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 pt-3">
+                      <button type="submit" href="#" class="btn_order btn_more w-100 px-0">Войти</button>
+                      <div class="d-flex justify-content-center pt-3">
+                        <a href="#" class="btn_txt">У меня уже есть аккаунт</a>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
