@@ -162,7 +162,7 @@ body{background-color:#F8FCFF;}
 .wrapper_map{width:100%;overflow:hidden;height:460px;border-radius:10px;background-color:#C4C4C4;z-index:0;}
 .wrapper_block_contact{position:relative;min-width:320px;padding:20px 15px 30px;background-color:#000;border-radius:10px;z-index:1;top:0;bottom:0;margin:auto;text-align:center;}
 .title_contact{font-size:24px;line-height:25px;color:#FD9800;font-family:'Gothem_pro_normal';}
-.cart_content{background-color:#fff;padding:20px 0 40px;}
+.cart_content{background-color:#fff;padding:20px 0 100px;}
 .gray_text{font-size:18px;line-height:30px;opacity:.5;color:#3D3E44;font-family:'Gothem_pro_normal';}
 .wrapper_cart_item{background-color:#fff;box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.08);border-radius: 10px;padding:15px 15px;}
 .cart_item{position:relative;top:auto;left:auto;}
@@ -171,6 +171,11 @@ body{background-color:#F8FCFF;}
 .delete_goods_btn{display:inline-block;background-color:transparent;border:none;padding:0;}
 .item_counter_delete{display:inline-flex;align-items:center;}
 .price_cart_page{font-size:32px;line-height:28px;text-transform:uppercase;color:#141212;font-family:'Gothem_pro_bold';font-weight:bold;}
+.total_block{display:flex;align-items:center;justify-content:space-between;}
+.total_txt_bold{font-size:22px;line-height:30px;color:#141212;font-family:'Gothem_pro_normal';font-weight:normal;}
+.total_price{font-size:32px;line-height:30px;color:#FFBC01;font-family:'Segoe Ui';}
+.btn_escape{background:#fff;border-color:#FFBC01;}
+
 
 
 
@@ -233,6 +238,7 @@ body{background-color:#F8FCFF;}
   .delivery_pay .title_block{font-size:40px;line-height:44px;}
   .wrapper_block_contact{min-width:auto;max-width:95%;top:-45px;}
   .delivery_pay.contact_page{padding-bottom:30px;}
+  .cart_content{padding:0 0 60px;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}
