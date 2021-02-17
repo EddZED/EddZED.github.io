@@ -153,7 +153,12 @@ body{background-color:#F8FCFF;}
 .desc_bullit{font-size:15px;line-height:22px;color:#BDBDBD;font-family:'Gothem_pro_light';}
 .our_advatages{padding:0 0 140px;}
 .our_advatages .title_block{z-index:10;}
-
+.delivery_pay{padding:0 0 140px;}
+.delivery_pay .title_block{font-size:60px;line-height:64px;font-family:'Gothem_pro_bold';letter-spacing:0.04em;}
+.delivery_pay .title_block span{font-family:'Gothem_pro_black';}
+.img_delivery_intro{position:absolute;top: -27px;left: -30%;max-width: 600px;}
+.sub_title_delivery{font-size:16px;line-height:23px;color:#fff;font-family:'Gothem_pro_light';}
+.luk_delivery{position:absolute;top:-90px;right:0;max-width:203px;}
 
 @media(min-width:992px){
   body.overflow-hidden{overflow:visible !important;}
@@ -208,6 +213,8 @@ body{background-color:#F8FCFF;}
   .position_page_menu{display:none;}
   .menu_content{padding-top:0px;}
   .our_advatages{padding-bottom:100px;}
+  .img_delivery_intro{position:relative;top:auto;left:auto;max-width:100%;}
+  .delivery_pay .title_block{font-size:40px;line-height:44px;}
 }
 @media(max-width:767px){
   .title_slide{font-size:30px;line-height:29px;}
@@ -228,6 +235,8 @@ body{background-color:#F8FCFF;}
   .navbar{padding:10px 0;}
   .list_position_advantages_page{display:none;}
   .our_advatages {padding-bottom:80px;}
+  .delivery_pay{padding:0 0 100px;}
+  .luk_delivery{max-width:117px;top:-50px;}
 }
 @media(max-width:565px){
   .swiper-container{padding-top:135px;}
@@ -247,6 +256,9 @@ body{background-color:#F8FCFF;}
   .about_us{padding:0 0 30px;}
   .our_advatages .title_block{padding-left:50px;font-size:34px;line-height:33px;}
   .our_advatages {padding-bottom:60px;}
+  .delivery_pay .title_block span{font-size:32px;line-height:38px;}
+  .delivery_pay .title_block{font-size:30px;line-height:36px;}
+  .delivery_pay{padding:0 0 60px;}
 }
 @media(max-width:400px){
   .swiper-container{padding-top:117px;}
@@ -254,8 +266,9 @@ body{background-color:#F8FCFF;}
   .title_block{font-size:35px;}
   .paper.bottom_position{top:-43px;}
   .bread_cramb{margin-top:100px;}
-  .our_advatages .title_block{padding-left:0;font-size:30px;}
+  .our_advatages .title_block{padding-left:0;font-size:30px;letter-spacing:0.02em;}
   .pepper_position{max-width:120px;left:-20px;}
+  .delivery_pay .title_block{font-size:26px;line-height:36px;}
 }
 
 
