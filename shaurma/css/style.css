@@ -126,7 +126,7 @@ body{background-color:#F8FCFF;}
 .tastier .img_menus{bottom:80px;}
 .page_white_bg{background-color:#fff;}
 .page_white_bg .breadcrumb{margin:0;}
-.page_white_bg .breadcrumb-item a{color:#000;}
+.page_white_bg .breadcrumb-item a{color:#000;font-weight:normal;}
 .padding_on_white_bg{padding-top:50px;}
 .menu_content{background-color:#fff;padding:40px 0;}
 .sidebar{position:relative;background-color:#fff;box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.13);border-radius: 8px;overflow:hidden;}
@@ -162,7 +162,15 @@ body{background-color:#F8FCFF;}
 .wrapper_map{width:100%;overflow:hidden;height:460px;border-radius:10px;background-color:#C4C4C4;z-index:0;}
 .wrapper_block_contact{position:relative;min-width:320px;padding:20px 15px 30px;background-color:#000;border-radius:10px;z-index:1;top:0;bottom:0;margin:auto;text-align:center;}
 .title_contact{font-size:24px;line-height:25px;color:#FD9800;font-family:'Gothem_pro_normal';}
-
+.cart_content{background-color:#fff;padding:20px 0 40px;}
+.gray_text{font-size:18px;line-height:30px;opacity:.5;color:#3D3E44;font-family:'Gothem_pro_normal';}
+.wrapper_cart_item{background-color:#fff;box-shadow: -5px 5px 23px rgba(0, 0, 0, 0.08);border-radius: 10px;padding:15px 15px;}
+.cart_item{position:relative;top:auto;left:auto;}
+.link_cart_item{display:inline-block;font-size:21px;line-height:23px;color:#141212;font-family:'Gothem_pro_bold';transition:all .3s;}
+.link_cart_item:hover{color:inherit;opacity:.7;text-decoration:none;}
+.delete_goods_btn{display:inline-block;background-color:transparent;border:none;padding:0;}
+.item_counter_delete{display:inline-flex;align-items:center;}
+.price_cart_page{font-size:32px;line-height:28px;text-transform:uppercase;color:#141212;font-family:'Gothem_pro_bold';font-weight:bold;}
 
 
 
@@ -249,6 +257,7 @@ body{background-color:#F8FCFF;}
   .luk_delivery{max-width:117px;top:-50px;}
   .delivery_pay.contact_page{padding-bottom:0;}
   .wrapper_map{height:250px;}
+  .cart_content{padding-top:0;}
 }
 @media(max-width:565px){
   .swiper-container{padding-top:135px;}
