@@ -221,8 +221,8 @@ button.btn_order:focus{outline:none;}
 .close img{max-width:30px;position:absolute;top:20px;right:20px;}
 .close:focus{outline:none;}
 .modal-title{text-align:center;font-size:40px;line-height:38px;letter-spacing:0.02em;color:#FFBC01;font-family:'Gothem_pro_black';width:100%;}
-.modal-body .input_form input{background-color:transparent;}
-.modal-body .input_form input::-webkit-input-placeholder{color:#fff;}
+.modal-body .input_form input{background-color:transparent;color:#fff;}
+.modal-body .input_form input::-webkit-input-placeholder{color:rgb(180, 177, 177);}
 .modal-body .input_form{border-color:#fff;}
 .modal-body .input_form span{color:#fff;}
 .modal-body .checkbox span{color:#fff;}
