@@ -69,27 +69,27 @@
               <div class="swiper-slide">
                 <div class="body_slide">
                   <img class="img-fluid" src="img/slider_image.png" alt="">
-                  <a href="#" data-toggle="modal" data-target="#" class="btn_order">заказать</a>
+                  <a href="#" data-toggle="modal" data-target="#order_popup" class="btn_order">заказать</a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="body_slide">
                   <img class="img-fluid" src="img/slider_image.png" alt="">
-                  <a href="#" data-toggle="modal" data-target="#" class="btn_order">заказать</a>
+                  <a href="#" data-toggle="modal" data-target="#order_popup" class="btn_order">заказать</a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="body_slide">
                   <img class="img-fluid" src="img/slider_image.png" alt="">
-                  <a href="#" data-toggle="modal" data-target="#" class="btn_order">заказать</a>
+                  <a href="#" data-toggle="modal" data-target="#order_popup" class="btn_order">заказать</a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="body_slide">
                   <img class="img-fluid" src="img/slider_image.png" alt="">
-                  <a href="#" data-toggle="modal" data-target="#" class="btn_order">заказать</a>
+                  <a href="#" data-toggle="modal" data-target="#order_popup" class="btn_order">заказать</a>
                 </div>
-              </div>
+              </div> 
             </div>
             <div class="swiper-pagination">
             </div>
@@ -596,6 +596,55 @@
       </div>
     </footer>
   </div>  
+  <!-- Модальное окно -->
+  <div class="modal fade" id="order_popup" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">заполните форму</h5>
+          <p class="text_content white_txt text-center w-100 pt-3">И мы с Вами обязательно свяжимся!</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.png" alt="закрыть">
+          </button>
+        </div>
+        <div class="modal-body px-0">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <form action="" class="">
+                <fieldset>
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <label class="input_form">
+                        <span>Имя Фамилия*</span>
+                        <input type="text" name="name" placeholder="Иван Иванов">
+                      </label>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <label class="input_form">
+                        <span>Контактный телефон*</span>
+                        <input type="phone" name="name" placeholder="8 (903) 123-12-12">
+                      </label>
+                    </div>
+                    <div class="col-12 text-center">
+                      <label class="checkbox text-md-center text-left">
+                        <input type="checkbox" checked>
+                        <span>Я принимаю <a href="#" class="">условия передачи информации</a></span>
+                      </label>
+                      <button type="submit" class="btn_order btn_more w-100 px-0 mt-3">Отправить</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <img class="img-fluid img_popup" src="img/right_list.png" alt="">
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
