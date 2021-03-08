@@ -153,7 +153,7 @@ body{background-color:#F8FCFF;}
 .name_bulit{font-size:20px;line-height:19px;color:#fff;font-family:'Gothem_pro_normal';}
 .desc_bullit{font-size:15px;line-height:22px;color:#BDBDBD;font-family:'Gothem_pro_light';}
 .our_advatages{padding:0 0 140px;}
-.our_advatages .title_block{z-index:10;}
+.our_advatages .title_block{z-index:9;}
 .delivery_pay{padding:0 0 140px;}
 .delivery_pay .title_block{font-size:60px;line-height:64px;font-family:'Gothem_pro_bold';letter-spacing:0.04em;}
 .delivery_pay .title_block span{font-family:'Gothem_pro_black';}
