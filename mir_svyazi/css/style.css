@@ -1,0 +1,35 @@
+@font-face{font-family:'Aeroport_bold';src:url(../font/Aeroport-Bold.ttf);}
+@font-face{font-family:'Aeroport_light';src:url(../font/Aeroport-Light.ttf);}
+@font-face{font-family:'Aeroport_medium';src:url(../font/Aeroport-Medium.ttf);}
+html{scroll-behavior: smooth;}
+.wrapper{overflow:hidden;}
+.top_nav_menu{width:100%;background-color:#E31B23;}
+.top_nav_menu_block{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
+.top_nav_link{font-size:16px;color:#f7f7f7;line-height:19px;display:inline-block;font-family:'Aeroport_light';font-weight:normal;transition:all .3s;font-style:normal;}
+.top_nav_link:hover{color:#c0b9b9;text-decoration:none;}
+.main_menu{padding:35px 0;}
+.left_block{display:flex;justify-content:space-between;align-items:center;}
+.red_btn{background-color:#E31B23;border-radius:15px;box-shadow:5px 0px 25px rgba(227, 27, 35, 0.32);color:#F7F7F7;font-size:15px;font-family: 'Aeroport_medium';padding:13px 0;width:100%;display:inline-block;text-align:center;}
+.shop_geo{display:flex;position:relative;flex-direction:column;align-items:center;}
+.name_geo{font-size:18px;line-height:19px;font-family:'Aeroport_bold';font-weight:900;position:relative;width:100%;text-align:center;}
+.arrow_geo{position:absolute;right:0;top:0;bottom:0;margin:auto;}
+.link_phone{display:inline-flex;width:100%;align-items:center; font-size:16px;line-height:19px;font-family:'Aeroport_medium';font-weight:normal;color:#111016;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:565px){
+  .top_nav_link{font-size:12px;}
+  .main_menu{padding:15px 0;}
+}
+
