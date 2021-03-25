@@ -7,29 +7,68 @@ html{scroll-behavior: smooth;}
 .top_nav_menu_block{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
 .top_nav_link{font-size:16px;color:#f7f7f7;line-height:19px;display:inline-block;font-family:'Aeroport_light';font-weight:normal;transition:all .3s;font-style:normal;}
 .top_nav_link:hover{color:#c0b9b9;text-decoration:none;}
-.main_menu{padding:35px 0;}
+.main_menu{padding:35px 0 0;position:relative;}
 .left_block{display:flex;justify-content:space-between;align-items:center;}
 .red_btn{background-color:#E31B23;border-radius:15px;box-shadow:5px 0px 25px rgba(227, 27, 35, 0.32);color:#F7F7F7;font-size:15px;font-family: 'Aeroport_medium';padding:13px 0;width:100%;display:inline-block;text-align:center;}
-.shop_geo{display:flex;position:relative;flex-direction:column;align-items:center;}
+.red_btn:hover{color:inherit;text-decoration:none;}
+.shop_geo{display:flex;position:relative;flex-direction:column;align-items:center;padding-bottom:5px;}
 .name_geo{font-size:18px;line-height:19px;font-family:'Aeroport_bold';font-weight:900;position:relative;width:100%;text-align:center;}
-.arrow_geo{position:absolute;right:0;top:0;bottom:0;margin:auto;}
-.link_phone{display:inline-flex;width:100%;align-items:center; font-size:16px;line-height:19px;font-family:'Aeroport_medium';font-weight:normal;color:#111016;}
+.arrow_geo{position:absolute;right:0;top:0;bottom:0;margin:auto;transition:all .3s;transform:rotateZ(180deg);}
+.link_phone{display:inline-flex;width:100%;align-items:center; font-size:16px;line-height:19px;font-family:'Aeroport_medium';font-weight:normal;color:#111016;transition:all .3s;}
+.link_phone:hover{color:#b7b6b9;text-decoration:none;}
+.hidden_block{position:absolute;opacity:0;z-index:-1;width:100%;top:100%;left:0;background-color:#FFFFFF;box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);border-radius: 15px;padding:15px 10px;overflow:hidden;transition:all .3s;}
+.shop_geo:hover .hidden_block{z-index:1;opacity:1;}
+.shop_geo:hover .arrow_geo{transform:rotate(0deg);}
+.letter_space{letter-spacing:-0.05em;}
+.min_text_menu{font-size:15px;line-height:19px;letter-spacing:-0.05em;color:#111016;font-family:'Aeroport_light';font-weight:300;}
+.min_btn{padding:8px 0;width:100%;border-radius:12px;}
+.down_menu{width:100%;padding:11px 0;background-color:#EEEEEE;margin-top:35px;}
+.down_menu_item{display:flex;align-items:center;justify-content:space-between;}
+.down_menu_link{color:#111016;font-size:17px;line-height:19px;font-family:'Aeroport_medium';font-weight:500;transition:all .3s;}
+.down_menu_link:hover{text-decoration:none;opacity:.7;color:inherit;}
+.btn_menu{width:28px;height:28px;position:absolute;right:15px;top:0;bottom:0;margin:auto;border:none;background-color:transparent;padding:0;}
+.btn_menu .line_1, .btn_menu .line_2{width:100%;height:2px;background-color:#E31B23;display:inline-block;position:absolute;top:0;bottom:0;margin:auto;border-radius:2px;left:0;transition:all .3s;}
+.btn_menu .line_1{top:-5px;}
+.btn_menu .line_2{top:5px;}
+.btn_menu .line_1:before{content:'';position:absolute;width:100%;height:2px;border-radius:2px;background-color:#E31B23;top:-5px;left:0;transition:all .3s;}
+.btn_menu .line_2:before{content:'';position:absolute;width:100%;height:2px;border-radius:2px;background-color:#E31B23;top:5px;left:0;transition:all .3s;}
+.btn_menu.active .line_1:before, .btn_menu.active .line_2:before{top:0;transition:all .3s;}
+.btn_menu.active .line_1{transform:rotateZ(45deg);width:70%;top:-14px;}
+.btn_menu.active .line_2{transform:rotateZ(-45deg);width:70%;top:14px;}
+.btn_menu:focus{outline:none;}
+.min_header{font-size:13px;color:#eee;line-height:17px;font-family:'Aeroport_light';font-weight:300;margin-top:15px;}
+.white_text{color:#fff;}
+.menu_input{display:flex;}
+.btn_black{border:none;background-color:#111016;color:#F7F7F7;font-size:13px;line-height:16px;font-family:'Aeroport_medium';font-weight:500;min-height:100%;display:inline-block;}
+.menu_input .form_input{flex: 0 0 65%;background-color:#ECECEC;border:none;padding:5px 10px;}
+.menu_input .form_input::-webkit-input-placeholder{font-size:12px;line-height:16px;font-family:'Aeroport_light';font-weight:300;color:#111016;}
+.menu_input .form_input:focus, .menu_input .btn_black:focus{outline:none;}
+.menu_input .btn_black{flex: 0 0 35%;}
+.intro_slider{background:url(../img/bg_intro_1.jpg) no-repeat left top;width:100%;}
+
+
+.content{background-color:#fff;width:100%;}
 
 
 
 
-
-
-
-
-
-
-
-
-
+@media(max-width:991px){
+  .down_menu{width:0%;overflow:hidden;transition:all .2s;opacity:0;margin-top:25px;position:absolute;left:0;top:77px;}
+  .down_menu.active{width:100%;opacity:1;background-color:#E31B23;}
+  .main_menu{padding:25px 0;}
+  .down_menu_item{flex-direction:column;align-items:flex-start;}
+  .down_menu_link{color:#f7f7f7;font-size:18px;line-height:35px;}
+  .mobile_menu_phone_block{display:flex;flex-direction:column;}
+  .mobile_menu_phone_block .link_phone{font-size:20px;line-height:19px;color:#f7f7f7;}
+  .social_block{display:flex;justify-content:space-between;align-items:center;}
+  .social_link{color:#fff;font-family:'Montserrat';font-weight:normal;font-size:15px;}
+  .devided{width:2px;height:30px;display:inline-block;background-color:#F8F8F8;transform:rotateZ(15deg);}
+}
 
 @media(max-width:565px){
   .top_nav_link{font-size:12px;}
-  .main_menu{padding:15px 0;}
+  .main_menu{padding:15px 0 0;}
+  .down_menu{margin-top:15px;}
+  .link_phone{letter-spacing:-0.05em;font-size:15px;}
 }
 
