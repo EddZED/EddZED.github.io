@@ -44,12 +44,19 @@ html{scroll-behavior: smooth;}
 .menu_input .form_input::-webkit-input-placeholder{font-size:12px;line-height:16px;font-family:'Aeroport_light';font-weight:300;color:#111016;}
 .menu_input .form_input:focus, .menu_input .btn_black:focus{outline:none;}
 .menu_input .btn_black{flex: 0 0 35%;}
-.intro_slider{background:url(../img/bg_intro_1.jpg) no-repeat left top;width:100%;}
-
-
+.intro_slider{background:url(../img/bg_intro.jpg) no-repeat bottom left;background-size:cover;width:100%;position:relative;}
 .content{background-color:#fff;width:100%;}
-
-
+.sub_title span{color:#E31B23;}
+.sub_title{font-size:15px;color:#fff;letter-spacing:0.1em;text-transform:uppercase;font-family:'Aeroport_light';}
+.title_page{font-size:45px;line-height:49px;letter-spacing:0.05em;color:#f7f7f7;font-family:'Aeroport_bold';}
+.text_content{font-size:16px;line-height:24px;letter-spacing:-0.04em;color:#f8f8f8;}
+.red_rectangle{object-fit:none;position:absolute;right:0;top:0;z-index:0;}
+.swiper-container{z-index:1;position:relative;padding:40px 0;}
+.price_btn{position:relative;border:none;background-color:transparent;color:#f8f8f8;font-size:16px;line-height:25px;text-transform:uppercase;font-family:'Aeroport_medium'}
+.price_btn:before{content:'';position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(248, 248, 248, 0.16);top:0;bottom:0;margin:auto;left:-110px;transition:all .3s;}
+.price_btn:after{content:'';position:absolute;width:65px;height:65px;border-radius:50%;background:#F8F8F8;top:0;bottom:0;margin:auto;left:-86px;background-image:url(../img/wallet.png);background-size:auto;background-position:center center;background-repeat:no-repeat;}
+.price_btn:focus{outline:none;}
+.price_btn:hover:before{width:90px;height:90px;transition:all .3s;left:-99px;}
 
 
 @media(max-width:991px){

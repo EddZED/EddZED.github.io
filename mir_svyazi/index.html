@@ -175,7 +175,46 @@
     </header>
     <div class="content">
       <section class="intro_slider">
-        
+        <img class="red_rectangle" src="img/bg_intro_2.jpg" alt="">
+        <div class="container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="sub_title pb-2"><span>/</span> самые низкие цены на ремонт телефонов</div>
+                    <h1 class="title_page">Сервисный центр<br> в Нижнем Тагиле</h1>
+                  </div>
+                  <div class="offset-lg-6 offset-3">
+                    <p class="text_content">Мы предлагаем своим клиентам широкий спектр услуг для проведения качественного ремонта
+                      телефонов в Нижнем Тагиле.<br>
+                      Наши специалисты знают все нюансы ремонта всех видов<br> Телефонов и Планшетов, поэтому смогут осуществить ремонт в
+                      максимально короткие сроки.</p>
+                      <button class="price_btn mt-5">узнать стоимость ремонта</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="sub_title pb-2"><span>/</span> самые низкие цены на ремонт телефонов</div>
+                    <h1 class="title_page">Сервисный центр<br> в Нижнем Тагиле</h1>
+                  </div>
+                  <div class="offset-lg-6 offset-3">
+                    <p class="text_content">Мы предлагаем своим клиентам широкий спектр услуг для проведения качественного ремонта
+                      телефонов в Нижнем Тагиле.<br>
+                      Наши специалисты знают все нюансы ремонта всех видов<br> Телефонов и Планшетов, поэтому смогут осуществить ремонт в
+                      максимально короткие сроки.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
       </section>
     </div>
     <footer class="footer">
@@ -189,7 +228,26 @@
     $('.btn_menu').click(function(){
       $(this).toggleClass('active');
       $('.down_menu').toggleClass('active');
-    })
+    });
   </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      renderFraction: function (currentClass, totalClass) {
+        return '<span className="' + currentClass + '"></span>' +
+          ' of ' +
+          '<span className="' + totalClass + '"></span>';
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
 </body>
 </html>
