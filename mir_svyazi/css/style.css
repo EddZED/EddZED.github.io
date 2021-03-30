@@ -1,6 +1,11 @@
 @font-face{font-family:'Aeroport_bold';src:url(../font/Aeroport-Bold.ttf);}
 @font-face{font-family:'Aeroport_light';src:url(../font/Aeroport-Light.ttf);}
 @font-face{font-family:'Aeroport_medium';src:url(../font/Aeroport-Medium.ttf);}
+@font-face{font-family:'raleway_black';src:url(../font/ralewayblack.ttf);}
+@font-face{font-family:'raleway_bold';src:url(../font/ralewaybold.ttf);}
+@font-face{font-family:'raleway_extra_bold';src:url(../font/ralewayextrabold.ttf);}
+@font-face{font-family:'raleway_light';src:url(../font/ralewayextralight.ttf);}
+@font-face{font-family:'raleway_medium';src:url(../font/ralewaymedium.ttf);}
 html{scroll-behavior: smooth;}
 .wrapper{overflow:hidden;}
 .top_nav_menu{width:100%;background-color:#E31B23;}
@@ -44,14 +49,14 @@ html{scroll-behavior: smooth;}
 .menu_input .form_input::-webkit-input-placeholder{font-size:12px;line-height:16px;font-family:'Aeroport_light';font-weight:300;color:#111016;}
 .menu_input .form_input:focus, .menu_input .btn_black:focus{outline:none;}
 .menu_input .btn_black{flex: 0 0 35%;}
-.intro_slider{background:url(../img/bg_intro.jpg) no-repeat bottom left;background-size:cover;width:100%;position:relative;}
+.intro_slider{background:url(../img/bg_intro.jpg) no-repeat bottom left;background-size:cover;width:100%;position:relative;overflow:hidden;}
 .content{background-color:#fff;width:100%;}
 .sub_title span{color:#E31B23;}
 .sub_title{font-size:15px;color:#fff;letter-spacing:0.1em;text-transform:uppercase;font-family:'Aeroport_light';}
 .title_page{font-size:45px;line-height:49px;letter-spacing:0.05em;color:#f7f7f7;font-family:'Aeroport_bold';}
 .text_content{font-size:16px;line-height:24px;letter-spacing:-0.04em;color:#f8f8f8;}
 .red_rectangle{object-fit:none;position:absolute;right:0;top:0;z-index:0;}
-.swiper-container{z-index:1;position:relative;padding:40px 0 100px;}
+.swiper-container{z-index:1;position:relative;padding:40px 0 150px;}
 .price_btn{position:relative;border:none;background-color:transparent;color:#f8f8f8;font-size:16px;line-height:25px;text-transform:uppercase;font-family:'Aeroport_medium'}
 .price_btn:before{content:'';position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(248, 248, 248, 0.16);top:0;bottom:0;margin:auto;left:-110px;transition:all .3s;}
 .price_btn:after{content:'';position:absolute;width:65px;height:65px;border-radius:50%;background:#F8F8F8;top:0;bottom:0;margin:auto;left:-86px;background-image:url(../img/wallet.png);background-size:auto;background-position:center center;background-repeat:no-repeat;}
@@ -62,18 +67,34 @@ html{scroll-behavior: smooth;}
 .swiper-pagination{text-align:right;font-size:25px;color:#f8f8f8;font-family:'Montserrat';font-weight:100;display:inline-flex;align-items:flex-start;justify-content:flex-end;bottom:60px;right:0;width:auto;}
 .swiper-pagination .swiper-pagination-current{font-size:75px !important;color:#f8f8f8;font-family:'Montserrat';opacity:1 !important;line-height:70px;}
 .swiper-pagination .swiper-pagination-total{font-size:25px;color:#f8f8f8;letter-spacing:0.05em;font-family:'Montserrat';font-weight:100;opacity:.5;}
-.swiper-container .social_block{padding:50px 0;}
-.swiper-container .social_block .social_link{color:#fff;font-family:'Montserrat';font-weight:normal;font-size:15px;}
+.swiper-container .social_block .devided{font-size:20px;font-weight:100;}
+.swiper-container .social_block{position:absolute;bottom:40px;left:0;right:0;margin:auto;color:#fff;align-items: center;justify-content: center;display:flex;}
+.swiper-container .social_block .social_link{color:#fff;font-family:'Montserrat';font-weight:normal;font-size:15px;display:inline-block;}
 .navigation_slider{bottom:0;right:0;width:70px;height:30px;left:auto;position:absolute;}
-.navigation_slider .swiper-button-next, .navigation_slider .swiper-button-prev{right:40px;bottom:50px;top:auto;}
+.navigation_slider .swiper-button-next, .navigation_slider .swiper-button-prev{right:40px;bottom:40px;top:auto;}
 .navigation_slider .swiper-button-next:after, .navigation_slider .swiper-button-prev:after{display:none;}
 .navigation_slider .swiper-button-next:focus, .navigation_slider .swiper-button-prev:focus{outline:none;}
-.navigation_slider .swiper-button-next{background-image:url(../img/Arrow\ 1.png);background-repeat:no-repeat;width:25px;height:10px;transform:rotateZ(180deg);}
+.navigation_slider .swiper-button-next{background-image:url(../img/ar_next.png);background-repeat:no-repeat;width:25px;height:10px;}
 .navigation_slider .swiper-button-prev{background-image:url(../img/Arrow\ 1.png);background-repeat:no-repeat;width:25px;height:10px;right:90px;left:auto;}
+.swiper-pagination-current:before{content:'0';}
+.swiper-pagination-total:before{content:'0';}
+.select_device{padding:70px 0;}
+.text_contetn_black{font-size:15px;line-height:19px;color:#111016;letter-spacing:-0.05em;font-family:'Aeroport_light';font-weight:300;}
+.title_block{font-size:32px;line-height:36px;letter-spacing:0.02em;color:#000;font-family:'raleway_extra_bold';}
+.nav{border-bottom:none;display:flex;justify-content:space-between;margin:0 -7px;}
+.nav-item{flex:1 1 23%;width:100%;text-align:center;padding:0 7px;min-height:100%;}
+.btn_navs{min-height:146px;height:100%;display:inline-flex;flex-direction:column;align-items:center;justify-content:flex-end;width:100%;color:#111016;position:relative;background: linear-gradient(89.63deg, #F8F8F8 -1.63%, #F0F0F0 102.35%);border-radius: 15px;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);transition:backround .3s;font-family:'Aeroport_medium';}
+.btn_navs:hover{text-decoration:none;color:#F7F7F7;background:url(../img/bg_category.png);background-size:cover;background-position:center center;}
+.btn_navs.active{text-decoration:none;color:#F7F7F7;background:url(../img/bg_category.png);background-size:cover;background-position:center center;}
+.img_category{max-width:215px;object-fit:scale-down;position:relative;top:-30px;position: absolute;}
 
+
+@media(max-width:1199px){
+  .link_phone{font-size:13px;}
+}
 @media(max-width:991px){
   .down_menu{width:0%;overflow:hidden;transition:all .2s;opacity:0;margin-top:25px;position:absolute;left:0;top:77px;}
-  .down_menu.active{width:100%;opacity:1;background-color:#E31B23;}
+  .down_menu.active{width:100%;opacity:1;background-color:#E31B23;z-index: 999;}
   .main_menu{padding:25px 0;}
   .down_menu_item{flex-direction:column;align-items:flex-start;}
   .down_menu_link{color:#f7f7f7;font-size:18px;line-height:35px;}
