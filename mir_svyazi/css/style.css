@@ -14,8 +14,9 @@ html{scroll-behavior: smooth;}
 .top_nav_link:hover{color:#c0b9b9;text-decoration:none;}
 .main_menu{padding:35px 0 0;position:relative;}
 .left_block{display:flex;justify-content:space-between;align-items:center;}
-.red_btn{background-color:#E31B23;border-radius:15px;box-shadow:5px 0px 25px rgba(227, 27, 35, 0.32);color:#F7F7F7;font-size:15px;font-family: 'Aeroport_medium';padding:13px 0;width:100%;display:inline-block;text-align:center;}
+.red_btn{background-color:#E31B23;border:none;border-radius:15px;box-shadow:5px 0px 25px rgba(227, 27, 35, 0.32);color:#F7F7F7;font-size:15px;font-family: 'Aeroport_medium';padding:13px 0;width:100%;display:inline-block;text-align:center;}
 .red_btn:hover{color:inherit;text-decoration:none;}
+.red_btn:focus{outline:none;}
 .shop_geo{display:flex;position:relative;flex-direction:column;align-items:center;padding-bottom:5px;}
 .name_geo{font-size:18px;line-height:19px;font-family:'Aeroport_bold';font-weight:900;position:relative;width:100%;text-align:center;}
 .arrow_geo{position:absolute;right:0;top:0;bottom:0;margin:auto;transition:all .3s;transform:rotateZ(180deg);}
@@ -99,9 +100,29 @@ html{scroll-behavior: smooth;}
 .form_order{padding:50px;background-image:url(../img/bg_form.png);background-size:50%;background-repeat:no-repeat;background-position:100% 100%;}
 .title_block span{color:#E31B23;}
 .input_order_form{border:none;background-color:transparent;border-bottom:1px solid rgba(17, 16, 22, 0.295);width:100%;}
-
-
-
+.micro_text span{color:#E31B23;}
+.micro_text{font-size:12px;line-height:19px;letter-spacing:-0.05em;color:#111016;font-family:'Aeroport_light';font-weight:300;}
+.block_info{display:flex;width:100%;height:100%;align-items:start;padding:50px 0 50px 50px;justify-content:space-between;flex-direction:column;}
+.info_item{display:flex;align-items:center;}
+.bullit_item{position:relative;background-color:#f8f8f8;;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.bullit_item:before{content:'';position:absolute;width:76px;height:76px;border-radius:50%;background:rgba(248, 248, 248, 0.16);top:0;bottom:0;margin:auto;left:-16px;transition:all .3s;}
+.info_content_item{display:flex;flex-direction:column;padding-left:30px;}
+.phone_info_item{font-size:20px;line-height:25px;color:#f8f8f8;font-family:'Aeroport_medium';font-weight:500;transition:all .3s;}
+.phone_info_item:hover{color:#b9aeae;text-decoration:none;}
+.middle_text_white{font-size:20px;line-height:28px;color:#f8f8f8;font-family:'Aeroport_medium';font-weight:500;}
+.about_us{padding:70px 0 20px;}
+.comments{padding:20px 0 70px;}
+.body_comment{background:#fff;border-radius:15px;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);padding:35px 20px;}
+.swiper_2{padding:20px 0;overflow:visible;}
+.title_comment{font-size:22px;line-height:19px;font-family:'Aeroport_medium';font-weight:500;transition:all .3s;}
+.text_comment{font-size:15px;line-height:19px;color:#111016;letter-spacing:-0.05em;transition:all .3s;font-family:'Aeroport_light';}
+.signature_comment{position:relative;padding-left:50px;color:#111016;}
+.signature_comment:before{content:'';position:absolute;width:40px;height:1px;background-color:#000;top:0;bottom:0;margin:auto;left:0;}
+.comments .swiper-slide-active .body_comment{background-image:url(../img/bg_category.png);overflow:hidden;background-size:cover;background-position:center center;background-color:transparent;}
+.comments .swiper-slide{border-radius:15px;}
+.comments .swiper-slide .body_comment{background-color:transparent;}
+.comments .swiper-slide-active .title_comment, .comments .swiper-slide-active .text_comment, .comments .swiper-slide-active .signature_comment{color:#fff;}
+.comments .swiper-slide-active .signature_comment:before{background-color:#fff;}
 
 
 
