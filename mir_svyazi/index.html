@@ -229,25 +229,25 @@
           <h2 class="title_block">Выберите устройство</h2>
           <p class="text_contetn_black pb-5 pt-3">Выберите устройство, которое хотите отремонтировать и узнайте стоимость ремонта</p>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mb-5 mb-lg-3" role="presentation">
               <a class="btn_navs active" id="apple-tab" data-toggle="tab" href="#apple" role="tab" aria-controls="apple" aria-selected="true">
                 <img class="img_category" src="img/cat1.png" alt="ремонт Apple">
                 <p class="">Ремонт техники Apple</p> 
               </a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mb-5 mb-lg-3" role="presentation">
               <a class="btn_navs" id="phone-tab" data-toggle="tab" href="#phone" role="tab" aria-controls="phone" aria-selected="false">
                 <img class="img_category" src="img/cat2.png" alt="ремонт телефонов">
                 <p class="">Ремонт телефонов</p>
               </a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mb-5 mb-lg-3" role="presentation">
               <a class="btn_navs" id="pad-tab" data-toggle="tab" href="#pad" role="tab" aria-controls="pad" aria-selected="false">
                 <img class="img_category" src="img/cat3.png" alt="ремонт планшетов">
                 <p class="">Ремонт планшетов</p>
               </a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mb-5 mb-lg-3" role="presentation">
               <a class="btn_navs" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-selected="false">
                 <img class="img_category" src="img/cat4.png" alt="ремонт ноутбуков">
                 <p class="">Ремонт ноутбуков</p>
@@ -256,17 +256,125 @@
           </ul>
           <div class="tab-content pt-4" id="myTabContent">
             <div class="tab-pane fade active show" id="apple" role="tabpanel" aria-labelledby="apple-tab">
-              1
+              <ul class="nav nav-tabs pt-3" id="myTab_2" role="tablist">
+                <li class="nav-item mb-5 mb-lg-3" role="presentation">
+                  <a class="btn_navs_item active" id="iphone-tab" data-toggle="tab" href="#apple_iphone" role="tab" aria-controls="apple_iphone" aria-selected="true">
+                    <img class="img_sub_category" src="img/sub_cat.png" alt="ремонт IPhone">
+                    <p class="mb-0">IPhone</p> 
+                  </a>
+                </li>
+                <li class="nav-item mb-5 mb-lg-3" role="presentation">
+                  <a class="btn_navs_item" id="ipad-tab" data-toggle="tab" href="#apple_ipad" role="tab" aria-controls="apple_ipad" aria-selected="false">
+                    <img class="img_sub_category" src="img/sub_cat2.png" alt="ремонт IPad">
+                    <p class="mb-0">IPad</p> 
+                  </a>
+                </li>
+                <li class="nav-item mb-5 mb-lg-3" role="presentation">
+                  <a class="btn_navs_item" id="mac-tab" data-toggle="tab" href="#apple_mac" role="tab" aria-controls="apple_mac" aria-selected="false">
+                    <img class="img_sub_category" src="img/sub_cat3.png" alt="ремонт Mac">
+                    <p class="mb-0">Mac</p> 
+                  </a>
+                </li>
+                <li class="nav-item mb-5 mb-lg-3" role="presentation">
+                  <a class="btn_navs_item" id="watch-tab" data-toggle="tab" href="#apple_watch" role="tab" aria-controls="apple_watch" aria-selected="false">
+                    <img class="img_sub_category" src="img/sub_cat4.png" alt="ремонт Watch">
+                    <p class="mb-0">Watch</p> 
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent_2">
+                <div class="tab-pane fade active show" id="apple_iphone" role="tabpanel" aria-labelledby="iphone-tab">
+                  <div class="block_link_goods">
+                    <a href="#" class="category_link_goods">
+                      IPhone 12
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 12 PRO
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 12 PRO<br> MAX
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 11
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone XS MAX
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone XS
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone XR
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone X
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 8+
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 8
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 7+
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 7
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone 6S
+                    </a>
+                    <a href="#" class="category_link_goods">
+                      IPhone SE
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="apple_ipad" role="tabpanel" aria-labelledby="ipad-tab">
+                  здесь айпады
+                </div>
+                <div class="tab-pane fade" id="apple_mac" role="tabpanel" aria-labelledby="mac-tab">
+                 а здесь маки
+                </div>
+                <div class="tab-pane fade" id="apple_watch" role="tabpanel" aria-labelledby="watch-tab">
+                  Часики!
+                </div>
+              </div>
             </div>
             <div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="phone-tab">
-              2
+              какие-то телефоны
             </div>
             <div class="tab-pane fade" id="pad" role="tabpanel" aria-labelledby="pad-tab">
-              3
+              какие-то планшеты
             </div>
             <div class="tab-pane fade" id="book" role="tabpanel" aria-labelledby="book-tab">
-              4
+              какие-то буки)
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="form_order">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="title_block">Оставьте <span> заявку на ремонт</span> вашего устройства</h2>
+              <p class="text_contetn_black pb-3 pt-3">Заполните все поля для заявки на ремонт вашего устройства и наши специалисты свяжутся с вами для подтверждения цены, согласуют с вами дату ремонта и время</p>
+              <form action="" class="">
+                <fieldset>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <input type="text" class="input_order_form" name="name" placeholder="Имя">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <input type="text" class="input_order_form" name="phone" placeholder="Телефон">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <textarea name="" id="" cols="1" rows="1" class="input_order_form" placeholder="Сообщение"></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-lg-6"></div>
           </div>
         </div>
       </section>
