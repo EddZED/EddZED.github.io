@@ -134,15 +134,22 @@ html{scroll-behavior: smooth;}
 .wrapper_news_block{box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius:15px;}
 .news_item_block:hover .text_contetn_black{color:#f7f7f7;}
 .news_item_block .text_contetn_black{font-size:13px;}
-.why_we{position:relative;padding:70px 0;background-image:url(../img/bg_why.jpg);background-size:cover;}
+.why_we{position:relative;padding:70px 0;background-image:url(../img/bg_why.jpg);background-size:cover;background-position:center left;}
 .why_we .sub_title, .why_we .title_page{color:#252326;}
 .numb_box{display:flex;align-items:center;}
 .circle_red{min-width:50px;min-height:50px;display:flex;align-items:center;position:relative;justify-content:center;border-radius:50%;background-color:#E31B23;margin-right:20px;}
 .circle_red span{color:#F7F7F7;font-size:20px;line-height:19px;font-family:'Montserrat';position:absolute;margin:auto;}
-
-
-
-
+.footer{background-color:#111016;padding:50px 0;}
+.left_block_footer{display:flex;flex-direction:column;justify-content:space-between;height:100%;}
+.link_privacy{font-family:'Aeroport_bold';font-size:13px;line-height:15px;color:#eee;transition:all .3s;}
+.link_privacy:hover{color:#fff}
+.all_info_min{font-size:13px;line-height:16px;color:#eee;}
+.title_menu_footer{font-size:14px;color:#eeee;font-family:'Aeroport_light';transition:all .3s;}
+.whie_link_footer{color:#eeee;font-size:13px;line-height:17px;font-family:'Aeroport_bold';display:inline-block;}
+.whie_link_footer:hover{color:#fff;}
+.item_menu_footer{display:flex;justify-content:space-between;flex-direction:column;}
+.right_block_footer a{color:#eee;}
+.right_block_footer .mobile_menu_phone_block .link_phone{justify-content:flex-end;}
 
 
 @media(max-width:1199px){
