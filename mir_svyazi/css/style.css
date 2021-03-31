@@ -164,10 +164,14 @@ html{scroll-behavior: smooth;}
 .advantages{padding:50px 0;}
 .box_advantages{background-color:#FFFFFF;border-radius:15px;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);padding:20px 15px;display:flex;align-items:start;flex-direction:column;justify-content:center;min-height:100%;}
 .bg_img{background-image:url(../img/bg_category.png);background-size:cover;}
-
-
-
-
+.signature_comment.white_text:before{background-color:#fff;}
+.right_img{z-index:0;right:30px;top:15px;position:absolute;}
+.body_comment .title_comment{z-index:1;position:relative;}
+.prev_btn, .page_btn, .next_prev{font-size:18px;color:#828282;line-height:22px;font-family:'Aeroport_bold';display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:45px;border-radius:5px;height:100%;margin:0 3px;transition:all .3s;}
+.pagination_page{display:flex;align-items:center;justify-content:center;}
+.page_btn{text-align:center;}
+.page_btn:hover{color:#fff;background-color:#C8060D;text-decoration:none;}
+.prev_btn:hover, .next_prev:hover{text-decoration:none;color:#616060;}
 
 
 @media(max-width:1199px){
@@ -220,5 +224,6 @@ html{scroll-behavior: smooth;}
   .slider_1 .navigation_slider {right:-30px;}
   .devided{width:1px;}
   .advantages{padding:0 0 30px;}
+  .prev_btn, .page_btn, .next_prev{margin:0 1px;}
 }
 
