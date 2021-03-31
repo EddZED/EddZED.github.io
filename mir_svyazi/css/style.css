@@ -155,7 +155,7 @@ html{scroll-behavior: smooth;}
 .right_block_footer .bg_red{background-color:#E31B23;}
 .right_block_footer .menu_input .form_input{flex: 1 1 auto;min-width:50%;}
 .all_right{font-size:13px;color:#eee;font-family:'Aeroport_light';font-weight:300;}
-
+.swiper-slide{overflow:hidden;padding-bottom:45px;}
 
 
 
@@ -194,6 +194,7 @@ html{scroll-behavior: smooth;}
   .swiper-pagination{font-size:13px;}
   .price_btn:before{width:60px;height:60px;border-radius:50%;top:0;bottom:0;margin:auto;left:20px;transition:all .3s;}
   .price_btn:after{width:35px;height:35px;left:32px;background-size:17px 17px;}
+  .swiper-container{padding:40px 0 30px}
 }
 @media(max-width:565px){
   .top_nav_link{font-size:12px;}
@@ -202,5 +203,6 @@ html{scroll-behavior: smooth;}
   .link_phone{letter-spacing:-0.05em;font-size:15px;}
   .swiper-container .social_block{max-width:60%;}
   .price_btn{font-size:9px;}
+  .navigation_slider {right:-30px;}
 }
 
