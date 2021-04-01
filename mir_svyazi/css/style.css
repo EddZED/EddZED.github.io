@@ -56,7 +56,7 @@ html{scroll-behavior: smooth;}
 .sub_title span{color:#E31B23;}
 .sub_title{font-size:15px;color:#fff;letter-spacing:0.1em;text-transform:uppercase;font-family:'Aeroport_light';}
 .title_page{font-size:45px;line-height:49px;letter-spacing:0.05em;color:#f7f7f7;font-family:'Aeroport_bold';}
-.text_content{font-size:16px;line-height:24px;letter-spacing:-0.04em;color:#f8f8f8;}
+.text_content{font-size:15px;line-height:24px;letter-spacing:-0.04em;color:#f8f8f8;}
 .red_rectangle{object-fit:none;position:absolute;right:0;top:0;z-index:0;}
 .swiper-container{z-index:1;position:relative;padding:40px 0 150px;}
 .price_btn{position:relative;border:none;display:inline-block;width:100%;background-color:transparent;color:#f8f8f8;font-size:16px;line-height:25px;text-transform:uppercase;font-family:'Aeroport_medium'}
@@ -201,14 +201,13 @@ html{scroll-behavior: smooth;}
 .card:hover .card-body{color:#f7f7f7;}
 .arrow_quest{position:absolute;bottom:0;right:10px;transition:all .3s;}
 .btn[aria-expanded="true"] .arrow_quest{transform:rotateZ(180deg);}
-
-
-
-
-
-
-
-
+.wrapper_intro_catalog{width:100%;background-image:url(../img/bg_catalog.jpg);background-size:cover;background-position:center top;padding:0 0 70px;}
+.wrapper_form_first_order{background-color:#fff;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius:20px;padding:35px 25px;}
+.doble_color_text{font-size:25px;line-height:36px;color:#111016;font-family:'raleway_black';}
+.doble_color_text span{color:rgba(227, 27, 35, 1);}
+.categories_goods{position:relative;padding:70px 0;}
+.categories_goods .nav-item{flex:1 1 48%;min-height:200px;}
+.categories_goods .nav-item a p{font-size:30px;}
 
 
 @media(max-width:1199px){
@@ -233,6 +232,7 @@ html{scroll-behavior: smooth;}
   .comments{padding:20px 0 40px;}
   .contact_ours{padding:0 0 40px;}
   .breadcrumb{padding:15px 0 0;}
+  .categories_goods .nav-item a p{font-size:20px;}
 }
 @media(max-width:767px){
   .nav-item{flex:1 1 100%;}
@@ -257,6 +257,8 @@ html{scroll-behavior: smooth;}
   .bullit_item{width:36px;height:36px;}
   .bullit_item:before{width:61px;height:61px;left:-13px;}
   .block_info{padding:20px 15px 20px 15px;}
+  .categories_goods .nav-item{flex:1 1 100%;}
+  .categories_goods{position:relative;padding:40px 0 30px;}
 }
 @media(max-width:565px){
   .top_nav_link{font-size:12px;}
