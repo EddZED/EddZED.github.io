@@ -212,7 +212,8 @@ html{scroll-behavior: smooth;}
   .swiper-container .social_block{right:auto;}
   .select_device{padding:40px 0;}
   .comments{padding:20px 0 40px;}
-  .contact_ours{padding:30px 0 40px;}
+  .contact_ours{padding:0 0 40px;}
+  .breadcrumb{padding:15px 0 0;}
 }
 @media(max-width:767px){
   .nav-item{flex:1 1 100%;}
