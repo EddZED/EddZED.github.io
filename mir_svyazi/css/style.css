@@ -214,11 +214,16 @@ html{scroll-behavior: smooth;}
 .text_block{display:flex;flex-direction:column;align-items:start;padding-left:10px;}
 .title_bul{font-size:18px;line-height:19px;font-family:"Aeroport_bold";font-weight:bold;letter-spacing:-0.05em;color:#111016;}
 .choice_phone{padding:70px 0 0;}
-.item_catalog{display:flex;align-items:center;padding:55px 25px;position:relative;transition:all .3s;height:100%;background: #F7F7F7;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius: 10px;}
+.item_catalog{display:flex;align-items:center;padding:45px 25px;position:relative;transition:all .3s;height:100%;background: #F7F7F7;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius: 10px;}
 .brend_text{font-size:20px;line-height:24px;font-family:'Aeroport_medium';color:#000;}
 .item_catalog:hover{background-image:url(../img/bg_category.png);background-size:cover;text-decoration:none;}
 .item_catalog:hover .brend_text{color:#fff;}
 .phone_card{position:absolute;right:5px;bottom:10px;}
+.iphone_page .item_catalog{overflow:hidden;}
+.iphone_page .phone_card{bottom:-30%;right:-20px;}
+
+
+
 
 
 @media(max-width:1199px){
