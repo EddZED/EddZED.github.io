@@ -208,6 +208,17 @@ html{scroll-behavior: smooth;}
 .categories_goods{position:relative;padding:70px 0;}
 .categories_goods .nav-item{flex:1 1 48%;min-height:200px;}
 .categories_goods .nav-item a p{font-size:30px;}
+.intro_remont .sub_title, .intro_remont .title_page{color:#111016;}
+.intro_remont{padding:0 0 70px;background: linear-gradient(89.63deg, #F8F8F8 -1.63%, #F0F0F0 102.35%);box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);}
+.box_bullit{display:flex;align-items:center;}
+.text_block{display:flex;flex-direction:column;align-items:start;padding-left:10px;}
+.title_bul{font-size:18px;line-height:19px;font-family:"Aeroport_bold";font-weight:bold;letter-spacing:-0.05em;color:#111016;}
+.choice_phone{padding:70px 0 0;}
+.item_catalog{display:flex;align-items:center;padding:55px 25px;position:relative;transition:all .3s;height:100%;background: #F7F7F7;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius: 10px;}
+.brend_text{font-size:20px;line-height:24px;font-family:'Aeroport_medium';color:#000;}
+.item_catalog:hover{background-image:url(../img/bg_category.png);background-size:cover;text-decoration:none;}
+.item_catalog:hover .brend_text{color:#fff;}
+.phone_card{position:absolute;right:5px;bottom:10px;}
 
 
 @media(max-width:1199px){
@@ -233,6 +244,7 @@ html{scroll-behavior: smooth;}
   .contact_ours{padding:0 0 40px;}
   .breadcrumb{padding:15px 0 0;}
   .categories_goods .nav-item a p{font-size:20px;}
+  .choice_phone{padding:40px 0 0;}
 }
 @media(max-width:767px){
   .nav-item{flex:1 1 100%;}
@@ -259,6 +271,10 @@ html{scroll-behavior: smooth;}
   .block_info{padding:20px 15px 20px 15px;}
   .categories_goods .nav-item{flex:1 1 100%;}
   .categories_goods{position:relative;padding:40px 0 30px;}
+  .text_block{align-items:center;text-align:center;}
+  .box_bullit{flex-direction:column;}
+  .title_bul{font-size:15px;}
+  .text_block .text_contetn_black{font-size:13px;}
 }
 @media(max-width:565px){
   .top_nav_link{font-size:12px;}
@@ -274,5 +290,5 @@ html{scroll-behavior: smooth;}
   .block_info{padding-left:5px;padding-right:0;}
 }
 @media (max-width:350px){
-  .down_menu {margin-top:0;}
+  .down_menu {margin-top:-10px;}
 }
