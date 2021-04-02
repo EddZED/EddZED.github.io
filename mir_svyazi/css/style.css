@@ -254,6 +254,7 @@ html{scroll-behavior: smooth;}
   .breadcrumb{padding:15px 0 0;}
   .categories_goods .nav-item a p{font-size:20px;}
   .choice_phone{padding:40px 0 0;}
+  .wrapper_phone{justify-content:center;}
 }
 @media(max-width:767px){
   .nav-item{flex:1 1 100%;}
