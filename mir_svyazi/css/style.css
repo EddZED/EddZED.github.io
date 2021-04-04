@@ -213,7 +213,7 @@ html{scroll-behavior: smooth;}
 .categories_goods .nav-item{flex:1 1 48%;min-height:200px;}
 .categories_goods .nav-item a p{font-size:30px;}
 .intro_remont .sub_title, .intro_remont .title_page{color:#111016;}
-.intro_remont{padding:0 0 70px;background: linear-gradient(89.63deg, #F8F8F8 -1.63%, #F0F0F0 102.35%);box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);}
+.intro_remont{padding:0 0 70px;background: linear-gradient(89.63deg, #F8F8F8 -1.63%, #F0F0F0 102.35%);box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);background-image:url(../img/bg_mc.png);background-size:auto;background-position:bottom left;background-repeat:no-repeat;}
 .box_bullit{display:flex;align-items:center;}
 .text_block{display:flex;flex-direction:column;align-items:start;padding-left:10px;}
 .title_bul{font-size:18px;line-height:19px;font-family:"Aeroport_bold";font-weight:bold;letter-spacing:-0.05em;color:#111016;}
