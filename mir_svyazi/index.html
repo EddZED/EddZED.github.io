@@ -190,7 +190,7 @@
                       телефонов в Нижнем Тагиле.<br>
                       Наши специалисты знают все нюансы ремонта всех видов<br> Телефонов и Планшетов, поэтому смогут осуществить ремонт в
                       максимально короткие сроки.</p>
-                      <button class="price_btn mt-2"><img class="img-fluid d-md-none img_btn" src="img/wallet_mob.png" alt=""><img class="img-fluid d-none img_btn d-md-block" src="img/desc_btn.png" alt=""> узнать стоимость ремонта</button>
+                      <button class="price_btn mt-2" data-toggle="modal" data-target="#exampleModal"><img class="img-fluid d-md-none img_btn" src="img/wallet_mob.png" alt=""><img class="img-fluid d-none img_btn d-md-block" src="img/desc_btn.png" alt=""> узнать стоимость ремонта</button>
                   </div>
                 </div>
               </div>
@@ -205,7 +205,7 @@
                       телефонов в Нижнем Тагиле.<br>
                       Наши специалисты знают все нюансы ремонта всех видов<br> Телефонов и Планшетов, поэтому смогут осуществить ремонт в
                       максимально короткие сроки.</p>
-                      <button class="price_btn mt-2"><img class="img-fluid d-md-none img_btn" src="img/wallet_mob.png" alt=""><img class="img-fluid d-none img_btn d-md-block" src="img/desc_btn.png" alt=""> узнать стоимость ремонта</button>
+                      <button class="price_btn mt-2" data-toggle="modal" data-target="#exampleModal"><img class="img-fluid d-md-none img_btn" src="img/wallet_mob.png" alt=""><img class="img-fluid d-none img_btn d-md-block" src="img/desc_btn.png" alt=""> узнать стоимость ремонта</button>
                   </div>
                 </div>
               </div>
@@ -699,6 +699,48 @@
         </div>
       </div>
     </footer>
+  </div>
+  <!--modal window-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="title_block text-center w-100 pt-3 pt-lg-4">Оставьте <span> заявку на ремонт</span><br> вашего устройства</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text_contetn_black pb-3 pt-3">Заполните все поля для заявки на ремонт вашего устройства и наши специалисты
+            свяжутся с вами для подтверждения цены, согласуют с вами дату ремонта и время</p>
+          <form action="" class="">
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="input_order_form" name="name" placeholder="Имя">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="input_order_form" name="phone" placeholder="Телефон">
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea name="" id="" cols="1" rows="1" class="input_order_form" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6 pt-2 mb-3">
+                      <button tyoe="submit" class="red_btn">Отправить</button>
+                    </div>
+                    <div class="col-12 text-center">
+                      <p class="micro_text">* Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности данных</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
