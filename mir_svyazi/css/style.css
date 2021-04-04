@@ -132,7 +132,7 @@ html{scroll-behavior: smooth;}
 .swiper-pagination-bullet-active{width:60px;background-color:#C8060D;opacity:1;}
 .news_block{padding:50px 0;}
 .news_item_block{display:flex;height:100%;min-height:195px;background:#F7F7F7;border-radius:15px;overflow:hidden;padding:0 15px;transition:all .3s;color:#111016;font-family:'Aeroport_medium';}
-.news_item_block:hover{text-decoration:none;color:#fff;background-image:url(../img/bg_category.png);background-size:cover;}
+.news_item_block:hover{text-decoration:none;color:#fff;background-image:url(../img/bg_category.png);background-size:cover;background-position:left;}
 .name_news{font-size:20px;line-height:22px;font-weight:500;z-index:1;}
 .img_news{bottom:0;right:0;position:absolute;z-index:0;}
 .wrapper_news_block{box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border-radius:15px;}
@@ -231,7 +231,7 @@ html{scroll-behavior: smooth;}
 .item_remont_box:hover .name_item_remont{color:#fff;}
 .item_rem_img{position:absolute;top:0;bottom:0;margin:auto;right:0;}
 .wrapper_phone{display:flex;justify-content:flex-end;}
-.block_phone_screen{width:220px;height:442px;background-image:url(../img/iPhone\ 12\ Pro\ Max.png);background-size:100% 100%;position:relative;}
+.block_phone_screen{width:220px;height:442px;background-image:url(../img/iPhone\ 12\ Pro\ Max.png);background-size:100% 100%;position:relative;padding:75px 20px 25px 20px;display:flex;flex-direction:column;justify-content:space-between;}
 .contact_ours .body_comment.active{background-image:url(../img/bg_category.png);background-size:cover;color:#fff;}
 .contact_ours .body_comment:hover{background-image:url(../img/bg_category.png);background-size:cover;color:#fff;}
 .contact_ours .body_comment:hover .link_phone_black{color:#fff;}
@@ -243,6 +243,20 @@ html{scroll-behavior: smooth;}
 .contact_ours .body_comment.active .red_icon.phone:before{background-image:url(../img/bl_phone.png);background-size:10px;background-color:#f8f8f8;}
 .contact_ours .body_comment.active .red_icon.marker:before{background-image:url(../img/bl_marker.png);background-size:11px;background-color:#f8f8f8;}
 .contact_ours .body_comment.active .red_icon{background: rgba(248, 248, 248, 0.16);}
+.screen_item_one{width:100%;padding:30px 10px;text-align:center;box-shadow:0px 2.26213px 8.483px rgba(0, 0, 0, 0.3);background-color:#f7f7f7;border-radius:9px;}
+.screen_text{font-size:13px;line-height:13px;color:#111016;font-family:"Aeroport_light";font-weight:300;}
+.price_screen{font-size:24px;color:#C8060D;line-height:24px;font-family:"Aeroport_medium";font-family:500;transition:all .3s;}
+.btn_black_screen{display:inline-block;width:100%;color:#fff;background-color:#111016;box-shadow:0px 2.26213px 8.483px rgba(0, 0, 0, 0.3);border-radius:9px;padding:10px 0;font-size:10px;font-family:"Aeroport_medium";font-family:500;transition:all .3s;}
+.btn_black_screen:hover{text-decoration:none;color:#fff;box-shadow:none;}
+.screen_item_two{text-align:center;background-color:#111016;box-shadow:0px 2.26213px 8.483px rgba(0, 0, 0, 0.3);border-radius:9px;padding:30px 10px;font-family:"Aeroport_medium";font-family:500;transition:all .3s;}
+.text_content_screen{font-size:15px;line-height:16px;color:#f7f7f7;font-family:"Aeroport_light";font-weight:300;}
+.screen_tel{font-size:21px;color:#f7f7f7;font-family:"Aeroport_bold";font-weight:700;}
+.screen_tel:hover{text-decoration:none;color:#fff;}
+
+
+
+
+
 
 
 
