@@ -254,12 +254,12 @@ html{scroll-behavior: smooth;}
 .text_content_screen{font-size:15px;line-height:16px;color:#f7f7f7;font-family:"Aeroport_light";font-weight:300;}
 .screen_tel{font-size:21px;color:#f7f7f7;font-family:"Aeroport_bold";font-weight:700;}
 .screen_tel:hover{text-decoration:none;color:#fff;}
-
-
-
-
-
-
+.choice_phone.iphone_page{padding-bottom:70px;}
+.dont_know{width:100%;padding:50px 0;background-image:url(../img/we_dont.png);background-size:cover;background-position:center center;}
+.img_weknow{position:absolute;left:0;bottom:-50px;max-width:100%;}
+.big_white_title{font-size:31px;line-height:40px;color:#f8f8f8;font-family:'raleway_extra_bold';}
+.white_input{background-color:#F7F7F7;border:none;border-radius:15px;font-size:15px;color:#000;padding:10px 15px;width:100%;}
+.btn_black_screen.big_font{font-size:17px;text-align:center;border-radius:15px;border:none;}
 
 
 
@@ -294,7 +294,8 @@ html{scroll-behavior: smooth;}
   .wrapper_phone{justify-content:center;}
   .img_news {right:-25px;}
   .intro_slider{background-position:-414px 0;}
-  
+  .img_weknow{position:relative;}
+  .big_white_title{font-size:25px;}
 }
 @media(max-width:767px){
   .nav-item{flex:1 1 100%;}
