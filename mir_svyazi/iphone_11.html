@@ -260,61 +260,61 @@
               <p class="text_contetn_black pb-4 pt-3">Выберите неисправность и узнайте стоимость услуги</p>
               <div class="row">
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price1()" class="item_remont_box active">
                     <p class="name_item_remont mb-0">Экран</p>
                     <img src="img/11_1.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price2()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Батарея</p>
                     <img src="img/11_2.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price3()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Кнопки</p>
                     <img src="img/11_3.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price4()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Камера</p>
                     <img src="img/11_4.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price5()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Звук</p>
                     <img src="img/11_5.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price6()" class="item_remont_box">
                     <p class="name_item_remont mb-0">BGA</p>
                     <img src="img/11_6.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price7()" class="item_remont_box">
                     <p class="name_item_remont mb-0">ПО</p>
                     <img src="img/11_7.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price8()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Шлейф</p>
                     <img src="img/11_8.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price9()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Настройки</p>
                     <img src="img/11_9.png" class="item_rem_img" alt="экран ремонт">
                   </div>
                 </div>
                 <div class="col-xl-3 col-md-4 col-6 mb-3">
-                  <div class="item_remont_box">
+                  <div onclick="price10()" class="item_remont_box">
                     <p class="name_item_remont mb-0">Другое</p>
                     <img src="img/11_10.png" class="item_rem_img" alt="экран ремонт">
                   </div>
@@ -608,6 +608,42 @@
       $(this).toggleClass('active');
       $('.down_menu').toggleClass('active');
     });
+    $('.item_remont_box').click(function(){
+      $('.item_remont_box').removeClass('active');
+      $(this).addClass('active');
+    })
+  </script>
+  <script>
+    function price1(){
+      document.querySelector('#screen_price').innerHTML = "1000";
+    };
+    function price2(){
+      document.querySelector('#screen_price').innerHTML = "900";
+    };
+    function price3(){
+      document.querySelector('#screen_price').innerHTML = "500";
+    };
+    function price4(){
+      document.querySelector('#screen_price').innerHTML = "2000";
+    };
+    function price5(){
+      document.querySelector('#screen_price').innerHTML = "650";
+    };
+    function price6(){
+      document.querySelector('#screen_price').innerHTML = "999";
+    };
+    function price7(){
+      document.querySelector('#screen_price').innerHTML = "1992";
+    };
+    function price8(){
+      document.querySelector('#screen_price').innerHTML = "5555";
+    };
+    function price9(){
+      document.querySelector('#screen_price').innerHTML = "5555";
+    };
+    function price10(){
+      document.querySelector('#screen_price').innerHTML = "5555";
+    };
   </script>
 
 </body>
