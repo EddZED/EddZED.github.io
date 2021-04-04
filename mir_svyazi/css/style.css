@@ -258,8 +258,16 @@ html{scroll-behavior: smooth;}
 .dont_know{width:100%;padding:50px 0;background-image:url(../img/we_dont.png);background-size:cover;background-position:center center;}
 .img_weknow{position:absolute;left:0;bottom:-50px;max-width:100%;}
 .big_white_title{font-size:31px;line-height:40px;color:#f8f8f8;font-family:'raleway_extra_bold';}
-.white_input{background-color:#F7F7F7;border:none;border-radius:15px;font-size:15px;color:#000;padding:10px 15px;width:100%;}
+.white_input{background-color:#F7F7F7;border:none;border-radius:15px;font-size:15px;color:#000;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);padding:15px 15px;width:100%;}
 .btn_black_screen.big_font{font-size:17px;text-align:center;border-radius:15px;border:none;}
+.white_input.ver_2{background-color:#fff;}
+.check_order{width:100%;}
+.check_order input{display:flex;align-items:center;justify-content:center;width:100%;background: linear-gradient(89.63deg, #F8F8F8 -1.63%, #F0F0F0 102.35%);border-radius: 15px;box-shadow: 0px 4px 22px 2px rgba(0, 0, 0, 0.12);border:none;padding:20px 15px;text-align:center;font-size:32px;color:#C8060D;font-family:'Aeroport_medium';}
+.check_order input:focus{outline:none;}
+.page_kam .red_btn{font-size:17px;font-family:"Aeroport_light";}
+.page_kam .red_btn.bg_black{background-color:#111016;}
+.non_camera{width:100%;background-image:url(../img/bg_mc.png);background-repeat:no-repeat;background-position:100px 100px;padding:70px 0;}
+.card_reverse{position:relative;}
 
 
 
