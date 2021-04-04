@@ -351,6 +351,7 @@ html{scroll-behavior: smooth;}
   .intro_slider{background-position:-250px 0;}
   .img_btn{left:-75px;}
   .price_btn{margin-bottom:30px;}
+  .modal-body{padding:15px;}
 }
 @media(max-width:565px){
   .top_nav_link{font-size:12px;}
