@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alfa.com</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_nav">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="left_block_nav">
+              <a href="#" class="link_home"><img class="img-fluid pr-3" src="img/logo.png" alt="альфаком"><span>АЛЬФА.Ком</span></a>
+              <a href="tel:+74951817341" class="nav_menu_top_link phone scroll_phone">+7 (495) 181-73-41</a>
+            </div>
+            <div class="right_block_nav">
+              <div class="header_nav_menu">
+                <div class="nav_menu_top">
+                  <a href="tel:+74951817341" class="nav_menu_top_link phone">+7 (495) 181-73-41</a>
+                  <a href="mailto:info@alpha-kom.ru" class="nav_menu_top_link mail">info@alpha-kom.ru</a>
+                  <a href="#" data-toggle="modal" data-target="№" class="white_button">Обратный звонок</a>
+                </div>
+                <div class="nav_menu_bottom">
+                  <a href="#" class="nav_menu_bottom_link">Объекты</a>
+                  <a href="#" class="nav_menu_bottom_link">Сотрудники</a>
+                  <a href="#" class="nav_menu_bottom_link">Клиенты</a>
+                  <a href="#" class="nav_menu_bottom_link">Стоимость</a>
+                  <a href="#" class="nav_menu_bottom_link">Контакты</a>
+                  <a href="#" data-toggle="modal" data-target="№" class="white_button yellow_bg">Обратный звонок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </header>
+    <div class="content">
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      var height = $(window).scrollTop();
+      if (height > 0) {
+        $('.header_nav').addClass('fixed_menu');
+        $('.left_block_nav').addClass('hid_text');
+      } else {
+        $('.header_nav').removeClass('fixed_menu');
+        $('.left_block_nav').removeClass('hid_text');
+      }
+    });
+  </script>
+</body>
+</html>
