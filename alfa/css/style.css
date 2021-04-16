@@ -309,9 +309,9 @@ button.white_button.dark_bg:hover{color:#000;}
   .ohr_img{object-position:-750px 0;}
   .be_shield .title_content_black{font-size:45px;line-height:55px;}
   .be_shield .title_content_black span:before{height:40px;}
-  .prev, .next{top:-30px;}
-  .prev{left:30px;}
-  .next{right:30px;}
+  .prev, .next{top:-40px;}
+  .prev{left:10px;}
+  .next{right:10px;}
   .footer_content{flex-direction:column;}
   .right_ar{right:10px}
   .left_ar{left:10px;}
@@ -358,6 +358,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .modal .title_content_black{font-size:25px;line-height:30px;}
   .modal .title_content_black span:before{height:20px;}
   .slider_bg{object-position:-856px -309px;}
+  .slider_2 .swiper-wrapper{padding:0;}
 }
 @media(max-width:390px){
   .be_shield .title_content_black{font-size:30px;line-height:35px;}
