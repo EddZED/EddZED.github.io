@@ -30,11 +30,11 @@
                   <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button">Обратный звонок</a>
                 </div>
                 <div class="nav_menu_bottom">
-                  <a href="#" class="nav_menu_bottom_link">Объекты</a>
-                  <a href="#" class="nav_menu_bottom_link">Сотрудники</a>
-                  <a href="#" class="nav_menu_bottom_link">Клиенты</a>
-                  <a href="#" class="nav_menu_bottom_link">Стоимость</a>
-                  <a href="#" class="nav_menu_bottom_link">Контакты</a>
+                  <a href="#security_object" class="nav_menu_bottom_link">Объекты</a>
+                  <a href="#we" class="nav_menu_bottom_link">Сотрудники</a>
+                  <a href="#clients" class="nav_menu_bottom_link">Клиенты</a>
+                  <a href="#price" class="nav_menu_bottom_link">Стоимость</a>
+                  <a href="#contact" class="nav_menu_bottom_link">Контакты</a>
                   <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button yellow_bg">Обратный звонок</a>
                 </div>
               </div>
@@ -144,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="security_object">
+      <section id="security_object" class="security_object">
         <div class="container">
           <h3 class="title_content_black text-center pb-lg-4"><span>охраняемые объекты</span></h3>
           <div class="row pt-lg-5 pt-3">
@@ -334,7 +334,7 @@
           </div>
         </div>
       </section>
-      <section class="select">
+      <section id="we" class="select">
         <div class="container">
           <h3 class="title_content_black text-center pb-lg-4"><span>Мы отбираем</span><br><span>лучших из лучших</span></h3>
         </div>
@@ -508,7 +508,7 @@
           </div>
         </div>
       </section>
-      <section class="clients">
+      <section id="clients" class="clients">
         <div class="container">
           <h3 class="title_content_black text-center pb-3 pb-lg-5"><span>наши клиенты</span></h3>
           <div class="swiper-container slider_2">
@@ -547,7 +547,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section id="price" class="price">
         <img class="bg_price" src="img/bg_price.png" alt="">
         <div class="wrapper_price_block">
           <div class="container">
@@ -588,7 +588,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <h3 class="title_content_black text-center pb-3 pb-lg-5"><span>контакты</span></h3>
           <div class="row pt-lg-5">
@@ -680,7 +680,13 @@
     $('.btn_menu').click(function(){
       $('body').toggleClass('overflow-hidden');
       $('.right_block_nav').toggleClass('active');
-    })
+    });
+    $('.nav_menu_bottom_link').click(function(){
+      $('.right_block_nav').removeClass('active');
+    });
+    $('.nav_menu_top_link').click(function () {
+        $('.right_block_nav').removeClass('active');
+      });
   </script>
   <script>
     var swiper = new Swiper('.slider_1', {
