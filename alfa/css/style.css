@@ -316,6 +316,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .right_ar{right:10px}
   .left_ar{left:10px;}
   .right_ar, .left_ar{top:90%;}
+  .slider_bg{object-position:-486px -309px;}
 }
 @media(max-width:575px){
   .left_block_nav{padding:0 15px;}
@@ -342,6 +343,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .shield_yellow{left:10px;}
   .modal-dialog{margin-top:20px;}
   .close{right:20px;top:20px;}
+  .slider_bg{object-position:-756px -309px;}
 }
 @media(max-width:450px){
   .title_sl{font-size:44px;line-height:45px;}
@@ -355,6 +357,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .min_white_text{font-size:16px;line-height:20px;}
   .modal .title_content_black{font-size:25px;line-height:30px;}
   .modal .title_content_black span:before{height:20px;}
+  .slider_bg{object-position:-856px -309px;}
 }
 @media(max-width:390px){
   .be_shield .title_content_black{font-size:30px;line-height:35px;}
