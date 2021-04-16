@@ -86,8 +86,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="wrapper_arrow">
+            <div class="container h-100 position-relative">
+              <div class="swiper-button-next right_ar"></div>
+              <div class="swiper-button-prev left_ar"></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about_us">
@@ -624,6 +629,10 @@
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   </script>
