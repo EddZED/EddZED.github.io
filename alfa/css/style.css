@@ -181,8 +181,17 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
 .decor.yellow_big{width:170px;height:75px;background-color:#ffd702;right:0;top:50%;animation:translate_left_min 15s infinite alternate 2s ease-in-out;}
 .decor.yellow_micro{width:60px;height:6px;background-color:#ffd702;right:50px;top:20%;animation:translate_left_min 5s infinite alternate 1s cubic-bezier (.8,1.5,.2,-1);}
 .decor.yellow_micro_2{width:90px;height:6px;background-color:#ffd702;left:35%;top:7%;animation:translate_long_white 40s infinite alternate 1s ease-in-out;}
-
-
+.close{position:absolute;right:-30px;top:-30px;opacity:1;}
+.close:focus{outline:none;}
+.modal-content{background-color:#ffd702;}
+.modal .title_content_black{font-size:36px;line-height:45px;}
+.modal .title_content_black span:before{background-color:#fff;height:30px;}
+.modal-header{border-bottom:none;flex-direction:column;padding-bottom:0;}
+.modal .text_content_min{font-size:12px;line-height:17px;margin-bottom:0;}
+.modal .micro_text{font-size:8px;}
+button.white_button.dark_bg{border:none;}
+button.white_button.dark_bg:focus{outline:none;}
+button.white_button.dark_bg:hover{color:#000;}
 
 @keyframes translate{
   0%{transform:translateX(0px);}
@@ -273,6 +282,7 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
   .we_work .block_white_bg{min-height:230px;}
   .big_num{font-size:250px;}
   .we_work{padding-bottom:0;}
+  .decor_box{display:none;}
 }
 @media(max-width:767px){
   .swiper-slide{max-height:450px;}
@@ -310,6 +320,8 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
   .num_white_big {font-size:55px;}
   .min_white_text{font-size:18px;line-height:25px;}
   .shield_yellow{left:10px;}
+  .modal-dialog{margin-top:20px;}
+  .close{right:20px;top:20px;}
 }
 @media(max-width:450px){
   .title_sl{font-size:44px;line-height:45px;}
@@ -321,6 +333,8 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
   .be_shield .title_content_black span:before{height:30px;}
   .num_white_big {font-size:35px;}
   .min_white_text{font-size:16px;line-height:20px;}
+  .modal .title_content_black{font-size:25px;line-height:30px;}
+  .modal .title_content_black span:before{height:20px;}
 }
 @media(max-width:390px){
   .be_shield .title_content_black{font-size:30px;line-height:35px;}

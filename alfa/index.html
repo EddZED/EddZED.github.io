@@ -27,7 +27,7 @@
                 <div class="nav_menu_top">
                   <a href="tel:+74951817341" class="nav_menu_top_link phone">+7 (495) 181-73-41</a>
                   <a href="mailto:info@alpha-kom.ru" class="nav_menu_top_link mail">info@alpha-kom.ru</a>
-                  <a href="#" data-toggle="modal" data-target="№" class="white_button">Обратный звонок</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button">Обратный звонок</a>
                 </div>
                 <div class="nav_menu_bottom">
                   <a href="#" class="nav_menu_bottom_link">Объекты</a>
@@ -35,7 +35,7 @@
                   <a href="#" class="nav_menu_bottom_link">Клиенты</a>
                   <a href="#" class="nav_menu_bottom_link">Стоимость</a>
                   <a href="#" class="nav_menu_bottom_link">Контакты</a>
-                  <a href="#" data-toggle="modal" data-target="№" class="white_button yellow_bg">Обратный звонок</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button yellow_bg">Обратный звонок</a>
                 </div>
               </div>
             </div>
@@ -416,15 +416,18 @@
                       </label>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-12 text-center pt-4 pt-lg-5">
+                      <p class="micro_text pb-3 pb-lg-5">
+                        Отправляя заявку, вы даете согласие на обработку персональных данных.<br>
+                        *Имя и телефон обязательные поля
+                      </p>
+                      <button type="submit" data-toggle="modal" data-target="#modal_order" class="white_button dark_bg">оставить
+                        заяввку</button>
+                    </div>
+                  </div>
                 </fieldset>
               </form>
-            </div>
-            <div class="col-12 text-center pt-4 pt-lg-5">
-              <p class="micro_text pb-3 pb-lg-5">
-                Отправляя заявку, вы даете согласие на обработку персональных данных.<br>
-                *Имя и телефон обязательные поля
-              </p>
-              <a href="#" data-toggle="modal" data-target="№" class="white_button dark_bg">оставить заяввку</a>
             </div>
           </div>
         </div>
@@ -617,6 +620,46 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="modal_order" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h3 class="title_content_black w-100 text-center"><span>хотите быть</span><br><span>под надежной защитой</span></h3>
+            <p class="text_content_min w-100 text-center pt-2">Оставьте заявку на осмотр объекта:</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img class="img-fluid" src="img/close.png" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="">
+              <fieldset>
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <label class="w-100">
+                      <input class="input_form" type="text" name="" placeholder="Имя*">
+                    </label>
+                    <label class="w-100">
+                      <input class="input_form" type="text" name="" placeholder="Телефон*">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center pt-4 pt-lg-5">
+                    <button type="submit" data-toggle="modal" data-target="#modal_order" class="white_button dark_bg">оставить
+                      заяввку</button>
+                    <p class="micro_text pt-3 pt-lg-5">
+                      Отправляя заявку, вы даете согласие<br> на обработку персональных данных.
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
