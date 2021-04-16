@@ -310,6 +310,8 @@ button.white_button.dark_bg:hover{color:#000;}
   .be_shield .title_content_black{font-size:45px;line-height:55px;}
   .be_shield .title_content_black span:before{height:40px;}
   .prev, .next{top:-30px;}
+  .prev{left:30px;}
+  .next{right:30px;}
   .footer_content{flex-direction:column;}
   .right_ar{right:10px}
   .left_ar{left:10px;}
