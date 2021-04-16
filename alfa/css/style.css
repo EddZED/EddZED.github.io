@@ -179,6 +179,8 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
 .decor.yellow_small_2{width:60px;height:50px;background-color:#ffd702;right:0;top:85%;animation:translate_left_small_2 10s infinite alternate 1s ease-in-out;}
 .decor.white_middle{width:100px;height:55px;background-color:#fff;right:0;top:55%;animation:translate_left_min 10s infinite alternate 1s ease-in-out;}
 .decor.yellow_big{width:170px;height:75px;background-color:#ffd702;right:0;top:50%;animation:translate_left_min 15s infinite alternate 2s ease-in-out;}
+.decor.yellow_micro{width:60px;height:6px;background-color:#ffd702;right:50px;top:20%;animation:translate_left_min 5s infinite alternate 1s cubic-bezier (.8,1.5,.2,-1);}
+.decor.yellow_micro_2{width:90px;height:6px;background-color:#ffd702;left:35%;top:7%;animation:translate_long_white 40s infinite alternate 1s ease-in-out;}
 
 
 
