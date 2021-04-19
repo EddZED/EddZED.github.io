@@ -221,6 +221,7 @@ button.white_button.dark_bg:hover{color:#000;}
 .name_block{padding:20px 0;}
 .name_slide{font-size:24px;font-family:'rob_bold';line-height:30px;}
 .swiper-slide:not(.swiper-slide-active) .name_block{visibility:hidden;}
+.swiper-slide:not(.swiper-slide-active) .footer_card_client{filter: grayscale(100%);}
 .swiper-slide:hover .name_block{visibility:visible;}
 
 @keyframes translate{
