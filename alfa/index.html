@@ -615,6 +615,7 @@
             </div>
             <div class="swiper-button-next next"></div>
             <div class="swiper-button-prev prev"></div>
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
@@ -653,7 +654,7 @@
                 </div>
               </div>
               <div class="col-12 text-center pt-5">
-                <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button yellow_bg">Обратный звонок</a>
+                <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button yellow_bg">Оставить заявку</a>
               </div>
             </div>
           </div>
@@ -686,7 +687,7 @@
       <div class="container">
         <div class="footer_content">
           <p class="allright mb-0">© 2005-2021 ООО ЧОП «АЛЬФА. Ком»</p>
-          <a href="#" class="link_licence">лицензия</a>
+          <a href="license/Лицензия.pdf" target="blank" class="link_licence" open>лицензия</a>
           <a href="tel:+74951817341" class="tel_footer">+7 (495) 181-73-41</a>
         </div>
       </div>
@@ -779,12 +780,15 @@
       slidesPerView: 4,
       centeredSlides: false,
       spaceBetween: 30,
-      pagination: {
-        clickable: true,
-      },
+      slidesPerGroup: 1,
+      loopFillGroupWithBlank: true,
       navigation: {
         nextEl: '.next',
         prevEl: '.prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
       },
       breakpoints: {
         0:{
