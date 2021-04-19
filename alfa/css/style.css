@@ -218,7 +218,7 @@ button.white_button.dark_bg:hover{color:#000;}
 .micro_dark_2{width:90px;height:20px;background-color:#282828;right:0;top:18%;}
 .micro_white_3{width:110px;height:40px;background-color:#fff;right:0;top:75%;}
 .long_dark_2{width:70px;height:55px;background-color:#282828;right:0;top:85%;}
-.name_block{padding-top:20px;}
+.name_block{padding:20px 0;}
 .name_slide{font-size:24px;font-family:'rob_bold';line-height:30px;}
 
 
@@ -335,6 +335,8 @@ button.white_button.dark_bg:hover{color:#000;}
   .left_ar{left:10px;}
   .right_ar, .left_ar{top:90%;}
   .slider_bg{object-position:-486px -309px;}
+  .clients{padding-bottom:20px;}
+  .bg_price{object-position:-442px 0px;}
 }
 @media(max-width:575px){
   .left_block_nav{padding:0 15px;}
@@ -363,6 +365,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .close{right:20px;top:20px;}
   .slider_bg{object-position:-756px -309px;}
   .contact{padding-top:0;}
+  .bg_price{object-position:-242px 72px;}
 }
 @media(max-width:450px){
   .title_sl{font-size:44px;line-height:45px;}
