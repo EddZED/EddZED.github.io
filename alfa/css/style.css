@@ -295,7 +295,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .header_nav.fixed_menu .left_block_nav{flex:0 0 100%;}
   .left_block_nav.hid_text a span{display:none;opacity:1;transition:all .3s;position:relative;left:auto;}
   .left_block_nav.hid_text{max-width:100%;}
-  .header_nav.fixed_menu .right_block_nav.active{top:109px;}
+  .header_nav.fixed_menu .right_block_nav.active{top:115px;}
   .right_block_nav.active{width:100%;top:145px;position:absolute;height:100vh;left:0;background-color:#ffd702;opacity:1;}
   .right_block_nav.active .nav_menu_top{display:flex !important;padding-top:30px;}
   .right_block_nav.active .nav_menu_top, .right_block_nav.active .nav_menu_bottom{flex-direction:column;}
@@ -340,6 +340,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .slider_bg{object-position:-486px -309px;}
   .clients{padding-bottom:20px;}
   .bg_price{object-position:-442px 0px;}
+  .header_nav.fixed_menu .right_block_nav.active{top:105px;}
 }
 @media(max-width:575px){
   .left_block_nav{padding:0 15px;}
@@ -368,6 +369,7 @@ button.white_button.dark_bg:hover{color:#000;}
   .contact{padding-top:0;}
   .bg_price{object-position:-242px 72px;}
   .ohr_img{object-position:-100px 0;}
+  .header_nav.fixed_menu .right_block_nav.active{top:110px;}
 }
 @media(max-width:450px){
   .title_sl{font-size:44px;line-height:45px;}
@@ -384,8 +386,10 @@ button.white_button.dark_bg:hover{color:#000;}
   .slider_bg{object-position:-856px -309px;}
   .slider_2 .swiper-wrapper{padding:0;}
   .ohr_img{object-position:-250px 0;}
+  .header_nav.fixed_menu .right_block_nav.active{top:105px;}
 }
 @media(max-width:390px){
   .be_shield .title_content_black{font-size:30px;line-height:35px;}
+  .header_nav.fixed_menu .right_block_nav.active{top:97px;}
 }
 
