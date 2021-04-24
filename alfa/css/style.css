@@ -16,7 +16,7 @@ body{font-size:;color:#282828;min-height:9999px;background-color:#f7f7f9;}
 .header_nav:not(.fixed_menu) .left_block_nav .scroll_phone{display:none;}
 .link_home{display:inline-flex;align-items:center;font-size:50px;font-family:'rob_bold';color:#282828;letter-spacing:-0.05em;}
 .link_home:hover{text-decoration:none;color:#282828;}
-.hid_text a span{transition:all .3s;display:inline-block;top:0;position:relative;transform:translateY(0);}
+.hid_text a span{transition:all .3s;display:block;top:0;position:relative;transform:translateY(0);}
 .left_block_nav.hid_text a span{transform:translateY(-200%);opacity:0;transition:all .3s;position:absolute;left:90px;}
 .right_block_nav{flex:1 1 45%}
 .nav_menu_top{display:inherit;align-items:center;justify-content:space-between;}
