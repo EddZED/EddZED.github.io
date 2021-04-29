@@ -27,8 +27,9 @@ body{font-size:16px;background-color:#fff;}
 .menu_item_hidden .link_menu:hover{color:#fff;background-color:rgba(0, 10, 32, .6);text-decoration:none;}
 .menu_item .link_menu{display:inline-block;color:#fff;}
 .menu_item .link_menu:hover{text-decoration:none;}
-
-
+.menu_item span{display:inline-flex;align-items:center;justify-content:space-between;}
+.menu_item i{font-size:12px;transition:all .3s;margin-left:5px;}
+.menu_item:hover i{transform:rotateZ(180deg);}
 
 
 
