@@ -18,12 +18,15 @@ body{font-size:16px;background-color:#fff;}
 .btn_content.btn_blue:hover{background-color:#009C77;}
 .btn_content.btn_green:hover{background-color:#0081BB;}
 .header-nav__bottom{width:100%;background-color:rgba(0, 10, 32, .4);}
-.header-nav__menu{width:100%;padding:13px 0 0 0;display:flex;align-items:center;justify-content:space-between;list-style:none;}
-.menu_item{color:#fff;font-size:18px;font-family:'mont_light';cursor:pointer;padding:0 0 13px 0;position:relative;}
-.menu_item_hidden{position:absolute;left:-15px;top:40px;opacity:0;transition:.3s;overflow:hidden;height:0;background-color:rgba(0, 10, 32, .4);min-width:300px;display:flex;flex-direction:column;}
+.header-nav__menu{width:100%;display:flex;align-items:center;justify-content:space-between;list-style:none;padding-left:0;}
+.menu_item{color:#fff;font-size:18px;font-family:'mont_light';cursor:pointer;padding:13px 5px;position:relative;transition:all .3s;}
+.menu_item:hover{background-color:rgba(0, 10, 32, .6);}
+.menu_item_hidden{position:absolute;left:0;top:53px;opacity:0;transition:.4s ease;overflow:hidden;height:0;background-color:rgba(0, 10, 32, .4);width:100%;min-width:300px;display:flex;flex-direction:column;}
 .menu_item:hover .menu_item_hidden{opacity:1;height:auto;}
-.menu_item_hidden .link_menu{display:inline-block;padding:0 15px 15px;color:#fff;}
-
+.menu_item_hidden .link_menu{display:inline-block;padding:7px 15px 7px;color:#fff;transition:all .3s;}
+.menu_item_hidden .link_menu:hover{color:#fff;background-color:rgba(0, 10, 32, .6);text-decoration:none;}
+.menu_item .link_menu{display:inline-block;color:#fff;}
+.menu_item .link_menu:hover{text-decoration:none;}
 
 
 
