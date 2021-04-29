@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alfa.com</title>
+  <title>ЧОП «АЛЬФА. Ком» охрана ТЦ и ЖК с 2005 года</title>
+  <meta name="description" content="ЧОП «АЛЬФА. Ком» специализируется на охране торговых центров и жилых комплексов. Наши специалисты подарят ощущение безопасности и покоя как посетителям объекта любого типа и сложности, так и жильцам любого ЖК.">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,9 +16,9 @@
     <header class="header">
       <div class="header_nav">
         <div class="container">
-          <div class="row align-items-center justify-content-between">
+          <div class="row pad_nav align-items-center justify-content-between">
             <div class="left_block_nav">
-              <a href="#" class="link_home"><img class="img-fluid pr-1 pr-sm-3" src="img/logo.png" alt="альфаком"><span>АЛЬФА.Ком</span></a>
+              <a href="#" class="link_home"><img class="img-fluid pr-1 pr-sm-3" src="img/logo.svg" style="max-width:60px" alt="альфаком"><span>АЛЬФА.Ком</span></a>
               <a href="tel:+74951817341" class="nav_menu_top_link phone scroll_phone">+7 (495) 181-73-41</a>
               <button class="btn_menu d-lg-none">
                 <span></span>
@@ -263,7 +265,7 @@
           </div>
           <div class="row justify-content-center pt-lg-4">
             <div class="col-12 text-center">
-              <a href="#" data-toggle="modal" data-target="№" class="white_button dark_bg">оставить заявку</a>
+              <a href="#" data-toggle="modal" data-target="#modal_order" class="white_button dark_bg">оставить заявку</a>
             </div>
           </div>
         </div>
@@ -416,7 +418,7 @@
             <span class="yellow_big_rectangle"></span>
             <span class="dark_small_rectangle_2"></span>
             <span class="yellow_big_rectangle_2"></span>
-            <span class="yellow_big_rectangle_3"></span>
+            
           </div>
           <img class="ohr_img" src="img/sec_two.png" alt="">
           <div class="wrapper_text_block">
@@ -431,11 +433,14 @@
                     
                     Наши сотрудники ежегодно повышают свою
                     квалификацию, для них постоянно проводятся
-                    тренировочные занятия и обучение.</p>
-                    <p class="text_content_min">Спокойные и хладнокровные, наши охранники
+                    тренировочные занятия и обучение.<br><br>
+                    
+                    Спокойные и хладнокровные, наши охранники
                     пресекут любые конфликтные ситуации, урегулируют
                     спорные вопросы, чтобы на вашем объекте было
-                    комфортно каждому.</p>
+                    комфортно каждому.
+                  </p>
+                    <p class="text_content_min"></p>
                   </div>
                 </div>
               </div>
@@ -449,29 +454,29 @@
           <p class="text_content_min text-center">Оставьте заявку на осмотр объекта:</p>
           <div class="row justify-content-center pt-lg-5 pt-3">
             <div class="col-lg-8">
-              <form action="" class="">
-                <fieldset>
+              <form class="form-block__container n form__form callback-form" id="callphone2">
+                <fieldset class="form__fields form__hide-success">
                   <div class="row">
                     <div class="col-md-6">
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="Имя*">
+                        <input class="input_form" type="text" name="name" placeholder="Имя*" required>
                       </label>
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="Телефон*">
+                        <input class="input_form" type="text" name="phone" placeholder="Телефон*" required>
                       </label>
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="E-mail">
+                        <input class="input_form" type="text" name="email" placeholder="E-mail">
                       </label>
                     </div>
                     <div class="col-md-6">
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="Название организации">
+                        <input class="input_form" type="text" name="org" placeholder="Название организации">
                       </label>
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="Тип объекта">
+                        <input class="input_form" type="text" name="type" placeholder="Тип объекта">
                       </label>
                       <label class="w-100">
-                        <input class="input_form" type="text" name="" placeholder="Количество постов">
+                        <input class="input_form" type="text" name="post" placeholder="Количество постов">
                       </label>
                     </div>
                   </div>
@@ -483,6 +488,7 @@
                       </p>
                       <button type="submit" class="white_button dark_bg">оставить
                         заявку</button>
+                        <input type="hidden" name="go" value="callback2">
                     </div>
                   </div>
                 </fieldset>
@@ -549,8 +555,7 @@
                 <div class="item_group">
                   <img class="img-fluid" src="img/starts.png" alt="">
                   <div class="box_white_select">
-                    <p class="text_content_min mb-0">Год начала предоставления
-                    услуг: нам можно доверять</p>
+                    <p class="text_content_min mb-0">Проверены временем – нам можно доверять!</p>
                   </div>
                 </div>
               </div>
@@ -558,8 +563,7 @@
                 <div class="item_group item_2">
                   <img class="img-fluid" src="img/years.png" alt="">
                   <div class="box_white_select">
-                    <p class="text_content_min pt-3 mb-1">Средний стаж<br>
-                    сотрудника охраны</p>
+                    <p class="text_content_min pt-3 mb-1">Средний стаж работы сотрудников</p>
                   </div>
                 </div>
               </div>
@@ -567,8 +571,7 @@
                 <div class="item_group">
                   <img class="img-fluid" src="img/customers.png" alt="">
                   <div class="box_white_select">
-                    <p class="text_content_min mb-0">Компаниям оказали
-                    качественные услуги</p>
+                    <p class="text_content_min mb-0">Клиентов воспользовались нашими услугами</p>
                   </div>
                 </div>
               </div>
@@ -620,6 +623,39 @@
                 </div>
                 <div class="name_block text-center">
                   <p class="name_slide">«ПРОБИЗНЕСБАНК»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="body_slide_client item_5">
+                  <div class="footer_card_client">
+                    <img class="img-fluid" src="img/img-5.png" alt="Центр по химии лекарственных средств">
+                  </div>
+                </div>
+                <div class="name_block text-center">
+                  <p class="name_slide">«Центр по химии лекарственных средств»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="body_slide_client item_6">
+                  <div class="footer_card_client">
+                    <img class="img-fluid" src="img/img-6.png" alt="Фармацевтическая компания Teva Pharmaceutical">
+                  </div>
+                </div>
+                <div class="name_block text-center">
+                  <p class="name_slide">«Фармацевтическая компания Teva Pharmaceutical»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="body_slide_client item_7">
+                  <div class="footer_card_client">
+                    <img class="img-fluid" src="img/img-7.png" alt="Группа компаний МИЦ ДЕВЕЛОПМЕНТ">
+                  </div>
+                </div>
+                <div class="name_block text-center">
+                  <p class="name_slide">«Группа компаний МИЦ ДЕВЕЛОПМЕНТ»
                   </p>
                 </div>
               </div>
@@ -697,8 +733,8 @@
       <div class="container">
         <div class="footer_content">
           <p class="allright mb-0">© 2005-2021 ООО ЧОП «АЛЬФА. Ком»</p>
-          <a href="license/Лицензия.pdf" target="blank" class="link_licence" open>лицензия</a>
-          <a href="tel:+74951817341" class="tel_footer">+7 (495) 181-73-41</a>
+          <!--<a href="license/Лицензия.pdf" target="blank" class="link_licence" open>лицензия</a>
+          --><a href="tel:+74951817341" class="tel_footer">+7 (495) 181-73-41</a>
         </div>
       </div>
     </footer>
@@ -715,15 +751,15 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="" class="">
-              <fieldset>
+            <form class="form-block__container n form__form callback-form" id="callphone">
+              <fieldset class="form__fields form__hide-success">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <label class="w-100">
-                      <input class="input_form" type="text" name="" placeholder="Имя*">
+                      <input class="input_form" type="text" name="name" placeholder="Имя*" required>
                     </label>
                     <label class="w-100">
-                      <input class="input_form" type="text" name="" placeholder="Телефон*">
+                      <input class="input_form" type="text" name="phone" placeholder="Телефон*" required>
                     </label>
                   </div>
                 </div>
@@ -734,6 +770,7 @@
                     <p class="micro_text pt-3 pt-lg-5">
                       Отправляя заявку, вы даете согласие<br> на обработку персональных данных.
                     </p>
+                    <input type="hidden" name="go" value="callback">
                   </div>
                 </div>
               </fieldset>
@@ -745,6 +782,7 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/call.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script>
     $(window).scroll(function () {
