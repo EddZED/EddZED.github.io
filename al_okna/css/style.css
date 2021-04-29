@@ -1,0 +1,51 @@
+@font-face{font-family:'mont_reg';src:url(../font/Mont-Regular.ttf);}
+@font-face{font-family:'mont_bold';src:url(../font/Mont-Bold.ttf);}
+@font-face{font-family:'mont_light';src:url(../font/Mont-Light.ttf);}
+@font-face{font-family:'mont_semibold';src:url(../font/Mont-SemiBold.ttf);}
+html{scroll-behavior:smooth;}
+body{font-size:16px;background-color:#fff;}
+.wrapper{overflow:hidden;}
+.header{width:100%;position:fixed;top:0;left:0;}
+.header-nav__top{width:100%;}
+.nav-top__logo{padding:0 15px;display:flex;flex:1 1 20%;}
+.nav-top__contact{padding:0 15px;display:flex;flex:1 1 35%;align-items:center;justify-content:space-between;}
+.link_phone{font-size:21px;line-height:26px;font-weight:600;font-family:'mont_reg';color:#fff;transition:all .3s;}
+.link_phone:hover{color:#fff;}
+.btn_content{font-size:12px;line-height:14px;font-family:'mont_reg'; font-weight:600;letter-spacing:-0.02em;color:#fff;text-align:center;display:inline-block;padding:14px 20px 14px 20px;transition:all .3s;border-radius:8px;}
+.btn_content.btn_blue{background-color:#0081BB;}
+.btn_content.btn_green{background-color:#009C77;}
+.btn_content:hover{color:#fff;text-decoration:none;}
+.btn_content.btn_blue:hover{background-color:#009C77;}
+.btn_content.btn_green:hover{background-color:#0081BB;}
+.header-nav__bottom{width:100%;background-color:rgba(0, 10, 32, .4);}
+.header-nav__menu{width:100%;padding:13px 0 0 0;display:flex;align-items:center;justify-content:space-between;list-style:none;}
+.menu_item{color:#fff;font-size:18px;font-family:'mont_light';cursor:pointer;padding:0 0 13px 0;position:relative;}
+.menu_item_hidden{position:absolute;left:-15px;top:40px;opacity:0;transition:.3s;overflow:hidden;height:0;background-color:rgba(0, 10, 32, .4);min-width:300px;display:flex;flex-direction:column;}
+.menu_item:hover .menu_item_hidden{opacity:1;height:auto;}
+.menu_item_hidden .link_menu{display:inline-block;padding:0 15px 15px;color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
