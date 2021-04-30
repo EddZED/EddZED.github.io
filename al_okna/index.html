@@ -133,8 +133,87 @@
       </section>
       <section class="product">
         <div class="container">
+          <h2 class="titile_content">Наша продукция</h2>
+          <p class="text_content pt-3">Светопрозрачные конструкции из алюминиевого профиля</p>
           <div class="row">
-
+            <div class="col-12">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider_body">
+                      <div class="slider_image">
+                        <div class="front">
+                          <img class="bg_item_slider" src="img/cat_1.jpg" alt="">
+                        </div>
+                        <div class="back">
+                          <p class="green_text mb-2">80 лет</p>
+                          <span class="light_text">срок службы алюминиевых конструкций</span>
+                          <img class="bg_item_slider_back" src="img/cat_1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="slider_footer">
+                        <p class="name_item_slider mb-1">Окна</p>
+                        <span class="light_text">С гарантией 5 лет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_body">
+                      <div class="slider_image">
+                        <div class="front">
+                          <img class="bg_item_slider" src="img/cat_2.jpg" alt="">
+                        </div>
+                        <div class="back">
+                          <p class="green_text mb-2">80 лет</p>
+                          <span class="light_text">срок службы алюминиевых конструкций</span>
+                          <img class="bg_item_slider_back" src="img/cat_1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="slider_footer">
+                        <p class="name_item_slider mb-1">Балконы</p>
+                        <span class="light_text">С гарантией 5 лет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_body">
+                      <div class="slider_image">
+                        <div class="front">
+                          <img class="bg_item_slider" src="img/cat_3.jpg" alt="">
+                        </div>
+                        <div class="back">
+                          <p class="green_text mb-2">80 лет</p>
+                          <span class="light_text">срок службы алюминиевых конструкций</span>
+                          <img class="bg_item_slider_back" src="img/cat_1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="slider_footer">
+                        <p class="name_item_slider mb-1">Алюминиевые двери</p>
+                        <span class="light_text">С гарантией 5 лет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_body">
+                      <div class="slider_image">
+                        <div class="front">
+                          <img class="bg_item_slider" src="img/cat_4.jpg" alt="">
+                        </div>
+                        <div class="back">
+                          <p class="green_text mb-2">80 лет</p>
+                          <span class="light_text">срок службы алюминиевых конструкций</span>
+                          <img class="bg_item_slider_back" src="img/cat_1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="slider_footer">
+                        <p class="name_item_slider mb-1">Раздвижные двери</p>
+                        <span class="light_text">С гарантией 5 лет</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -145,6 +224,7 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script>
     $(window).scroll(function () {
       var height = $(window).scrollTop();
@@ -190,6 +270,34 @@
       $('.footer').removeClass('d-none');
       $('.btn_menu').removeClass('active');
     })
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 5,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          slidesPerColumn: 2,
+        },
+        768: {
+          slidesPerView: 3,
+          slidesPerColumn: 1,
+          spaceBetween: 15,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1199: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 </body>
 </html>
