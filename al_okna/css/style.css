@@ -73,9 +73,16 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
 .slider_image .back{transform:perspective(1500px) rotateY(180deg);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);background: linear-gradient(180deg, #EAEAEA 0%, #CFCFCF 100%);padding:25px 20px;}
 .slider_image:hover > .front{transform:perspective(1500px) rotateY(-180deg);}
 .slider_image:hover > .back{transform:perspective(1500px) rotateY(0deg);}
-.bg_item_slider_back{object-fit:cover;object-position:0px 0px;position:absolute;left:0;bottom:0;}
+.bg_item_slider_back{object-fit:cover;object-position:0px 0px;position:absolute;left:0;bottom:0;z-index:-1;}
 .green_text{font-size:34px;line-height:32px;color:#009C77;font-family:'mont_semibold';font-weight:bold;}
-.back .light_text{font-size:12px;line-height:14px;display:inline-block;}
+.back .light_text{font-size:12px;line-height:14px;display:inline-block;z-index:2;}
+.slider_nav{position:absolute;right:0;top:0;}
+.slick-list.draggable{padding-top:10px;}
+.slick-slide{padding:10px;}
+.slick-slide:focus{outline:none;}
+
+
+
 
 
 @media(min-width:992px){
@@ -131,6 +138,11 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .intro-block__social{display:block;bottom:15px;height:40px;top:auto;}
     .intro-block__social .social_item{flex-direction:row;align-items:center;justify-content:center;}
     .bg_intro{object-position: -316px 0;max-width:1440px;object-fit:none;}
+    .bg_item_slider_back {max-width:100%;}
+    .back .light_text{text-shadow:0 0 5px rgba(255,255,255,1);}
+    .titile_content{font-size:30px;}
+    .product{padding:40px 0;}
+    .slider_body{padding-top:5px;}
 }
 @media(max-width:575px){
     .bg_intro{max-height:100%;}
@@ -150,6 +162,7 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .btn_menu.active span:before{transform:translateY(10px) rotateZ(-45deg);}
     .btn_menu.active span:after{transform:translateY(-10px) rotateZ(45deg);}
     .bg_intro{object-position: -353px -43px;}
+    .name_item_slider {font-size:16px;}
 }
 @media (max-width:330px){
     .bg_intro {object-position: -407px -53px;}
