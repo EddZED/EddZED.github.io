@@ -126,4 +126,13 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .bullit_item.right{padding-left:40px;padding-right:10px;}
     .bullit_item.left{padding-left:40px;padding-right:10px;}
     .bullit_text{font-size:10px;}
+    .btn_menu{width:30px;height:30px;}
+    .btn_menu span:before{top:-10px;}
+    .btn_menu span:after{top:10px;}
+    .btn_menu.active span:before{transform:translateY(10px) rotateZ(-45deg);}
+    .btn_menu.active span:after{transform:translateY(-10px) rotateZ(45deg);}
+    .bg_intro{object-position: -353px -43px;}
+}
+@media (max-width:330px){
+    .bg_intro {object-position: -407px -53px;
 }
