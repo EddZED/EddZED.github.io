@@ -135,12 +135,10 @@
       <section class="product">
         <div class="container">
           <h2 class="titile_content">Наша продукция</h2>
-          <p class="text_content pt-1 pt-md-3">Светопрозрачные конструкции из алюминиевого профиля</p>
+          <p class="text_content pt-1 pt-md-3 mb-0">Светопрозрачные конструкции из алюминиевого профиля</p>
           <div class="row">
             <div class="col-12 position-relative">
               <div class="slider_nav">
-                <div class="swiper-button-next">вдево</div>
-                <div class="swiper-button-prev">вправо</div>
               </div>
               <div class="slider-container">
                 <div class="slider_wrapper">
@@ -359,6 +357,9 @@
       dots: false,
       variableWidth: false,
       centerMode: false,
+      appendArrows: $('.slider_nav'),
+      nextArrow: '<button class="button-next"><img src="img/right_ar.png" class="img-fluid"></button>',
+      prevArrow: '<button class="button-prev"><img src="img/left_ar.png" class="img-fluid"></button>',
       responsive: [
         {
           breakpoint: 1199,
