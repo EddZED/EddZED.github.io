@@ -55,8 +55,8 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
 .btn_menu span{position:absolute;width:100%;height:2px;left:0;top:0;bottom:0;margin:auto;background:#fff;display:inline-block;transition:all .3s ease;}
 .btn_menu span:before{content:'';position:absolute;width:100%;height:2px;left:0;top:-13px;background:#fff;transition:all .3s ease;}
 .btn_menu span:after{content:'';position:absolute;width:100%;height:2px;left:0;top:13px;background:#fff;transition:all .3s ease;}
-.header.blur .btn_menu span:before{top:-10px;}
-.header.blur .btn_menu span:after{top:10px;}
+.header.blur .btn_menu:not(.active) span:before{top:-10px;}
+.header.blur .btn_menu:not(.active) span:after{top:10px;}
 .btn_menu.active span{background-color:transparent;}
 .btn_menu.active span:before{transform:translateY(13px) rotateZ(-45deg);}
 .btn_menu.active span:after{transform:translateY(-13px) rotateZ(45deg);}
