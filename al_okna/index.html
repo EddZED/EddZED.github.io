@@ -292,6 +292,78 @@
           </div>
         </div>
       </section>
+      <section class="our_manufactureds">
+        <div class="container">
+          <h2 class="titile_content">Профили от ведущих производителей</h2>
+          <p class="text_content pt-1 pt-md-3 mb-2">У нас есть огромный выбор ассортимента</p>
+          <div class="scrol_x_box">
+            <div class="row pt-3">
+              <div class="col-lg-3 col-md-5 col-sm-8 col-9 mb-4">
+                <div class="body_card">
+                  <div class="card_image text-center">
+                    <img class="img-fluid" src="img/card_item_1.png" alt="">
+                  </div>
+                  <div class="card_text">
+                    <p class="name_card mb-2">AGS</p>
+                    <span class="light_text">Повседневная практика развитие показывает, что дальнейшее</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-8 col-9 mb-4">
+                <div class="body_card">
+                  <div class="card_image text-center">
+                    <img class="img-fluid" src="img/card_item_2.png" alt="">
+                  </div>
+                  <div class="card_text">
+                    <p class="name_card mb-2">Allumii</p>
+                    <span class="light_text">Повседневная практика развитие показывает, что дальнейшее</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-8 col-9 mb-4">
+                <div class="body_card">
+                  <div class="card_image text-center">
+                    <img class="img-fluid" src="img/card_item_3.png" alt="">
+                  </div>
+                  <div class="card_text">
+                    <p class="name_card mb-2">Realit</p>
+                    <span class="light_text">Повседневная практика развитие показывает, что дальнейшее</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-8 col-9 mb-4">
+                <div class="body_card">
+                  <div class="card_image text-center">
+                    <img class="img-fluid" src="img/card_item_4.png" alt="">
+                  </div>
+                  <div class="card_text">
+                    <p class="name_card mb-2">VIDNAL</p>
+                    <span class="light_text">Повседневная практика развитие показывает, что дальнейшее</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-8 col-9 mb-4">
+                <div class="body_card">
+                  <div class="card_image text-center">
+                    <img class="img-fluid" src="img/card_item_1.png" alt="">
+                  </div>
+                  <div class="card_text">
+                    <p class="name_card mb-2">AGS</p>
+                    <span class="light_text">Повседневная практика развитие показывает, что дальнейшее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stage">
+        <div class="container">
+          <div class="row">
+
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
 
@@ -380,6 +452,32 @@
       ]
     });
     $('.slider_wrapper').slick('setPosition');
+  </script>
+  <script>
+    (function () {
+        let speed = 2; // Скорость скролла.
+
+        let scroll = document.querySelector('.scrol_x_box');
+
+        let left = 0; // отпустили мышку - сохраняем положение скролла
+        let drag = false;
+        let coorX = 0; // нажали мышку - сохраняем координаты.
+
+        scroll.addEventListener('mousedown', function (e) {
+          drag = true;
+          coorX = e.pageX - this.offsetLeft;
+        });
+        document.addEventListener('mouseup', function () {
+          drag = false;
+          left = scroll.scrollLeft;
+        });
+        scroll.addEventListener('mousemove', function (e) {
+          if (drag) {
+            this.scrollLeft = left + (e.pageX - this.offsetLeft - coorX) * speed;
+          }
+        });
+
+      })();
   </script>
 </body>
 </html>

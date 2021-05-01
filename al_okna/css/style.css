@@ -76,12 +76,25 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
 .bg_item_slider_back{object-fit:cover;object-position:0px 0px;position:absolute;left:0;bottom:0;z-index:-1;}
 .green_text{font-size:34px;line-height:32px;color:#009C77;font-family:'mont_semibold';font-weight:bold;}
 .back .light_text{font-size:12px;line-height:14px;display:inline-block;z-index:2;}
-.slider_nav{position:absolute;right:25px;top:-20px;display:flex;}
+.slider_nav{position:absolute;right:25px;top:-30px;display:flex;}
 .slick-slide{padding:10px;}
 .slick-slide:focus{outline:none;}
 .button-next, .button-prev{width:30px;height:30px;border-radius:50%;background-color:transparent;border:1px solid #C4C4C4;display:flex;align-items:center;justify-content:center;margin:0 3px;}
-
-
+.our_manufactureds{width:100%;padding:0 0 45px;}
+.scrol_x_box{overflow-x:scroll;width:100%;}
+.scrol_x_box .row{flex-wrap:nowrap;}
+.scrol_x_box::-webkit-scrollbar { width:5px; height:5px;opacity:1;}
+.scrol_x_box::-webkit-scrollbar-button {display:none;}
+.scrol_x_box::-webkit-scrollbar-track {  background-color:transparent;}
+.scrol_x_box::-webkit-scrollbar-track-piece { background-color: #EBEBEB;opacity:1;border-radius:6px;}
+.scrol_x_box::-webkit-scrollbar-thumb { height:50px; background-color: #009C77; border-radius: 6px;}
+.scrol_x_box::-webkit-scrollbar-corner { background-color:transparent}
+.scrol_x_box::-webkit-resizer { background-color:#009C77}
+.body_card{width:100%;height:100%;background-image:url(../img/border_card.png);background-repeat:no-repeat;background-size:100% 100%;padding:25px 20px;display:flex;flex-direction:column;justify-content:space-between;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;}
+.name_card{font-size:27px;line-height:34px;font-family:'mont_reg';font-weight:600;color:#009C77;}
+.card_text .light_text{font-size:12px;line-height:14px;display:inline-block;}
+.body_card:hover{cursor:grab;}
+.stage{width:100%;}
 
 
 @media(min-width:992px){
@@ -127,6 +140,7 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .main_title{font-size:48px;line-height:61px;}
     .bullit_item:before {width:60px;height:60px;}
     .slider_image{height:270px;}
+    .slider_nav{right:50%;transform:translateX(50%);bottom:-30px;top:auto;}
 }
 @media(max-width:767px){
     .intro-block__body{display:block;padding-top:140px;}
@@ -142,6 +156,7 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .titile_content{font-size:30px;}
     .product{padding:40px 0;}
     .slider_body{padding-top:5px;}
+    .our_manufactureds{padding:40px 0;}
 }
 @media(max-width:575px){
     .bg_intro{max-height:100%;}
