@@ -59,7 +59,7 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
 .btn_menu.active span{background-color:transparent;}
 .btn_menu.active span:before{transform:translateY(13px) rotateZ(-45deg);}
 .btn_menu.active span:after{transform:translateY(-13px) rotateZ(45deg);}
-.titile_content{font-size:38px;line-height:40px;font-family:'mont_semibold';font-weight:600;color:#262626;text-align:center;}
+.title_content{font-size:38px;line-height:40px;font-family:'mont_semibold';font-weight:600;color:#262626;text-align:center;}
 .product{width:100%;padding:85px 0;}
 .text_content{font-size:16px;line-height:20px;color:#262626;font-family:'mont_reg';font-weight:600;}
 .slider_body{display:flex;flex-direction:column;justify-content:space-between;padding:20px 3px 5px;}
@@ -99,10 +99,16 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
 .bold_name{font-size:27px;line-height:30px;font-family:'mont_reg';font-weight:600;color:#262626;}
 .construction{width:100%;padding:80px 0 40px;}
 .category_image{border-radius:5px;box-shadow:0px 4px 12px rgba(0, 10, 32, 0.1);overflow:hidden;margin-bottom:15px;transition:all .3s ease;}
+.category_image img{object-fit:cover;width:100%;}
 .name_category{font-size:18px;line-height:20px;font-family:'mont_semibold';color:#262626;}
 .categories_card{display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;}
 .categories_card:hover{text-decoration:none;}
 .categories_card:hover .category_image{transform:translateY(-4px);}
+.invite{width:100%;padding:40px 0;}
+.green_head{font-size:27px;line-height:34px;color:#009C77;font-family:'mont_semibold';}
+.list_invite_ad{list-style:none;padding-left:30px;display:flex;flex-direction:column;}
+.list_invite_ad li{position:relative;font-size:14px;line-height:20px;display:inline-block;font-family:'mont_light';margin-bottom:12px;}
+.list_invite_ad li:before{content:'';position:absolute;width:21px;height:8px;background-image:url(../img/green_arrow.png);top:5px;left:-30px;}
 
 
 
@@ -165,12 +171,15 @@ body{font-size:16px;background-color:#fff;min-height:2000px;}
     .bg_intro{object-position: -316px 0;max-width:1440px;object-fit:none;}
     .bg_item_slider_back {max-width:100%;}
     .back .light_text{text-shadow:0 0 5px rgba(255,255,255,1);}
-    .titile_content{font-size:30px;}
+    .title_content{font-size:30px;}
     .product{padding:40px 0;}
     .slider_body{padding-top:5px;}
     .our_manufactureds{padding:40px 0;}
     .stage{padding:30px 0;}
+    .construction{padding:40px 0 20px;}
+    .invite{padding:0 0 40px;}
 }
+
 @media(max-width:575px){
     .bg_intro{max-height:100%;}
     .intro-block__wrapper{max-height:669px;}
