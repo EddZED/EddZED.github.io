@@ -3,7 +3,7 @@
 @font-face{font-family:'mont_light';src:url(../font/Mont-Light.ttf);}
 @font-face{font-family:'mont_semibold';src:url(../font/Mont-SemiBold.ttf);}
 html{scroll-behavior:smooth;}  
-body{font-size:16px;background-color:#fff;min-height:2000px;}
+body{font-size:16px;background-color:#fff;}
 .wrapper{overflow:hidden;}
 .header{width:100%;position:fixed;top:0;left:0;z-index:2;transition:background .3s ease;}
 .header.blur{backdrop-filter:blur(10px);background:rgba(0,0,0,.7);}
