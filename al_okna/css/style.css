@@ -221,7 +221,29 @@ body{font-size:16px;background-color:#fff;}
 .price tbody tr th{font-size:14px;line-height:20px;font-family:'mont_light';}
 .price tbody tr{transition:background .3s ease;}
 .price tbody tr:hover{background-color:rgba(0, 156, 119, .08);-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;}
-.cost_calculator{width:100%;padding:40px 0;}
+.cost_calculator{width:100%;padding:40px 0 80px;}
+.wrap_calculator{background-image:url(../img/bg_calc.png);background-size:100% 100%;background-repeat:no-repeat;padding:40px;}
+.calc_head{font-size:18px;line-height:20px;color:#262626;font-family:'mont_semibold';}
+.radio_box{position:relative;width:100%;margin-bottom:0;cursor:pointer;}
+.radio_box input[type="radio"]{display:none;}
+.radio_box .radio_item{font-family:'mont_semibold';display:inline-block;width:100%;padding:10px 0;font-size:15px;line-height:20px;text-align:center;color:#262626;border: 1px solid #009C77;border-radius:8px;transition:all .3s;}
+.radio_box .radio_item:hover{background: rgba(0, 156, 119, 0.2);}
+.radio_box input[type="radio"]:checked + .radio_item{background: rgba(0, 156, 119, 0.2);}
+.select_radio{position:relative;width:100%;margin-bottom:0;flex:0 0 19%;cursor:pointer;}
+.select_radio input[type="radio"]{display:none;}
+.select_radio .item_profile{display:flex;align-items:center;flex-direction:column;justify-content:space-between;background-image:url(../img/border_method.png);background-size:100% 100%;background-repeat:no-repeat;padding:15px 20px;}
+.wrapper_select{width:100%;display:flex;justify-content:space-between;}
+.green_text_mini{font-size:12px;line-height:17px;color:#009C77;font-family:'mont_semibold';transition:all .3s;}
+.select_radio:hover .green_text_mini{color:#fff;}
+.select_radio:hover .item_profile{background-image:url(../img/const_hover.jpg);transition:all .3s;}
+.select_radio input[type="radio"]:checked + .item_profile{background-image:url(../img/const_hover.jpg);}
+.select_radio input[type="radio"]:checked + .item_profile>.green_text_mini{color:#fff;}
+.cost_calculator .input_form{border-color:#262626;color:#262626;}
+.cost_calculator .input_form:focus{border-color:#009c77;color:#009c77;}
+.cost_calculator .btn_green{border:none;font-size:16px;line-height:14px;letter-spacing:-0.02em;}
+.cost_calculator .btn_green:focus{outline:none;}
+
+
 
 
 
@@ -297,6 +319,9 @@ body{font-size:16px;background-color:#fff;}
     .img_sizes{width:700px;}
     .select_us{padding:50px 0;}
     .price thead th{font-size:15px;}
+    .select_radio{flex:0 0 49%;margin-bottom:15px;}
+    .wrapper_select{flex-wrap:wrap;justify-content:space-between;}
+    .wrap_calculator{padding:20px;background-image:url(../img/bg_calc_mobile.png);}
 }
 @media(max-width:767px){
     .intro-block__body{display:block;padding-top:140px;}
@@ -357,6 +382,9 @@ body{font-size:16px;background-color:#fff;}
     .wrapper_price::-webkit-scrollbar-thumb { height:50px; background-color: #009C77; border-radius: 6px;}
     .wrapper_price::-webkit-scrollbar-corner { background-color:transparent}
     .wrapper_price::-webkit-resizer { background-color:#009C77}
+    .wrap_calculator{padding:20px 10px;}
+    .cost_calculator{padding:40px 0;}
+    .sizes_forms{padding:40px 0 0;}
 }
 
 @media(max-width:575px){
@@ -378,7 +406,9 @@ body{font-size:16px;background-color:#fff;}
     .second_view .bg_intro{object-position: -137px -53px;}
     .second_view_block_2 .slider_image{height:195px;}
     .hover_text_block{padding:80px 15px 20px;}
-    
+    .ver_two img{width:700px !important;}
+    .select_radio{flex:0 0 47%;}
+    .select_radio .item_profile{padding:15px 5px;}
 }
 @media(max-width:400px){
     .intro-block__body{padding-top:126px;}

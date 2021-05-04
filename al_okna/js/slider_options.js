@@ -23,11 +23,19 @@
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 1,
-            sldiesPerRow: 2,
+            slidesToShow: 2,
+            sldiesPerRow: 1,
             rows: 2
           }
-        }
+        },
+        {
+          breakpoint: 565,
+          settings: {
+            slidesToShow: 1,
+            sldiesPerRow: 1,
+            rows: 1
+          }
+        },
       ]
     });
     $('.slider_wrapper_two').slick('setPosition');

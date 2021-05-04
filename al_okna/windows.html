@@ -644,12 +644,428 @@
       <section class="cost_calculator">
         <div class="container">
           <h2 class="title_content">Расчет стоимости</h2>
-          <div class="row">
-
+          <div class="wrap_calculator">
+            <form action="" class="">
+              <fieldset>
+                <div class="row align-items-center">
+                  <div class="col-lg-5 mb-4">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_1.svg" alt="">Выберите тип профиля:</p>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="temperature" class="" type="radio" checked>
+                          <span class="radio_item">Холодный</span>
+                        </label>
+                      </div>
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="temperature" class="" type="radio">
+                          <span class="radio_item">Теплый</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_2.svg" alt="">Есть предпочтения по производителю?</p>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="manufacturer_importance" class="" type="radio" checked>
+                          <span class="radio_item">Нет</span>
+                        </label>
+                      </div>
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="manufacturer_importance" class="" type="radio">
+                          <span class="radio_item">Да</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_3.svg" alt="">Выберите конфигурацию:</p>
+                    <div class="wrapper_select pt-4">
+                      <label class="select_radio">
+                        <input class="" type="radio" name="type">
+                        <span class="item_profile">
+                          <img class="img-fluid" src="img/construction_1.jpg" alt="одностворчатое">
+                          <p class="text-center green_text_mini pt-3 mb-0">Одностворчатое</p>
+                        </span>
+                      </label>
+                      <label class="select_radio">
+                        <input class="" type="radio" name="type">
+                        <span class="item_profile">
+                          <img class="img-fluid" src="img/construction_2.jpg" alt="Двухстворчатое">
+                          <p class="text-center green_text_mini pt-3 mb-0">Двухстворчатое</p>
+                        </span>
+                      </label>
+                      <label class="select_radio">
+                        <input class="" type="radio" name="type" checked>
+                        <span class="item_profile">
+                          <img class="img-fluid" src="img/construction_3.jpg" alt="Трехстворчатое">
+                          <p class="text-center green_text_mini pt-3 mb-0">Трехстворчатое</p>
+                        </span>
+                      </label>
+                      <label class="select_radio">
+                        <input class="" type="radio" name="type">
+                        <span class="item_profile">
+                          <img class="img-fluid" src="img/construction_4.jpg" alt="Балконный блок">
+                          <p class="text-center green_text_mini pt-3 mb-0">Балконный блок</p>
+                        </span>
+                      </label>
+                      <label class="select_radio">
+                        <input class="" type="radio" name="type">
+                        <span class="item_profile">
+                          <img class="img-fluid" src="img/construction_5.jpg" alt="Нестандартное">
+                          <p class="text-center green_text_mini pt-3 mb-0">Нестандартное</p>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mb-4">
+                    <p class="calc_head"><img class="img-fluid pr-2" src="img/num_4.svg" alt="">Выберите стеклопакет:</p>
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="select_glass" class="" type="radio" checked>
+                          <span class="radio_item">Однокамерный</span>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="select_glass" class="" type="radio">
+                          <span class="radio_item">Двухкамерный</span>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="select_glass" class="" type="radio">
+                          <span class="radio_item">Энергосберегающий</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_5.svg" alt="">Нужны цветные окна?</p>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="color" class="" type="radio" checked>
+                          <span class="radio_item">Нет</span>
+                        </label>
+                      </div>
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="color" class="" type="radio">
+                          <span class="radio_item">Да</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-11 pt-lg-3 mb-4">
+                    <p class="calc_head"><img class="img-fluid pr-2" src="img/num_6.svg" alt="">Нужен подоконник?</p>
+                    <div class="row">
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="windowsill" class="" type="radio" checked>
+                          <span class="radio_item">Нет</span>
+                        </label>
+                      </div>
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="windowsill" class="" type="radio">
+                          <span class="radio_item">Пластиковый (ПВХ)</span>
+                        </label>
+                      </div>
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="windowsill" class="" type="radio">
+                          <span class="radio_item">Деревянный</span>
+                        </label>
+                      </div>
+                      <div class="col-xl-3 col-sm-6 mb-3">
+                        <label class="radio_box">
+                          <input name="windowsill" class="" type="radio">
+                          <span class="radio_item">Из искусственного камня</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_7.svg" alt="">Нужна отделка откосов?</p>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="slopes" class="" type="radio" checked>
+                          <span class="radio_item">Нет</span>
+                        </label>
+                      </div>
+                      <div class="col-sm-6 mb-3 mb-md-0">
+                        <label class="radio_box">
+                          <input name="slopes" class="" type="radio">
+                          <span class="radio_item">Да</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="calc_head mb-0"><img class="img-fluid pr-2" src="img/num_8.svg" alt="">Ваши данные:</p>
+                    <div class="row pt-3">
+                      <div class="col-lg-4 mb-3">
+                        <label class="w-100">
+                          <input class="input_form" type="text" name="" placeholder="Иван">
+                        </label>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <label class="w-100">
+                          <input class="input_form" type="text" name="" placeholder="+ 7 (___) - ___ - __ - __">
+                        </label>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <button type="submit" class="btn_content btn_green w-100">Отправить заявку</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </section>
-
+      <section class="order">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-7">
+              <h3 class="title_white">Быстрый расчет стоимости за 15 минут</h3>
+              <p class="white_text pt-3">Заполните форму обратной связи, приложите свой проект или чертеж, наш специалист
+                сделает экспресс-смету с указанием
+                сроков реализации проекта!</p>
+              <form action="" class="">
+                <fieldset>
+                  <label class="w-100">
+                    <input class="input_form" type="text" name="" placeholder="Иван">
+                  </label>
+                  <label class="w-100">
+                    <input class="input_form" type="text" name="" placeholder="+ 7 (___) - ___ - __ - __">
+                  </label>
+                  <label class="w-100">
+                    <textarea class="input_form" type="text" rows="1" placeholder="Ваш комментарий"></textarea>
+                  </label>
+                  <button type="submit" class="btn_content btn_green w-100">Отправить заявку</button>
+                  <label class="checkbox">
+                    <input class="" type="checkbox" name="">
+                    <span>Даю согласие на обработку персональных данных</span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our_partner">
+        <div class="container">
+          <h2 class="title_content">Наши партнеры</h2>
+          <div class="row justify-content-center pt-sm-4 pt-3">
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_1.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_2.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_hov_2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_3.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_4.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_hov_4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_1.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_2.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_hov_2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_3.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 mb-3">
+              <div class="partner_body">
+                <div class="front">
+                  <img class="img_partners" src="img/part_4.png" alt="">
+                </div>
+                <div class="back">
+                  <img class="img_partners" src="img/part_hov_4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why">
+        <div class="container">
+          <h2 class="title_content">Почему выбирают нас</h2>
+          <div class="row justify-content-center pt-3 pt-md-4">
+            <div class="select_item">
+              <div class="wrap_img">
+                <img class="img-fluid" src="img/select_1.svg" alt="">
+              </div>
+              <div class="wrap_text">
+                <p class="name_item_slider mb-1">Опыт</p>
+                <span class="light_text">Мы серьёзная фирма. 17 успешных лет на рынке остекления!</span>
+              </div>
+            </div>
+            <div class="select_item">
+              <div class="wrap_img">
+                <img class="img-fluid" src="img/select_2.svg" alt="">
+              </div>
+              <div class="wrap_text">
+                <p class="name_item_slider mb-1">Производство</p>
+                <span class="light_text">Собственное производство позволяет нам предлагать лучшие цены на рынке!</span>
+              </div>
+            </div>
+            <div class="select_item">
+              <div class="wrap_img">
+                <img class="img-fluid" src="img/select_3.svg" alt="">
+              </div>
+              <div class="wrap_text">
+                <p class="name_item_slider mb-1">Выбор</p>
+                <span class="light_text">Работаем с разными профильными системами и фурнитурой</span>
+              </div>
+            </div>
+            <div class="select_item">
+              <div class="wrap_img">
+                <img class="img-fluid" src="img/select_4.svg" alt="">
+              </div>
+              <div class="wrap_text">
+                <p class="name_item_slider mb-1">Сроки</p>
+                <span class="light_text">Работаем с большими объемами и укладываемся в короткий срок</span>
+              </div>
+            </div>
+            <div class="select_item">
+              <div class="wrap_img">
+                <img class="img-fluid" src="img/select_5.svg" alt="">
+              </div>
+              <div class="wrap_text">
+                <p class="name_item_slider mb-1">Работа под ключ</p>
+                <span class="light_text">Все работы от проектирования до монтажа на вашем объекте!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sertificate">
+        <div class="container">
+          <h2 class="title_content">Наши сертификаты</h2>
+          <div class="row pt-sm-4 pt-3">
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="body_serifacate">
+                <img class="img-fluid" src="img/sert_1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="body_serifacate">
+                <img class="img-fluid" src="img/sert_2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="body_serifacate">
+                <img class="img-fluid" src="img/sert_3.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="body_serifacate">
+                <img class="img-fluid" src="img/sert_4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="row">
+            <div class="offset-xl-7 offset-lg-6 px-3">
+              <h2 class="title_content text-left">Остались вопросы?</h2>
+              <p class="pt-3 text_min_light">Заполните форму связи, мы перезвоним вам в течении 10 минут! Наш специалист
+                ответит на все ваши вопросы, порекомендует
+                профильную систему, поможет вывести стоимость алюминиевой конструкции:</p>
+              <form action="" class="">
+                <fieldset>
+                  <label class="w-100">
+                    <input class="input_form" type="text" name="" placeholder="Иван">
+                  </label>
+                  <label class="w-100">
+                    <input class="input_form" type="text" name="" placeholder="+ 7 (___) - ___ - __ - __">
+                  </label>
+                  <label class="w-100">
+                    <textarea class="input_form" type="text" rows="1" placeholder="Ваш комментарий"></textarea>
+                  </label>
+                  <button type="submit" class="btn_content btn_green w-100">Отправить заявку</button>
+                  <label class="checkbox">
+                    <input class="" type="checkbox" name="" checked>
+                    <span>Даю согласие на обработку персональных данных</span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="container">
