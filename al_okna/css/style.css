@@ -204,9 +204,20 @@ body{font-size:16px;background-color:#fff;}
 .ver_two img{width:400px !important;}
 .ver_two .light_text{font-size:12px;line-height:17px;}
 .ver_two .name_item_slider{font-size:18px;line-height:20px;text-transform:uppercase;font-family:'mont_semibold';}
-
-
-
+.select_us{width:100%;padding:80px 0;background-image:url(../img/bg_select.jpg);background-size:cover;background-repeat:no-repeat;background-position:center center;}
+.green_item{color:#009C77;}
+.select_us .light_text{color:#fff;}
+.select_right_block{display:flex;flex-direction:column;justify-content:space-between;height:100%;}
+.years_item{background: rgba(28, 27, 27, 0.4);border: 1px solid #FFFFFF;border-radius: 8px;padding:25px 15px;align-items:center;display:flex;flex-direction:column;justify-content:space-between;}
+.big_num{font-size:90px;color:#fff;line-height:70px;letter-spacing:0.04em;font-family:'mont_semibold';}
+.select_right_block .text_content{font-size:18px;line-height:20px;color:#fff;}
+.list_invite_ad.select{color:#fff;font-size:18px;line-height:38px;}
+.price_list{width:100%;padding:40px 0;}
+.price thead tr{background-color:rgba(0, 10, 32, .03);}
+.price thead tr th{padding:10px 0;}
+.price thead th{font-size:18px;color:#262626;line-height:20px;font-family:'mont_semibold';}
+.price tbody tr th:first-of-type{color:#009C77;font-family:'mont_semibold';}
+.price tbody tr th{font-size:14px;line-height:20px;font-family:'mont_light';}
 
 @media(min-width:992px){
     .content.d-none{display:block !important;}
@@ -271,6 +282,7 @@ body{font-size:16px;background-color:#fff;}
     .bord_rad_1, .bord_rad_2, .bord_rad_3, .bord_rad_4{border-radius:5px;box-shadow:0px 4px 12px rgba(0, 10, 32, 0.1);}
     .sizes_body{max-height:455px;}
     .img_sizes{width:700px;}
+    .select_us{padding:50px 0;}
 }
 @media(max-width:767px){
     .intro-block__body{display:block;padding-top:140px;}
