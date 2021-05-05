@@ -247,8 +247,9 @@ body{font-size:16px;background-color:#fff;}
 .desc_two{padding:20px 0 40px;}
 .desc_two .title_content{font-size:37px;}
 .desc_two .green_head{font-size:24px;}
-
-
+.apprts_page .intro-block__body{padding-top:70px;}
+.other_opt_appartments .name_item_slider{text-transform:uppercase;}
+.other_opt_appartments .light_text{font-size:12px;line-height:17px;display:inline-block;}
 
 
 @media(min-width:1200px){
@@ -421,6 +422,7 @@ body{font-size:16px;background-color:#fff;}
     .al_glazing .bg_intro{object-position:-655px 0;}
     .al_glazing .intro-block__body{padding-top:120px;}
     .glazing .text_content.min{font-size:11px;line-height:14px;}
+    .page_ap .sizes_body{max-height:555px;}
 }
 @media(max-width:400px){
     .intro-block__body{padding-top:126px;}
@@ -439,6 +441,7 @@ body{font-size:16px;background-color:#fff;}
     .wrapper_text_slider .name_item_slider{font-size:15px;line-height:18px;}
     .method_cards img{max-width:111px;}
     .al_glazing .intro-block__body{padding-top:100px;}
+    .page_ap .sizes_body{min-height:625px;}
 }
 @media (max-width:330px){
     .bg_intro {object-position: -407px -53px;}
