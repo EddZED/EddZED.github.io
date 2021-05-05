@@ -250,10 +250,10 @@ body{font-size:16px;background-color:#fff;}
 .apprts_page .intro-block__body{padding-top:70px;}
 .other_opt_appartments .name_item_slider{text-transform:uppercase;}
 .other_opt_appartments .light_text{font-size:12px;line-height:17px;display:inline-block;}
-
-
-
-
+.bold_text_content span{font-size:14px;font-family:'mont_light';}
+.work_page .bold_text_content{font-size:14px;}
+.works_page .slick-arrow{top:50%;}
+.works_page .main_title{font-size:60px;line-height:64px;}
 
 @media(min-width:1200px){
     .header.blur .menu_item_hidden{top:39px;}
@@ -328,7 +328,7 @@ body{font-size:16px;background-color:#fff;}
     .wrapper_select{flex-wrap:wrap;justify-content:space-between;}
     .wrap_calculator{padding:20px;background-image:url(../img/bg_calc_mobile.png);}
     .al_glazing .bg_intro{max-height:750px;max-width:1440px;object-position:center center;}
-
+    .works_page .bg_intro{min-height:450px}
 }
 @media(max-width:767px){
     .intro-block__body{display:block;padding-top:140px;}
@@ -398,6 +398,7 @@ body{font-size:16px;background-color:#fff;}
     .desc_two{padding:0 0 40px;}
     .desc_two .title_content{font-size:30px;}
     .desc_two .green_head{font-size:22px;line-height:26px;}
+    .works_page .main_title{font-size:36px;line-height:46px;}
 }
 
 @media(max-width:575px){
@@ -427,6 +428,7 @@ body{font-size:16px;background-color:#fff;}
     .glazing .text_content.min{font-size:11px;line-height:14px;}
     .page_ap .sizes_body{max-height:555px;}
     .fire_page .main_title.min_title{font-size:30px;line-height:38px;}
+    .works_page .intro-block__body{padding-top:100px;}
 }
 @media(max-width:400px){
     .intro-block__body{padding-top:126px;}
@@ -446,7 +448,8 @@ body{font-size:16px;background-color:#fff;}
     .method_cards img{max-width:111px;}
     .al_glazing .intro-block__body{padding-top:100px;}
     .page_ap .sizes_body{min-height:625px;}
-    .fire_page .bg_intro {object-position: -517px 0px;
+    .fire_page .bg_intro {object-position: -517px 0px;}
+    .works_page .bg_intro{min-height:640px}
 }
 @media (max-width:330px){
     .bg_intro {object-position: -407px -53px;}
