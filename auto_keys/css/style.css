@@ -1,0 +1,43 @@
+html{scroll-behavior:smooth;}  
+body{font-size:16px;background-color:#fff;}
+.wrapper{overflow:hidden;}
+.header{width:100%;position:fixed;top:0;left:0;z-index:2;transition:background .3s ease;}
+.header.blur{backdrop-filter:blur(10px);background:rgba(0,0,0,.7);}
+.header-nav__top{width:100%;}
+.scrolling_top{padding:25px 0;transition:all .3s ease;}
+.scrolling_top.scroll{padding:5px 0;}
+.nav-top__logo{padding:0 15px;display:flex;flex:1 1 20%;}
+.nav-top__contact{padding:0 15px;display:flex;flex:1 1 35%;align-items:center;justify-content:space-between;transition:all .3s;}
+.bg_intro{object-fit:cover;object-position:center center;width:1920px;max-height:900px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
