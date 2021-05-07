@@ -17,23 +17,25 @@
       <div class="header-nav__top">
         <div class="container">
           <div class="row align-items-center justify-content-between scrolling_top">
-            <div class="nav-top__logo">
+            <div class="nav-top__logo order-1">
               <a href="#" class="logo_link"><img class="img-fluid" src="img/logo.png" alt="logotype"></a>
             </div>
-            <div class="nav-top__menu">
-              <a href="#" class="link_menu">Главная</a>
-              <a href="#" class="link_menu">Услуги</a>
-              <a href="#" class="link_menu">О нас</a>
-              <a href="#" class="link_menu">Отзывы</a>
-              <a href="#" class="link_menu">Контакты</a>
+            <div class="wrap_mobile order-lg-2 order-3">
+              <div class="nav-top__menu">
+                <a href="#" class="link_menu">Главная</a>
+                <a href="#" class="link_menu">Услуги</a>
+                <a href="#" class="link_menu">О нас</a>
+                <a href="#" class="link_menu">Отзывы</a>
+                <a href="#" class="link_menu">Контакты</a>
+              </div>
+              <div class="nav-top__contact">
+                <a href="#" class="link_messenger"><img class="" src="img/telega.svg" alt="телеграм"></a>
+                <a href="#" class="link_messenger"><img class="" src="img/whats_icon.svg" alt="ватс ап"></a>
+                <a href="#" class="btn_content btn_yellow">Заказать звонок</a>
+                <a href="tel:+790311111111" class="link_phone">8(903)111 111 11</a>
+              </div>
             </div>
-            <div class="nav-top__contact">
-              <a href="#" class="link_messenger"><img class="" src="img/telega.svg" alt="телеграм"></a>
-              <a href="#" class="link_messenger"><img class="" src="img/whats_icon.svg" alt="ватс ап"></a>
-              <a href="#" class="btn_content btn_yellow">Заказать звонок</a>
-              <a href="tel:+790311111111" class="link_phone">8(903)111 111 11</a>
-            </div>
-            <a href="" class="btn_menu d-lg-none"><span></span></a>
+            <a href="#" class="btn_menu order-lg-3 order-2 d-lg-none"><span></span></a>
           </div>
         </div>
       </div>
@@ -152,37 +154,9 @@
   </script>
   <script>
     $('.btn_menu').click(function(){
-      $('.header').toggleClass('active');
-      $('.content').toggleClass('d-none');
-      $('.footer').toggleClass('d-none');
-      $('.header-nav__bottom').toggleClass('active');
       $('.header-nav__top').toggleClass('active');
       $(this).toggleClass('active');
     });
-    $('.menu_item').click(function (){
-      $('.header').removeClass('active');
-      $('.header-nav__bottom').removeClass('active');
-      $('.header-nav__top').removeClass('active');
-      $('.content').removeClass('d-none');
-      $('.footer').removeClass('d-none');
-      $('.btn_menu').removeClass('active');
-    });
-    $('.link_social').click(function (){
-      $('.header').removeClass('active');
-      $('.header-nav__bottom').removeClass('active');
-      $('.header-nav__top').removeClass('active');
-      $('.content').removeClass('d-none');
-      $('.footer').removeClass('d-none');
-      $('.btn_menu').removeClass('active');
-    });
-    $('.link_phone').click(function (){
-      $('.header').removeClass('active');
-      $('.header-nav__bottom').removeClass('active');
-      $('.header-nav__top').removeClass('active');
-      $('.content').removeClass('d-none');
-      $('.footer').removeClass('d-none');
-      $('.btn_menu').removeClass('active');
-    })
   </script>
 </body>
 </html>

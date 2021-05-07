@@ -364,7 +364,7 @@ body{font-size:16px;background-color:#fff;}
     .wrapper_contact .wrapper_phone{position:relative;right:auto;min-height:300px;}
     .man_img{right:0;bottom:0;}
     .wrap_desc_img_window img{width:700px;object-fit:cover;}
-    html{scroll-behavior: auto;}
+    html{scroll-behavior:auto;} 
 }
 @media(max-width:767px){
     .intro-block__body{display:block;padding-top:140px;}
