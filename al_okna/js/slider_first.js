@@ -13,7 +13,7 @@ $('.slider_wrapper').slick({
       prevArrow: '<button class="button-prev"><img src="img/left_ar.png" class="img-fluid"></button>',
       responsive: [
         {
-          breakpoint: 1199,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
             sldiesPerRow: 1,
@@ -21,7 +21,7 @@ $('.slider_wrapper').slick({
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             sldiesPerRow: 2,
