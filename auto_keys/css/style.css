@@ -35,9 +35,9 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .left_anim .line{left:0;top:10px;transform:translate3d(0,0,0);animation:wave 5s ease-in-out infinite;}
 .right_anim .line_2{right:-60px;bottom:110px;transform:translate3d(0,0,0);animation:wave_2 5s ease-in-out infinite;}
 .btn_menu{margin-right:15px;position:relative;border:none;background-color:transparent;padding:0;width:40px;height:40px;display:flex;flex-direction: column;justify-content:space-between;}
-.btn_menu span{position:absolute;width:100%;height:2px;left:0;top:0;bottom:0;margin:auto;background:#fff;display:inline-block;transition:all .3s ease;}
-.btn_menu span:before{content:'';position:absolute;width:100%;height:2px;left:0;top:-13px;background:#fff;transition:all .3s ease;}
-.btn_menu span:after{content:'';position:absolute;width:100%;height:2px;left:0;top:13px;background:#fff;transition:all .3s ease;}
+.btn_menu span{position:absolute;width:100%;height:2px;left:0;top:0;bottom:0;margin:auto;background:#000;display:inline-block;transition:all .3s ease;}
+.btn_menu span:before{content:'';position:absolute;width:100%;height:2px;left:0;top:-13px;background:#000;transition:all .3s ease;}
+.btn_menu span:after{content:'';position:absolute;width:70%;height:2px;right:0;top:13px;background:#000;transition:all .3s ease;}
 .line.item_1{left:5px;top:13px;animation-delay:1.2s;}
 .line.item_2{left:-16px;top:2px;animation-delay:.8s;}
 .line.item_3{left:-35px;top:-7px;animation-delay:.4s;}
@@ -74,9 +74,14 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 
 
 @media(max-width:991px){
-  .wrap_mobile{width:0;overflow:hidden;flex:1 1 100%;flex-wrap:wrap;}
-  .wrap_mobile .nav-top__menu, .nav-top__contact{flex-direction:column;align-items:start;}
-  .nav-top__menu, .nav-top__contact{flex:0 0 100%;}
+  .wrap_mobile{width:0;overflow:hidden;flex:1 1 100%;flex-wrap:wrap;height:0;padding-top:30px;}
+  .header-nav__top.active .wrap_mobile{height:100%;width:100%;}
+  .wrap_mobile .nav-top__menu{flex-direction:column;align-items:start;}
+  .nav-top__contact{display:none;}
+  .nav-top__menu{flex:0 0 100%;}
+  .title_menu_mobile{font-size:20px;line-height:22px;color:#262626;font-family:'montser_semi';}
+  .nav-top__menu .link_menu{margin-bottom:15px;}
+  .movile_link{display:flex;flex-direction:column;padding-bottom:15px;border-bottom:1px solid #9E9E9E;width:100%;}
 }
 
 

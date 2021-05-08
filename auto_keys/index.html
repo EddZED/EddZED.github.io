@@ -22,11 +22,19 @@
             </div>
             <div class="wrap_mobile order-lg-2 order-3">
               <div class="nav-top__menu">
+                <p class="d-lg-none title_menu_mobile">Меню</p>
                 <a href="#" class="link_menu">Главная</a>
-                <a href="#" class="link_menu">Услуги</a>
+                <a href="#" class="link_menu d-none d-lg-inline-block">Услуги</a>
                 <a href="#" class="link_menu">О нас</a>
                 <a href="#" class="link_menu">Отзывы</a>
                 <a href="#" class="link_menu">Контакты</a>
+                <div class="movile_link d-lg-none pt-2">
+                  <p class="d-lg-none title_menu_mobile">Услуги</p>
+                  <a href="#" class="link_menu">Услуга 1</a>
+                  <a href="#" class="link_menu">Услуга 2</a>
+                  <a href="#" class="link_menu">Услуга 3</a>
+                  <a href="#" class="link_menu">Услуга 4</a>
+                </div>
               </div>
               <div class="nav-top__contact">
                 <a href="#" class="link_messenger"><img class="" src="img/telega.svg" alt="телеграм"></a>
@@ -137,7 +145,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  </div> 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script>
@@ -155,6 +163,8 @@
   <script>
     $('.btn_menu').click(function(){
       $('.header-nav__top').toggleClass('active');
+      $('.content').toggleClass('d-none');
+      $('.footer').toggleClass('d-none');
       $(this).toggleClass('active');
     });
   </script>
