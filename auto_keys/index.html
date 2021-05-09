@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,12 +28,17 @@
                 <a href="#" class="link_menu">О нас</a>
                 <a href="#" class="link_menu">Отзывы</a>
                 <a href="#" class="link_menu">Контакты</a>
-                <div class="movile_link d-lg-none pt-2">
+                <div class="mobile_link d-lg-none pt-2">
                   <p class="d-lg-none title_menu_mobile">Услуги</p>
                   <a href="#" class="link_menu">Услуга 1</a>
                   <a href="#" class="link_menu">Услуга 2</a>
                   <a href="#" class="link_menu">Услуга 3</a>
                   <a href="#" class="link_menu">Услуга 4</a>
+                </div>
+                <div class="mobile_btn_block d-lg-none">
+                  <p class="middle_text pt-3">Свяжитесь с нами</p>
+                  <a href="tel:+790311111111" class="btn_content btn_yellow btn_phone">+7(903)111 111 11</a>
+                  <a href="mailto:mail@mail.ru" class="btn_content btn_dark btn_mail mt-3">mail#mail.ru</a>
                 </div>
               </div>
               <div class="nav-top__contact">
@@ -165,6 +170,7 @@
       $('.header-nav__top').toggleClass('active');
       $('.content').toggleClass('d-none');
       $('.footer').toggleClass('d-none');
+      $('.header').toggleClass('active');
       $(this).toggleClass('active');
     });
   </script>
