@@ -206,6 +206,70 @@
           </div>
         </div>
       </section>
+      <section class="order">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="sub_title">/ РАСЧЕТ ЗАЙМА</p>
+              <h2 class="title_content">Заявка на получение денег</h2>
+              <p class="text_content pt-3 pb-4">Заполните поля, чтобы узнать сумму ежемесячного платяжа.</p>
+            </div>
+            <div class="col-lg-8 position-relative">
+              <img class="order_car" src="img/order_img.png" alt="">
+            </div>
+            <div class="col-12">
+              <div class="wrapper_order_form">
+                <form action="" class="">
+                  <fieldset>
+                    <div class="row align-items-start">
+                      <div class="col-lg-4 mb-3">
+                        <p class="title_input_form">Сумма займа</p>
+                        <label class="input_range mb-3">
+                          <div class="input_nums">
+                            <span id="rangeValue" class="">10000 </span><span> ₽</span>
+                          </div>
+                          <input class="" type="range" name="" value="10000" min="10000" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                        </label>
+                        <p class="title_input_form">Срок</p>
+                        <label class="input_range mb-3">
+                          <div class="input_nums">
+                            <span id="rangeValue_2" class="">6 </span><span>&nbsp;месяцев</span>
+                          </div>
+                          <input class="" type="range" name="" value="6" min="6" max="12" onChange="rangeSlide_2(this.value)"
+                            onmousemove="rangeSlide_2(this.value)">
+                        </label>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <p class="title_input_form">Ваш автомобиль</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="Hyundai Elentra">
+                        </label>
+                        <p class="title_input_form pt-2">Год выпуска</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="2006">
+                        </label>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <p class="title_input_form">Ваше имя</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="Иван">
+                        </label>
+                        <p class="title_input_form pt-2">Ваш телефон</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="+7 (903)111-111-11">
+                        </label>
+                      </div>
+                      <div class="offset-lg-4 col-lg-4">
+                        <button type="submit" class="btn_content btn_yellow btn_form">Получить займ</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
     <footer class="footer">
@@ -300,6 +364,14 @@
       $('.header , .btn_menu , .header-nav__top').removeClass('active');
       $('.content , .footer').removeClass('d-none');
     });
+  </script>
+  <script>
+    function rangeSlide(value) {
+      document.getElementById('rangeValue').innerHTML = value;
+    };
+    function rangeSlide_2(value) {
+      document.getElementById('rangeValue_2').innerHTML = value;
+    }
   </script>
 </body>
 </html>
