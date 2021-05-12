@@ -228,15 +228,14 @@
                           <div class="input_nums">
                             <span id="rangeValue" class="">10000 </span><span> ₽</span>
                           </div>
-                          <input class="" type="range" name="" value="10000" min="10000" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                          <input id="sliderValue" class="" type="range" name="" value="10000" min="10000" max="1000000" step="10000">
                         </label>
                         <p class="title_input_form">Срок</p>
                         <label class="input_range mb-3">
                           <div class="input_nums">
                             <span id="rangeValue_2" class="">6 </span><span>&nbsp;месяцев</span>
                           </div>
-                          <input class="" type="range" name="" value="6" min="6" max="12" onChange="rangeSlide_2(this.value)"
-                            onmousemove="rangeSlide_2(this.value)">
+                          <input id="sliderValue_2" class="" type="range" name="" value="6" min="1" max="12" step="1">
                         </label>
                       </div>
                       <div class="col-lg-4 mb-3">
@@ -366,12 +365,33 @@
     });
   </script>
   <script>
-    function rangeSlide(value) {
-      document.getElementById('rangeValue').innerHTML = value;
+    var slider = document.getElementById("sliderValue");
+    var output = document.getElementById("rangeValue");
+    var slider_2 = document.getElementById("sliderValue_2");
+    var output_2 = document.getElementById("rangeValue_2");
+    output.innerHTML = slider.value;
+    slider.oninput = function(){
+      output.innerHTML = this.value;
     };
-    function rangeSlide_2(value) {
-      document.getElementById('rangeValue_2').innerHTML = value;
-    }
+
+    slider.addEventListener("mousemove", function(){
+      var x = slider.value;
+      var color = 'linear-gradient(90deg, rgb(251, 152, 3)' + x / 10000 + '%, rgb(158, 158, 158)' + x / 10000 + '%)';
+      slider.style.background = color;
+    });
+    
+    output_2.innerHTML = slider_2.value;
+    slider_2.oninput = function(){
+      output_2.innerHTML = this.value;
+    };
+
+    slider_2.addEventListener("mousemove", function(){
+      var z = slider_2.value;
+      var color_2 = 'linear-gradient(90deg, rgb(251, 152, 3)' + z * 8 + '%, rgb(158, 158, 158)' + z * 8 + '%)';
+      slider_2.style.background = color_2;
+    });
+
+    
   </script>
 </body>
 </html>
