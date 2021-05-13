@@ -146,6 +146,9 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .foot_menu .link_menu{margin-bottom:10px;}
 
 
+
+
+
 @media(min-width:992px){
     .content.d-none{display:block !important;}
     .footer.d-none{display:block !important;}
