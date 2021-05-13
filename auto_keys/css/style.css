@@ -136,7 +136,14 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .btn-block.btn-link[aria-expanded="false"] .shevron{transform:rotateX(180deg);}
 .auto_img{position:relative;padding-top:500px;}
 .auto_img_bg_content{width:1920px;position:absolute;left:0;top:-500px;z-index:-1;}
-
+.about_us{background-color:#fff;width:100%;padding:80px 0 60px;}
+.wrapper_about_img{border-radius:10px;text-align:center;overflow:hidden;}
+.footer{width:100%;padding:0 0 60px;background-color:#F5F5F5;}
+.call_width_us{padding:40px 0;}
+.border_bot{border-bottom:1px solid #9E9E9E;}
+.footer .min_text{font-size:12px;}
+.foot_menu{display:flex;flex-direction:column;}
+.foot_menu .link_menu{margin-bottom:10px;}
 
 
 @media(min-width:992px){
