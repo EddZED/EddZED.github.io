@@ -59,13 +59,13 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
 .circle{display:inline-flex;width:120px;height:120px;border-radius:50%;background-color:#fff;box-shadow: 0px 6px 20px rgba(68, 68, 68, 0.1);align-items:center;justify-content:center;}
 .midlle_min{font-size:20px;line-height:20px;color:#444;text-align:center;font-weight:bold;}
 .micro_text{font-size:13px;line-height:18px;text-align:center;font-weight:300;}
-.title_block{font-size:42px;line-height:46px;font-weight:500;}
+.title_block{font-size:42px;line-height:46px;font-weight:500;font-family:'sfui_med';}
 .middle_min.reg{font-weight:normal;}
 .shev_left{position:relative;}
 .shev_left:before{content:'';position:absolute;width:7px;height:12px;background-image:url(../img/shev_left.svg);background-size:cover;left:-20px;top:0;bottom:0;margin:auto;}
 .middle_title{font-size:27px;line-height:46px;color:#444;font-weight:normal;font-weight:bold;}
 .middle_title span{font-family:'sfui_thin';font-weight:200;}
-.accordion>.card{border:none;padding-right:30px;}
+.accordion>.card{border:none;padding-right:35px;}
 .accordion>.card>.card-header{padding:0;border:none;background-color:#fff;}
 .btn-block{padding:15px 0;font-size:20px;line-height:24px;color:#444;font-weight:600;position:relative;text-decoration:none;}
 .btn-block:hover{text-decoration:none;color:#444;cursor:pointer;}
@@ -86,7 +86,24 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
 .checkbox span:before{content:'';position:absolute;width:17px;height:17px;left:0;top:0;border-radius:3px;border:1px solid #444;background-color:#fff;transition:all .3s;}
 .checkbox span:after{content:'';position:absolute;width:17px;height:17px;left:0;top:0;border-radius:3px;border:1px solid #444;background-color:#fff;opacity:0;transition:all .3s;}
 .checkbox input[type="checkbox"]:checked + span:after{background-color:#FFC325;box-shadow:inset 0 0 2px 2px rgba(0,0,0,.1);opacity:1;}
-.questions{padding:0 0 50px;}
+.questions{padding:0 0 80px;}
+.form_btn.btn_sub{width:100%;padding:15px 0;justify-content:center;}
+.footer{width:100%;padding:80px 0;background-color:#F5F5F5;}
+.share_block{display:flex;align-items:center;}
+.share_link{margin:0 7px;transition:all .3s;}
+.share_link:hover{transform:translateY(-2px);}
+.share_text{font-size:18px;line-height:23px;color:#444;font-weight:600;}
+.share_text span{color:#FFC325;}
+.subscribe{display:flex;width:100%;justify-content:space-between;}
+.subscribe input{padding:15px 0;margin-right:15px;border:none;border-bottom:1px solid #444;background-color:transparent;width:100%;}
+.subscribe input:focus{outline:none;}
+.subscribe input::-webkit-input-placeholder{font-size:16px;color:#444;font-weight:300;font-family:'Open Sans';}
+.btn_sub.subs{padding:0 14px 0 15px;}
+.approval{font-size:7.5px;line-height:10px;color:#444;font-weight:normal;}
+.footer_link{display:flex;flex-direction:column;}
+.footer_link_item{font-size:16px;line-height:34px;display:inline-block;color:#444;font-weight:normal;font-family:'Open Sans';}
+.footer_link_item:hover{color:#444;}
+
 
 @media(min-width:992px){
    content.d-none, .footer.d-none{display:block !important;}
@@ -101,6 +118,7 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
   .link_box .header_menu_btn.yellow{display:none;}
   .mobile_reg .header_menu_btn.yellow{width:100%;padding:15px 0;}
   .wrapper_intro{padding:40px 30px;}
+  .footer_link{align-items:center;}
 }
 @media(max-width:767px){
   .header_menu_block{display:none;}
@@ -122,12 +140,16 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
   .intro{padding-top:15px;}
   .advantages{padding:40px 0 20px;}
   .title_block{font-size:30px;line-height:35px;}
+  .footer{padding:50px 0 30px;}
+  .middle_title{font-size:22px;line-height:26px;}
+  .questions{padding:0 0 50px;}
 }
 @media(max-width:575px){
   .header_menu_block.active .header_menu_item{padding-top:15px;}
   .btn_sub{padding:0 5px 0 15px;}
   .btn_sub span{display:none;}
   .middle_text{font-size:20px;line-height:24px;}
+  .share_block{justify-content:space-between;}
 }
 @media(max-width:400px){
   .header_menu_block.active .header_menu_item{padding-top:0;}
