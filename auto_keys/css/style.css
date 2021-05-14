@@ -90,7 +90,7 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .title_content{font-size:35px;line-height:40px;color:#232525;font-family:'montser_semi';}
 .why_we{padding:80px 0 40px;}
 .text_content.bold_text{line-height:16px;font-family:'montser_semi';text-align:center;}
-.block_icon{display:flex;align-items:center;justify-content:center;padding:5px;border-radius:10px;background: #FFFFFF;box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);}
+.block_icon{display:flex;align-items:center;min-height:142px;justify-content:center;padding:5px;border-radius:10px;background: #FFFFFF;box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);}
 .bullit_body{height:100%;}
 .order{position:relative;padding:80px 0;background-color:#F7F7F7;}
 .order_car{position:absolute;top:-50px;left:0;}
@@ -149,6 +149,16 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .privacy{color:#232525;text-decoration:none;font-size:14px;line-height:18px;font-family:'montser_reg';display:inline-block;}
 .privacy:hover{color:232525;}
 .foot_menu .title_menu_mobile{font-size:14px;line-height:16px;color:#232525;font-family:'montser_semi';}
+.breadcrumb{background-color:transparent;padding-left:0;}
+.breadcrumb-item.active{color:#FBB603;font-family:'montser_light';font-size:14px;line-height:18px;}
+.breadcrumb-item a{color:#232525;font-family:'montser_light';font-size:14px;line-height:18px;}
+.header.bg_white{background-color:#fff;}
+.intro-block__wrapper.other_page{padding-bottom:70px;}
+.instruction.bg_gray{background-color:#F6F6F6;padding:70px 0;}
+.bullits{padding:80px 0 60px;}
+.bullits .text_content{font-size:13px;}
+
+
 
 
 @media(min-width:992px){
@@ -192,6 +202,7 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .way_bg{display:none;}
   .imporatnt_document{padding:40px 0;}
   .auto_img_bg_content {left:-410px;}
+  .bullits{padding:50px 0 40px;}
 }
 @media(max-width:767px){
   .main_title{font-size:40px;line-height:40px;}
@@ -203,6 +214,7 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .instruction{padding-top:40px;}
   .footer .btn_mail{max-width:100%;}
   .footer .btn_phone{max-width:100%;}
+  .instruction.bg_gray{padding:40px 0;}
 }
 @media(max-width:575px){
    .main_title{font-size:36px;line-height:44px;}
