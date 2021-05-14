@@ -65,12 +65,12 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
 .shev_left:before{content:'';position:absolute;width:7px;height:12px;background-image:url(../img/shev_left.svg);background-size:cover;left:-20px;top:0;bottom:0;margin:auto;}
 .middle_title{font-size:27px;line-height:46px;color:#444;font-weight:normal;font-weight:bold;}
 .middle_title span{font-family:'sfui_thin';font-weight:200;}
-.accordion>.card{border:none;padding-right:35px;}
+.accordion>.card{border:none;padding-right:25px;}
 .accordion>.card>.card-header{padding:0;border:none;background-color:#fff;}
 .btn-block{padding:15px 0;font-size:20px;line-height:24px;color:#444;font-weight:600;position:relative;text-decoration:none;}
 .btn-block:hover{text-decoration:none;color:#444;cursor:pointer;}
 .btn-block:focus{box-shadow:none;text-decoration:none;}
-.btn-block svg{position:absolute;right:0;top:20px;transition:all .3s;}
+.btn-block svg{position:absolute;right:-20px;top:25px;transition:all .3s;}
 .btn-block[aria-expanded="true"] svg{transform:rotateX(180deg);transition:all .3s;}
 .btn-block[aria-expanded="true"] svg path{stroke:#444444;transition:all .3s;}
 .card-body{padding:20px 0;font-size:18px;line-height:22px;color:#444;font-weight:300;}
@@ -103,7 +103,10 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
 .footer_link{display:flex;flex-direction:column;}
 .footer_link_item{font-size:16px;line-height:34px;display:inline-block;color:#444;font-weight:normal;font-family:'Open Sans';}
 .footer_link_item:hover{color:#444;}
-
+.clear{display:inline-block;position:absolute;width:20px;height:20px;background-color:transparent;top:0;bottom:0;margin:auto;right:120px;cursor:pointer;padding:3px;opacity:.5;transition:all .3s;}
+.clear:before{content:'';position:absolute;left:0;top:0;bottom:0;margin:auto;width:15px;height:2px;transform:rotateZ(45deg);background-color:#444;}
+.clear:after{content:'';position:absolute;left:0;top:0;bottom:0;margin:auto;width:15px;height:2px;transform:rotateZ(-45deg);background-color:#444;}
+.clear:hover{opacity:1;}
 
 @media(min-width:992px){
    content.d-none, .footer.d-none{display:block !important;}
@@ -150,6 +153,7 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
   .btn_sub span{display:none;}
   .middle_text{font-size:20px;line-height:24px;}
   .share_block{justify-content:space-between;}
+  .clear{right:50px;}
 }
 @media(max-width:400px){
   .header_menu_block.active .header_menu_item{padding-top:0;}

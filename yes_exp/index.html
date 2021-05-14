@@ -71,7 +71,8 @@
               <form action="">
                 <fieldset>
                   <label class="serach_input">
-                    <input type="text" class="" placeholder="Легкий поиск товаров">
+                    <input id="searchgoods" type="text" class="" placeholder="Легкий поиск товаров">
+                    <span class="clear" onclick="document.getElementById('searchgoods').value = ''"></span>
                     <button class="btn_sub" type="submit"><img src="img/search.png" class="img-fluid pr-2" alt="поиск"> <span>Найти</span></button>
                   </label>
                 </fieldset>
@@ -341,11 +342,11 @@
             <a href="#" class=""><img class="img-fluid" src="img/logo_intro.png" alt="yesexpress"></a>
             <div class="share_block pt-lg-5 pt-4">
               <p class="share_text pr-2 mb-0">Поделиться:</p>
-              <a href="#" class="share_link"><img class="img-fluid" src="img/tg.png" alt="телеграм"></a>
-              <a href="#" class="share_link"><img class="img-fluid" src="img/vk.png" alt="вконтакте"></a>
-              <a href="#" class="share_link"><img class="img-fluid" src="img/whats.png" alt="ватсап"></a>
-              <a href="#" class="share_link"><img class="img-fluid" src="img/insta.png" alt="инстаграм"></a>
-              <a href="#" class="share_link"><img class="img-fluid" src="img/face.png" alt="фейсбук"></a>
+              <a href="#" class="share_link"><img class="img-fluid" src="img/tg.svg" alt="телеграм"></a>
+              <a href="#" class="share_link"><img class="img-fluid" src="img/vk.svg" alt="вконтакте"></a>
+              <a href="#" class="share_link"><img class="img-fluid" src="img/whats.svg" alt="ватсап"></a>
+              <a href="#" class="share_link"><img class="img-fluid" src="img/insta.svg" alt="инстаграм"></a>
+              <a href="#" class="share_link"><img class="img-fluid" src="img/face.svg" alt="фейсбук"></a>
             </div>
           </div>
           <div class="col-lg-7">
@@ -404,46 +405,6 @@
       $('.footer').toggleClass('d-none');
     });
   </script>
-  <!--<script>
-    $(window).scroll(function () {
-      var height = $(window).scrollTop();
-      if (height > 0) {
-        $('.scrolling_top').addClass('scroll');
-        $('.header').addClass('blur');
-      } else {
-        $('.scrolling_top').removeClass('scroll');
-        $('.header').removeClass('blur');
-      }
-    });
-  </script>
-  <script>
-    var slider = document.getElementById("sliderValue");
-    var output = document.getElementById("rangeValue");
-    var slider_2 = document.getElementById("sliderValue_2");
-    var output_2 = document.getElementById("rangeValue_2");
-    output.innerHTML = slider.value;
-    slider.oninput = function(){
-      output.innerHTML = this.value;
-    };
-
-    slider.addEventListener("mousemove", function(){
-      var x = slider.value;
-      var color = 'linear-gradient(90deg, rgb(251, 152, 3)' + x / 10000 + '%, rgb(158, 158, 158)' + x / 10000 + '%)';
-      slider.style.background = color;
-    });
-    
-    output_2.innerHTML = slider_2.value;
-    slider_2.oninput = function(){
-      output_2.innerHTML = this.value;
-    };
-
-    slider_2.addEventListener("mousemove", function(){
-      var z = slider_2.value;
-      var color_2 = 'linear-gradient(90deg, rgb(251, 152, 3)' + z * 8 + '%, rgb(158, 158, 158)' + z * 8 + '%)';
-      slider_2.style.background = color_2;
-    });
-
-    
-  </script>-->
+  
 </body>
 </html>
