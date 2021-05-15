@@ -179,10 +179,10 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .order.other_page{background-color:#fff;}
 .intro-block__wrapper.other_page.contact{background-position:0 85px;}
 .wrapper_map{overflow:hidden;background-color:#C4C4C4;border-radius:10px;}
-.box_contact{position:absolute;padding:30px 20px; right:30px;top:15px;bottom:15px;width:35%;background: linear-gradient(180deg, #FBB603 0%, #FB9803 100%);box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);border-radius: 8px;overflow:hidden;}
-.map{padding:40px 0;}
-
-
+.box_contact{position:absolute;padding:60px 20px 20px; right:30px;top:15px;bottom:15px;width:35%;background: linear-gradient(180deg, #FBB603 0%, #FB9803 100%);box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);border-radius: 8px;overflow:hidden;}
+.map{padding:80px 0;}
+.white_link{font-size:26px;line-height:28px;color:#fff;font-family:'montser_semi';display:block;margin-bottom:15px;transition:all .3s;}
+.white_link:hover{color:#000;}
 
 @media(min-width:992px){
     .content.d-none{display:block !important;}
@@ -248,6 +248,7 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .intro-block__wrapper.other_page .intro-block__body{padding-top:70px;}
   .main_title.yellow.min{font-size:40px;line-height:50px;}
   .bullits{padding:20px 0;}
+  .map{padding:40px 0;}
 }
 @media(max-width:575px){
    .main_title{font-size:36px;line-height:44px;}
@@ -260,6 +261,8 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .card_steps{flex-direction:column;align-items:center;text-align:center;padding:10px 15px 60px 15px;}
   .wrapper_order_form{padding:25px 10px;}
   .order.other_page{padding:0 0 30px;}
+  .auto_img{padding-top:215px;}
+  .auto_img_bg_content{left:-215px;top:-286px;width:900px;}
 }
 @media(max-width:400px){
    .left_anim{left:32px;}
@@ -267,6 +270,8 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .intro-block__wrapper .btn_yellow{width:100%;justify-content:center;}
   .many_1_img{width:400px;object-position: 0px -90px;}
   .deposit_auto{padding-right:100px;}
+  .auto_img{padding-top:182px;}
+  .auto_img_bg_content{left:-222px;top:-210px;width:700px;}
 }
 @media(max-width:330px){
    .bg_intro{max-height:790px;}
