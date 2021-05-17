@@ -448,7 +448,7 @@ body{font-size:16px;background-color:#fff;}
     .desc_two .green_head{font-size:22px;line-height:26px;}
     .works_page .main_title{font-size:36px;line-height:46px;}
     .contacts_block{padding-top:40px;}
-    .wrapper_map{min-height:375px;}
+    .wrapper_map{max-height:375px;}
     .wrapper_map img{max-width:900px;}
     .variant{padding:20px 0;}
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АвтоКейс</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body> 
+  <div class="wrapper">
+    <header class="header">
+      
+    </header>
+    <div class="content">
+      
+    </div>
+    <footer class="footer">
+     
+    </footer>
+  </div> 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      var height = $(window).scrollTop();
+      if (height > 0) {
+        $('.scrolling_top').addClass('scroll');
+        $('.header').addClass('blur');
+      } else {
+        $('.scrolling_top').removeClass('scroll');
+        $('.header').removeClass('blur');
+      }
+    });
+  </script>
+  <script>
+    $('.btn_menu').click(function(){
+      $('.header-nav__top').toggleClass('active');
+      $('.content').toggleClass('d-none');
+      $('.footer').toggleClass('d-none');
+      $('.header').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+    $('.link_menu').click(function () {
+      $('.header , .btn_menu , .header-nav__top').removeClass('active');
+      $('.content , .footer').removeClass('d-none');
+    });
+  </script>
+  <script>
+    var slider = document.getElementById("sliderValue");
+    var output = document.getElementById("rangeValue");
+    var slider_2 = document.getElementById("sliderValue_2");
+    var output_2 = document.getElementById("rangeValue_2");
+    output.innerHTML = slider.value;
+    slider.oninput = function(){
+      output.innerHTML = this.value;
+    };
+
+    slider.addEventListener("mousemove", function(){
+      var x = slider.value;
+      var color = 'linear-gradient(90deg, rgb(251, 152, 3)' + x / 10000 + '%, rgb(158, 158, 158)' + x / 10000 + '%)';
+      slider.style.background = color;
+    });
+    
+    output_2.innerHTML = slider_2.value;
+    slider_2.oninput = function(){
+      output_2.innerHTML = this.value;
+    };
+
+    slider_2.addEventListener("mousemove", function(){
+      var z = slider_2.value;
+      var color_2 = 'linear-gradient(90deg, rgb(251, 152, 3)' + z * 8 + '%, rgb(158, 158, 158)' + z * 8 + '%)';
+      slider_2.style.background = color_2;
+    });
+
+    
+  </script>
+</body>
+</html>
