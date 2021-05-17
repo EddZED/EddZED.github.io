@@ -258,7 +258,7 @@ body{font-size:16px;background-color:#fff;}
 .contacts_block{width:100%;padding:80px 0;}
 .wrapper_contact{position:relative;width:100%;}
 .wrapper_map{overflow:hidden;border-radius:10px;box-shadow:0px 4px 12px rgba(0, 10, 32, 0.1);z-index:1;}
-.wrapper_adress{position:absolute;left:40%;padding:20px 15px;top:15px;bottom:0;background-color:#fff;box-shadow: 0px 4px 12px rgba(0, 10, 32, 0.1);border-radius: 8px;display:flex;flex-direction:column;justify-content:space-between;}
+.wrapper_adress{position:absolute;left:40%;max-width:270px;padding:20px 15px;top:15px;bottom:0;background-color:#fff;box-shadow: 0px 4px 12px rgba(0, 10, 32, 0.1);border-radius: 8px;display:flex;flex-direction:column;justify-content:space-between;}
 .wrapper_adress .title_adress{font-size:18px;line-height:20px;color:#009C77;font-family:'mont_semibold';}
 .wrapper_adress .text_content.bold{font-size:14px;font-family:'mont_semibold';}
 .wrapper_contact .wrapper_phone{position:absolute;right:15px;padding:30px 15px;min-width:355px;top:15px;bottom:0;background-color:#d9dde8;border-radius:8px;box-shadow:0px 4px 12px rgba(0, 10, 32, 0.1);border-radius: 8px;overflow:hidden;}
@@ -372,7 +372,7 @@ body{font-size:16px;background-color:#fff;}
     .al_glazing .bg_intro{max-height:750px;max-width:1440px;object-position:center center;}
     .works_page .bg_intro{min-height:450px}
     .about_item_card{flex-direction:column;text-align:center;}
-    .wrapper_adress{position:relative;left:auto;}
+    .wrapper_adress{position:relative;left:auto;max-width:100%;}
     .wrapper_contact .wrapper_phone{position:relative;right:auto;min-height:300px;}
     .man_img{right:0;bottom:0;}
     .wrap_desc_img_window img{width:700px;object-fit:cover;}
