@@ -14,10 +14,41 @@
 <body> 
   <div class="wrapper">
     <header class="header">
-      
+      <nav class="header_menu">
+        <div class="container">
+          <div class="header_nav">
+            <div class="header_logo">
+              <img src="img/logo.png" class="img-fluid" alt="чайка">
+            </div>
+            <div class="header_menu_block">
+              <div class="header_menu_item">
+                <a href="#" class="header_menu_link">Оплата QR кодом</a>
+                <a href="#" class="header_menu_link">Для менеджера</a>
+                <a href="#" class="header_menu_link">Для официанта</a>
+                <a href="#" class="btn_green ml-lg-5">Вход</a>
+              </div>
+            </div>
+            <button class="btn_menu d-lg-none"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="content">
-      
+      <section class="intro green">
+        <div class="container text_intro">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="main_title">Принимайте чаевые картой по QR‑коду</h1>
+              <p class="text_content pt-3">Чайка — безналичные чаевые на банковскую карту сотрудника персонала. Мотивируйте персонал и получайте отзывы реальных
+              гостей.</p>
+              <a href="#" class="link_green_text mt-2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="img_box">
+          <img class="img_people" src="img/people.png" alt="чаевые">
+        </div>
+      </section>
     </div>
     <footer class="footer">
      
@@ -26,58 +57,12 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script>
-    $(window).scroll(function () {
-      var height = $(window).scrollTop();
-      if (height > 0) {
-        $('.scrolling_top').addClass('scroll');
-        $('.header').addClass('blur');
-      } else {
-        $('.scrolling_top').removeClass('scroll');
-        $('.header').removeClass('blur');
-      }
-    });
-  </script>
-  <script>
-    $('.btn_menu').click(function(){
-      $('.header-nav__top').toggleClass('active');
+   $('.btn_menu').click(function () {
+      $('.header').toggleClass('active');
       $('.content').toggleClass('d-none');
       $('.footer').toggleClass('d-none');
-      $('.header').toggleClass('active');
-      $(this).toggleClass('active');
+      $('.wrapper').toggleClass('active');
     });
-    $('.link_menu').click(function () {
-      $('.header , .btn_menu , .header-nav__top').removeClass('active');
-      $('.content , .footer').removeClass('d-none');
-    });
-  </script>
-  <script>
-    var slider = document.getElementById("sliderValue");
-    var output = document.getElementById("rangeValue");
-    var slider_2 = document.getElementById("sliderValue_2");
-    var output_2 = document.getElementById("rangeValue_2");
-    output.innerHTML = slider.value;
-    slider.oninput = function(){
-      output.innerHTML = this.value;
-    };
-
-    slider.addEventListener("mousemove", function(){
-      var x = slider.value;
-      var color = 'linear-gradient(90deg, rgb(251, 152, 3)' + x / 10000 + '%, rgb(158, 158, 158)' + x / 10000 + '%)';
-      slider.style.background = color;
-    });
-    
-    output_2.innerHTML = slider_2.value;
-    slider_2.oninput = function(){
-      output_2.innerHTML = this.value;
-    };
-
-    slider_2.addEventListener("mousemove", function(){
-      var z = slider_2.value;
-      var color_2 = 'linear-gradient(90deg, rgb(251, 152, 3)' + z * 8 + '%, rgb(158, 158, 158)' + z * 8 + '%)';
-      slider_2.style.background = color_2;
-    });
-
-    
   </script>
 </body>
 </html>
