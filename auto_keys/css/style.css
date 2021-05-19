@@ -185,7 +185,12 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .white_link{font-size:26px;line-height:28px;color:#fff;font-family:'montser_semi';display:block;margin-bottom:15px;transition:all .3s;}
 .white_link:hover{color:#000;}
 
-
+/*new style*/
+.drop_menu{position:relative;}
+.drop_menu_box{list-style:none;padding-left:0;border-radius:0 0 4px 4px; position:absolute;left:0;top:20px;min-width:300px;background-color:rgba(255,255,255,.8);transition:all .3s;margin-bottom:0;overflow:hidden;height:0;box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);}
+.drop_menu:hover .drop_menu_box{height:auto;}
+.drop_menu_link{display:inline-block;width:100%; padding:7px 15px;font-size: 16px;line-height: 18px;color: #232525;font-family: 'montser_reg';transition:all .3s;}
+.drop_menu_link:hover{text-decoration:none;background-color:rgba(255,255,255,1);color:inherit;}
 
 
 @media(min-width:992px){

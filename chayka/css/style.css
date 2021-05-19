@@ -23,6 +23,21 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .link_green_text:before{content:'';position:absolute;left:0;right:0;bottom:3px;height:2px;background-color:#3E5618;transition:all .3s;}
 .link_green_text:hover{color:#3E5618;text-decoration:none;color:#fff;}
 .link_green_text:hover:before{background-color:#fff;}
+.wrapper_box_description{position:absolute;bottom:-87px;left:0;width:100%;}
+.container.box_description{position:absolute;display:flex;left:0;bottom:0;margin:auto;right:0;z-index:2;background-color:#FAFAFA;box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);border-radius: 12px;}
+.box_description_item{flex:1 1 25%;padding:30px;border-right:1px solid #3E5618;display:flex;flex-direction:column;justify-content:space-between;}
+.img_block_description{text-align:left;}
+.title_item{font-size:22px;line-height:32px;color:#151414;font-family:'circe_bold';}
+.text_item{font-size:15px;line-height:22px;color:#151414;font-family:'circe_light';}
+.box_description_item:last-of-type{border-right:none;}
+.questions{padding:150px 0 40px 0;}
+.title_content{font-size:46px;line-height:50px;letter-spacing:0.01em;font-family:'circe_bold';}
+.num_light{font-size:22px;line-height:18px;color:#717171;font-family:'circe_light';}
+.title_min{font-size:16px;line-height:14px;font-family:'circe_bold';}
+.text_content.min{font-size:15px;line-height:18px;color:#717171;}
+.whom{padding:20px 0;}
+
+
 
 
 @media(min-width:1550px){
@@ -48,11 +63,26 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .wrapper.active{overflow:visible;}
   .header_logo{max-width:130px;}
   .container.text_intro{top:40px;}
+  .box_description_item{flex:1 1 50%;}
+  .container.box_description{flex-wrap:wrap;}
+  .box_description_item:nth-of-type(2){border-right:none;}
+  .box_description_item:nth-of-type(3), .box_description_item:nth-of-type(4){border-top:1px solid #3E5618;}
+  .wrapper_box_description{bottom:-260px;}
+  .questions{padding:305px 0 40px 0;}
 }
 @media(max-width:767px){
   .header_logo{max-width:100px;}
+  .title_content {font-size:36px;line-height:42px;}
+  .main_title {font-size:45px;line-height:50px;}
 }
-
+@media(max-width:575px){
+  .box_description_item{flex:1 1 100%;padding:20px 30px;}
+  .box_description_item:nth-of-type(2){border-top:1px solid #3E5618;}
+  .container.box_description{position:relative;}
+  .wrapper_box_description{bottom:15px;position:relative;}
+  .questions{padding:40px 0 40px 0;}
+  .main_title {font-size:40px;line-height:45px;}
+}
 
 
 
