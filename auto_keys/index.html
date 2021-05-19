@@ -64,7 +64,7 @@
               <div class="nav-top__contact">
                 <a href="#" class="link_messenger"><img class="" src="img/telega.svg" alt="телеграм"></a>
                 <a href="#" class="link_messenger"><img class="" src="img/whats_icon.svg" alt="ватс ап"></a>
-                <a href="#" class="btn_content btn_yellow">Заказать звонок</a>
+                <a href="#" data-toggle="modal" data-target="#order_modal" class="btn_content btn_yellow">Заказать звонок</a>
                 <a href="tel:+790311111111" class="link_phone">8(903)111 111 11</a>
               </div>
             </div>
@@ -596,6 +596,53 @@
         </div>
       </section>
     </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="order_modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close.svg" alt="закрыть">
+          </button>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5 d-none d-lg-block">
+                <img class="img-fluid" src="img/car_modal.png" alt="машина">
+              </div>
+              <div class="col-lg-7">
+                <form action="" class="">
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-12 pb-lg-3">
+                        <h2 class="title_content">Отавьте заявку</h2>
+                        <p class="text_content pt-3">Оставьте свои данные и мы свяжимся с Вами в ближайшее время.</p>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <p class="title_input_form">Ваше имя</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="Иван">
+                        </label>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <p class="title_input_form">Ваш телефон</p>
+                        <label class="input_text mb-3">
+                          <input type="text" class="input_form" placeholder="+7 (903)111-111-11">
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn_content btn_yellow btn_form">Отправить</button>
+                        <p class="micro_text text-left pt-3">Нажимая на кнопку,<br>я соглашаюсь с условиями <a href="#">политики конфиденциальности</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

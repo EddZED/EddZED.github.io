@@ -191,6 +191,10 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
 .drop_menu:hover .drop_menu_box{height:auto;}
 .drop_menu_link{display:inline-block;width:100%; padding:7px 15px;font-size: 16px;line-height: 18px;color: #232525;font-family: 'montser_reg';transition:all .3s;}
 .drop_menu_link:hover{text-decoration:none;background-color:rgba(255,255,255,1);color:inherit;}
+/*modal window style*/
+.modal-content{background-color:#fff;box-shadow: 0px 4px 30px rgba(35, 37, 37, 0.15);border-radius: 10px;position:relative;}
+.close{position:absolute;right:20px;top:20px;z-index:1;}
+.modal-body{padding:50px 40px 50px 40px;}
 
 
 @media(min-width:992px){
@@ -261,6 +265,8 @@ body{font-size:16px;background-color:#fff;font-family:'montser_reg';font-size:14
   .main_title.yellow.min{font-size:40px;line-height:50px;}
   .bullits{padding:20px 0;}
   .map{padding:40px 0;}
+  .modal-body{padding:30px 15px;}
+  .close{right:10px;top:10px;}
 }
 @media(max-width:575px){
    .main_title{font-size:36px;line-height:44px;}
