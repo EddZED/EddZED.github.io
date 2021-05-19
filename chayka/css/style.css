@@ -63,6 +63,39 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .footer{padding:60px 0;}
 .icon_block{display:flex;align-items:center;padding-top:20px;justify-content:space-around;}
 .footer_menu{display:block;font-size:16px;line-height:26px;color:#151414;font-family:'circe_reg';margin-bottom:10px;}
+.intro.green.quar_page{padding:150px 0;}
+.quar_page .main_title{position:relative;}
+.quar_page .main_title img{position:absolute;right:0;top:0;}
+.card_waitres{display:flex;align-items:center;}
+.name_waitres{font-size:22px;line-height:32px;color:#151414;font-family:'circe_bold';}
+.wrapper_estimation{background-color:#FAFAFA;border-radius:12px;box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);padding:40px 15px;}
+.summ{width:100%;display:flex;justify-content:center;text-align:center;font-size:40px;line-height:49px;color:#151414;font-family:'circe_bold';}
+.summ .value_summ{width:80%;border:none;border-bottom:1px solid #3E5618;text-align:center;}
+.wrapper_summ{position:relative;background-color:#F2F2F2;border-radius:200px;display:flex;justify-content:space-between;}
+.radiocheck{margin-bottom:0;cursor:pointer;transition:all .3s;}
+.quantity[type="radio"]{display:none;}
+.radiocheck .value{display:inline-block;width:63px;height:63px;border-radius:50%;background-color:transparent;font-size:20px;font-family:'circe_light';display:flex;align-items:center;justify-content:center;transition:all .3s;}
+.radiocheck:hover .value{background-color:#C0EF2F;}
+.radiocheck .quantity[type="radio"]:checked + span{background-color:#C0EF2F;}
+.wrapper_star{display:flex;justify-content:center;align-items:center;flex-direction:row-reverse;}
+.star_item{position:relative;overflow:hidden;width:20px;height:40px;display:flex;justify-content:center;align-items:center;cursor:pointer;-webkit-appearance:none;appearance:none;margin:0;}
+.star_item:before{content:'\f005';position:absolute;font-family:fontAwesome;font-size:40px;left:1px;color:#E5E5E5;transition:all .5s;}
+.star_item:nth-child(2n+1):before{right:1px;left:initial;}
+.star_item:hover ~.star_item:before{color:#C0EF2F;}
+.star_item:hover:before{color:#C0EF2F;}
+.star_item:focus{outline:none;}
+.star_item:checked ~.star_item:before{color:#C0EF2F;}
+.star_item:checked:before{color:#C0EF2F;}
+.text_area{width:100%;}
+.text_area textarea{display:inline-block;width:100%;background-color:#F2F2F2;width:100%;border-radius:200px;padding:23px 25px;border:none;}
+.text_area textarea:focus{outline:none;}
+.text_area textarea::-webkit-input-placeholder{font-size:15px;line-height:22px;color:rgb(21, 20, 20, .4);font-family:'circe_light';}
+.pay_btn{width:100%;display:inline-flex;align-items:center;justify-content:center;margin-top:20px;background-color:#C0EF2F;padding:20px 0;border-radius:200px;font-size:18px;color:#151414;font-family:'circe_bold';border:1px solid #C0EF2F;transition:all .3s;}
+.pay_btn:focus{outline:none;}
+.pay_btn:hover{background-color:transparent;}
+.pay_btn.bg_white{background-color:transparent;}
+.pay_btn.bg_white:hover{background-color:#C0EF2F;}
+
 
 
 @media(min-width:1550px){
@@ -96,6 +129,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .questions{padding:305px 0 40px 0;}
   .wrapper_img{text-align:center;margin-bottom:40px;}
   .img_promo{bottom:auto;position:relative;max-width:100%;}
+  .intro.green.quar_page{padding-bottom:50px;padding-top:120px;}
 }
 @media(max-width:767px){
   .header_logo{max-width:100px;}
@@ -106,6 +140,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .name_foto{font-size:24px;line-height:20px;}
   .how_it_work{padding:0 0 20px;}
   .promo{padding:40px 0;}
+  .intro.green.quar_page{padding-top:100px;}
 }
 @media(max-width:575px){
   .box_description_item{flex:1 1 100%;padding:20px 30px;}
@@ -114,6 +149,9 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .wrapper_box_description{bottom:15px;position:relative;}
   .questions{padding:20px 0;}
   .main_title {font-size:40px;line-height:45px;}
+  .quar_page .main_title img{display:none;}
+  .wrapper_estimation{padding:30px 5px;}
+  .card_waitres{flex-direction:column;text-align:center;}
 }
 
 
