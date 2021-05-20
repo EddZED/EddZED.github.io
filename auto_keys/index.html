@@ -68,7 +68,7 @@
                 <a href="tel:+790311111111" class="link_phone">8(903)111 111 11</a>
               </div>
             </div>
-            <a href="#" class="btn_menu order-lg-3 order-2 d-lg-none"><span></span></a>
+            <button class="btn_menu order-lg-3 order-2 d-lg-none"><span></span></button>
           </div>
         </div>
       </div>
@@ -661,9 +661,9 @@
   <script>
     $('.btn_menu').click(function(){
       $('.header-nav__top').toggleClass('active');
+      $('.header').toggleClass('active');
       $('.content').toggleClass('d-none');
       $('.footer').toggleClass('d-none');
-      $('.header').toggleClass('active');
       $(this).toggleClass('active');
     });
     $('.link_menu').click(function () {
