@@ -62,25 +62,25 @@
                         <p class="text_content text-center">Сумма чаевых</p>
                         <label class="summ">
                           <div class="value_summ">
-                            <span id="many" name="txt">50</span>
+                            <span id="many" class="many" name="txt">50</span>
                             <span>₽</span>
                           </div>
                         </label>
                         <div class="wrapper_summ mt-4">
                           <label class="radiocheck">
-                            <input name="quantity" type="radio" class="quantity" value="50" checked>
+                            <input id="num_1" name="quantity" type="radio" class="quantity" value="50" checked>
                             <span class="value">50<span>₽</span></span>
                           </label>
                           <label class="radiocheck">
-                            <input name="quantity" type="radio" class="quantity" value="100">
+                            <input id="num_2" name="quantity" type="radio" class="quantity" value="100">
                             <span class="value">100<span>₽</span></span>
                           </label>
                           <label class="radiocheck">
-                            <input name="quantity" type="radio" class="quantity" value="300">
+                            <input id="num_3" name="quantity" type="radio" class="quantity" value="300">
                             <span class="value">300<span>₽</span></span>
-                          </label>
+                          </label> 
                           <label class="radiocheck">
-                            <input name="quantity" type="radio" class="quantity" value="500">
+                            <input id="num_4" name="quantity" type="radio" class="quantity" value="500">
                             <span class="value">500<span>₽</span></span>
                           </label>
                         </div>
@@ -153,6 +153,30 @@
       $('.footer').toggleClass('d-none');
       $('.wrapper').toggleClass('active');
     });
+  </script>
+  <script>
+    var sum = document.getElementById("many"),
+      val1 = document.getElementById('num_1');
+    val2 = document.getElementById('num_2');
+    val3 = document.getElementById('num_3');
+    val4 = document.getElementById('num_4');
+    document.getElementById('num_1').addEventListener('click',
+      function () {
+        sum.innerText = this.value;
+      });
+    document.getElementById('num_2').addEventListener('click',
+      function () {
+        sum.innerText = this.value;
+      });
+    document.getElementById('num_3').addEventListener('click',
+      function () {
+        sum.innerText = this.value;
+      });
+    document.getElementById('num_4').addEventListener('click',
+      function () {
+        sum.innerText = this.value;
+      });
+
   </script>
   <script>
     
