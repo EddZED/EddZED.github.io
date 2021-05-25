@@ -11,9 +11,9 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="navbar sticky-top flex-md-nowrap p-0">
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
-      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+    <header class="navbar sticky-top flex-lg-nowrap p-0">
+      <a class="navbar-brand col-lg-3 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
+      <button class="navbar-toggler position-absolute d-lg-none collapsed" type="button" data-toggle="collapse"
         data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><span></span></span>
       </button>
@@ -60,7 +60,7 @@
     </header>
     <div class="container-fluid">
       <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-xl-2 d-md-block sidebar collapse">
+        <nav id="sidebarMenu" class="col-lg-3 d-lg-flex sidebar collapse">
           <div class="position-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -201,9 +201,11 @@
               </li>
             </ul>
           </div>
+          <div class="position-sticky pb-3">
+            <div class="language_select">Русский</div>
+          </div>
         </nav>
-    
-        <main class="col-md-9 ml-sm-auto col-xl-10 px-md-4">
+        <main class="col-lg-9 ml-sm-auto px-md-4">
           <div class="content pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page ">Мои кошельки</h1>
             <div class="wrapper_wallet">
@@ -237,13 +239,24 @@
                       <div class="inner_block">
                         <p class="white_text mb-2"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
                         <div class="amount_box">
-                          <span id="amount" class="amount left_desctop">–1 120 000 </span><span class="amount">&#160;₸</span>
+                          <span id="amount_1" class="amount left_desctop">–1 120 000 </span><span class="amount">&#160;₸</span>
                         </div>
                       </div>
                     </div>
                     <div class="col-6">
-
+                      <div class="inner_block">
+                        <p class="white_text mb-2"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
+                        <div class="amount_box">
+                          <span id="amount_2" class="amount left_desctop">+4 230 000 </span><span class="amount">&#160;₸</span>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div class="footer_wallet">
+                  <p class="white_text mb-2">Баланс</p>
+                  <div class="amount_box total">
+                    <span id="balance" class="amount">3 150 000</span><span class="amount">&#160;₸</span>
                   </div>
                 </div>
               </div>
