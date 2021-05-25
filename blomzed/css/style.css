@@ -47,8 +47,14 @@ body{background-color:#F5F5F5;}
 .card.card-body{border:none;background-color:transparent;}
 .drop_link{padding-left:45px;}
 
-
-
+/*style page content*/
+.title_page{font-size:36px;line-height:52px;color:#000;font-family:'inter_bold';}
+.btn_blue{transition:all .3s;display:inline-flex;align-items:center;font-size:16px;line-height:24px;color:#fff;font-family:'inter_medium';border:none;background-color:#5959D3;border-radius:14px;padding:12px 20px;}
+.btn_blue:focus{outline:none;}
+.btn_blue:hover{color:#000;}
+.btn_blue:hover .shevron_white svg path{stroke:#000;}
+.shevron_white{display:inline-block;padding-right:10px;}
+.shevron_white svg path{stroke:#fff;transition:stroke .3s;}
 
 
 
