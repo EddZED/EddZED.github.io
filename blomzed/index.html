@@ -12,12 +12,12 @@
 <body>
   <div class="wrapper">
     <header class="navbar sticky-top flex-lg-nowrap p-0">
-      <a class="navbar-brand col-lg-3 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
+      <a class="navbar-brand col-lg-3 order-1 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
       <button class="navbar-toggler position-absolute d-lg-none collapsed" type="button" data-toggle="collapse"
         data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><span></span></span>
       </button>
-      <div class="search_block">
+      <div class="search_block order-lg-2 order-3">
         <form action="" class="">
           <label class="input_label">
             <input class="form_input" type="text" placeholder="Поиск по слову" aria-label="Search">
@@ -25,7 +25,7 @@
           </label>
         </form>
       </div>
-      <ul class="navbar-nav px-3">
+      <ul class="navbar-nav order-lg-3 order-2 px-3">
         <button class="btn_bell">
           <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -60,7 +60,7 @@
     </header>
     <div class="container-fluid">
       <div class="row">
-        <nav id="sidebarMenu" class="col-lg-3 d-lg-flex sidebar collapse">
+        <nav id="sidebarMenu" class="col-lg-3 col-xxl-2 d-lg-flex sidebar collapse">
           <div class="position-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -201,11 +201,23 @@
               </li>
             </ul>
           </div>
-          <div class="position-sticky pb-3">
-            <div class="language_select">Русский</div>
+          <div class="sidebar_menu pb-3">
+            <div class="language_select order-lg-1 order-2">
+              <img class="img-fluid pr-2" src="img/flag.png" alt="русский"> 
+              <p class="text_content mb-0">Русский</p>
+              <img class="img-fluid pl-2" src="img/shevron.svg" alt="шеврон">
+            </div>
+            <div class="bottom_menu_sidebar order-lg-2 order-1 pt-lg-3">
+              <a href="#" class="menu_link_sidebar">О компании</a>
+              <a href="#" class="menu_link_sidebar">Контакты</a>
+              <a href="#" class="menu_link_sidebar">Правила</a>
+              <a href="#" class="menu_link_sidebar">Оферта</a>
+              <a href="#" class="menu_link_sidebar">Помощь</a>
+              <a href="#" class="menu_link_sidebar">Отзыв</a>
+            </div>
           </div>
         </nav>
-        <main class="col-lg-9 ml-sm-auto px-md-4">
+        <main class="col-lg-9 col-xxl-10 ml-sm-auto px-md-4">
           <div class="content pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page ">Мои кошельки</h1>
             <div class="wrapper_wallet">
@@ -235,17 +247,17 @@
                 </div>
                 <div class="body_wallet">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
                       <div class="inner_block">
-                        <p class="white_text mb-2"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
+                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
                         <div class="amount_box">
                           <span id="amount_1" class="amount left_desctop">–1 120 000 </span><span class="amount">&#160;₸</span>
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <div class="inner_block">
-                        <p class="white_text mb-2"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
+                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Пополнения</p>
                         <div class="amount_box">
                           <span id="amount_2" class="amount left_desctop">+4 230 000 </span><span class="amount">&#160;₸</span>
                         </div>
