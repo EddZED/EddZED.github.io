@@ -55,8 +55,8 @@ body{background-color:#F5F5F5;}
 .btn_blue:hover .shevron_white svg path{stroke:#000;}
 .shevron_white{display:inline-block;padding-right:10px;}
 .shevron_white svg path{stroke:#fff;transition:stroke .3s;}
-
-
+.wrapper_wallet{position:relative;margin-top:20px;}
+.wrapper_wallet img{pointer-events:none;}
 
 
 @media(max-width:1199px){
