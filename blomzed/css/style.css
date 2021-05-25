@@ -47,7 +47,8 @@ body{background-color:#F5F5F5;}
 .card.card-body{border:none;background-color:transparent;}
 .drop_link{padding-left:45px;}
 
-/*style page content*/
+/*style page main content*/
+.content{display:block;width:100%;position:relative;}
 .title_page{font-size:36px;line-height:52px;color:#000;font-family:'inter_bold';}
 .btn_blue{transition:all .3s;display:inline-flex;align-items:center;font-size:16px;line-height:24px;color:#fff;font-family:'inter_medium';border:none;background-color:#5959D3;border-radius:14px;padding:12px 20px;}
 .btn_blue:focus{outline:none;}
@@ -55,8 +56,22 @@ body{background-color:#F5F5F5;}
 .btn_blue:hover .shevron_white svg path{stroke:#000;}
 .shevron_white{display:inline-block;padding-right:10px;}
 .shevron_white svg path{stroke:#fff;transition:stroke .3s;}
-.wrapper_wallet{position:relative;margin-top:20px;}
+.wrapper_wallet{position:relative;margin-top:20px;display:inline-flex;width:auto;}
 .wrapper_wallet img{pointer-events:none;}
+.content_wallet{width:100%;height:100%;padding:40px 50px 40px 35px;position:absolute;left:0;top:0;}
+.header_wallet{display:flex;align-items:center;justify-content:space-between;}
+.wallet_score{font-size:20px;color:#fff;font-family:'inter_bold';}
+.wallet_settings{width:36px;height:36px;border-radius:9px;background-color:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:16px;font-family:'inter_bold';color:#fff;border:none;}
+.wallet_settings:focus{outline:none;}
+.button_group_wallet{position:relative;}
+.wallet_set_wrap{position:absolute;top:100%;right:0;width:215px;padding-top:10px;opacity:0;visibility:hidden;transition:all .3s;}
+.wallet_set_item{width:100%;padding:15px 20px;background-color:#fff;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 6px 24px rgba(0, 0, 0, 0.06);border-radius: 12px;}
+.button_group_wallet:hover .wallet_set_wrap{opacity:1;visibility:visible;}
+.wallet_set_item .link_item_profile{line-height:25px;font-size:14px;}
+.body_wallet{padding-top:40px;}
+.white_text{font-size:16px;line-height:24px;color:#fff;font-family:'inter_bold';}
+.amount_box{display:flex;align-items:center;}
+.amount{}
 
 
 @media(max-width:1199px){

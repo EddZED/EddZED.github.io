@@ -60,7 +60,7 @@
     </header>
     <div class="container-fluid">
       <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-xl-2 d-md-block sidebar collapse">
           <div class="position-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -203,12 +203,50 @@
           </div>
         </nav>
     
-        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div class="d-flex flex-column pt-lg-4 pt-3 pb-2 mb-3">
+        <main class="col-md-9 ml-sm-auto col-xl-10 px-md-4">
+          <div class="content pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page ">Мои кошельки</h1>
             <div class="wrapper_wallet">
               <img class="img-fluid" src="img/wallet_img.png" alt="кошелек">
+              <div class="content_wallet">
+                <div class="header_wallet">
+                  <span id="wallet_score" class="wallet_score">6263 8431 5253 6667</span>
+                  <div class="button_group_wallet">
+                    <button class="wallet_settings"><img class="img-fluid" src="img/dots.svg" alt="менюсчета"></button>
+                    <div class="wallet_set_wrap">
+                      <div class="wallet_set_item">
+                        <a href="#" class="link_item_profile">
+                          <img class="img-fluid pr-2" src="img/download_icon.svg" alt="загрузить">
+                          Загрузить детали 
+                        </a>
+                        <a href="#" class="link_item_profile">
+                          <img class="img-fluid pr-2" src="img/download_icon.svg" alt="загрузить">
+                          Загрузить выписку
+                        </a>
+                        <a href="#" class="link_item_profile mb-0">
+                          <img class="img-fluid pr-2" src="img/limit_icon.svg" alt="загрузить">
+                          Лимиты по кошельку
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="body_wallet">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="inner_block">
+                        <p class="white_text"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
+                        <div class="amount_box">
+                          <span id="amount" class="amount">–1 120 000 <span>₸</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
 
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>
