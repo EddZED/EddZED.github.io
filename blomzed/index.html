@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomzed</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="navbar sticky-top flex-md-nowrap p-0">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+        data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><span></span></span>
+      </button>
+      <div class="search_block">
+        <form action="" class="">
+          <label class="input_label">
+            <input class="form_input" type="text" placeholder="Поиск по слову" aria-label="Search">
+            <button type="submit" class="btn_search"><img class="img-fluid" src="img/icon_search.svg" alt="поиск"></button>
+          </label>
+        </form>
+      </div>
+      <ul class="navbar-nav px-3">
+        <button class="btn_bell">
+          <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10 2V2.28988C12.8915 3.15043 15 5.82898 15 9V16H16V18H0V16H1V9C1 5.82898 3.10851 3.15043 6 2.28988V2C6 0.89543 6.8954 0 8 0C9.1046 0 10 0.89543 10 2ZM3 16H13V9C13 6.23858 10.7614 4 8 4C5.23858 4 3 6.23858 3 9V16ZM10 20V19H6V20C6 21.1046 6.8954 22 8 22C9.1046 22 10 21.1046 10 20Z"
+              fill="black" />
+          </svg>
+        </button>
+        <li class="nav-item">
+          <button class="nav_profile" href="#">
+            <img class="img-fluid pr-2" src="img/profile_avatar.png" alt="аватар">
+            Dias Moldashev
+            <img class="shevron_down ml-2" src="img/shevron.svg" alt="шеврон вниз">
+          </button>
+          <div class="hidden_block">
+            <div class="wrapper_hidden_block">
+              <a href="#" class="link_item_profile">
+                <div class="icon_item"><img class="img-fluid" src="img/profile_logo.svg" alt="профиль"></div>
+                Мой профиль
+              </a>
+              <a href="#" class="link_item_profile">
+                <div class="icon_item"><img class="img-fluid" src="img/profile_settings.svg" alt="настройки"></div>
+                Настройки
+              </a>
+              <a href="#" class="link_item_profile border_top mb-0 pt-3">
+                <div class="icon_item"><img class="img-fluid" src="img/exit_icon.svg" alt="выход"></div>
+                Выход
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.683 4.15238L5.02449 9.10357C4.37344 9.67324 4 10.4962 4 11.3613V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H18C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V11.3613C20 10.4962 19.6266 9.67324 18.9755 9.10358L13.317 4.15238C12.563 3.49259 11.437 3.49259 10.683 4.15238Z"
+                        stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9 21V16C9 14.8954 9.89543 14 11 14H13C14.1046 14 15 14.8954 15 16V21" stroke="#000" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Главная
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  href="#collapse_list" data-toggle="collapse" class="nav-link nav_drop" aria-expanded="false" aria-controls="collapse_list">
+                  <span data-feather="finanse" class="icon">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 5V3C15 2.46957 14.7893 1.96086 14.4142 1.58579C14.0391 1.21071 13.5304 1 13 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V9C1 9.53043 1.21071 10.0391 1.58579 10.4142C1.96086 10.7893 2.46957 11 3 11H5M7 15H17C17.5304 15 18.0391 14.7893 18.4142 14.4142C18.7893 14.0391 19 13.5304 19 13V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V13C5 13.5304 5.21071 14.0391 5.58579 14.4142C5.96086 14.7893 6.46957 15 7 15ZM14 10C14 10.5304 13.7893 11.0391 13.4142 11.4142C13.0391 11.7893 12.5304 12 12 12C11.4696 12 10.9609 11.7893 10.5858 11.4142C10.2107 11.0391 10 10.5304 10 10C10 9.46957 10.2107 8.96086 10.5858 8.58579C10.9609 8.21071 11.4696 8 12 8C12.5304 8 13.0391 8.21071 13.4142 8.58579C13.7893 8.96086 14 9.46957 14 10Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Фин. операции
+                  <span class="shevron_collapse">
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.6666 1L5.99992 5.66667L1.33325 1" stroke="black" stroke-width="1.33333" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+                <div class="collapse" id="collapse_list">
+                  <div class="card card-body p-0">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link drop_link" aria-current="page" href="#">
+                          <span data-feather="alllist" class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 4H13.3333M6 8H13.3333M6 12H13.3333" stroke="#000" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M2.6665 4H3.33317M2.6665 8H3.33317M2.6665 12H3.33317" stroke="#000" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          Весь список
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link drop_link" aria-current="page" href="#">
+                          <span data-feather="transactions" class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.99984 2L3.33317 6L12.6665 6" stroke="black" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M10.0002 14L12.6668 10L3.3335 10" stroke="black" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          Транзакции
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link drop_link" aria-current="page" href="#">
+                          <span data-feather="reestr" class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M14 12.0002H4C3.82319 12.0002 3.65362 12.0704 3.5286 12.1954C3.40357 12.3204 3.33333 12.49 3.33333 12.6668C3.33333 12.8436 3.40357 13.0132 3.5286 13.1382C3.65362 13.2633 3.82319 13.3335 4 13.3335H14V14.6668H4C3.46957 14.6668 2.96086 14.4561 2.58579 14.081C2.21071 13.706 2 13.1973 2 12.6668V2.66683C2 2.31321 2.14048 1.97407 2.39052 1.72402C2.64057 1.47397 2.97971 1.3335 3.33333 1.3335H14V12.0002ZM3.33333 10.7002C3.44133 10.6782 3.55267 10.6668 3.66667 10.6668H12.6667V2.66683H3.33333V10.7002ZM10.6667 6.00016H5.33333V4.66683H10.6667V6.00016Z"
+                                fill="black" />
+                            </svg>
+                          </span>
+                          Реестры
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link drop_link" aria-current="page" href="#">
+                          <span data-feather="reestr" class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M2.6665 2.66678L3.0545 6.00011M3.0545 6.00011C3.49707 4.90553 4.29029 3.98872 5.30986 3.39336C6.32942 2.79799 7.51771 2.55772 8.68848 2.71021C9.85926 2.86269 10.9464 3.39931 11.7794 4.23597C12.6125 5.07262 13.1444 6.16202 13.2918 7.33345M3.0545 6.00011H5.99984M13.3332 13.3334L12.9458 10.0001M12.9458 10.0001C12.5026 11.0941 11.7092 12.0101 10.6897 12.605C9.67026 13.1998 8.48233 13.4398 7.3119 13.2874C6.14148 13.1349 5.05464 12.5987 4.22153 11.7626C3.38842 10.9265 2.85607 9.83774 2.70784 8.66678M12.9458 10.0001H9.99984"
+                                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          Автопогашения
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 7V15C8 15.5304 8.21071 16.0391 8.58579 16.4142C8.96086 16.7893 9.46957 17 10 17H16M8 7V5C8 4.46957 8.21071 3.96086 8.58579 3.58579C8.96086 3.21071 9.46957 3 10 3H14.586C14.8512 3.00006 15.1055 3.10545 15.293 3.293L19.707 7.707C19.8946 7.89449 19.9999 8.1488 20 8.414V15C20 15.5304 19.7893 16.0391 19.4142 16.4142C19.0391 16.7893 18.5304 17 18 17H16M8 7H6C5.46957 7 4.96086 7.21071 4.58579 7.58579C4.21071 7.96086 4 8.46957 4 9V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H14C14.5304 21 15.0391 20.7893 15.4142 20.4142C15.7893 20.0391 16 19.5304 16 19V17"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Отчётность
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19 11H5M19 11C19.5304 11 20.0391 11.2107 20.4142 11.5858C20.7893 11.9609 21 12.4696 21 13V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V13C3 12.4696 3.21071 11.9609 3.58579 11.5858C3.96086 11.2107 4.46957 11 5 11M19 11V9C19 8.46957 18.7893 7.96086 18.4142 7.58579C18.0391 7.21071 17.5304 7 17 7M5 11V9C5 8.46957 5.21071 7.96086 5.58579 7.58579C5.96086 7.21071 6.46957 7 7 7M17 7V5C17 4.46957 16.7893 3.96086 16.4142 3.58579C16.0391 3.21071 15.5304 3 15 3H9C8.46957 3 7.96086 3.21071 7.58579 3.58579C7.21071 3.96086 7 4.46957 7 5V7M17 7H7"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Тарифы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19 11H5M19 11C19.5304 11 20.0391 11.2107 20.4142 11.5858C20.7893 11.9609 21 12.4696 21 13V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V13C3 12.4696 3.21071 11.9609 3.58579 11.5858C3.96086 11.2107 4.46957 11 5 11M19 11V9C19 8.46957 18.7893 7.96086 18.4142 7.58579C18.0391 7.21071 17.5304 7 17 7M5 11V9C5 8.46957 5.21071 7.96086 5.58579 7.58579C5.96086 7.21071 6.46957 7 7 7M17 7V5C17 4.46957 16.7893 3.96086 16.4142 3.58579C16.0391 3.21071 15.5304 3 15 3H9C8.46957 3 7.96086 3.21071 7.58579 3.58579C7.21071 3.96086 7 4.46957 7 5V7M17 7H7"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Тарифы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 2.94385C14.3567 5.05846 17.4561 6.15176 20.618 5.98385C20.867 6.94785 21 7.95785 21 8.99985C21 14.5918 17.176 19.2898 12 20.6218C6.824 19.2898 3 14.5908 3 8.99985C2.99918 7.9824 3.12754 6.96896 3.382 5.98385C6.5439 6.15176 9.64327 5.05846 12 2.94385Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Роли и доступы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="home" class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 4.354C12.5374 3.7447 13.2477 3.31351 14.0362 3.11779C14.8247 2.92208 15.6542 2.97112 16.4142 3.2584C17.1741 3.54568 17.8286 4.05757 18.2905 4.72596C18.7524 5.39435 18.9998 6.18754 18.9998 7C18.9998 7.81246 18.7524 8.60565 18.2905 9.27404C17.8286 9.94243 17.1741 10.4543 16.4142 10.7416C15.6542 11.0289 14.8247 11.0779 14.0362 10.8822C13.2477 10.6865 12.5374 10.2553 12 9.646M15 21H3V20C3 18.4087 3.63214 16.8826 4.75736 15.7574C5.88258 14.6321 7.4087 14 9 14C10.5913 14 12.1174 14.6321 13.2426 15.7574C14.3679 16.8826 15 18.4087 15 20V21ZM15 21H21V20C21.0001 18.9467 20.723 17.9119 20.1965 16.9997C19.6699 16.0875 18.9125 15.3299 18.0004 14.8032C17.0882 14.2765 16.0535 13.9992 15.0002 13.9992C13.9469 13.9991 12.9122 14.2764 12 14.803M13 7C13 8.06087 12.5786 9.07828 11.8284 9.82843C11.0783 10.5786 10.0609 11 9 11C7.93913 11 6.92172 10.5786 6.17157 9.82843C5.42143 9.07828 5 8.06087 5 7C5 5.93913 5.42143 4.92172 6.17157 4.17157C6.92172 3.42143 7.93913 3 9 3C10.0609 3 11.0783 3.42143 11.8284 4.17157C12.5786 4.92172 13 5.93913 13 7Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Клиенты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+              </button>
+            </div>
+          </div>
+    
+          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+    
+          <h2>Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

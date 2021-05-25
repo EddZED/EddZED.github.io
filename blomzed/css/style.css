@@ -1,0 +1,74 @@
+@font-face {font-family:'inter_reg';src:url(../font/Inter-Regular.ttf);}
+@font-face {font-family:'inter_light';src:url(../font/Inter-Light.ttf);}
+@font-face {font-family:'inter_bold';src:url(../font/Inter-Bold.ttf);}
+@font-face {font-family:'inter_medium';src:url(../font/Inter-Medium.ttf);}
+html{scroll-behavior:smooth;}
+body{background-color:#F5F5F5;}
+/*style header*/
+.navbar{background-color:#F5F5F5;}
+.navbar-brand{background-color:#F5F5F5;box-shadow:none;padding-left:30px;padding-right:15px;}
+.navbar-nav{align-items:center;flex-direction:row;flex:1 0 auto;justify-content:flex-end;}
+.search_block{width:100%;padding:0 15px;}
+.input_label{width:300px;position:relative;}
+.form_input{width:100%;border:none;background-color:#fff;border-radius:12px;padding:15px 15px;font-size:14px;color:#000;font-family:'inter_reg';}
+.form_input:focus{outline:none;}
+.form_input::-webkit-input-placeholder{color:rgba(0,0,0,.5);font-size:14px;font-family:'inter_reg';}
+.btn_search{position:absolute;right:10px;top:0;bottom:0;margin:auto;height:100%;border:none;background-color:#009C8C;border-radius:9px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;}
+.btn_bell{border:none;background-color:transparent;margin-right:15px;transition:all .3s;}
+.btn_bell:focus{outline:none;}
+.btn_bell:hover{animation: hover_bell .3s ease-in-out .2s infinite;}
+@keyframes hover_bell{0%,100%{transform:rotateZ(0deg)}50%{transform:rotateZ(50deg)}100%{transform:rotateZ(-50deg)};}
+.nav-item{position:relative;}
+.navbar-nav .nav_profile{display:inline-flex;align-items:center;border:none;background-color:transparent;font-size:14px;color:#000;line-height:24px;font-family:'inter_medium';text-decoration:none;cursor:pointer;}
+.navbar-nav .nav_profile:focus{outline:none;}
+.shevron_down{transition:all .3s;max-width:100%;}
+.nav-item:hover .shevron_down{transform:rotateZ(180deg);}
+.hidden_block{position:absolute;top:100%;right:0;min-width:250px;padding-top:2px;transition:all .3s;opacity:0;visibility:hidden;}
+.wrapper_hidden_block{background-color:#fff;border-radius:12px;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 6px 24px rgba(0, 0, 0, 0.06);padding:20px;width:100%;}
+.nav-item:hover .hidden_block{opacity:1;visibility:visible;}
+.link_item_profile{display:flex;align-items:center;font-size:16px;line-height:28px;color:#000;font-family:'inter_medium';text-decoration:none;margin-bottom:15px;}
+.icon_item{width:36px;height:36px;background-color:rgba(0,0,0,.04);border-radius:9px;display:flex;align-items:center;justify-content:center;margin-right:10px;transition:all .3s;}
+.link_item_profile:hover{color:#000;opacity:.7;}
+.border_top{border-top:1px solid rgba(0,0,0,.08);}
+
+/*sidebar style*/
+.sidebar{padding-left:30px;padding-right:15px;padding-top:70px;}
+.sidebar .nav-link{background-color:transparent;width:100%;border-radius:10px;margin-bottom:5px;font-size:16px;line-height:28px;color:#000;font-family:'inter_medium';display:inline-flex;align-items:center;transition:all .3s;}
+.sidebar .nav-link.active{color:#009C8C;background-color:#fff;width:100%;}
+.sidebar .nav-link:hover{color:#009C8C;background-color:#fff;width:100%;}
+.sidebar .nav-link.active .icon svg path{stroke:#009C8C;}
+.sidebar .nav-link:hover .icon svg path{stroke:#009C8C;}
+.icon{padding-right:10px;}
+.icon svg path{stroke:#000;transition:stroke .3s;}
+.shevron_collapse{display:inline-block;margin-left:5px;transition:all .3s;}
+.shevron_collapse svg path{stroke:#000;transition:stroke .3s;}
+.sidebar .nav-link:hover .shevron_collapse svg path{stroke:#009C8C;}
+.nav_drop[aria-expanded="true"] .shevron_collapse{transform:rotateZ(180deg);}
+.card.card-body{border:none;background-color:transparent;}
+.drop_link{padding-left:45px;}
+
+
+
+
+
+
+
+@media(max-width:1199px){
+  .sidebar{padding-left:15px;}
+  .navbar-brand{padding-left:15px;}
+}
+@media(max-width:991px){
+  
+}
+@media(max-width:767px){
+  .input_label{width:100%;}
+  .navbar-brand{padding:5px 15px;}
+  .navbar-nav{flex:1 1 100%;justify-content:start;margin-top:10px;}
+  .navbar-toggler{position:relative;}
+  .navbar-toggler:focus{outline:none;box-shadow:none;}
+  .navbar-toggler-icon{width:40px;height:2px;background-color:#000;position:relative;}
+  .navbar-toggler-icon:before{content:'';position:absolute;width:100%;height:2px;left:0;top:10px;background-color:#000;}
+  .navbar-toggler-icon:after{content:'';position:absolute;width:100%;height:2px;left:0;top:-10px;background-color:#000;}
+  .navbar .navbar-toggler{top:13px;}
+  .sidebar{background-color:#F5F5F5;padding-top:86px;}
+}
