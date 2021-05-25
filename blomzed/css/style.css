@@ -105,7 +105,7 @@ body{background-color:#F5F5F5;}
   .sidebar_menu{padding-left:18px;}
 }
 @media(max-width:767px){
-  
+  .name_profile{display:none;}
   
 }
 @media(max-width:575px){
@@ -121,6 +121,8 @@ body{background-color:#F5F5F5;}
   .wallet_settings {width:32px;height:32px;}
   .amount{font-size:16px;line-height:18px;}
   .total .amount{font-size:20px;line-height:22px;}
+  .navbar-brand img{max-width:100px;}
+  .btn_bell{margin-right:0;}
 }
 
 
