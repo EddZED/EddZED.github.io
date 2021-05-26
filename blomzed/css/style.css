@@ -64,9 +64,6 @@ body{background-color:#F5F5F5;}
 .select-box .options-container {background: #F5F5F5;color: #000;max-height: 0;width: 100%;opacity: 0;transition: all 0.4s;border-radius: 8px;overflow: hidden;order: 1;position:absolute;left:0;top:100%;}
 
 
-
-
-
 /*style page main content*/
 .content{display:block;width:100%;position:relative;}
 .title_page{font-size:36px;line-height:52px;color:#000;font-family:'inter_bold';}
@@ -93,11 +90,37 @@ body{background-color:#F5F5F5;}
 .amount{font-size:24px;line-height:32px;color:#fff;font-family:'inter_bold';display:inline-block;}
 .left_desctop{padding-left:37px;}
 .total .amount{font-size:32px;line-height:36px;}
+.last_activity{width:100%;padding:30px 0;}
+.time{font-family:'inter_medium';color:rgba(0,0,0,.5);font-size:14px;line-height:24px;}
+.operations{min-width:1100px;width:100%;background-color:#F5F5F5;border-collapse:separate;border-spacing:0 15px;}
+.operations tr{margin:10px 0;background-color:#F5F5F5;}
+.operations tr td{padding:5px 8px;font-size:16px;line-height:37px;font-family:'inter_medium';white-space: nowrap;background-color:#fff;}
+.operations tr td:first-of-type{border-radius:12px 0 0 12px;}
+.operations tr td:last-of-type{padding-right:20px;border-radius:0 12px 12px 0;}
+.status{position:relative;}
+.status:before{content:'';position:absolute;width:6px;height:6px;border-radius:50%;left:-10px;top:0;bottom:0;margin:auto;}
+.status.completed:before{background-color:#77D32F;}
+.status.processing:before{background-color:#D3CD2F;}
+.status.cancel:before{background-color:#D75F5F;}
+.scroll_box{padding:0 0 10px;width:100%;}
+
+
+
 
 
 
 @media(min-width:1400px){
   .sidebar{padding-left:15px;}
+}
+@media(max-width:1399px){
+  .scroll_box{overflow-x:scroll;}
+  .scroll_box::-webkit-scrollbar { width:6px; height:6px;opacity:1;}
+  .scroll_box::-webkit-scrollbar-button {  background-color:transparent; }
+  .scroll_box::-webkit-scrollbar-track {  background-color:transparent;}
+  .scroll_box::-webkit-scrollbar-track-piece { background-color: #eee;opacity:.2;border-radius:6px;}
+  .scroll_box::-webkit-scrollbar-thumb { height:50px; background-color: #009C8C; border-radius: 6px;}
+  .scroll_box::-webkit-scrollbar-corner { background-color:#009C8C;}
+  .scroll_box::-webkit-resizer { background-color: #009C8C;}
 }
 @media(max-width:1199px){
   .sidebar{padding-left:15px;}
