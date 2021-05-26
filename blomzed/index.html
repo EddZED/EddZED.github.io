@@ -12,7 +12,7 @@
 <body>
   <div class="wrapper">
     <header class="navbar sticky-top flex-lg-nowrap p-0">
-      <a class="navbar-brand col-lg-3 order-1 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
+      <a class="navbar-brand col-lg-3 col-xxl-2 order-1 mr-0" href="#"><img class="img-fluid" src="img/logo.svg" alt="bloomzed"></a>
       <button class="navbar-toggler position-absolute d-lg-none collapsed pr-0" type="button" data-toggle="collapse"
         data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><span></span></span>
@@ -203,11 +203,30 @@
           </div>
           <div class="sidebar_menu pb-3">
             <div class="language_select order-lg-1 order-2">
-              <img class="img-fluid pr-2" src="img/flag.png" alt="русский"> 
-              <p class="text_content mb-0">Русский</p>
-              <img class="img-fluid pl-2" src="img/shevron.svg" alt="шеврон">
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="option">
+                    <input type="radio" class="radio" id="russian" name="language" />
+                    <label>
+                      <img class="img-fluid pr-2" src="img/flag.png" alt="русский">
+                      <p class="text_content mb-0">Русский</p>
+                    </label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="english" name="language" />
+                    <label>
+                      <img class="img-fluid pr-2" src="img/english.png" alt="русский">
+                      <p class="text_content mb-0">English</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="selected">
+                  <img class="img-fluid pr-2" src="img/flag.png" alt="русский">
+                  <p class="text_content mb-0">Русский</p>
+                </div>
+              </div>
             </div>
-            <div class="bottom_menu_sidebar order-lg-2 order-1 pt-lg-3">
+            <div class="bottom_menu_sidebar order-lg-2 order-1 pt-lg-2">
               <a href="#" class="menu_link_sidebar">О компании</a>
               <a href="#" class="menu_link_sidebar">Контакты</a>
               <a href="#" class="menu_link_sidebar">Правила</a>
@@ -249,7 +268,7 @@
                   <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                       <div class="inner_block">
-                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
+                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-sm-2" src="img/expenses_icon.svg" alt="расходы"> Расходы</p>
                         <div class="amount_box">
                           <span id="amount_1" class="amount left_desctop">–1 120 000 </span><span class="amount">&#160;₸</span>
                         </div>
@@ -257,7 +276,7 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="inner_block">
-                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-2" src="img/expenses_icon.svg" alt="расходы"> Пополнения</p>
+                        <p class="white_text mb-0 mb-sm-2 pr-3 pr-sm-0"><img class="img-fluid pr-sm-2" src="img/ups_icon.svg" alt="расходы"> Пополнения</p>
                         <div class="amount_box">
                           <span id="amount_2" class="amount left_desctop">+4 230 000 </span><span class="amount">&#160;₸</span>
                         </div>
@@ -280,5 +299,22 @@
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const selected = document.querySelector(".selected");
+      const optionsContainer = document.querySelector(".options-container");
+
+      const optionsList = document.querySelectorAll(".option");
+
+      selected.addEventListener("click", () => {
+        optionsContainer.classList.toggle("active");
+      });
+
+      optionsList.forEach(o => {
+        o.addEventListener("click", () => {
+          selected.innerHTML = o.querySelector("label").innerHTML;
+          optionsContainer.classList.remove("active");
+        });
+      });
+  </script>
 </body>
 </html>
