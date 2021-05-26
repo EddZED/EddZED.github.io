@@ -104,6 +104,10 @@ body{background-color:#F5F5F5;}
 .status.cancel:before{background-color:#D75F5F;}
 .scroll_box{padding:0 0 10px;width:100%;}
 
+/*style fin operation page*/
+.content.fin_operations{display:flex;align-items:center;justify-content:space-between;}
+.top_item_table{display:flex;align-items:center;justify-content:space-between;}
+
 
 
 
@@ -149,6 +153,7 @@ body{background-color:#F5F5F5;}
   .sidebar{padding-top:25px;}
   .last_activity{padding-top:0;}
   .title_page{font-size:25px;line-height:30px;}
+  .content.fin_operations{flex-direction:column;align-items:flex-start;}
 }
 @media(max-width:575px){
   .wallet_score{font-size:16px;}
