@@ -363,6 +363,20 @@
           list.forEach(el => { el.classList.remove('active'); });
           item.classList.add('active')
         })
+      });
+    /*add active wallet menu*/
+    const walletList = document.querySelectorAll('.button_group_wallet')
+      walletList.forEach(item => {
+        item.addEventListener('click', (e) => {
+          walletList.forEach(el => { el.classList.toggle('active'); });
+        })
+      });
+    /*add ative profile*/
+    const profList = document.querySelectorAll('.nav-item')
+      profList.forEach(item => {
+        item.addEventListener('click', (e) => {
+          profList.forEach(el => { el.classList.toggle('active'); });
+        })
       })
   </script>
 </body>

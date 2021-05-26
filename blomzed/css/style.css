@@ -22,10 +22,10 @@ body{background-color:#F5F5F5;}
 .navbar-nav .nav_profile{display:inline-flex;align-items:center;border:none;background-color:transparent;font-size:14px;color:#000;line-height:24px;font-family:'inter_medium';text-decoration:none;cursor:pointer;}
 .navbar-nav .nav_profile:focus{outline:none;}
 .shevron_down{transition:all .3s;max-width:100%;}
-.nav-item:hover .shevron_down{transform:rotateZ(180deg);}
+.nav-item.active .shevron_down{transform:rotateZ(180deg);}
 .hidden_block{position:absolute;top:100%;right:0;min-width:250px;padding-top:2px;transition:all .3s;opacity:0;visibility:hidden;}
 .wrapper_hidden_block{background-color:#fff;border-radius:12px;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 6px 24px rgba(0, 0, 0, 0.06);padding:20px;width:100%;}
-.nav-item:hover .hidden_block{opacity:1;visibility:visible;}
+.nav-item.active .hidden_block{opacity:1;visibility:visible;}
 .link_item_profile{display:flex;align-items:center;font-size:16px;line-height:28px;color:#000;font-family:'inter_medium';text-decoration:none;margin-bottom:15px;}
 .icon_item{width:36px;height:36px;background-color:rgba(0,0,0,.04);border-radius:9px;display:flex;align-items:center;justify-content:center;margin-right:10px;transition:all .3s;}
 .link_item_profile:hover{color:#000;opacity:.7;}
@@ -83,7 +83,7 @@ body{background-color:#F5F5F5;}
 .button_group_wallet{position:relative;}
 .wallet_set_wrap{position:absolute;top:100%;right:0;width:215px;padding-top:10px;opacity:0;visibility:hidden;transition:all .3s;}
 .wallet_set_item{width:100%;padding:15px 20px;background-color:#fff;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 6px 24px rgba(0, 0, 0, 0.06);border-radius: 12px;}
-.button_group_wallet:hover .wallet_set_wrap{opacity:1;visibility:visible;}
+.button_group_wallet.active .wallet_set_wrap{opacity:1;visibility:visible;}
 .wallet_set_item .link_item_profile{line-height:25px;font-size:14px;}
 .white_text{font-size:16px;line-height:24px;color:#fff;font-family:'inter_bold';pointer-events:none;}
 .amount_box{display:flex;align-items:center;pointer-events:none;}
