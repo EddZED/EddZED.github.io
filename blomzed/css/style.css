@@ -127,6 +127,7 @@ body{background-color:#F5F5F5;}
   .navbar-brand{padding-left:15px;}
 }
 @media(max-width:991px){
+  .sidebar{overflow-y:scroll;}
   .left_desctop{padding-left:0;}
   .input_label{width:100%;}
   .navbar-brand{padding:5px 15px;margin:0;box-shadow:none;}
@@ -146,6 +147,8 @@ body{background-color:#F5F5F5;}
 @media(max-width:767px){
   .name_profile{display:none;}
   .sidebar{padding-top:25px;}
+  .last_activity{padding-top:0;}
+  .title_page{font-size:25px;line-height:30px;}
 }
 @media(max-width:575px){
   .wallet_score{font-size:16px;}
