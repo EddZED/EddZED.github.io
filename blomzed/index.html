@@ -33,7 +33,7 @@
               fill="black" />
           </svg>
         </button>
-        <li class="nav-item">
+        <li class="nav_item">
           <button class="nav_profile" href="#">
             <img class="img-fluid pr-sm-2" src="img/profile_avatar.png" alt="аватар">
             <span class="name_profile">Dias Moldashev</span>
@@ -300,19 +300,19 @@
               <table class="tabel operations">
                 <tbody>
                   <tr>
-                    <td><img class="img-fluid pr-1" src="img/icon_ups.png" alt="пополнение"> Пополнение</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/icon_ups.png" alt="пополнение"> Пополнение</th>
                     <td>Султан Османов</td>
                     <td><span class="from">6263 8431 5253 6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span class="to">6263 8431 5253 6667</span></td>
                     <td>22:20</td>
-                    <td>100 000 ₸</td>
+                    <td class="price_table">100 000 ₸</td>
                     <td class="status completed">Выполнен</td>
                   </tr>
                   <tr>
-                    <td><img class="img-fluid pr-1" src="img/proces_icon.png" alt="пополнение"> P2P</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/proces_icon.png" alt="пополнение"> P2P</th>
                     <td>ТОО "Bloomzed.kz"</td>
                     <td><span class="from">6263 8431 5253 6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span class="to">6263 8431 5253 6667</span></td>
                     <td>22:20</td>
-                    <td>100 000 ₸</td>
+                    <td class="price_table">100 000 ₸</td>
                     <td class="status processing">В обработке</td>
                   </tr>
                 </tbody>
@@ -323,11 +323,11 @@
               <table class="tabel operations">
                 <tbody>
                   <tr>
-                    <td><img class="img-fluid pr-1" src="img/close.png" alt="пополнение"> Списание</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/close.png" alt="пополнение"> Списание</th>
                     <td>ТОО "ESH MART"</td>
                     <td><span class="from">6263 8431 5253 6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span class="to">6263 8431 5253 6667</span></td>
                     <td>08:50</td>
-                    <td>340 000 ₸</td>
+                    <td class="price_table">340 000 ₸</td>
                     <td class="status cancel">Отмена</td>
                   </tr>
                 </tbody>
@@ -372,7 +372,7 @@
         })
       });
     /*add ative profile*/
-    const profList = document.querySelectorAll('.nav-item')
+    const profList = document.querySelectorAll('.nav_item')
       profList.forEach(item => {
         item.addEventListener('click', (e) => {
           profList.forEach(el => { el.classList.toggle('active'); });

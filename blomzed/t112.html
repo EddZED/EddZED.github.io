@@ -8,7 +8,7 @@
   <title>Финансовые операции</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="css/datepicker.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -264,7 +264,7 @@
           <section class="table_wrapper">
             <div class="top_item_table">
               <div class="period_block">
-                <input type="text" name="daterange" value="01/01/2018 - 15.01.2018" />
+                <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" />
               </div>
               <div class="download_block">
 
@@ -277,21 +277,13 @@
   </div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/datepicker.min.js"></script>
   <script>
-    $(function () {
-      $('input[name="daterange"]').daterangepicker({
-        opens: 'right',
-        "linkedCalendars": false,
-        "showCustomRangeLabel": false,
-        "startDate": "05/20/2021",
-        "endDate": "05/26/2021"
-      }, function (start, end, label) {
-        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      });
-    });
+    $('.datepicker-here').datepicker({
+        todayButton: new Date(),
+        clearButton: new Date()
+    })
   </script>
   <script>
     const selected = document.querySelector(".selected");
