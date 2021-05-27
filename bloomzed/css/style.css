@@ -102,7 +102,7 @@ body{background-color:#F5F5F5;}
 .total .amount{font-size:32px;line-height:36px;}
 .last_activity{width:100%;padding:30px 0;}
 .time{font-family:'inter_medium';color:rgba(0,0,0,.5);font-size:14px;line-height:24px;}
-.operations{min-width:1100px;width:100%;background-color:#F5F5F5;border-collapse:separate;border-spacing:0 15px;}
+.operations{min-width:1150px;width:100%;background-color:#F5F5F5;border-collapse:separate;border-spacing:0 15px;}
 .operations tr{margin:10px 0;background-color:#F5F5F5;}
 .operations tr td{padding:5px 8px;font-size:16px;line-height:37px;font-family:'inter_medium';white-space: nowrap;background-color:#fff;}
 .operations tr th{padding:5px 8px;font-size:16px;line-height:37px;font-family:'inter_medium';white-space: nowrap;background-color:#fff;}
@@ -179,6 +179,8 @@ body{background-color:#F5F5F5;}
 
 
 
+
+
 @media(min-width:1400px){
   .sidebar{padding-left:15px;}
 }
@@ -214,7 +216,7 @@ body{background-color:#F5F5F5;}
   .menu_link_sidebar{font-size:16px;font-family:'inter_medium';color:#000;line-height:28px;padding:7px 0;}
   .sidebar_menu{padding-left:18px;}
   .face .text_modal{flex: 1 1 auto}
-  .modal-dialog-scrollable .modal-content{padding:5px 10px 20px;}
+  .modal-dialog-scrollable .modal-content{padding:5px 10px 20px;border-radius:20px;}
   .modal-header{padding:15px 0 5px 0;}
   .wrapper_white_bg{background:#fff;border-radius:24px;padding:20px 10px 10px;margin-bottom:20px;}
   .title_modal{font-size:28px;line-height:32px;}
@@ -247,6 +249,7 @@ body{background-color:#F5F5F5;}
   .total .amount{font-size:20px;line-height:22px;}
   .navbar-brand img{max-width:100px;}
   .btn_bell{margin-right:0;}
+  .btn.btn_aqua, .btn.btn_red{width:100%;}
 }
 
 
