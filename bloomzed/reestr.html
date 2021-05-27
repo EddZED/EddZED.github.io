@@ -248,7 +248,7 @@
           <section class="content fin_operations pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page">Список реестров</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
-              <button type="button" class="btn_blue">
+              <button type="button" class="btn_blue" data-toggle="modal" data-target="#load_reestr">
                 <span class="shevron_white">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -517,11 +517,82 @@
       </div>
     </div>
 
+    <!--modal window load reestr-->
+    <div class="modal fade" id="load_reestr" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog-scrollable modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="title_modal">Загрузка реестра</h2>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+              <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+            </button>
+          </div>
+          <form action="" class="" enctype="multipart/form-data" method="post">
+            <div class="modal-body">
+              <div id="drop" class="wrapper_white_bg load_window pb-3 mb-3" ondragenter="dropenter(event);"
+                ondragover="dropenter(event);" ondragleave="dropleave();" ondrop="return dodrop(event);">
+                <img class="img-fluid" src="img/load_img.png" alt="">
+                <p class="text_load text-center">Перенесите .csv файл сюда</p>
+                <label class="load_file">
+                  <input class="form-control" type="file" name="file">
+                  <p class="">Или<span> загрузите его </span> из папки</p>
+                </label>
+              </div>
+              <p class="text_min mb-2">Кодировка</p>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>UTF-8</option>
+                <option value="1">UTF-8</option>
+                <option value="2">UTF-8</option>
+                <option value="3">UTF-8</option>
+              </select>
+            </div>
+          <div class="modal-footer justify-content-between mt-3">
+            <button class="btn btn_white" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn_aqua" data-target="#load_reestr2" data-toggle="modal"
+              data-dismiss="modal" aria-label="Close">Далее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="load_reestr2" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog-scrollable modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="title_modal">Загрузка реестра</h2>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+              <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+            </button>
+          </div>
+          <form action="" class="" enctype="multipart/form-data" method="post">
+            <div class="modal-body">
+              <div id="drop" class="wrapper_white_bg load_window pb-3 mb-3" ondragenter="dropenter(event);"
+                ondragover="dropenter(event);" ondragleave="dropleave();" ondrop="return dodrop(event);">
+                <img class="img-fluid" src="img/complead_load.png" alt="">
+                <p class="text_load text-center">🎉 Файл загружен! 🎉</p>
+                <p class="text_content">Мы загрузили list.csv. Найдено 60 строк</p>
+              </div>
+              <p class="text_min mb-2">Кодировка</p>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>UTF-8</option>
+                <option value="1">UTF-8</option>
+                <option value="2">UTF-8</option>
+                <option value="3">UTF-8</option>
+              </select>
+            </div>
+          <div class="modal-footer justify-content-between mt-3">
+            <button class="btn btn_white" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn-primary" data-dismiss="modal" aria-label="Close">Продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="js/datepicker.min.js"></script>
+  <script src="js/load.js"></script>
   <script>
     $('.datepicker-here').datepicker({
         todayButton: new Date(),
