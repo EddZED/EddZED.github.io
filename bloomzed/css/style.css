@@ -102,7 +102,7 @@ body{background-color:#F5F5F5;}
 .total .amount{font-size:32px;line-height:36px;}
 .last_activity{width:100%;padding:30px 0;}
 .time{font-family:'inter_medium';color:rgba(0,0,0,.5);font-size:14px;line-height:24px;}
-.operations{min-width:1150px;width:100%;background-color:#F5F5F5;border-collapse:separate;border-spacing:0 15px;}
+.operations{min-width:1220px;width:100%;background-color:#F5F5F5;border-collapse:separate;border-spacing:0 15px;}
 .operations tr{margin:10px 0;background-color:#F5F5F5;}
 .operations tr td{padding:5px 8px;font-size:16px;line-height:37px;font-family:'inter_medium';white-space: nowrap;background-color:#fff;}
 .operations tr th{padding:5px 8px;font-size:16px;line-height:37px;font-family:'inter_medium';white-space: nowrap;background-color:#fff;}
@@ -132,7 +132,7 @@ body{background-color:#F5F5F5;}
 .datepicker-here::-webkit-input-placeholder{font-size:14px;color:#000;text-align:left;font-family:'inter_medium';}
 .wrapper_calendar img{position:absolute;top:0;bottom:0;margin:auto;left:10px;}
 .download_block{display:flex;align-items:center;}
-.format_load_btn{transition:all .3s;display:inline-flex;align-items:center;margin:0 3px;padding:6px 10px;border-radius:9px;background-color:rgba(0, 0, 0, 0.04);text-decoration:none;color:#000;font-size:14px;font-family:'inter_medium';text-transform:uppercase;}
+.format_load_btn{transition:all .3s;display:inline-flex;align-items:center;margin:0 3px;padding:6px 10px;border-radius:9px;background-color:rgba(0, 0, 0, 0.04);text-decoration:none;color:#000;font-size:14px;font-family:'inter_medium';}
 .format_load_btn:hover{color:inherit;background-color:rgba(0, 0, 0, 0.1);}
 .format_load_btn:active{color:inherit;background-color:rgba(0, 0, 0, 0.3);}
 .create_btn:hover .btn_blue{color:#eee;}
