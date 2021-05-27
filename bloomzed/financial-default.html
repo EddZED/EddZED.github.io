@@ -38,7 +38,7 @@
               fill="black" />
           </svg>
         </button>
-        <li class="nav-item">
+        <li class="nav_item">
           <button class="nav_profile" href="#">
             <img class="img-fluid pr-sm-2" src="img/profile_avatar.png" alt="аватар">
             <span class="name_profile">Dias Moldashev</span>
@@ -249,7 +249,7 @@
         <main class="col-lg-9 col-xxl-10 ml-sm-auto px-md-4">
           <section class="content fin_operations pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page">Финансовые операции</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-toolbar create_btn mb-2 mb-md-0">
               <button type="button" class="btn_blue">
                 <span class="shevron_white">
                   <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,19 +259,28 @@
                 </span>
                 Создать операцию
               </button>
+              <div class="hidden_block">
+                <div class="wrapper_hidden_block">
+                  <a href="#" class="link_item_profile">Эмиссия</a>
+                  <a href="#" class="link_item_profile">Погашение</a>
+                  <a href="#" class="link_item_profile">Переводы</a>
+                  <a href="#" class="link_item_profile">Платежи</a>
+                  <a href="#" class="link_item_profile mb-0">Реестровые платежи</a>
+                </div>
+              </div>
             </div>
           </section>
-          <section class="table_wrapper">
+          <section class="table_header">
             <div class="top_item_table">
               <div class="period_block">
                 <p class="text_opacity pr-3 mb-0">Выбрать период:</p>
-                <div class="wrapper_calendar">
+                <div class="wrapper_calendar" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация">
                   <img class="img-fluid" src="img/calendar_icon.svg" alt="календарь">
-                  <input type="text" data-range="true" readonly data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время"/>
+                  <input type="text" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация" data-range="true" readonly data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время"/>
                 </div>
               </div>
-              <div class="download_block">
-                <a href="" download="" class="format_load_btn">
+              <div class="download_block mt-3 mt-md-0">
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате CSV CP-1251">
                   CSV CP
                   &#160;
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +289,7 @@
                       stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </a>
-                <a href="" download="" class="format_load_btn">
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате CSV">
                   CSV
                   &#160;
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,7 +298,7 @@
                       stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </a>
-                <a href="" download="" class="format_load_btn">
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате XLC">
                   xls
                   &#160;
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,19 +310,236 @@
               </div>
             </div>
           </section>
+          <section class="table_content">
+            <div class="scroll_box">
+              <table class="tabel operations">
+                <thead>
+                  <tr>
+                    <th>Тип операции <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Отправитель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Счета из/в <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Получатель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Дата <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Сумма <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Статус <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/icon_ups.png" alt="пополнение"> Эмиссия</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png"
+                        alt="стрелка"><span class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">100 000 ₸</td>
+                    <td class="status new">Новая</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/proces_icon.png" alt="P2P"> P2P</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">20 000 ₸</td>
+                    <td class="status processing">В обработке</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/pay_icon.png" alt="Платеж"> Платеж</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">100 000 ₸</td>
+                    <td class="status completed">Выполнена</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/close.png" alt="Погашение"> Погашение</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">340 000 ₸</td>
+                    <td class="status cancel">Отклонена</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/cancel.png" alt="Сторно"> Сторно</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">100 000 ₸</td>
+                    <td class="status cancel">Сторнирована</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/refund.png" alt="Част. возврат"> Част. возврат</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">100 000 ₸</td>
+                    <td class="status refund">Част. возврат</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/proces_icon.png" alt="Перевод"> Перевод</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">20 000 ₸</td>
+                    <td class="status cancel">Ошибка</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/pay_icon.png" alt="Платеж"> Платеж</th>
+                    <td>Султан Османов</td>
+                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span></td>
+                    <td>Султан Османов</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td class="price_table">100 000 ₸</td>
+                    <td class="status completed">Выполнена</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M2.04834 9.99984C3.11001 6.619 6.26917 4.1665 10 4.1665C13.7317 4.1665 16.89 6.619 17.9517 9.99984C16.89 13.3807 13.7317 15.8332 10 15.8332C6.26917 15.8332 3.11001 13.3807 2.04834 9.99984Z"
+                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="pagination_page">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link prev" href="#"><img class="img-fluid" src="img/shevron_left.png" alt="предидущая" data-bs-toggle="tooltip" data-placement="top" title="На предидущую страницу"></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">56</a></li>
+                <li class="page-item"><a class="page-link" href="#">57</a></li>
+                <li class="page-item"><a class="page-link" href="#">58</a></li>
+                <li class="page-item"><a class="page-link next" href="#"><img class="img-fluid" src="img/shevron_right.png" alt="следующая" data-bs-toggle="tooltip" data-placement="top" title="На следующую страницу"></a></li>
+              </ul>
+            </nav>
+          </section>
         </main>
       </div>
     </div>
   </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/datepicker.min.js"></script>
   <script>
     $('.datepicker-here').datepicker({
         todayButton: new Date(),
-        clearButton: new Date()
-    })
+        clearButton: new Date(),
+        position: "right top"
+    });
+     $(window).on('resize', function () {
+        if ($(window).width() < 992) {
+          $('.datepicker-here').datepicker({
+            position: "bottom left"
+          });
+        }
+      });
   </script>
   <script>
     const selected = document.querySelector(".selected");
@@ -340,19 +566,32 @@
       })
     });
     /*add active wallet menu*/
-    const walletList = document.querySelectorAll('.button_group_wallet')
-    walletList.forEach(item => {
-      item.addEventListener('click', (e) => {
+      const walletList = document.querySelectorAll('.button_group_wallet')
+      walletList.forEach(item => {
+        item.addEventListener('click', (e) => {
         walletList.forEach(el => { el.classList.toggle('active'); });
       })
     });
     /*add ative profile*/
-    const profList = document.querySelectorAll('.nav-item')
-    profList.forEach(item => {
-      item.addEventListener('click', (e) => {
+      const profList = document.querySelectorAll('.nav_item')
+      profList.forEach(item => {
+        item.addEventListener('click', (e) => {
         profList.forEach(el => { el.classList.toggle('active'); });
       })
-    })
+    });
+    /*add ative create operations*/
+      const createList = document.querySelectorAll('.create_btn')
+      createList.forEach(item => {
+        item.addEventListener('click', (e) => {
+          createList.forEach(el => { el.classList.toggle('active'); });
+        })
+      });
+  </script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
   </script>
 </body>
 
