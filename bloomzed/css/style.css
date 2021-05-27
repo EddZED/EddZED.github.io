@@ -137,7 +137,7 @@ body{background-color:#F5F5F5;}
 .format_load_btn:active{color:inherit;background-color:rgba(0, 0, 0, 0.3);}
 .create_btn:hover .btn_blue{color:#eee;}
 .create_btn:hover .btn_blue .shevron_white svg path{stroke:#eee;}
-.create_btn.active .hidden_block{visibility:visible;opacity:1;}
+.create_btn.active .hidden_block{visibility:visible;opacity:1;z-index:100;}
 .create_btn.active .shevron_white svg{transform:rotateZ(180deg);}
 .table_content{padding:20px 0;}
 .table_content .tabel.operations thead tr th{background-color:transparent;font-weight:bold;}
@@ -146,6 +146,7 @@ body{background-color:#F5F5F5;}
 .table_content .tabel.operations tbody tr th:first-of-type{border-radius:12px 0 0 12px;font-weight:normal;}
 .btn_eye{display:inline-flex;width:36px;transition:all .3s;height:36px;align-items:center;justify-content:center;background-color:#fff;border:none;box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 6px rgba(0, 0, 0, 0.12);border-radius:9px;}
 .btn_eye:focus{outline:none;}
+.btn_eye svg:focus{outline:none;}
 .btn_eye:active{background-color:#eee;}
 .btn_eye:hover{transform:scale(1.1);box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 6px rgba(0, 0, 0, 0.24);}
 .col_eyeses{display:flex;align-items:center;}
@@ -155,6 +156,27 @@ body{background-color:#F5F5F5;}
 .page-link:focus{box-shadow:none;}
 .page-link.prev{background-color:transparent;display:inline-flex;align-items:center;height:100%;}
 .page-link.next{background-color:transparent;display:inline-flex;align-items:center;height:100%;}
+
+
+/*style modal window*/
+.modal-dialog-scrollable .modal-content{background-color:#F5F5F5;border-radius:40px;padding:5px 40px 30px;}
+.modal-header{padding:30px 0 10px 0;border-bottom:none;}
+.btn-close{position:absolute;right:20px;top:20px;border:none;background-color:transparent;}
+.btn-close:focus{outline:none;}
+.title_modal{font-size:36px;line-height:52px;color:#000;font-family:'inter_bold';}
+.modal-body{padding:0;}
+.modal-footer{padding:0;border-top:0;}
+.wrapper_white_bg{background:#fff;border-radius:24px;padding:25px 30px 15px;margin-bottom:32px;}
+.sub_title_modal{font-size:24px;line-height:32px;font-family:'inter_bold';}
+.line_bottom{background: rgba(0, 0, 0, 0.08);width:100%;margin-bottom:6px;}
+.text_modal{font-size:16px;font-family:'inter_medium';line-height:28px;flex: 1 0 auto}
+.modal-footer{display:flex;justify-content:flex-start;}
+.btn{color:#fff;font-size:16px;line-height:24px;font-family:'inter_medium';border-radius:14px;padding:10px 15px;transition:all 3.s;}
+.btn.btn_aqua{background-color:#5959D3;}
+.btn.btn_red{background-color:#AC092F;}
+.btn.btn_aqua:hover, .btn.btn_red:hover{box-shadow:inset 0 0 20px rgba(0,0,0,.3);color:#fff;}
+.btn.btn_aqua:active, .btn.btn_red:active{box-shadow:inset 0 0 20px rgba(0,0,0,.5);color:#fff;}
+
 
 
 @media(min-width:1400px){
@@ -191,6 +213,12 @@ body{background-color:#F5F5F5;}
   .bottom_menu_sidebar{flex-direction:column;display:flex;}
   .menu_link_sidebar{font-size:16px;font-family:'inter_medium';color:#000;line-height:28px;padding:7px 0;}
   .sidebar_menu{padding-left:18px;}
+  .face .text_modal{flex: 1 1 auto}
+  .modal-dialog-scrollable .modal-content{padding:5px 10px 20px;}
+  .modal-header{padding:15px 0 5px 0;}
+  .wrapper_white_bg{background:#fff;border-radius:24px;padding:20px 10px 10px;margin-bottom:20px;}
+  .title_modal{font-size:28px;line-height:32px;}
+  .sub_title_modal{font-size:18px;line-height:24px;}
 }
 @media(max-width:767px){
   .name_profile{display:none;}
@@ -199,6 +227,8 @@ body{background-color:#F5F5F5;}
   .title_page{font-size:25px;line-height:30px;}
   .content.fin_operations{flex-direction:column;align-items:flex-start;}
   .top_item_table{flex-direction:column;align-items:flex-start;}
+  .datepicker{width:300px;}
+  .title_modal{font-size:24px;line-height:28px;}
 }
 @media(max-width:575px){
   .wallet_score{font-size:16px;}
@@ -207,6 +237,7 @@ body{background-color:#F5F5F5;}
   .total .amount{font-size:24px;line-height:26px;}
   .content_wallet{padding:30px 45px 25px 22px;}
   .inner_block{display:flex;align-items:center;}
+  .title_modal{font-size:24px;line-height:28px;}
 }
 @media(max-width:400px){
   .content_wallet{padding:12px 23px 5px 12px;}
