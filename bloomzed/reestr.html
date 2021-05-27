@@ -271,7 +271,7 @@
               </div>
               <div class="download_block mt-3 mt-md-0">
                 <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Загрузить выписку">
-                  Загрузить выписку
+                  Сохранить выписку
                   <img class="img-fluid pl-2" src="img/upload.png" alt="Загрузить выписку">
                 </a>
               </div>
@@ -282,26 +282,21 @@
               <table class="tabel operations">
                 <thead>
                   <tr>
-                    <th>Тип операции <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Отправитель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Счета из/в <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Получатель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Дата <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Сумма <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>ID<img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Название <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
                     <th>Статус <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Дата создания <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Выполненных <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
                     <th></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/icon_ups.png" alt="пополнение"> Эмиссия</th>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 342141</th>
                     <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png"
-                        alt="стрелка"><span class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">100 000 ₸</td>
                     <td class="status new">Новая</td>
+                    <td>21.03.2021; 22:20</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -310,14 +305,24 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/proces_icon.png" alt="P2P"> P2P</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">20 000 ₸</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 321321</th>
+                    <td>ТОО "Bloomzed.kz"</td>
+                    <td class="status completed">Выполнен</td>
+                    <td>04.03.2021; 16:20</td>
+                    <td>25 из 60</td>
+                    <td class="col_eyeses">
+                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
+                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
+                          alt="детлизация">
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 43243</th>
+                    <td>ТОО "ESH MART"</td>
                     <td class="status processing">В обработке</td>
+                    <td>30.02.2021; 08:50</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -326,14 +331,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/pay_icon.png" alt="Платеж"> Платеж</th>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 65465</th>
                     <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
+                    <td class="status completed">Выполнен</td>
                     <td>21.03.2021; 22:20</td>
-                    <td class="price_table">100 000 ₸</td>
-                    <td class="status completed">Выполнена</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -342,14 +344,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/close.png" alt="Погашение"> Погашение</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">340 000 ₸</td>
-                    <td class="status cancel">Отклонена</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 87612</th>
+                    <td>ТОО "Bloomzed.kz"</td>
+                    <td class="status processing">В обработке</td>
+                    <td>04.03.2021; 16:20</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -358,14 +357,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/cancel.png" alt="Сторно"> Сторно</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">100 000 ₸</td>
-                    <td class="status cancel">Сторнирована</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 12345</th>
+                    <td>77668194495</td>
+                    <td class="status completed">Выполнен</td>
+                    <td>12.12.2020; 02:30</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -374,14 +370,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/refund.png" alt="Част. возврат"> Част. возврат</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">100 000 ₸</td>
-                    <td class="status refund">Част. возврат</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 32144</th>
+                    <td>ТОО "ESH MART"</td>
+                    <td class="status cancel">Отмена</td>
+                    <td>30.02.2021; 08:50</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
@@ -390,30 +383,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/proces_icon.png" alt="Перевод"> Перевод</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">20 000 ₸</td>
-                    <td class="status cancel">Ошибка</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/pay_icon.png" alt="Платеж"> Платеж</th>
-                    <td>Султан Османов</td>
-                    <td><span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
-                        class="to">6668</span></td>
-                    <td>Султан Османов</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td class="price_table">100 000 ₸</td>
-                    <td class="status completed">Выполнена</td>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 24321</th>
+                    <td>ТОО "Bloomzed.kz"</td>
+                    <td class="status processing">В обработке</td>
+                    <td>04.03.2021; 16:20</td>
+                    <td>25 из 60</td>
                     <td class="col_eyeses">
                       <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#detal_info">
                         <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
