@@ -121,9 +121,17 @@ body{background-color:#F5F5F5;}
 /*style fin operation page*/
 .content.fin_operations{display:flex;align-items:center;justify-content:space-between;}
 .top_item_table{display:flex;align-items:center;justify-content:space-between;}
-
-
-
+.period_block{display:flex;align-items:center;}
+.text_opacity{font-size:16px;line-height:28px;font-family:'inter_medium';color:rgba(0,0,0,.75);}
+.wrapper_calendar{position:relative;cursor:pointer;}
+.datepicker-here{border:none;padding:7px 5px 7px 40px;border-radius:9px;cursor:pointer;box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 6px rgba(0, 0, 0, 0.12);}
+.datepicker-here:focus{outline:none;}
+.datepicker-here::-webkit-input-placeholder{font-size:14px;color:#000;text-align:left;font-family:'inter_medium';}
+.wrapper_calendar img{position:absolute;top:0;bottom:0;margin:auto;left:10px;}
+.download_block{display:flex;align-items:center;}
+.format_load_btn{transition:all .3s;display:inline-flex;align-items:center;margin:0 3px;padding:6px 10px;border-radius:9px;background-color:rgba(0, 0, 0, 0.04);text-decoration:none;color:#000;font-size:14px;font-family:'inter_medium';text-transform:uppercase;}
+.format_load_btn:hover{color:inherit;background-color:rgba(0, 0, 0, 0.1);}
+.format_load_btn:active{color:inherit;background-color:rgba(0, 0, 0, 0.3);}
 
 
 

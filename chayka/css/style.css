@@ -126,6 +126,9 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .many:focus{outline:none;}
 .value_summ span{position:absolute;right:0;bottom:0;}
 
+
+
+
 @media(min-width:1550px){
   .img_people{padding-right:200px;}
 }
