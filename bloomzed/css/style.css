@@ -160,9 +160,9 @@ body{background-color:#F5F5F5;}
 
 
 /*style modal window*/
-.modal-dialog-scrollable .modal-content{background-color:#F5F5F5;border-radius:40px;padding:5px 40px 30px;}
+.modal-content{background-color:#F5F5F5;border-radius:40px;padding:5px 40px 30px;}
 .modal-header{padding:30px 0 10px 0;border-bottom:none;}
-.btn-close{position:absolute;right:20px;top:20px;border:none;background-color:transparent;}
+.btn-close{position:absolute;right:20px;top:20px;border:none;background-color:transparent;z-index:10;}
 .btn-close:focus{outline:none;}
 .title_modal{font-size:36px;line-height:52px;color:#000;font-family:'inter_bold';}
 .modal-body{padding:0;}
@@ -198,6 +198,22 @@ body{background-color:#F5F5F5;}
 .nowrap{white-space:nowrap;}
 .open-modal{overflow:hidden;}
 .open-modal .modal{overflow-x:hidden;overflow-y:auto;}
+.wrapper_img_modal{width:154px;height:154px;background:#fff;border-radius:40px;display:flex;align-items:center;justify-content:center;}
+.text_modal.big{font-size:20px;}
+.modal-dialog.middle_modal{max-width:600px;}
+
+
+/*style notifications top right*/
+.notifications{position:fixed;top:0;right:0;z-index:9999;}
+.btn-close-notific{position:absolute;top:5px;right:10px;}
+.toast{cursor:pointer;background-color: #fff;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.02), 0px 4px 24px rgba(0, 0, 0, 0.02);border:none;border-radius:12px;min-width:314px;}
+.toast-body{padding:10px 12px;display:flex;align-items:center;flex-wrap:nowrap;}
+.close_toast{position:absolute;top:4px;right:5px;border:none;background-color:transparent;}
+.close_toast:focus{outline:none;}
+
+
+
+
 
 @media(min-width:1400px){
   .sidebar{padding-left:15px;}
@@ -235,7 +251,7 @@ body{background-color:#F5F5F5;}
   .sidebar_menu{padding-left:18px;}
   .face .text_modal{flex: 1 1 auto;}
   .rules_item .text_modal{flex: 1 1 auto;}
-  .modal-dialog-scrollable .modal-content{padding:5px 10px 20px;border-radius:20px;}
+  .modal-content{padding:5px 10px 20px;border-radius:20px;}
   .modal-header{padding:15px 0 5px 0;}
   .wrapper_white_bg{background:#fff;border-radius:24px;padding:20px 10px 10px;margin-bottom:20px;}
   .title_modal{font-size:28px;line-height:32px;}
@@ -270,6 +286,7 @@ body{background-color:#F5F5F5;}
   .navbar-brand img{max-width:100px;}
   .btn_bell{margin-right:0;}
   .btn.btn_aqua, .btn.btn_red, .btn.btn_white{width:100%;}
+  .toast{min-width:300px;}
 }
 
 

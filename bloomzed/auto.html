@@ -247,6 +247,14 @@
         <main class="col-lg-9 col-xxl-10 ml-sm-auto px-md-4">
           <section class="content fin_operations pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page">Автопогашения</h1>
+
+            <!--Блок для демонстрации модалок уведомлений после просмотра можно удалить :-)     -->   
+            <div class="denostration_block">
+              <button class="btn btn_aqua mb-2" data-target="#confirm_1" data-toggle="modal">модалка успешно</button>
+              <button class="btn btn_aqua mb-2" data-target="#confirm_2" data-toggle="modal">модалка ошибка</button>
+            </div>
+            <!-- ______________________________________________________________________________ -->
+
             <div class="btn-toolbar mb-2 mb-md-0">
               <button type="button" class="btn_blue" data-toggle="modal" data-target="#create_rule">
                 <span class="shevron_white">
@@ -421,6 +429,97 @@
         </main>
       </div>
     </div>
+
+
+
+    <!--уведомления в правом верхнем углу экрана для показа используется класс: "show" для скрытия по клику на уведомление класс: "hide" -->
+    <div class="notifications p-3">
+      <!--all great-->
+      <div id="notific_1" class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <img class="img-fluid pr-2" src="img/exelent.png" alt="успешно">
+          <p class="text_content mb-0">Всё прошло успешно! 🎉 🎉 🎉</p>
+          <button type="button" class="close_toast" data-dismiss="toast" aria-label="Close">
+            <img class="img-fluid" src="img/close_min.png" alt="закрыть">
+          </button>
+        </div>
+      </div>
+      <!--error-->
+      <div id="notific_2" class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <img class="img-fluid pr-2" src="img/eror.png" alt="что-то не так">
+          <p class="text_content mb-0">Похоже, что-то пошло не так...</p>
+          <button type="button" class="close_toast" data-dismiss="toast" aria-label="Close">
+            <img class="img-fluid" src="img/close_min.png" alt="закрыть">
+          </button>
+        </div>
+      </div>
+      <!--attention please-->
+      <div id="notific_3" class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <img class="img-fluid pr-2" src="img/attention.png" alt="что-то не так">
+          <p class="text_content mb-0">Что-то пошло не так. Или так. Я не знаю.</p>
+          <button type="button" class="close_toast" data-dismiss="toast" aria-label="Close">
+            <img class="img-fluid" src="img/close_min.png" alt="закрыть">
+          </button>
+        </div>
+      </div>
+      <!--all right confirm-->
+      <div id="notific_4" class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <img class="img-fluid pr-2" src="img/confirmation.png" alt="Всё хорошо">
+          <p class="text_content mb-0">Всё хорошо, я просто подтверждаю</p>
+          <button type="button" class="close_toast" data-dismiss="toast" aria-label="Close">
+            <img class="img-fluid" src="img/close_min.png" alt="закрыть">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--модалки-уведомления для демонстации привязаны к кнопкам на 250-й строке -->
+    <div class="modal fade" id="confirm_1" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered middle_modal">
+        <div class="modal-content py-3 py-lg-5">
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center text-center">
+            <div class="wrapper_img_modal">
+              <img class="img-fluid" src="img/modal_great.png" alt="успешно">
+            </div>
+            <p class="text_modal big mb-2 pt-3"><span>🎉</span> Всё прошло успешно! <span>🎉</span></p>
+            <p class="text_modal">Что бы то ни было, у вас оно получилось. Мы гордимся вами.</p>
+            <button class="btn btn_aqua mt-1 mt-lg-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
+              aria-label="Close">
+              Продолжить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="confirm_2" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered middle_modal">
+        <div class="modal-content py-3 py-lg-5">
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center text-center">
+            <div class="wrapper_img_modal">
+              <img class="img-fluid" src="img/modal_error.png" alt="ошибка">
+            </div>
+            <p class="text_modal big mb-2 pt-3">Что-то пошло не так!</p>
+            <p class="text_modal">Но не расстривайтесь, ведь всегда можно начать с начала.</p>
+            <button class="btn btn_aqua mt-1 mt-lg-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
+              aria-label="Close">
+              Попробовать снова
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!--modal window change rules-->
     <div class="modal fade" id="change_rules" aria-hidden="true" tabindex="-1">
@@ -647,12 +746,23 @@
   <script src="js/datepicker.min.js"></script>
   <script src="js/load.js"></script>
 
+  <!--script close notification-->
+  <script>
+    $('.toast').click(function(){
+      $(this).removeClass('show');
+      $(this).addClass('hide');
+    })
+  </script>
+
   <!--script for open and scroll second modal window on jquery-->
   <script>
     $('#btn_next').click(function () {
       $('body').addClass('open-modal');
     });
     $('.btn_exit').click(function () {
+      $('body').removeClass('open-modal');
+    });
+    $('.btn-close').click(function () {
       $('body').removeClass('open-modal');
     });
   </script>
