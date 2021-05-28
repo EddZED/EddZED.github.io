@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Автопогашения</title>
+  <title>Транзакции</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/datepicker.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="wrapper">
     <header class="navbar sticky-top flex-lg-nowrap p-0">
@@ -102,7 +104,7 @@
                   <div class="card card-body p-0">
                     <ul class="nav flex-column">
                       <li class="nav-item">
-                        <a class="nav-link drop_link" aria-current="page" href="#">
+                        <a class="nav-link active drop_link" aria-current="page" href="#">
                           <span data-feather="alllist" class="icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +145,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active drop_link" aria-current="page" href="#">
+                        <a class="nav-link drop_link" aria-current="page" href="#">
                           <span data-feather="reestr" class="icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -246,14 +248,7 @@
         </nav>
         <main class="col-lg-9 col-xxl-10 ml-sm-auto px-md-4">
           <section class="content fin_operations pt-lg-4 pt-3 pb-2 mb-3">
-            <h1 class="title_page">Автопогашения</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <button type="button" class="btn_blue" data-toggle="modal" data-target="#create_rule">
-                <span class="shevron_white">
-                </span>
-                + Создать правило
-              </button>
-            </div>
+            <h1 class="title_page">Транзакции</h1>
           </section>
           <section class="table_header">
             <div class="top_item_table">
@@ -265,9 +260,17 @@
                 </div>
               </div>
               <div class="download_block mt-3 mt-md-0">
-                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Загрузить выписку">
-                  Сохранить выписку
-                  <img class="img-fluid pl-2" src="img/upload.png" alt="Загрузить выписку">
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате CSV CP-1251">
+                  CSV CP
+                  <img class="img-fluid pl-2" src="img/upload.png" alt="Скачать в формате CSV CP-1251">
+                </a>
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате CSV">
+                  CSV
+                  <img class="img-fluid pl-2" src="img/upload.png" alt="Скачать в формате CSV">
+                </a>
+                <a href="" download="" class="format_load_btn" data-bs-toggle="tooltip" data-placement="bottom" title="Скачать в формате XLC">
+                  xls
+                  <img class="img-fluid pl-2" src="img/upload.png" alt="Скачать в формате XLC">
                 </a>
               </div>
             </div>
@@ -278,126 +281,110 @@
                 <thead>
                   <tr>
                     <th>ID<img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Название <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Активность <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Период <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Ближайшая дата<img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th>Сумма <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
-                    <th></th>
+                    <th>Дата <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Тип <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Отправитель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Счета из/в<img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Получатель <img class="img-fluid" src="img/shevron.svg" alt="шеврон"></th>
+                    <th>Сумма</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 342141</th>
+                    <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 124580</th>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Оплата за товар</td>
                     <td>Султан Османов</td>
-                    <td class="status completed">Выполняется</td>
-                    <td>День</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>Султан Османов</td>
+                    <td>5000 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 321321</th>
-                    <td>ТОО "Bloomzed.kz"</td>
-                    <td class="status processing">Не выполняется</td>
-                    <td>День</td>
-                    <td>04.03.2021; 16:20</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Перевод</td>
+                    <td>77772059339</td>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>77772059339</td>
+                    <td>10 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 43243</th>
-                    <td>ТОО "ESH MART"</td>
-                    <td class="status processing">Не выполняется</td>
-                    <td>День</td>
-                    <td>30.02.2021; 08:50</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Перевод</td>
+                    <td>77772059339</td>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>77772059339</td>
+                    <td>500 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 65465</th>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Оплата за товар</td>
                     <td>Султан Османов</td>
-                    <td class="status completed">Выполняется</td>
-                    <td>Неделя</td>
-                    <td>21.03.2021; 22:20</td>
-                    <td>5000 ₸</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>Султан Османов</td>
+                    <td>12000 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 87612</th>
-                    <td>ТОО "Bloomzed.kz"</td>
-                    <td class="status processing">Не выполняется</td>
-                    <td>День</td>
-                    <td>04.03.2021; 16:20</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Перевод</td>
+                    <td>Султан Османов</td>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>Султан Османов</td>
+                    <td>10 000 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 12345</th>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Оплата за товар</td>
                     <td>77668194495</td>
-                    <td class="status completed">Выполняется</td>
-                    <td>Месяц</td>
-                    <td>12.12.2020; 02:30</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>77668194495</td>
+                    <td>3000 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 32144</th>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Перевод</td>
                     <td>ТОО "ESH MART"</td>
-                    <td class="status completed">Выполняется</td>
-                    <td>День</td>
-                    <td>30.02.2021; 08:50</td>
-                    <td>100 000 ₸</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>ТОО "ESH MART"</td>
+                    <td>100 000 ₸</td>
                   </tr>
                   <tr>
                     <th scope="row"><img class="img-fluid pr-1" src="img/hash.png" alt="айди"> 24321</th>
+                    <td>26.04.2021; 11:34</td>
+                    <td>Перевод</td>
                     <td>ТОО "Bloomzed.kz"</td>
-                    <td class="status processing">Не выполняется</td>
-                    <td>Вечность</td>
-                    <td>04.03.2021; 16:20</td>
-                    <td>-</td>
-                    <td class="col_eyeses">
-                      <button type="button" class="btn_eye modal_more" data-toggle="modal" data-target="#change_rules">
-                        <img class="img-fluid" data-bs-toggle="tooltip" data-placement="bottom" title="Детализация" src="img/eye_icon.png"
-                          alt="детлизация">
-                      </button>
+                    <td>
+                      <span class="from">6667</span> <img class="img-fluid pr-2" src="img/arrow.png" alt="стрелка"><span
+                        class="to">6668</span>
                     </td>
+                    <td>ТОО "Bloomzed.kz"</td>
+                    <td>10 000 ₸</td>
                   </tr>
                 </tbody>
               </table>
@@ -422,220 +409,101 @@
       </div>
     </div>
 
-    <!--modal window change rules-->
-    <div class="modal fade" id="change_rules" aria-hidden="true" tabindex="-1">
+    <!--modal window styles detailing operations-->
+    <div class="modal fade" id="detal_info" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog-scrollable modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="title_modal">Правило №3296</h2>
+            <h2 class="title_modal">Операция <span id="">№3296</span></h2>
             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
               <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
             </button>
           </div>
-          <form action="" class="" enctype="multipart/form-data" method="post">
-            <div class="modal-body">
-              <div class="wrapper_white_bg rules_item mb-0">
-                <p class="sub_title_modal">Общее</p>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">ID</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">3313</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Название</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">ТОО "DEM Partners"</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Действие</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">Автоматическое выполнение</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Период</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">День</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Сумма</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right nowrap mb-0">100 000 ₸</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Статус</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">Активно</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Создано</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">26.04.2021; 11:34</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Кем создано</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">ab@bloomzed.com</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Обновлено</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">26.04.2021; 11:34</p>
-                </div>
-                <div class="d-flex align-items-end justify-content-between mb-3">
-                  <p class="text_modal mb-0">Кем обновлено</p>
-                  <hr class="line_bottom">
-                  <p class="text_modal text-right mb-0">admin@bloomzed.com</p>
-                </div>
+          <div class="modal-body">
+            <div class="wrapper_white_bg">
+              <p class="sub_title_modal">Общее</p>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">ID</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">3313</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Тип</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">Пополнение</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Статус</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">Выполнен</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Источник</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">mWallet api</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">БИН</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">850901303663</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Сумма</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">100 000 ₸</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Комиссия</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">0.56 ₸</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Итого</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0">100 000.56 ₸</p>
               </div>
             </div>
-            <div class="modal-footer justify-content-between mt-3">
-              <button id="btn_next" class="btn btn_aqua" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
-                aria-label="Close">
-                <span class="white_shevron">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.33337 3.33323V7.4999H3.81837M3.81837 7.4999C4.37158 6.13167 5.36311 4.98566 6.63756 4.24145C7.91202 3.49724 9.39738 3.19691 10.8608 3.38752C12.3243 3.57812 13.6832 4.2489 14.7245 5.29471C15.7658 6.34053 16.4307 7.70229 16.615 9.16657M3.81837 7.4999H7.50004M16.6667 16.6666V12.4999H16.1825M16.1825 12.4999C15.6285 13.8673 14.6367 15.0124 13.3624 15.756C12.0881 16.4995 10.6032 16.7995 9.14012 16.609C7.67709 16.4184 6.31854 15.7481 5.27715 14.703C4.23577 13.6579 3.57034 12.2969 3.38504 10.8332M16.1825 12.4999H12.5"
-                      stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                Изменить правило
-              </button>
+            <div class="wrapper_white_bg face">
+              <p class="sub_title_modal">Лица</p>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Отправитель</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0 text-right">Султан Османов Салманович (SU)</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Бенифициар</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0 text-right">Эльчин Сулейманов Новрузоглы (EL)</p>
+              </div>
             </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="change_rules2" aria-hidden="true" tabindex="-1">
-      <div class="modal-dialog-scrollable modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="title_modal">Изменение правила №3296</h2>
-            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-              <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
-            </button>
+            <div class="wrapper_white_bg">
+              <p class="sub_title_modal">Даты</p>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Создание</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0 text-right">21.03.2021; 22:20</p>
+              </div>
+              <div class="d-flex align-items-end justify-content-between mb-3">
+                <p class="text_modal mb-0">Исполнение</p>
+                <hr class="line_bottom">
+                <p class="text_modal mb-0 text-right">21.03.2021; 22:21</p>
+              </div>
+            </div>
+            <div class="wrapper_white_bg">
+              <p class="sub_title_modal">Описание</p>
+              <p class="text_modal">Платежи за услуги по проживанию во временном жилье</p>
+            </div>
+            <div class="wrapper_white_bg">
+              <p class="sub_title_modal">Статус ошибки</p>
+              <p class="text_modal">Ошибки нет</p>
+            </div>
           </div>
-          <form action="" class="" enctype="multipart/form-data" method="post">
-            <div class="modal-body">
-              <p class="text_modal mb-2">Тип юр. лица</p>
-              <select class="form-select gray_bg mb-3" aria-label="Default select example">
-                <option selected>Агент</option>
-                <option value="1">Юр. лицо</option>
-              </select>
-              <p class="text_modal mb-2">Имя юр. лица</p>
-              <select class="form-select gray_bg mb-3" aria-label="Default select example">
-                <option selected>Выберите имя</option>
-                <option value="1">Имя 1</option>
-                <option value="2">Имя 2</option>
-                <option value="3">Имя 3</option>
-              </select>
-              <p class="text_modal mb-2">Банковский счёт</p>
-              <select class="form-select gray_bg mb-3" aria-label="Default select example">
-                <option selected>Выберите счёт</option>
-                <option value="1">счёт 1</option>
-                <option value="2">счёт 2</option>
-                <option value="3">счёт 3</option>
-              </select>
-              <p class="text_modal mb-2">Действие</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Создать</option>
-                <option value="1">Редактировать</option>
-              </select>
-              <p class="text_modal mb-2">Период</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Выберите период</option>
-                <option value="1">Период 1</option>
-                <option value="2">Период 2</option>
-                <option value="3">Период 3</option>
-              </select>
-              <p class="text_modal mb-2">Валюта</p>
-              <select class="form-select gray_bg mb-3" aria-label="Default select example">
-                <option selected>Выберите валюту</option>
-                <option value="1">Валюта 1</option>
-                <option value="2">Валюта 2</option>
-                <option value="3">Валюта 3</option>
-              </select>
-              <p class="text_modal mb-2">Сумма</p>
-              <input class="form-control summ_input" step="1000" type="number" name="summ" placeholder="0">
-              <p class="text_modal mb-2">Статус</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Активно</option>
-                <option value="1">Неактивно</option>
-              </select>
-            </div>
-            <div class="modal-footer justify-content-between mt-3">
-              <button class="btn btn_white" data-target="#change_rules" data-toggle="modal" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button type="submit" class="btn btn_aqua btn_exit" data-dismiss="modal" aria-label="Close">Сохранить</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--modal window create rule-->
-    <div class="modal fade" id="create_rule" aria-hidden="true" tabindex="-1">
-      <div class="modal-dialog-scrollable modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="title_modal">Создание правила</h2>
-            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-              <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
-            </button>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn_aqua" data-dismiss="modal"><img class="img-fluid" src="img/tranz.png"
+                alt="транзакции"> Транзакции</button>
+            <button type="submit" class="btn btn_red"><img class="img-fluid" src="img/white_close.png" alt="сторнирование">
+              Сторнирование</button>
           </div>
-          <form action="" class="" enctype="multipart/form-data" method="post">
-            <div class="modal-body">
-              <p class="text_modal mb-2">Тип юр. лица</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Агент</option>
-                <option value="1">Юр. лицо</option>
-              </select>
-              <p class="text_modal mb-2">Имя юр. лица</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Выберите имя</option>
-                <option value="1">Имя 1</option>
-                <option value="2">Имя 2</option>
-                <option value="3">Имя 3</option>
-              </select>
-              <p class="text_modal mb-2">Банковский счёт</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Выберите счёт</option>
-                <option value="1">счёт 1</option>
-                <option value="2">счёт 2</option>
-                <option value="3">счёт 3</option>
-              </select>
-              <p class="text_modal mb-2">Действие</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Создать</option>
-                <option value="1">Редактировать</option>
-              </select>
-              <p class="text_modal mb-2">Период</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Выберите период</option>
-                <option value="1">Период 1</option>
-                <option value="2">Период 2</option>
-                <option value="3">Период 3</option>
-              </select>
-              <p class="text_modal mb-2">Валюта</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Выберите валюту</option>
-                <option value="1">Валюта 1</option>
-                <option value="2">Валюта 2</option>
-                <option value="3">Валюта 3</option>
-              </select>
-              <p class="text_modal mb-2">Сумма</p>
-              <input class="form-control summ_input" type="number" name="summ" placeholder="0">
-              <p class="text_modal mb-2">Статус</p>
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Активно</option>
-                <option value="1">Неактивно</option>
-              </select>
-            </div>
-            <div class="modal-footer justify-content-between mt-3">
-              <button class="btn btn_white" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button type="submit" class="btn btn_aqua" data-target="#load_reestr2" data-toggle="modal"
-              data-dismiss="modal" aria-label="Close">Сохранить</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
@@ -645,8 +513,6 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="js/datepicker.min.js"></script>
-  <script src="js/load.js"></script>
-
   <!--script for open and scroll second modal window on jquery-->
   <script>
     $('#btn_next').click(function () {
@@ -656,7 +522,6 @@
       $('body').removeClass('open-modal');
     });
   </script>
-  <!---->
   <script>
     $('.datepicker-here').datepicker({
         todayButton: new Date(),
