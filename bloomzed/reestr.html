@@ -548,13 +548,13 @@
             </div>
           <div class="modal-footer justify-content-between mt-3">
             <button class="btn btn_white" data-dismiss="modal" aria-label="Close">Отмена</button>
-            <button class="btn btn_aqua" data-target="#load_reestr2" data-toggle="modal"
+            <button id="btn_next" class="btn btn_aqua" data-target="#load_reestr2" data-toggle="modal"
               data-dismiss="modal" aria-label="Close">Далее</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="load_reestr2" aria-hidden="true" tabindex="-1">
+    <div class="modal fade" id="load_reestr2" aria-hidden="false" tabindex="-1">
       <div class="modal-dialog-scrollable modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -581,7 +581,7 @@
             </div>
           <div class="modal-footer justify-content-between mt-3">
             <button class="btn btn_white" data-dismiss="modal" aria-label="Close">Отмена</button>
-            <button class="btn btn-primary" data-dismiss="modal" aria-label="Close">Продолжить</button>
+            <button type="submit" class="btn btn_aqua btn_exit" data-dismiss="modal" aria-label="Close">Продолжить</button>
           </div>
         </div>
       </div>
@@ -593,6 +593,14 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="js/datepicker.min.js"></script>
   <script src="js/load.js"></script>
+  <script>
+    $('#btn_next').click(function(){
+      $('body').addClass('open-modal');
+    });
+    $('.btn_exit').click(function () {
+        $('body').removeClass('open-modal');
+    });
+  </script>
   <script>
     $('.datepicker-here').datepicker({
         todayButton: new Date(),
