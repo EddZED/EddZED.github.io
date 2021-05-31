@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Регистрация ИП форма</title>
+  <title>Регистрация ИП компания</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/datepicker.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,112 +59,74 @@
                   </li>
                 </ul>
               </nav>
-              <form action="" class="">
+              <form action="" class="company_anket">
                 <fieldset>
-                  <h2 class="title_registration pt-md-3">Общее</h2>
+                  <h2 class="title_registration pt-md-3">Анкета компании</h2>
                   <div class="row">
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Имя
-                        <input class="mt-1" type="text" name="" placeholder="Мэлс">
+                        Наименование<span class="required">*</span>
+                        <input class="mt-1" type="text" name="" placeholder="Наименование компании">
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Фамилия
-                        <input class="mt-1" type="text" name="" placeholder="Джонсон">
+                        БИН<span class="required">*</span>
+                        <input class="mt-1" type="text" name="" placeholder="123456789012">
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Отчество
-                        <input class="mt-1" type="text" name="" placeholder="Климович">
+                        Деятельность<span class="required">*</span>
+                        <select class="form-select mt-1" aria-label="Default select example">
+                          <option selected>ИП</option>
+                          <option value="1">ООО</option>
+                          <option value="2">ИП</option>
+                          <option value="3">ООО</option>
+                        </select>
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Электронная почта
-                        <input class="mt-1" type="text" name="" placeholder="mels@mail.com">
-                      </label>
-                    </div>
-                    <h2 class="title_registration pt-md-3">Личные данные</h2>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Пол
-                        <input class="mt-1" type="text" name="" placeholder="Мужской">
+                        Адрес сайта
+                        <input class="mt-1" type="text" name="" placeholder="example.com">
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Дата рождения
-                        <input class="mt-1" type="date" name="" placeholder="Мужской">
+                        Наличи/Отсутствие оффшоров
+                        <input class="mt-1" type="text" name="" placeholder="При наличии">
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Страна
-                        <input class="mt-1" type="text" name="" placeholder="Казахстан">
+                        Характеристика фин. состояния
+                        <input class="mt-1" type="text" name="" placeholder="При наличии">
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Гражданство
-                        <input class="mt-1" type="text" name="" placeholder="Казахстан">
+                        Вид платежа<span class="required">*</span>
+                        <select class="form-select mt-1" aria-label="Default select example">
+                          <option value="1">пункт 1</option>
+                          <option value="2">пункт 2</option>
+                          <option value="3">пункт 3</option>
+                        </select>
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
-                        Улица
-                        <input class="mt-1" type="text" name="" placeholder="ул. Платона-Верещагина">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Номер дома
-                        <input class="mt-1" type="number" name="" placeholder="666">
-                      </label>
-                    </div>
-                    <h2 class="title_registration pt-md-3">Документы</h2>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        ИИН
-                        <input class="mt-1" type="number" name="" placeholder="025456987">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Номер документа
-                        <input class="mt-1" type="number" name="" placeholder="123456789">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Дата выдачи
-                        <input class="mt-1" type="date" name="" placeholder="123456789">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Дата истечения
-                        <input class="mt-1" type="date" name="" placeholder="123456789">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Орган, выдавший документ
-                        <input class="mt-1" type="text" name="" placeholder="МВД РК">
-                      </label>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
-                        Документ
-                        <input class="mt-1" type="text" name="" placeholder="Удостоверение личности">
+                        Вид деятельности<span class="required">*</span>
+                        <select class="form-select mt-1" aria-label="Default select example">
+                          <option value="1">пункт 1</option>
+                          <option value="2">пункт 2</option>
+                          <option value="3">пункт 3</option>
+                        </select>
                       </label>
                     </div>
                   </div>
-                  <div class="d-flex align-items-center flex-column flex-sm-row mt-lg-4 mt-3">
-                    <button type="button" data-toggle="modal" data-target="#sms_confirm" class="btn btn_aqua px-4">Далее</button>
-                    <a href="#" class="dont_come ml-3">Данные не совпадают?</a>
+                  <div class="d-flex align-items-center flex-column flex-sm-row">
+                    <button type="button" data-toggle="modal" data-target="#pass_confirm" class="btn btn_aqua mt-lg-4 mt-3 px-4">Далее</button>
                   </div>
                 </fieldset>
               </form>
@@ -181,6 +141,51 @@
       </div>
     </main> 
     
+    <!--modal password confirm-->
+    <div class="modal fade" id="pass_confirm" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered password_modal">
+        <div class="modal-content py-3 py-lg-5">
+          <p class="text_modal big mb-2 pt-3">Придумайте пароль</p>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <form action="" class="w-100">
+              <fieldset>
+                <p class="text_modal mb-2 pt-3">Пароль</p>
+                <div class="w-100 position-relative mt-1 mt-sm-0">
+                  <input id="pass_user" class="form-control" type="password" name="" placeholder="">
+                  <label class="hidden_password">
+                    <input type="checkbox" class="hide_pass">
+                    <img class="img-fluid" src="img/look_pas.png" alt="показать пароль">
+                  </label>
+                </div>
+                <p class="text_modal mb-2 pt-3">Повтороите пароль</p>
+                <div class="w-100 position-relative mt-1 mt-sm-0">
+                  <!-- ---------------------------------------------- -->
+                  <!-- класс "error_pas" при ошибке повтра пароля пароля -->
+                  <!-- ---------------------------------------------- -->
+                  <input id="pass_user_confirm" class="form-control error_pas" type="password" name="" placeholder="">
+                  <span class="error_text">Пароли не совпадают</span>
+                  <label class="hidden_password">
+                    <input type="checkbox" class="hide_pass">
+                    <img class="img-fluid" src="img/look_pas.png" alt="показать пароль">
+                  </label>
+                </div>
+                <div class="text-right mt-4">
+                  <button class="btn btn_aqua mt-1 mt-xl-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
+                    aria-label="Close">
+                    Далее
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!--modal sms confirm-->
     <div class="modal fade" id="sms_confirm" aria-hidden="true" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered middle_modal">
@@ -212,4 +217,15 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script>
+    $('body').on('click', '.hide_pass', function () {
+        if ($(this).is(':checked')) {
+          $('#pass_user').attr('type', 'text');
+          $('#pass_user_confirm').attr('type', 'text');
+        } else {
+          $('#pass_user').attr('type', 'password');
+          $('#pass_user_confirm').attr('type', 'password');
+        }
+      });
+  </script>
 </body>

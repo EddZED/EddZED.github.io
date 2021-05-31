@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 py-0 py-md-3 px-3">
+            <header class="header_logo">
+              <a href="#" class="logo_link">
+                <img class="img-fluid" src="img/logo.svg" alt="bloomzed">
+              </a>
+            </header>
+            <div class="content_registr">
+              <h1 class="title_page">Авторизация</h1>
+              <form action="" class="">
+                <fieldset>
+                  <p class="text_content mb-1 mt-lg-5 mt-3">Телефон</p>
+                  <label class="input_form_autorization">
+                    <input class="mt-1" type="text" name="" placeholder="+7 ••• ••• •• ••">
+                  </label>
+                  <p class="text_content mb-1 mt-4">Пароль</p>
+                  <div class="input_form_autorization">
+                    <input class="mt-1" type="text" name="" placeholder="">
+                    <label class="hidden_password">
+                      <input type="checkbox" class="hide_pass">
+                      <img class="img-fluid" src="img/look_pas.png" alt="показать пароль">
+                    </label>
+                  </div>
+                  <div class="d-flex align-items-center flex-column flex-sm-row mt-lg-5 mt-4">
+                    <button type="button" data-toggle="modal" data-target="#sms_confirm"
+                      class="btn btn_aqua px-4">Войти</button>
+                    <a href="#" class="dont_come ml-sm-3">Забыли пароль?</a>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block py-3">
+            <div class="wrapper_image_registration text-center text-xl-left">
+              <img class="img-fluid" src="img/intro_main.png" alt="регистрация">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>  
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script>
+    $('body').on('click', '.hide_pass', function () {
+      if ($(this).is(':checked')) {
+        $('#pass_user').attr('type', 'text');
+      } else {
+        $('#pass_user').attr('type', 'password');
+      }
+    });
+  </script>
+</body>

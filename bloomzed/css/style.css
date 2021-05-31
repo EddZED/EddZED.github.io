@@ -158,6 +158,9 @@ body{background-color:#F5F5F5;}
 .page-link.next{background-color:transparent;display:inline-flex;align-items:center;height:100%;}
 
 
+
+
+
 /*style registration page*/
 .main{display:block;max-height:100vh;position:relative;}
 .content_registr{padding:40px 0 20px;}
@@ -180,7 +183,7 @@ body{background-color:#F5F5F5;}
 .wrap_input{max-width:328px;background-color:#fff;position:relative;border-radius:24px;overflow:hidden;}
 .sms_code{font-size:32px;line-height:32px;padding:20px 25px;text-align:center;border:none;}
 .sms_code::-webkit-input-placeholder{color:rgba(0, 0, 0, 0.1);}
-.dont_come{display:inline-block;text-decoration:none;padding-top:20px;color:rgba(0,0,0,.5);transition:all .3s;font-family:'inter_medium';}
+.dont_come{display:inline-block;text-decoration:none;color:rgba(0,0,0,.5);transition:all .3s;font-family:'inter_medium';}
 .dont_come:hover{color:rgba(0,0,0,1);}
 .input_form_registration{font-size:16px;line-height:28px;font-family:'inter_medium';color:#000;width:100%;}
 .input_form_registration input{background: rgba(0, 0, 0, 0.04);border: 1px solid rgba(0, 0, 0, 0.12);border-radius:10px;padding:5px 15px;width:100%;}
@@ -188,7 +191,21 @@ body{background-color:#F5F5F5;}
 .input_form_registration input:focus{outline:none;}
 .main.form_anket{min-height:100vh;}
 .input_form_registration input[type="date"]{-webkit-appearance:none;appearance:none;}
+.required{color:#AC092F;}
+.company_anket .input_form_registration input{background-color:#fff;border:none;}
+.password_modal .modal-content{padding:5px 60px 30px;}
+.password_modal .form-control{background-color:#fff;border-radius:10px;border:none;border:1px solid transparent;padding:7px 15px;}
+.password_modal .form-control.error_pas{border-color:#FF0000;}
+.hidden_password{position:absolute;right:15px;top:5px;cursor:pointer;z-index:999;}
+.hidden_password input[type="checkbox"]{display:none;}
+.error_text{position:absolute;bottom:-20px;font-size:12px;font-family:'inter_medium';color:#FF0000;}
+.green_load{color:#009082;text-decoration:none;}
 
+/*style autorization page*/
+.input_form_autorization{font-size:16px;line-height:28px;font-family:'inter_medium';position:relative;color:#000;width:100%;display:flex;flex-direction:column;max-width:400px;}
+.input_form_autorization input{border:none;background-color:#fff;padding:7px 15px;border-radius:10px;}
+.input_form_autorization input:focus{outline:none;}
+.input_form_autorization .hidden_password{top:8px;}
 
 
 
@@ -266,6 +283,7 @@ body{background-color:#F5F5F5;}
   .navbar-brand{padding-left:15px;}
   .content_registr{text-align:center;}
   .step_links{display:flex;justify-content:center;}
+  .input_form_autorization{max-width:100%;}
 }
 @media(max-width:991px){
   .sidebar{overflow-y:scroll;}
@@ -303,6 +321,7 @@ body{background-color:#F5F5F5;}
   .title_modal{font-size:24px;line-height:28px;}
   .title_registration{font-size:22px;line-height:32px;}
   .content_registr{padding-top:20px;}
+  .password_modal .modal-content{padding:5px 20px 20px;}
 }
 @media(max-width:575px){
   .wallet_score{font-size:16px;}
@@ -315,6 +334,7 @@ body{background-color:#F5F5F5;}
   .text_modal{font-size:14px;line-height:16px;}
   .steps_links_container{flex-direction:column;padding-top:10px;}
   .right_step_icon{transform:rotateZ(90deg);}
+  .dont_come{padding-top:20px;}
 }
 @media(max-width:400px){
   .content_wallet{padding:12px 23px 5px 12px;}
