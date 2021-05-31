@@ -176,6 +176,9 @@ body{background-color:#F5F5F5;}
 .input_content:hover{background-color:#5959D3;}
 .input_radio input[type="radio"]:checked + .input_content span{color:#fff;}
 .input_radio input[type="radio"]:checked + .input_content{background-color:#5959D3;}
+.phone_input{max-width:460px;border:none;border-radius:10px;background-color:#fff;}
+
+
 
 
 /*style modal window*/
