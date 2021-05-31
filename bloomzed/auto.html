@@ -247,14 +247,6 @@
         <main class="col-lg-9 col-xxl-10 ml-sm-auto px-md-4">
           <section class="content fin_operations pt-lg-4 pt-3 pb-2 mb-3">
             <h1 class="title_page">Автопогашения</h1>
-
-            <!--Блок для демонстрации модалок уведомлений после просмотра можно удалить :-)     -->   
-            <div class="denostration_block">
-              <button class="btn btn_aqua py-2 mb-2" data-target="#confirm_1" data-toggle="modal">модалка успешно</button>
-              <button class="btn btn_aqua py-2 mb-2" data-target="#confirm_2" data-toggle="modal">модалка ошибка</button>
-            </div>
-            <!-- ______________________________________________________________________________ -->
-
             <div class="btn-toolbar mb-2 mb-md-0">
               <button type="button" class="btn_blue" data-toggle="modal" data-target="#create_rule">
                 <span class="shevron_white">
@@ -425,6 +417,13 @@
                 <li class="page-item"><a class="page-link next" href="#"><img class="img-fluid" src="img/shevron_right.png" alt="следующая" data-bs-toggle="tooltip" data-placement="top" title="На следующую страницу"></a></li>
               </ul>
             </nav>
+
+            <!--Блок для демонстрации модалок уведомлений после просмотра можно удалить :-)     -->
+            <div class="denostration_block">
+              <button class="btn btn_aqua py-2 mb-2" data-target="#confirm_1" data-toggle="modal">модалка успешно</button>
+              <button class="btn btn_aqua py-2 mb-2" data-target="#confirm_2" data-toggle="modal">модалка ошибка</button>
+            </div>
+            <!-- ______________________________________________________________________________ -->
           </section>
         </main>
       </div>
@@ -476,7 +475,7 @@
       </div>
     </div>
 
-    <!--модалки-уведомления для демонстации привязаны к кнопкам на 250-й строке -->
+    <!--модалки-уведомления для демонстации привязаны к кнопкам на 421-й строке -->
     <div class="modal fade" id="confirm_1" aria-hidden="true" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered middle_modal">
         <div class="modal-content py-3 py-lg-5">
@@ -489,8 +488,7 @@
             </div>
             <p class="text_modal big mb-2 pt-3"><span>🎉</span> Всё прошло успешно! <span>🎉</span></p>
             <p class="text_modal">Что бы то ни было, у вас оно получилось. Мы гордимся вами.</p>
-            <button class="btn btn_aqua mt-1 mt-lg-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
-              aria-label="Close">
+            <button class="btn btn_aqua mt-1 mt-lg-3" data-dismiss="modal" aria-label="Close">
               Продолжить
             </button>
           </div>
@@ -510,8 +508,7 @@
             </div>
             <p class="text_modal big mb-2 pt-3">Что-то пошло не так!</p>
             <p class="text_modal">Но не расстривайтесь, ведь всегда можно начать с начала.</p>
-            <button class="btn btn_aqua mt-1 mt-lg-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
-              aria-label="Close">
+            <button class="btn btn_aqua mt-1 mt-lg-3" data-dismiss="modal" aria-label="Close">
               Попробовать снова
             </button>
           </div>
