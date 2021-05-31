@@ -68,7 +68,7 @@
                     <input id="phone" class="form-control phone_input" type="phone" name="" placeholder="+7 ••• ••• •• ••">
                   </div>
                   <div class="w-100"></div>
-                  <button type="submit" class="btn btn_aqua mt-lg-4 mt-3 px-4">Далее</button>
+                  <button type="button" data-toggle="modal" data-target="#sms_confirm" class="btn btn_aqua mt-lg-4 mt-3 px-4">Далее</button>
                 </fieldset>
               </form>
             </div>
@@ -80,7 +80,36 @@
           </div>
         </div>
       </div>
-    </main>  
+    </main> 
+    
+    <!--modal sms confirm-->
+    <div class="modal fade" id="sms_confirm" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered middle_modal">
+        <div class="modal-content py-3 py-lg-5">
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <img class="img-fluid" src="img/close_btn.png" alt="закрыть">
+          </button>
+          <div class="modal-body d-flex flex-column align-items-center text-center">
+            <form action="" class="">
+              <fieldset>
+                <label class="wrap_input mt-5 mt-sm-0">
+                  <input class="form-control sms_code" type="text" name="" placeholder="• &#160;•&#160; •&#160; • &#160;•&#160; •">
+                </label>
+                <p class="text_modal big mb-2 pt-3">Введите код из SMS</p>
+                <p class="text_modal">Мы отправили его на номер <span id="user_phone" >+7 701 942 91 41</span></p>
+                <button class="btn btn_aqua mt-1 mt-xl-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
+                  aria-label="Close">
+                  Далее
+                </button>
+                <div class="w-100"></div>  
+                <a href="#" class="dont_come">Не пришел код?</a>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
