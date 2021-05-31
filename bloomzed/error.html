@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ошибка</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main class="main error">
+      <div class="container h-100">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 text-center">
+            <a href="#" class="logo_link error">
+              <img class="img-fluid" src="img/logo.svg" alt="bloomzed">
+            </a>
+            <div class="w-100 d-flex justify-content-center">
+              <div class="wrapper_img_modal">
+                <img class="img-fluid" src="img/modal_error.png" alt="ошибка">
+              </div>
+            </div>
+            <p class="text_modal big mb-2 pt-3">Что-то пошло не так!</p>
+            <p class="text_modal mb-1">Похоже, что ваш номер найден в черном списке</p>
+            <p class="text_modal">Пожалуйста, обратитесь к администрации компании Bloomzed <a href="tel:+77016660909" class="phone_main">+7 (701) 666-09-09</a></p>
+            <button class="btn btn_aqua mt-1 mt-lg-3" data-target="#change_rules2" data-toggle="modal" data-dismiss="modal"
+              aria-label="Close">
+              Попробовать снова
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>  
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script>
+    $('body').on('click', '.hide_pass', function () {
+      if ($(this).is(':checked')) {
+        $('#pass_user').attr('type', 'text');
+      } else {
+        $('#pass_user').attr('type', 'password');
+      }
+    });
+  </script>
+</body>
