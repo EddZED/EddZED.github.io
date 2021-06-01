@@ -93,7 +93,7 @@
             <form action="" class="">
               <fieldset>
                 <label class="wrap_input mt-5 mt-sm-0">
-                  <input class="form-control sms_code" type="text" name="" placeholder="• &#160;•&#160; •&#160; • &#160;•&#160; •">
+                  <input id="smscode" class="form-control sms_code" type="text" maxlength="6" name="" placeholder="• &#160;•&#160; •&#160; • &#160;•&#160; •">
                 </label>
                 <p class="text_modal big mb-2 pt-3">Введите код из SMS</p>
                 <p class="text_modal">Мы отправили его на номер <span id="user_phone" >+7 701 942 91 41</span></p>
@@ -113,4 +113,9 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script>
+    $('body').on('input', '#smscode', function () {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
+  </script>
 </body>

@@ -210,6 +210,7 @@ body{background-color:#F5F5F5;}
 .wrap_input{max-width:328px;background-color:#fff;position:relative;border-radius:24px;overflow:hidden;}
 .sms_code{font-size:32px;line-height:32px;padding:20px 25px;text-align:right;border:none;letter-spacing:25px;}
 .sms_code::-webkit-input-placeholder{color:rgba(0, 0, 0, 0.1);letter-spacing:6px;}
+.sms_code::-webkit-outer-spin-button, .sms_code::-webkit-inner-spin-button{appearance:none;-webkit-appearance:none;}
 .dont_come{display:inline-block;text-decoration:none;color:rgba(0,0,0,.5);transition:all .3s;font-family:'inter_medium';}
 .dont_come:hover{color:rgba(0,0,0,1);}
 .input_form_registration{font-size:16px;line-height:28px;font-family:'inter_medium';color:#000;width:100%;}
