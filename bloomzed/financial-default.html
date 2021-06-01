@@ -8,7 +8,7 @@
   <title>Финансовые операции</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -276,7 +276,10 @@
                 <p class="text_opacity pr-3 mb-0">Выбрать период:</p>
                 <div class="wrapper_calendar" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация">
                   <img class="img-fluid" src="img/calendar_icon.svg" alt="календарь">
-                  <input type="text" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация" data-range="true" readonly data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время"/>
+                  <div class="flatpickr">
+                    <input type="text" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация" data-range="true" readonly
+                      data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время" />
+                  </div>
                 </div>
               </div>
               <div class="download_block mt-3 mt-md-0">
@@ -564,8 +567,14 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="js/datepicker.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script>
+    $(".datepicker-here").flatpickr({
+      mode: "range",
+      locale: "ru"
+    });
+  </script>
   <script>
     $('.datepicker-here').datepicker({
         todayButton: new Date(),
