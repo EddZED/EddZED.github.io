@@ -8,7 +8,7 @@
   <title>Регистрация ИП форма</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -99,7 +99,9 @@
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
                         Дата рождения
-                        <input class="mt-1" type="date" name="" placeholder="Мужской">
+                        <div class="flatpickr">
+                          <input type="text" readonly class="datepicker mt-1" placeholder="" />
+                        </div>
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
@@ -140,15 +142,19 @@
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
-                      <label class="input_form_registration">
+                      <label class="input_form_registration position-relative">
                         Дата выдачи
-                        <input class="mt-1" type="date" name="" placeholder="123456789">
+                        <div class="flatpickr">
+                          <input type="text" readonly class="datepicker mt-1" placeholder="" />
+                        </div>
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
                       <label class="input_form_registration">
                         Дата истечения
-                        <input class="mt-1" type="date" name="" placeholder="123456789">
+                        <div class="flatpickr">
+                          <input type="text" readonly class="datepicker mt-1" placeholder="" />
+                        </div>
                       </label>
                     </div>
                     <div class="col-lg-6 mb-3">
@@ -186,5 +192,11 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script>
+    $(".datepicker").flatpickr({
+      locale: "ru"
+    });
+  </script>
 </body>
