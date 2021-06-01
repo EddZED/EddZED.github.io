@@ -8,7 +8,7 @@
   <title>Финансовые операции</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -523,7 +523,7 @@
       </div>
     </div>
 
-
+ 
     <!--modal window detailing operations-->
     <div class="modal fade" id="detal_info" data-bs-keyboard="false" tabindex="-1"
       aria-hidden="true">
@@ -626,20 +626,40 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="js/datepicker.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   <script>
-    $('.datepicker-here').datepicker({
-        todayButton: new Date(),
-        clearButton: new Date(),
-        position: "right top"
+    $(".datepicker-here").flatpickr({
+      mode: "range",
+      locale: "ru"
     });
-     $(window).on('resize', function () {
-        if ($(window).width() < 992) {
-          $('.datepicker-here').datepicker({
-            position: "bottom right"
-          });
-        }
-      });
+  </script>
+  <script>
+    const relativCont = document.querySelector('.flatpickr-input')
+    const mainCont = document.querySelector('.flatpickr-calendar');
+    const container = document.querySelector('.flatpickr-rContainer');
+    const btn = document.createElement('div');
+    btn.classList.add('btn_clear');
+    container.appendChild(btn);
+    const item = document.createElement('button');
+    const item2 = document.createElement('button');
+    item.classList.add('btn', 'btn_aqua', 'btn_rem');
+    item2.classList.add('btn', 'btn_remove');
+    btn.appendChild(item);
+    btn.appendChild(item2);
+    var elem = document.getElementsByClassName('btn_rem');
+    elem[0].innerHTML = "Применить";
+    elem[0].setAttribute('data-toogle', '');
+    elem[0].addEventListener("click", () => {
+      mainCont.classList.remove("open");
+      relativCont.classList.remove("active");
+    });
+    var elem2 = document.getElementsByClassName('btn_remove');
+    elem2[0].innerHTML = "Очистить";
+    elem2[0].setAttribute('data-clear', '');
+    elem2[0].addEventListener("click", () => {
+      relativCont.value = 'За всё время';
+    });
   </script>
   <script>
     const selected = document.querySelector(".selected");

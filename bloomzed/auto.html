@@ -800,21 +800,6 @@
       $('body').removeClass('open-modal');
     });
   </script>
-  <!---->
-  <script>
-    $('.datepicker-here').datepicker({
-        todayButton: new Date(),
-        clearButton: new Date(),
-        position: "right top"
-    });
-     $(window).on('resize', function () {
-        if ($(window).width() < 992) {
-          $('.datepicker-here').datepicker({
-            position: "bottom right"
-          });
-        }
-      });
-  </script>
   <script>
     const selected = document.querySelector(".selected");
     const optionsContainer = document.querySelector(".options-container");
