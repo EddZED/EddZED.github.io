@@ -176,7 +176,13 @@ body{background-color:#F5F5F5;}
 .input_radio input[type="radio"]{display:none;}
 .input_radio span{font-size:16px;line-height:28px;color:inherit;text-transform: uppercase;font-family:'inter_medium';}
 .input_content{padding:5px 10px;border-radius:14px;transition:all .3s;color:#000;position:relative;display:inline-flex;align-items:center;transition:all .3s;}
-.input_content:hover{background-color:#5959D3;}
+.input_content:hover{background-color:#5959D3;color:#fff;}
+.input_content svg path{transition:all .3s;}
+.input_content:hover svg rect{opacity:0;}
+.input_content:hover svg path{stroke:#fff;}
+.input_radio input[type="radio"]:checked + .input_content svg rect{opacity:0;}
+.input_radio input[type="radio"]:checked + .input_content svg path{stroke:#fff;}
+.input_content span{display:inline-block;padding-left:10px;}
 .input_radio input[type="radio"]:checked + .input_content span{color:#fff;}
 .input_radio input[type="radio"]:checked + .input_content{background-color:#5959D3;}
 .phone_input{max-width:460px;border:none;border-radius:10px;background-color:#fff;}
@@ -200,6 +206,9 @@ body{background-color:#F5F5F5;}
 .hidden_password input[type="checkbox"]{display:none;}
 .error_text{position:absolute;bottom:-20px;font-size:12px;font-family:'inter_medium';color:#FF0000;}
 .green_load{color:#009082;text-decoration:none;}
+
+
+
 
 /*style autorization page*/
 .input_form_autorization{font-size:16px;line-height:28px;font-family:'inter_medium';position:relative;color:#000;width:100%;display:flex;flex-direction:column;max-width:400px;}
