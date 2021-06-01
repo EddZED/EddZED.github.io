@@ -208,8 +208,8 @@ body{background-color:#F5F5F5;}
 .input_radio input[type="radio"]:checked + .input_content{background-color:#5959D3;}
 .phone_input{max-width:460px;border:none;border-radius:10px;background-color:#fff;}
 .wrap_input{max-width:328px;background-color:#fff;position:relative;border-radius:24px;overflow:hidden;}
-.sms_code{font-size:32px;line-height:32px;padding:20px 25px;text-align:right;border:none;letter-spacing:25px;}
-.sms_code::-webkit-input-placeholder{color:rgba(0, 0, 0, 0.1);letter-spacing:6px;}
+.sms_code{font-size:32px;line-height:32px;padding:20px 25px;text-align:center;border:none;letter-spacing:25px;caret-color:transparent;}
+.sms_code::-webkit-input-placeholder{color:rgba(0, 0, 0, 0.1);letter-spacing:6px;text-align:center;}
 .sms_code::-webkit-outer-spin-button, .sms_code::-webkit-inner-spin-button{appearance:none;-webkit-appearance:none;}
 .dont_come{display:inline-block;text-decoration:none;color:rgba(0,0,0,.5);transition:all .3s;font-family:'inter_medium';}
 .dont_come:hover{color:rgba(0,0,0,1);}
