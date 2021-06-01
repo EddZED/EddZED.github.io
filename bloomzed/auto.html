@@ -7,7 +7,7 @@
   <title>Автопогашения</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -259,9 +259,12 @@
             <div class="top_item_table">
               <div class="period_block">
                 <p class="text_opacity pr-3 mb-0">Выбрать период:</p>
-                <div class="wrapper_calendar" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация">
+                <div class="wrapper_calendar">
                   <img class="img-fluid" src="img/calendar_icon.svg" alt="календарь">
-                  <input type="text" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация" data-range="true" readonly data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время"/>
+                  <div class="flatpickr">
+                    <input type="text" data-bs-toggle="tooltip" data-placement="bottom" title="Фильтрация" data-range="true" readonly
+                      data-multiple-dates-separator=" - " class="datepicker-here" placeholder="За всё время" />
+                  </div>
                 </div>
               </div>
               <div class="download_block mt-3 mt-md-0">
@@ -740,8 +743,42 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="js/datepicker.min.js"></script>
   <script src="js/load.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script>
+    $(".datepicker-here").flatpickr({
+      mode: "range",
+      locale: "ru"
+    });
+  </script>
+  <script>
+    const relativCont = document.querySelector('.flatpickr-input')
+    const mainCont = document.querySelector('.flatpickr-calendar');
+    const container = document.querySelector('.flatpickr-rContainer');
+    const btn = document.createElement('div');
+    btn.classList.add('btn_clear');
+    container.appendChild(btn);
+    const item = document.createElement('button');
+    const item2 = document.createElement('button');
+    item.classList.add('btn', 'btn_aqua', 'btn_rem');
+    item2.classList.add('btn', 'btn_remove');
+    btn.appendChild(item);
+    btn.appendChild(item2);
+    var elem = document.getElementsByClassName('btn_rem');
+    elem[0].innerHTML = "Применить";
+    elem[0].setAttribute('data-toogle', '');
+    elem[0].addEventListener("click", () => {
+      mainCont.classList.remove("open");
+      relativCont.classList.remove("active");
+    });
+    var elem2 = document.getElementsByClassName('btn_remove');
+    elem2[0].innerHTML = "Очистить";
+    elem2[0].setAttribute('data-clear', '');
+    elem2[0].addEventListener("click", () => {
+      relativCont.value = 'За всё время';
+    });
+  </script>
 
   <!--script close notification-->
   <script>
