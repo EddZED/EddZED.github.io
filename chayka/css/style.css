@@ -126,13 +126,13 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .many:focus{outline:none;}
 .value_summ span{position:absolute;right:0;bottom:0;}
 /*new styles*/
-.wrapper_info{background-color:#fff;border-radius:20px;box-shadow:4px 4px 12px rgba(0,0,0,.08);padding:40px 30px;}
+.wrapper_info{background-color:#fff;border-radius:20px;box-shadow:4px 4px 12px rgba(0,0,0,.08);padding:25px 20px;height:100%;}
 .profile_foto_item{position:relative;cursor:pointer;}
 .profile_foto_item input[type="file"]{display:none;}
 .photo_user{width:100px;height:100px;overflow:hidden;border-radius:50%;border:2px solid #7A9B14;display:inline-block;}
 .icon_download{position:absolute;top:-15px;right:-25px;width:50px;height:50px;}
 .icon_download img{object-fit:contain;}
-.btn_edit{position:absolute;right:20px;top:0;bottom:0;margin:auto;}
+.btn_edit{position:absolute;right:20px;top:8px;bottom:0;margin:auto;}
 .btn_edit input[type="checkbox"]{display:none;}
 .btn_edit span{cursor:pointer;}
 .full_name_input{background-color:transparent;transition:all .3s;width:100%;pointer-events:none;border:none;border-bottom:1px solid transparent;font-size:22px;font-family:'circe_bold';}
@@ -144,12 +144,13 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .link_profile{font-size:16px;line-height:15px;display:inline-block;margin-bottom:8px;text-decoration:none;color:#151414;border-bottom:1px solid transparent;transition:all .3s;}
 .link_profile:hover{border-color:#151414;text-decoration:none;color:inherit;}
 .wrap_edit_view{position:relative;}
-
-
-
-
-
-
+.link_profile.balance{padding:15px 30px;background-color:#C0EF2F;border:none;box-shadow:0 0 10px rgba(0,0,0,.1);border-radius:25px;transition:all .3s;}
+.link_profile.balance:hover{border:none;box-shadow:0 0 10px rgba(0,0,0,.2);text-decoration:none;}
+.name_table.middle{font-size:22px;line-height:32px;}
+.staff_item.last_operations thead tr th{padding:5px 0;}
+.staff_item.last_operations tbody tr td{padding:5px 0;}
+.block_comments{border-radius:15px;box-shadow:0 0 5px rgba(0,0,0,.08);padding:10px 15px;margin-bottom:10px;}
+.content_comments{box-shadow:0 -1px 1px rgba(0,0,0,.1);padding-top:10px;}
 
 
 
