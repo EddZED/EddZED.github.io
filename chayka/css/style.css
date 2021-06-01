@@ -201,6 +201,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .scroll_table::-webkit-resizer { background-color: #7A9B14;}
   .name_table{font-size:30px;line-height:33px;}
   .order_btn_block{width:100%;}
+  .staff_item.last_operations{min-width:600px;}
 }
 @media(max-width:767px){
   .header_logo{max-width:100px;}
@@ -227,6 +228,8 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .quar_page .main_title img{display:none;}
   .wrapper_estimation{padding:30px 5px;}
   .card_waitres{flex-direction:column;text-align:center;}
+  .full_name_input{font-size:16px;}
+  .btn_edit{top:4px;right:0;}
 }
 
 
