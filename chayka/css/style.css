@@ -160,7 +160,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .input_reg{max-width:400px;width:100%;border:none;background:#F2F2F2;border-radius:200px;padding:20px 30px;font-size:20px;}
 .input_reg:focus{outline:none;}
 .btn_reg{max-width:400px;padding:20px 30px;}
-
+.input_reg.verify{font-size:40px;padding:5px 30px;letter-spacing:15px;caret-color:transparent;}
 
 
 
