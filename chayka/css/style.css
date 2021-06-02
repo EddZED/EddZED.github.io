@@ -157,7 +157,8 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .date_comment{font-size:16px;font-family:'circe_bold';line-height:20px;color:#474545;}
 .text_content.min{font-size:16px;line-height:17px;font-family:'circe_bold';color:#151414;}
 .title_form{font-size:22px;color:#151414;font-family:'circe_bold';color:#151414;line-height:28px;}
-.input_reg{max-width:400px;width:100%;border:none;background:#F2F2F2;border-radius:200px;padding:20px 30px;}
+.input_reg{max-width:400px;width:100%;border:none;background:#F2F2F2;border-radius:200px;padding:20px 30px;font-size:20px;}
+.input_reg:focus{outline:none;}
 .btn_reg{max-width:400px;padding:20px 30px;}
 
 
