@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YES - Поставщики</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/slick.css" rel="stylesheet">
+		<link href="css/slick-theme.css" rel="stylesheet">
+		<link href="css/jquery.formstyler.css" rel="stylesheet">
+		<link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    </head>
+ 	<body>
+		
+		<header>
+			<div class="header">
+				<div class="container">
+					<div class="header-content">
+						<div class="header-content__left">
+							<div class="header-content__logo">
+								<a href="/" class="header-content__logo_link"><img src="images/logo.svg" alt=""></a>
+							</div>
+							<nav class="navbar header-content__menu">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										 <a class="nav-link" href="#">Главная</a>
+									</li>
+									<li class="nav-item active">
+										<a class="nav-link" href="#">Поставщики</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Форум</a>
+									</li>
+								</ul>									  
+							</nav>	
+						</div>
+						<div class="header-content__right">
+							<ul class="header-content__buttons">
+								<li><a href="#" class="link basket"></a></li>
+								<li><a href="#" class="link star"></a></li>
+								<li><a href="#" class="link user"></a></li>
+							</ul>
+							<a href="#" class="btn button-yellow">Вход</a>
+						</div>								
+					</div>
+					<div class="header-search">
+						<form action="/search" method="post">
+							<input name="" type="text" placeholder="Легкий поиск товаров">
+							<button class="btn button-yellow" type="submit"><img src="images/search.svg" alt="">Найти</button>
+						</form>
+					</div>
+				</div>
+			</div>			
+		</header>
+	
+		<main>
+			<div class="inside-page suppliers-content">
+				<div class="container">
+					<div class="inside-page__image">
+
+					</div>
+					<div class="breadcrumb-block">
+						<a href="#" class="back"></a>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Поставщики</li>
+						</ol>
+					</div>
+					<div class="suppliers-block">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-12">
+								<div class="sidebar">
+									<div class="filter">
+										<p class="show-filter"><img src="images/filter.png" alt=""><span>Фильтр</span></p>
+										<div class="filter-mobile">
+											<p class="close-filter"><img src="images/close.png" alt=""> Фильтры</p>
+											<select>
+												<option>Московская область</option>
+												<option>Тверская область</option>
+												<option>Краснодарский край</option>
+											</select>
+											<select>
+												<option>Одежда</option>
+												<option>Обувь</option>
+												<option>Головные уборы</option>
+											</select>
+											<select>
+												<option>Женская</option>
+												<option>Мужская</option>
+												<option>Детская</option>
+											</select>
+											<select>
+												<option>Производитель</option>
+												<option>Характеристика</option>
+												<option>Характеристика</option>
+												<option>Характеристика</option>
+											</select>
+											<div class="filter-buttons">
+												<a href="#" class="btn button-yellow">Применить</a>
+												<a href="#" class="button-white">Сбросить фильтр</a>
+											</div>
+										</div>									
+									</div>
+									<div class="mobile-filter-block">
+										<img class="mobile-filter-block-show" src="images/filter-2.png" alt="">
+										<div class="mobile-filter-block-content">
+											<div class="chekbox">
+												<p><input type="checkbox" id="id1"><label for="id1">Все</label></p>
+												<p><input type="checkbox" id="id2"><label for="id2">По скидке</label></p>
+												<p><input type="checkbox" id="id3"><label for="id3">По рейтингу</label></p>
+												<p><input type="checkbox" id="id4"><label for="id4">Популярные</label></p>
+												<p><input type="checkbox" id="id5"><label for="id5">Новые</label></p>
+											</div>
+										</div>
+									</div>
+									<div class="banner-block">
+										<div class="banner-block__image">
+											<p>Реклама</p>
+										</div>
+										<div class="banner-block__text">
+											<p>lorem ipsum lorem ipsum</p>
+										</div>
+									</div>
+									<div class="forum-block">
+										<p class="caption"><img src="images/lines.svg" alt="">
+											Сейчас на форуме</p>
+										<p>lorem ipsum lorem ipsum</p>
+										<p>lorem ipsum lorem ipsum</p>
+										<p>lorem ipsum lorem ipsum</p>
+										<p>lorem ipsum lorem ipsum</p>
+									</div>
+									<div class="forum-block">
+										<p class="caption"><img src="images/lines.svg" alt="">
+											Новости</p>
+										<a href="#" class="forum-block__item">
+											<span class="image"></span>
+											<span class="text">
+												lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+											</span>
+										</a>
+										<a href="#" class="forum-block__item">
+											<span class="image"></span>
+											<span class="text">
+												lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+											</span>
+										</a>
+										<a href="#" class="forum-block__item">
+											<span class="image"></span>
+											<span class="text">
+												lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+											</span>
+										</a>
+										<a href="#" class="forum-block__item">
+											<span class="image"></span>
+											<span class="text">
+												lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-9 col-lg-8 col-12">
+								<div class="inside-page__content">
+									<h1>Купить товары оптом</h1>
+									<ul class="filter-block">
+										<li><a href="#" class="active">Все</a></li>
+										<li><a href="#">По скидке</a></li>
+										<li><a href="#">По рейтингу</a></li>
+										<li><a href="#">Популярные</a></li>
+										<li><a href="#">Новые</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product1.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">ТВОЕ</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Москва</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product2.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">YELLOW PRICE</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Казань</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product3.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">OLENNY</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Санкт-Петербург</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product4.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Colins</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Москва</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product5.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Koton</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Казань</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product6.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Mum's Era</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Санкт-Петербург</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product7.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Calvin Klein Performance</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Москва</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product8.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Натали</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Казань</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product9.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Concept Club
+													</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Санкт-Петербург</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product10.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Glamuriki</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Москва</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div> 
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product8.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Натали</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Казань</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-sm-4 col-6 px-sm-2">
+											<div class="product-block">
+												<div class="product-block__contents">
+													<div class="product-block__image">
+														<a href="#"><img src="images/product9.png" alt=""></a>
+												   </div>
+												   <div class="product-block__text text-center">
+													   <a href="#" class="link">Concept Club
+													</a>
+													   <div class="stars">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+														   <img src="images/star.png" alt="">
+													   </div>
+													   <p class="text-left">Описание описание описание описание описание описание</p>
+													   <div class="info">
+														   <p><img src="images/map.png" alt="">Санкт-Петербург</p>
+														   <p class="promo">Скидка 20%</p>
+													   </div>
+													   <div class="actions">
+														   <a href="#" class="btn button-yellow">Купить оптом</a>
+													   </div>
+													</div>										
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="product-block__button">
+												<a href="#" class="btn button-yellow">Показать больше</a>
+											</div>
+										</div>
+										<div class="col-12">
+											<nav aria-label="page navigation">
+												<ul class="pagination">
+													 <li class="page-item"><a class="page-link button-yellow" href="#"><img src="images/arrow.svg" alt="">Назад</a></li>
+													  <li class="page-item"><a class="page-link" href="#">1</a></li>
+													  <li class="page-item"><a class="page-link" href="#">2</a></li>
+													 <li class="page-item"><a class="page-link" href="#">3</a></li>
+													<li class="page-item">...</li>
+													<li class="page-item"><a class="page-link" href="#">20</a></li>
+													 <li class="page-item"><a class="page-link button-yellow" href="#">Дальше<img src="images/arrow.svg" alt=""></a></li>
+												</ul>
+											 </nav>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-content__left">
+						<div class="footer-content__social">
+							<p>Поделиться</p>
+							<ul class="social-list">
+								<li><a href="#"><img src="images/vk.png" alt=""></a></li>
+								<li><a href="#"><img src="images/fb.png" alt=""></a></li>
+								<li><a href="#"><img src="images/inst.png" alt=""></a></li>
+								<li><a href="#"><img src="images/ok.png" alt=""></a></li>
+								<li><a href="#"><img src="images/tm.png" alt=""></a></li>
+								<li><a href="#"><img src="images/tw.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="footer-content__text">
+							<p>ООО “.....”</p>
+							<a href="#" class="link">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer-content__right">
+						<p>Информация</p>
+					</div>
+				</div>
+				<div class="footer-mobile">
+					<div class="footer-mobile__block">
+						<p>ООО “.....”</p>
+					</div>
+					<div class="footer-mobile__block text-right">
+						<p>Информация</p>
+						<a href="#" class="link">Политика конфиденциальности</a>
+						<p class="to-page"><a href="#" class="link">Перейти на основную версию сайта</a></p>
+					</div>
+				</div>
+			</div>
+			<ul class="footer-menu">
+				<li class="nav-item active">
+					 <a class="nav-link" href="#">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Поставщики</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Форум</a>
+				</li>
+			</ul>
+		</footer>
+	
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/popper.js"></script>
+		<script type="text/javascript" src="js/slick.js"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+		<script type="text/javascript" src="js/jquery.inputmask.js"></script> 
+		<script type="text/javascript" src="js/script.js"></script>  
+	
+    </body>
+</html>
