@@ -123,6 +123,16 @@ body{font-size:16px;color:#444;font-family:'Open Sans';}
 .wrapper_select.item_2{z-index:3;}
 .wrapper_select.item_3{z-index:2;}
 .wrapper_select.item_4{z-index:1;}
+.btn_form{border:none;width:100%;outline:none;font-size:18px;line-height:20px;padding:15px 0;color:#444;font-family:'Open Sans';border-radius:5px;font-weight:600;transition:all .3s;}
+.btn_form.yellow{background-color:#FFC325;}
+.btn_form:focus{outline:none;}
+.btn_form:hover{box-shadow:0 0 10px rgba(0,0,0,.2);color:#fff;}
+.reset_btn{color:#444;opacity:.8;font-size:18px;line-height:20px;font-weight:600;font-family:'Open Sans';width:100%;text-align:center;padding:10px 0;border:none;background-color:transparent;transition:all .3s;}
+.reset_btn:focus{outline:none;}
+.reset_btn:hover{opacity:1;}
+
+
+
 
 @media (min-width: 1460px) {
     .container {
