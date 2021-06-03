@@ -162,8 +162,10 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .btn_reg{max-width:400px;padding:20px 30px;}
 .input_reg.verify{font-size:40px;padding:5px 30px;letter-spacing:15px;caret-color:transparent;}
 .balance.pay_waitres{font-size:14px;}
-
-
+.btn_warning{display:inline-block;font-size:18px;color:red;transition:all .3s;vertical-align:middle;}
+.btn_warning:hover{opacity:.7;box-shadow:0 0 10px rgba(0,0,0,.1);color:red;}
+.btn_transparent{background-color:transparent;border:1px solid #474545;color:#474545;transition:all .3s;}
+.btn_transparent:hover{color:inherit;}
 
 
 @media(min-width:1550px){
