@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сотрудники</title>
+  <title>Поступления сотрудникам</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -29,15 +29,18 @@
                 <a href="#" class="btn_green ml-lg-5">Вход</a>
               </div>
             </div>
-            <button class="btn_menu d-lg-none"><span></span><span></span><span></span></button>
+            <div class="btn_block_mobile d-lg-none">
+              <a href="#" class="btn_green mob mr-3">Вход</a>
+              <button class="btn_menu"><span></span><span></span><span></span></button>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <div class="content">
-      <section class="intro green page_staff">
+      <section class="intro green page_staff all_op">
         <div class="container">
-          <h1 class="main_title">Все операции</h1>
+          <h1 class="main_title">Поступления сотрудникам</h1>
         </div>
         <img class="bg_text" src="img/bg_text.png" alt="чайка">
       </section>
@@ -47,16 +50,27 @@
             <div class="header_table">
               <p class="name_table mb-0">Поступения / списания</p>
             </div>  
+            <div class="wrapper_button_sort">
+              <div class="left_col text-lg-left">
+                <a href="#" class="link_profile balance pay_waitres">Все</a>
+                <a href="#" class="link_profile balance pay_waitres">Поступления</a>
+                <a href="#" class="link_profile balance pay_waitres">Списания</a>
+              </div>
+              <div class="right_col text-lg-right">
+                <a href="#" class="link_profile balance pay_waitres">Сегодня</a>
+                <a href="#" class="link_profile balance pay_waitres">Неделя</a>
+                <a href="#" class="link_profile balance pay_waitres">Месяц</a>
+              </div>
+            </div>
             <div class="scroll_table">
               <table class="staff_item">
                 <thead class="">
                   <tr>
                     <th>Сотрудник</th>
+                    <th>Рейтинг</th>
                     <th>Должность</th>
                     <th>Дата</th>
-                    <th>Тип операции</th>
-                    <th>Счет зачисления</th>
-                    <th>Счет списания</th>
+                    <th>Сумма поступления</th>
                   </tr>
                 </thead>
                 <tbody class="">
@@ -64,82 +78,75 @@
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Виктория Иванова</span>
                     </th>
+                    <th>4</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Начисление</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Иван Иванов</span>
                     </th>
+                    <th>3</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Списание</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Виктория Иванова</span>
                     </th>
+                    <th>4</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Начисление</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Иван Иванов</span>
                     </th>
+                    <th>3</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Списание</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Виктория Иванова</span>
                     </th>
+                    <th>4</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Начисление</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Иван Иванов</span>
                     </th>
+                    <th>3</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Списание</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Виктория Иванова</span>
                     </th>
+                    <th>4</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Начисление</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
                   <tr>
                     <th>
                       <span><img class="img-fluid pr-2" src="img/ava_1.png" alt="аватарка">Иван Иванов</span>
                     </th>
+                    <th>3</th>
                     <th>Официант</th>
                     <th>15.03.21</th>
-                    <th>Списание</th>
-                    <th>2456 2312 7899 1233</th>
-                    <th>2456 2312 7899 1233</th>
+                    <th>1000</th>
                   </tr>
+                  
                 </tbody>
               </table>
             </div>

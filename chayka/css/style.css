@@ -105,7 +105,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .btn_table_block .pay_btn{display:inline-block;width:auto;padding:15px 30px;}
 .btn_table_block .pay_btn.bg_white:hover{text-decoration:none;color:inherit;background-color:#C0EF2F;}
 .btn_table_block .pay_btn:hover{text-decoration:none;color:inherit;background-color:transparent;}
-.staff_item{width:100%;margin:30px 0;}
+.staff_item{width:100%;margin:10px 0 30px;}
 .staff_item thead{border-bottom:1px solid rgba(62, 86, 24, .5);}
 .staff_item thead tr th{font-size:15px;line-height:22px;color:#151414;font-family:'circe_light';padding:15px 0;}
 .staff_item tbody tr th{font-size:15px;line-height:22px;color:#151414;font-family:'circe_reg';padding:15px 0;}
@@ -166,6 +166,11 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .btn_warning:hover{opacity:.7;box-shadow:0 0 10px rgba(0,0,0,.1);color:red;}
 .btn_transparent{background-color:transparent;border:1px solid #474545;color:#474545;transition:all .3s;}
 .btn_transparent:hover{color:inherit;}
+.btn_block_mobile{display:flex;align-items:center;}
+.header.active .btn_green.mob{display:none;}
+.wrapper_button_sort{display:flex;align-items:center;justify-content:space-between;padding-top:20px;}
+.left_col, .right_col{width:100%;}
+
 
 
 @media(min-width:1550px){
@@ -213,6 +218,11 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .name_table{font-size:30px;line-height:33px;}
   .order_btn_block{width:100%;}
   .staff_item.last_operations{min-width:600px;}
+  .btn_transparent{margin-bottom:15px;}
+  .btn_green.mob{padding:12px 25px;}
+  .wrapper_button_sort{flex-direction:column;}
+  .intro.green.page_staff.all_op{padding-top:100px;}
+  .page_staff.all_op + .table_staff{margin-top:-330px;}
 }
 @media(max-width:767px){
   .header_logo{max-width:100px;}
@@ -244,6 +254,7 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
   .card_waitres{flex-direction:column;text-align:center;}
   .full_name_input{font-size:16px;}
   .btn_edit{top:4px;right:0;}
+  .wrapper_button_sort .pay_waitres{width:100%;margin-bottom:10px;text-align:center;}
 }
 
 
