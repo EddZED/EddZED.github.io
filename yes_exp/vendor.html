@@ -240,8 +240,47 @@
                   <a href="#" class="filter_goods_link">Популярные</a>
                   <a href="#" class="filter_goods_link">Новое</a>
                 </div>
+                <div class="wrapper_select filter_screen d-lg-none">
+                  <div class="select mb-3" id="filter_screen">
+                    <div class="select__backdrop" data-select="backdrop"></div>
+                    <button type="button" class="select__trigger" data-select="trigger">
+                      Все
+                    </button>
+                    <div class="select__dropdown">
+                      <ul class="select__items">
+                        <li class="select__item" data-select="item">
+                          <span>
+                            По скидке
+                            <img class="img-fluid" src="img/arrow.svg" alt="стрелка">
+                          </span>
+                        </li>
+                        <li class="select__item" data-select="item">
+                          <span>
+                            По скидке
+                            <img class="img-fluid rotate" src="img/arrow.svg" alt="стрелка">
+                          </span>
+                        </li>
+                        <li class="select__item" data-select="item">
+                          <span>
+                            По рейтингу
+                            <img class="img-fluid" src="img/arrow.svg" alt="стрелка">
+                          </span>
+                        </li>
+                        <li class="select__item" data-select="item">
+                          <span>
+                            По рейтингу
+                            <img class="img-fluid rotate" src="img/arrow.svg" alt="стрелка">
+                          </span>
+                        </li>
+                        <li class="select__item" data-select="item">Популярные</li>
+                        <li class="select__item" data-select="item">Новое</li>
+                        <li class="select__item" data-select="item">Все</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
                 <div class="filtr_goods_result">
-                  <p class="opacity_text">Найдено <span id="resultGoods">58</span> товаров</p>
+                  <p class="opacity_text mb-0">Найдено <span id="resultGoods">58</span> товаров</p>
                 </div>
               </div>
               <div class="row pt-lg-4 pt-3">
@@ -1384,6 +1423,11 @@
                   </div>
                 </div>
               </div>
+              <div class="row justify-content-center pt-lg-4 pt-3">
+                <div class="col-lg-6 text-center">
+                  <a href="#" class="header_menu_btn yellow ml-0">Загрузить еще</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1445,6 +1489,7 @@
     const select2 = new CustomSelect('#sort2');
     const select3 = new CustomSelect('#sort3');
     const select4 = new CustomSelect('#sort4');
+    const select5 = new CustomSelect('#filter_screen');
   </script>
   <script>
     $('.header_menu_link').click(function(){

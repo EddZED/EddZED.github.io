@@ -50,7 +50,7 @@ class CustomSelect {
         itemSelected.classList.remove('select__item_selected');
       }
       item.classList.add('select__item_selected');
-      this._$trigger.textContent = item.textContent;
+      this._$trigger.innerHTML = item.innerHTML;
       this._$main.dispatchEvent(this._changeValue);
       this._config.onSelected ? this._config.onSelected(item) : null;
     }
