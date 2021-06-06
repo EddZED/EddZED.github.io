@@ -26,7 +26,7 @@
     overflow: hidden;
 
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0;
 }
 .slick-list:focus
 {
@@ -55,6 +55,8 @@
     left: 0;
 
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slick-track:before,
 .slick-track:after
@@ -87,9 +89,7 @@
 .slick-slide img
 {
     display: block;
-	    width: auto;
-		float:right;
-	}
+}
 .slick-slide.slick-loading img
 {
     display: none;
@@ -100,9 +100,7 @@
 }
 .slick-initialized .slick-slide
 {
-       display: block;
-    outline: none;
-   
+    display: block;
 }
 .slick-loading .slick-slide
 {

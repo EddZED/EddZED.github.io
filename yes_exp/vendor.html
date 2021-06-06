@@ -8,6 +8,8 @@
   <title>Поставщики</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom_select.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.min.css">
@@ -86,7 +88,17 @@
       <section class="intro intro_vendor">
         <div class="container">
           <div class="wrapper_intro_vendor">
-            <img class="banner_image" src="img/intro_vendor.jpg" alt="баннер">
+            <div class="slick">
+              <div class="slick_item">
+                <img class="banner_image" src="img/intro_vendor.jpg" alt="баннер">
+              </div>
+              <div class="slick_item">
+                <img class="banner_image" src="img/intro_vendor.jpg" alt="баннер">
+              </div>
+              <div class="slick_item">
+                <img class="banner_image" src="img/intro_vendor.jpg" alt="баннер">
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -237,7 +249,16 @@
                       </svg>
                     </span>
                   </a>
-                  <a href="#" class="filter_goods_link">Популярные</a>
+                  <a href="#" class="filter_goods_link">
+                    Популярные
+                    <span class="icon_filtr">
+                      <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.53033 16.3433C6.23744 16.6362 5.76256 16.6362 5.46967 16.3433L0.696699 11.5703C0.403805 11.2774 0.403805 10.8025 0.696699 10.5096C0.989592 10.2167 1.46447 10.2167 1.75736 10.5096L6 14.7523L10.2426 10.5096C10.5355 10.2167 11.0104 10.2167 11.3033 10.5096C11.5962 10.8025 11.5962 11.2774 11.3033 11.5703L6.53033 16.3433ZM6.75 0.856262L6.75 15.8129L5.25 15.8129L5.25 0.856262L6.75 0.856262Z"
+                          fill="#444444" />
+                      </svg>
+                    </span>
+                  </a>
                   <a href="#" class="filter_goods_link">Новое</a>
                 </div>
                 <div class="wrapper_select filter_screen d-lg-none">
@@ -272,7 +293,12 @@
                             <img class="img-fluid rotate" src="img/arrow.svg" alt="стрелка">
                           </span>
                         </li>
-                        <li class="select__item" data-select="item">Популярные</li>
+                        <li class="select__item" data-select="item">
+                          <span>
+                            Популярные
+                            <img class="img-fluid rotate" src="img/arrow.svg" alt="стрелка">
+                          </span>
+                        </li>
                         <li class="select__item" data-select="item">Новое</li>
                         <li class="select__item" data-select="item">Все</li>
                       </ul>
@@ -1424,8 +1450,25 @@
                 </div>
               </div>
               <div class="row justify-content-center pt-lg-4 pt-3">
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-7 text-center">
                   <a href="#" class="header_menu_btn yellow ml-0">Загрузить еще</a>
+                </div>
+                <div class="col-lg-7 pt-lg-5 pt-3">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><img class="img-fluid" src="img/prev.png" alt="назад"></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item d-none d-sm-flex"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><img class="img-fluid" src="img/next.png" alt="вперед"></a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -1482,8 +1525,15 @@
   </div> 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/custom_select.js"></script>
   <script src="js/wow.min.js"></script>
+  <script>
+    $('.slick').slick({
+      arrows: false,
+      dots: true
+    });
+  </script>
   <script>
     const select1 = new CustomSelect('#sort');
     const select2 = new CustomSelect('#sort2');
