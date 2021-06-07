@@ -170,7 +170,12 @@ body{font-size:14px;color:#151414;font-family:'circe_reg';}
 .header.active .btn_green.mob{display:none;}
 .wrapper_button_sort{display:flex;align-items:center;justify-content:space-between;padding-top:20px;}
 .left_col, .right_col{width:100%;}
-
+.link_social_user{display:flex;align-items:center;width:100%;}
+.link_social_user span{display:inline-flex;align-items:center;justify-content:center;padding-right:15px;font-size:25px;max-width:40px;width:100%;}
+.link_social_user input{width:100%;max-width:none;}
+.link_social_comment{display:flex;align-items:center;justify-content:space-around;}
+.link_social_comment a{display:inline-block;font-size:25px;color:#151414;transition:all .3s;}
+.link_social_comment a:hover{color:#C0EF2F;}
 
 
 @media(min-width:1550px){
