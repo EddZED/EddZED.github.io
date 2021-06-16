@@ -1,0 +1,37 @@
+@font-face{font-family:'gil_bold';src:url(../font/Gilroy-Bold.ttf);}
+@font-face{font-family:'gil_med';src:url(../font/Gilroy-Medium.ttf);}
+@font-face{font-family:'gil_reg';src:url(../font/gilroy-regular.ttf);}
+@font-face{font-family:'gil_light';src:url(../font/Gilroy-Light.ttf);}
+@font-face{font-family:'acme';src:url(../font/Acme-Regular.ttf);}
+html{scroll-behavior:smooth;}
+body{font-size:14px;color:#211F1F;font-family:'gil_med';}
+.wrapper{overflow:hidden;}
+.header{position:relative;}
+.header_nav_top{width:100%;border-bottom:.5px solid rgba(130, 130, 130,.5);padding:15px 0;}
+.header_nav_top_left{display:flex;align-items:center;justify-content:space-between;}
+.dark_min_text{font-size:12px;line-height:14px;font-family:'gil_reg';pointer-events:none;color:#211F1F;}
+.header_nav_top_menu{list-style:none;display:flex;align-items:center;margin:0;justify-content:flex-end;}
+.top_nav_link{color:#000;font-size:16px;line-height:20px;display:inline-block;margin-left:25px;font-family:'gil_med';}
+.top_nav_link:hover{text-decoration:none;}
+.header_nav_main{padding:15px 0;}
+.header_main_left{display:flex;align-items:center;}
+.home_link{display:inline-block;margin-right:20px;}
+.searh_item{width:100%;position:relative;margin:0;}
+.input_gray{width:100%;background-color:#F2F2F2;border-radius:100px;padding:15px;border:none;font-weight:250;font-family:'gil_reg';}
+.input_gray:focus{outline:none;}
+.input_gray::-webkit-input-placeholder{font-size:16px;color:#211F1F;font-family:'gil_light';font-weight:250;}
+.btn_search{position:absolute;border:none;background-color:transparent;width:18px;height:20px;top:0;bottom:0;margin:auto;right:15px;display:inline-flex;align-items:center;justify-content:center;padding:1px;transition:all .3s;}
+.btn_search svg{width:100%;height:100%;}
+.btn_search svg path{transition:fill .3s ease;}
+.btn_search:focus{outline:none;}
+.btn_search:hover svg path{fill:#326FE1;}
+
+
+
+
+@media(max-width:1199px){
+  .header_nav_top_left{text-align:center;}
+}
+@media(max-width:991px){
+  .header_nav_top{display:none;}
+}
