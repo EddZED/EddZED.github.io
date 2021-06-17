@@ -3,17 +3,20 @@
 @font-face{font-family:'gil_reg';src:url(../font/gilroy-regular.ttf);}
 @font-face{font-family:'gil_light';src:url(../font/Gilroy-Light.ttf);}
 @font-face{font-family:'acme';src:url(../font/Acme-Regular.ttf);}
+@font-face{font-family:'Gidugu';src:url(../font/Gidugu-Regular.ttf);}
+@font-face{font-family:'Actor';src:url(../font/Actor-Regular.ttf);}
+@font-face{font-family:'Abel';src:url(../font/Abel-Regular.ttf);}
 html{scroll-behavior:smooth;}
-body{font-size:14px;color:#211F1F;font-family:'gil_med';}
-.wrapper{overflow:hidden;}
-.header{position:relative;}
+body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;}
+.wrapper{overflow:hidden;min-height:100vh;}
+.header{position:relative;background-color:#fff;}
 .header_nav_top{width:100%;border-bottom:.5px solid rgba(130, 130, 130,.5);padding:15px 0;}
 .header_nav_top_left{display:flex;align-items:center;justify-content:space-between;}
 .dark_min_text{font-size:12px;line-height:14px;font-family:'gil_reg';pointer-events:none;color:#211F1F;}
 .header_nav_top_menu{list-style:none;display:flex;align-items:center;margin:0;justify-content:flex-end;}
 .top_nav_link{color:#000;font-size:16px;line-height:20px;display:inline-block;margin-left:25px;font-family:'gil_med';}
 .top_nav_link:hover{text-decoration:none;}
-.header_nav_main{padding:15px 0;}
+.header_nav_main{padding:15px 0;position:relative;}
 .header_main_left{display:flex;align-items:center;}
 .home_link{display:inline-block;margin-right:20px;}
 .searh_item{width:100%;position:relative;margin:0;}
@@ -25,13 +28,66 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';}
 .btn_search svg path{transition:fill .3s ease;}
 .btn_search:focus{outline:none;}
 .btn_search:hover svg path{fill:#326FE1;}
-
+.contact_block{display:flex;flex-direction:column;width:100%;}
+.contact_block_bottom{display:flex;justify-content:space-between;align-items:center;}
+.phone_link{font-size:54px;display:inline-block;line-height:35px;margin-bottom:2px;font-family:'Gidugu';letter-spacing:0.04em;color:#211f1f;transition:color .3s;}
+.phone_link:hover{text-decoration:none;color:#326FE1;}
+.mail_link{font-size:15px;line-height:18px;letter-spacing:0.02em;color:#211f1f;font-family:'Actor';transition:color .3s;}
+.mail_link:hover{text-decoration:none;color:#326FE1;transform:translateY(3px);}
+.call_back{font-size:15px;line-height:18px;font-family:'gil_med';color:#326FE1;border:none;background-color:transparent;transition:color .3s}
+.call_back:hover{transform:translateY(3px);color:inherit;}
+.header_item_button{display:flex;align-items:center;justify-content:flex-end;}
+.blue_btn{display:inline-block;padding:15px 25px;color:#fff;font-size:16px;box-shadow:2px 4px 10px rgba(28, 84, 188, 0.35);line-height:19px;font-family:'gil_bold';background-color:#326FE1;border-radius:100px;border:none;transition:background-color .3s;transition:color .3s;border: 1px solid transparent;}
+.blue_btn:focus{outline:none;}
+.blue_btn:hover{box-shadow:0px 0px 10px rgba(28, 84, 188, 0.35);background-color:#fff;border-color:#326FE1;color:#326FE1;text-decoration:none;}
+.circle_btn{display:inline-flex;width:54px;height:54px;border-radius:50%;position:relative;background-color:#F2F2F2;align-items:center;justify-content:center;margin-left:30px;}
+.quantity{position:absolute;right:0;bottom:0;width:15px;height:15px;border-radius:50%;background-color:#326FE1;color:#fff;font-family:'gil_bold';font-size:9px;display:inline-flex;align-items:center;justify-content:center;box-shadow:2px 4px 10px rgba(28, 84, 188, 0.35);}
+.cart_btn path{transition:fill .3s;}
+.cart_btn:hover path{fill:#326FE1;}
+.header_nav_menu{width:100%;background-color:#4F4F4F;}
+.main_menu{list-style:none;display:flex;align-items:center;justify-content:space-between;padding-left:0;margin-bottom:0;}
+.main_menu_link{display:inline-block;padding:15px 0;color:#fff;font-size:16px;line-height:20px;font-family:'gil_reg';transition:all .3s;}
+.main_menu_link:hover{color:#ccc;text-decoration:none;}
+.intro{padding:40px 0;}
+.intro_banner{width:100%;background:linear-gradient(182.32deg, #c6daf3 1.11%, #b6d0ec 97.25%);border-radius: 15px;overflow:hidden;box-shadow:6px 6px 15px rgba(43, 41, 41, 0.05);display:flex;align-items:center;padding:0 15px 0 0;}
+.text_intro{display:flex;flex-direction:column;align-items:flex-start;}
+.title_heading{font-size:50px;line-height:53px;color:#211F1F;font-family:'gil_bold';}
+.text_content_light{font-size:15px;line-height:20px;color:#211F1F;font-family:'gil_light';}
 
 
 
 @media(max-width:1199px){
   .header_nav_top_left{text-align:center;}
+  .header_nav_top{padding:5px 0;}
+  .phone_link {font-size:45px;}
+  .mail_link{font-size:12px;}
+  .call_back{font-size:12px;}
+  .blue_btn{font-size:13px;padding:15px 15px;}
 }
 @media(max-width:991px){
   .header_nav_top{display:none;}
+  .header_nav_main{padding:8px 0;}
+  .mobile_off{display:none;}
+  .header_nav_menu{height:0;visibility:hidden;opacity:0;position:absolute;top:100%;left:0;background-color:#fff;transition:height .3s;}
+  .header_nav_menu.active{max-height:9999px;visibility:visible;opacity:1;}
+  .circle_btn{width:37px;height:37px;margin-left:15px;}
+  .cart_btn svg{width:20px;height:20;}
+  .home_link{margin-right:0;}
+  .main_menu_link{color:#211F1F;font-size:20px;font-family:'gil_med';padding:10px 0;}
+  .main_menu{flex-direction:column;align-items:flex-start;}
+  .link_desctop{display:none;}
+  .mail_link{font-size:17px;line-height:20px;letter-spacing:0.02em;font-family:'gil_bold';}
+  .phone_link{display:block;font-size:20px;line-height:24px;letter-spacing:0.02em;font-family:'gil_bold';}
+  .call_back{font-size:18px;line-height:21px;font-family:'gil_med';padding-left:0;}
+  .dark_min_text{display:flex;align-items:center;}
+  .blue_btn{font-size:16px;line-height:19px;padding:15px 20px;width:100%;}
+  .head_bold_min{font-size:15px;line-height:18px;font-family:'gil_bold';}
+  .social_block{list-style:none;padding-left:0;display:flex;align-items:center;justify-content:space-between;}
+  .social_link{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background-color:#326FE1;}
+}
+@media(max-width:767px){
+  
+}
+@media(max-width:565px){
+  .btn_look{width:100%;}
 }
