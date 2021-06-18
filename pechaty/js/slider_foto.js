@@ -10,14 +10,14 @@ $('.slider_foto_block').slick({
         nextArrow: '<button type = "button" class = "slick-next"><img class="img-fluid" src="img/arrow_right.svg"></ button>',
         responsive: [
           {
-            breakpoint: 767,
+            breakpoint: 991,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
