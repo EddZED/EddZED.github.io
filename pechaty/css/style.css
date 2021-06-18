@@ -70,12 +70,35 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
 .categories{padding:40px 0;}
 .title_block{font-size:38px;line-height:40px;color:#211F1F;font-family:'gil_med';}
 .card_wrapper{display:flex;flex-wrap:wrap;justify-content:space-between;}
-.card_categories{flex:0 0 19%;background-color:#fff;border-radius:15px;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.05);overflow:hidden;transition:all .3s;}
+.card_categories{flex:0 0 19%;background-color:#fff;border-radius:15px;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.05);overflow:hidden;transition:all .3s;display:flex;flex-direction:column;justify-content:space-between;}
 .wrap_img{display:inline-block;text-align:right;width:100%;}
 .pad_cat{padding:25px 15px 0;}
 .name_cat{font-size:22px;line-height:24px;color:#326FE1;font-family:'gil_med';}
 .card_categories:hover{text-decoration:none;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.2);}
 .wrap_img img{object-position:20px 15px;margin-top:-20px;}
+.box_img_border{overflow:hidden;border-radius:15px;box-shadow:6px 6px 15px rgba(43, 41, 41, 0.05);background:linear-gradient(95.94deg, #EEEEEE 2.8%, #CCCCCC 100%);;}
+.seals{padding:40px 0;}
+.step_order{padding:40px 0;}
+.middle_text{font-size:20px;line-height:24px;color:#211F1F;font-family:'gil_reg';}
+.wrapper_step{display:flex;justify-content:space-between;flex-wrap:wrap;}
+.step_block{flex:0 0 30%;display:flex;justify-content:flex-start;align-items:center;min-height:80px;height:100%;padding:0px 25px;background-color:#fff;border-radius:15px;box-shadow:6px 6px 15px rgba(43, 41, 41, 0.05);}
+.name_step{font-size:18px;line-height:22px;color:#211F1F;}
+.shevron_right{display:inline-flex;transform:rotateZ(90deg);align-items:center;justify-content:center;}
+.important_block{padding:40px 0;}
+.btn_important{font-size:30px;line-height:32px;padding:35px 20px; font-family:'gil_med';transition:all .3s;display:flex;align-items:center;justify-content:space-between;color:#211F1F;}
+.btn_important:hover{color:#211F1F;}
+.btn_important:focus{text-decoration:none;}
+.btn_important[aria-expanded="false"] span{transform:rotateZ(180deg);}
+.btn_important:focus{box-shadow:none;text-decoration:none;}
+.btn_important span{display:flex;align-items:center;justify-content:center;transition:transform .3s;}
+.slider_stock{padding:40px 0;}
+.slider_stock_block{margin:0 -15px;}
+.stock_item_slide{padding:20px 25px;border-radius:15px;overflow:hidden;position:relative;margin:0 15px;}
+.slider_stock_item:nth-of-type(1n) .stock_item_slide{background-color:#71C2CB;}
+.slider_stock_item:nth-of-type(2n) .stock_item_slide{background-color:#00C0CD;}
+.wrapper_slider{padding-top:30px;position:relative;}
+
+
 
 
 
@@ -87,6 +110,7 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
   .call_back{font-size:12px;}
   .blue_btn{font-size:13px;padding:15px 15px;}
   .btn_look{font-size:15px;padding:15px 30px;text-align:center;}
+  .card_categories{flex:1 1 32%;margin:0 5px 15px;}
 }
 @media(max-width:991px){
   .header_nav_top{display:none;}
@@ -111,20 +135,31 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
   .intro_banner{flex-direction:column;padding:0;align-items:flex-start;background:linear-gradient(182.32deg, #c2dbf1 1.11%, #a3c4e0 97.25%);}
   .text_intro{padding:0 15px 25px;}
   .title_heading{font-size:45px;line-height:47px;}
-  
+  .shevron_right{display:none;}
+  .step_block{flex:0 0 100%;margin-bottom:15px;}
 }
 @media(max-width:767px){
   .title_heading{font-size:35px;line-height:43px;}
   .intro{padding:25px 0;}
   .text_intro{margin-top:-30px;}
   .btn_stock{font-size:25px;}
-  
+  .title_block{font-size:28px;line-height:32px;}
+  .categories{padding:20px 0;}
+  .seals{padding:20px 0;}
+  .step_order{padding:20px 0;}
+  .important_block{padding:20px 0;}
+  .slider_stock{padding:20px 0;}
 }
 @media(max-width:565px){
   .btn_look{width:100%;}
   .title_heading{font-size:29px;line-height:32px;}
   .intro_banner img{object-position:0 -120px;}
   .text_intro{margin-top:-140px;}
+  .card_categories{flex:1 1 100%;flex-direction:row;align-items:center;min-height:150px;margin:0 0 15px;}
+  .pad_cat{padding:15px 10px 15px 15px;flex:1 1 50%;}
+  .wrap_img{flex:1 1 50%;}
+  .wrap_img img{object-position:0 0;}
+  
 }
 @media(max-width:400px){
   .intro_banner img{object-position:0 -60px;}
