@@ -145,12 +145,69 @@
             <img class="img-fluid" src="img/intro_img.png" alt="печати">
             <div class="text_intro">
               <h1 class="title_heading">Изготовление печатей и штампов в Москве</h1>
-              <p class="text_content_light mt-4">У нас можно заказать изготовление печати и штампы любых размеров и на любой вкус.
+              <p class="text_content_light mt-sm-4">У нас можно заказать изготовление печати и штампы любых размеров и на любой вкус.
                 Изготовление печатей и штампов по
                 оттиску. Заказ печати и штампов от срочного - срок изготовления от 1 часа.
               </p>
               <a href="#" class="blue_btn btn_look">Смотреть видео</a>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="stock_section">
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block btn_stock text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Акция! Вторая печать бесплатно!
+                    <span>
+                      <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 8.75L9 1.25L16.5 8.75" stroke="#326FE1" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-8 order-2 order-lg-1">
+                      <p class="blue_heading">Получить заказ в офисе, пункте выдачи или заказать доставку.</p>
+                      <p class="text_content_light">*акция действительна для розничных клиентов и оба изделия должны быть на автоматической оснастке, не по акционной цене.</p>
+                      <p class="text_content_light">В процессе ведения предпринимательской, коммерческой деятельности мы очень часто сталкиваемся с такой ситуацией, когда
+                      одновременно необходима печать ООО (или печать ИП) в двух разных местах, или у двух сотрудников одновременно (например,
+                      в офисе у менеджера, бухгалтера и на встрече у директора). Поэтому чтобы избежать каких-либо ограничений мы рекомендуем
+                      при заказе печати - <span>заказать изготовление не одной печати, а сразу две одинаковых печати.</span> Например, одна печать для
+                      офиса или бухгалтера, менеджера, а вторая печать для директора. Чтобы это было не так «накладно по финансам» для вас,
+                      наша компания предлагает сделать это со скидкой по данной Акции.</p>
+                    </div>
+                    <div class="col-lg-4 order-1 order-lg-2 mb-3 mb-lg-0">
+                      <div class="text-center text-lg-right">
+                        <img class="img-fluid" src="img/pechati.png" alt="печати">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <h2 class="title_block">Категории товаров</h2>
+          <p class="text_content_light pt-3">Для заказа - выберите необходимую категорию ниже.</p>
+          <div class="card_wrapper pt-3">
+            <a href="#" class="card_categories">
+              <p class="name_cat pad_cat mb-0">Изготовление печати</p>
+              <span class="wrap_img">
+                <img class="img-fluid" src="img/img_cat_1.png" alt="категории">
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -164,7 +221,10 @@
   <script>
     $('.menu_btn').click(function(){
       $('.header_nav_menu').toggleClass('active');
-    })
+    });
+    $('.main_menu_link').click(function () {
+      $('.header_nav_menu').removeClass('active');
+    });
   </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 @font-face{font-family:'Actor';src:url(../font/Actor-Regular.ttf);}
 @font-face{font-family:'Abel';src:url(../font/Abel-Regular.ttf);}
 html{scroll-behavior:smooth;}
-body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;}
+body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;background-color:#F7F7F7;}
 .wrapper{overflow:hidden;min-height:100vh;}
 .header{position:relative;background-color:#fff;}
 .header_nav_top{width:100%;border-bottom:.5px solid rgba(130, 130, 130,.5);padding:15px 0;}
@@ -53,6 +53,29 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;}
 .text_intro{display:flex;flex-direction:column;align-items:flex-start;}
 .title_heading{font-size:50px;line-height:53px;color:#211F1F;font-family:'gil_bold';}
 .text_content_light{font-size:15px;line-height:20px;color:#211F1F;font-family:'gil_light';}
+.stock_section{padding:20px 0 40px;}
+.card{background-color:#fff;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.05);border-radius: 15px;border:none;}
+.accordion>.card>.card-header{padding:0;}
+.card-header{border-bottom:none;background-color:#fff;}
+.btn_stock:focus{box-shadow:none;}
+.btn-link.btn-block{padding:25px 15px 25px;}
+.btn_stock{color:#E10E00;font-size:30px;line-height:32px;font-family:'gil_med';display:inline-flex;align-items:center;justify-content:space-between;}
+.btn_stock:hover{color:#E10E00;text-decoration:none;}
+.btn_stock:focus{text-decoration:none;}
+.btn_stock span{display:flex;align-items:center;justify-content:center;transition:transform .3s;}
+.btn_stock[aria-expanded="false"] span{transform:rotateZ(180deg);}
+.card-body{padding:10px 15px 30px;}
+.blue_heading{font-size:20px;line-height:22px;color:#326FE1;font-family:'gil_med';}
+.text_content_light span{font-family:'gil_med';}
+.categories{padding:40px 0;}
+.title_block{font-size:38px;line-height:40px;color:#211F1F;font-family:'gil_med';}
+.card_wrapper{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.card_categories{flex:0 0 19%;background-color:#fff;border-radius:15px;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.05);overflow:hidden;transition:all .3s;}
+.wrap_img{display:inline-block;text-align:right;width:100%;}
+.pad_cat{padding:25px 15px 0;}
+.name_cat{font-size:22px;line-height:24px;color:#326FE1;font-family:'gil_med';}
+.card_categories:hover{text-decoration:none;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.2);}
+.wrap_img img{object-position:20px 15px;margin-top:-20px;}
 
 
 
@@ -63,13 +86,14 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;}
   .mail_link{font-size:12px;}
   .call_back{font-size:12px;}
   .blue_btn{font-size:13px;padding:15px 15px;}
+  .btn_look{font-size:15px;padding:15px 30px;text-align:center;}
 }
 @media(max-width:991px){
   .header_nav_top{display:none;}
   .header_nav_main{padding:8px 0;}
   .mobile_off{display:none;}
   .header_nav_menu{height:0;visibility:hidden;opacity:0;position:absolute;top:100%;left:0;background-color:#fff;transition:height .3s;}
-  .header_nav_menu.active{max-height:9999px;visibility:visible;opacity:1;}
+  .header_nav_menu.active{height:auto;visibility:visible;opacity:1;box-shadow:0 10px 10px rgba(0,0,0,.4);}
   .circle_btn{width:37px;height:37px;margin-left:15px;}
   .cart_btn svg{width:20px;height:20;}
   .home_link{margin-right:0;}
@@ -84,10 +108,25 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;}
   .head_bold_min{font-size:15px;line-height:18px;font-family:'gil_bold';}
   .social_block{list-style:none;padding-left:0;display:flex;align-items:center;justify-content:space-between;}
   .social_link{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background-color:#326FE1;}
+  .intro_banner{flex-direction:column;padding:0;align-items:flex-start;background:linear-gradient(182.32deg, #c2dbf1 1.11%, #a3c4e0 97.25%);}
+  .text_intro{padding:0 15px 25px;}
+  .title_heading{font-size:45px;line-height:47px;}
+  
 }
 @media(max-width:767px){
+  .title_heading{font-size:35px;line-height:43px;}
+  .intro{padding:25px 0;}
+  .text_intro{margin-top:-30px;}
+  .btn_stock{font-size:25px;}
   
 }
 @media(max-width:565px){
   .btn_look{width:100%;}
+  .title_heading{font-size:29px;line-height:32px;}
+  .intro_banner img{object-position:0 -120px;}
+  .text_intro{margin-top:-140px;}
+}
+@media(max-width:400px){
+  .intro_banner img{object-position:0 -60px;}
+  .text_intro{margin-top:-80px;}
 }
