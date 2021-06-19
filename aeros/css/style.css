@@ -24,7 +24,7 @@ body{font-family:'Montserrat_medium';}
 .dropdown_menu_wrapper{position:absolute;top:100%;left:0;width:100%;padding:20px 20px 0;opacity:0;transform:translateY(-100%);visibility:hidden;transition:all .3s;transition-delay:.2s;}
 .dropdown_menu{background-color:transparent;display:flex;justify-content:space-between;list-style:none;padding-left:0;}
 .dropdown_menu_item{display:flex;flex:0 1 19.5555%;}
-.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:center;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:all .3s;z-index:11;}
+.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:space-between;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:all .3s;z-index:11;}
 .dropdown_menu_link .name_link{display:inline-block;padding-top:10px;color:#000;font-size:15px;position:relative;}
 .dropdown_menu_link:hover{text-decoration:none;}
 .dropdown_menu_item:nth-of-type(1) .dropdown_menu_link{border-radius:10px 0 0 10px;}
