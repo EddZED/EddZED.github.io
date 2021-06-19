@@ -11,8 +11,11 @@
     top: 0;
     width: 100%;
 }
+.splitpic-images{
+    text-align:center;
+}
 .splitpic-images img {
-    width: 100%;
+    max-width: 100%;
 }
 .splitpic-right-image {
 	
