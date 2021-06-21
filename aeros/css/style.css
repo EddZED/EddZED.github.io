@@ -183,7 +183,7 @@ body{font-family:'Montserrat_medium';}
   .pad_drop_monile{padding:0;}
   .name_drop_mobile{display:inline-block;width:100%;padding:12px 0;}
   .sub_dropdown_wrapper{transform:translateX(0);position:relative;opacity:1;visibility:visible;width:100%;padding:0;box-shadow:none;max-height:0;overflow:hidden;transition:all .5s;visibility:hidden;transition-delay:.2s;}
-  .sub_dropdown_wrapper.active{max-height:9999px;visibility:visible;}
+  .dropdown_menu_link.active .sub_dropdown_wrapper{max-height:9999px;visibility:visible;}
   .sub_dropdown{border-radius:0;}
   .body_name_link{display:flex;align-items:center;justify-content:flex-start;text-align:left;width:100%;min-height:41px;}
   .dropdown_menu_item .dropdown_menu_link:hover .sub_dropdown_wrapper{opacity:1;transform:translateX(0) translateY(0);visibility:visible;box-shadow:none;}
