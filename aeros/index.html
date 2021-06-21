@@ -21,8 +21,9 @@
               <div class="wrapper_logo">
                 <a href="#" class="link_ligi"><img class="img-fluid" src="img/logo.png" alt="аэрос"></a>
                 <hr class="line">
-                <span class="text_logo">Интернет магазин бризеров №1</span>
+                <span class="text_logo">Интернет магазин<br class="d-lg-none"> бризеров №1</span>
               </div>
+              <button class="btn_menu"><span></span></button>
             </div>
             <div class="menu_top_block">
               <div class="menu_block">
@@ -473,6 +474,9 @@
           var sp = new SplitPic(v);
         });
       });
+    $('.btn_menu').click(function(){
+      $(this).toggleClass('active');
+    });
   </script>
 </body>
 </html>
