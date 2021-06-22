@@ -104,7 +104,13 @@ body{font-family:'Montserrat_medium';}
 .link_mail{display:inline-flex;align-items:center;justify-content:flex-end;margin-top:10px;color:rgba(26, 26, 26,.8);font-family:'Montserrat_medium';transition:all .3s;font-size:15px;line-height:18px;}
 .link_mail:hover{color:rgba(255, 255, 255,1);text-decoration:none;text-shadow:0 0 4px rgba(0,0,0,.6);}
 .link_mail img{filter:drop-shadow(2px 6px 7px rgba(0, 0, 0, 0.25));z-index:0;}
-.mobile_icon, .mobile_open{display:none;}
+.mobile_icon, .mobile_open, .mobile_contact{display:none;}
+.banner_mobile_menu{display:none;}
+
+
+
+
+
 
 
 
@@ -149,9 +155,9 @@ body{font-family:'Montserrat_medium';}
 }
 @media(max-width:991px){
   .header_nav{position:relative;background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
-  .header_nav_menu{padding:5px 0;background-color:#fff;}
+  .header_nav_menu{padding:0;background-color:#fff;}
   .logo_block{flex:1 1 auto;justify-content:space-between;display:flex;z-index:9999;align-items:center;background-color:#fff;}
-  .line, .mobile_off{display:none;}
+  .line, .mobile_off, .icon_menu, .phone_menu, .city_block{display:none;}
   .wrapper_logo{box-shadow:none;flex-direction:row;padding:5px 0;}
   .text_logo{text-align:left;padding-left:15px;font-size:10px;}
   .btn_menu{display:inline-flex;padding:0;border:0;background-color:transparent;position:relative;width:25px;height:13px;}
@@ -173,7 +179,7 @@ body{font-family:'Montserrat_medium';}
   .mobile_icon{display:block;width:35px;text-align:center;}
   .dropdown_menu_wrapper{transform:translateY(0);position:relative;opacity:1;visibility:visible;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;}
   .dropdown_menu_wrapper.active{max-height:500px;visibility:visible;}
-  .dropdown_menu_wrapper_2{transform:translateY(0);position:relative;opacity:1;visibility:visible;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;}
+  .dropdown_menu_wrapper_2{transform:translateY(0);position:relative;opacity:1;visibility:visible;box-shadow:none;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;width:100%;}
   .dropdown_menu_wrapper_2.active{max-height:500px;visibility:visible;}
   .dropdown_menu{flex-direction:column;background-color:#EBEBEB;}
   .dropdown_menu_item{flex:1 1 auto;border-top:1px solid #3B3B3A;}
@@ -199,7 +205,7 @@ body{font-family:'Montserrat_medium';}
   .guid_select_link{width:100%;min-height:100%;height:100%;display:flex;align-items:center;background-color:#fff;color:#31ACE4;font-size:17px;line-height:39px;font-family:'Montserrat_semibold';}
   .guid_select_link:hover{text-decoration:none;color:#31ACE4;}
   .blue_shevron{margin-left:5px;}
-  .gradient_item_link{font-size:12px;line-height:15px;color:#fff;font-size:'Montserrat_semibold';display:inline-block;padding:3px 25px;margin-left:40px; background:linear-gradient(91.37deg, #F71313 4.47%, #FDB51F 97.63%);border-radius:20px;}
+  .gradient_item_link{font-size:12px;line-height:15px;color:#fff;font-family:'Montserrat_semibold';display:inline-block;padding:3px 25px;margin-left:40px; background:linear-gradient(91.37deg, #F71313 4.47%, #FDB51F 97.63%);border-radius:20px;}
   .sub_dropdown_menu{flex-wrap:wrap;}
   .link_head img{display:none;}
   .col_menu{flex:1 1 100%;border-right:none !important;padding:0;}
@@ -214,11 +220,44 @@ body{font-family:'Montserrat_medium';}
   .head_moibile.active .mobile_open{transform:rotateZ(180deg);}
   .link_head .status_icon{display:none;}
   .align_item_mobile{display:inline-flex;align-items:center;}
+  .menu_link:hover .dropdown_menu_wrapper_2{transform:translateX(0);}
+  .dropdown_menu_2{padding:0;border-radius:0;margin-bottom:0;}
+  .dropdown_menu_item_2{margin-bottom:0;}
+  .dropdown_menu_link_2{font-size:17px;display:inline-flex;width:100%;font-family:'Montserrat_semibold';min-height:41px;border-top:1px solid #3B3B3A;background-color:#EBEBEB;}
+  .mobile_contact{display:flex;align-items:center;justify-content:space-between;min-height:46px;}
+  .link_massage{display:inline-block;}
+  .link_massage img{filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));}
+  .link_massage:not(:last-of-type){margin-right:10px;}
+  .link_phone{display:inline-flex;align-items:center;font-size:17px;line-height:21px;color:rgba(26, 26, 26,.8);font-family:'Montserrat_semibold';}
+  .link_phone:hover{color:inherit;text-decoration:none;}
+  .link_phone span{border-bottom:1px solid rgba(26, 26, 26,.8);}
+  .link_phone img{filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));}
+  .contact_block{padding:0;}
+  .letter_our{min-height:41px;padding:2px 0;background:linear-gradient(92.58deg, #F71212 -14.51%, #E49E0F 82.83%, #FFE922 139.94%);}
+  .letter_our .link_mail{background-color:#fff;width:100%;justify-content:flex-start;min-height:37px;margin:0;}
+  .banner_mobile_menu{display:block;padding:30px 0;width:100%;}
+  .banner_mobile_menu_item{width:100%;border-radius:10px;padding:25px 15px;display:flex;flex-wrap:wrap;box-shadow:0px 6px 10px rgba(0, 0, 0, 0.25);background-image:url(../img/bg_banner_mobile.jpg);background-size:100% auto;background-repeat:no-repeat;}
+  .text_banner_block_mobile{padding:15px 10px;background-color:rgba(255,255,255,.7);border-radius:10px;width:100%;}
+  .text_banner{font-size:22px;text-align:center;}
+  .gradient_btn{transform:translateX(0);opacity:1;visibility:visible;margin-top:20px;font-size:12px;}
 
 
-
+}
+@media(max-width:767px){
+  .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
+  .body_name_link{padding:0 15px;}
+  .menu_block{padding:0;}
+  .menu_link.link{padding:12px 15px;}
+  .mobile_contact{padding:0 15px;}
+  .guid_select_link{width:100%;padding:0 15px;}
+  .col_menu_item_link.link_head{padding:12px 15px;}
+  .letter_our .link_mail{padding:0 15px;}
 }
 @media(max-width:565px){
-  .menu_block, .contact_block{padding:0;}
+  .menu_block{padding:0;}
+  .link_massage:not(:last-of-type){margin-right:5px;}
 }
-
+@media(max-width:374px){
+  .link_phone{font-size:15px;}
+  .gradient_item_link{margin-left:20px;}
+}
