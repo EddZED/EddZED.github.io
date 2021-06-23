@@ -279,6 +279,7 @@ body{font-family:'Montserrat_medium';}
 @media(max-width:565px){
   .menu_block{padding:0;}
   .link_massage:not(:last-of-type){margin-right:5px;}
+  .container_bottom_mobile{padding:0 5px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
