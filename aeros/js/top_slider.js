@@ -11,6 +11,6 @@ $('.intro_slider_nav').slick({
   asNavFor: '.intro_slider_view',
   dots: false,
   centerMode: true,
-  centerPadding: '10px',
+  centerPadding: '0px',
   focusOnSelect: true
 });
