@@ -4,7 +4,7 @@
 @font-face{font-family:'Montserrat_semibold'; src:url(../font/Montserrat-SemiBold.ttf);}
 @font-face{font-family:'Montserrat_extrabold'; src:url(../font/Montserrat-ExtraBold.ttf);}
 html{scroll-behavior:smooth;}
-body{font-family:'Montserrat_medium';}
+body{font-family:'Montserrat_medium';min-height:9999px;}
 .wrapper{overflow-x:hidden;overflow-y:auto;position:relative;min-height:100vh;}
 .header{position:relative;width:100%;}
 .header_nav{position:absolute;left:0;top:0;width:100%;z-index:10;transition:all .5s ease;}
