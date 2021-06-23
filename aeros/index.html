@@ -900,7 +900,7 @@
         offset: -350,
       })
         .setTween(fadeInTimeline)
-        .duration(200)
+        .duration(300)
         //    .reverse(false)
         .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
@@ -908,7 +908,7 @@
     //Fly in from the left
       var fromBottomTimeline = new TimelineMax();
       var fromBottomFrom = TweenMax.from(".text_card", 1, {
-        y: 50
+        y: 100
       });
       var fromBottomTo = TweenMax.to(".text_card", 1, {
         y: 0
@@ -919,11 +919,11 @@
 
       new ScrollMagic.Scene({
         triggerElement: "#sl_nav ",
-        offset: 200,
+        offset: -350,
       })
         .setTween(fromBottomTimeline)
         .duration(300)
-        .reverse(false)
+        //.reverse(false)
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
   </script>
