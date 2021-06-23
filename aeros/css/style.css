@@ -243,7 +243,7 @@ body{font-family:'Montserrat_medium';}
   .icon_menu{position:sticky;width:100%;left:0;bottom:0;background-color:#fff;justify-content:space-between;}
   .container_bottom_mobile{max-width:720px;margin:0 auto;width:100%;padding:0 15px;}
   .contact_block{position:fixed;left:0;bottom:0;width:100%;z-index:99999;background-color:#fff;padding:0;box-shadow:0px -4px 4px rgba(0, 0, 0, 0.25);}
-  .link_icon_menu{margin-left:0;}
+  .link_icon_menu{margin-left:0 !important;}
   .link_icon_menu svg{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.23));}
   .link_icon_menu .cart_icon{width:23.6px;height:16.2px;}
   .link_icon_menu .favorite_icon{width:23.6px;height:16.2px;}
