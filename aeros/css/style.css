@@ -263,8 +263,8 @@ body{font-family:'Montserrat_medium';}
   .link_icon_menu:hover .name_icon{color:rgba(26,26,26,.8);}
   .city_block{margin-right:30px;flex:1 1 10%;}
   .btn_city{margin-top:0;padding-left:0;text-decoration:none;font-size:10px;line-height:12px;font-family:'Montserrat_reg';}
-  .btn_city img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
-
+  .btn_city .marker{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+  .wrapper_city_search{max-width:310px;top:27px;right:16%;padding:20px 5px;}
 
 
 }
@@ -280,6 +280,7 @@ body{font-family:'Montserrat_medium';}
   .dropdown_menu_link_2{padding:0 15px;}
   .letter_our .link_mail{padding:0 15px;}
   .banner_mobile_menu{padding:20px 15px;}
+  .wrapper_city_search{right:13%;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
@@ -288,9 +289,12 @@ body{font-family:'Montserrat_medium';}
   .text_logo{padding-left:5px;}
   .wrapper_logo{flex:1 1 25%;}
   .city_block{flex:0 1 67px;}
+  .wrapper_city_search{top:33px;right:10px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
   .gradient_item_link{margin-left:20px;}
   .city_block{margin-right:10px;}
+  .wrapper_city_search{top:33px;margin:auto;right:0;left:0;padding:10px 5px;}
+  
 }
