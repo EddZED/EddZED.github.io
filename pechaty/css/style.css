@@ -133,9 +133,10 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
 .arrows_foto .slick-prev{left:auto;right:70px;}
 .arrows_foto .slick-disabled img{opacity:.3;}
 .arrows_foto .slick-disabled:hover{cursor:default;}
-
-
-
+.questions{padding:20px 0;}
+.wrap_block_white{background-color:#fff;box-shadow: 6px 6px 15px rgba(43, 41, 41, 0.05);border-radius: 15px;padding:35px 25px;height:100%;}
+.middle_head{font-size:26px;line-height:27px;font-family:'gil_bold';color:#211F1F;}
+.text_min_content{font-size:14px;line-height:20px;font-family:'gil_light';color:#211F1F;}
 
 
 
