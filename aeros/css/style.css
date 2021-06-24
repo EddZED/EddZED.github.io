@@ -158,7 +158,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .banner_video{position:absolute;top:-40px;right:-40px;}
 .banner_video img{filter:drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));}
 .screen_item{padding:130px 0 130px;}
-.slider_step_brizers_navigation .slick-track{min-height:100%;display:flex;align-items:flex-end;}
+.slider_step_brizers_navigation{display:flex;align-items:flex-end;}
 .navigation_item{background-color:transparent;display:flex !important;align-items:flex-end;border-radius:10px;cursor:ponter;}
 .text_button_nav{font-size:15px;line-height:18px;color: rgba(0, 0, 0, 0.89);font-family:'Montserrat_reg';}
 
