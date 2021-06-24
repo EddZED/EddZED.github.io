@@ -1092,21 +1092,27 @@
             <div class="row">
               <div class="offset-lg-6 col-lg-6">
                 <div class="slider_step_brizers_navigation">
-                  <a href="#" data-slide="2" class="navigation_item">
-                    <img class="img-fluid" src="img/slider_nav_1.png" alt="кнопка 1">
-                    <span class="text_button_nav">С нашим бризерами</span>
-                  </a>
-                  <a href="#" data-slide="3" class="navigation_item">
-                    <img class="img-fluid" src="img/slider_nav_2.png" alt="кнопка 1">
-                    <span class="text_button_nav">С открытым окном</span>
-                  </a>
-                  <a href="#" data-slide="4" class="navigation_item">
-                    <img class="img-fluid" src="img/slider_nav_3.png" alt="кнопка 1">
-                    <span class="text_button_nav">С закрытым окном</span>
-                  </a>
-                </div>
-                <div class="navigation_item look_back mt-4">
-                  <a href="#" data-slide="1" class="text_button_nav">Вернуться к видео</a>
+                  <div class="wrapp_link_sl">
+                    <a href="#" data-slide="2" class="navigation_item">
+                      <img class="img-fluid" src="img/slider_nav_1.png" alt="кнопка 1">
+                      <span class="text_button_nav">С нашим бризерами</span>
+                    </a>
+                  </div>
+                  <div class="wrapp_link_sl">
+                    <a href="#" data-slide="3" class="navigation_item">
+                      <img class="img-fluid" src="img/slider_nav_2.png" alt="кнопка 1">
+                      <span class="text_button_nav">С открытым окном</span>
+                    </a>
+                  </div>
+                  <div class="wrapp_link_sl">
+                    <a href="#" data-slide="4" class="navigation_item">
+                      <img class="img-fluid" src="img/slider_nav_3.png" alt="кнопка 1">
+                      <span class="text_button_nav">С закрытым окном</span>
+                    </a>
+                  </div>
+                  <div class="navigation_item look_back mt-4">
+                    <a href="#" data-slide="1" class="text_button_nav">Вернуться к видео</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1152,6 +1158,10 @@
     });
     $('.head_moibile').click(function(){
       $(this).toggleClass('active');
+    });
+    $('.wrapp_link_sl').click(function(){
+      $(this).addClass('active');
+      $('.wrapp_link_sl').removeClass('active');
     });
   </script>
   <script>

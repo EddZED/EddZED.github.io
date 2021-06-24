@@ -109,7 +109,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .banner_mobile_menu{display:none;}
 .icon_split{position:absolute;width:44px;height:44px;border-radius:50%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,.23);display:flex;align-items:center;justify-content:center;}
 .splitpic-horizontal .splitpic-bar{width:0;}
-.intro{width:100%;}
+.intro{width:100%;position:relative;z-index:1;}
 .splitpic-images{width:100%;}
 .splitpic-image{height:100%;}
 .img_left,.img_right{width:100%;height:100%;background-size:cover;background-position:center center;}
@@ -157,12 +157,16 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .video_block{border-radius:10px;overflow:hidden;position:relative;cursor:pointer;}
 .banner_video{position:absolute;top:-40px;right:-40px;}
 .banner_video img{filter:drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));}
-.screen_item{padding:130px 0 130px;}
-.slider_step_brizers_navigation{display:flex;align-items:flex-end;}
-.navigation_item{background-color:transparent;display:flex !important;align-items:flex-end;border-radius:10px;cursor:ponter;}
-.text_button_nav{font-size:15px;line-height:18px;color: rgba(0, 0, 0, 0.89);font-family:'Montserrat_reg';}
-
-
+.screen_item{padding:150px 0 260px;}
+.slider_step_brizers_navigation{display:flex;flex-wrap:wrap;margin-top:-270px;}
+.wrapp_link_sl{flex:1 1 33%;display:flex;flex-wrap:wrap;}
+.navigation_item{background-color:transparent;display:flex !important;align-items:flex-end;border-radius:10px;padding:15px;transition:all .3s;}
+.text_button_nav{font-size:14px;line-height:18px;color: rgba(0, 0, 0, 0.89);font-family:'Montserrat_reg';padding-left:10px;}
+.screen_item.screen_two{background-color:#E1F7FF;}
+.screen_item.screen_three{background-color:#E5E5E5;}
+.screen_item.screen_four{background:linear-gradient(0deg, #E7E1B2, #E7E1B2);}
+.navigation_item:hover{color:rgba(0, 0, 0, 0.89);}
+.navigation_item.active{color:rgba(0, 0, 0, 0.89);background-color:#fff;box-shadow:0px 2px 10px rgba(0, 0, 0, 0.55);}
 
 
 
