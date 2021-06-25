@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 438 317" style="enable-background:new 0 0 438 317;" xml:space="preserve">
+	 width="438px" height="317px" viewBox="0 0 438 317" style="enable-background:new 0 0 438 317;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FDFDFD;}
 	.st1{fill:url(#SVGID_1_);}
@@ -14,10 +14,10 @@
 	.st8{fill:url(#SVGID_3_);}
 	.st9{fill:none;stroke:#1D1D1B;stroke-width:0.5;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#00ABD0;stroke-width:3;stroke-linecap:round;stroke-miterlimit:22.93;}
-	.first_arrow{animation:arrow1 2s ease infinite;}
+	.first_arrow{animation:arrow1 2s ease infinite;transform:translate3d(15px, -10px, 0)}
 	@keyframes arrow1{
-		0%{transform:translate3d(0, 0, 0);opacity:1;}
-		50%{transform:translate3d(15px, -10px, 0);opacity:0;}
+		0%{transform:translate3d(15px, -10px, 0);opacity:0;}
+		50%{transform:translate3d(0, 0, 0);opacity:1;}
 		100%{transform:translate3d(0, 0, 0);opacity:1;}
 	}
 	.arrow_2 path{animation:arrow2 2.5s ease infinite;opacity:0;}
@@ -61,6 +61,8 @@
 	.arrow_9 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.9s;opacity:0;}
 	.arrow_10 path{animation:arrow5 2s ease infinite;animation-delay:1s;opacity:0;}
 </style>
+
+
 <path class="st0" d="M280.6,9.4l144.9,67.9v72.4L370,185.2V203l-88.1,56.3l-18.3-9l-79.7,50.2L24.4,225.6v-28.7L78.9,163L9,130V48.7
 	l18.4-11.8l10.8,5L95.3,5l107.8,50.4v-8.5l18.4-11.8l10.8,5L280.6,9.4z"/>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="216.85" y1="551.8" x2="216.85" y2="741.8" gradientTransform="matrix(1 0 0 1 0 -474)">
