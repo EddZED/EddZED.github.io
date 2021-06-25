@@ -14,6 +14,52 @@
 	.st8{fill:url(#SVGID_3_);}
 	.st9{fill:none;stroke:#1D1D1B;stroke-width:0.5;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#00ABD0;stroke-width:3;stroke-linecap:round;stroke-miterlimit:22.93;}
+	.first_arrow{animation:arrow1 2s ease infinite;}
+	@keyframes arrow1{
+		0%{transform:translate3d(0, 0, 0);opacity:1;}
+		50%{transform:translate3d(15px, -10px, 0);opacity:0;}
+		100%{transform:translate3d(0, 0, 0);opacity:1;}
+	}
+	.arrow_2 path{animation:arrow2 2.5s ease infinite;opacity:0;}
+	@keyframes arrow2{
+		0%{opacity:0;}
+		100%{opacity:1;}
+	}
+	.arrow_3 path{animation:arrow3 2s ease infinite;transform:translate3d(15px, -10px, 0);}
+	@keyframes arrow3{
+		0%{transform:translate3d(15px, -10px, 0);opacity:0;}
+		100%{transform:translate3d(0, 0, 0);opacity:1;}
+	}
+	.arrow_4 path{animation:arrow4 2s ease infinite;transform:translate3d(63px, 34px, 0px);}
+	@keyframes arrow4{
+		0%{transform:translate3d(63px, 34px, 0px);opacity:0;}
+		100%{transform:translate3d(0, 0, 0);opacity:1;}
+	}
+	.arrow_5 path{animation:arrow5 2s ease infinite;animation-delay:1.5s;opacity:0;}
+	@keyframes arrow5{
+		0%{transform:translate3d(0,0,0);opacity:0;}
+		100%{transform:translate3d(0px, -20px, 0px);opacity:1;}
+	}
+	.arrow_6 path{animation:arrow6 2s ease infinite;animation-delay:.5s;opacity:0;}
+	@keyframes arrow6{
+		0%{opacity:0;}
+		50%{opacity:1;}
+		100%{opacity:1;}
+	}
+	.arrow_7 path{animation:arrow7 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.5s;opacity:0;}
+	@keyframes arrow7{
+		0%{transform:translate3d(36px, 17px, 0);opacity:0;}
+		50%{transform:translate3d(0, 0, 0);opacity:1;}
+		100%{transform:translate3d(0, 0, 0);opacity:1;}
+	}
+	.arrow_8 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.7s;opacity:0;}
+	@keyframes arrow8{
+		0%{transform:translate3d(36px, 17px, 0);opacity:0;}
+		50%{transform:translate3d(0, 0, 0);opacity:1;}
+		100%{transform:translate3d(0, 0, 0);opacity:1;}
+	}
+	.arrow_9 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.9s;opacity:0;}
+	.arrow_10 path{animation:arrow5 2s ease infinite;animation-delay:1s;opacity:0;}
 </style>
 <path class="st0" d="M280.6,9.4l144.9,67.9v72.4L370,185.2V203l-88.1,56.3l-18.3-9l-79.7,50.2L24.4,225.6v-28.7L78.9,163L9,130V48.7
 	l18.4-11.8l10.8,5L95.3,5l107.8,50.4v-8.5l18.4-11.8l10.8,5L280.6,9.4z"/>
@@ -303,50 +349,50 @@
 	c-1.9,0-1.9,1.7-1.9,3.2H303.1z"/>
 <path class="st6 first_arrow" d="M417.6,45.1c-0.4-0.6-1.1-0.7-1.7-0.4L401,54.1v-3.3c0-0.6-0.6-1.2-1.2-1.2s-1.2,0.6-1.2,1.2v7.3h8.3
 	c0.6,0,1.2-0.6,1.2-1.2s-0.6-1.2-1.2-1.2h-3.7l14.1-8.9C417.8,46.4,418,45.7,417.6,45.1z"/>
-<g>
+<g class="arrow_5">
 	<path class="st6" d="M218.5,45c0.6,0,1.2-0.6,1.2-1.2l0.1-19c0-0.6-0.5-1.2-1.2-1.2c-0.6,0-1.2,0.6-1.2,1.2l-0.1,19
 		C217.3,44.5,217.8,45,218.5,45z"/>
 	<path class="st6" d="M222.9,29.5c0.3,0,0.6-0.1,0.9-0.4c0.5-0.4,0.5-1.2,0.1-1.7l-0.1-0.1l-5.2-5.2l-5.1,5.1
 		c-0.4,0.5-0.4,1.3,0.1,1.7c0.4,0.4,1.1,0.4,1.7,0l3.4-3.4l3.4,3.5C222.3,29.3,222.6,29.5,222.9,29.5z"/>
 </g>
-<g>
+<g class="arrow_10">
 	<path class="st6" d="M24.4,46.9c0.6,0,1.2-0.6,1.2-1.2l0.1-19c0-0.6-0.5-1.2-1.2-1.2c-0.6,0-1.2,0.6-1.2,1.2l-0.1,19
 		C23.2,46.3,23.7,46.9,24.4,46.9z"/>
 	<path class="st6" d="M28.8,31.3c0.3,0,0.6-0.1,0.9-0.4c0.5-0.4,0.5-1.2,0.1-1.7l-0.1-0.1L24.5,24l-5.1,5.1
 		c-0.4,0.5-0.4,1.3,0.1,1.7c0.4,0.4,1.1,0.4,1.6,0l3.4-3.4l3.4,3.5C28.2,31.1,28.4,31.3,28.8,31.3z"/>
 </g>
-<g>
+<g class="arrow_3">
 	<path class="st6" d="M287.9,129.5c0.2,0,0.4-0.1,0.6-0.2l22.4-14.2c0.6-0.4,0.7-1.1,0.4-1.7c-0.4-0.6-1.1-0.7-1.7-0.4l-22.4,14.2
 		c-0.6,0.4-0.7,1.1-0.4,1.6c0,0,0,0,0,0.1C287.1,129.3,287.4,129.5,287.9,129.5z"/>
 	<path class="st6" d="M293.3,131.2c0.6,0,1.2-0.5,1.2-1.2c0-0.6-0.4-1.1-0.9-1.2l-4.7-1l1-4.7c0.2-0.6-0.2-1.3-0.9-1.5
 		c-0.6-0.2-1.3,0.2-1.5,0.9c0,0.1,0,0.1,0,0.1l-1.5,7.1l7.1,1.5L293.3,131.2L293.3,131.2z"/>
 </g>
-<g>
+<g class="arrow_6">
 	<path class="st6" d="M240.9,155c4.7,0,9.4-1.4,13.4-3.9l1.4-0.9c0.6-0.4,0.7-1.1,0.4-1.7c-0.4-0.6-1.1-0.7-1.7-0.4L253,149
 		c-6.5,4.2-14.8,4.7-21.8,1.4l-1.6-0.7c-0.6-0.3-1.4-0.1-1.6,0.6c-0.3,0.6-0.1,1.4,0.6,1.7l1.6,0.7C233.5,154.2,237.2,155,240.9,155
 		z"/>
 	<path class="st6" d="M229,156.8c0.1,0,0.3,0,0.4-0.1c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1l-1.6-4.6l4.5-1.6
 		c0.6-0.3,0.9-1,0.6-1.6c-0.2-0.6-0.9-0.9-1.5-0.7l-6.8,2.4l2.4,6.9C227.9,156.4,228.4,156.8,229,156.8z"/>
 </g>
-<g>
+<g class="arrow_7">
 	<path class="st6" d="M183.1,130.3c0.4,0,0.9-0.3,1.1-0.7c0.3-0.6,0-1.4-0.6-1.7l-24-11.2c-0.6-0.3-1.4-0.1-1.6,0.6
 		c-0.3,0.6-0.1,1.4,0.6,1.7l24,11.2C182.7,130.3,182.9,130.3,183.1,130.3z"/>
 	<path class="st6" d="M159.5,123.9c0.1,0,0.3,0,0.4-0.1c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1l-1.6-4.6l4.5-1.6
 		c0.6-0.3,0.9-1,0.6-1.6c-0.2-0.6-0.9-0.9-1.5-0.7l-6.8,2.4l2.4,6.9C158.5,123.6,158.9,123.9,159.5,123.9z"/>
 </g>
-<g>
+<g class="arrow_8">
 	<path class="st6" d="M114.9,98.2c0.4,0,0.9-0.3,1.1-0.7c0.3-0.6,0-1.4-0.6-1.7L89,83.4c-0.6-0.3-1.4-0.1-1.7,0.6
 		c-0.3,0.6-0.1,1.4,0.6,1.7l26.5,12.5C114.6,98.2,114.8,98.2,114.9,98.2z"/>
 	<path class="st6" d="M89.1,91.1c0.1,0,0.3,0,0.4-0.1c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1l-1.6-4.6l4.5-1.6
 		c0.6-0.2,1-0.9,0.8-1.6c-0.2-0.6-0.9-1-1.6-0.8h-0.1l-6.8,2.4l2.4,6.9C88.1,90.7,88.6,91.1,89.1,91.1z"/>
 </g>
-<g>
+<g class="arrow_9">
 	<path class="st6" d="M57,71.4c0.4,0,0.9-0.3,1.1-0.7c0.3-0.6,0-1.4-0.6-1.7l-18.8-8.9c-0.6-0.3-1.4-0.1-1.7,0.6
 		c-0.3,0.6-0.1,1.4,0.6,1.7l18.8,8.9C56.6,71.3,56.8,71.4,57,71.4z"/>
 	<path class="st6" d="M38.5,67.8c0.1,0,0.3,0,0.4-0.1c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1L38,61.6l4.5-1.6
 		c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1c-0.2-0.6-0.9-0.9-1.5-0.7h-0.1L34.9,60l2.4,6.9C37.5,67.4,38,67.7,38.5,67.8z"/>
 </g>
-<g>
+<g class="arrow_4">
 	<path class="st6" d="M253.7,70.9c0.4,0,0.9-0.3,1.1-0.7c0.3-0.6,0-1.4-0.6-1.7L234,59c-0.6-0.3-1.4-0.1-1.7,0.6s-0.1,1.4,0.6,1.7
 		l20.2,9.5C253.4,70.8,253.6,70.9,253.7,70.9z"/>
 	<path class="st6" d="M233.9,66.7c0.1,0,0.3,0,0.4-0.1c0.6-0.2,0.9-0.9,0.8-1.4c0-0.1,0-0.1-0.1-0.1l-1.6-4.6l4.5-1.6
@@ -372,7 +418,7 @@
 	 M356.5,99.8c-0.6-1-1.4-1.8-2.5-2.3L356.5,99.8z M358.6,103.2c0.6,1,1.4,1.8,2.5,2.3l3,1.4L358.6,103.2z M356.5,99.8l2.2,3.5
 	L356.5,99.8z M362,96.3c-0.6-1-1.4-1.8-2.5-2.3l-3-1.4L362,96.3z M364.2,99.7c0.6,1,1.4,1.8,2.5,2.3L364.2,99.7z M362,96.3l2.2,3.4
 	L362,96.3z"/>
-<g>
+<g class="arrow_2">
 	<path class="st6" d="M341.4,99.4c0.6,0,1.2-0.5,1.2-1.2c0-0.6-0.4-1.1-0.9-1.2l-4.7-1l1-4.7c0.2-0.6-0.2-1.3-0.9-1.5
 		s-1.3,0.2-1.5,0.9c0,0.1,0,0.1,0,0.1l-1.5,7.1l7.1,1.5C341.2,99.4,341.4,99.4,341.4,99.4z"/>
 	<path class="st10" d="M360.3,90.2c-3.3-3.1-8.3-3.6-12.1-1.2l-11.4,7.2"/>
