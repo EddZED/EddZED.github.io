@@ -1110,8 +1110,14 @@
                       <span class="text_button_nav">С закрытым окном</span>
                     </a>
                   </div>
-                  <div class="navigation_item look_back mt-4">
-                    <a href="#" data-slide="1" class="text_button_nav">Вернуться к видео</a>
+                  <div class="look_back mt-4">
+                    <a href="#" data-slide="1" class="text_button_nav pl-0">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11" stroke="#444A4D" stroke-width="2" />
+                        <path d="M16.9995 12.0005L9.49951 16.3306L9.49951 7.67036L16.9995 12.0005Z" fill="#444A4D" />
+                      </svg>
+                      <span class="d-inline-block pl-1">Вернуться к видео</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1160,7 +1166,10 @@
       $(this).toggleClass('active');
     });
     $('.wrapp_link_sl').click(function(){
+      $('.wrapp_link_sl').removeClass('active');
       $(this).addClass('active');
+    });
+    $('.look_back').click(function(){
       $('.wrapp_link_sl').removeClass('active');
     });
   </script>
