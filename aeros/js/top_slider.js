@@ -50,3 +50,5 @@ $('.intro_slider_nav').slick({
       }
     ]
 });
+$('.intro_slider_view').slick('setPosition');
+$('.intro_slider_nav').slick('setPosition');

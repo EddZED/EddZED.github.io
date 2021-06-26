@@ -13,3 +13,4 @@ $('a[data-slide]').click(function(e) {
    var slideno = $(this).data('slide');
    $('.slider_step_brizers').slick('slickGoTo', slideno - 1);
  });
+ $('.slider_step_brizers').slick('setPosition');
