@@ -196,6 +196,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .body_card_goods:hover{box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.35);}
 .top_image_slider{z-index:1;}
 .image_slider_item{text-align:center;}
+.wrapper_top_image_slider{position:relative;}
 .top_image_slider .slick-dots{bottom:-35px;}
 .top_image_slider .slick-dots button:before{display:none;}
 .top_image_slider .slick-dots li{width:18px;height:4px;background-color:#fff;border:1px solid rgba(0,0,0,.5);border-radius:3px;margin:0 2px;transition:all .3s;}
@@ -221,7 +222,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .btn_add_cart.gradient_btn_other{background: linear-gradient(92.58deg, #F71212 -14.51%, #E49E0F 82.83%, #FFE922 139.94%);transition:all .3s;overflow:hidden;}
 .btn_add_cart.gradient_btn_other span{z-index:1;}
 .btn_add_cart.gradient_btn_other:before{content:'';position:absolute;width:100%;height:100%;background-color:#ea7310;opacity:0;transition:all .3s;z-index:0;}
-.btn_add_cart.gradient_btn_other:hover:before{opacity:.4;}
+.btn_add_cart.gradient_btn_other:hover:before{opacity:.8;}
 .delivery{display:flex;align-items:center;justify-content:space-between;margin-top:15px;}
 .delivery span{font-size:10px;line-height:12px;letter-spacing:0.04em;color:rgba(0,0,0,.5);font-family:'Montserrat_semibold';}
 .favorite_goods{display:inline-block;position:absolute;right:20px;top:20px;border:none;background-color:transparent;z-index:2;}
@@ -232,9 +233,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .stat_goods:focus{outline:none;}
 .stat_goods svg{transition:fill .3s;}
 .stat_goods:hover svg{fill:black;}
-
-
-
+.image_brand{position:absolute;left:0;bottom:20px;display:inline-block;}
+.germany_item{position:absolute;top:50%;left:15px;transform:translateY(-50%);z-index:2;}
+.green_label{position:absolute;right:0;top:30%;z-index:2;background: linear-gradient(0deg, #0FC121, #0FC121);border-radius:0 20px 20px 20px;color:#FDFDFD;font-size:10px;line-height:12px;font-family:'Montserrat_semibold';padding:7px 10px;}
 
 
 @media (min-width:1440px) and (max-width:4300px){
