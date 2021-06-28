@@ -252,7 +252,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .body_card_goods.banner_availabel{background-image:url(../img/available_banner.png);background-size:cover;background-position:center center;height:100%;padding-bottom:20px;justify-content:flex-end;}
 .banner_body{padding:20px 0;width:100%;}
 .new_goods{padding:20px 0 70px;width:100%;}
-.body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;}
+.body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;padding:0 20px 15px;border-radius:4px;overflow:hidden;justify-content:flex-end;}
 .test_drive{padding:80px 0 90px;background-color:#F8F9FE;position:relative;}
 .middle_text{font-size:24px;line-height:29px;font-family:'Montserrat_reg';}
 .middle_text.gradient_text{text-transform:uppercase;background: linear-gradient(90.45deg, #F71212 5.23%, #F48120 64.44%);-webkit-background-clip: text;}
@@ -267,10 +267,16 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .gray_link:hover span{color:rgba(0,0,0,.8);}
 .left_item_decor{position:absolute;left:0;top:0;z-index:0;}
 .right_item_decor{position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:0;}
-.green_label_big{display:inline-block;background:linear-gradient(0deg, #0FC121, #0FC121);padding:10px 25px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);border-radius:0 20px 20px 20px;color:#fff;font-size:20px;line-height:24px;font-family:'Montserrat_semibold';position:absolute;right:-30px;top:55%;}
-
-
-
+.green_label_big{display:inline-block;background:linear-gradient(0deg, #0FC121, #0FC121);padding:10px 25px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);border-radius:0 20px 20px 20px;color:#fff;font-size:20px;line-height:24px;font-family:'Montserrat_semibold';position:absolute;right:-30px;top:50%;}
+.about_us{width:100%;padding:80px 0;}
+.scrolling_box{position:relative;margin-top:30px;text-align:center;}
+.scrolling_box .scrolling_box_bg{object-fit:cover;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);border-radius:10px;}
+.block_item_about{display:flex;align-items:center;justify-content:space-between;min-height:290px;flex-direction:column;text-align:center;background-color:rgba(255,255,255,.9);border-radius:10px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);margin-bottom:40px;padding:30px 15px;}
+.wrapper_block_scroll{position:absolute;height:100%;width:100%;left:0;top:0;z-index:1;display:flex;align-items:center;justify-content:center;}
+.name_about{font-size:19px;line-height:23px;color:#000;font-family:'Montserrat_medium';}
+.gray_text{font-size:14px;line-height:17px;color:rgba(0,0,0,.5);font-family:'Montserrat_semibold';}
+.raiting_comments{font-size:14px;line-height:17px;font-family:'Montserrat_semibold';display:inline-flex;align-items:center;}
+.brand_place{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 
 
 
