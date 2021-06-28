@@ -1,4 +1,4 @@
-$('#slider_goods').slick({
+$('#slider_goods_available').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   TouchMove: false,
@@ -40,4 +40,4 @@ $('#slider_goods').slick({
       }
     ]
 });
-$('#slider_goods').slick('setPosition');
+$('#slider_goods_available').slick('setPosition');

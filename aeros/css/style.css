@@ -223,14 +223,18 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .btn_add_cart.gradient_btn_other:hover:before{opacity:.8;}
 .delivery{display:flex;align-items:center;justify-content:space-between;margin-top:15px;}
 .delivery span{font-size:10px;line-height:12px;letter-spacing:0.04em;color:rgba(0,0,0,.5);font-family:'Montserrat_semibold';}
-.favorite_goods{display:inline-block;position:absolute;right:20px;top:20px;border:none;background-color:transparent;z-index:2;}
+.favorite_goods{display:inline-block;position:absolute;right:20px;top:20px;border:none;background-color:transparent;z-index:2;width:29px;height:22px;background-image:url(../svg/favorite_card.svg);background-size:100% 100%;background-repeat:no-repeat;background-position:center center;transition:all .3s;}
 .favorite_goods:focus{outline:none;}
-.favorite_goods svg path{transition:all .3s;}
-.favorite_goods:hover svg path{fill:red;}
-.stat_goods{display:inline-block;position:absolute;left:20px;top:20px;border:none;background-color:transparent;z-index:2;transition:all .3s;}
+.favorite_goods:hover{background-image:url(../svg/gradient_heart.svg);}
+.favorite_goods.active{background-image:url(../svg/gradient_heart.svg);}
+.favorite_goods.active:before{content:'Добавлено в избранное';position:absolute;right:22px;top:-13px;background:linear-gradient(0deg, #F7F7F7, #F7F7F7);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:20px 20px 0 20px;font-size:8px;line-height:10px;width:137px;padding:5px;transform:translateY(-20px);opacity:0;visibility:hidden;transition:all .3s;transition-delay:.2s;}
+.favorite_goods.active:hover:before{transform:translateY(0);opacity:1;visibility:visible;transition:all .3s;transition-delay:.2s;}
+.stat_goods{display:inline-block;position:absolute;left:20px;top:20px;border:none;background-color:transparent;z-index:2;width:25px;height:21px;transition:all .3s;background-image:url(../svg/stat_card.svg);background-size:100% 100%;background-repeat:no-repeat;background-position:center center;}
 .stat_goods:focus{outline:none;}
-.stat_goods svg{transition:fill .3s;}
-.stat_goods:hover svg{fill:black;}
+.stat_goods:hover{background-image:url(../svg/gradient_stat.svg);}
+.stat_goods.active{background-image:url(../svg/gradient_stat.svg);}
+.stat_goods.active:before{content:'Добавлено в сравнение';position:absolute;left:20px;top:-13px;background:linear-gradient(0deg, #F7F7F7, #F7F7F7);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:20px 20px 20px 0;font-size:8px;line-height:10px;width:137px;padding:5px;transform:translateY(-20px);opacity:0;visibility:hidden;transition:all .3s;transition-delay:.2s;}
+.stat_goods.active:hover:before{transform:translateY(0);opacity:1;visibility:visible;transition:all .3s;transition-delay:.2s;}
 .image_brand{position:absolute;left:0;bottom:20px;display:inline-block;}
 .germany_item{position:absolute;top:50%;left:15px;transform:translateY(-50%);z-index:2;}
 .green_label{position:absolute;right:0;top:30%;z-index:2;background: linear-gradient(0deg, #0FC121, #0FC121);border-radius:0 20px 20px 20px;color:#FDFDFD;font-size:10px;line-height:12px;font-family:'Montserrat_semibold';padding:7px 10px;}
@@ -245,6 +249,24 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .popular_link_item{flex:0 1 18%;max-width:100%;display:flex;align-items:center;flex-direction:column;justify-content:center;padding:30px 5px;background-color:#FAF9F9;box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);border-radius: 10px;margin-bottom:10px;}
 .popular_link_item span{font-size:17px;line-height:21px;color:#000;font-family:'Montserrat_medium';display:inline-block;padding-top:20px;}
 .popular_link_item:hover{text-decoration:none;}
+.body_card_goods.banner_availabel{background-image:url(../img/available_banner.png);background-size:cover;background-position:center center;height:100%;padding-bottom:20px;justify-content:flex-end;}
+.banner_body{padding:20px 0;width:100%;}
+.new_goods{padding:20px 0 70px;width:100%;}
+.body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;}
+.test_drive{padding:80px 0 90px;background-color:#F8F9FE;position:relative;}
+.middle_text{font-size:24px;line-height:29px;font-family:'Montserrat_reg';}
+.middle_text.gradient_text{background: linear-gradient(90.45deg, #F71212 5.23%, #F48120 64.44%);-webkit-background-clip: text;}
+.wrapper_blur{width:336px;height:443px;position:absolute;right:0;top:0; background: linear-gradient(92.58deg, rgba(247, 18, 18, 0.7) -14.51%, rgba(228, 158, 15, 0.7) 82.83%, rgba(255, 233, 34, 0.7) 139.94%);filter: blur(190px);border-radius: 10px;z-index:0;}
+.briz_img{pointer-events:none;}
+.wrapper_img_box{position:relative;z-index:1}
+.blue_link_content{display:flex;align-items:center;justify-content:flex-end;font-size:20px;line-height:24px;color:#31ACE4;font-family:'Montserrat_medium';}
+.blue_link_content:hover{color:#31ACE4;}
+.gray_link{display:flex;align-items:center;justify-content:flex-end;}
+.gray_link span{font-size:15px;line-height:18px;color:rgba(0,0,0,.45);font-family:'Montserrat_medium';text-decoration:none;border-bottom:1px solid rgba(0,0,0,.45);transition:all .3s;}
+.gray_link:hover{text-decoration:none;}
+.gray_link:hover span{color:rgba(0,0,0,.8);}
+.left_item_decor{position:absolute;left:0;top:0;z-index:0;}
+.right_item_decor{position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:0;}
 
 
 
