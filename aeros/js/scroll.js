@@ -1,144 +1,344 @@
 var controller = new ScrollMagic.Controller();
-    var tl = new TimelineLite({});
-      tl.from("header", 0.75, {
-        top: -50
-      });
-      new ScrollMagic.Scene({ triggerElement: "header", duration: 0, offset: -1})
-        .setTween(tl)
-        .reverse(false)
-        .addTo(controller);
+var pixels = document.width;
 
-    // Fade in
-      var fadeInTimeline = new TimelineMax();
-      var fadeInFrom = TweenMax.from(".text_card", 1, {
-        autoAlpha: 0
-      });
-      var fadeInTo = TweenMax.to(".text_card", 1, {
-        autoAlpha: 1
-      });
-      fadeInTimeline
-        .add(fadeInFrom)
-        .add(fadeInTo);
+$(document).ready(function() {
 
-      new ScrollMagic.Scene({
-        triggerElement: "#sl_nav ",
-        triggerHook: "onCenter",
-        offset: -250,
-      })
-        .setTween(fadeInTimeline)
-        .duration(400)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    
-    //Fly in from the bottom
-      var fromBottomTimeline = new TimelineMax();
-      var fromBottomFrom = TweenMax.from(".text_card", 1, {
-        y: 100
-      });
-      var fromBottomTo = TweenMax.to(".text_card", 1, {
-        y: 0
-      });
-      fromBottomTimeline
-        .add(fromBottomFrom)
-        .add(fromBottomTo);
+	
+	var height = $( window ).height();
+	var width = $( window ).width();
 
-      new ScrollMagic.Scene({
-        triggerElement: "#sl_nav ",
-        offset: -250,
-      })
-        .setTween(fromBottomTimeline)
-        .duration(400)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    
-    //Fly in from the bottom goods
-      var fromBottomTimeline2 = new TimelineMax();
-      var fromBottomFrom2 = TweenMax.from("#slider_goods .image_slider_item img", 1, {
-        y: 30
-      });
-      var fromBottomTo2 = TweenMax.to("#slider_goods .image_slider_item img", 1, {
-        y:-30
-      });
-      fromBottomTimeline2
-        .add(fromBottomFrom2)
-        .add(fromBottomTo2);
+	if (width >= 1280) {
+		$(function () {
+							
+			new ScrollMagic.Scene({triggerElement: ".intro", duration: 500, offset: 0, triggerHook: 0})
+							.setPin(".intro")					
+							.addTo(controller);	
+							
+			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: 0, triggerHook: 0.5})
+							.setTween(TweenMax.from("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
+							.addTo(controller);				
+			new ScrollMagic.Scene({triggerElement: "#back", duration: 300, offset: 600, triggerHook: 0.5})
+							.setTween(TweenMax.to("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
+							.addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#slider_goods ",
-        offset: -200,
-      })
-        .setTween(fromBottomTimeline2)
-        .duration(1000)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    // Fade in goods
-      var fadeInTimeline3 = new TimelineMax();
-      var fadeInFrom3 = TweenMax.from("#slider_goods .image_slider_item img", 1, {
-        autoAlpha: 0
-      });
-      var fadeInTo3 = TweenMax.to("#slider_goods .image_slider_item img", 1, {
-        autoAlpha: 1
-      });
-      fadeInTimeline3
-        .add(fadeInFrom3)
-        .add(fadeInTo3);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 500, offset: 0, triggerHook: 0})
+				.setPin("#numbers")	
+				.addTo(controller);					
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 0, triggerHook: 0.3})
+				.setTween(TweenMax.from("#numbers h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 100, triggerHook: 0.3})
+				.setTween(TweenMax.from("#numbers h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 300, offset: height-500, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(1)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 300, offset: (height-500)*2, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(2)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 300, offset: (height-500)*3, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(3)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(1) img", 1, {opacity: 0, y: -100}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 400, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(2) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 400, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(3) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(1) h4", 1, {opacity: 0}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 200, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(2) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz", duration: 200, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(3) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(1) img", 1, {opacity: 0, y: -100}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 400, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(2) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 400, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(3) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(1) h4", 1, {opacity: 0}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 200, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(2) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper", duration: 200, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(3) h4", 1, {opacity: 0}))		
+				.addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#slider_goods",
-        triggerHook: "onCenter",
-        offset: -200,
-      })
-        .setTween(fadeInTimeline3)
-        .duration(1000)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    
-    //Fly in from the bottom goods
-      var fromBottomTimeline3 = new TimelineMax();
-      var fromBottomFrom3 = TweenMax.from("#slider_goods_available .image_slider_item img", 1, {
-        y: 30
-      });
-      var fromBottomTo3 = TweenMax.to("#slider_goods_available .image_slider_item img", 1, {
-        y:-30
-      });
-      fromBottomTimeline3
-        .add(fromBottomFrom3)
-        .add(fromBottomTo3);
+			var colors = [
+			  { deg:"192" },
+			  { deg:"182" },
+			  { deg:"172" },
+			  { deg:"162" },
+			  { deg:"142" }
+			];
+			var gradientTween2 = new TimelineMax();
+			var gradientTween3 = new TimelineMax();
+			for (let i = 0; i < colors.length; i++) {
+			  gradientTween2.to("#montage h2", 1, {
+				backgroundImage:
+				  "linear-gradient("+colors[i].deg+"deg, #0094D9 2.61%, #2E3191 32.28%, #EC1C24 59.13%, #F48120 93.05%"
+			  });
+			  gradientTween3.to("#montage .colortext", 1, {
+				backgroundImage:
+				  "linear-gradient("+colors[i].deg+"deg, #0094D9 2.61%, #2E3191 32.28%, #EC1C24 59.13%, #F48120 93.05%"
+			  });
+			}
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.5})
+				.setTween(gradientTween2)
+				.addTo(controller)
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.6})
+				.setTween(gradientTween3)
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#montage .border", 1, {opacity: 0, x: 100}))
+				.addTo(controller);
+	
+					
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 200, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#rules h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 200, offset: 100, triggerHook: 0.6})
+				.setTween(TweenMax.from("#rules h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);				
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height, triggerHook: 0})
+				.setTween(TweenMax.to("#rules h2.black", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height, triggerHook: 0})
+				.setTween(TweenMax.to("#rules h2.gray", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height+200, triggerHook: 0})
+				.setTween(TweenMax.to("#rules p", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#form h2", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 200, offset: 0, triggerHook: 0.4})
+				.setTween(TweenMax.from("#form input", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 200, offset: 0, triggerHook: 0.2})
+				.setTween(TweenMax.from("#form button", 1, {opacity: 0}))		
+				.addTo(controller);
+								
+			new ScrollMagic.Scene({triggerElement: "#video", duration: 200, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#video h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#video", duration: 200, offset: 100, triggerHook: 0.6})
+				.setTween(TweenMax.from("#video h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#dontknow", duration: 500, offset: 0, triggerHook: 0})
+				.setPin("#dontknow")	
+				.addTo(controller);					
+			new ScrollMagic.Scene({triggerElement: "#dontknow h2", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#dontknow h2", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#dontknow p", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#dontknow p", 1, {opacity: 0}))		
+				.addTo(controller);	
 
-      new ScrollMagic.Scene({
-        triggerElement: "#slider_goods_available",
-        offset: 100,
-      })
-        .setTween(fromBottomTimeline2)
-        .duration(500)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    // Fade in goods
-      var fadeInTimeline4 = new TimelineMax();
-      var fadeInFrom4 = TweenMax.from("#slider_goods_available .image_slider_item img", 1, {
-        autoAlpha: 0
-      });
-      var fadeInTo4 = TweenMax.to("#slider_goods_available .image_slider_item img", 1, {
-        autoAlpha: 1
-      });
-      fadeInTimeline4
-        .add(fadeInFrom4)
-        .add(fadeInTo4);
+			new ScrollMagic.Scene({triggerElement: "#dontknow #line", duration: 3000, offset: 0, triggerHook: 0.8})
+				.setClassToggle("#line", "full")
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#dontknow", duration: 400, offset: 0, triggerHook: 0})
+				.setTween(TweenMax.from("#dontknow a", 1, {color: "#000"}))		
+				.addTo(controller);
+				
+		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.91})
+			.setTween(TweenMax.from("#whatsapp", 1, {opacity: 0, x: 100}))	
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.95})
+			.setTween(TweenMax.from("#insta", 1, {opacity: 0, x: 100}))		
+			.addTo(controller);
+		});
+	} else {
+		$(function () {
+			var colors = [
+			  { deg:"142" },
+			  { deg:"162" },
+			  { deg:"172" },
+			  { deg:"182" }
+			];
+			var gradientTween = new TimelineMax();
+			for (let i = 0; i < colors.length; i++) {
+			  gradientTween.to("header h1", 1, {
+				backgroundImage:
+				  "linear-gradient("+colors[i].deg+"deg, #0094D9 2.61%, #2E3191 32.28%, #EC1C24 59.13%, #F48120 93.05%"
+			  });
+			}
+			new ScrollMagic.Scene({triggerElement: "header", duration: 300, offset: 0, triggerHook: 0})
+				.setTween(gradientTween)
+				.addTo(controller);
+			
+			new ScrollMagic.Scene({triggerElement: "header", duration: 500, offset: 0, triggerHook: 0})
+							.setPin("header")					
+							.addTo(controller);	
+							
+			new ScrollMagic.Scene({triggerElement: "#back", duration: 300, offset: 0, triggerHook: 0.5})
+							.setTween(TweenMax.from("#back .text", 1, {opacity: 0, y: -100}))						
+							.addTo(controller);				
 
-      new ScrollMagic.Scene({
-        triggerElement: "#slider_goods_available",
-        triggerHook: "onCenter",
-        offset: -500,
-      })
-        .setTween(fadeInTimeline4)
-        .duration(1000)
-        //.reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
+
+				
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 0, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 100, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers .flexwrap > div:nth-child(1)", duration: 300, offset: 0, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(1)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers .flexwrap > div:nth-child(2)", duration: 300, offset: 0, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(2)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#numbers .flexwrap > div:nth-child(3)", duration: 300, offset: 0, triggerHook: 0.9})
+				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(3)", 1, {opacity: 0, x: 100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(1) img", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(1) img", 1, {opacity: 0, y: -100}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(2) img", duration: 400, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(2) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(3) img", duration: 400, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(3) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(1) h4", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(1) h4", 1, {opacity: 0}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(2) h4", duration: 200, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(2) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#briz .flexcolumn:nth-child(3) h4", duration: 200, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#briz .flexcolumn:nth-child(3) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(1) img", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(1) img", 1, {opacity: 0, y: -100}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(2) img", duration: 400, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(2) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(3) img", duration: 400, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(3) img", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(1) img", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(1) h4", 1, {opacity: 0}))					
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(2) img", duration: 200, offset: 50, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(2) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recuper .flexcolumn:nth-child(3) img", duration: 200, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#recuper .flexcolumn:nth-child(3) h4", 1, {opacity: 0}))		
+				.addTo(controller);
+
+			var colors = [
+			  { deg:"192" },
+			  { deg:"182" },
+			  { deg:"172" },
+			  { deg:"162" },
+			  { deg:"142" }
+			];
+			var gradientTween2 = new TimelineMax();
+			var gradientTween3 = new TimelineMax();
+			for (let i = 0; i < colors.length; i++) {
+			  gradientTween2.to("#montage h2", 1, {
+				backgroundImage:
+				  "linear-gradient("+colors[i].deg+"deg, #0094D9 2.61%, #2E3191 32.28%, #EC1C24 59.13%, #F48120 93.05%"
+			  });
+			  gradientTween3.to("#montage .colortext", 1, {
+				backgroundImage:
+				  "linear-gradient("+colors[i].deg+"deg, #0094D9 2.61%, #2E3191 32.28%, #EC1C24 59.13%, #F48120 93.05%"
+			  });
+			}
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.5})
+				.setTween(gradientTween2)
+				.addTo(controller)
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.6})
+				.setTween(gradientTween3)
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#montage", duration: 500, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#montage .border", 1, {opacity: 0, x: 100}))
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 200, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#rules h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 200, offset: 100, triggerHook: 0.6})
+				.setTween(TweenMax.from("#rules h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);				
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height, triggerHook: 0})
+				.setTween(TweenMax.to("#rules h2.black", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height, triggerHook: 0})
+				.setTween(TweenMax.to("#rules h2.gray", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#rules", duration: 500, offset: height+200, triggerHook: 0})
+				.setTween(TweenMax.to("#rules p", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#form h2", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 200, offset: 0, triggerHook: 0.4})
+				.setTween(TweenMax.from("#form input", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#form", duration: 200, offset: 0, triggerHook: 0.2})
+				.setTween(TweenMax.from("#form button", 1, {opacity: 0}))		
+				.addTo(controller);
+								
+			new ScrollMagic.Scene({triggerElement: "#video", duration: 200, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#video h2.black", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#video", duration: 200, offset: 100, triggerHook: 0.6})
+				.setTween(TweenMax.from("#video h2.gray", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+				
+			new ScrollMagic.Scene({triggerElement: "#dontknow", duration: 100, offset: 0, triggerHook: 0})
+				.setPin("#dontknow")	
+				.addTo(controller);					
+			new ScrollMagic.Scene({triggerElement: "#dontknow h2", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#dontknow h2", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#dontknow p", duration: 200, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#dontknow p", 1, {opacity: 0}))		
+				.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#dontknow #line", duration: 3000, offset: 0, triggerHook: 0.8})
+				.setClassToggle("#line", "full")
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#dontknow", duration: 400, offset: 0, triggerHook: 0.7})
+				.setTween(TweenMax.from("#dontknow a", 1, {color: "#000"}))		
+				.addTo(controller);
+				
+		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.91})
+			.setTween(TweenMax.from("#whatsapp", 1, {opacity: 0, x: 100}))	
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.95})
+			.setTween(TweenMax.from("#insta", 1, {opacity: 0, x: 100}))		
+			.addTo(controller);
+		});	
+	}
+
+
+
+
+
+
 
     
