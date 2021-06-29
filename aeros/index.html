@@ -703,7 +703,7 @@
       </nav>
     </header>
     <div class="content">
-      <section class="intro">
+      <section id="intro" class="intro">
         <div class="intro_slider_view">
           <div class="slider_view_item">
             <div class="splitpic splitpic-horizontal" data-orientation="horizontal">
@@ -940,7 +940,7 @@
           </div>
         </div>  
       </section>
-      <section class="answer">
+      <section id="answer" class="answer">
         <div class="slider_step_brizers">
           <div class="screen_item screen_one">
             <div class="container">
@@ -1130,7 +1130,7 @@
           </div>
         </div>
       </section>
-      <section class="test_section">
+      <section id="test_section" class="test_section">
         <div class="container">
           <h2 class="light_gray_title">Пройдите тест и узнайте</h2>
           <h3 class="title_block">какой бризер вам подойдет и почему?</h3>
@@ -2041,21 +2041,21 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/splitpic.js"></script>
   <script src="js/scrollmagic/plugins/TweenMax.min.js"></script>
   <script src="js/scrollmagic/plugins/ScrollToPlugin.min.js"></script>
   <script src="js/scrollmagic/ScrollMagic.min.js"></script>
   <script src="js/scrollmagic/plugins/jquery.ScrollMagic.min.js"></script>
   <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
   <script src="js/scrollmagic/plugins/debug.addIndicators.min.js"></script>
-  <script src="js/scroll.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/splitpic.js"></script>
   <script src="js/top_slider.js"></script>
   <script src="js/slider_steps.js"></script>
   <script src="js/slider_goods.js"></script>
   <script src="js/slider_image_goods.js"></script>
   <script src="js/slider_goods_available.js"></script>
   <script src="js/slider_goods_new.js"></script>
+  <script src="js/scroll.js"></script>
   <script>
     $(window).on("load", function () {
         $('.splitpic-horizontal .splitpic-images').each(function (i, v) {
@@ -2094,6 +2094,6 @@
     $('.stat_goods').click(function(){
       $(this).toggleClass('active');
     });
-  </scrip>
+  </script>
 </body>
 </html>

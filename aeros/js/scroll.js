@@ -10,25 +10,28 @@ $(document).ready(function() {
 	if (width >= 1280) {
 		$(function () {
 							
-			new ScrollMagic.Scene({triggerElement: ".intro", duration: 500, offset: 0, triggerHook: 0})
-							.setPin(".intro")					
+			new ScrollMagic.Scene({triggerElement: "#intro", duration: 500, offset: 0, triggerHook: 0})
+							.setPin("#intro")					
 							.addTo(controller);	
 							
-			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: 0, triggerHook: 0.5})
-							.setTween(TweenMax.from("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
+			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: -200, triggerHook: 0.5})
+							.setTween(TweenMax.from("#sl_nav .text_card", 1, {opacity: 0, y: 100}))						
 							.addTo(controller);				
-			new ScrollMagic.Scene({triggerElement: "#back", duration: 300, offset: 600, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: 400, triggerHook: 0.5})
 							.setTween(TweenMax.to("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
 							.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 500, offset: 0, triggerHook: 0})
-				.setPin("#numbers")	
-				.addTo(controller);					
-			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 0, triggerHook: 0.3})
-				.setTween(TweenMax.from("#numbers h2.black", 1, {opacity: 0, y: 100}))		
+			//new ScrollMagic.Scene({triggerElement: "#numbers", duration: 500, offset: 0, triggerHook: 0})
+			//	.setPin("#numbers")	
+			//	.addTo(controller);					
+			new ScrollMagic.Scene({triggerElement: "#answer", duration: 400, offset: 0, triggerHook: 0.5})
+				.setTween(TweenMax.from("#answer h2.title_block", 1, {opacity: 0, y: 0}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 200, offset: 100, triggerHook: 0.3})
-				.setTween(TweenMax.from("#numbers h2.gray", 1, {opacity: 0, y: 100}))		
+			new ScrollMagic.Scene({triggerElement: "#test_section", duration: 200, offset: -100, triggerHook: 0.5})
+				.setTween(TweenMax.from("#test_section h3.title_block", 1, {opacity: 0, y: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#test_section", duration: 200, offset: -200, triggerHook: 0.3})
+				.setTween(TweenMax.from("#test_section h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#numbers", duration: 300, offset: height-500, triggerHook: 0.9})
 				.setTween(TweenMax.from("#numbers .flexwrap > div:nth-child(1)", 1, {opacity: 0, x: 100}))		
@@ -333,7 +336,8 @@ $(document).ready(function() {
 			.setTween(TweenMax.from("#insta", 1, {opacity: 0, x: 100}))		
 			.addTo(controller);
 		});	
-	}
+	};
+});
 
 
 
