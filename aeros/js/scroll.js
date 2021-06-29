@@ -146,6 +146,26 @@ $(document).ready(function() {
 				.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 				.addTo(controller);
 
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 2000, offset: 0, triggerHook: 0})
+				.setPin("#about_us")					
+				.addTo(controller);	
+
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -100, triggerHook: 0.5})
+				.setTween(TweenMax.from("#about_us h3.title_block", 1, {opacity: 0, y: 40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -200, triggerHook: 0.3})
+				.setTween(TweenMax.from("#about_us h2.light_gray_title", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: 300*3, triggerHook: 0.1})
+				.setTween(TweenMax.to("#about_us h3.title_block", 1, {opacity: 0, y: -40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: 350*3, triggerHook: 0.3})
+				.setTween(TweenMax.to("#about_us h2.light_gray_title", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 100, triggerHook: 0.3})
+			 	.setTween(TweenMax.from("#about_us .block_item_about:nth-of-type(1)", 1, {opacity: 0, y: 500, x: +width}))		
+			 	.addTo(controller);
+
 
 		// var timeline1 = new TimelineMax();
 		// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
