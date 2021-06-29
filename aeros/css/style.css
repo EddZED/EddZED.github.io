@@ -251,6 +251,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .popular_link_item:hover{text-decoration:none;}
 .body_card_goods.banner_availabel{background-image:url(../img/available_banner.png);background-size:cover;background-position:center center;height:100%;padding-bottom:20px;justify-content:flex-end;}
 .banner_body{padding:20px 0;width:100%;}
+.banner_body .banner{display:inline-block;width:100%;}
 .new_goods{padding:20px 0 70px;width:100%;}
 .body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;padding:0 20px 15px;border-radius:4px;overflow:hidden;justify-content:flex-end;}
 .test_drive{padding:80px 0 90px;background-color:#F8F9FE;position:relative;}
