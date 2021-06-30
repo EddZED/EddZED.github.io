@@ -153,38 +153,30 @@ $(document).ready(function() {
 				.setPin("#about_us")					
 				.addTo(controller);	
 
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -100, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: -200, triggerHook: 0.5})
 				.setTween(TweenMax.from("#about_us h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -200, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: -400, triggerHook: 0.3})
 				.setTween(TweenMax.from("#about_us h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: 300*3, triggerHook: 0.1})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 450*3, triggerHook: 0.1})
 				.setTween(TweenMax.to("#about_us h3.title_block", 1, {opacity: 0, y: -40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: 350*3, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 500*3, triggerHook: 0.3})
 				.setTween(TweenMax.to("#about_us h2.light_gray_title", 1, {opacity: 0, y: -100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 100, triggerHook: 0.3})
-			 	.setTween(TweenMax.from("#about_us .block_item_about:nth-of-type(1)", 1, {opacity: 0, y: 0, xPercent: 0}))		
-			 	.addTo(controller);
 			// new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 300, triggerHook: 0.3})
 			//  	.setTween(TweenMax.to("#about_us .block_item_about:nth-of-type(1)", 1, {opacity: 0, y: 0, xPercent: 0}))		
 			//  	.addTo(controller);
-			var wipeAnimation = new TimelineMax()
-			// animate to second panel
-			.from("#cont_item", 1,   {y: "100%"})	
-			.from("#cont_item", 0.5, {x: "33%%"})				
-			// animate to third panel
-			new ScrollMagic.Scene({
-				triggerElement: "#about_us",
-				triggerHook: "onLeave",
-				duration: "200%"
-			})
-			.setTween(wipeAnimation)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
+			var wipeAnimation = new TimelineMax().from("#cont_item .first_item", 1, {y: "100%"}).from("#cont_item .first_item", 0.5, {x: "100%"})	
+			new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "80%"})
+				.setTween(wipeAnimation)
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
 
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 250*3, triggerHook: 0})
+				.setTween(TweenMax.from("#cont_item .other_panel", 1, {opacity: 0, y: 600}))		
+				.addTo(controller);
 
 		// var timeline1 = new TimelineMax();
 		// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
