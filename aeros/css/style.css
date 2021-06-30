@@ -282,6 +282,19 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .wrap_company_block{min-height:146px;display:flex;align-items:center;justify-content:center;}
 .medium_text{font-size:26px;line-height:32px;color:#000;font-family:'Montserrat_medium';}
 .recomend_reading{width:100%;padding:40px 0;}
+.block_recomended{padding-top:80px;}
+.upper_head{font-size:24px;line-height:29px;text-transform:uppercase;color:#000;font-family:'Montserrat_semibold';}
+.btn.btn-link.btn-block:focus{box-shadow:none;outline:none;}
+.btn.btn-link.btn-block{padding:15px 10px 15px 0;font-size:17px;line-height:21px;color: #31ACE4;text-decoration:none;font-family:'Montserrat_medium';display:flex;align-items:center;justify-content:space-between;transition:all .3s;}
+.btn.btn-link.btn-block[aria-expanded="true"] img{transform:rotateZ(180deg);}
+.block_questions{border-right:1px solid rgba(0, 0, 0, 0.3);padding-right:30px;}
+.card-header{padding:0;background-color:transparent;border:none;}
+.block_questions .card{border:none;border-bottom:1px solid #31ACE4 !important;}
+.accordion>.card:not(:last-of-type){border:inherit;}
+
+
+
+
 
 
 @media (min-width:1440px) and (max-width:4300px){
