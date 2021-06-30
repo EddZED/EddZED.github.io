@@ -202,7 +202,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .description_goods_card{position:relative;padding:10px 0;}
 .description_goods_card .name_goods{font-size:16px;line-height:20px;letter-spacing:0.04em;color:rgba(0,0,0,.75);font-family:'Montserrat_semibold';}
 .raiting_goods{display:inline-flex;position:absolute;left:0;top:-18px;align-items:center;font-size:12px;line-height:15px;font-family:'Montserrat_semibold';}
-.gradient_text{background: linear-gradient(180deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.gradient_text{display:inline-block;background: linear-gradient(180deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .description_goods_card .link_comments_goods{display:inline-block;position:absolute;right:0;top:-18px;font-size:12px;line-height:15px;letter-spacing:0.04em;color:rgba(0,0,0,.43);font-family:'Montserrat_semibold';transition:all .3s;z-index:2;}
 .description_goods_card .link_comments_goods:hover{color:rgba(0,0,0,9);text-decoration:none;}
 .specifications{list-style:none;padding-left:0;}
@@ -286,13 +286,35 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .upper_head{font-size:24px;line-height:29px;text-transform:uppercase;color:#000;font-family:'Montserrat_semibold';}
 .btn.btn-link.btn-block:focus{box-shadow:none;outline:none;}
 .btn.btn-link.btn-block{padding:15px 10px 15px 0;font-size:17px;line-height:21px;color: #31ACE4;text-decoration:none;font-family:'Montserrat_medium';display:flex;align-items:center;justify-content:space-between;transition:all .3s;}
+.btn.btn-link.btn-block span img{transition:all .3s;}
 .btn.btn-link.btn-block[aria-expanded="true"] img{transform:rotateZ(180deg);}
 .block_questions{border-right:1px solid rgba(0, 0, 0, 0.3);padding-right:30px;}
 .card-header{padding:0;background-color:transparent;border:none;}
 .block_questions .card{border:none;border-bottom:1px solid #31ACE4 !important;}
 .accordion>.card:not(:last-of-type){border:inherit;}
-
-
+.recomend_reading{padding:0 0 80px;}
+.more_questions{display:flex;align-items:center;justify-content:flex-end;padding:50px 0;}
+.more_quest_link{font-family:'Montserrat_reg';font-family:20px;line-height:24px;color:#000;text-decoration:none;transition:all .3s;display:inline-flex;align-items:center;}
+.more_quest_link:hover{text-decoration:none;color:rgba(0,0,0,.7);}
+.base_body{display:flex;align-items:center;padding:15px;}
+.image_left_base{max-width:104px;}
+.image_left_base img{filter:drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));}
+.text_right_base{padding-left:10px;}
+.upper_text_slider{font-size:16px;line-height:20px;color:rgba(0,0,0,.63);font-family:'Montserrat_semibold';text-transform:uppercase;}
+.more_btn_sldier{display:inline-flex;align-items:center;font-size:13px;line-height:16px;color: #31ACE4;font-family:'Montserrat_medium';transition:all .3s;margin-top:-13px;}
+.more_btn_sldier:hover{color:#31ACE4;}
+.light_text-slider{display:inline-flex;flex-direction:column;align-items:flex-end;position:relative;font-size:13px;line-height:16px;color:rgba(0,0,0,.63);font-family:'Montserrat_reg';}
+.knowledge_base_slider{padding:15px 40px;}
+.knowledge_base_slider .slick-prev{left:10px;}
+.knowledge_base_slider .slick-next{right:10px;}
+.knowledge_base_slider .slick-arrow:before{display:none;}
+.wrapper_map{position:relative;}
+.metro_icon{width:48px;height:39px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;background-color:#fff;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);position:absolute;left:30px;bottom:30px;}
+.name_station{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;background-color:#fff;height:39px;padding:0 10px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);font-size:18px;line-height:22px;color:#606060;font-family:'Montserrat_semibold';position:absolute;right:0;bottom:30px;}
+.bold_text_station{font-size:20px;line-height:24px;color:#000;font-family:'Montserrat_medium';}
+.desciption_text{font-size:20px;line-height:24px;color:rgba(0,0,0,.95);font-family:'Montserrat_reg';}
+.knowledge_base{padding-top:20px;border-top:1px solid rgba(0, 0, 0, 0.3);}
+.min_gradient_text.gradient_text{font-size:20px;line-height:24px;font-family:'Montserrat_medium';background: linear-gradient(90deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 
 
 
