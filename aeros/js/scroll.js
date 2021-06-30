@@ -149,7 +149,7 @@ $(document).ready(function() {
 				.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 				.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 2000, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 1700, offset: 0, triggerHook: 0})
 				.setPin("#about_us")					
 				.addTo(controller);	
 
@@ -171,37 +171,47 @@ $(document).ready(function() {
 			var wipeAnimation = new TimelineMax().from("#cont_item .first_item", 1, {y: "100%"}).from("#cont_item .first_item", 0.5, {x: "100%"})	
 			new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "80%"})
 				.setTween(wipeAnimation)
-				.addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 
 			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 250*3, triggerHook: 0})
 				.setTween(TweenMax.from("#cont_item .other_panel", 1, {opacity: 0, y: 600}))		
 				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 1000*2, triggerHook: 0.1})
+				.setTween(TweenMax.to("#cont_item .other_panel", 1, {opacity: 0, y: -600}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 1000*2, triggerHook: 0.1})
+				.setTween(TweenMax.to("#cont_item .first_item", 1, {opacity: 0, y: -600}))		
+				.addTo(controller);
 
-		// var timeline1 = new TimelineMax();
-		// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
-		// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 0})
-		// 				.setTween(timeline1)			
-		// 				.addTo(controller);
-		// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 300})				
-		// 				.setTween(TweenMax.from("#best_sales p", 1, {opacity: 0}))
-		// 				.addTo(controller);
-		// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: -300})				
-		// 				.setTween(TweenMax.from("#best_sales .image_slider_item img", 1, {opacity: 0, y: -50}))
-		// 				.addTo(controller);
+
+
+
+
+				
+			// var timeline1 = new TimelineMax();
+			// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
+			// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 0})
+			// 				.setTween(timeline1)			
+			// 				.addTo(controller);
+			// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 300})				
+			// 				.setTween(TweenMax.from("#best_sales p", 1, {opacity: 0}))
+			// 				.addTo(controller);
+			// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: -300})				
+			// 				.setTween(TweenMax.from("#best_sales .image_slider_item img", 1, {opacity: 0, y: -50}))
+			// 				.addTo(controller);
 						
-	//		var timeline12 = new TimelineMax();
-	//		timeline12.add(TweenMax.to("#flex4 p", 1, {className: "+=flex4a"})).add(TweenMax.to("#flex4 img", 1, {className: "+=flex4a"}));
-	//		new ScrollMagic.Scene({triggerElement: "#flex4", duration: 512, offset: height/4})
-	//					.setTween(timeline12)
-	//					.addTo(controller);
-	//	
-	//		new ScrollMagic.Scene({triggerElement: "#flex4_2", duration: 256, offset: -200, triggerHook: 0})				
-	//					.setTween(TweenMax.to("#flex4_2 p", 1, {opacity: 0}))
-	//					.addTo(controller);
-	//		new ScrollMagic.Scene({triggerElement: "#flex4_2", duration: 256, offset: -100, triggerHook: 0})				
-	//					.setTween(TweenMax.to("#flex4_2 img", 1, {opacity: 0, y: -50}))
-	//					.addTo(controller);	
+			//		var timeline12 = new TimelineMax();
+			//		timeline12.add(TweenMax.to("#flex4 p", 1, {className: "+=flex4a"})).add(TweenMax.to("#flex4 img", 1, {className: "+=flex4a"}));
+			//		new ScrollMagic.Scene({triggerElement: "#flex4", duration: 512, offset: height/4})
+			//					.setTween(timeline12)
+			//					.addTo(controller);
+			//	
+			//		new ScrollMagic.Scene({triggerElement: "#flex4_2", duration: 256, offset: -200, triggerHook: 0})				
+			//					.setTween(TweenMax.to("#flex4_2 p", 1, {opacity: 0}))
+			//					.addTo(controller);
+			//		new ScrollMagic.Scene({triggerElement: "#flex4_2", duration: 256, offset: -100, triggerHook: 0})				
+			//					.setTween(TweenMax.to("#flex4_2 img", 1, {opacity: 0, y: -50}))
+			//					.addTo(controller);	
 
 
 
@@ -333,13 +343,13 @@ $(document).ready(function() {
 				.setTween(TweenMax.from("#dontknow a", 1, {color: "#000"}))		
 				.addTo(controller);
 				
-		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.91})
+			new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.91})
 			.setTween(TweenMax.from("#whatsapp", 1, {opacity: 0, x: 100}))	
 			.addTo(controller);
-		new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.95})
+			new ScrollMagic.Scene({triggerElement: "#footer", duration: 300, offset: 0, triggerHook: 0.95})
 			.setTween(TweenMax.from("#insta", 1, {opacity: 0, x: 100}))		
 			.addTo(controller);
-		});
+   });
 	} else {
 		$(function () {
 			var colors = [
