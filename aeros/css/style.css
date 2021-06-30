@@ -315,6 +315,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .desciption_text{font-size:20px;line-height:24px;color:rgba(0,0,0,.95);font-family:'Montserrat_reg';}
 .knowledge_base{padding-top:20px;border-top:1px solid rgba(0, 0, 0, 0.3);}
 .min_gradient_text.gradient_text{font-size:20px;line-height:24px;font-family:'Montserrat_medium';background: linear-gradient(90deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.dual_color_link{display:flex;align-items:center;font-size:23px;line-height:28px;color:rgba(0, 0, 0, .7);font-family:'Montserrat_semibold';}
+.dual_color_link span{color:rgba(117, 117, 118, .7);}
+.dual_color_link img{filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));}
 
 
 
