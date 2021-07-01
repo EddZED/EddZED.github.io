@@ -338,6 +338,15 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .micro_text_bullit{font-size:13px;line-height:16px;color:#000;font-family:'Montserrat_medium';}
 .wrapper_bullit .bullit_img_item{flex:0 0 57px;}
 .assortment{padding:80px 0;}
+.slider_assortment{display:flex;position:relative;}
+.body_slider_assortment{display:flex;flex-direction:column;justify-content:space-between;height:100%;}
+.body_slider_assortment .top_item{min-height:256px;height:100%;display:flex;align-items:center;justify-content:flex-start;}
+.body_slider_assortment .top_item img{pointer-events:none;}
+.body_slider_assortment .bottom_item{height:100%;display:flex;flex-direction:column;padding-left:15px;}
+.name_goods_assort{font-size:24px;line-height:29px;color:#000;font-family:'Montserrat_medium';}
+.link_assortment{display:flex;align-items:center;font-size: 20px;line-height: 24px;font-family:'Montserrat_reg';color:rgba(0,0,0,.9);margin-bottom:10px;transition:all .3s;}
+.link_assortment:hover{color:rgba(0,0,0,1);}
+
 
 
 
@@ -350,6 +359,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 }
 @media (min-width:1280px){
   .panel{height:100%;width:33%;}
+}
+@media(min-width:1200px){
+  .container{max-width:1170px;}
 }
 @media (min-width:1100px) and (max-width:1199px){
   .container.first_intro{max-width:1070px;}
@@ -374,6 +386,11 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .slider_nav_item:last-of-type .slider_nav_body{border-radius:0 10px 10px 0;}
   .body_card_goods:hover{box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.35);}
   .slider_cards_goods_item{padding:15px 5px;}
+  .slider_assortment_item.first_element{flex:0 1 35%;}
+  .slider_assortment_item.second_element{flex:0 1 20%;}
+  .slider_assortment_item.third_element{flex:0 1 25%;}
+  .slider_assortment_item.furth_element{flex:0 1 20%;}
+
 }
 
 
@@ -529,7 +546,13 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .blue_link_content{font-size:15px;}
   .wrapper_blur{width:250px;height:250px;left:0;bottom:0;margin:auto;}
   .middle_text{font-size:20px;line-height:24px;}
-
+  .body_slider_assortment .top_item{justify-content:center;}
+  .name_goods_assort{text-align:center;}
+  .bottom_item{text-align:center;align-items:center;}
+  .slider_assortment_item{padding:15px;height:100%;}
+  .body_slider_assortment{background: #F9FAFC;box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);border-radius:20px;padding-bottom:20px;}
+  .slider_assortment.slick-slider .slick-track, .slider_assortment.slick-slider .slick-list{display:flex;}
+  .body_slider_assortment .bottom_item{padding:0 15px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}

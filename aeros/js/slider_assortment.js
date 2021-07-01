@@ -1,6 +1,6 @@
 $('.slider_assortment').slick({
-  arrows: true,
-  dots: false,
+  arrows: false,
+  dots: true,
   infinite: true,
   slidesToScroll: 1,
   slidesToShow:2,
@@ -16,8 +16,7 @@ $('.slider_assortment').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        centerMode: false,
-        arrows: true
+        centerMode: false
       }
     },
     {
@@ -25,8 +24,7 @@ $('.slider_assortment').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false,
-        arrows: true
+        centerMode: false
       }
     }
 ]
