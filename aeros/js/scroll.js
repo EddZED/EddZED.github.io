@@ -187,7 +187,7 @@ $(document).ready(function() {
 
 
 			//map styles
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 2800, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 2600, offset: 0, triggerHook: 0})
 				.setPin("#filials")					
 				.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -200, triggerHook: 0.5})
@@ -196,10 +196,10 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -400, triggerHook: 0.3})
 				.setTween(TweenMax.from("#filials h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 450*3, triggerHook: 0.1})
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 570*4, triggerHook: 0.1})
 				.setTween(TweenMax.to("#filials h3.title_block", 1, {opacity: 0, y: -40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 500*3, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 630*4, triggerHook: 0.3})
 				.setTween(TweenMax.to("#filials h2.light_gray_title", 1, {opacity: 0, y: -100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 690, offset: 280})
@@ -242,8 +242,8 @@ $(document).ready(function() {
 				.setClassToggle("#map .line", "line"+i)
 				
 				.addTo(controller);*/
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 10, offset: lineoffset })
-				.setTween(TweenMax.from("#city" + i, 1, {opacity: 0}))
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 150, offset: lineoffset })
+				.setTween(TweenMax.from("#city" + i, 1, {opacity: 0, x:30, scale: 1.5}))
 				.addTo(controller);
 		}
 
