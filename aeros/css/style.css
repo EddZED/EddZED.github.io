@@ -358,25 +358,42 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .text_descriptionn{font-size:20px;line-height:24px;color:#000;font-family:'Montserrat_medium';}
 .black_middle_text{font-size:17px;line-height:21px;color:rgba(0,0,0,.9);font-family:'Montserrat_medium';text-align:center;}
 .filials{width:100%;padding:80px 0;}
-.our_map{position:relative;text-align:center;position:relative;}
-.line_map{position:absolute;left:-55px;top:300px;right:0;margin:auto;}
+.our_map{width: 1207px;height: 691px;position: relative;margin-top:-50px;}
+.map_city{width: 1192.09px;height: 690.25px;margin-left: -8px;z-index: -9;pointer-events:none;}
+.line_map{position: absolute;top: 323px;left: 22.5px;/* width: 1066.5px; */width: 0px;height: 300.5px;overflow: hidden;transition: all 0.5s ease-out;}
+.line_map img{position: absolute;top: 0px;left: 0px;width: 1066.5px;height: 300.5px;max-width: unset;pointer-events:none;}
 .city{position:absolute;}
 .city span{font-size:16px;line-height:20px;color:#000;display:inline-block;font-family:'Montserrat_medium';text-shadow:0 0 3px rgba(255,255,255,.8);}
-#city1{left:141px;top:289px;}
-#city2{left:182px;top:469px;}
-#city3{left:209px;top:511px;}
-#city4{left:270px;top:353px;}
-#city5{left:280px;top:289px;}
-#city6{left:328px;top:387px;}
-#city7{left:504px;top:451px;}
-#city8{left:141px;top:289px;}
-#city9{left:141px;top:289px;}
-#city10{left:141px;top:289px;}
-#city11{left:141px;top:289px;}
-#city12{left:141px;top:289px;}
-#city13{left:141px;top:289px;}
-#city14{left:141px;top:289px;}
-
+#city0{left: 23px;
+    top: 326px;}
+#city1{    left: 64px;
+    top: 564px;}
+#city2{left: 101px;
+    top: 521px;}
+#city3{left: 168px;
+    top: 414px;}
+#city4{left: 178px;
+    top: 321px;}
+#city5{left: 243px;
+    top: 435px;}
+#city6{    left: 272px;
+    top: 492px;}
+#city7{    left: 412px;
+    top: 481px;}
+#city8{    left: 464px;
+    top: 553px;}
+#city9{left: 569px;
+    top: 581px;}
+#city10{    left: 663px;
+    top: 531px;}
+#city11{left: 748px;
+    top: 609px;}
+#city12{    left: 868px;
+    top: 400px;}
+#city13{    left: 1054px;
+    top: 510px;}
+#city14{left: 1068px;
+    top: 610px;}
 
 
 

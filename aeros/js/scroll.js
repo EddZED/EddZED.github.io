@@ -186,6 +186,66 @@ $(document).ready(function() {
 
 
 
+			//map styles
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 2800, offset: 0, triggerHook: 0})
+				.setPin("#filials")					
+				.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -200, triggerHook: 0.5})
+				.setTween(TweenMax.from("#filials h3.title_block", 1, {opacity: 0, y: 40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -400, triggerHook: 0.3})
+				.setTween(TweenMax.from("#filials h2.light_gray_title", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 450*3, triggerHook: 0.1})
+				.setTween(TweenMax.to("#filials h3.title_block", 1, {opacity: 0, y: -40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 500*3, triggerHook: 0.3})
+				.setTween(TweenMax.to("#filials h2.light_gray_title", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 690, offset: 280})
+			.setTween(TweenMax.from("#filials .map_city", 1, {opacity: 0, scale: 3}))
+			.addTo(controller);
+			var line = [
+		  { w:"0",d:"100" },
+		  { w:"60",d:"100" },
+		  { w:"85",d:"100" },
+		  { w:"152",d:"100" },
+		  { w:"165",d:"100" },
+		  { w:"240",d:"100" },
+		  { w:"265",d:"100" },
+		  { w:"405",d:"100" },
+		  { w:"460",d:"100" },
+		  { w:"560",d:"100" },
+		  { w:"660",d:"100" },
+		  { w:"735",d:"100" },
+		  { w:"860",d:"100" },
+		  { w:"1050",d:"100" },
+		  { w:"1066.5",d:"100" }
+		  ];
+			/*var lineTween = new TimelineMax();
+		for (let i = 0; i < line.length; i++) {
+		  lineTween.to("#map .line", 0.1, {
+			width: line[i].w+"px"
+		  });
+		}		
+		new ScrollMagic.Scene({triggerElement: "#map", offset: 1000})
+			.setTween(lineTween)
+			.addTo(controller);*/
+		for (let i = 0; i < line.length; i++) {
+			var lineoffset = 1150 + (100 * i);
+			var lineowidth = parseFloat(line[i].w);
+
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 10, offset: lineoffset})
+				.setTween(TweenMax.to("#filials .line_map", 1, {width: lineowidth+"px"}))
+				.addTo(controller);
+			/*new ScrollMagic.Scene({triggerElement: "#map", duration: 100, offset: lineoffset})
+				.setClassToggle("#map .line", "line"+i)
+				
+				.addTo(controller);*/
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 10, offset: lineoffset })
+				.setTween(TweenMax.from("#city" + i, 1, {opacity: 0}))
+				.addTo(controller);
+		}
 
 				
 			// var timeline1 = new TimelineMax();
