@@ -315,9 +315,29 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .desciption_text{font-size:20px;line-height:24px;color:rgba(0,0,0,.95);font-family:'Montserrat_reg';}
 .knowledge_base{padding-top:20px;border-top:1px solid rgba(0, 0, 0, 0.3);}
 .min_gradient_text.gradient_text{font-size:20px;line-height:24px;font-family:'Montserrat_medium';background: linear-gradient(90deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
-.dual_color_link{display:flex;align-items:center;font-size:23px;line-height:28px;color:rgba(0, 0, 0, .7);font-family:'Montserrat_semibold';}
+.dual_color_link{display:flex;align-items:center;font-size:23px;line-height:28px;color:rgba(0, 0, 0, .7);font-family:'Montserrat_semibold';transition:color .3s;}
 .dual_color_link span{color:rgba(117, 117, 118, .7);}
 .dual_color_link img{filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));}
+.dual_color_link:hover{text-decoration:none;color:rgba(117, 117, 118, .7);}
+.messanger_link_content{display:flex;align-items:center;}
+.messanger_link img{filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));transition:all .3s;}
+.messanger_link{display:inline-flex;margin-right:20px;}
+.messanger_link:hover img{filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6));}
+.call_us{width:100%;background-color:#DDF2FF;overflow:hidden;position:relative;}
+.wrapper_circle{position:absolute;left:0;top:0;}
+.girl_img{z-index:1;position:relative;}
+.circle_item{width:1000px;height:1000px;border-radius:50%;background-color:#fff;position:absolute;left:-504px;top:-153px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);}
+.call_us .dual_color_link{font-size:29px;line-height:35px;display:inline-flex;overflow:hidden;position:relative;}
+.call_us .title_block{font-size:36px;line-height:44px;}
+.call_us .dual_color_link span{color:#9E9E9F;}
+.dual_color_link span.border_bottom{width:100%;height:1px;background-color:#000;position:absolute;left:0;bottom:0;transition:all .3s;}
+.wrapper_content_block{padding:100px 0;}
+.wrapper_messanger_item{display:inline-flex;align-items:center;background-color:#fff;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);border-radius: 10px;padding:10px 30px;margin:40px 0 50px;}
+.gray_middle_text{font-size:24px;line-height:29px;color:rgba(0,0,0,.62);font-family:'Montserrat_medium';}
+.wrapper_bullit{display:flex;align-items:center;}
+.micro_text_bullit{font-size:13px;line-height:16px;color:#000;font-family:'Montserrat_medium';}
+.wrapper_bullit .bullit_img_item{flex:0 0 57px;}
+.assortment{padding:80px 0;}
 
 
 
