@@ -691,8 +691,8 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .wrapper_block_scroll{position:relative;}
   .scrolling_box{padding:30px 20px;background-image:url(../img/bg_about_us.jpg);background-size:cover;background-position:center center;border-radius: 20px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);}
   .about_us{padding:40px 0;}
-
-
+  .trust{padding:40px 0;}
+  .medium_text{font-size:17px;line-height:21px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
@@ -776,6 +776,18 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .banner_sldiers_section .text_block_banner{padding:20px 15px;}
   .banner_sldiers_section .text_block_banner .text_banner{text-align:left;}
   .banner_sldiers_section .text_block_banner .text_banner_bottom{font-size:14px;line-height:18px;}
+  .knowledge_base_slider{padding:15px 20px;}
+  .knowledge_base_slider .slick-prev{left:0;}
+  .knowledge_base_slider .slick-next{right:0;}
+  .upper_text_slider{font-size:15px;}
+  .light_text-slider{font-size:11px;}
+  .base_slider_item .more_btn_sldier{margin-top:-15px;font-size:11px;}
+  .scrolling_box{padding:15px 0;}
+  .name_about {font-size:10px;line-height:12px;font-family:'Montserrat_semibold';}
+  .gray_text, .raiting_comments{font-size:8px;line-height:10px;margin-top:5px;}
+  .wrap_text_mobile{align-items:center;}
+  .content_about .blue_link_content{font-size:8px;line-height:10px;}
+  .block_item_about .brand_place{max-width:37px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
@@ -783,5 +795,6 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .city_block{margin-right:10px;}
   .wrapper_city_search{top:33px;margin:auto;right:0;left:0;padding:10px 5px;}
   .popular_link_item{flex:0 1 48%;}
+  .base_slider_item .more_btn_sldier{margin-top:0;font-size:10px;}
   
 }
