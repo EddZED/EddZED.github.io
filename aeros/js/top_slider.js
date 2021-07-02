@@ -6,7 +6,7 @@ $('.intro_slider_view').slick({
   asNavFor: '.intro_slider_nav'
 });
 $('.intro_slider_nav').slick({
-   slidesToShow: 5,
+  slidesToShow: 5,
   slidesToScroll: 1,
   asNavFor: '.intro_slider_view',
   dots: false,
@@ -17,7 +17,7 @@ $('.intro_slider_nav').slick({
   nextArrow: '<button type = "button" class = "slick-next"><img class="img-fluid" src="img/sl_right.png" alt="следующий слайд"></ button>',
   responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 992,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
