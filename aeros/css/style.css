@@ -379,7 +379,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 #city12{left: 868px;top: 400px;}
 #city13{left: 1054px;top: 510px;}
 #city14{left: 1068px;top: 610px;}
-.banner_sldiers_section{width:100%;padding:90px;background: linear-gradient(0deg, #FFFAF0, #FFFAF0);}
+.banner_sldiers_section{width:100%;padding:90px 0;background: linear-gradient(0deg, #FFFAF0, #FFFAF0);}
 .slider_baner{padding-bottom:30px;}
 .slider_baner_item{border-radius:10px;overflow:hidden;padding:50px 60px;background-image:url(../img/back.jpg);background-size:cover;background-position:center center;position:relative;}
 .banner_sldiers_section .text_block_banner{transform:translateY(0);opacity:1;visibility:visible;padding:30px;}
@@ -419,9 +419,12 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .link_footer{display:flex;justify-content:flex-end;font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.7);transition:all .3s;margin-top:15px;}
 .link_footer:hover{text-decoration:none;color:rgba(0,0,0,1);}
 .menu_footer{display:flex;width:100%;justify-content:space-between;align-items:center;}
-.link_footer_menu{font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.6);transition:all .3s;}
+.link_footer_menu{font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.6);transition:all .3s;position:relative;}
 .link_footer_menu:hover{text-decoration:none;color:rgba(0,0,0,1);}
 .wrapper_klients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;}
+.link_footer_menu:not(:last-of-type):before{content:'';position:absolute;right:-25px;top:0;bottom:0;width:1px;background-color:rgba(0,0,0,.6);}
+
+
 
 
 
@@ -486,6 +489,14 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .menu_main{justify-content:space-between;}
   .contact_block{flex:1 1 15%;}
   .splitpic-images{height:700px;}
+  .link_footer_menu:not(:last-of-type):before{right:-12px;}
+  .our_map{display:none !important;}
+  .call_us .light_gray_title{font-size:35px;line-height:42px;}
+  .call_us .title_block{font-size:25px;line-height:31px;}
+  .call_us .dual_color_link{font-size:22px;}
+  .wrapper_messanger_item{margin:30px 0;}
+  .call_us .gray_middle_text{font-size:20px;line-height:24px;}
+  .wrapper_circle{left:-85px;}
 }
 @media(max-width:991px){
   .header_nav{position:relative;background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
@@ -627,6 +638,29 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .body_slider_assortment{background: #F9FAFC;box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);border-radius:20px;padding-bottom:20px;}
   .slider_assortment.slick-slider .slick-track, .slider_assortment.slick-slider .slick-list{display:flex;}
   .body_slider_assortment .bottom_item{padding:0 15px;}
+  .slider_baner_item .gradient_btn_other{position:relative;right:auto;bottom:auto;width:100%;}
+  .banner_sldiers_section .text_block_banner .text_banner{font-size:35px;line-height:40px;}
+  .banner_sldiers_section .text_block_banner .text_banner_bottom{font-size:18px;line-height:22px;}
+  .footer .wrapper_logo{flex-direction:column;}
+  .footer .wrapper_logo .line{display:block;}
+  .footer .wrapper_logo .text_logo{padding-left:0;text-align:center;font-size:17px;line-height:21px;}
+  .pay_wrapper{display:none;}
+  .footer .btn_city{font-size:15px;line-height:17px;text-decoration:none;}
+  .link_footer{justify-content:flex-start;}
+  .menu_footer{flex-wrap:wrap;justify-content:flex-start;}
+  .link_footer_menu{padding-right:20px;margin-top:7px;}
+  .link_footer_menu:not(:last-of-type):before{right:10px;top:3px;bottom:3px;}
+  .wrapper_klients img{padding-right:15px;}
+  .filials{padding:40px 0;}
+  .about{background-color:#F8F9FE;padding:40px 0;}
+  .our_brend_wrapper{padding:20px 0;}
+  .text_our_brend{font-size:25px;line-height:31px;}
+  .our_brend_banner{padding:30px 20px;}
+  .wrapper_bg_white_mobile{padding:30px 15px;background-color:#fff;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);border-radius:10px;}
+  .slider_assortment .slick-dots button:before{display:none;}
+  .slider_assortment .slick-dots li{width:18px;height:4px;background-color:#fff;border:1px solid #000;border-radius:3px;margin:0 2px;transition:all .3s;}
+  .slider_assortment .slick-dots li.slick-active{background-color:#000;}
+  .wrapper_circle{position:relative;left:auto;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
@@ -651,6 +685,18 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .right_item_decor{position:absolute;right:-50px;top:50%;transform:translateY(-50%);z-index:0;}
   .test_drive{padding:40px 0;}
   .middle_text{font-size:17px;line-height:21px;}
+  .slider_baner_item{padding:30px 20px;}
+  .name_goods_assort{font-size:17px;line-height:21px;text-align:left;}
+  .list_hekp li{font-size:15px;line-height:18px;}
+  .title_adv{font-size:15px;line-height:18px;}
+  .micro_text_adv{font-size:12px;line-height:15px;}
+  .banner_sldiers_section{padding:60px 0 40px;}
+  .title_foote_item{font-size:17px;line-height:21px;}
+  .link_footer{font-size:15px;line-height:18px;}
+  .link_footer_menu{font-size:17px;line-height:21px;}
+  .text_our_brend{font-size:17px;line-height:21px;}
+  .text_descriptionn{font-size:17px;line-height:21px;}
+  .title_block, .light_gray_title{font-size:25px;line-height:30px;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
@@ -665,7 +711,6 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .slick-next{right:0;}
   .slick-prev{left:0;z-index:10;}
   .slider_nav_body{padding:0px 30px;}
-  .title_block, .light_gray_title{font-size:25px;line-height:30px;}
   .sub_title_block{font-size:22px;line-height:30px;}
   .description_goods_card .name_goods{font-size:10px;}
   .specifications_item span{font-size:8px;}
@@ -689,6 +734,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .blue_link_content{font-size:12px;}
   .green_label_big{font-size:8px;line-height:11px;padding:5px 15px;}
   .wrapper_mobile_frame{padding:15px 25px 30px;margin-top:20px;}
+  .banner_sldiers_section .text_block_banner{padding:20px 15px;}
+  .banner_sldiers_section .text_block_banner .text_banner{text-align:left;}
+  .banner_sldiers_section .text_block_banner .text_banner_bottom{font-size:14px;line-height:18px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
