@@ -412,6 +412,16 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .social_media .social_media_link:hover img{filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6));}
 .pay_wrapper{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;}
 .pay_wrapper img{padding:0 20px 20px 0;}
+.footer .wrapper_logo{padding:30px 25px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);}
+.footer .wrapper_city_search{transform:translateY(0) translateX(-100px);}
+.footer .btn_city .wrapper_city_search{transform:translateY(0) translateX(-100%);box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);}
+.footer .btn_city:hover .wrapper_city_search{transform:translateY(0) translateX(-110px);}
+.link_footer{display:flex;justify-content:flex-end;font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.7);transition:all .3s;margin-top:15px;}
+.link_footer:hover{text-decoration:none;color:rgba(0,0,0,1);}
+.menu_footer{display:flex;width:100%;justify-content:space-between;align-items:center;}
+.link_footer_menu{font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.6);transition:all .3s;}
+.link_footer_menu:hover{text-decoration:none;color:rgba(0,0,0,1);}
+.wrapper_klients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;}
 
 
 
