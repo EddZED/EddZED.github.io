@@ -681,6 +681,18 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .block_questions .card:first-of-type{border-top:1px solid #31ACE4 !important;}
   .knowledge_base{border-top:none;}
   .block_recomended .messanger_link_content .messanger_link{margin-right:15px;}
+  .block_item_about{min-height:auto;flex-direction:row;margin-bottom:10px;padding:15px 10px;justify-content:flex-start;}
+  .content_about{display:flex;align-items:flex-start;flex-direction:column;padding-left:10px;width:100%;text-align:left;}
+  .content_about .name_about{margin-bottom:0;}
+  .content_about .gray_text{margin-bottom:0;}
+  .content_about .wrap_text_mobile{display:flex;}
+  .content_about .raiting_comments {padding-right:10px;}
+  .scrolling_box_bg{display:none;}
+  .wrapper_block_scroll{position:relative;}
+  .scrolling_box{padding:30px 20px;background-image:url(../img/bg_about_us.jpg);background-size:cover;background-position:center center;border-radius: 20px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);}
+  .about_us{padding:40px 0;}
+
+
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
