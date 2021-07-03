@@ -199,7 +199,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .top_image_slider .slick-dots button:before{display:none;}
 .top_image_slider .slick-dots li{width:18px;height:4px;background-color:#fff;border:1px solid rgba(0,0,0,.5);border-radius:3px;margin:0 2px;transition:all .3s;}
 .top_image_slider .slick-dots li.slick-active{background-color:rgba(0,0,0,.5);}
-.description_goods_card{position:relative;padding:10px 0;}
+.description_goods_card{position:relative;padding:35px 0 10px;}
 .description_goods_card .name_goods{font-size:16px;line-height:20px;letter-spacing:0.04em;color:rgba(0,0,0,.75);font-family:'Montserrat_semibold';}
 .raiting_goods{display:inline-flex;position:absolute;left:0;top:-18px;align-items:center;font-size:12px;line-height:15px;font-family:'Montserrat_semibold';}
 .gradient_text{display:inline-block;background: linear-gradient(180deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
@@ -253,7 +253,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .banner_body{padding:20px 0;width:100%;}
 .banner_body .banner{display:inline-block;width:100%;}
 .new_goods{padding:20px 0 70px;width:100%;}
-.body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;padding:0 20px 15px;border-radius:4px;overflow:hidden;justify-content:flex-end;}
+.body_card_goods.banner_oxy{background-color:#FFCB05;height:100%;padding:0 20px 15px;border-radius:4px;overflow:hidden;justify-content:flex-end;background-image:url(../img/oxy_banner.jpg);background-size:cover;background-repeat:no-repeat;}
 .test_drive{padding:80px 0 90px;background-color:#F8F9FE;position:relative;}
 .middle_text{font-size:24px;line-height:29px;font-family:'Montserrat_reg';}
 .middle_text.gradient_text{text-transform:uppercase;background: linear-gradient(90.45deg, #F71212 5.23%, #F48120 64.44%);-webkit-background-clip: text;}
@@ -292,6 +292,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .card-header{padding:0;background-color:transparent;border:none;}
 .block_questions .card{border:none;border-bottom:1px solid #31ACE4 !important;}
 .accordion>.card:not(:last-of-type){border:inherit;}
+.block_questions .btn.btn-link.btn-block span img{width:28px;height:12px;max-width:28px;}
 .recomend_reading{padding:0 0 80px;}
 .more_questions{display:flex;align-items:center;justify-content:flex-end;padding:50px 0;}
 .more_quest_link{font-family:'Montserrat_reg';font-family:20px;line-height:24px;color:#000;text-decoration:none;transition:all .3s;display:inline-flex;align-items:center;}
@@ -517,7 +518,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .btn_menu.active span{background-color:transparent;}
   .btn_menu.active span:before{transform:translateY(6px) rotateZ(-45deg);}
   .btn_menu.active span:after{transform:translateY(-6px) rotateZ(45deg);}
-  .menu_top_block{position:absolute;left:0;top:100%;flex-direction:column;width:100%;transform:translateY(0);background-color:#fff;box-shadow:inset 0px 4px 4px rgba(0, 0, 0, 0.25);max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;}
+  .menu_top_block{position:absolute;left:0;top:100%;flex-direction:column;width:100%;transform:translateY(0);background-color:#fff;box-shadow:inset 0px 4px 4px rgba(0, 0, 0, 0.25),0 3px 10px rgba(0,0,0,.3);max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;}
   .menu_top_block.active{max-height:9999px;visibility:visible;}
   .menu_block{max-width:720px;margin:0 auto;width:100%;padding:0 15px;}
   .menu_main{flex-direction:column;align-items:flex-start;}
@@ -589,7 +590,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .text_banner{font-size:22px;text-align:center;}
   .gradient_btn{transform:translateX(0);opacity:1;visibility:visible;margin-top:20px;font-size:12px;padding:8px 0;}
   .icon_menu{position:sticky;width:100%;left:0;bottom:0;background-color:#fff;justify-content:space-between;}
-  .container_bottom_mobile{max-width:720px;margin:0 auto;width:100%;padding:0 15px;}
+  .container_bottom_mobile{max-width:720px;margin:0 auto;width:100%;padding:0 15px;z-index:999;}
   .contact_block{position:fixed;left:0;bottom:0;width:100%;z-index:99999;background-color:#fff;padding:0;box-shadow:0px -4px 4px rgba(0, 0, 0, 0.25);}
   .link_icon_menu{margin-left:0 !important;}
   .link_icon_menu svg{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.23));}
@@ -685,6 +686,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .block_questions .card{border:none;border-bottom:1px solid #31ACE4 !important;}
   .block_questions .card:first-of-type{border-top:1px solid #31ACE4 !important;}
   .knowledge_base{border-top:none;}
+  .knowledge_base .slick-arrow{width:20px;height:36px;}
   .block_recomended .messanger_link_content .messanger_link{margin-right:15px;}
   .block_item_about{min-height:auto;flex-direction:row;margin-bottom:10px;padding:15px 10px;justify-content:flex-start;}
   .content_about{display:flex;align-items:flex-start;flex-direction:column;padding-left:10px;width:100%;text-align:left;}
@@ -724,6 +726,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .screen_four .right_cloud{right:0;}
   .screen_four .left_cloud{width:160px;left:30px;}
   .text_description_slider{padding-top:20px;}
+  .new_goods{padding:20px 0 40px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
