@@ -365,20 +365,20 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .line_map img{position: absolute;top: 0px;left: 0px;width: 1066.5px;height: 300.5px;max-width: unset;pointer-events:none;}
 .city{position:absolute;}
 .city span{font-size:16px;line-height:20px;color:#000;display:inline-block;font-family:'Montserrat_medium';text-shadow:0 0 3px rgba(255,255,255,.8);}
-#city0{left: 23px;top: 326px;}
-#city1{left: 64px;top: 564px;}
+#city0{left: 20px;top: 318px;}
+#city1{left: 64px;top: 568px;}
 #city2{left: 101px;top: 521px;}
-#city3{left: 168px;top: 414px;}
-#city4{left: 178px;top: 321px;}
-#city5{left: 243px;top: 435px;}
-#city6{left: 272px;top: 492px;}
-#city7{left: 412px;top: 481px;}
+#city3{left: 163px;top: 409px;}
+#city4{left: 175px;top: 318px;}
+#city5{left: 234px;top: 435px;}
+#city6{left: 272px;top: 484px;}
+#city7{left: 412px;top: 478px;}
 #city8{left: 464px;top: 553px;}
-#city9{left: 569px;top: 581px;}
-#city10{left: 663px;top: 531px;}
-#city11{left: 748px;top: 609px;}
-#city12{left: 868px;top: 400px;}
-#city13{left: 1054px;top: 510px;}
+#city9{left: 564px;top: 575px;}
+#city10{left: 665px;top: 528px;}
+#city11{left: 748px;top: 599px;}
+#city12{left: 866px;top: 396px;}
+#city13{left: 1040px;top: 514px;}
 #city14{left: 1068px;top: 610px;}
 .banner_sldiers_section{width:100%;padding:90px 0;background: linear-gradient(0deg, #FFFAF0, #FFFAF0);}
 .slider_baner{padding-bottom:30px;}
@@ -430,6 +430,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 #japanese.active{background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 90%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 #color.gradient_text{color:#000;}
 .banner_sldiers_section .text_block_banner{transition:all 0s;}
+.map_mobile_wrapper{display:none;}
+
+
 
 @media (min-width:1440px) and (max-width:4300px){
   .splitpic-images{height:900px;}
@@ -494,6 +497,9 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .splitpic-images{height:700px;}
   .link_footer_menu:not(:last-of-type):before{right:-12px;}
   .our_map{display:none !important;}
+  .map_mobile_wrapper{display:flex;align-items:center;flex-direction:column;justify-content:center;width:100%;padding:40px 20px;background-color:#F8F9FE;border-radius:10px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);}
+  .city_list{width:100%;text-align:center;padding-top:30px;}
+  .city_list .text_content{margin-bottom:10px;}
   .call_us .light_gray_title{font-size:35px;line-height:42px;}
   .call_us .title_block{font-size:25px;line-height:31px;}
   .call_us .dual_color_link{font-size:22px;}
@@ -503,6 +509,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .text_button_nav {font-size:12px;}
   .navigation_item img{max-width:40px;}
   .banner_video{right:-20px;}
+  .more_brend{padding-top:40px;}
 }
 @media(max-width:991px){
   .header_nav{position:relative;background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
@@ -727,6 +734,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .screen_four .left_cloud{width:160px;left:30px;}
   .text_description_slider{padding-top:20px;}
   .new_goods{padding:20px 0 40px;}
+  .city_list{text-align:left;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
@@ -776,6 +784,8 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .left_cloud{left:12px;}
   .left_cloud:before{right:44px;}
   .screen_three .right_cloud{left:350px;right:auto;width:160px;}
+  .map_mobile_wrapper{padding:30px 10px;}
+  .more_brend{font-size:17px;line-height:21px;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
