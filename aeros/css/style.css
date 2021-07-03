@@ -428,7 +428,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 #japanese{transition:all .5s;}
 #japanese.active{background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 90%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 #color.gradient_text{color:#000;}
-
+.banner_sldiers_section .text_block_banner{transition:all 0s;}
 
 @media (min-width:1440px) and (max-width:4300px){
   .splitpic-images{height:900px;}

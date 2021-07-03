@@ -246,6 +246,9 @@ $(document).ready(function() {
 				.setTween(TweenMax.from("#city" + i, 1, {opacity: 0, x:30, scale: 1.5}))
 				.addTo(controller);
 		};
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 690, offset: 850*4})
+			.setTween(TweenMax.to("#filials .our_map", 1, {opacity: 0, scale: 0.5}))
+			.addTo(controller);
 
 		// 	var timelinegray = new TimelineMax();
 		// timelinegray.add(TweenMax.from("#trust .wrap_company_block", 1, { 'filter': 'grayscale(100%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(50%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(0%)'}));
@@ -375,9 +378,19 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 350, triggerHook: 0.5})
 				.setClassToggle("#color", "gradient_text")			
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 300, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 400, triggerHook: 0.5})
 				.setTween(TweenMax.to("#about .gradient_text", 1, {opacity: 0, y: 200}))		
 				.addTo(controller);
+
+			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 500, offset: 200, triggerHook: 0.7})
+				.setTween(TweenMax.from("#banner_sldiers_section .text_block_banner", 1, {opacity: 0, y: -200}))		
+				.addTo(controller);
+
+
+
+
+
+
 			// var timeline1 = new TimelineMax();
 			// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
 			// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 0})
