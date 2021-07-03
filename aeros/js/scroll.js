@@ -245,9 +245,139 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 150, offset: lineoffset })
 				.setTween(TweenMax.from("#city" + i, 1, {opacity: 0, x:30, scale: 1.5}))
 				.addTo(controller);
-		}
+		};
 
-				
+		// 	var timelinegray = new TimelineMax();
+		// timelinegray.add(TweenMax.from("#trust .wrap_company_block", 1, { 'filter': 'grayscale(100%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(50%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(0%)'}));
+
+			new ScrollMagic.Scene({triggerElement: "#trust", duration: 400, offset: 100, triggerHook: 0.7})
+				.setTween(TweenMax.from("#trust .wrap_company_block", 1, {opacity: 0, y: 100, 'filter': 'grayscale(100%)'}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#trust", duration: 300, offset: 500, triggerHook: 0.4})
+				.setTween(TweenMax.to("#trust .wrap_company_block", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+
+			
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 500, offset: 0, triggerHook: 0})
+				.setPin("#recomend_reading")	
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -100, triggerHook: 0.5})
+				.setTween(TweenMax.from("#recomend_reading h3.title_block", 1, {opacity: 0, y: 40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -200, triggerHook: 0.3})
+				.setTween(TweenMax.from("#recomend_reading h2.light_gray_title", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 400, triggerHook: 0.1})
+				.setTween(TweenMax.to("#recomend_reading h3.title_block", 1, {opacity: 0, y: -40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 700, triggerHook: 0.3})
+				.setTween(TweenMax.to("#recomend_reading h2.light_gray_title", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 100, triggerHook: 0.1})
+				.setTween(TweenMax.from("#recomend_reading .upper_head", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 100, triggerHook: 0.1})
+				.setTween(TweenMax.from("#recomend_reading .knowledge_base .gradient_text", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 400*3, triggerHook: 0.4})
+				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(1)", 1, {opacity: 0, x:-40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 450*3, triggerHook: 0.4})
+				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(2)", 1, {opacity: 0, x:-40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 500*3, triggerHook: 0.4})
+				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(3)", 1, {opacity: 0, x:-40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 2000, offset: 0, triggerHook: 0})
+				.setPin("#call_us")	
+				.addTo(controller);
+			
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 300, offset: 50, triggerHook: 0.1})
+				.setTween(TweenMax.from("#call_us h2.light_gray_title", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 600, offset: 250*2, triggerHook: 0})
+				.setTween(TweenMax.to("#call_us .circle_item", 1, {x: 40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 600, offset: 250*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us h3.title_block", 1, {opacity: 0, x: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 350*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us h3.title_block .border_bottom", 1, {opacity: 0, x: -200}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 450*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_messanger_item", 1, {opacity: 0, x: -200}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 470*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_messanger_item .messanger_link:nth-of-type(1)", 1, {opacity: 0, x: -50}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 490*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_messanger_item .messanger_link:nth-of-type(2)", 1, {opacity: 0, x: -70}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 510*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_messanger_item .messanger_link:nth-of-type(3)", 1, {opacity: 0, x: -90}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 600*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_messanger_item .text_messanger_item", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 400, offset: 650*2, triggerHook: 0})
+				.setTween(TweenMax.from("#call_us .wrapper_bullit", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: -100, triggerHook: 0.5})
+				.setTween(TweenMax.from("#assortment h3.title_block", 1, {opacity: 0, y: 40}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: -200, triggerHook: 0.3})
+				.setTween(TweenMax.from("#assortment h2.light_gray_title", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 100, triggerHook: 0.5})
+				.setTween(TweenMax.from("#assortment .top_item", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 200, triggerHook: 0.5})
+				.setTween(TweenMax.from("#assortment .name_goods_assort", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 300, triggerHook: 0.5})
+				.setTween(TweenMax.from("#assortment .link_assortment", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 100, offset: 500, triggerHook: 0.3})
+				.setTween(TweenMax.to("#assortment .top_item", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
+				.setTween(TweenMax.to("#assortment .name_goods_assort", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
+				.setTween(TweenMax.to("#assortment .link_assortment", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.5})
+				.setTween(TweenMax.from("#assortment .more_brend", 1, {opacity: 0}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 600, offset: 700, triggerHook: 0.5})
+				.setClassToggle("#germany", "active")			
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 600, offset: 700, triggerHook: 0.5})
+				.setClassToggle("#japanese", "active")			
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 200, offset: 750, triggerHook: 0.3})
+				.setTween(TweenMax.to("#assortment .more_brend", 1, {opacity: 0}))		
+				.addTo(controller);
+			
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 200, offset: 0, triggerHook: 0.5})
+				.setTween(TweenMax.from("#about h3.title_block", 1, {opacity: 0, y: -100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#about .our_brend_banner", 1, {opacity: 0, y: 100}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 0, triggerHook: 0.6})
+				.setTween(TweenMax.from("#about .our_brend_banner img", 1, {opacity: 0, y: 300, x: 300}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 300, triggerHook: 0.3})
+				.setTween(TweenMax.to("#about .our_brend_banner", 1, {opacity: 0, y: 200}))		
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 350, triggerHook: 0.5})
+				.setClassToggle("#color", "gradient_text")			
+				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 300, triggerHook: 0.5})
+				.setTween(TweenMax.to("#about .gradient_text", 1, {opacity: 0, y: 200}))		
+				.addTo(controller);
 			// var timeline1 = new TimelineMax();
 			// 	timeline1.add(TweenMax.from("#best_sales p", 1, {className: "+=flex4a"})).add(TweenMax.from("#best_sales .image_slider_item img", 1, {className: "+=flex4a"}));		
 			// 	new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 512, offset: 0})
