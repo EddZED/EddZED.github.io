@@ -716,6 +716,12 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .intro_slider_nav {padding-bottom:40px;}
   .intro_slider_nav .slick-dots{bottom:5px;}
   .test_section{padding:40px 0;}
+  .left_cloud{border-radius:10px;padding:10px;left:5px;}
+  .right_cloud{border-radius:10px;padding:10px;right:75px;}
+  .screen_three .right_cloud{left:461px;right:auto;}
+  .screen_four .right_cloud{right:0;}
+  .screen_four .left_cloud{width:160px;left:30px;}
+  .text_description_slider{padding-top:20px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
@@ -760,6 +766,11 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .min_gradient_text.gradient_text{font-size:17px;line-height:21px;}
   .dual_color_link{font-size:21px;line-height:26px;}
   .text_content{font-size:15px;line-height:18px;}
+  .left_cloud {width:100px;left:-34px;}
+  .right_cloud{width:120px;right:-5px;top:-47px;}
+  .left_cloud{left:12px;}
+  .left_cloud:before{right:44px;}
+  .screen_three .right_cloud{left:350px;right:auto;width:160px;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
@@ -823,6 +834,12 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .text_button_nav{font-size:10px;line-height:12px;padding-left:2px;}
   .navigation_item img{max-width:35px;}
   .wrapp_link_sl .navigation_item{padding:4px 6px;}
+  .left_cloud {left:22px;}
+  .right_cloud{right:18px;}
+  .right_cloud:before{right:69px;}
+  .screen_three .right_cloud{left:220px;width:113px;}
+  .screen_four .right_cloud{width:90px;}
+  
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
@@ -831,5 +848,10 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .wrapper_city_search{top:33px;margin:auto;right:0;left:0;padding:10px 5px;}
   .popular_link_item{flex:0 1 48%;}
   .base_slider_item .more_btn_sldier{margin-top:0;font-size:10px;}
-  
+  .left_cloud{left:-7px;top:68px;}
+  .left_cloud:before{right:auto;left:15px;}
+  .right_cloud{right:-13px;top:103px;}
+  .screen_two .right_cloud:before{right:69px;bottom:auto;top:-54px;transform:rotateZ(180deg);}
+  .screen_three .right_cloud{left:160px;bottom:-10px;}
+  .screen_four .left_cloud{left:0;}
 }

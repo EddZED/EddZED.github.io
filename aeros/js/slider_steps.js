@@ -2,6 +2,7 @@ $('.slider_step_brizers').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   TouchMove: false,
+  infinite: false,
   arrows: false,
   initialSlide: 0,
   draggable: false,
