@@ -817,7 +817,8 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .briz_img{max-width:160px;}
   .more_quest_link{font-size:17px;line-height:21px;}
   .input_submit .btn_add_cart{width:auto;display:inline-flex; padding:15px 70px;}
-
+  .wrapper_klients{justify-content:flex-start;}
+  .wrap_img_client{flex:0 0 50%;padding:0;text-align:center;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
