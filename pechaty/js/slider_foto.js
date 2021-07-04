@@ -25,3 +25,4 @@ $('.slider_foto_block').slick({
           }
         ]
       });
+         $('.slider_foto_block').slick('setPosition');
