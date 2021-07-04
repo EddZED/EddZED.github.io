@@ -4,8 +4,9 @@ $('#slider_goods_available').slick({
   TouchMove: false,
   arrows: true,
   draggable: false,
+  initialSlide: 0,
   fade: false,
-  infinite: true,
+  infinite: false,
   focusOnSelect: false,
   prevArrow: '<button type = "button" class = "slick-prev"><img class="img-fluid" src="svg/left_goods.svg" alt="передъидущий слайд"></ button>',
   nextArrow: '<button type = "button" class = "slick-next"><img class="img-fluid" src="svg/right_goods.svg" alt="следующий слайд"></ button>',
@@ -17,7 +18,8 @@ $('#slider_goods_available').slick({
           slidesToScroll: 1,
           centerMode: false,
           draggable: false,
-          arrows: true
+          arrows: true,
+          initialSlide: 2
         }
       },
       {
