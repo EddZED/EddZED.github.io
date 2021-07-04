@@ -188,9 +188,9 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
 .arrows_slider_2 .slick-prev{left:auto;right:70px;}
 .arrows_slider_2 .slick-disabled img{opacity:.3;}
 .arrows_slider_2 .slick-disabled:hover{cursor:default;}
-
-
-
+.advantages_work{padding:40px 0;}
+.title_advantages{font-size:20px;line-height:22px;color: #211F1F;font-family:'gil_med';}
+.text_advantages{font-size:15px;line-height:20px;color: #211F1F;font-family:'gil_light';}
 
 
 
@@ -263,7 +263,9 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
   .slider_stock{padding:20px 0;}
   .back_text{font-size:25px;top:10px;}
   .card_body .name_link{font-size:18px;line-height:21px;}
-  .card_body img{object-position:-115px -9px;
+  .card_body img{object-position:-115px -9px;}
+  .title_advantages{font-size:18px;line-height:22px;}
+  .text_advantages{font-size:13px;line-height:16px;}
 }
 @media(max-width:575px){
   .btn_look{width:100%;}
@@ -274,7 +276,7 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
   .pad_cat{padding:15px 10px 15px 15px;flex:1 1 50%;}
   .wrap_img{flex:1 1 50%;}
   .wrap_img img{object-position:0 0;}
-  .card_body img{object-position:21px -9px;
+  .card_body img{object-position:21px -9px;}
   
 }
 @media(max-width:400px){
