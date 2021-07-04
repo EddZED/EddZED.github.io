@@ -34,7 +34,7 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#test_section", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#test_section h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 300, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 800, offset: 0, triggerHook: 0})
 				.setPin("#best_sales")					
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 200, offset: -100, triggerHook: 0.5})
@@ -46,7 +46,7 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#best_sales p.sub_title_block", 1, {opacity: 0, x: -100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 300, offset: 50, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 500, offset: -150, triggerHook: 0.3})
 				.setTween(TweenMax.from("#best_sales .image_slider_item img", 1, {opacity: 0, y: 100}))						
 				.addTo(controller);				
 			new ScrollMagic.Scene({triggerElement: "#best_sales", duration: 500, offset: 400, triggerHook: 0.3})
@@ -261,7 +261,7 @@ $(document).ready(function() {
 				.addTo(controller);
 
 			
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 500, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 800, offset: 0, triggerHook: 0})
 				.setPin("#recomend_reading")	
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -100, triggerHook: 0.5})
