@@ -358,7 +358,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .brend_partner{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
 .text_descriptionn{font-size:20px;line-height:24px;color:#000;font-family:'Montserrat_medium';}
 .black_middle_text{font-size:17px;line-height:21px;color:rgba(0,0,0,.9);font-family:'Montserrat_medium';text-align:center;}
-.filials{width:100%;padding:80px 0;}
+.filials{width:100%;padding:0;}
 .our_map{width: 1207px;height: 691px;position: relative;margin-top:-50px;}
 .map_city{width: 1192.09px;height: 690.25px;margin-left: -8px;z-index: -9;pointer-events:none;}
 .line_map{position: absolute;top: 323px;left: 22.5px;/* width: 1066.5px; */width: 0px;height: 300.5px;overflow: hidden;transition: all 0.5s ease-out;}
