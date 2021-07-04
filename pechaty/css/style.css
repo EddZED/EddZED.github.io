@@ -208,6 +208,8 @@ body{font-size:14px;color:#211F1F;font-family:'gil_med';min-height:100vh;backgro
   .arrows_foto .slick-next{right:30%;}
   .arrows_foto .arrows_slider{display:flex;justify-content:center;}
   .slider_foto_block.slick-slider .slick-list{padding-bottom:10px;}
+  .footer_contact, .blue_link, .provacy_link{text-align:center;}
+  .pay_icon{justify-content:center;}
 }
 @media(max-width:767px){
   .title_heading{font-size:35px;line-height:43px;}
