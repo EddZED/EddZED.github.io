@@ -67,7 +67,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .dropdown_menu_link:hover .text_block_banner{transform:translateY(0);visibility:visible;opacity:1;}
 .dropdown_menu_link:hover .gradient_btn{transform:translateX(0);visibility:visible;opacity:1;}
 .dropdown_menu_wrapper_2{position:absolute;top:100%;padding:20px 20px 0;opacity:0;transform:translateY(100%) translateX(-5px);visibility:hidden;transition:all .3s;transition-delay:.2s;}
-.dropdown_menu_2{background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:5px;padding:15px 30px 15px 20px;}
+.dropdown_menu_2{background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:5px;padding:15px 30px 15px 20px;list-style:none;}
 .dropdown_menu_link_2{display:inline-flex;align-items:center;font-size:12px;line-height:15px;color:rgba(0, 0, 0, 0.7);font-family:'Montserrat_reg';transition:all .3s;}
 .dropdown_menu_link_2:hover{text-decoration:none;color:#000;color:rgba(0, 0, 0, 1);}
 .dropdown_menu_item_2{margin-bottom:7px;text-align:left;}
@@ -438,6 +438,25 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .list_answers_accordion li:before{content:'';position:absolute;left:-20px;width:2px;height:2px;top:8px;background-color:#000;border-radius:50%;}
 .map_mobile_wrapper .city_list .text_content{font-family:'Montserrat_medium';margin-bottom:5px;}
 .text_form{font-size:15px;line-height:18px;color:rgba(0,0,0,.97);font-family:'Montserrat_reg';}
+
+/* style two page */
+/* ************** */
+.header.page_two .menu_link{color:#323232;}
+.header.page_two .dropdown_menu_link{background-color:#F7F6F6;}
+.header.page_two .link_icon_menu svg ellipse{fill: #000;}
+.header.page_two .link_icon_menu svg rect{stroke: #000;}
+.header.page_two .link_icon_menu .favorite_icon rect{fill: #000;}
+.header.page_two .link_icon_menu .favorite_icon path{fill: #000;}
+.yours_select{position:relative;padding:250px 0 100px;}
+.title_big_font{font-size:53px;line-height:65px;color:#0B0B0B;font-family:'Montserrat_reg';}
+.your_select_wrapper{margin-top:30px;background-color:#F8F9FE;box-shadow: -5px 4px 6px rgba(0, 0, 0, 0.25);border-radius: 10px;position:relative;}
+.item_select_img{position:absolute;left:70px;top:93%;}
+.white_bg{background-color:#fff;text-align:center;position:relative;padding:20px 15px;border-radius: 10px 0 0 10px;}
+.brand_logo{position:absolute;left:20px;top:15px;}
+
+
+
+
 
 
 @media (min-width:1440px) and (max-width:4300px){
