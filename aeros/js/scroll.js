@@ -171,7 +171,7 @@ $(document).ready(function() {
 			//  	.setTween(TweenMax.to("#about_us .block_item_about:nth-of-type(1)", 1, {opacity: 0, y: 0, xPercent: 0}))		
 			//  	.addTo(controller);
 			var wipeAnimation = new TimelineMax().from("#cont_item .first_item", 1, {y: "100%"}).from("#cont_item .first_item", 0.5, {x: "100%"})	
-			new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "80%"})
+			new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "100%"})
 				.setTween(wipeAnimation)
 				.addTo(controller);
 
