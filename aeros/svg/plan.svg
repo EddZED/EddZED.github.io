@@ -20,7 +20,7 @@
 		50%{transform:translate3d(0, 0, 0);opacity:1;}
 		100%{transform:translate3d(0, 0, 0);opacity:1;}
 	}
-	.arrow_2 path{animation:arrow2 2.5s ease infinite;opacity:0;}
+	.arrow_2 path{animation:arrow2 2s ease infinite;opacity:0;}
 	@keyframes arrow2{
 		0%{opacity:0;}
 		100%{opacity:1;}
@@ -35,31 +35,31 @@
 		0%{transform:translate3d(63px, 34px, 0px);opacity:0;}
 		100%{transform:translate3d(0, 0, 0);opacity:1;}
 	}
-	.arrow_5 path{animation:arrow5 2s ease infinite;animation-delay:1.5s;opacity:0;}
+	.arrow_5 path{animation:arrow5 4s ease infinite;animation-delay:1.5s;opacity:0;}
 	@keyframes arrow5{
 		0%{transform:translate3d(0,0,0);opacity:0;}
 		100%{transform:translate3d(0px, -20px, 0px);opacity:1;}
 	}
-	.arrow_6 path{animation:arrow6 2s ease infinite;animation-delay:.5s;opacity:0;}
+	.arrow_6 path{animation:arrow6 2s ease infinite;animation-delay:.1s;opacity:0;}
 	@keyframes arrow6{
 		0%{opacity:0;}
 		50%{opacity:1;}
 		100%{opacity:1;}
 	}
-	.arrow_7 path{animation:arrow7 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.5s;opacity:0;}
+	.arrow_7 path{animation:arrow7 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.2s;opacity:0;}
 	@keyframes arrow7{
 		0%{transform:translate3d(36px, 17px, 0);opacity:0;}
 		50%{transform:translate3d(0, 0, 0);opacity:1;}
 		100%{transform:translate3d(0, 0, 0);opacity:1;}
 	}
-	.arrow_8 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.7s;opacity:0;}
+	.arrow_8 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.3s;opacity:0;}
 	@keyframes arrow8{
 		0%{transform:translate3d(36px, 17px, 0);opacity:0;}
 		50%{transform:translate3d(0, 0, 0);opacity:1;}
 		100%{transform:translate3d(0, 0, 0);opacity:1;}
 	}
-	.arrow_9 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.9s;opacity:0;}
-	.arrow_10 path{animation:arrow5 2s ease infinite;animation-delay:1s;opacity:0;}
+	.arrow_9 path{animation:arrow8 2s ease infinite;transform:translate3d(36px, 17px, 0);animation-delay:.4s;opacity:0;}
+	.arrow_10 path{animation:arrow5 4s ease infinite;animation-delay:.1s;opacity:0;}
 </style>
 
 
