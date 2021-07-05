@@ -2,7 +2,7 @@
 @font-face{font-family:'Montserrat_reg'; src:url(../font/Montserrat-Regular.ttf);}
 @font-face{font-family:'Montserrat_medium'; src:url(../font/Montserrat-Medium.ttf);}
 @font-face{font-family:'Montserrat_semibold'; src:url(../font/Montserrat-SemiBold.ttf);}
-@font-face{font-family:'Montserrat_extrabold'; src:url(../font/Montserrat-ExtraBold.ttf);}
+@font-face{font-family:'Montserrat_bold'; src:url(../font/Montserrat-Bold.ttf);}
 html{scroll-behavior:smooth;}
 body{font-family:'Montserrat_medium';min-height:9999px;}
 .wrapper{overflow-x:hidden;overflow-y:auto;position:relative;}
@@ -22,10 +22,10 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .drop_shevron{display:inline-flex;align-items:center;justify-content:center;transform:rotateZ(180deg);transition:all .3s;margin-left:4px;}
 .menu_link:hover .drop_shevron{transform:rotateZ(0);}
 .menu_link:hover{color:#fff;text-decoration:none;cursor:pointer;}
-.dropdown_menu_wrapper{position:absolute;top:100%;left:0;width:100%;padding:20px 20px 0;opacity:0;transform:translateY(-100%);visibility:hidden;transition:all .3s;transition-delay:.2s;}
+.dropdown_menu_wrapper{position:absolute;top:100%;left:0;width:100%;padding:20px 20px 0;transition:all .3s;transition-delay:.1s;}
 .dropdown_menu{background-color:transparent;display:flex;justify-content:space-between;list-style:none;padding-left:0;}
 .dropdown_menu_item{display:flex;flex:0 1 19.5555%;}
-.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:space-between;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:all .3s;z-index:11;}
+.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:flex-end;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:all .3s;z-index:11;}
 .dropdown_menu_link .name_link{display:inline-block;padding-top:10px;color:#000;font-size:15px;position:relative;}
 .dropdown_menu_link:hover{text-decoration:none;}
 .dropdown_menu_item:nth-of-type(1) .dropdown_menu_link{border-radius:10px 0 0 10px;}
@@ -33,7 +33,6 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .open_icon{position:absolute;bottom:-25px;left:50%;margin:auto;transform:translateX(-50%) translateY(-100%);opacity:0;transition:all .3s;visibility:hidden;}
 .open_icon img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 .menu_link:hover .open_icon{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;}
-.menu_link:hover .dropdown_menu_wrapper{opacity:1;transform:translateY(0);visibility:visible;}
 .dropdown_menu_link:hover{background-color:rgba(255,255,255,1);box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}
 .open_icon_sub{position:absolute;left:50%;bottom:-38px;transform:translateX(-50%);transform:translateY(-100%);opacity:0;visibility:hidden;transition:all .3s;}
 .open_icon_sub img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
@@ -148,7 +147,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .gradient_btn_slider:before{content:'';position:absolute;left:0;top:0;width:100%;height:100%;background-color:#f04811;opacity:0;transition:all .3s;}
 .gradient_btn_slider:hover:before{opacity:1;}
 .answer{margin-top:-90px;position:relative;}
-.title_block{font-size:45px;line-height:56px;color:#0B0B0B;font-family:'Montserrat_medium';}
+.title_block{font-size:45px;line-height:56px;color:#0B0B0B;font-family:'Montserrat_reg';}
 .list_answers{list-style:none;padding-left:50px;}
 .text_content{font-size:20px;line-height:22px;color:rgba(0,0,0,.7);font-family:'Montserrat_reg';padding-left:10px;}
 .list_answers li{position:relative;margin-bottom:15px;display:inline-block;}
@@ -463,7 +462,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .splitpic-images{height:900px;}
 }
 @media (min-width:1440px){
-  .container.first_intro{max-width:1320px;}
+  .container.first_intro{max-width:1357px;}
 }
 @media (min-width:1280px){
   .panel{height:100%;width:33%;}

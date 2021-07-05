@@ -389,7 +389,7 @@ $(document).ready(function() {
 				.setTween(TweenMax.from("#gray_1", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: -300, triggerHook: 0})
-				.setTween(TweenMax.from(".gradient_btn_other", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
+				.setTween(TweenMax.from("#banner_sldiers_section .gradient_btn_other", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: 100, triggerHook: 0.2})
 				.setTween(TweenMax.from("#gray_2", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
