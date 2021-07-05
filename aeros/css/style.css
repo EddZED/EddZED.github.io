@@ -440,7 +440,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .list_answers_accordion{padding-left:20px;}
 .list_answers_accordion li{font-size:15px;line-height:18px;color:#000;font-family:'Montserrat_medium';position:relative;list-style:none;margin-bottom:3px;}
 .list_answers_accordion li:before{content:'';position:absolute;left:-20px;width:2px;height:2px;top:8px;background-color:#000;border-radius:50%;}
-.map_mobile_wrapper .city_list .text_content{font-family:'Montserrat_medium';margin-bottom:5px;}
+.map_mobile_wrapper .city_list .text_content{font-family:'Montserrat_medium';margin-bottom:5px;padding-left:0;}
 .text_form{font-size:15px;line-height:18px;color:rgba(0,0,0,.97);font-family:'Montserrat_reg';}
 
 /* style two page */
@@ -467,7 +467,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .splitpic-images{height:900px;}
 }
 @media (min-width:1440px){
-  .container.first_intro{max-width:1357px;}
+  .container.first_intro{max-width:1320px;}
 }
 @media (min-width:1280px){
   .panel{height:100%;width:33%;}
@@ -735,7 +735,8 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .wrapper_block_scroll{position:relative;}
   .scrolling_box{padding:30px 20px;background-image:url(../img/bg_about_us.jpg);background-size:cover;background-position:0 1px;border-radius: 20px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);}
   .about_us{padding:40px 0;}
-  .trust{padding:40px 0;background-color:#FFFAF0;}
+  .trust{padding:40px 0 20px;background-color:#FFFAF0;}
+  .recomend_reading{padding:20px 0 0;}
   .medium_text{font-size:17px;line-height:21px;}
   .video_block{display:flex;justify-content:center;}
   .banner_video{left:0;top:0;}
@@ -785,6 +786,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .slider_baner .btn_add_cart span img{margin-top:1px;}
   .input_submit .btn_add_cart span img{margin-top:-1px;padding-left:5px;}
   .footer{padding:40px 0;}
+  .best_sales{padding:40px 0 10px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
