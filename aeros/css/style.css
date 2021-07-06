@@ -524,7 +524,7 @@ body{font-family:'Montserrat_medium';}
   .slider_assortment_item.third_element{flex:0 1 25%;}
   .slider_assortment_item.furth_element{flex:0 1 20%;}
   .description_selected .specifications_item{padding-left:10px;}
-  .slider_nav_item{animation:alarm 2s ease;animation-delay:calc(var(--i)*.3s);-webkit-animation-name: alarm;-moz-animation-name:}
+  .slider_nav_item{animation:alarm 2s ease;animation-delay:calc(var(--i)*.3s);-webkit-animation-name: alarm;-moz-animation-name:alarm;}
   @keyframes alarm{
     5%{transform:translateY();}
     15%{transform:translateY();}
