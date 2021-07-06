@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/splitpic.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="preload">
   <div class="wrapper">
     <header class="header">
       <nav class="header_nav">
@@ -3236,6 +3236,7 @@
         $('.splitpic-horizontal .splitpic-images').each(function (i, v) {
           var sp = new SplitPic(v);
         });
+        $("body").removeClass("preload");
       });
     $('.btn_menu').click(function(){
       $(this).toggleClass('active');

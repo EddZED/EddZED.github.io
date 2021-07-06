@@ -4,7 +4,8 @@
 @font-face{font-family:'Montserrat_semibold'; src:url(../font/Montserrat-SemiBold.ttf);}
 @font-face{font-family:'Montserrat_bold'; src:url(../font/Montserrat-Bold.ttf);}
 html{scroll-behavior:smooth;}
-body{font-family:'Montserrat_medium';min-height:9999px;}
+body{font-family:'Montserrat_medium';}
+.preload * {-webkit-transition: none !important;-moz-transition: none !important;-ms-transition: none !important;-o-transition: none !important;}
 .wrapper{overflow-x:hidden;overflow-y:auto;position:relative;}
 .header{position:relative;width:100%;}
 .header_nav{position:absolute;left:0;top:0;width:100%;z-index:10;transition:all .5s ease;}
@@ -25,7 +26,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .dropdown_menu_wrapper{position:absolute;top:100%;left:0;width:100%;padding:20px 20px 0;transition:all .3s;transition-delay:.1s;}
 .dropdown_menu{background-color:transparent;display:flex;justify-content:space-between;list-style:none;padding-left:0;}
 .dropdown_menu_item{display:flex;flex:0 1 19.5555%;}
-.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:flex-end;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:all .3s;z-index:11;}
+.dropdown_menu_link{display:flex;height:100%;width:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:flex-end;background-color:rgba(255,255,255,.9);padding:20px 5px;transition:background .3s;z-index:11;}
 .dropdown_menu_link .name_link{display:inline-block;padding-top:10px;color:#000;font-size:15px;position:relative;}
 .dropdown_menu_link:hover{text-decoration:none;}
 .dropdown_menu_item:nth-of-type(1) .dropdown_menu_link{border-radius:10px 0 0 10px;}
@@ -465,9 +466,10 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
 .description_selected .name_goods{font-family:'Montserrat_bold';text-transform:uppercase;}
 .description_selected .specifications{flex:0 0 25%;}
 .description_selected .dscript_specification{flex:0 0 35%;}
-.description_selected .price_col{flex:0 0 30%;display:flex;}
+.description_selected .price_col{flex:0 0 30%;display:flex;height:100%;align-items:center;}
 .description_selected .price_col .price_block{flex-direction:column;align-items:flex-start;}
 .description_selected .price_col .price_block .current_price{font-size:16px;line-height:20px;letter-spacing:0.04em;color:rgba(0,0,0,.9);font-family:'Montserrat_medium';}
+
 
 
 
@@ -512,7 +514,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
   .slider_assortment_item.third_element{flex:0 1 25%;}
   .slider_assortment_item.furth_element{flex:0 1 20%;}
   .description_selected .specifications_item{padding-left:10px;}
-  .slider_nav_item{animation:alarm 2s ease;animation-delay:calc(var(--i)*.2s);-webkit-animation-name: alarm;-moz-animation-name:}
+  .slider_nav_item{animation:alarm 2s ease;animation-delay:calc(var(--i)*.3s);-webkit-animation-name: alarm;-moz-animation-name:}
   @keyframes alarm{
     5%{transform:translateY();}
     15%{transform:translateY();}
@@ -524,6 +526,7 @@ body{font-family:'Montserrat_medium';min-height:9999px;}
     75%{transform:rotateZ(1deg);transition:.1s;}
     85%{transform:rotateZ(-1deg);transition:.1s;}
     95%{transform:rotateZ(1deg);transition:.1s;}
+    100{{transform:translateY(0);transition:.1s;}}
   }
 }
 
