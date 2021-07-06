@@ -466,11 +466,21 @@ body{font-family:'Montserrat_medium';}
 .description_selected .name_goods{font-family:'Montserrat_bold';text-transform:uppercase;}
 .description_selected .specifications{flex:0 0 25%;}
 .description_selected .dscript_specification{flex:0 0 35%;}
-.description_selected .price_col{flex:0 0 30%;display:flex;height:100%;align-items:center;}
+.description_selected .price_col{flex:0 0 20%;display:flex;height:100%;align-items:center;}
 .description_selected .price_col .price_block{flex-direction:column;align-items:flex-start;}
 .description_selected .price_col .price_block .current_price{font-size:16px;line-height:20px;letter-spacing:0.04em;color:rgba(0,0,0,.9);font-family:'Montserrat_medium';}
-
-
+.description_selected .price_col .price_block .persent_stock{margin-left:10px;}
+.count_col{position:relative;flex:0 0 30%;height:100%;display:flex;align-items:center;}
+.count_label{display:flex;align-items:center;width:100%;}
+.count_label .count_input{width:30px;border:none;background-color:transparent;text-align:center;font-size:22px;color:rgba(0,0,0,.7);font-family:'Montserrat_reg';}
+.count_label .count_input:focus{outline:none;}
+.count_label .btn_count{width:27px;height:27px;padding:0;border-radius:50%;border:none;background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);font-size:20px;font-family:'Montserrat_bold';display:inline-flex;align-items:center;justify-content:center;}
+.count_label .btn_count:focus{outline:none;}
+.bottom_item_card{display:flex;align-items:center;}
+.white_bg_shaadows{background: linear-gradient(0deg, #FFFFFF, #FFFFFF);padding:4px 15px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 5px;}
+.mini_gray_text{font-size:12px;line-height:15px;letter-spacing:0.04em;color:#868686;font-family:'Montserrat_semibold';}
+.bottom_item_card .link_comments_goods{font-size:12px;line-height:15px;letter-spacing:0.04em;color:rgba(0,0,0,.43);font-family:'Montserrat_semibold';margin-left:20px;}
+.bottom_item_card .raiting_goods{position:relative;top:auto;left:auto;margin-left:30px;}
 
 
 
