@@ -500,26 +500,45 @@ body{font-family:'Montserrat_medium';}
 .count_label.total .btn_count{width:52px;height:52px;background-color:#F8F9FE;}
 .count_label.total .count_input{width:60px;font-size:39px;}
 .dop_filter_item{padding:50px 0 20px;width:100%;}
-.check_filter{margin-bottom:30px;width:100%;padding-left:105px;cursor:pointer;position:relative;}
+.check_filter{margin-bottom:30px;padding-left:105px;cursor:pointer;position:relative;}
 .check_filter input[type="checkbox"]{display:none;}
 .checked{position:absolute;top:5px;left:60px;margin:auto;width:30px;height:30px;border: 2px solid #666666;border-radius: 5px;display:flex;align-items:center;justify-content:center;}
 .checked img{opacity:0;transition:all .3s;}
 .check_filter input[type="checkbox"]:checked + .checked img{opacity:1;}
 .name_filtr{font-size:25px;line-height:35px;color:rgba(0,0,0,.9);font-family:'Montserrat_medium';display:flex;align-items:center;}
 .name_filtr .filtr_price{font-size:25px;line-height:26px;font-family:'Montserrat_semibold';color:#000;display:inline-block;margin-left:20px;}
-.btn_ibfo{border:none;background-color:transparent;margin-left:10px;}
-.btn_ibfo:focus{outline:none;}
-.btn_ibfo img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));transition:all .3s;}
+.btn_info{border:none;background-color:transparent;margin-left:10px;}
+.btn_info:focus{outline:none;}
+.btn_info img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));transition:all .3s;}
 .btn_ibfo:hover img{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));}
 .filtr_price.gradient{background: linear-gradient(90.72deg, #F71212 2.49%, #FDB41E 18.61%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .hid_txt{width:100%;font-size:16px;line-height:22px;color:rgba(0,0,0,.7);font-family:'Montserrat_reg';}
-
-
-
-
-
-
-
+.info_block_wrapper{z-index:9;position:absolute;top:43px;right:-33px;overflow:visible;width:42px;height:42px;opacity:0;visibility:hidden;transform:translateX(-50px);transition:all .2s;}
+.info_block_wrapper.active{opacity:1;visibility:visible;transform:translateX(0);}
+.info_block_wrapper .info_block_content{z-index:9;position:absolute;left:3px;top:6px;width:303px;background-color:#F8F9FE;border-radius: 10px;box-shadow:-5px 8px 6px rgb(0 0 0 / 26%);padding:5px;display:flex;}
+.info_block_wrapper .bottom_item_card .link_comments_goods{margin-left:0;font-size:9px;line-height:11px;}
+.info_block_wrapper .bottom_item_card{margin-top:5px;}
+.info_block_wrapper .bottom_item_card .more{margin-left:5px;font-size:10px;line-height:12px;}
+.info_block_wrapper .bottom_item_card .raiting_goods .gradient_text{font-size:9px;line-height:11px;}
+.info_block_wrapper .mini_gray_text{font-size:9px;line-height:13px;margin-top:5px;}
+.info_block_wrapper .specifications{margin-bottom:0;}
+.info_block_wrapper .specifications .specifications_item span svg{display:block;margin-right:3px;}
+.info_block_wrapper .specifications .specifications_item span{font-size:11px;line-height:19px;}
+.info_block_wrapper .specifications .specifications_item{padding-left:0;}
+.info_block_wrapper .name_goods{text-transform:none;color:rgba(0,0,0,.73);font-size:14px;line-height:17px;letter-spacing:0.04em;}
+.info_block_wrapper .count_col{position:absolute;top:3px;right:5px;height:auto;}
+.info_block_wrapper .red_old_price{font-size:11px;line-height:13px;}
+.info_block_wrapper .specifications{flex:0 0 50%}
+.info_block_wrapper .price_col{flex:0 0 50%}
+.info_block_wrapper .price_col .persent_stock{font-size:7px;line-height:9px;padding:2px 4px;}
+.info_block_wrapper .bottom_item_card{flex-wrap:wrap;}
+.info_block_wrapper .white_bg_shaadows {background:transparent;box-shadow:none;padding:0;}
+.info_block_wrapper .bottom_item_card .raiting_goods{margin-left:5px;}
+.info_block_wrapper .more img{margin-top:-2px;max-width:8px;}
+.info_block_wrapper .count_label .btn_count{width:14px;height:14px;padding:3px;}
+.info_block_wrapper .count_label .count_input{width:17px;font-size:12px;}
+.info_block_wrapper .brand_logo{left:5px;top:5px;max-width:39px;}
+.info_block_wrapper .left_angle{position:absolute;left:-20px;top:-20px;z-index:8;filter:drop-shadow(-5px 4px 6px rgba(0, 0, 0, 0.26));}
 
 
 
