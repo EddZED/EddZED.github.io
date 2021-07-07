@@ -581,7 +581,14 @@ body{font-family:'Montserrat_medium';}
 
 /* style three page */
 /* ************** */
-.container.first_intro.cart_conteiner{padding:0 40px;}
+.container.first_intro.cart_conteiner{padding:0 55px;}
+.cart_select{padding:250px 0 80px;}
+.checking_cart{position:relative;width:100%;cursor:pointer;}
+.checking_cart input[type="checkbox"]{display:none;}
+.checking_cart input[type="checkbox"]:checked + .checked img{opacity:1;}
+.checking_cart .checked{top:0;bottom:0;left:-40px;margin:auto;}
+
+
 
 
 
