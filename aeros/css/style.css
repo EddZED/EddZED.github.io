@@ -579,7 +579,9 @@ body{font-family:'Montserrat_medium';}
 .big_circle_2{position:absolute;left:0;top:-50px;z-index:0;}
 .big_circle{position:absolute;right:0;top:120px;z-index:0;}
 
-
+/* style three page */
+/* ************** */
+.container.first_intro.cart_conteiner{padding:0 40px;}
 
 
 
@@ -1112,7 +1114,7 @@ body{font-family:'Montserrat_medium';}
   .wrap_company_block{min-height:100px;} 
   .title_big_font{font-size:28px;line-height:34px;}
   .wrapper_installment_plan{padding:18px 25px;}
-  .yours_select .description_selected .dscript_specification .red_old_price:before{top:-1px;}
+  .yours_select .red_old_price:before{top:-1px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
