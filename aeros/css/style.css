@@ -495,7 +495,7 @@ body{font-family:'Montserrat_medium';}
 .input_select_type input[type="radio"]:checked + .body_input{box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);}
 .inp_col{padding:0 15px;}
 .nums_title{padding-right:15px;}
-.block_count_item{padding:90px 0 40px;}
+.block_count_item{padding:90px 0 40px;position:relative;}
 .count_label.total{padding:40px 0 0 65px;}
 .count_label.total .btn_count{width:52px;height:52px;background-color:#F8F9FE;}
 .count_label.total .count_input{width:60px;font-size:39px;}
@@ -575,9 +575,9 @@ body{font-family:'Montserrat_medium';}
 .other_goods_link{font-size:17px;line-height:21px;font-family:'Montserrat_medium';color:#31ACE4;margin-left:45px;}
 .other_goods_link:hover{text-decoration:underline;color:#31ACE4;}
 .desc_color.blue img{position:absolute;bottom:5px;right:-12px;}
-
-
-
+.right_image_desctop{position:absolute;right:0;top:70px;}
+.big_circle_2{position:absolute;left:0;top:-50px;z-index:0;}
+.big_circle{position:absolute;right:0;top:120px;z-index:0;}
 
 
 
@@ -950,7 +950,7 @@ body{font-family:'Montserrat_medium';}
   .content_input_bottom .price_input{font-size:35px;line-height:36px;}
   .info_block_wrapper{display:none;}
   .name_filtr .filtr_price{display:none;}
-  .btn_info{display:none;}
+  .btn_info,.right_image_desctop{display:none;}
   .name_filtr{font-size:16px;line-height:18px;}
   .checked{top:-3px;}
   .title_plan{font-size:22px;line-height:27px;}
@@ -1038,6 +1038,8 @@ body{font-family:'Montserrat_medium';}
   .end_block_btns .other_goods_link{margin-left:0;margin-top:20px;}
   .desc_color.blue img{position:absolute;bottom:3px;right:5px;max-width:6px;}
   .desc_color.blue{padding-top:14px;}
+  .big_circle_2{display:none;}
+  .big_circle{display:none;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
