@@ -557,7 +557,7 @@ body{font-family:'Montserrat_medium';}
 .wrapper_color_example.color_3 .example_color{background-color:#EFDAC4;}
 .wrapper_color_example.color_4 .example_color{background-color:#858585;}
 .wrapper_color_example.color_5 .example_color{background: linear-gradient(146.2deg, #114AFB 17.97%, #33F7FE 43.76%, #2AFD98 45.91%, #FEEC35 52.79%, #E0842E 62.56%, #FC1522 71.37%, #FF00E5 83.92%, #FF0000 91.53%), #858585;}
-.desc_color.blue{color:#31ACE4;font-family:'Montserrat_medium';padding-top:20px;display:inline-block;}
+.desc_color.blue{color:#31ACE4;font-family:'Montserrat_medium';padding-top:20px;display:inline-flex;align-items:center;position:relative;}
 .desc_color.blue:hover{text-decoration:underline;color:#31ACE4;}
 .check_color:last-of-type{transform:translateX(-30px);z-index: 0;}
 .check_color:not(:last-of-type){z-index:2;}
@@ -574,6 +574,11 @@ body{font-family:'Montserrat_medium';}
 .end_block_btns .gradient_btn_other{width:auto;padding:15px 45px;}
 .other_goods_link{font-size:17px;line-height:21px;font-family:'Montserrat_medium';color:#31ACE4;margin-left:45px;}
 .other_goods_link:hover{text-decoration:underline;color:#31ACE4;}
+.desc_color.blue img{position:absolute;bottom:5px;right:-12px;}
+
+
+
+
 
 
 
@@ -944,7 +949,15 @@ body{font-family:'Montserrat_medium';}
   .inp_col{flex:1 1 100%;margin-bottom:17px;}
   .content_input_bottom .price_input{font-size:35px;line-height:36px;}
   .info_block_wrapper{display:none;}
+  .name_filtr .filtr_price{display:none;}
   .btn_info{display:none;}
+  .name_filtr{font-size:16px;line-height:18px;}
+  .checked{top:-3px;}
+  .title_plan{font-size:22px;line-height:27px;}
+  .wrapper_installment_plan {width:100%;align-items:center;}
+  .big_font_gray, .total_order_proce{font-size:41px;line-height:50px;}
+  .end_block_btns{padding:40px 0;}
+  .block_count_item{padding:40px 0 30px;}
 }
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
@@ -1005,6 +1018,26 @@ body{font-family:'Montserrat_medium';}
   .brand_logo{max-width:39px;left:10px;top:10px;}
   .description_goods_card .specifications{margin-bottom:0;}
   .title_big_font{font-size:32px;line-height:36px;}
+  .count_label.total{padding:40px 0 10px;justify-content:center;}
+  .count_label.total .btn_count{width:43px;height:43px;padding:10px;}
+  .dop_filter_item{padding:30px 0 10px;}
+  .check_filter{padding-left:50px;}
+  .checked{left:8px;top:-6px;}
+  .check_color.static_color{padding-right:0;}
+  .wrapper_color_example.color_1{margin-right:0;}
+  .desc_color{text-align:center;font-size:12px;line-height:16px;}
+  .check_color:last-of-type{transform:translateX(0);z-index: 0;}
+  .check_color:not(.static_color){padding-left:0;}
+  .select_color_block{justify-content:space-between;padding-left:0;}
+  .wrapper_color_example, .wrapper_color_example.color_1{width:58px;height:58px;}
+  .footer_plan_block{flex-direction:column;align-items:center;}
+  .bank_link:first-of-type{margin-right:0;}
+  .bank_link{margin-top:15px;}
+  .end_block_btns{flex-direction:column;padding:40px 0 20px;}
+  .end_block_btns .gradient_btn_other{width:100%;padding-left:0;padding-right:0;font-size:17px;line-height:21px;}
+  .end_block_btns .other_goods_link{margin-left:0;margin-top:20px;}
+  .desc_color.blue img{position:absolute;bottom:3px;right:5px;max-width:6px;}
+  .desc_color.blue{padding-top:14px;}
 }
 @media(max-width:565px){
   .menu_block{padding:0;}
@@ -1076,6 +1109,7 @@ body{font-family:'Montserrat_medium';}
   .wrapper_img_box .btn_add_cart{font-size:15px;line-height:18px;}
   .wrap_company_block{min-height:100px;} 
   .title_big_font{font-size:28px;line-height:34px;}
+  .wrapper_installment_plan{padding:18px 25px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
@@ -1094,4 +1128,7 @@ body{font-family:'Montserrat_medium';}
   .popular_link_item{margin:5px 2px;}
   .bottom_item_card .more{margin-left:5px;}
   .bottom_item_card .raiting_goods{margin-left:5px;}
+  .total_order_block{flex-direction:column;align-items:center;}
+  .total_order_block .total_order_proce{padding-left:0;}
+  .select_color_block{flex-wrap:wrap;}
 }
