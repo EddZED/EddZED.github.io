@@ -1112,6 +1112,7 @@ body{font-family:'Montserrat_medium';}
   .wrap_company_block{min-height:100px;} 
   .title_big_font{font-size:28px;line-height:34px;}
   .wrapper_installment_plan{padding:18px 25px;}
+  .yours_select .description_selected .dscript_specification .red_old_price:before{top:-1px;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
