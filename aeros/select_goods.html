@@ -1188,6 +1188,26 @@
                   </label>
                 </div>
               </div>
+              <div class="wrapper_installment_plan mt-3">
+                <div class="header_plan_block">
+                  <p class="title_plan mb-0">Этот товар можно купить в рассрочку</p>
+                  <button type="button" class="btn_info"><img class="img-fluid" src="img/btn_quest.png" alt=""></button>
+                  <div class="info_block_wrapper">
+                    <img class="img-fluid left_angle" src="svg/left_angle.svg" alt="">
+                    <div class="info_block_content p-3">
+                      <p class="text_item_description_button mb-0">Оформить удобную для вас рассрочку можно бует после формирования заказа.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_plan_block pt-2">
+                  <a href="#" class="bank_link"><img class="img-fluid" src="img/tink.png" alt="тинькофф"></a>
+                  <a href="#" class="bank_link"><img class="img-fluid" src="img/hal.png" alt="халва"></a>
+                </div>
+              </div>
+              <div class="total_order_block">
+                <span class="big_font_gray">Итого:</span>
+                <span class="total_order_proce">4 880 ₽</span>
+              </div>
             </fieldset>
           </form>
         </div>
@@ -1405,6 +1425,9 @@
     });
     $('.btn_info').eq(2).click(function () {
       $('.info_block_wrapper').eq(2).toggleClass('active');
+    });
+    $('.btn_info').eq(3).click(function () {
+      $('.info_block_wrapper').eq(3).toggleClass('active');
     });
     $(document).mouseup(function (e) {
         var info = $(".info_block_wrapper"); // тут указываем класс элемента

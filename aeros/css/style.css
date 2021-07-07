@@ -561,7 +561,18 @@ body{font-family:'Montserrat_medium';}
 .desc_color.blue:hover{text-decoration:underline;color:#31ACE4;}
 .check_color:last-of-type{transform:translateX(-30px);z-index: 0;}
 .check_color:not(:last-of-type){z-index:2;}
-.text_item_description_button{font-size:16px;line-height:20px;font-family:'Montserrat_reg';}
+.text_item_description_button{font-size:16px;line-height:17px;font-family:'Montserrat_reg';}
+.wrapper_installment_plan{background-color:#F8F9FE;box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);border-radius: 10px;padding:18px 45px;display:inline-flex;flex-direction:column;}
+.header_plan_block{display:flex;align-items:center;position:relative;}
+.footer_plan_block{display:flex;align-items:center;justify-content:flex-start;}
+.bank_link:first-of-type{margin-right:15px;}
+.title_plan{color:#0B0B0B;font-size:25px;line-height:30px;font-family:'Montserrat_medium';}
+.total_order_block{display:flex;align-items:center;padding-top:30px;}
+.big_font_gray{font-size:60px;line-height:73px;color:rgba(0,0,0,.7);font-family:'Montserrat_medium';}
+.total_order_proce{font-size:60px;line-height:73px;font-family:'Montserrat_medium';background: linear-gradient(91.3deg, #F71212 0.16%, #FDB41E 101.27%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display:inline-block;padding-left:30px;}
+
+
+
 
 
 
