@@ -570,9 +570,10 @@ body{font-family:'Montserrat_medium';}
 .total_order_block{display:flex;align-items:center;padding-top:30px;}
 .big_font_gray{font-size:60px;line-height:73px;color:rgba(0,0,0,.7);font-family:'Montserrat_medium';}
 .total_order_proce{font-size:60px;line-height:73px;font-family:'Montserrat_medium';background: linear-gradient(91.3deg, #F71212 0.16%, #FDB41E 101.27%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display:inline-block;padding-left:30px;}
-
-
-
+.end_block_btns{display:flex;align-items:center;padding:70px 0 90px;}
+.end_block_btns .gradient_btn_other{width:auto;padding:15px 45px;}
+.other_goods_link{font-size:17px;line-height:21px;font-family:'Montserrat_medium';color:#31ACE4;margin-left:45px;}
+.other_goods_link:hover{text-decoration:underline;color:#31ACE4;}
 
 
 
