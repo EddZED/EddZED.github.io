@@ -9,17 +9,13 @@ $(document).ready(function() {
 
 	if (width >= 1280) {
 		$(function () {
-							
-			new ScrollMagic.Scene({triggerElement: "#intro", duration: 500, offset: 0, triggerHook: 0})
-							.setPin("#intro")					
-							.addTo(controller);	
-							
-			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: -300, triggerHook: 0.5})
-							.setTween(TweenMax.from("#sl_nav .text_card", 1, {opacity: 0, y: 100}))						
-							.addTo(controller);				
-			new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: 400, triggerHook: 0.5})
-							.setTween(TweenMax.to("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
-							.addTo(controller);
+			
+			// new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: -300, triggerHook: 0.5})
+			// 				.setTween(TweenMax.from("#sl_nav .text_card", 1, {opacity: 0, y: 100}))						
+			// 				.addTo(controller);				
+			// new ScrollMagic.Scene({triggerElement: "#sl_nav", duration: 300, offset: 400, triggerHook: 0.5})
+			// 				.setTween(TweenMax.to("#sl_nav .text_card", 1, {opacity: 0, y: -100}))						
+			// 				.addTo(controller);
 
 			//new ScrollMagic.Scene({triggerElement: "#numbers", duration: 500, offset: 0, triggerHook: 0})
 			//	.setPin("#numbers")	
