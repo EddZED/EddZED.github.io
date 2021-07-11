@@ -428,7 +428,7 @@ body{font-family:'Montserrat_medium';}
 .link_footer{display:flex;justify-content:flex-end;font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.7);transition:all .3s;margin-top:15px;}
 .link_footer:hover{text-decoration:none;color:rgba(0,0,0,1);}
 .menu_footer{display:flex;width:100%;justify-content:space-between;align-items:center;}
-.link_footer_menu{font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,1);transition:all .3s;position:relative;}
+.link_footer_menu{font-size:20px;line-height:24px;font-family:'Montserrat_medium';color:rgba(0,0,0,.63);transition:all .3s;position:relative;}
 .link_footer_menu:hover{text-decoration:none;color:rgba(0,0,0,1);}
 .wrapper_klients{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;}
 .link_footer_menu:not(:last-of-type):before{content:'';position:absolute;right:-25px;top:0;bottom:0;width:1px;background-color:rgba(0,0,0,.6);}
