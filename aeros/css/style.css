@@ -729,7 +729,8 @@ body{font-family:'Montserrat_medium';}
   .navigation_item img{max-width:40px;}
   .banner_video{right:-20px;}
   .more_brend{padding-top:40px;}
-  .container{max-width:1170px;}
+  .container{max-width:1120px;}
+  .recomend_reading .dual_color_link{font-size:18px;}
 }
 @media(max-width:991px){
   .header_nav{position:relative;background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);z-index:999999;}
@@ -924,8 +925,8 @@ body{font-family:'Montserrat_medium';}
   .content_about .wrap_text_mobile{display:flex;}
   .content_about .raiting_comments {padding-right:10px;}
   .scrolling_box_bg{display:none;}
-  .wrapper_block_scroll{position:relative;}
-  .scrolling_box{padding:30px 20px;background-image:url(../img/bg_about_us.jpg);background-size:cover;background-position:0 1px;border-radius: 20px;box-shadow:2px 6px 10px rgba(0, 0, 0, 0.25);}
+  .wrapper_block_scroll{position:relative;padding:0;}
+  .scrolling_box{padding:30px 20px;background-image:url(../img/bg_about_us.jpg);background-size:cover;background-position:0 1px;border-radius: 20px;filter:drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));}
   .about_us{padding:40px 0;}
   .trust{padding:40px 0 20px;background-color:#FFFAF0;}
   .recomend_reading{padding:20px 0 0;}
@@ -1014,7 +1015,8 @@ body{font-family:'Montserrat_medium';}
 @media(max-width:767px){
   .name_drop_mobile, .name_drop_mobile_2{padding:12px 15px;}
   .body_name_link{padding:0 15px;}
-  .menu_block, .contact_block{padding:0;}
+  .contact_block{padding:0;}
+  .menu_block{padding:0 0 70px;}
   .menu_link.link{padding:12px 15px;}
   .mobile_contact{padding:0 15px;}
   .guid_select_link{width:100%;padding:0 15px;}
@@ -1092,9 +1094,10 @@ body{font-family:'Montserrat_medium';}
   .desc_color.blue{padding-top:14px;}
   .big_circle_2{display:none;}
   .big_circle{display:none;}
+  .scrolling_box{margin-top:20px;background-position:-106px 0;background-repeat:no-repeat;}
 }
 @media(max-width:565px){
-  .menu_block{padding:0;}
+  .menu_block{padding:0 0 75px;}
   .link_massage:not(:last-of-type){margin-right:5px;}
   .container_bottom_mobile{padding:0 5px;}
   .text_logo{padding-left:5px;}
@@ -1138,12 +1141,13 @@ body{font-family:'Montserrat_medium';}
   .upper_text_slider{font-size:15px;}
   .light_text-slider{font-size:11px;}
   .base_slider_item .more_btn_sldier{margin-top:-15px;font-size:11px;}
-  .scrolling_box{padding:15px 0;}
+  .scrolling_box{padding:15px 0;background-position:-115px 0;}
   .name_about {font-size:10px;line-height:12px;font-family:'Montserrat_semibold';}
   .gray_text, .raiting_comments{font-size:8px;line-height:10px;margin-top:5px;}
   .wrap_text_mobile{align-items:center;}
   .content_about .blue_link_content{font-size:8px;line-height:10px;}
   .block_item_about .brand_place{max-width:37px;}
+  .block_item_about{width:auto;}
   .screen_item{padding:40px 0 160px;}
   .mobile_width{padding:0;flex-wrap:nowrap;}
   .wrapp_link_sl:nth-of-type(1){transform:translateX(-30px);position:relative;}
@@ -1165,6 +1169,13 @@ body{font-family:'Montserrat_medium';}
   .title_big_font{font-size:28px;line-height:34px;}
   .wrapper_installment_plan{padding:18px 25px;}
   .yours_select .red_old_price:before{top:-1px;}
+  .btn_city{white-space:nowrap;}
+  .slider_cards_goods_item .glass_wrapper{padding:10px 4px;}
+  .slider_cards_goods_item .big_title_banner{font-size:18px;line-height:22px;margin-bottom:5px;}
+  .slider_cards_goods_item .text_slider_banner{font-size:13px;line-height:10px;}
+}
+@media(max-width:450px){
+  .scrolling_box{background-position:-180px 0;}
 }
 @media(max-width:374px){
   .link_phone{font-size:15px;}
