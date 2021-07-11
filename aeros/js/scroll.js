@@ -80,7 +80,7 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 0, triggerHook: 0.6})
 				.setTween(TweenMax.from("#banner_body .banner", 1, {opacity: 0, y: 150}))
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 300, triggerHook: 0.4})
+			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 200, triggerHook: 0.4})
 				.setTween(TweenMax.to("#banner_body .banner", 1, {opacity: 0, y: -150}))				
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.5})
@@ -128,6 +128,9 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 400, triggerHook: 0.1})
 				.setTween(TweenMax.from("#test_drive .wrapper_blur", 1, {opacity: 0}))		
 				.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 700*2, triggerHook: 0.2})
+				.setTween(TweenMax.to("#test_drive .wrapper_blur", 1, {opacity: 0}))		
+				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#test_drive .right_item_decor", 1, {opacity: 1, x: 100}))		
 				.addTo(controller);
@@ -147,8 +150,8 @@ $(document).ready(function() {
 				.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 				.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#scrolling_box", duration: 1500, offset: -100, triggerHook: 0})
-				.setPin("#scrolling_box")					
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 1500, offset: 0, triggerHook: 0})
+				.setPin("#about_us")					
 				.addTo(controller);	
 
 			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: -200, triggerHook: 0.5})
@@ -259,9 +262,9 @@ $(document).ready(function() {
 				.addTo(controller);
 
 			
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 800, offset: 0, triggerHook: 0})
-				.setPin("#recomend_reading")	
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 800, offset: 0, triggerHook: 0})
+			// 	.setPin("#recomend_reading")	
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#recomend_reading h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
@@ -274,22 +277,22 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 700, triggerHook: 0.3})
 				.setTween(TweenMax.to("#recomend_reading h2.light_gray_title", 1, {opacity: 0, y: -100}))		
 				.addTo(controller);	
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 100, triggerHook: 0.1})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 100, triggerHook: 0.4})
 				.setTween(TweenMax.from("#recomend_reading .upper_head", 1, {opacity: 0}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 100, triggerHook: 0.1})
 				.setTween(TweenMax.from("#recomend_reading .knowledge_base .gradient_text", 1, {opacity: 0}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 400*3, triggerHook: 0.4})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 600, triggerHook: 0.4})
 				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(1)", 1, {opacity: 0, x:-40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 450*3, triggerHook: 0.4})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 650, triggerHook: 0.4})
 				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(2)", 1, {opacity: 0, x:-40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 500*3, triggerHook: 0.4})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 700, triggerHook: 0.4})
 				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(3)", 1, {opacity: 0, x:-40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 2000, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 2000, offset: 0, triggerHook: 0.2})
 				.setPin("#call_us")	
 				.addTo(controller);
 			
@@ -324,33 +327,57 @@ $(document).ready(function() {
 				.setTween(TweenMax.from("#call_us .wrapper_bullit", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 
+			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 0, triggerHook: - height/2})
+			.setPin("#assortment")
+			
+			.addTo(controller);		
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 500, offset: 180})
+			.setTween(TweenMax.from("#assortment .top_item", 1, {opacity: 0, y: -100}))		
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 280})
+			.setTween(TweenMax.from("#assortment p", 1, {opacity: 0, y: -100}))		
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 380})
+			.setTween(TweenMax.from("#assortment .link_assortment", 1, {opacity: 0, y: -100}))		
+			.addTo(controller);
+			
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 100, offset: 880})
+			.setTween(TweenMax.to("#assortment .top_item", 1, {opacity: 0, y: -100}))		
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 980})
+			.setTween(TweenMax.to("#assortment p", 1, {opacity: 0, y: -100}))		
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 1080})
+			.setTween(TweenMax.to("#assortment .link_assortment", 1, {opacity: 0, y: -100}))	
+			.addTo(controller);
+
 			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#assortment h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#assortment h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 100, triggerHook: 0.5})
-				.setTween(TweenMax.from("#assortment .top_item", 1, {opacity: 0, y: -50}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 200, triggerHook: 0.5})
-				.setTween(TweenMax.from("#assortment .name_goods_assort", 1, {opacity: 0, y: -50}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 250, triggerHook: 0.5})
-				.setTween(TweenMax.from("#assortment .link_assortment", 1, {opacity: 0, y: -50}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 100, offset: 500, triggerHook: 0.3})
-				.setTween(TweenMax.to("#assortment .top_item", 1, {opacity: 0, y: -100}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
-				.setTween(TweenMax.to("#assortment .name_goods_assort", 1, {opacity: 0, y: -100}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
-				.setTween(TweenMax.to("#assortment .link_assortment", 1, {opacity: 0, y: -100}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.5})
-				.setTween(TweenMax.from("#assortment .more_brend", 1, {opacity: 0}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 100, triggerHook: 0.5})
+			// 	.setTween(TweenMax.from("#assortment .top_item", 1, {opacity: 0, y: -50}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 200, triggerHook: 0.5})
+			// 	.setTween(TweenMax.from("#assortment .name_goods_assort", 1, {opacity: 0, y: -50}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 250, triggerHook: 0.5})
+			// 	.setTween(TweenMax.from("#assortment .link_assortment", 1, {opacity: 0, y: -50}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 100, offset: 500, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#assortment .top_item", 1, {opacity: 0, y: -100}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#assortment .name_goods_assort", 1, {opacity: 0, y: -100}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#assortment .link_assortment", 1, {opacity: 0, y: -100}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#assortment", duration: 300, offset: 500, triggerHook: 0.5})
+			// 	.setTween(TweenMax.from("#assortment .more_brend", 1, {opacity: 0}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#assortment", duration: 600, offset: 700, triggerHook: 0.5})
 				.setClassToggle("#germany", "active")			
 				.addTo(controller);
@@ -370,9 +397,9 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 0, triggerHook: 0.6})
 				.setTween(TweenMax.from("#about .our_brend_banner img", 1, {opacity: 0, y: 300, x: 300}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 300, triggerHook: 0.3})
-				.setTween(TweenMax.to("#about .our_brend_banner", 1, {opacity: 0, y: 200}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 300, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#about .our_brend_banner", 1, {opacity: 0, y: 200}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#about", duration: 600, offset: 350, triggerHook: 0.5})
 				.setClassToggle("#color", "gradient_text")			
 				.addTo(controller);
