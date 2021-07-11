@@ -627,7 +627,7 @@ body{font-family:'Montserrat_medium';}
   .header.active .header_nav_menu .logo_block{display:none;}
   .header.active .city_block, .header.active .letter_our {display:none !important;}
   .header.active .menu_link{color:#000;padding:10px 0;}
-  .header.active .dropdown_menu_wrapper{transform:translateY(-200%);opacity:0;visibility:hidden;}
+  .header.active .dropdown_menu_wrapper{transform:translateY(-200%);opacity:0;visibility:hidden;padding-left:0;}
   .header.active .open_icon{transform:translateY(-100%);opacity:0;visibility:hidden;}
   .header.active .menu_link:hover .dropdown_menu_wrapper{transform:translateY(0);opacity:1;visibility:visible;top:33px;padding-top:40px;}
   .header.active .menu_link:hover .dropdown_menu_wrapper_2{transform:translateY(0);opacity:1;visibility:visible;top:33px;padding-top:40px;}
@@ -647,6 +647,8 @@ body{font-family:'Montserrat_medium';}
   .header.active .menu_top_block{flex:1 1 65%;}
   .header.active .contact_block{flex:1 1 35%;}
   .header.active .menu_item:nth-child(2) .menu_link{padding-left:0;}
+  .header.active .dropdown_menu_item .sub_dropdown_wrapper{padding-left:0;}
+
 
   .menu_item:nth-child(2) .menu_link {padding-left:24px;}
   .dropdown_menu_link:hover .open_icon_sub{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;transition:all .3s;}
