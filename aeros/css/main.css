@@ -1177,7 +1177,29 @@ body { font-family: 'Montserrat_medium'; }
 
 .checking_cart .checked { top: 0; bottom: 0; left: -40px; margin: auto; }
 
+.checking_cart { height: 100%; }
+
+.checking_cart .checking_cart_item { min-height: 184px; height: 100%; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.checking_cart .your_select_wrapper { width: 100%; }
+
+.checking_cart .your_select_wrapper .row { height: 100% !important; }
+
 .checking_cart .bottom_item_card { margin-top: 8px; }
+
+.checking_cart .description_selected .specifications_item { padding-left: 0; }
+
+.checking_cart .description_selected .specifications_item span svg { display: block; }
+
+@media (min-width: 992px) { .checking_cart .description_selected .specifications_item span svg { margin-right: 7px; margin-top: 2px; } }
+
+.delivery_step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 15px 0; }
+
+.delivery_step .logo_delivery_box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.delivery_step .logo_delivery_box img { margin-right: 15px; -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+
+.delivery_step .delivery_text { font-size: 25px; line-height: 30px; color: #000; font-family: 'Montserrat_medium'; margin-bottom: 0; }
 
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 900px; } }
 

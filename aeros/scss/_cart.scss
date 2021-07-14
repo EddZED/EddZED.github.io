@@ -7,8 +7,55 @@
 .checking_cart input[type="checkbox"]:checked + .checked img{opacity:1;}
 .checking_cart .checked{top:0;bottom:0;left:-40px;margin:auto;}
 .checking_cart{
+  height:100%;
+  .checking_cart_item{
+    min-height:184px;
+    height:100%;
+    position:relative;
+    display:flex;
+  }
+  .your_select_wrapper {
+    width:100%;
+    .row{
+      height:100% !important;
+    }
+  }
   .bottom_item_card{
     margin-top:8px;
+  }
+  .description_selected{
+    .specifications_item{
+    padding-left:0;
+    span {
+      svg{
+        display:block;
+        @media(min-width:992px){
+          margin-right:7px;
+          margin-top:2px;
+        }
+      }
+    }
+  } 
+  }
+}
+.delivery_step{
+  display: flex;
+  align-items:center;
+  margin:15px 0;
+  .logo_delivery_box{
+    display:flex;
+    align-items:center;
+    img {
+      margin-right:15px;
+      filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  .delivery_text{
+    font-size:25px;
+    line-height:30px;
+    color:#000;
+    font-family: 'Montserrat_medium';
+    margin-bottom:0;
   }
 }
 
