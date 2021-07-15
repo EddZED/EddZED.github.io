@@ -1171,7 +1171,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .cart_select { padding: 80px  0px  30px  0px; }
 
-@media (min-width: 992px) { .cart_select { padding: 250px 0 50px; } }
+@media (min-width: 992px) { .cart_select { padding: 280px 0 50px; } }
 
 @media (max-width: 567px) { .cart_select .total_order_block { padding-top: 10px; } }
 
@@ -1226,6 +1226,15 @@ body { font-family: 'Montserrat_medium'; }
 .delivery_step .delivery_text { font-size: 25px; line-height: 30px; color: #000; font-family: 'Montserrat_medium'; margin-bottom: 0; }
 
 @media (max-width: 991px) { .delivery_step .delivery_text { font-size: 15px; line-height: 18px; margin-top: 10px; } }
+
+/* style four page */
+.call_order { padding: 80px  0px  30px  0px; }
+
+@media (min-width: 992px) { .call_order { padding: 280px 0 50px; } }
+
+._radio input { display: none; }
+
+._radio .checked_montage { position: absolute; top: 10px; left: -30px; width: 30px; height: 30px; border: 2px solid #A3A3A3; border-radius: 50%; }
 
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 900px; } }
 
