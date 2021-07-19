@@ -1463,7 +1463,6 @@ body { font-family: 'Montserrat_medium'; }
 
 @media (min-width: 992px) { .favorite_goods:hover { background-image: url(../svg/gradient_heart.svg); }
   .stat_goods:hover { background-image: url(../svg/gradient_stat.svg); }
-  .header .header_nav_menu { -webkit-transition: background-color .3s; -o-transition: background-color .3s; transition: background-color .3s; }
   .header.active .header_nav_menu { padding: 7px 20px; min-height: 60px; background-color: #FCFDFF; -webkit-box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.15); box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.15); border-radius: 0 0 10px 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header.active .header_nav_menu .logo_block { display: none; }
   .header.active .city_block, .header.active .letter_our { display: none !important; }
