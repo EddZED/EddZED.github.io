@@ -115,7 +115,7 @@ $maxWidthContainer: 1170;
 .shevrron_down{display:inline-flex;align-items:center;justify-content:center;margin-left:5px;transform:rotateZ(90deg);}
 .btn_city .open_icon{bottom:-15px;transform:translateX(-50%) translateY(100%);}
 .btn_city:hover .open_icon{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;transition:all .3s;}
-.wrapper_city_search{position:absolute;width:100%;left:0;top:57px;padding:20px 0 0 5px;z-index:10;transform:translateY(100%);opacity:0;visibility:hidden;transition:all .3s;transition-delay:.3s;}
+.wrapper_city_search{position:absolute;width:100%;left:0;top:57px;padding:20px 0 0 5px;z-index:10;opacity:0;visibility:hidden;transition:opacity .1s;}
 .sity_search_block{background-color:#fff;padding:25px 35px;width:100%;border-radius:10px;}
 .min_txt{font-size:12px;line-height:15px;color: rgba(0, 0, 0, 0.7);font-family:'Montserrat_reg';}
 .search_input{width:100%;position:relative;}

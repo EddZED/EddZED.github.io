@@ -187,7 +187,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .btn_city:hover .open_icon { -webkit-transform: translateX(-50%) translateY(0); -ms-transform: translateX(-50%) translateY(0); transform: translateX(-50%) translateY(0); opacity: 1; visibility: visible; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
 
-.wrapper_city_search { position: absolute; width: 100%; left: 0; top: 57px; padding: 20px 0 0 5px; z-index: 10; -webkit-transform: translateY(100%); -ms-transform: translateY(100%); transform: translateY(100%); opacity: 0; visibility: hidden; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; -webkit-transition-delay: .3s; -o-transition-delay: .3s; transition-delay: .3s; }
+.wrapper_city_search { position: absolute; width: 100%; left: 0; top: 57px; padding: 20px 0 0 5px; z-index: 10; opacity: 0; visibility: hidden; -webkit-transition: opacity .1s; -o-transition: opacity .1s; transition: opacity .1s; }
 
 .sity_search_block { background-color: #fff; padding: 25px 35px; width: 100%; border-radius: 10px; }
 
