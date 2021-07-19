@@ -1,0 +1,38 @@
+// style five "brizers"
+.contact_block{
+  &.white_style{
+    .phone_header{
+      color:#fff;
+    }
+    .btn_city{
+      color:#fff;
+      margin-top:5px;
+      padding-right:6px;
+      .shevrron_down{
+        transform:rotateZ(0deg);
+        line{
+          stroke:#fff;
+        }
+      }
+    }
+    .link_mail{
+      color:#fff;
+    }
+  }
+} 
+.intro_brizers{
+  position:relative;
+  padding: 293px  0px  200px  0px;
+  background-image:url(../img/bg_brizers.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  max-height:579px;
+  height:100%;
+}
+.white_big_title{
+  font-size:53px;
+  line-height:65px;
+  color:#fff;
+  font-family:"Montserrat_medium";
+}
