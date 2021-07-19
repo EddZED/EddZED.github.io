@@ -29,12 +29,22 @@
   background-repeat:no-repeat;
   max-height:579px;
   height:100%;
+  @media(max-width:991px){
+    max-height:236px;
+    padding: 40px  0px  30px  0px;
+    display:flex;
+    align-items:flex-end;
+  }
 }
 .white_big_title{
   font-size:53px;
   line-height:65px;
   color:#fff;
   font-family:"Montserrat_medium";
+  @media(max-width:991px){
+    font-size:39px;
+    line-height:48px;
+  }
 }
 .white_sub_title{
   font-size:33px;
@@ -42,11 +52,18 @@
   color:#fff;
   font-family:"Montserrat_reg";
   padding-top:6px;
+  @media(max-width:991px){
+    font-size:20px;
+    line-height:24px;
+  }
 }
 .search_item_banner{
   display:flex;
   justify-content:flex-end;
   padding-right:5px;
+  @media(max-width:991px){
+    display:none;
+  }
   .search_banner{
     margin-top:-5px;
     .search_input{
@@ -75,6 +92,9 @@
   border-radius: 10px;
   overflow:hidden;
   display:flex;
+  @media(max-width:991px){
+      display:none;
+    }
   .pure_clean{
     background: linear-gradient(105.36deg, #F71212 2.87%, #F8A120 98.65%);
     padding: 5px  5px  5px  18px;
@@ -88,12 +108,20 @@
       color:#fff;
       font-family:"Montserrat_semibold";
     }
+    @media(max-width:1439px){
+      max-width:105px;
+      padding: 5px  5px  5px  10px;
+    }
   }
   .text_block_staf{
     display:flex;
     flex-direction:column;
     justify-content:center;
     padding: 5px  5px  5px  22px;
+    @media(max-width:1439px){
+      flex:1 1 180px;
+      padding: 5px  5px  5px  10px;
+    }
     .min_text{
       display:inline-block;
       font-size:13px;
@@ -101,14 +129,14 @@
       color:#000;
       font-family:"Montserrat_reg";
     }
-    .min_bold_text{
+  }
+  .min_bold_text{
       display:inline-block;
       font-size:15px;
       line-height:100.9%;
       color: rgba(0, 0, 0, 0.7);
       font-family:"Montserrat_semibold";
     }
-  }
   .avatar_staffs{
     display:flex;
     align-items:center;
@@ -119,6 +147,9 @@
       img{
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
+    }
+    @media(max-width:1439px){
+      padding: 0px  0px  0px  10px;
     }
     .blue_link_all{
       color:#31ACE4;
@@ -131,13 +162,27 @@
       img{
         margin: 2px  0px  0px  3px;
       }
+      @media(max-width:1439px){
+      margin: 0px  0px  0px  7px;
+      font-size:13px;
+      white-space:nowrap;
+      }
     }
   }
   .banner_contacts{
     height:100%;
     display:flex;
     align-items:center;
-    padding: 0px  0px  0px  37px;
+    padding: 0px  5px  0px  37px;
+    @media(max-width:1439px){
+      padding: 0px  5px  0px  15px;
+    }
+    .min_bold_text{
+      @media(max-width:1439px){
+      flex:0 0 118px;
+      display:inline-flex;
+      }
+    }
     .green_text_link{
       font-size:15px;
       line-height:100.9%;
@@ -145,6 +190,9 @@
       color:#43DC5E;
       display:inline-flex;
       padding: 0px  0px  0px  10px;
+      @media(max-width:1199px){
+        font-size:13px;
+      }
     }
     .blue_phone{
       font-size:15px;
