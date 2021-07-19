@@ -1324,7 +1324,7 @@ body { font-family: 'Montserrat_medium'; }
 
 ._radio .radio_item .old_gradient_price:before { content: ''; position: absolute; top: 50%; width: 100%; height: 1px; left: 0; background: -webkit-linear-gradient(359.28deg, #F71212 0.61%, #F8A120 18.79%); background: -o-linear-gradient(359.28deg, #F71212 0.61%, #F8A120 18.79%); background: linear-gradient(90.72deg, #F71212 0.61%, #F8A120 18.79%); }
 
-._radio .radio_item .description_settings { font-size: 16px; line-height: 140.9%; color: rgba(0, 0, 0, 0.7); font-family: 'Montserrat_reg'; margin: 10px  0px  0px  0px; width: 100%; }
+._radio .radio_item .description_settings { font-size: 16px; line-height: 140.9%; color: rgba(0, 0, 0, 0.7); font-family: 'Montserrat_reg'; margin: 10px  0px  0px  0px; width: 100%; display: inline-block; }
 
 @media (max-width: 767px) { ._radio .radio_item .description_settings { font-size: 14px; } }
 
@@ -1426,9 +1426,9 @@ body { font-family: 'Montserrat_medium'; }
 
 @media (max-width: 991px) { .form_select_options .end_block_btns { padding: 37px  0px  20px  0px !important; } }
 
-.current_price.min { font-size: 9px !important; line-height: 15px !important; }
-
 .current_price.min span { font-size: 16px; line-height: 20px; }
+
+@media (max-width: 767px) { .current_price.min { font-size: 9px !important; line-height: 15px !important; } }
 
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 900px; } }
 

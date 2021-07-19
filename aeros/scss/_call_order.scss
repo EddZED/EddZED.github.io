@@ -230,6 +230,7 @@
       font-family:'Montserrat_reg';
       margin: 10px  0px  0px  0px;
       width:100%;
+      display:inline-block;
       @media(max-width:767px){
         font-size:14px;
       }
@@ -479,11 +480,13 @@
 }
 .current_price{
   &.min{
-    font-size:9px !important;
-    line-height:15px !important;
     span{
       font-size:16px;
       line-height:20px;
+    }
+    @media(max-width:767px){
+      font-size:9px !important;
+      line-height:15px !important;
     }
   }
 }
