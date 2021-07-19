@@ -767,54 +767,489 @@
         <img class="img-fluid big_circle_2" src="img/big_circle_2.png" alt="">
         <img class="img-fluid big_circle" src="img/big_circle.png" alt="">
         <div class="container">
-          <h1 class="title_big_font mb-5">Оформление заказа</h1>
-          <form action="#" class="">
+          <h1 class="title_big_font mb-4 mb-lg-5">Оформление заказа</h1>
+          <form action="#" class="form_select_options">
             <fieldset>
-              <div class="dop_filter_block">
-                <div class="d-flex align-items-center pl-lg-2 pt-lg-3">
+              <div class="dop_filter_block mt-lg-3 mb-lg-5">
+                <div class="d-flex align-items-center pl-lg-2">
                   <img class="img-fluid nums_title" src="img/num.png" alt="">
-                  <h2 class="title_block mb-lg-5"> Монтаж</h2>
+                  <h2 class="title_block mb-0"> Монтаж</h2>
                 </div>
-                <div class="dop_filter_item pt-lg-5">
+                <div class="dop_filter_item mt-lg-4 pb-0">
                   <label class="check_filter _radio">
-                    <input type="radio" name="montage">
+                    <input type="radio" name="montage" checked>
                     <span class="checked_montage"></span>
                     <div class="radio_item">
-                      <span class="radio_name">Стандартный монтаж</span>
-                      <div class="count_label mb-0">
+                      <span class="radio_name order-1">Стандартный монтаж</span>
+                      <div class="count_label mb-0 order-lg-2 order-3">
                         <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg" alt="счетчик минус"></button>
                         <input type="text" readonly class="count_input" value="2">
                         <button type="button" class="btn_count"><img class="img-fluid" src="svg/plus.svg" alt="счетчик плюс"></button>
                       </div>
-                      <span class="filtr_price"> 1380 ₽ </span> 
-                      <span class="old_gradient_price"> 1780 ₽</span>
-                      <span class="description_settings">При заказе более 1-го монтажа скидка 1000 руб. на каждый последующий</span>
+                      <span class="filtr_price order-lg-3 order-4"> 1380 ₽ </span> 
+                      <span class="old_gradient_price order-lg-4 order-5"> 1780 ₽</span>
+                      <span class="description_settings order-lg-5 order-2 mb-3 mb-lg-0">При заказе более 1-го монтажа скидка 1000 руб. на каждый последующий</span>
                     </div>
                   </label>
                 </div>
-                <div class="dop_filter_item pt-0">
+                <div class="dop_filter_item py-0">
                   <label class="check_filter _radio">
                     <input type="radio" name="montage">
                     <span class="checked_montage"></span>
                     <div class="radio_item">
-                      <span class="radio_name">Стандартный монтаж</span>
-                      <span class="filtr_price"> 1380 ₽ </span>
-                      <span class="old_gradient_price"> 1780 ₽</span>
-                      <span class="description_settings">При заказе более 1-го монтажа скидка 1000 руб. на каждый последующий</span>
+                      <span class="radio_name order-1">Нестандартный монтаж</span>
+                      <div class="count_label mb-0 order-lg-2 order-3">
+                        <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg" alt="счетчик минус"></button>
+                        <input type="text" readonly class="count_input" value="1">
+                        <button type="button" class="btn_count"><img class="img-fluid" src="svg/plus.svg" alt="счетчик плюс"></button>
+                      </div>
+                      <button type="button" class="btn_info order-lg-3 order-4"><img class="img-fluid" src="img/btn_quest.png" alt="">
+                        <div class="info_block_wrapper">
+                          <img class="img-fluid left_angle" src="svg/left_angle.svg" alt="">
+                          <div class="info_block_content">
+                            <p class="text_infoblock">Стоимость расчитывается индивидуально (после завершения заказа с вами свяжется менеджер; оплата за нестандартный монтаж
+                            производится отдельно от основного заказа)</p>
+                          </div>
+                        </div>
+                      </button>
+                      <span class="description_settings order-lg-4 order-2 mb-3 mb-lg-0">При заказе более 1-го монтажа скидка 1000 руб. на каждый последующий</span>
+                      
+                    </div>
+                  </label>
+                </div>
+                <div class="dop_filter_item pt-0 pb-2">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="montage">
+                    <span class="checked_montage"></span>
+                    <div class="radio_item">
+                      <span class="radio_name pt-md-1">Монтаж не требуется</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="dop_filter_item pt-0 pt-md-4">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="montage">
+                    <span class="checked_montage"></span>
+                    <div class="radio_item">
+                      <span class="radio_name">Требуются нестандартные решения</span><br>
+                      <span class="description_settings">Скрытое электрическое подключение, покраска внешней решетки</span>
+                    </div>
+                    <div class="download_file_block">
+                      <a href="#" download class="">
+                        <img class="img-fluid" src="svg/pdf.svg" alt="pdf file">
+                        <span>Полный прайс-лист на монтаж <img class="img-fluid" src="svg/blue_shevron.svg" alt=""></span>
+                      </a>  
+                    </div>
+                  </label>
+                </div>
+                <div class="d-flex align-items-center pl-lg-2">
+                  <img class="img-fluid nums_title" src="img/num_2.png" alt="">
+                  <h2 class="title_block mb-0"> Информация о покупателе</h2>
+                </div>
+                <div class="order_info_item">
+                  <label class="input_order done">
+                    <span class="name_input_form">Имя</span>
+                    <input class="input_form" type="name" name="" placeholder="Ваше имя">
+                  </label>
+                  <label class="input_order mt-4 mt-lg-0">
+                    <span class="name_input_form">Телефон для связи</span>
+                    <input class="input_form" type="mail" name="" placeholder="+7 (ххх) ххх-хх-хх">
+                  </label>
+                </div>
+                <div class="d-flex align-items-center pl-lg-2">
+                  <img class="img-fluid nums_title" src="img/num_3.png" alt="">
+                  <h2 class="title_block mb-0"> Способ доставки</h2>
+                </div>
+                <div class="dop_filter_item mt-lg-4 pb-0">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="delivery" checked>
+                    <span class="checked_montage deliv"></span>
+                    <div class="radio_item">
+                      <span class="radio_name">С установщиком</span>
+                      <span class="description_settings">Бесплатно при заказе услуги “Монтаж”</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="dop_filter_item py-0">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="delivery" checked>
+                    <span class="checked_montage deliv"></span>
+                    <div class="radio_item">
+                      <span class="radio_name">Самовывоз</span>
+                      <span class="description_settings">Адресс самовывоза: 150006 г. Ярославль, пр-т Фрунзе 57, 2 этаж, офис 203</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="dop_filter_item py-0">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="delivery" checked>
+                    <span class="checked_montage deliv"></span>
+                    <div class="radio_item">
+                      <span class="radio_name">Самовывоз или<br class="d-sm-none"> доставка до адреса</span>
+                      <img class="img-fluid drop_filter" src="img/cdek.png" alt="сдек">
+                    </div>
+                  </label>
+                </div>
+                <div class="dop_filter_item pt-4 pb-0">
+                  <label class="check_filter _radio">
+                    <input type="radio" name="delivery" checked>
+                    <span class="checked_montage deliv"></span>
+                    <div class="radio_item">
+                      <span class="radio_name">Доставка до адреса</span>
+                      <img class="img-fluid drop_filter" src="img/yandexgo.png" alt="яндекс go">
                     </div>
                   </label>
                 </div>
               </div>
-
+              <div class="d-flex align-items-center pt-5 pl-lg-2">
+                <img class="img-fluid nums_title" src="img/num_4.png" alt="">
+                <h2 class="title_block mb-0"> Адрес доставки и монтажа</h2>
+              </div>
+              <div class="order_info_item adress_form">
+                <label class="input_order city done">
+                  <span class="name_input_form">Населенный пункт</span>
+                  <input class="input_form" type="name" name="city" placeholder="Введите город">
+                </label>
+                <div class="d-flex align-items-end no_wrap justify-content-between w-100">
+                  <label class="input_order street error">
+                    <span class="name_input_form">Улица</span>
+                    <input class="input_form" type="text" name="street" placeholder="Кутузовскийт пр-т">
+                  </label>
+                  <label class="input_order home">
+                    <span class="name_input_form">Дом</span>
+                    <input class="input_form" type="text" name="home" placeholder="6">
+                  </label>
+                  <label class="input_order flat">
+                    <span class="name_input_form">Квартира</span>
+                    <input class="input_form" type="text" name="flat" placeholder="6">
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex align-items-center pt-lg-5 pl-lg-2">
+                <img class="img-fluid nums_title" src="img/num_5.png" alt="">
+                <h2 class="title_block mb-0"> Способ оплаты</h2>
+              </div>
+              <div class="dop_filter_item mt-lg-4 pb-0">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay" checked>
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">Картой онлайн</span>
+                    <span class="description_settings">Защищенный платеж</span>
+                  </div>
+                </label>
+              </div>
+              <div class="dop_filter_item py-0">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay" >
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">Через расчетный счет</span>
+                    <span class="description_settings">Для юридических лиц</span>
+                  </div>
+                </label>
+              </div>
+              <div class="dop_filter_item py-0">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay">
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">Наличными курьеру / установщику</span>
+                    <span class="description_settings"></span>
+                  </div>
+                </label>
+              </div>
+              <div class="dop_filter_item pt-3 py-0">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay">
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">Яндекс Деньги</span>
+                    <span class="yandex_many_item">
+                      <img class="img-fluid" src="img/many.png" alt="яндекс деньги">
+                      <span class="cashback">Кеш-бек <span class="red_num">1%</span></span>
+                    </span>
+                    <span class="description_settings"></span>
+                  </div>
+                </label>
+              </div>
+              <div class="dop_filter_item pt-3 py-0">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay">
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">В рассрочку без<br class="d-sm-none"> переплат</span>
+                    <img class="img-fluid drop_filter pay_logo" src="img/tkf.png" alt="Тинькофф">
+                    <span class="description_settings"></span>
+                  </div>
+                </label>
+              </div>
+              <div class="dop_filter_item pt-3 pb-5">
+                <label class="check_filter _radio">
+                  <input type="radio" name="pay">
+                  <span class="checked_montage deliv"></span>
+                  <div class="radio_item">
+                    <span class="radio_name">В рассрочку без<br class="d-sm-none"> переплат</span>
+                    <img class="img-fluid drop_filter pay_logo_2" src="img/halva.png" alt="Халва">
+                    <span class="description_settings"></span>
+                  </div>
+                </label>
+              </div>
+              <label class="checking_cart">
+                <input type="checkbox" name="current_goods">
+                <span class="checked"><img class="img-fluid" src="svg/green_gal.svg" alt=""></span>
+                <div class="checking_cart_item">
+                  <div class="your_select_wrapper mt-0">
+                    <div class="row">
+                      <div class="col-lg-2 col-sm-3 col-4 pr-0">
+                        <div class="white_bg">
+                          <img class="img-fluid brand_logo" src="svg/oxy 2.svg" alt="">
+                          <img class="img-fluid brand_item" src="img/oxy_briz.png" alt="бриз">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-sm-9 col-8 pl-0 pl-lg-3">
+                        <div class="description_selected">
+                          <p class="name_goods w-100 mb-0">OXY</p>
+                          <div class="description_goods_card ">
+                            <ul class="specifications">
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Суперочистка
+                                </span>
+                              </li>
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Тихий
+                                </span>
+                              </li>
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Премиум
+                                </span>
+                              </li>
+                            </ul>
+                            <div class="dscript_specification d-none d-lg-flex">
+                              <p class="mb-0">Есть встроенный ионизатор, УФ лампа, ароматизатор, нагрев, подходит<br> аллергикам. 2в1:
+                                . <a href="#" class="more">Подробнее <img class="img-fluid pl-1" src="svg/shevron_more.svg"
+                                    alt="подробнее"></a></p>
+                            </div>
+                            <div class="price_col">
+                              <div class="price_block">
+                                <span class="current_price">3 990 ₽</span>
+                                <div class="stock_price">
+                                  <s class="red_old_price pr-1">5 990 ₽</s>
+                                  <span class="persent_stock">- 12 %</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="count_col count_position">
+                              <span class="count_goods_select">1 шт</span>
+                            </div>
+                          </div>
+                          <div class="bottom_item_card">
+                            <p class="white_bg_shaadows mini_gray_text bg_gradient_card order-lg-1 order-4 mb-0"><span
+                                class="d-none d-lg-inline-block">Частями по 200 руб / мес</p>
+                            <a href="#" class="link_comments_goods order-lg-2 order-1">6 отзывов</a>
+                            <span class="raiting_goods order-lg-3 order-2">
+                              <img class="img-fluid pr-1" src="img/star.png" alt="рейтинг">
+                              <span class="gradient_text">5.0</span>
+                            </span>
+                            <a href="#" class="more d-lg-none order-3">Подробнее <img class="img-fluid pl-1"
+                                src="svg/shevron_more.svg" alt="подробнее"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="checking_cart">
+                <input type="checkbox" name="current_goods">
+                <span class="checked"><img class="img-fluid" src="svg/green_gal.svg" alt=""></span>
+                <div class="checking_cart_item">
+                  <div class="your_select_wrapper mt-0">
+                    <div class="row">
+                      <div class="col-lg-2 col-sm-3 col-4 pr-0">
+                        <div class="white_bg">
+                          <img class="img-fluid brand_logo" src="svg/oxy 2.svg" alt="">
+                          <img class="img-fluid brand_item pt-3" src="img/filtr_cart.png" alt="бриз">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-sm-9 col-8 pl-0 pl-lg-3">
+                        <div class="description_selected">
+                          <p class="name_goods w-100 mb-0">Угольный фильтр от запахов</p>
+                          <div class="description_goods_card type_motag">
+                            <!-- <ul class="specifications">
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Суперочистка
+                                </span>
+                              </li>
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Тихий
+                                </span>
+                              </li>
+                              <li class="specifications_item">
+                                <span>
+                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                    <rect width="0.59792" height="2.95763" rx="0.29896"
+                                      transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                    <rect width="0.598119" height="4.84098" rx="0.29906"
+                                      transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                  </svg>
+                                  Премиум
+                                </span>
+                              </li>
+                            </ul> -->
+                            <div class="dscript_specification d-flex">
+                              <p class="mb-0">Есть встроенный ионизатор, УФ <span class="d-lg-none">...</span><span class="d-none d-lg-block"> лампа, ароматизатор, нагрев, подходит аллергикам. 2в1: работает и как приточная
+                              вентиляция, и как рециркулятор.</span></p>
+                            </div>
+                            <div class="price_col">
+                              <div class="price_block">
+                                <span class="current_price">890 ₽</span>
+                                <!-- <div class="stock_price">
+                                  <s class="red_old_price pr-1">1 890 ₽</s>
+                                  <span class="persent_stock">- 12 %</span>
+                                </div> -->
+                              </div>
+                            </div>
+                            <div class="count_col">
+                              <!-- <form action="" class="">
+                                <fieldset>
+                                  <label class="count_label mb-0">
+                                    <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg"
+                                        alt="счетчик минус"></button>
+                                    <input type="text" readonly class="count_input" value="1">
+                                    <button type="button" class="btn_count"><img class="img-fluid" src="svg/plus.svg"
+                                        alt="счетчик плюс"></button>
+                                  </label>
+                                </fieldset>
+                              </form> -->
+                              <span class="count_goods_select">1 шт</span>
+                            </div>
+                          </div>
+                          <div class="bottom_item_card">
+                            <p class="white_bg_shaadows mini_gray_text bg_gradient_card order-lg-1 order-4 mt-3 mb-0"><span
+                                class="d-none d-lg-inline-block">Частями по 200 руб / мес</p>
+                            <!-- <a href="#" class="link_comments_goods order-lg-2 order-1">6 отзывов</a>
+                            <span class="raiting_goods order-lg-3 order-2">
+                              <img class="img-fluid pr-1" src="img/star.png" alt="рейтинг">
+                              <span class="gradient_text">5.0</span>
+                            </span>
+                            <a href="#" class="more d-lg-none order-3">Подробнее <img class="img-fluid pl-1"
+                                src="svg/shevron_more.svg" alt="подробнее"></a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="checking_cart">
+                <input type="checkbox" name="current_goods">
+                <span class="checked"><img class="img-fluid" src="svg/green_gal.svg" alt=""></span>
+                <div class="checking_cart_item">
+                  <div class="your_select_wrapper mt-0">
+                    <div class="row">
+                      <div class="col-lg-2 col-sm-3 col-4 pr-0">
+                        <div class="white_bg pb-0">
+                          <img class="img-fluid brand_item pt-3" src="img/man.png" alt="монтаж">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-sm-9 col-8 pl-0 pl-lg-3">
+                        <div class="description_selected">
+                          <p class="name_goods w-100 mb-0">Стандартный монтаж</p>
+                          <div class="description_goods_card type_motag">
+                            <div class="dscript_specification d-flex">
+                              <p class="mb-0">Есть встроенный ионизатор, УФ<span class="d-lg-none">...</span><span class="d-none d-lg-block"> лампа, ароматизатор, нагрев, подходит аллергикам. 2в1: работает и как приточная
+                              вентиляция, и как рециркулятор.</span></p>
+                            </div>
+                            <div class="price_col">
+                              <div class="price_block">
+                                <span class="current_price min"><span>0 р</span><br class="d-lg-none"> (Оплата отдельно после уточнения)</span>
+                                <!-- <div class="stock_price">
+                                                <s class="red_old_price pr-1">1 890 ₽</s>
+                                                <span class="persent_stock">- 12 %</span>
+                                              </div> -->
+                              </div>
+                            </div>
+                            <div class="count_col">
+                              <!-- <form action="" class="">
+                                <fieldset>
+                                  <label class="count_label mb-0">
+                                    <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg"
+                                        alt="счетчик минус"></button>
+                                    <input type="text" readonly class="count_input" value="1">
+                                    <button type="button" class="btn_count"><img class="img-fluid" src="svg/plus.svg"
+                                        alt="счетчик плюс"></button>
+                                  </label>
+                                </fieldset>
+                              </form> -->
+                              <span class="count_goods_select">2 шт</span>
+                            </div>
+                          </div>
+                          <div class="bottom_item_card">
+                            <p class="white_bg_shaadows mini_gray_text bg_gradient_card order-lg-1 order-4 mt-3 mb-0"><span
+                                class="d-none d-lg-inline-block">Частями по 200 руб / мес</p>
+                            <!-- <a href="#" class="link_comments_goods order-lg-2 order-1">6 отзывов</a>
+                            <span class="raiting_goods order-lg-3 order-2">
+                              <img class="img-fluid pr-1" src="img/star.png" alt="рейтинг">
+                              <span class="gradient_text">5.0</span>
+                            </span>
+                            <a href="#" class="more d-lg-none order-3">Подробнее <img class="img-fluid pl-1"
+                                src="svg/shevron_more.svg" alt="подробнее"></a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
               <div class="total_order_block">
                 <span class="big_font_gray">Итого:</span>
-                <span class="total_order_proce">4 880 ₽</span>
+                <span class="total_order_proce">6 260 ₽</span>
               </div>
               <div class="end_block_btns">
-                <button type="submit" class="btn_add_cart gradient_btn_other"><span>Добавить товар в корзину <img
+                <button type="submit" class="btn_add_cart gradient_btn_other"><span>Оплатить заказ <img
                       class="img-fluid" src="svg/right_shevron_white.svg" alt=""></span></button>
-                <a href="#" class="other_goods_link">Выбрать другой товар <img class="img-fluid"
-                    src="svg/blue_shevron.svg" alt=""></a>
               </div>
             </fieldset>
           </form>
