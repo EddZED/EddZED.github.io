@@ -1520,7 +1520,8 @@ body { font-family: 'Montserrat_medium'; }
   .best_sales .slider_cards_goods .slick-prev, .best_sales .slider_cards_goods .slick-next { -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
   .best_sales .slider_cards_goods .slick-next { right: -52px; }
   .accordion { padding-left: 10px; }
-  .header.active .phone_header { font-size: 20px; line-height: 24px; color: #000; opacity: .74; } }
+  .header.active .phone_header { font-size: 20px; line-height: 24px; color: #000; opacity: .74; }
+  .briz_img { margin-top: -55px; } }
 
 @media (min-width: 1100px) and (max-width: 1199px) { .container.first_intro { max-width: 1070px; } }
 

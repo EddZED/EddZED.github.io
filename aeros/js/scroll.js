@@ -150,9 +150,9 @@ $(document).ready(function() {
 			// 	.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 			// 	.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#scrolling_box", duration: 1500, offset: -100, triggerHook: 0})
-				.setPin("#scrolling_box")					
-				.addTo(controller);	
+			// new ScrollMagic.Scene({triggerElement: "#scrolling_box", duration: 1500, offset: -100, triggerHook: 0})
+			// 	.setPin("#scrolling_box")					
+			// 	.addTo(controller);	
 
 			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#about_us h3.title_block", 1, {opacity: 0, y: 40}))		
@@ -160,29 +160,29 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#about_us h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 450*3, triggerHook: 0.1})
-				.setTween(TweenMax.to("#about_us h3.title_block", 1, {opacity: 0, y: -40}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 500*3, triggerHook: 0.3})
-				.setTween(TweenMax.to("#about_us h2.light_gray_title", 1, {opacity: 0, y: -100}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 450*3, triggerHook: 0.1})
+			// 	.setTween(TweenMax.to("#about_us h3.title_block", 1, {opacity: 0, y: -40}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 500*3, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#about_us h2.light_gray_title", 1, {opacity: 0, y: -100}))		
+			// 	.addTo(controller);
 			// new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 300, triggerHook: 0.3})
 			//  	.setTween(TweenMax.to("#about_us .block_item_about:nth-of-type(1)", 1, {opacity: 0, y: 0, xPercent: 0}))		
 			//  	.addTo(controller);
-			var wipeAnimation = new TimelineMax().from("#cont_item .first_item", 1, {y: "100%"}).from("#cont_item .first_item", 0.5, {x: "100%"})	
-			new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "100%"})
-				.setTween(wipeAnimation)
-				.addTo(controller);
+			// var wipeAnimation = new TimelineMax().from("#cont_item .first_item", 1, {y: "100%"}).from("#cont_item .first_item", 0.5, {x: "100%"})	
+			// new ScrollMagic.Scene({triggerElement: "#about_us",	triggerHook: "onLeave",	duration: "100%"})
+			// 	.setTween(wipeAnimation)
+			// 	.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 250*3, triggerHook: 0})
-				.setTween(TweenMax.from("#cont_item .other_panel", 1, {opacity: 0, y: 600}))		
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 0, triggerHook: 0.3})
+				.setTween(TweenMax.from("#cont_item .block_item_about", 1, {opacity: 0, y: 600}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 1000*2, triggerHook: 0.1})
-				.setTween(TweenMax.to("#cont_item .other_panel", 1, {opacity: 0, y: -600}))		
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 500, triggerHook: 0.1})
+				.setTween(TweenMax.to("#cont_item .block_item_about", 1, {opacity: 0, y: -600}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 1000*2, triggerHook: 0.1})
-				.setTween(TweenMax.to("#cont_item .first_item", 1, {opacity: 0, y: -600}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#about_us", duration: 400, offset: 1000*2, triggerHook: 0.1})
+			// 	.setTween(TweenMax.to("#cont_item .first_item", 1, {opacity: 0, y: -600}))		
+			// 	.addTo(controller);
 
 
 
