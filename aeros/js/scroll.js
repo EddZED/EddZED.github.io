@@ -83,9 +83,9 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 200, triggerHook: 0.4})
 				.setTween(TweenMax.to("#banner_body .banner", 1, {opacity: 0, y: -150}))				
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.5})
-				.setTween(TweenMax.from("#new_goods p.sub_title_block", 1, {opacity: 0, y: 100}))				
-				.addTo(controller);	
+			// new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.5})
+			// 	.setTween(TweenMax.from("#new_goods p.sub_title_block", 1, {opacity: 0, y: 100}))				
+			// 	.addTo(controller);	
 			// new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: -200, triggerHook: 0.3})
 			// 	.setTween(TweenMax.from("#new_goods .image_slider_item img", 1, {opacity: 0, y: 100}))				
 			// 	.addTo(controller);				
@@ -150,14 +150,14 @@ $(document).ready(function() {
 				.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 				.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 1500, offset: 0, triggerHook: 0})
-				.setPin("#about_us")					
+			new ScrollMagic.Scene({triggerElement: "#scrolling_box", duration: 1500, offset: -100, triggerHook: 0})
+				.setPin("#scrolling_box")					
 				.addTo(controller);	
 
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: -200, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#about_us h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: -100, triggerHook: 0.4})
+			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#about_us h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#about_us", duration: 300, offset: 450*3, triggerHook: 0.1})
@@ -251,12 +251,16 @@ $(document).ready(function() {
 			.setTween(TweenMax.to("#filials .our_map", 1, {opacity: 0, scale: 0.5}))
 			.addTo(controller);
 
-		// 	var timelinegray = new TimelineMax();
-		// timelinegray.add(TweenMax.from("#trust .wrap_company_block", 1, { 'filter': 'grayscale(100%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(50%)'})).add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(0%)'}));
-
-			new ScrollMagic.Scene({triggerElement: "#trust", duration: 400, offset: 100, triggerHook: 0.7})
-				.setTween(TweenMax.from("#trust .wrap_company_block", 1, {opacity: 0, y: 100, 'filter': 'grayscale(100%)'}))		
-				.addTo(controller);
+			var timelinegray = new TimelineMax();
+		timelinegray.add(TweenMax.from("#trust .wrap_company_block", 1, { 'filter': 'grayscale(100%)'}))
+		.add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(50%)'}))
+		.add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(0%)'}));
+		new ScrollMagic.Scene({triggerElement: "#trust .wrap_company_block", duration: 300, offset: 280, triggerHook: 1})
+			.setTween(timelinegray)	
+			.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#trust", duration: 400, offset: 100, triggerHook: 0.7})
+			// 	.setTween(TweenMax.from("#trust .wrap_company_block", 1, {opacity: 0, y: 100, 'filter': 'grayscale(100%)'}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#trust", duration: 300, offset: 500, triggerHook: 0.4})
 				.setTween(TweenMax.to("#trust .wrap_company_block", 1, {opacity: 0, y: -100}))		
 				.addTo(controller);
