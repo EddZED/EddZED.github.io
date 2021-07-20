@@ -34,6 +34,7 @@
     padding: 40px  0px  30px  0px;
     display:flex;
     align-items:flex-end;
+    background-position:0;
   }
 }
 .white_big_title{
@@ -55,6 +56,32 @@
   @media(max-width:991px){
     font-size:20px;
     line-height:24px;
+  }
+}
+.mobile_search_page{
+  padding-top:68px;
+  .search_banner{
+    margin-bottom:18px;
+    .search_input{
+      width:100%;
+      height:46px;
+      margin-bottom:0;
+      input{
+        height:100%;
+        font-size:15px;
+        line-height:18px;
+        color: rgba(0, 0, 0, 0.45);
+        padding: 7px  15px  9px  15px;
+        background: #FFFFFF;
+        box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.25);
+      }
+      .search_btn{
+        right:10px;
+      }
+    }
+  }
+  @media(min-width:992px){
+    display:none;
   }
 }
 .search_item_banner{
@@ -207,3 +234,52 @@
     }
   }
 }
+.breadcrumb{
+  margin-bottom:0;
+  background-color:transparent;
+  padding: 33px  0px  33px  0px;
+  .breadcrumb-item{
+    color:#5D5D5D;
+    font-size:14px;
+    line-height:100.9%;
+    font-family:"Montserrat_medium";
+    a{
+      color:inherit;
+      font-family:inherit;
+    }
+  }
+  .breadcrumb-item+.breadcrumb-item{
+    position:relative;
+    padding-left:50px;
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    content: '';
+    position:absolute;
+    background-image:url(../svg/bread_shevron.svg);
+    background-size:cover;
+    width:7px;
+    height:12px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    display:inline-block;
+    float:none;
+    left:21px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
