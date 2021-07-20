@@ -98,7 +98,7 @@ $(document).ready(function() {
 			// new ScrollMagic.Scene({triggerElement: "#new_goods .green_label", duration: 500, offset: 0, triggerHook: 0.3})
 			// 	.setTween(TweenMax.to("#new_goods .green_label", 1, {opacity: 0, x: 50}))				
 			// 	.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 1400, offset: 0, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 1000, offset: 0, triggerHook: 0})
 				.setPin("#test_drive")					
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: -100, triggerHook: 0.5})
@@ -110,15 +110,15 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: -300, triggerHook: 0.1})
 				.setTween(TweenMax.from("#test_drive .gradient_text", 1, {opacity: 0, y: 150}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 300*3, triggerHook: 0.1})
-				.setTween(TweenMax.to("#test_drive h3.title_block", 1, {opacity: 0, y: -40}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 350*3, triggerHook: 0.3})
-				.setTween(TweenMax.to("#test_drive h2.light_gray_title", 1, {opacity: 0, y: -100}))		
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 450*3, triggerHook: 0.1})
-				.setTween(TweenMax.to("#test_drive .gradient_text", 1, {opacity: 0, y: -150}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 300*3, triggerHook: 0.1})
+			// 	.setTween(TweenMax.to("#test_drive h3.title_block", 1, {opacity: 0, y: -40}))		
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 350*3, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#test_drive h2.light_gray_title", 1, {opacity: 0, y: -100}))		
+			// .addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 200, offset: 450*3, triggerHook: 0.1})
+			// 	.setTween(TweenMax.to("#test_drive .gradient_text", 1, {opacity: 0, y: -150}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 500, offset: -200, triggerHook: 0.5})
 				.setTween(TweenMax.from("#test_drive .left_item_decor", 1, {opacity: 0, x: -100}))		
 				.addTo(controller);
@@ -128,9 +128,9 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 400, triggerHook: 0.1})
 				.setTween(TweenMax.from("#test_drive .wrapper_blur", 1, {opacity: 0}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 700*2, triggerHook: 0.2})
-				.setTween(TweenMax.to("#test_drive .wrapper_blur", 1, {opacity: 0}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 700*2, triggerHook: 0.2})
+			// 	.setTween(TweenMax.to("#test_drive .wrapper_blur", 1, {opacity: 0}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#test_drive .right_item_decor", 1, {opacity: 1, x: 100}))		
 				.addTo(controller);
@@ -140,15 +140,15 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 500, triggerHook: 0.3})
 				.setTween(TweenMax.from("#test_drive .briz_img", 1, {opacity: 0, y: 600}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 700*2, triggerHook: 0.4})
-				.setTween(TweenMax.to("#test_drive .briz_img", 1, {opacity: 0, y: -600}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 700*2, triggerHook: 0.4})
+			// 	.setTween(TweenMax.to("#test_drive .briz_img", 1, {opacity: 0, y: -600}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 300, triggerHook: 0.3})
 				.setTween(TweenMax.from("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 500*3, triggerHook: 0.3})
-				.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 600, offset: 500*3, triggerHook: 0.3})
+			// 	.setTween(TweenMax.to("#test_drive .green_label_big", 1, {opacity: 1, x: 400}))		
+			// 	.addTo(controller);
 
 			new ScrollMagic.Scene({triggerElement: "#scrolling_box", duration: 1500, offset: -100, triggerHook: 0})
 				.setPin("#scrolling_box")					
@@ -191,10 +191,10 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 2600, offset: 0, triggerHook: 0})
 				.setPin("#filials")					
 				.addTo(controller);	
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -200, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 200, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#filials h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: -400, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#filials", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#filials h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#filials", duration: 300, offset: 570*4, triggerHook: 0.1})
@@ -269,10 +269,10 @@ $(document).ready(function() {
 			// new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 800, offset: 0, triggerHook: 0})
 			// 	.setPin("#recomend_reading")	
 			// 	.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -100, triggerHook: 0.5})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 200, offset: -100, triggerHook: 0.5})
 				.setTween(TweenMax.from("#recomend_reading h3.title_block", 1, {opacity: 0, y: 40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: -200, triggerHook: 0.3})
+			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 200, offset: -200, triggerHook: 0.3})
 				.setTween(TweenMax.from("#recomend_reading h2.light_gray_title", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 400, triggerHook: 0.1})

@@ -27,7 +27,6 @@ $maxWidthContainer: 1170;
 		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 	}
 }
-
 .preload * {-webkit-transition: none !important;-moz-transition: none !important;-ms-transition: none !important;-o-transition: none !important;}
 .wrapper{overflow-x:hidden;overflow-y:auto;position:relative;}
 .header{position:absolute;width:100%;left:0;top:0;}
@@ -210,7 +209,7 @@ $maxWidthContainer: 1170;
 .screen_three .right_cloud{right:-90px;bottom:10px;top:auto;width:200px;}
 .screen_three .right_cloud::before{width:34px;height:31px;background-image:url(../svg/cloud_triangle.svg);transform:rotateZ(-90deg);bottom:auto;top:0;right:auto;left:-30px;}
 .nav_slider{position:absolute;width:100%;bottom: 100px;}
-.screen_four .left_cloud{width:200px;top:auto;bottom:24px;left:-50px;}
+.screen_four .left_cloud{width:200px;top:auto;bottom:24px;left:-30px;}
 .screen_four .right_cloud{width:163px;top:100px;bottom:auto;right:-110px;}
 .screen_four .right_cloud:before{width:28px;height:28px;background-image:url(../svg/cloud_triangle_3.svg);bottom:auto;top:-13px;left:-13px;}
 .test_section{background:linear-gradient(0deg, #F8F9FE, #F8F9FE);width:100%;padding:80px 0;}
@@ -284,8 +283,8 @@ $maxWidthContainer: 1170;
 .test_drive{padding:80px 0 90px;background-color:#F8F9FE;position:relative;}
 .middle_text{font-size:24px;line-height:29px;font-family:'Montserrat_reg';}
 .middle_text.gradient_text{background: linear-gradient(90.45deg, #F71212 5.23%, #F48120 64.44%);-webkit-background-clip: text;}
-.wrapper_blur{width:336px;height:443px;position:absolute;right:0;top:0; background: linear-gradient(92.58deg, rgba(247, 18, 18, 0.7) -14.51%, rgba(228, 158, 15, 0.7) 82.83%, rgba(255, 233, 34, 0.7) 139.94%);filter: blur(190px);border-radius: 10px;z-index:0;}
-.briz_img{pointer-events:none;}
+.wrapper_blur{width:336px;height:443px;position:absolute;right:0;top:0; background: linear-gradient(92.58deg, rgba(247, 18, 18, 0.7) -14.51%, rgba(228, 158, 15, 0.7) 82.83%, rgba(255, 233, 34, 0.7) 139.94%);filter: blur(190px);border-radius: 10px;z-index:0;will-change:opacity;}
+.briz_img{pointer-events:none;will-change:transform;}
 .wrapper_img_box{position:relative;z-index:1}
 .blue_link_content{display:flex;align-items:center;justify-content:flex-end;text-align:right;font-size:20px;line-height:24px;color:#31ACE4;font-family:'Montserrat_medium';}
 .about_us .blue_link_content{display:flex;align-items:center;justify-content:flex-end;text-align:right;font-size:13px;line-height:16px;color:#31ACE4;font-family:'Montserrat_medium';}
@@ -301,7 +300,7 @@ $maxWidthContainer: 1170;
 .about_us{width:100%;padding:40px 0 80px;}
 .scrolling_box{position:relative;margin-top:66px;text-align:center;}
 .scrolling_box .scrolling_box_bg{object-fit:cover;filter:drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.25));border-radius:10px;}
-.block_item_about{display:flex;align-items:center;justify-content:space-between;height:247px;width:279px;flex-direction:column;text-align:center;background-color:rgba(255,255,255,.9);border-radius:10px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);margin-bottom:40px;padding:30px 15px;}
+.block_item_about{display:flex;align-items:center;justify-content:space-between;height:247px;width:279px;flex-direction:column;text-align:center;background-color:rgba(255,255,255,.9);border-radius:10px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);margin-bottom:40px;padding:30px 15px;will-change:transform;}
 .wrapper_block_scroll{position:absolute;height:100%;width:100%;left:0;top:0;z-index:1;display:flex;align-items:center;justify-content:center;padding:0 100px;}
 .name_about{font-size:19px;line-height:23px;color:#000;font-family:'Montserrat_medium';}
 .gray_text{font-size:14px;line-height:17px;color:rgba(0,0,0,.5);font-family:'Montserrat_semibold';}
@@ -493,6 +492,7 @@ $maxWidthContainer: 1170;
   .container.min_assort_block{padding:0 85px;}
   .slider_cards_goods .slick-prev{left:-38px;}
   .best_sales .slider_cards_goods .slick-prev, .best_sales .slider_cards_goods .slick-next{transform:translateY(-100%);}
+  .best_sales .slider_cards_goods .slick-next{right:-52px;}
   .accordion{padding-left:10px;}
   .header.active .phone_header{font-size:20px;line-height:24px;color:#000;opacity:.74;}
 }
