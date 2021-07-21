@@ -267,6 +267,23 @@
     left:21px;
   }
 }
+.bread_crumb{
+  @media(max-width:991px){
+    display:none;
+  }
+}
+.bread_crumb_mobile{
+  .breadcrumb-item{
+    color:#fff;
+    font-size:14px;
+    line-height:100.9%;
+    font-family:"Montserrat_medium";
+    a{
+      color:inherit;
+      font-family:inherit;
+    }
+  }
+}
 
 
 

@@ -91,7 +91,7 @@ $maxWidthContainer: 1170;
 .dropdown_menu_link:hover .wrapper_min_banner{opacity:1;visibility:visible;}
 .dropdown_menu_link:hover .text_block_banner{visibility:visible;opacity:1;}
 .dropdown_menu_link:hover .gradient_btn{visibility:visible;opacity:1;}
-.dropdown_menu_wrapper_2{position:absolute;top:100%;padding:20px 20px 0;opacity:0;visibility:hidden;transition:all .3s;transition-delay:.1s;z-index:99;}
+.dropdown_menu_wrapper_2{position:absolute;top:100%;padding:20px 20px 0;opacity:0;visibility:hidden;transition:opacity .1s;z-index:99;}
 .dropdown_menu_2{background-color:#fff;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:5px;padding:15px 30px 15px 20px;list-style:none;}
 .dropdown_menu_link_2{display:inline-flex;align-items:center;font-size:12px;line-height:15px;color:rgba(0, 0, 0, 0.7);font-family:'Montserrat_reg';transition:all .3s;}
 .dropdown_menu_link_2:hover{text-decoration:none;color:#000;color:rgba(0, 0, 0, 1);}
@@ -641,7 +641,7 @@ $maxWidthContainer: 1170;
   .mobile_icon{display:block;width:35px;text-align:center;}
   .dropdown_menu_wrapper{transform:translateY(0);position:relative;opacity:1;visibility:visible;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;}
   .dropdown_menu_wrapper.active{max-height:9999px;visibility:visible;}
-  .dropdown_menu_wrapper_2{transform:translateY(0);position:relative;opacity:1;visibility:visible;box-shadow:none;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .5s;transition-delay:.2s;width:100%;}
+  .dropdown_menu_wrapper_2{transform:translateY(0);position:relative;opacity:1;visibility:visible;box-shadow:none;padding:0;background-color:#EBEBEB;max-height:0;visibility:hidden;overflow:hidden;transition:all .1s;;width:100%;}
   .dropdown_menu_wrapper_2.active{max-height:9999px;visibility:visible;}
   .dropdown_menu{flex-direction:column;background-color:#EBEBEB;}
   .dropdown_menu_item{flex:1 1 auto;border-top:1px solid #3B3B3A;}
