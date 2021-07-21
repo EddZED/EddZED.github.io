@@ -259,6 +259,8 @@ body { font-family: 'Montserrat_medium'; }
 
 .slider_nav_body { background-color: white; padding: 20px 10px 20px 19px; min-height: 100%; -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); cursor: pointer; position: relative; overflow: hidden; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
 
+.slider_nav_body:focus { outline: none; }
+
 .intro_slider_nav { margin-top: -77px; }
 
 .intro_slider_nav.slick-slider .slick-track, .intro_slider_nav.slick-slider .slick-list { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 5px 5px 6px; }
