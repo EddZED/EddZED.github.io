@@ -77,12 +77,12 @@ $(document).ready(function() {
 			// new ScrollMagic.Scene({triggerElement: "#available_test_drive .green_label", duration: 500, offset: -100, triggerHook: 0.2})
 			// 	.setTween(TweenMax.to("#available_test_drive .green_label", 1, {opacity: 0, x: 50}))				
 			// 	.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 0, triggerHook: 0.6})
-				.setTween(TweenMax.from("#banner_body .banner", 1, {opacity: 0, y: 150}))
-				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 200, triggerHook: 0.4})
-				.setTween(TweenMax.to("#banner_body .banner", 1, {opacity: 0, y: -150}))				
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 0, triggerHook: 0.6})
+			// 	.setTween(TweenMax.from("#banner_body .banner", 1, {opacity: 0, y: 150}))
+			// 	.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#banner_body", duration: 300, offset: 200, triggerHook: 0.4})
+			// 	.setTween(TweenMax.to("#banner_body .banner", 1, {opacity: 0, y: -150}))				
+			// 	.addTo(controller);
 			// new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.5})
 			// 	.setTween(TweenMax.from("#new_goods p.sub_title_block", 1, {opacity: 0, y: 100}))				
 			// 	.addTo(controller);	
