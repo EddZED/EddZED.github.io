@@ -1558,6 +1558,14 @@ body { font-family: 'Montserrat_medium'; }
 
 .wrapper_gray .bottom_block .sort { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 15px; line-height: 100.9%; color: #565656; font-family: "Montserrat_semibold"; }
 
+.wrapper_gray .bottom_block .sort .my_select { position: relative; border: none; outline: none; background-color: transparent; color: #31ACE4; font-size: 15px; line-height: 100.9%; font-family: "Montserrat_medium"; cursor: pointer; }
+
+.wrapper_gray .bottom_block .btn_view { border: none; background-color: transparent; outline: none; padding: 0; }
+
+.wrapper_gray .bottom_block .btn_view svg g { -webkit-transition: opacity .2s; -o-transition: opacity .2s; transition: opacity .2s; }
+
+.wrapper_gray .bottom_block .btn_view:hover svg g { opacity: 1; }
+
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 850px; } }
 
 @media (min-width: 1440px) { .container.first_intro { max-width: 1320px; } }
