@@ -3321,7 +3321,7 @@
           <a href="#" class="">1</a>
         </div>
         <div class="total_block">
-          <a href="#" class="">10</a>
+          <a id="totalBlock" href="#banner_sldiers_section" class=""></a>
         </div>
       </div>
       <div class="up_link">
@@ -3391,6 +3391,12 @@
     $('.stat_goods').click(function(){
       $(this).toggleClass('active');
     });
+  </script>
+  <script>
+    const totalPage = document.querySelectorAll('.content section');
+        totalEl = totalPage.length;    
+    let totalIndex = document.querySelector('#totalBlock');
+        totalIndex.textContent = totalEl;
   </script>
 </body>
 </html>
