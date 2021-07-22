@@ -149,6 +149,7 @@ $maxWidthContainer: 1170;
 .slide_five.img_right{background-image:url(../img/bg_10.jpg);}
 .slider_nav_item:not(:last-of-type){padding-right:4px;}
 .slider_nav_item{min-height:100%;}
+.slider_nav_item:focus{outline:none;}
 .slider_nav_body{background-color:rgba(255,255,255,1);padding:20px 10px 20px 19px;min-height:100%;box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);cursor:pointer;position:relative;overflow:hidden;transition:all .3s;}
 .slider_nav_body:focus{outline:none;}
 .intro_slider_nav{margin-top:-77px;}
