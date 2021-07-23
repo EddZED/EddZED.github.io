@@ -899,7 +899,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .form_btn { font-size: 11px; line-height: 13px; padding: 9px 33px; width: auto; margin-left: 25px; }
 
-.navigation_page { position: fixed; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 49px; }
+.navigation_page { position: fixed; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 49px; z-index: 999999; }
 
 .navigation_page .count_blocks { background-color: #fff; -webkit-box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25); box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25); border-radius: 10px 0 0 10px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 

@@ -476,6 +476,7 @@ $maxWidthContainer: 1170;
   top:50%;
   transform:translateY(-50%);
   width:49px;
+  z-index:999999;
   .count_blocks{
       background-color:#fff;
       box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
