@@ -1172,7 +1172,7 @@
           </div>
         </div>
       </section>
-      <section class="d-lg-none text_description_slider">
+      <div class="d-lg-none text_description_slider">
         <div class="container">
           <ul class="list_answers">
             <li>
@@ -1192,7 +1192,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
       <section id="test_section" class="test_section">
         <div class="container">
           <h2 class="light_gray_title">Пройдите тест и узнайте</h2>
@@ -3318,7 +3318,7 @@
     <div class="navigation_page">
       <div class="count_blocks">
         <div class="current_block">
-          <a href="#" class="">1</a>
+          <a id="currentBlock" href="#" class="">1</a>
         </div>
         <div class="total_block">
           <a id="totalBlock" href="#banner_sldiers_section" class=""></a>
@@ -3397,6 +3397,21 @@
         totalEl = totalPage.length;    
     let totalIndex = document.querySelector('#totalBlock');
         totalIndex.textContent = totalEl;
+  </script>
+  <script>
+    var header = $('.header_wrapper'),
+        scrollPrev = 0;
+
+      $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+
+        if (scrolled > 100 && scrolled > scrollPrev) {
+          header.addClass('out');
+        } else {
+          header.removeClass('out');
+        }
+        scrollPrev = scrolled;
+      });
   </script>
 </body>
 </html>

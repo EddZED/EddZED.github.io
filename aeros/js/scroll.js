@@ -19,8 +19,19 @@ $(document).ready(function() {
 
 			//new ScrollMagic.Scene({triggerElement: "#numbers", duration: 500, offset: 0, triggerHook: 0})
 			//	.setPin("#numbers")	
-			//	.addTo(controller);			
+			//	.addTo(controller);
+			// const totalPage2 = document.querySelectorAll('.content section');
+      //   totalEl2 = totalPage2.length;
+			// 	for(i = 0; i < totalEl2; i++){
+      //     new ScrollMagic.Scene({triggerElement: ".content section:nth-of-type(" + i+1 + ")", duration: 0, offset: 0, triggerHook: 1})
+			// 			.setClassToggle(".content section:nth-of-type(" + i+1 + ")" , "active")
+			// 			// .setTween(TweenMax.from(".content section", 1))
+			// 			.addTo(controller);				
+			// 			console.log(i);		
+      //   };
+			// 	console.log(totalEl2);
 					
+
 			new ScrollMagic.Scene({triggerElement: "#answer", duration: 400, offset: 0, triggerHook: 0.5})
 				.setTween(TweenMax.from("#answer h2.title_block", 1, {opacity: 0, y: 0}))		
 				.addTo(controller);

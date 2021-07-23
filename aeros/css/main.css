@@ -923,6 +923,8 @@ body { font-family: 'Montserrat_medium'; }
 
 .navigation_page .up_link a:hover { text-decoration: none; }
 
+.content section:nth-of-type(3) { background-color: #000; }
+
 /* style two page */
 /* ************** */
 .header.page_two .menu_link { color: #323232; }
@@ -1803,7 +1805,7 @@ body { font-family: 'Montserrat_medium'; }
   .link_icon_menu svg rect { stroke: #3B3B3A; fill: #3B3B3A; }
   .link_icon_menu svg ellipse { fill: #3B3B3A; }
   .link_icon_menu svg path { fill: #3B3B3A; }
-  .link_icon_menu { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; padding: 7px 0; }
+  .link_icon_menu { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; padding: 10px 0; }
   .name_icon { font-size: 10px; line-height: 12px; color: rgba(26, 26, 26, 0.8); font-family: 'Montserrat_reg'; display: inline-block; padding-top: 3px; }
   .quentity { width: 10px; height: 10px; font-size: 7px; }
   .link_icon_menu .quentity { top: 7px; }
@@ -1989,7 +1991,9 @@ body { font-family: 'Montserrat_medium'; }
   .form_subscribe { padding: 0 30px; }
   .slider_cards_goods { padding: 20px 20px 0; }
   .slider_cards_goods .slick-prev { left: -7px; }
-  .slider_cards_goods .slick-next { right: -7px; } }
+  .slider_cards_goods .slick-next { right: -7px; }
+  .header_wrapper { -webkit-transition: top .5s; -o-transition: top .5s; transition: top .5s; }
+  .header_wrapper.out { top: -100%; } }
 
 @media (max-width: 767px) { .name_drop_mobile, .name_drop_mobile_2 { padding: 12px 15px; }
   .body_name_link { padding: 0 15px; }
@@ -2176,4 +2180,5 @@ body { font-family: 'Montserrat_medium'; }
   .bottom_item_card .raiting_goods { margin-left: 5px; }
   .total_order_block { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .total_order_block .total_order_proce { padding-left: 0; }
-  .select_color_block { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+  .select_color_block { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .link_icon_menu { padding: 7px 0; } }
