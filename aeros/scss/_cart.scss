@@ -7,7 +7,7 @@
   }
 }
 .cart_select{
-  padding: 80px  0px  30px  0px;
+  padding: 80px  0px  20px  0px;
   background-color:#FBFBFB;
   @media(min-width:992px){
     padding:280px 0 70px;
@@ -177,6 +177,7 @@
               line-height:164.8%;
               display:inline-block;
               font-family:"Montserrat_reg";
+              margin-bottom: 0;
             }
           }
         }
@@ -692,8 +693,8 @@
     }
   }
   .delivery_text{
-    font-size:25px;
-    line-height:30px;
+    font-size:22px;
+    line-height:27px;
     color:#000;
     font-family: 'Montserrat_medium';
     margin-bottom:0;
