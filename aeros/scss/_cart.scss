@@ -33,6 +33,7 @@
       position: relative;
       .slick-dots{
         bottom:-35px;
+        z-index:10;
         li{
           border: 0.5px solid #000000;
           width:67px;
@@ -157,7 +158,7 @@
           }
           .left_col{
             .top_image_slider_cart{
-              min-height:114px;
+              min-height:137px;
               display:flex;
               align-items:center;
               justify-content:center;
@@ -369,8 +370,8 @@
       display:flex;
       max-width:100%;
       overflow:hidden;
-      flex:1 1 50%;
-      @media(min-width:992px){
+      flex:1 1 40%;
+      @media(min-width:1199px){
         flex:0 1 160/795 * 100%;
       }
       .wrapper_top_image_slider{
@@ -404,9 +405,9 @@
       display:flex;
       max-width:100%;
       overflow:hidden;
-      flex:1 1 100%;
+      flex:1 1 60%;
       flex-direction:column;
-      @media(min-width:992px){
+      @media(min-width:1199px){
         flex:1 1 auto;
         padding-left:22px;
       }
@@ -499,20 +500,40 @@
       display:flex;
       flex-direction:column;
       max-width:100%;
-      flex:1 1 50%;
-      @media(min-width:992px){
+      flex:1 1 100%;
+      @media(min-width:1200px){
         flex:0 1 200/795 * 100%;
       }
+      @media(max-width:1199px){
+          padding:15px 10px 15px 20px;
+          background-color:#F8F9FE;
+          border-radius:10px;
+          margin-top:15px;
+          flex-direction:row;
+          justify-content:space-between;
+          align-items:center;
+        }
       .price_block_cart{
         display:flex;
         align-items:center;
         flex-wrap:wrap;
+        @media(max-width:1199px){
+          width:100%;
+        }
         .new_price{
           font-size:34px;
           line-height:41px;
           letter-spacing:0.04em;
           color:rgba(0,0,0,.9);
           font-family:"Montserrat_reg";
+          @media(max-width:1199px){
+            font-size:28px;
+            line-height:35px;
+          }
+          @media(max-width:991px){
+            font-size:16px;
+            line-height:20px;
+          }
         }
         .old_price{
           display:flex;
@@ -523,6 +544,15 @@
             padding:4px 10px;
             font-family:'Montserrat_bold';
           }
+          .red_old_price{
+            @media(max-width:1199px){
+              margin-left:25px;
+            }
+            @media(max-width:991px){
+              margin-left:15px;
+              font-size:11px;
+            }
+          }
         }
       }
       .pay_part{
@@ -531,6 +561,9 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         padding:0 13px;
+        @media(max-width:1199px){
+          display:none;
+        }
         span{
           font-size:12px;
           line-height:164.8%;
@@ -562,6 +595,17 @@
         &:hover{
           color:rgba(247, 18, 18,1);
         }
+        @media(max-width:1199px){
+          display:none;
+        }
+      }
+      .btn_info{
+        padding:0;
+        margin-left:0;
+        position:absolute;
+        right:15px;
+        width:36px;
+        height:36px;
       }
     }
     .bottom_row{
