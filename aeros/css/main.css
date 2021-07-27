@@ -35,7 +35,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .wrapper_logo { background-color: #fff; -webkit-box-shadow: 5px -1px 5px rgba(0, 0, 0, 0.25); box-shadow: 5px -1px 5px rgba(0, 0, 0, 0.25); border-radius: 10px; padding: 22px 10px 22px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.line { width: 80%; background-color: rgba(0, 0, 0, 0.1); margin: 20px 0 10px; }
+.line { width: 80%; background-color: transparent; margin: 20px 0 10px; height: 2px; background-image: url(../svg/line.svg); border-top: none; }
 
 .text_logo { display: inline-block; padding: 4px 0 8px; width: 100%; text-align: center; font-size: 15px; line-height: 18px; color: rgba(0, 0, 0, 0.66); font-family: 'Montserrat_medium'; }
 

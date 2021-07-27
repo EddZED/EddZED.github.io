@@ -38,7 +38,7 @@ $maxWidthContainer: 1170;
 .logo_block{flex:0 0 174px;}
 .menu_top_block{flex:1 1 612px;}
 .wrapper_logo{background-color:#fff;box-shadow: 5px -1px 5px rgba(0, 0, 0, 0.25);border-radius: 10px;padding:22px 10px 22px;display:inline-flex;flex-direction:column;align-items:center;}
-.line{width:80%;background-color:rgba(0,0,0,.1);margin:20px 0 10px;}
+.line{width:80%;background-color:transparent;margin:20px 0 10px;height:2px;background-image:url(../svg/line.svg);border-top:none;}
 .text_logo{display:inline-block;padding:4px 0 8px;width:100%;text-align:center;font-size:15px;line-height:18px;color:rgba(0, 0, 0, 0.66);font-family:'Montserrat_medium';}
 .menu_block{padding:0 0 0 27px;position:relative;flex:1 0 auto;}
 .menu_main{list-style:none;padding-left:0;margin:0;display:flex;align-items:center;justify-content:space-between;}
