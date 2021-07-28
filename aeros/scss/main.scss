@@ -1041,7 +1041,7 @@ $maxWidthContainer: 1170;
   .base_slider_item .more_btn_sldier{margin-top:-15px;font-size:11px;}
   .scrolling_box{padding:15px 0;background-position:-115px 0;}
   .name_about {font-size:10px;line-height:12px;font-family:'Montserrat_semibold';}
-  .gray_text, .raiting_comments{font-size:8px;line-height:10px;margin-top:5px;}
+  .gray_text, .raiting_comments{font-size:8px;line-height:10px;margin-top:5px;margin-bottom:0;}
   .wrap_text_mobile{align-items:center;}
   .content_about .blue_link_content{font-size:8px;line-height:10px;}
   .block_item_about .brand_place{max-width:37px;}
@@ -1074,6 +1074,8 @@ $maxWidthContainer: 1170;
   .link_assortment{font-size:15px;line-height:18px;}
   .slider_cards_goods{padding:0;}
   .your_select_wrapper .brand_item{max-width:56px;}
+  .blue_link_content{margin-top:3px;}
+  .blue_link_content img{max-width:9px;padding-top:2px;}
 }
 @media(max-width:450px){
   .scrolling_box{background-position:-180px 0;}
