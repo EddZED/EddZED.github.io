@@ -7,6 +7,14 @@ $('.top_image_slider_cart').slick({
   dots: true,
   draggable: true,
   fade: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          dots: false
+        }
+      }
+  ]
   });
 $('.top_image_slider_cart').slick('setPosition');

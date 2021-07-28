@@ -756,7 +756,7 @@
                 <div class="item_select_goods_block">
                   <label class="checking_cart ">
                     <input type="checkbox" name="current_goods">
-                    <span class="checked"><img class="img-fluid" src="svg/green_gal.svg" alt=""></span>
+                    <span class="checked"><img class="img-fluid" src="svg/green_gal_min.svg" alt=""></span>
                     <div class="checking_cart_item">
                       <div class="your_select_wrapper mt-0">
                         <div class="left_col">
@@ -790,7 +790,7 @@
                             </span>
                             <a href="#" class="link_comments_goods">6 отзывов</a>
                           </div>
-                          <div class="table_parameters">
+                          <div class="table_parameters d-none d-lg-block">
                             <div class="rows_table">
                               <div class="name_params">
                                 <span class="name_items">Макс. площать помещения, кв.м </span>
@@ -837,6 +837,44 @@
                               </div>
                             </div>
                           </div>
+                          <ul class="specifications d-lg-none">
+                            <li class="specifications_item">
+                              <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                  <rect width="0.59792" height="2.95763" rx="0.29896"
+                                    transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                  <rect width="0.598119" height="4.84098" rx="0.29906"
+                                    transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                </svg>
+                                Суперочистка
+                              </span>
+                            </li>
+                            <li class="specifications_item">
+                              <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                  <rect width="0.59792" height="2.95763" rx="0.29896"
+                                    transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                  <rect width="0.598119" height="4.84098" rx="0.29906"
+                                    transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                </svg>
+                                Тихий
+                              </span>
+                            </li>
+                            <li class="specifications_item">
+                              <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="5" cy="5" r="4.65" stroke="black" stroke-width="0.7" />
+                                  <rect width="0.59792" height="2.95763" rx="0.29896"
+                                    transform="matrix(-0.680609 0.732647 0.674615 0.73817 2.55542 4.33301)" fill="black" />
+                                  <rect width="0.598119" height="4.84098" rx="0.29906"
+                                    transform="matrix(-0.677617 -0.735415 -0.677617 0.735415 7.46948 3.43945)" fill="black" />
+                                </svg>
+                                Премиум
+                              </span>
+                            </li>
+                          </ul>
                           <a href="#" class="more d-xl-none">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
                               alt="подробнее"></a>
                         </div>
@@ -859,7 +897,7 @@
                             <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg" alt="счетчик минус"></button>
                             <input type="text" readonly class="count_input" value="1">
                             <button type="button" class="btn_count"><img class="img-fluid" src="svg/plus.svg" alt="счетчик плюс"></button>
-                            <button type="button" class="btn_info d-xl-none"><img class="img-fluid" src="img/btn_quest.png" alt=""></button>
+                            <button type="button" class="btn_info d-block d-xl-none"><img class="img-fluid" src="img/btn_quest.png" alt=""></button>
                           </label>
                         </div>
                         <div class="bottom_row">
@@ -988,6 +1026,8 @@
                                 </div>
                                 <div class="table_parameters mt-3">
                                   <p class="descript">Есть встроенный ионизатор, УФ лампа,<br> ароматизатор кислорода и очиститель воздуха.</p>
+                                  <a href="#" class="more d-xl-none">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                      alt="подробнее"></a>
                                 </div>
                               </div>
                               <div class="right_col">
@@ -996,14 +1036,14 @@
                                     <span>890 ₽</span>
                                   </div>
                                   <div class="old_price">
-                                    <span class="persent_stock">- 12 %</span>
+                                    <span class="persent_stock d-none d-xl-block">- 12 %</span>
                                     <s class="red_old_price pr-1">1 390 ₽</s>
                                   </div>
                                 </div>
-                                <a href="#" class="more">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                <a href="#" class="more d-none d-xl-block">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
                                     alt="подробнее"></a>
                                 <button type="submit" class="delete_goods">Удалить из корзины</button>
-                                <label class="count_label mt-2 mb-0">
+                                <label class="count_label mt-xl-2 mb-0">
                                   <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg"
                                       alt="счетчик минус"></button>
                                   <input type="text" readonly class="count_input" value="1">
@@ -1052,6 +1092,8 @@
                                 <div class="table_parameters mt-3">
                                   <p class="descript">Есть встроенный ионизатор, УФ лампа,<br> ароматизатор кислорода и очиститель воздуха.
                                   </p>
+                                  <a href="#" class="more d-xl-none">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                      alt="подробнее"></a>
                                 </div>
                               </div>
                               <div class="right_col">
@@ -1060,14 +1102,14 @@
                                     <span>890 ₽</span>
                                   </div>
                                   <div class="old_price">
-                                    <span class="persent_stock">- 12 %</span>
+                                    <span class="persent_stock d-none d-xl-block">- 12 %</span>
                                     <s class="red_old_price pr-1">1 390 ₽</s>
                                   </div>
                                 </div>
-                                <a href="#" class="more">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                <a href="#" class="more d-none d-xl-block">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
                                     alt="подробнее"></a>
                                 <button type="submit" class="delete_goods">Удалить из корзины</button>
-                                <label class="count_label mt-2 mb-0">
+                                <label class="count_label mt-xl-2 mb-0">
                                   <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg"
                                       alt="счетчик минус"></button>
                                   <input type="text" readonly class="count_input" value="1">
@@ -1117,6 +1159,8 @@
                                 <div class="table_parameters mt-3">
                                   <p class="descript">Есть встроенный ионизатор, УФ лампа,<br> ароматизатор кислорода и очиститель воздуха.
                                   </p>
+                                  <a href="#" class="more d-xl-none">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                      alt="подробнее"></a>
                                 </div>
                               </div>
                               <div class="right_col">
@@ -1125,14 +1169,14 @@
                                     <span>890 ₽</span>
                                   </div>
                                   <div class="old_price">
-                                    <span class="persent_stock">- 12 %</span>
+                                    <span class="persent_stock d-none d-xl-block">- 12 %</span>
                                     <s class="red_old_price pr-1">1 390 ₽</s>
                                   </div>
                                 </div>
-                                <a href="#" class="more">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
+                                <a href="#" class="more d-none d-xl-block">Подробнее <img class="img-fluid pl-1" src="svg/shevron_bold_right.svg"
                                     alt="подробнее"></a>
                                 <button type="submit" class="delete_goods">Удалить из корзины</button>
-                                <label class="count_label mt-2 mb-0">
+                                <label class="count_label mt-xl-2 mb-0">
                                   <button type="button" class="btn_count"><img class="img-fluid" src="svg/minus.svg"
                                       alt="счетчик минус"></button>
                                   <input type="text" readonly class="count_input" value="1">

@@ -20,6 +20,25 @@
       flex:0 1 (795 / 1160) * 100%;
       width: 795 / 1160 * 100%;
     }
+    .checking_cart{
+      @media(max-width:1199px){
+        padding-left:0;
+      }
+      .checked{
+        display:none;
+        @media(max-width:1199px){
+          display:block;
+          z-index:10;
+          bottom:auto;
+          top:10px;
+          left:10px;
+          width:23px;
+          height:23px;
+          border-radius:5px;
+          border-color:rgba(102, 102, 102, 0.5);
+        }
+      }
+    }
     .text_gradient_2{
       font-size:22px;
       line-height:27px;
@@ -28,6 +47,10 @@
       background: linear-gradient(90.09deg, #F71212 14.36%, #FDB41E 82.19%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      @media(max-width:1199px){
+        font-size:20px;
+        line-height:25px;
+      }
     }
     .slider_filter_block{
       position: relative;
@@ -141,6 +164,9 @@
                 background: linear-gradient(84.73deg, #FF0606 7.12%, #FFB017 204.78%, #FFE922 262.29%);
                 z-index:0;
               }
+              @media(max-width:991px){
+                display:none;
+              }
             }
           }
         }
@@ -168,7 +194,7 @@
             }
           }
           .center_col{
-            flex:1 1 50%;
+            flex:1 1 70%;
             .name_goods_{
               text-transform:none;
               line-height:32px;
@@ -308,7 +334,10 @@
       margin-top:28px;
       &:hover{
         color:#fff;
-        
+      }
+      @media(max-width:1199px){
+        font-size:15px;
+        line-height:19px;
       }
     }
     .other_goods_link{
@@ -317,6 +346,10 @@
       margin:16px 0 0 0;
       width:100%;
       justify-content:center;
+      @media(max-width:1199px){
+        font-size:15px;
+        line-height:19px;
+      }
     }
   }
 }
@@ -370,8 +403,8 @@
       display:flex;
       max-width:100%;
       overflow:hidden;
-      flex:1 1 40%;
-      @media(min-width:1199px){
+      flex:1 1 30%;
+      @media(min-width:1200px){
         flex:0 1 160/795 * 100%;
       }
       .wrapper_top_image_slider{
@@ -382,6 +415,11 @@
         .image_brand_cart{
           img{
             max-width:53px;
+          }
+          @media(max-width:1199px){
+            position:absolute;
+            left:0;
+            bottom:15px;
           }
         }
         .slick-dots{
@@ -405,11 +443,19 @@
       display:flex;
       max-width:100%;
       overflow:hidden;
-      flex:1 1 60%;
+      flex:1 1 70%;
       flex-direction:column;
       @media(min-width:1199px){
         flex:1 1 auto;
         padding-left:22px;
+      }
+      .specifications{
+        .specifications_item span{
+          font-family:'Montserrat_medium';
+          font-size:14px;
+          line-height:154.8%;
+          letter-spacing:0.04em;
+        }
       }
       .name_goods_{
         font-size:26px;
@@ -634,6 +680,10 @@
         &:not(:last-child){
           margin-right:7px;
         }
+        @media(max-width:767px){
+          width:101px;
+          height:60px;
+        }
         .waranty_input[type="radio"]{
           display:none;
         }
@@ -646,6 +696,10 @@
           top:16px;
           bottom:auto;
           left:15px;
+          @media(max-width:767px){
+            width:12px;
+            height:12px;
+          }
           &:before{
             content: '';
             position:absolute;
@@ -657,6 +711,10 @@
             background: linear-gradient(136.91deg, #F71212 31.86%, #FDB41E 93.96%);
             opacity:0;
             transition:opacity .3s;
+            @media(max-width:767px){
+              width:8px;
+              height:8px;
+            }
           }
         }
         .waranty_input[type="radio"]:checked + .checked:before{opacity:1;}
@@ -668,6 +726,10 @@
           font-family:"Montserrat_reg";
           margin-left:28px;
           display:inline-flex;
+          @media(max-width:767px){
+            font-size:11px;
+            line-height:13px;
+          }
         }
         .price_waranty{
           width:100%;
