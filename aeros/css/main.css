@@ -625,7 +625,9 @@ body { font-family: 'Montserrat_medium'; }
 
 .upper_text_slider { font-size: 16px; line-height: 20px; color: rgba(0, 0, 0, 0.63); font-family: 'Montserrat_semibold'; text-transform: uppercase; }
 
-.more_btn_sldier { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 13px; line-height: 16px; color: #31ACE4; font-family: 'Montserrat_medium'; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; margin-top: -13px; }
+.more_btn_sldier { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 13px; line-height: 16px; color: #31ACE4; font-family: 'Montserrat_medium'; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; margin-top: -17px; }
+
+.more_btn_sldier img { padding-top: 2px; }
 
 .more_btn_sldier:hover { color: #31ACE4; }
 
