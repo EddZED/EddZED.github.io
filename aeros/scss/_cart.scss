@@ -27,7 +27,7 @@
       .checked{
         display:none;
         @media(max-width:1199px){
-          display:block;
+          display:flex;
           z-index:10;
           bottom:auto;
           top:10px;

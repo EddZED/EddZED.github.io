@@ -1185,7 +1185,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .cart_select .item_select_goods_block .checking_cart .checked { display: none; }
 
-@media (max-width: 1199px) { .cart_select .item_select_goods_block .checking_cart .checked { display: block; z-index: 10; bottom: auto; top: 10px; left: 10px; width: 23px; height: 23px; border-radius: 5px; border-color: rgba(102, 102, 102, 0.5); } }
+@media (max-width: 1199px) { .cart_select .item_select_goods_block .checking_cart .checked { display: -webkit-box; display: -ms-flexbox; display: flex; z-index: 10; bottom: auto; top: 10px; left: 10px; width: 23px; height: 23px; border-radius: 5px; border-color: rgba(102, 102, 102, 0.5); } }
 
 .cart_select .item_select_goods_block .text_gradient_2 { font-size: 22px; line-height: 27px; letter-spacing: 0.04em; font-family: "Montserrat_medium"; background: -webkit-linear-gradient(359.91deg, #F71212 14.36%, #FDB41E 82.19%); background: -o-linear-gradient(359.91deg, #F71212 14.36%, #FDB41E 82.19%); background: linear-gradient(90.09deg, #F71212 14.36%, #FDB41E 82.19%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
