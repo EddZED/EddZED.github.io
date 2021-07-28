@@ -804,7 +804,7 @@ $maxWidthContainer: 1170;
   .block_questions .card{border:none;border-bottom:1px solid #31ACE4 !important;}
   .block_questions .card:first-of-type{border-top:1px solid #31ACE4 !important;}
   .knowledge_base{border-top:none;}
-  .knowledge_base .slick-arrow{width:20px;height:36px;}
+  .knowledge_base_slider button.slick-arrow{width:20px !important;height:36px !important;}
   .block_recomended .messanger_link_content .messanger_link{margin-right:15px;}
   .block_item_about{min-height:auto;height:auto;flex-direction:row;margin-bottom:10px;padding:15px 10px;justify-content:flex-start;}
   .content_about{display:flex;align-items:flex-start;flex-direction:column;padding-left:10px;width:100%;text-align:left;}
