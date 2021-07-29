@@ -903,6 +903,8 @@ body { font-family: 'Montserrat_medium'; }
 
 .form_btn { font-size: 11px; line-height: 13px; padding: 9px 33px; width: auto; margin-left: 25px; }
 
+@media (min-width: 992px) { .pos_down { position: relative; bottom: -6px; } }
+
 /* style two page */
 /* ************** */
 .header.page_two .menu_link { color: #323232; }

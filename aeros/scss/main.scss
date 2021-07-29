@@ -472,7 +472,12 @@ $maxWidthContainer: 1170;
 .text_form{font-size:20px;line-height:24px;color:rgba(0,0,0,.97);opacity:.7;font-family:'Montserrat_reg';}
 .text_uppercase{text-transform:uppercase;}
 .form_btn{font-size:11px;line-height:13px;padding:9px 33px;width:auto;margin-left:25px;}
-
+.pos_down{
+    @media(min-width:992px){
+      position:relative;
+      bottom:-6px;
+    }
+  }
 
 @import "_select_goods";
 @import "_cart";
