@@ -226,7 +226,7 @@ $maxWidthContainer: 1170;
 .top_image_slider .slick-dots button:before{display:none;}
 .top_image_slider .slick-dots li{width:18px;height:4px;background-color:#fff;border:1px solid rgba(0,0,0,.5);border-radius:3px;margin:0 2px;transition:all .3s;}
 .top_image_slider .slick-dots li.slick-active{background-color:rgba(0,0,0,.5);}
-.description_goods_card{position:relative;padding:25px 0 10px;}
+.description_goods_card{position:relative;padding:31px 0 10px;}
 .description_goods_card .name_goods{font-size:16px;line-height:20px;letter-spacing:0.04em;color:rgba(0,0,0,.75);font-family:'Montserrat_bold';text-transform:uppercase;}
 .raiting_goods{display:inline-flex;position:absolute;left:0;top:-18px;align-items:center;font-size:12px;line-height:15px;font-family:'Montserrat_semibold';}
 .gradient_text{display:inline-block;background: linear-gradient(180deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
@@ -1072,7 +1072,7 @@ $maxWidthContainer: 1170;
   .btn_city{white-space:nowrap;}
   .slider_cards_goods_item .glass_wrapper{padding:10px 4px;}
   .slider_cards_goods_item .big_title_banner{font-size:18px;line-height:22px;margin-bottom:5px;}
-  .slider_cards_goods_item .text_slider_banner{font-size:13px;line-height:10px;}
+  .slider_cards_goods_item .text_slider_banner{font-size:10px;line-height:10px;}
   .link_assortment{font-size:15px;line-height:18px;}
   .slider_cards_goods{padding:0;}
   .your_select_wrapper .brand_item{max-width:56px;}
