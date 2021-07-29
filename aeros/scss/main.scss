@@ -446,6 +446,7 @@ $maxWidthContainer: 1170;
 .pay_wrapper{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;}
 .pay_wrapper img{padding:0 20px 20px 0;}
 .footer .wrapper_logo{padding:30px 25px;box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);}
+.footer .btn_city{font-size:20px;line-height:24px;font-family:"Montserrat_reg";}
 .footer .wrapper_city_search{transform:translateY(0) translateX(-100px);}
 .footer .btn_city .wrapper_city_search{transform:translateY(0) translateX(-100%);box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);background-color:#fff;}
 .footer .btn_city:hover .wrapper_city_search{transform:translateY(0) translateX(-110px);}
