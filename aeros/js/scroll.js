@@ -307,7 +307,7 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 700, triggerHook: 0.4})
 				.setTween(TweenMax.from("#recomend_reading .messanger_link_content .messanger_link:nth-of-type(3)", 1, {opacity: 0, x:-40}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 2000, offset: 0, triggerHook: 0.2})
+			new ScrollMagic.Scene({triggerElement: "#call_us", duration: 2000, offset: 0, triggerHook: 0.1})
 				.setPin("#call_us")	
 				.addTo(controller);
 			

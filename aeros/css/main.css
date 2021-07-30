@@ -625,7 +625,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .upper_text_slider { font-size: 16px; line-height: 20px; color: rgba(0, 0, 0, 0.63); font-family: 'Montserrat_semibold'; text-transform: uppercase; }
 
-.more_btn_sldier { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 13px; line-height: 16px; color: #31ACE4; font-family: 'Montserrat_medium'; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; margin-top: -17px; }
+.more_btn_sldier { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 13px; line-height: 16px; color: #31ACE4; font-family: 'Montserrat_medium'; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; margin-top: -16px; }
 
 .more_btn_sldier img { padding-top: 2px; }
 
@@ -829,7 +829,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .micro_text_adv { font-size: 13px; line-height: 16px; color: rgba(0, 0, 0, 0.8); font-family: 'Montserrat_medium'; }
 
-.wrapper_adv_item { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.wrapper_adv_item { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
 .footer { width: 100%; background-color: #fff; padding: 50px 0; }
 
@@ -904,6 +904,18 @@ body { font-family: 'Montserrat_medium'; }
 .form_btn { font-size: 11px; line-height: 13px; padding: 9px 33px; width: auto; margin-left: 25px; }
 
 @media (min-width: 992px) { .pos_down { position: relative; bottom: -6px; } }
+
+@media (min-width: 992px) { #gray_2 { position: relative; top: -2px; } }
+
+@media (min-width: 992px) { #gray_3 { position: relative; top: -6px; } }
+
+@media (min-width: 992px) { #gray_4 { position: relative; top: -10px; } }
+
+@media (min-width: 992px) { #gray_5 { position: relative; top: -12px; } }
+
+@media (min-width: 992px) { #gray_6 { position: relative; top: -17px; } }
+
+@media (min-width: 992px) { #gray_7 { position: relative; top: -6px; } }
 
 /* style two page */
 /* ************** */
