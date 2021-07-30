@@ -422,13 +422,13 @@ $(document).ready(function() {
 				.setTween(TweenMax.to("#about .gradient_text", 1, {opacity: 0, y: 200}))		
 				.addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 500, offset: 200, triggerHook: 0.7})
+			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 400, offset: 200, triggerHook: 0.8})
 				.setTween(TweenMax.from("#banner_sldiers_section .text_block_banner", 1, {opacity: 0, y: -200}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: -300, triggerHook: 0})
 				.setTween(TweenMax.from("#gray_1", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: -300, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: -300, triggerHook: 0.3})
 				.setTween(TweenMax.from("#banner_sldiers_section .gradient_btn_other", 1, {opacity: 0, 'filter': 'grayscale(100%)'}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#banner_sldiers_section", duration: 300, offset: 100, triggerHook: 0.2})
