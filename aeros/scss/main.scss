@@ -570,7 +570,7 @@ $maxWidthContainer: 1170;
   .header.active .contact_block{flex:1 1 35%;}
   .header.active .menu_item:nth-child(2) .menu_link{padding-left:0;}
   .header.active .dropdown_menu_item .sub_dropdown_wrapper{padding-left:0;}
-
+  .wrap_img_client{padding:0 7px;}
 
   .menu_item:nth-child(2) .menu_link {padding-left:24px;}
   .dropdown_menu_link:hover .open_icon_sub{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;transition:opacity .2s;}
