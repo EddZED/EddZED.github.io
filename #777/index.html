@@ -5,8 +5,158 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // конечная дата
+      const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01);
+      // id таймера
+      let timerId = null;
+      // склонение числительных
+      function declensionNum(num, words) {
+        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+      }
+      // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+      function countdownTimer() {
+        const diff = deadline - new Date();
+        if (diff <= 0) {
+          clearInterval(timerId);
+        }
+        const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+        const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+        const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+        const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+        $hours.textContent = hours < 10 ? '0' + hours : hours;
+        $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+        $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+        $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+        $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+        $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+      }
+      // получаем элементы, содержащие компоненты даты
+      const $days = document.querySelector('.timer__days');
+      const $hours = document.querySelector('.hours');
+      const $minutes = document.querySelector('.minutes');
+      const $seconds = document.querySelector('.seconds');
+      // вызываем функцию countdownTimer
+      countdownTimer();
+      // вызываем функцию countdownTimer каждую секунду
+      timerId = setInterval(countdownTimer, 1000);
+    });
+  </script>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <div class="intro">
+      <div class="bg_images">
+        <img class="img-fluid bgimage item_1" data-speed="10" src="img/card_1.png" alt="">
+        <img class="img-fluid bgimage item_2" data-speed="5" src="img/card_2.png" alt="">
+        <img class="img-fluid bgimage item_3" data-speed="15" src="img/card_3.png" alt="">
+        <img class="img-fluid bgimage item_4" data-speed="3" src="img/card_4.png" alt="">
+        <img class="img-fluid bgimage item_5" data-speed="-5" src="img/card_5.png" alt="">
+        <img class="img-fluid bgimage item_6" data-speed="-5" src="img/card_6.png" alt="">
+        <img class="img-fluid bgimage item_7" data-speed="20" src="img/card_7.png" alt="">
+        <img class="img-fluid bgimage item_8" data-speed="25" src="img/card_8.png" alt="">
+        <img class="img-fluid bgimage item_9" data-speed="10" src="img/card_9.png" alt="">
+        <img class="img-fluid bgimage item_10" data-speed="6" src="img/card_10.png" alt="">
+        <img class="img-fluid bgimage item_11" data-speed="3" src="img/card_11.png" alt="">
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="wrapper_items_header">
+            <div class="logo_brand">
+              <a href="#" class=""><img class="img-fluid" src="img/logo.png" alt="realwin"></a>
+            </div>
+            <div class="countdown_timer">
+              <div class="timer_block">
+                <span class="wrap_times"><span class="hours">00</span></span>
+                <span class="devided">:</span>
+                <span class="wrap_times"><span class="minutes">00</span></span>
+                <span class="devided">:</span>
+                <span class="wrap_times"><span class="seconds">00</span></span>
+              </div>
+              <div class="text_block_timer">
+                <span>успей получить</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </header>
+      <div class="content">
+        <div class="container">
+          <div class="col-left">
+            <h1 class="title text-center">Приветственный пакет для новичков!</h1>
+            <div class="nums_block">
+              <img class="img-fluid ml_img" src="img/200.png" alt="200%">
+              <span class="text_content ml_text">до</span>
+              <img class="img-fluid ml_img_2" src="img/90k.png" alt="90k">
+              <span class="text_content ml_text_2">рублей</span>
+            </div>
+            <div class="text_block text-center">
+              <img class="img-fluid" src="img/text.png" alt="фриспины">
+              <a href="#" class="btn_gradient">Забрать бонус</a>
+            </div>
+          </div>
+          <div class="col-full">
+            <div class="step_block">
+              <div class="step_item">
+                <img class="img-fluid" src="img/num_1.png" alt="">
+                <span class="step_text">зарегистрируйся</span>
+              </div>
+              <div class="step_item">
+                <img class="img-fluid" src="img/num_2.png" alt="">
+                <span class="step_text">внеси депозит</span>
+              </div>
+              <div class="step_item">
+                <img class="img-fluid" src="img/num_3.png" alt="">
+                <span class="step_text">получи бонус</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="flex_item">
+            <div class="block_partners">
+              <img class="img-fluid" src="img/icon_1.png" alt="">
+              <img class="img-fluid" src="img/icon_2.png" alt="">
+              <img class="img-fluid" src="img/icon_3.png" alt="">
+              <img class="img-fluid" src="img/icon_4.png" alt="">
+              <img class="img-fluid" src="img/icon_5.png" alt="">
+              <img class="img-fluid" src="img/icon_6.png" alt="">
+              <img class="img-fluid" src="img/icon_7.png" alt="">
+              <img class="img-fluid" src="img/icon_8.png" alt="">
+              <img class="img-fluid" src="img/icon_9.png" alt="">
+              <img class="img-fluid" src="img/icon_10.png" alt="">
+              <img class="img-fluid" src="img/icon_11.png" alt="">
+              <img class="img-fluid" src="img/icon_12.png" alt="">
+              <img class="img-fluid" src="img/icon_13.png" alt="">
+              <img class="img-fluid" src="img/icon_14.png" alt="">
+              <img class="img-fluid" src="img/icon_15.png" alt="">
+              <img class="img-fluid" src="img/icon_16.png" alt="">
+            </div>
+            <div class="social_block">
+              <img class="img-fluid padright" src="img/18.png" alt="цензура">
+              <a href="#" class="social_link"><img class="img-fluid" src="img/vk.png" alt="вконтакте"></a>
+              <a href="#" class="social_link"><img class="img-fluid" src="img/tg.png" alt="телеграм"></a>
+              <a href="#" class="social_link"><img class="img-fluid" src="img/insta.png" alt="insta"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+      this.querySelectorAll('.bgimage').forEach(bgimage => {
+        const speed = bgimage.getAttribute('data-speed')
+        const x = (window.innerWidth - e.pageX*speed)/1000
+        const y = (window.innerHeight - e.pageY*speed)/1000
+        bgimage.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
+    }
+  </script>
 </body>
 </html>
