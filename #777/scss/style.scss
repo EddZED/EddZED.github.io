@@ -161,6 +161,81 @@ img{pointer-events:none;}
   @media(max-width:991px){
     background-position:59% 0;
   }
+  .bg_automat{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:0;
+    display:flex;
+    align-items:center;
+    .automat{
+      position:absolute;
+      right:0;
+      top:0;
+      pointer-events:none;
+    }
+    .light{
+      position:absolute;
+      animation:lights .5s ease infinite;
+      animation-delay: calc(var(--i)*.1s);
+      opacity:0;
+      @keyframes lights {
+        0%{opacity:0;}
+        50%{opacity:1;}
+        100%{opacity:0;}
+      }
+      &.light_1{
+        top:336px;
+        right:475px;
+      }
+      &.light_2{
+        top:289px;
+        right:481px;
+      }
+      &.light_3{
+        top:236px;
+        right:474px;
+      }
+      &.light_4{
+        top:190px;
+        right:452px;
+      }
+      &.light_5{
+        top:154px;
+        right:418px;
+      }
+      &.light_6{
+        top:128px;
+        right:370px;
+      }
+      &.light_7{
+        top:120px;
+        right:319px;
+      }
+      &.light_8{
+        top:129px;
+        right:267px;
+      }
+      &.light_9{
+        top:154px;
+        right:222px;
+      }
+      &.light_10{
+        top:191px;
+        right:188px;
+      }
+      &.light_11{
+        top:238px;
+        right:165px;
+      }
+      &.light_12{
+        top:289px;
+        right:159px;
+      }
+    }
+  }
 }
 .text-center{
   text-align:center;
