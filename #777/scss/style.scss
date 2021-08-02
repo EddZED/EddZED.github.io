@@ -181,6 +181,9 @@ img{pointer-events:none;}
       animation:lights .5s ease infinite;
       animation-delay: calc(var(--i)*.1s);
       opacity:0;
+      @media(max-width:991px){
+        display:none;
+      }
       @keyframes lights {
         0%{opacity:0;}
         50%{opacity:1;}
