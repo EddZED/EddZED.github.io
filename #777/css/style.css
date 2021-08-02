@@ -98,6 +98,8 @@ img { pointer-events: none; }
 
 .intro .bg_automat .light { position: absolute; -webkit-animation: lights .5s ease infinite; animation: lights .5s ease infinite; -webkit-animation-delay: calc(var(--i)*.1s); animation-delay: calc(var(--i)*.1s); opacity: 0; }
 
+@media (max-width: 991px) { .intro .bg_automat .light { display: none; } }
+
 @-webkit-keyframes lights { 0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; } }
