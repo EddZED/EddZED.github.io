@@ -251,3 +251,65 @@ img { pointer-events: none; }
 .mobile_automat { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; margin-top: -50px; }
 
 @media (min-width: 992px) { .mobile_automat { display: none; } }
+
+.mobile_automat .automat_wrap { position: relative; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .img_automat { max-width: 320px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light { max-width: 46px; position: absolute; -webkit-animation: lights .5s ease infinite; animation: lights .5s ease infinite; -webkit-animation-delay: calc(var(--i)*.1s); animation-delay: calc(var(--i)*.1s); opacity: 0; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light { max-width: 25px; } }
+
+@keyframes lights { 0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_1 { top: 322px; left: 126px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_1 { top: 172px; left: 68px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_2 { top: 273px; left: 118px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_2 { top: 147px; left: 63px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_3 { top: 222px; left: 126px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_3 { top: 119px; left: 67px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_4 { top: 175px; left: 149px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_4 { top: 94px; left: 79px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_5 { top: 137px; left: 184px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_5 { top: 73px; left: 98px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_6 { top: 111px; left: 231px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_6 { top: 60px; left: 123px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_7 { top: 103px; left: 282px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_7 { top: 56px; left: 151px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_8 { top: 114px; left: 335px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_8 { top: 60px; left: 179px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_9 { top: 138px; left: 380px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_9 { top: 74px; left: 203px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_10 { top: 176px; left: 415px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_10 { top: 95px; left: 221px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_11 { top: 224px; left: 437px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_11 { top: 120px; left: 233px; } }
+
+.mobile_automat .automat_wrap .lights_automat_movile .light.light_12 { top: 274px; left: 445px; }
+
+@media (max-width: 625px) { .mobile_automat .automat_wrap .lights_automat_movile .light.light_12 { top: 147px; left: 237px; } }
