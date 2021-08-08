@@ -397,15 +397,16 @@ img{pointer-events:none;}
         box-shadow:inset 3px 3px 5px rgba(124, 60, 202,1),
                   inset 1px 1px 4px rgba(255, 255, 255,.5),
                   0px 4px 0px rgba(215, 51, 236, 0.7),
-                  0 0 100px rgba(243, 31, 232, 0.3);
+                  0 0 100px rgba(243, 31, 232, 0.5);
         margin-top:40px;
-        transition:box-shadow .3s;
+        border:2px solid transparent;
+        transition: box-shadow .3s;
         will-change:box-shadow;
         &:hover{
-          box-shadow:inset 3px 3px 5px rgba(124, 60, 202,1),
-                  inset 1px 1px 4px rgba(255, 255, 255,.1),
-                  0px 4px 0px rgba(215, 51, 236, 0.8),
-                  0 0 100px rgba(243, 31, 232, 0.4);
+          background:transparent;
+          box-shadow:0 0 100px rgba(243, 31, 232, 0.7),
+          inset 0 0 2px rgba(243, 31, 232, 1);
+          border-color:rgba(215, 51, 236, 0.7);
         }
         @media(max-width:991px){
           margin-top:-20px;
