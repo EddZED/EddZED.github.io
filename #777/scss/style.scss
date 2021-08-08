@@ -46,6 +46,11 @@ img{pointer-events:none;}
               25px 20px 20px rgba(131, 45, 160,.1),
               40px 40px 30px rgba(131, 45, 160,.1);
   filter:drop-shadow(0 0 30px rgba(131, 45, 160,1));
+  @media(max-width:991px){
+    font-size:150px;
+    line-height:160px;
+    padding-top:20px;
+  }
   }
   &.blue{
     font-size:100px;
@@ -66,6 +71,10 @@ img{pointer-events:none;}
               15px 10px 20px rgba(0, 101, 205,.1),
               20px 20px 30px rgba(0, 101, 205,.1);
     filter:drop-shadow(0 0 30px rgba(0, 101, 205,.4));
+    @media(max-width:991px){
+      font-size:70px;
+      line-height:85px;
+    }
   }
               
 }
@@ -83,6 +92,10 @@ img{pointer-events:none;}
               -6px -5px 6px rgb(247, 15, 235),
               ;
   display:inline-block;
+  @media(max-width:991px){
+    font-size:35px;
+    line-height:35px;
+  }
 }
 .bg_images{
   position:absolute;
@@ -154,10 +167,19 @@ img{pointer-events:none;}
     justify-content:space-between;
     @media(max-width:991px){
       flex-wrap:wrap;
+      justify-content:space-between;
     }
   }
 }
 .countdown_timer{
+      &.mobile{
+        position:relative;
+        top:auto;
+        right:auto;
+        @media(min-width:992px){
+          display:none;
+        }
+      }
       position:absolute;
       top:40px;
       right:273px;
@@ -328,6 +350,7 @@ img{pointer-events:none;}
       @media(max-width:991px){
         justify-content:center;
         margin-top:0;
+        flex-wrap:wrap;
       }
       @media(max-width:565px){
         margin-top:-20px;
@@ -364,7 +387,7 @@ img{pointer-events:none;}
         }
       }
       .ml_text_2{
-        
+        padding-left:20px;
         @media(max-width:991px){
           
         }
@@ -376,7 +399,7 @@ img{pointer-events:none;}
     .text_block{
       
       @media(max-width:991px){
-          margin-top:-30px;
+          margin-top:30px;
           display:flex;
           flex-direction:column;
           align-items:center;
@@ -409,7 +432,7 @@ img{pointer-events:none;}
           border-color:rgba(215, 51, 236, 0.7);
         }
         @media(max-width:991px){
-          margin-top:-20px;
+          margin-top:20px;
           padding: 15px 30px 15px 30px;
           font-size:20px;
           line-height:20px;
@@ -690,7 +713,17 @@ img{pointer-events:none;}
     }
   }
 }
-
+.d-lg-flex{
+  display:none;
+  @media(min-width:992px){
+    display:flex;
+  }
+}
+@media(min-width:992px){
+  .d-lg-none{
+    display:none;
+  }
+}
 
 
 
