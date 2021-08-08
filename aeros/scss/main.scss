@@ -232,7 +232,7 @@ $maxWidthContainer: 1170;
 .gradient_text{display:inline-block;background: linear-gradient(180deg, #F71212 0%, #FDE50D 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .description_goods_card .link_comments_goods{display:inline-block;position:absolute;right:0;top:-18px;font-size:12px;line-height:15px;letter-spacing:0.04em;color:rgba(0,0,0,.43);font-family:'Montserrat_semibold';transition:all .3s;z-index:2;}
 .description_goods_card .link_comments_goods:hover{color:rgba(0,0,0,9);text-decoration:none;}
-.specifications{list-style:none;padding-left:0;margin-bottom:0;}
+.specifications{list-style:none;padding-left:0;margin-bottom:5px;}
 .specifications_item{display:flex;align-items:flex-start;justify-content:space-between;flex-direction:column;}
 .specifications_item span{display:inline-flex;align-items:center;font-size:13px;line-height:20px;letter-spacing:0.04em;color:#000;font-family:'Montserrat_light';}
 .more{display:inline-flex;align-items:center;font-size:13px;line-height:16px;letter-spacing:0.04em;color:#31ACE4;transition:all .3s;}
@@ -537,6 +537,7 @@ $maxWidthContainer: 1170;
     border-radius:10px;
     background: linear-gradient(270.06deg, #1563D7 -63.94%, #0AF0FF 99.7%), #EDEDED;
   }
+  //style range line card
   &.middle_height:before{
     width:70%;
   }
@@ -1048,7 +1049,7 @@ $maxWidthContainer: 1170;
   .wrapper_klients{justify-content:flex-start;}
   .wrap_img_client{flex:0 0 50%;padding:0;text-align:center;}
   .brand_logo{max-width:39px;left:10px;top:10px;}
-  .description_goods_card .specifications{margin-bottom:0;}
+  .description_goods_card .specifications{margin-bottom:10px;}
   .title_big_font{font-size:32px;line-height:36px;}
   .count_label.total{padding:40px 0 10px;justify-content:center;}
   .count_label.total .btn_count{width:43px;height:43px;padding:10px;}

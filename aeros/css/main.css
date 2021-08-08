@@ -423,7 +423,7 @@ body { font-family: 'Montserrat_medium'; }
 
 .description_goods_card .link_comments_goods:hover { color: black; text-decoration: none; }
 
-.specifications { list-style: none; padding-left: 0; margin-bottom: 0; }
+.specifications { list-style: none; padding-left: 0; margin-bottom: 5px; }
 
 .specifications_item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -2298,7 +2298,7 @@ body { font-family: 'Montserrat_medium'; }
   .wrapper_klients { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
   .wrap_img_client { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; padding: 0; text-align: center; }
   .brand_logo { max-width: 39px; left: 10px; top: 10px; }
-  .description_goods_card .specifications { margin-bottom: 0; }
+  .description_goods_card .specifications { margin-bottom: 10px; }
   .title_big_font { font-size: 32px; line-height: 36px; }
   .count_label.total { padding: 40px 0 10px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .count_label.total .btn_count { width: 43px; height: 43px; padding: 10px; }
