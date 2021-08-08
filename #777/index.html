@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>RealWin</title>
   <link rel="stylesheet" href="css/style.css">
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -49,6 +49,18 @@
   <div class="wrapper">
     <div class="intro">
       <div class="bg_automat">
+        <div class="countdown_timer">
+          <div class="timer_block">
+            <span class="wrap_times"><span class="hours">00</span></span>
+            <span class="devided">:</span>
+            <span class="wrap_times"><span class="minutes">00</span></span>
+            <span class="devided">:</span>
+            <span class="wrap_times"><span class="seconds">00</span></span>
+          </div>
+          <div class="text_block_timer">
+            <span>успей получить</span>
+          </div>
+        </div>
         <img class="img-fluid automat" src="img/automat.png" alt="игральный автомат">
         <img class="img-fluid light light_1" style="--i:1" src="img/light.png" alt="подсветка">
         <img class="img-fluid light light_2" style="--i:2" src="img/light.png" alt="подсветка">
@@ -82,18 +94,6 @@
             <div class="logo_brand">
               <a href="https://www.realwin.com/" class=""><img class="img-fluid" src="img/logo.png" alt="realwin"></a>
             </div>
-            <div class="countdown_timer">
-              <div class="timer_block">
-                <span class="wrap_times"><span class="hours">00</span></span>
-                <span class="devided">:</span>
-                <span class="wrap_times"><span class="minutes">00</span></span>
-                <span class="devided">:</span>
-                <span class="wrap_times"><span class="seconds">00</span></span>
-              </div>
-              <div class="text_block_timer">
-                <span>успей получить</span>
-              </div>
-            </div>
           </div>
         </div> 
       </header>
@@ -102,13 +102,16 @@
           <div class="col-left">
             <h1 class="title text-center">Приветственный пакет для новичков!</h1>
             <div class="nums_block">
-              <img class="img-fluid ml_img" src="img/200.png" alt="200%">
+              <!-- <img class="img-fluid ml_img" src="img/200.png" alt="200%"> -->
+              <span class="neon purple">200%</span>
               <span class="text_content ml_text">до</span>
-              <img class="img-fluid ml_img_2" src="img/90k.png" alt="90k">
+              <!-- <img class="img-fluid ml_img_2" src="img/90k.png" alt="90k"> -->
+              <span class="neon blue">90.000</span>
               <span class="text_content ml_text_2">рублей</span>
             </div>
             <div class="text_block text-center">
-              <img class="img-fluid" src="img/text.png" alt="фриспины">
+              <span class="white_neon text-center">+100 фриспинов без отыгрыша</span>
+              <!-- <img class="img-fluid" src="img/text.png" alt="фриспины"> -->
               <a href="#" class="btn_gradient">Забрать бонус</a>
             </div>
           </div>
