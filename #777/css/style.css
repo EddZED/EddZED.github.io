@@ -40,7 +40,7 @@ img { pointer-events: none; }
 
 .neon { display: inline-block; }
 
-.neon.purple { font-size: 200px; line-height: 220px; color: #8213cd; text-shadow: 2px 0 2px #c10efe, 0 3px 4px #fff, 4px 0 4px #fff, -3px 0 4px #fff, 0 -3px 4px #fff, -8px -6px 4px rgba(131, 45, 160, 0.5), -10px -8px 2px rgba(238, 76, 253, 0.5), -15px -10px 5px rgba(131, 45, 160, 0.5), -20px -15px 10px rgba(131, 45, 160, 0.5), -25px -20px 20px rgba(131, 45, 160, 0.1), -40px -40px 30px rgba(131, 45, 160, 0.1), 15px 10px 5px rgba(131, 45, 160, 0.5), 20px 15px 10px rgba(131, 45, 160, 0.5), 25px 20px 20px rgba(131, 45, 160, 0.1), 40px 40px 30px rgba(131, 45, 160, 0.1); -webkit-filter: drop-shadow(0 0 30px #832da0); filter: drop-shadow(0 0 30px #832da0); }
+.neon.purple { padding-top: 40px; font-size: 200px; line-height: 220px; color: #8213cd; text-shadow: 2px 0 2px #c10efe, 0 3px 4px #fff, 4px 0 4px #fff, -3px 0 4px #fff, 0 -3px 4px #fff, -8px -6px 4px rgba(131, 45, 160, 0.5), -10px -8px 2px rgba(238, 76, 253, 0.5), -15px -10px 5px rgba(131, 45, 160, 0.5), -20px -15px 10px rgba(131, 45, 160, 0.5), -25px -20px 20px rgba(131, 45, 160, 0.1), -40px -40px 30px rgba(131, 45, 160, 0.1), 15px 10px 5px rgba(131, 45, 160, 0.5), 20px 15px 10px rgba(131, 45, 160, 0.5), 25px 20px 20px rgba(131, 45, 160, 0.1), 40px 40px 30px rgba(131, 45, 160, 0.1); -webkit-filter: drop-shadow(0 0 30px #832da0); filter: drop-shadow(0 0 30px #832da0); }
 
 @media (max-width: 991px) { .neon.purple { font-size: 150px; line-height: 160px; padding-top: 20px; } }
 

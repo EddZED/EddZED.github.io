@@ -8,18 +8,18 @@ $('.slider_filter_cart').slick({
   draggable: true,
   fade: false,
   focusOnSelect: true,
-  asNavFor: '.slider_demonstr'
+  responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          draggable: false,
+          dots: false,
+          arrows: false
+        }
+      }
+  ]
   });
-  $('.slider_demonstr').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  TouchMove: true,
-  arrows: false,
-  infinite: false,
-  dots: false,
-  draggable: false,
-  fade: false,
-  focusOnSelect: false,
-  asNavFor: '.slider_filter_cart'
-  });
-$('.slider_demonstr').slick('setPosition');
+$('.slider_filter_cart').slick('setPosition');
