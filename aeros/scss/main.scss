@@ -27,6 +27,7 @@ $maxWidthContainer: 1170;
 		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 	}
 }
+section{will-change:transform;}
 .preload * {-webkit-transition: none !important;-moz-transition: none !important;-ms-transition: none !important;-o-transition: none !important;}
 .wrapper{overflow-x:hidden;overflow-y:auto;position:relative;}
 .header{position:absolute;width:100%;left:0;top:0;}
