@@ -726,8 +726,11 @@
         margin-top:10px;
       }
       a.waranty{
-        display:inline-flex;
+        height:100%;
         align-items:center;
+        justify-content:flex-start;
+        vertical-align:center;
+        padding-top:32px;
         font-size:16px;
         line-height:20px;
         letter-spacing:0.04em;
@@ -757,6 +760,7 @@
           display:none;
         }
         .checked{
+          display:block;
           position:absolute;
           width:17px;
           height:17px;
