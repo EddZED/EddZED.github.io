@@ -13,6 +13,8 @@ html { scroll-behavior: smooth; }
 
 body { font-family: 'Montserrat_medium'; }
 
+section { will-change: transform; }
+
 .preload * { -webkit-transition: none !important; -moz-transition: none !important; -ms-transition: none !important; -o-transition: none !important; }
 
 .wrapper { overflow-x: hidden; overflow-y: auto; position: relative; }
