@@ -57,6 +57,21 @@
     }
   }
 }
+.btn_info{
+      position:relative;
+      .info_block_content{
+        padding:30px 40px;
+        width:591px;
+        .text_infoblock{
+        font-size:16px;
+        line-height:100.9%;
+        color:#000;
+        font-family:'Montserrat_reg';
+        margin-bottom:0;
+        text-align:left;
+      }
+      }
+    }
 ._radio{
   padding-left:120px;
   input[type="radio"]{
@@ -144,21 +159,7 @@
         margin: 0px  0px  0px  15px;
       }
     }
-    .btn_info{
-      position:relative;
-      .info_block_content{
-        padding:30px 40px;
-        width:591px;
-        .text_infoblock{
-        font-size:16px;
-        line-height:100.9%;
-        color:#000;
-        font-family:'Montserrat_reg';
-        margin-bottom:0;
-        text-align:left;
-      }
-      }
-    }
+    
     .drop_filter{
       filter:drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.25));
       padding-left:30px;
@@ -490,3 +491,178 @@
     }
   }
 }
+.color_setting{
+  padding-left:75px;
+  .setting_descriptions{
+    display:flex;
+    align-items:center;
+  }
+  .check_filter{
+    padding-left:40px;
+    .checked{
+      border:1px solid rgba(102, 102, 102, 0.5);
+      left:0;
+      top:-7px;
+    }
+    .name_filtr{
+      font-size:15px;
+      line-height:100.9%;
+      font-family:'Montserrat_medium';
+    }
+  }
+}
+.setting_descriptions{
+  display:block;
+  font-size:16px;
+  line-height:140.9%;
+  color:rgba(0,0,0,.7);
+  font-family:'Montserrat_reg';
+}
+.desc_color{
+  .info_block_content{
+    padding:10px 25px;
+    width:320px;
+  }
+}
+.desc_color_info{
+  .btn_info{
+    img{
+      max-width:42px;
+    }
+  }
+}
+.select_item_block{
+  display:flex;
+  align-items:center;
+  .left_block_select{
+    display:inline-flex;
+    align-items:center;
+    padding-right:40px;
+    .block_selected_color{
+      display:inline-block;
+    }
+    .other_color{
+      font-size:16px;
+      line-height:20px;
+      letter-spacing:0.04em;
+      color:#31ACE4;
+      font-family:'Montserrat_medium';
+      display:inline-flex;
+      align-items:center;
+      padding-left:20px;
+    }
+  }
+  .right_block_select{
+    
+    .wrapper_shadow{
+      background-color:#fff;
+      box-shadow: 0px -0.5px 10px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      padding:10px 15px;
+      .text_aeros{
+        font-size:13px;
+        line-height:140.9%;
+        color:rgba(0,0,0,.7);
+        font-family:'Montserrat_medium';
+      }
+    }
+  }
+}
+.total_goods_block{
+  padding-top:70px;
+}
+.wrapper_shadow_adv{
+  background: #F8F9FE;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding:33px 35px;
+}
+.advent_item{
+  display:flex;
+  align-items:center;
+  .image_advent{
+    max-width:57px;
+  }
+  .content_advent{
+    padding-left:20px;
+    .title_advet{
+      font-size:18px;
+      line-height:22px;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,.73);
+      font-family:'Montserrat_bold';
+    }
+    .desc_advent{
+      font-size:16px;
+      line-height:20px;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,.73);
+      font-family:'Montserrat_reg';
+      .phone_help{
+        font-size:16px;
+        line-height:20px;
+        letter-spacing:0.04em;
+        color:rgba(0,0,0,.73);
+        font-family:'Montserrat_reg';
+      }
+    }
+  }
+}
+.selected_goods{
+  padding: 25px 0px 25px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  &:not(:last-of-type){
+    border-bottom:1px solid rgba(0,0,0,.3);
+  }
+  .name_selected{
+    flex:0 0 50%;
+    .name_goods{
+      font-size:16px;
+      line-height:20px;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,.73);
+      font-family:'Montserrat_bold';
+    }
+  }
+  .current_price_goods{
+    flex:1 1 10%;
+    .price_goods{
+      font-size:16px;
+      line-height:20px;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,.9);
+      font-family:'Montserrat_medium';
+    }
+  }
+  .old_price_goods{
+    flex:1 1 20%;
+    .red_text_price{
+      font-size:13px;
+      line-height:16px;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,1);
+      background: linear-gradient(84.73deg, #FF0606 7.12%, #FFB017 204.78%, #FFE922 262.29%);
+      font-family:'Montserrat_reg';
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .count_goods{
+    .count_goods_text{
+      font-size:13px;
+      line-height:164.8%;
+      letter-spacing:0.04em;
+      color:rgba(0,0,0,1);
+      font-family:'Montserrat_semibold';
+    }
+  }
+}
+.total_order_block{
+  justify-content:flex-end;
+}
+.end_block_btns{
+  justify-content:flex-end;
+}
+
