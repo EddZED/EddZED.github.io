@@ -493,6 +493,9 @@
 }
 .color_setting{
   padding-left:75px;
+  @media(max-width:767.9px){
+    padding-left:0;
+  }
   .setting_descriptions{
     display:flex;
     align-items:center;
@@ -534,10 +537,17 @@
 .select_item_block{
   display:flex;
   align-items:center;
+  @media(max-width:767.9px){
+    flex-wrap:wrap;
+  }
   .left_block_select{
     display:inline-flex;
     align-items:center;
     padding-right:40px;
+    @media(max-width:767.9px){
+      padding-right:0;
+      width:100%;
+    }
     .block_selected_color{
       display:inline-block;
     }
@@ -553,12 +563,18 @@
     }
   }
   .right_block_select{
-    
+    @media(max-width:767.9px){
+      width:100%;
+      margin-top:20px;
+    }
     .wrapper_shadow{
       background-color:#fff;
       box-shadow: 0px -0.5px 10px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.08);
       border-radius: 10px;
       padding:10px 15px;
+      @media(max-width:767.9px){
+        width:100%;
+      }
       .text_aeros{
         font-size:13px;
         line-height:140.9%;
@@ -570,12 +586,18 @@
 }
 .total_goods_block{
   padding-top:70px;
+  @media(max-width:767.9px){
+    padding-top:30px;
+  }
 }
 .wrapper_shadow_adv{
   background: #F8F9FE;
   box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding:33px 35px;
+  @media(max-width:991px){
+    padding:20px;
+  }
 }
 .advent_item{
   display:flex;
@@ -591,6 +613,10 @@
       letter-spacing:0.04em;
       color:rgba(0,0,0,.73);
       font-family:'Montserrat_bold';
+      @media(max-width:767.9px){
+        font-size:15px;
+        line-height:18px;
+      }
     }
     .desc_advent{
       font-size:16px;
@@ -598,12 +624,20 @@
       letter-spacing:0.04em;
       color:rgba(0,0,0,.73);
       font-family:'Montserrat_reg';
+      @media(max-width:767.9px){
+        font-size:13px;
+        line-height:16px; 
+      }
       .phone_help{
         font-size:16px;
         line-height:20px;
         letter-spacing:0.04em;
         color:rgba(0,0,0,.73);
         font-family:'Montserrat_reg';
+        @media(max-width:767.9px){
+          font-size:13px;
+          line-height:16px; 
+        }
       }
     }
   }
@@ -616,28 +650,56 @@
   &:not(:last-of-type){
     border-bottom:1px solid rgba(0,0,0,.3);
   }
+  @media(max-width:767.9px){
+    padding: 15px 0px 15px 10px;
+  }
   .name_selected{
     flex:0 0 50%;
+    @media(max-width:767.9px){
+      flex:0 0 30%;
+      padding-right:5px;
+    }
     .name_goods{
+      display:inline-block;
       font-size:16px;
       line-height:20px;
       letter-spacing:0.04em;
       color:rgba(0,0,0,.73);
       font-family:'Montserrat_bold';
+      @media(max-width:767.9px){
+        font-size:15px;
+        line-height:18px;
+      }
     }
   }
   .current_price_goods{
     flex:1 1 10%;
     .price_goods{
+      display:inline-block;
       font-size:16px;
       line-height:20px;
       letter-spacing:0.04em;
       color:rgba(0,0,0,.9);
       font-family:'Montserrat_medium';
+      @media(max-width:767.9px){
+        font-size:15px;
+        line-height:18px;
+      }
     }
   }
   .old_price_goods{
     flex:1 1 20%;
+    .red_old_price {
+      @media(max-width:767.9px){
+        font-size:12px;
+      }
+    }
+    .persent_stock{
+        @media(max-width:767.9px){
+          font-size:10px !important;
+          padding:6px 8px;
+        }
+      }
     .red_text_price{
       font-size:13px;
       line-height:16px;
@@ -661,8 +723,25 @@
 }
 .total_order_block{
   justify-content:flex-end;
+  @media(max-width:767.9px){
+    justify-content:center;
+  }
+  .total_order_proce{
+    @media(max-width:767.9px){
+      padding-left:5px;
+    }
+  }
 }
 .end_block_btns{
   justify-content:flex-end;
 }
-
+.other_color{
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:0.04em;
+  color:#31ACE4;
+  font-family:'Montserrat_medium';
+  display:inline-flex;
+  align-items:center;
+  padding-left:20px;
+}
