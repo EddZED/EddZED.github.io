@@ -2,6 +2,8 @@ $('.intro_slider_view').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
+  centerMode: false,
+  focusOnSelect: false,
   fade: true,
   asNavFor: '.intro_slider_nav'
 });
@@ -10,9 +12,9 @@ $('.intro_slider_nav').slick({
   slidesToScroll: 1,
   asNavFor: '.intro_slider_view',
   dots: false,
-  centerMode: true,
+  centerMode: false,
   centerPadding: '0px',
-  focusOnSelect: true,
+  focusOnSelect: false,
   prevArrow: '<button type = "button" class = "slick-prev"><img class="img-fluid" src="img/sl_left.png" alt="передъидущий слайд"></ button>',
   nextArrow: '<button type = "button" class = "slick-next"><img class="img-fluid" src="img/sl_right.png" alt="следующий слайд"></ button>',
   responsive: [
@@ -46,7 +48,7 @@ $('.intro_slider_nav').slick({
           arrows: true,
           adaptiveHeight: false,
           dots: true
-         }
+        }
       }
     ]
 });

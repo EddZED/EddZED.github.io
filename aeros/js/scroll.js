@@ -530,27 +530,27 @@ $(document).ready(function() {
 			// .setTween(TweenMax.from("#map h2.black", 1, {opacity: 0, y: 100}))
 			// .addTo(controller);
 
-			new ScrollMagic.Scene({triggerElement: "#answer", duration: 200, offset: 0, triggerHook: 0.8})
-				.setTween(TweenMax.from("#answer", 1, {opacity: 0, y: 100}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#answer", duration: 200, offset: 0, triggerHook: 0.8})
+			// 	.setTween(TweenMax.from("#answer", 1, {opacity: 0, y: 100}))		
+			// 	.addTo(controller);
 			// new ScrollMagic.Scene({triggerElement: "#answer", duration: 300, offset: 200, triggerHook: 0.1})
 			// 	.setTween(TweenMax.to("#answer", 1, {opacity: 0, y: -100}))		
 			// 	.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#slider_goods", duration: 300, offset: 0, triggerHook: 0.8})
-				.setTween(TweenMax.from("#slider_goods", 1, {opacity: 0, y: 100}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#slider_goods", duration: 300, offset: 0, triggerHook: 0.8})
+			// 	.setTween(TweenMax.from("#slider_goods", 1, {opacity: 0, y: 100}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#popular_categories", duration: 300, offset: 0, triggerHook: 0.8})
 				.setTween(TweenMax.from("#popular_categories", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#available_test_drive", duration: 300, offset: 0, triggerHook: 0.8})
-				.setTween(TweenMax.from("#available_test_drive", 1, {opacity: 0, y: 100}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#available_test_drive", duration: 300, offset: 0, triggerHook: 0.8})
+			// 	.setTween(TweenMax.from("#available_test_drive", 1, {opacity: 0, y: 100}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#sliders_stocks", duration: 300, offset: 0, triggerHook: 0.8})
 				.setTween(TweenMax.from("#sliders_stocks", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.8})
-				.setTween(TweenMax.from("#new_goods", 1, {opacity: 0, y: 100}))		
-				.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#new_goods", duration: 300, offset: 0, triggerHook: 0.8})
+			// 	.setTween(TweenMax.from("#new_goods", 1, {opacity: 0, y: 100}))		
+			// 	.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#test_drive", duration: 300, offset: 0, triggerHook: 0.8})
 				.setTween(TweenMax.from("#test_drive", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
@@ -558,8 +558,20 @@ $(document).ready(function() {
 				.setTween(TweenMax.from("#about_us", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#trust", duration: 300, offset: 0, triggerHook: 0.8})
-				.setTween(TweenMax.from("#trust", 1, {opacity: 0, y: 100}))		
+				.setTween(TweenMax.from("#trust .wrap_company_block", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
+
+			var timelinegray = new TimelineMax();
+		timelinegray.add(TweenMax.from("#trust .wrap_company_block", 1, { 'filter': 'grayscale(100%)'}))
+		.add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(50%)'}))
+		.add(TweenMax.to("#trust .wrap_company_block", 1, { 'filter': 'grayscale(0%)'}));
+		new ScrollMagic.Scene({triggerElement: "#trust .wrap_company_block", duration: 300, offset: 0, triggerHook: .8})
+			.setTween(timelinegray)	
+			.addTo(controller);
+			// new ScrollMagic.Scene({triggerElement: "#trust", duration: 400, offset: 100, triggerHook: 0.7})
+			// 	.setTween(TweenMax.from("#trust .wrap_company_block", 1, {opacity: 0, y: 100, 'filter': 'grayscale(100%)'}))		
+			// 	.addTo(controller);
+
 			new ScrollMagic.Scene({triggerElement: "#recomend_reading", duration: 300, offset: 0, triggerHook: 0.8})
 				.setTween(TweenMax.from("#recomend_reading", 1, {opacity: 0, y: 100}))		
 				.addTo(controller);
