@@ -396,7 +396,7 @@
     .content_filter{
       display:flex;
       flex-direction:column;justify-content:flex-start;
-      padding:23px 13px;
+      padding:23px 13px 15px;
       .filtr_search{
         display:flex;
         align-items:center;
@@ -444,7 +444,7 @@
         background-color:#fff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        padding: 2px 0px 2px 14px;
+        padding: 2px 14px 2px 14px;
         margin-bottom:13px;
       }
       .block__title{
@@ -502,6 +502,9 @@
             img{
               padding-right:2px;
             }
+            img:last-of-type{
+              padding-right:10px;
+            }
             .count_stars{
               font-size:10px;
               line-height:100.9%;
@@ -510,12 +513,111 @@
             }
           }
         }
-        
+        .btn_other_brend{
+          font-family:"Montserrat_semibold";
+          font-size:14px;
+          line-height:17px;
+          letter-spacing:0.01em;
+          color:#4AB6E8;
+          border:none;
+          background-color:transparent;
+          width:100%;
+          text-align:center;
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          &:focus{
+            outline:none;
+          }
+          &:hover{
+            text-decoration:underline;
+          }
+        }
+      }
+      .wrapper_price_filter{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding-top:20px;
+        .price_filter{
+          display:flex;
+          position: relative;
+          align-items:center;
+          width:112px;
+          height:30px;
+          border:1px solid #989898;
+          border-radius:5px;
+          padding:0 15px;
+          .price_text{
+            font-size:13px;
+            line-height:100.9%;
+            color:rgba(92, 92, 92,.7);
+            font-family:"Montserrat_medium";
+            display:inline-block;
+            padding-right:5px;
+          }
+          input{
+            border:none;
+            font-size:13px;
+            line-height:100.9%;
+            color:rgba(0, 0, 0,.7);
+            font-family:"Montserrat_medium";
+            background-color:transparent;
+            width:100%;
+            &::-webkit-outer-spin-button{
+              -webkit-appearance:none;
+              margin:0;
+            }
+            &::-webkit-inner-spin-button{
+              -webkit-appearance:none;
+              margin:0;
+            }
+            &::-webkit-input-placeholder{
+              color:rgba(0, 0, 0,.7);
+            }
+            &:focus{
+              outline:none;
+            }
+          }
+        }
+      }
+      .noUi-target{
+        border:none;
+      }
+      .noUi-horizontal{
+        height:4px;
+      }
+      .noUi-connect{
+        background: linear-gradient(269.87deg, #F71212 -19.63%, #FDB41E 57.96%), #C4C4C4;
       }
     }
   }
 }
-
+.noUi-handle:after, .noUi-handle:before{
+  display:none;
+}
+#filtr_price.noUi-horizontal .noUi-handle{
+  width:20px;
+  height:20px;
+  background-color:#fff;
+  border-radius:50%;
+  border:3px solid #767676;
+  box-shadow:none;
+}
+.noUi-horizontal .noUi-handle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:none;
+    background-color:#fff;
+    box-shadow: 5px -1px 5px rgba(0, 0, 0, 0.25);
+  }
+.noUi-horizontal .noUi-handle-upper{
+  right:0;
+}
+.filter_price_slider{
+  margin-top:10px;
+}
 
 
 
