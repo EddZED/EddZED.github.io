@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body>  
   <div class="wrapper">
     <header class="header">
       <div class="header_wrapper">
@@ -830,7 +830,7 @@
         </div>
       </section>
       <section class="device">
-        <div class="container first_intro">
+        <div class="container first_intro pt-3 pt-lg-0">
           <!-- <h2 class="title_big_font d-none mb-4 mb-lg-5">Выберите устройство для себя</h2> -->
           <nav class="bread_crumb_desc" aria-label="Page breadcrumb">
             <ol class="breadcrumb">
@@ -838,7 +838,7 @@
               <li class="breadcrumb-item">Бризеры</li>
             </ol>
           </nav>
-          <div class="wrapper_gray">
+          <div class="wrapper_gray d-none d-lg-block">
             <div class="top_block">
               <div class="list_type">
                 <a href="#" class="type_item">Подогрев воздуха</a>
@@ -856,13 +856,13 @@
               <div class="sort">
                 <p class="gray_min_text mb-0">Сортировка: </p>
                 <select id="my-select" class="my_select" name="">
-                  <option selected>сначала недорогие</option>
-                  <option value="1">сначала дорогие</option>
-                  <option value="2">по акции </option>
+                  <option selected> сначала недорогие</option>
+                  <option value="1"> сначала дорогие</option>
+                  <option value="2"> по акции </option>
                 </select>
               </div>
-              <div class="type_view">
-                <button type="button" class="btn_view">
+              <div id="type_view" class="type_view">
+                <button type="button" class="btn_view view_row active">
                   <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                       <rect width="19" height="9" fill="#666666" />
@@ -870,7 +870,7 @@
                     </g>
                   </svg>
                 </button>
-                <button type="button" class="btn_view">
+                <button type="button" class="btn_view view_col">
                   <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.6">
                       <rect width="9" height="9" fill="#666666" />
@@ -881,6 +881,143 @@
                   </svg>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content_page">
+        <div class="container first_intro">
+          <div class="row">
+            <div class="left_col_filter">
+              <div class="wrapper_gray">
+                <form action="" class="filter_page">
+                  <fieldset>
+                    <div class="content_filter">
+                      <label class="filtr_search">
+                        <input class="form-control" type="text" name="search" placeholder="Поиск по категории">
+                        <button type="submit" class="btn_search"><img class="img-fluid" src="svg/search_filter.svg" alt="поиск по фильтру"></button>
+                      </label>
+                      <div data-spollers class="block block_1">
+                        <div class="block__item">
+                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Тип устройства</button>
+                          <div class="block__item-filtr">
+                            <div class="wrap_item_filtr">
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Бризеры</span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Рекуператоры</span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Клапаны</span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Центральная вентиляция</span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Фильтры</span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">Рециркуляторы</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block__item">
+                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> По рейтингу</button>
+                          <div class="block__item-filtr">
+                            <div class="wrap_item_filtr">
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <span class="count_stars">196</span>
+                                </span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <span class="count_stars">45</span>
+                                </span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <span class="count_stars">12</span>
+                                </span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <span class="count_stars">9</span>
+                                </span>
+                              </label>
+                              <label class="filtr_check">
+                                <input type="checkbox" name="type_device">
+                                <span class="checked"><img class="img-fluid" src="svg/filtr_gal.svg" alt="выбрано"></span>
+                                <span class="name_item_filtr">
+                                  <img class="img-fluid" src="svg/star_rating.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <img class="img-fluid" src="svg/star_rating_gray.svg" alt="">
+                                  <span class="count_stars">1</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block__item">
+                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Бренд</button>
+                          <div class="block__item-filtr">
+                            <div class="wrap_item_filtr">
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="right_col_content">
+              
             </div>
           </div>
         </div>
@@ -1054,6 +1191,7 @@
   <script src="js/sliders_stocks.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/spollers.js"></script>
   <script>
     $(window).on("load", function () {
       $('.splitpic-horizontal .splitpic-images').each(function (i, v) {
@@ -1105,6 +1243,10 @@
     $('.btn_info').eq(3).click(function () {
       $('.info_block_wrapper').eq(3).toggleClass('active');
     });
+    $('.btn_view').click(function(){
+      $('.btn_view').removeClass('active');
+      $(this).addClass('active');
+    })
     $(document).mouseup(function (e) {
       var info = $(".info_block_wrapper"); // тут указываем класс элемента
       if (!info.is(e.target) // если клик был не по нашему блоку
