@@ -537,48 +537,7 @@
       @media(max-width:767.9px){
         background-color:transparent;
       }
-      .price_block_cart{
-        display:flex;
-        align-items:center;
-        flex-wrap:wrap;
-        @media(max-width:1199px){
-          width:100%;
-        }
-        .new_price{
-          font-size:34px;
-          line-height:41px;
-          letter-spacing:0.04em;
-          color:rgba(0,0,0,.9);
-          font-family:"Montserrat_reg";
-          @media(max-width:1199px){
-            font-size:28px;
-            line-height:35px;
-          }
-          @media(max-width:991px){
-            font-size:16px;
-            line-height:20px;
-          }
-        }
-        .old_price{
-          display:flex;
-          flex-direction:column;
-          align-items:center;
-          height:auto;
-          .persent_stock{
-            padding:4px 10px;
-            font-family:'Montserrat_bold';
-          }
-          .red_old_price{
-            @media(max-width:1199px){
-              margin-left:25px;
-            }
-            @media(max-width:991px){
-              margin-left:15px;
-              font-size:11px;
-            }
-          }
-        }
-      }
+      
       
       .more{
         font-size:13px;
@@ -866,6 +825,48 @@
           line-height:164.8%;
           letter-spacing:0.04em;
           color:#868686;
+        }
+      }
+.price_block_cart{
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+        @media(max-width:1199px){
+          width:100%;
+        }
+        .new_price{
+          font-size:34px;
+          line-height:41px;
+          letter-spacing:0.04em;
+          color:rgba(0,0,0,.9);
+          font-family:"Montserrat_reg";
+          @media(max-width:1199px){
+            font-size:28px;
+            line-height:35px;
+          }
+          @media(max-width:991px){
+            font-size:16px;
+            line-height:20px;
+          }
+        }
+        .old_price{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          height:auto;
+          .persent_stock{
+            padding:4px 10px;
+            font-family:'Montserrat_bold';
+          }
+          .red_old_price{
+            @media(max-width:1199px){
+              margin-left:25px;
+            }
+            @media(max-width:991px){
+              margin-left:15px;
+              font-size:11px;
+            }
+          }
         }
       }
 .delivery_step{

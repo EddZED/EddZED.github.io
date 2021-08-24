@@ -629,6 +629,7 @@
   display:flex;
   position: relative;
   overflow:hidden;
+  justify-content:space-between;
   .col_slider_card{
     flex:0 0 20%;
     max-width:20%;
@@ -652,6 +653,12 @@
     .pay_part{
       margin-top:20px;
       margin-bottom:10px;
+      max-width:313px;
+    }
+  }
+  .col_right_card{
+    .old_price{
+      flex-direction:row;
     }
   }
 }
