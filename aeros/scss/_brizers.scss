@@ -631,8 +631,8 @@
   overflow:hidden;
   justify-content:space-between;
   .col_slider_card{
-    flex:0 0 20%;
-    max-width:20%;
+    flex:0 0 22%;
+    max-width:22%;
     .slider_good_category{
       position:relative;
       max-width:100%;
@@ -647,6 +647,7 @@
   .col_center_card{
     overflow:hidden;
     position:relative;
+    flex:1 1 auto;
     .rows_table{
       margin-bottom:10px;
     }
@@ -657,8 +658,24 @@
     }
   }
   .col_right_card{
+    flex:1 1 20%;
+    padding-right:30px;
+    .new_price{
+      span{
+        font-family:'Montserrat_medium';
+      }
+    }
     .old_price{
       flex-direction:row;
+    }
+    .blk_btn_category_card{
+      display:flex;
+      align-items:center;
+      .heart_favorite{
+        border:none;
+        background-color:transparent;
+        padding:0 10px;
+      }
     }
   }
 }
