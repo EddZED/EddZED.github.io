@@ -160,7 +160,7 @@ if (spollersArray.length > 0){
       const spollersBlock = spollerTitle.closest('[data-spollers]');
       const oneSpoller = spollersBlock.hasAttribute('data-one-spoller') ? true : false;
       if (!spollersBlock.querySelectorAll('._slide').length) {
-        if (oneSpoller && !spollerTitle.classList.contains('_active')) {
+        if (oneSpoller && !spollerTitle.classList.contains('_active')){
           hideSpollersBody(spollersBlock);
         }
         spollerTitle.classList.toggle('_active');
@@ -171,7 +171,9 @@ if (spollersArray.length > 0){
   }
   function hideSpollersBody(spollersBlock){
     const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._active');
-    if (spollerActiveTitle) {
+    const windowInnerWidth = window.innerWidth();
+    console.log(windowInnerWidth);
+    if (spollerActiveTitle || windowInnerWidth < 991) {
       spollerActiveTitle.classList.remove('_active');
       _slideUp(spollerActiveTitle.nextElementSibling, 500);
     }

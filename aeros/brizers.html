@@ -893,14 +893,32 @@
               <div class="wrapper_gray">
                 <form action="" class="filter_page">
                   <fieldset>
-                    <div class="content_filter">
-                      <label class="filtr_search">
+                    <div class="mobile-title_filtr d-lg-none">
+                      <p class="bold_blue_text">Подходящие<br>изделия (100)</p>
+                      <span class="gradient_line"></span>
+                    </div>
+                    <div class="wrap_mobile_tabs d-lg-none">
+                      <button type="button" class="btn_tabs hide_filtr" data-toggle="collapse" data-target="#filters" aria-expanded="false"><span class="show">Показать </span><span class="hide">Скрыть </span> фильтры</button>
+                      <button type="button" class="btn_tabs hide_search" data-toggle="collapse" data-target="#search_filter" araia-expanded="false">Сортировать</button>
+                    </div>
+                    <div id="search_filter" class="wrapper_search_mobile collapse show d-lg-none">
+                      <div class="sort">
+                        <select id="my-select_mobile" class="my_select" name="">
+                          <option selected> Сортировать по цене</option>
+                          <option value="1"> сначала дорогие</option>
+                          <option value="2"> сначала недорогие</option>
+                          <option value="3"> по акции </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div id="filters" class="content_filter collapse show">
+                      <label class="filtr_search d-none d-lg-flex">
                         <input class="form-control" type="text" name="search" placeholder="Поиск по категории">
                         <button type="submit" class="btn_search"><img class="img-fluid" src="svg/search_filter.svg" alt="поиск по фильтру"></button>
                       </label>
                       <div data-spollers class="block block_1">
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Тип устройства</button>
+                          <button type="button" class="block__title"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Тип устройства</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
                               <label class="filtr_check">
@@ -937,7 +955,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> По рейтингу</button>
+                          <button type="button" class="block__title"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> По рейтингу</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
                               <label class="filtr_check">
@@ -1004,7 +1022,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Бренд</button>
+                          <button type="button" class="block__title"><img class="img-fluid" src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Бренд</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
                               <label class="filtr_check">
@@ -1041,11 +1059,10 @@
                                 </label>
                               </div>
                             </div>
-
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Акции</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1073,7 +1090,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Цена</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1092,7 +1109,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Производительность</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1111,7 +1128,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Уровень очистки</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1159,7 +1176,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Догрев воздуха</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1182,7 +1199,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Уровень шума работы</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1195,7 +1212,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Доп. опции</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1208,7 +1225,7 @@
                           </div>
                         </div>
                         <div class="block__item">
-                          <button tabindex="-1" type="button" data-spoller class="block__title _active"><img class="img-fluid"
+                          <button  type="button" class="block__title"><img class="img-fluid"
                               src="svg/filtr_arrow.svg" alt="открыть фмльтр"> Страна производителя</button>
                           <div class="block__item-filtr">
                             <div class="wrap_item_filtr">
@@ -1267,7 +1284,7 @@
                     </span>
                     <a href="#" class="link_comments_goods">6 отзывов</a>
                   </div>
-                  <div class="table_parameters d-none d-lg-block">
+                  <div class="table_parameters">
                     <div class="rows_table">
                       <div class="name_params">
                         <span class="name_items">Макс. площать помещения, кв.м </span>
@@ -1319,7 +1336,7 @@
                   </div>
                 </div>
                 <div class="col_right_card">
-                  <div class="price_block_cart">
+                  <div class="price_block_cart d-none d-lg-block">
                     <div class="new_price">
                       <span>3 990 ₽ </span>
                     </div>
@@ -1328,9 +1345,9 @@
                       <span class="persent_stock d-none d-xl-block">- 12 %</span>
                     </div>
                   </div>
-                  <div class="blk_btn_category_card pt-3">
+                  <div class="blk_btn_category_card d-none d-lg-block pt-3">
                     <button class="btn_add_cart gradient_btn_other"><span>Добавить в корзину</span></button>
-                    <button class="heart_favorite">
+                    <button class="heart_favorite ">
                       <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M15.9814 1.00421C15.1026 0.337908 14.1329 0 13.0991 0C11.7948 0 10.3858 0.553665 9.00022 1.60651C7.61459 0.553665 6.20567 0 4.90132 0C3.86757 0 2.89783 0.337908 2.01903 1.00421C0.733252 1.97922 0.091671 3.2096 0.111787 4.6611C0.180966 9.63147 8.29657 15.4964 8.64198 15.7436L9.00022 16L9.35846 15.7436C9.70395 15.4964 17.8195 9.63147 17.8886 4.6611C17.9088 3.2096 17.2672 1.97922 15.9814 1.00421ZM12.6905 11.2785C11.188 12.7814 9.67189 13.9775 9.00022 14.487C8.32854 13.9775 6.81241 12.7815 5.30994 11.2785C2.73584 8.70363 1.36249 6.40927 1.33828 4.64353C1.32373 3.58524 1.78974 2.71213 2.76283 1.97426C3.42297 1.47362 4.14248 1.2198 4.90132 1.2198C6.33748 1.2198 7.7092 2.10918 8.60698 2.85526L9.00022 3.18203L9.39346 2.85526C10.2912 2.10918 11.663 1.2198 13.0991 1.2198C13.858 1.2198 14.5775 1.47362 15.2376 1.97426C16.2107 2.71213 16.6767 3.58524 16.6622 4.64353C16.6379 6.40935 15.2645 8.70363 12.6905 11.2785Z"
@@ -1338,6 +1355,45 @@
                       </svg>
                     </button>
                   </div>
+                  <div class="info_goods_availab d-none d-lg-block">
+                    <a href="#" class="more">Подробнее <img class="img-fluid pl-1" src="svg/blue_shev_filtr.svg" alt="подробнее">
+                    </a>
+                    <span class="available_good_text">В наличии</span>
+                  </div>
+                  <span class="available_good_text d-none d-lg-block pt-2">Бесплатная доставка</span>
+                  <p class="name_goods_ d-lg-none">oxy 1</p>
+                  <ul class="specifications mt-2">
+                    <li class="specifications_item">
+                      <span class="name_spec">Шумность</span>
+                      <span class="range middle_height"></span>
+                    </li>
+                    <li class="specifications_item">
+                      <span class="name_spec">Фильтрация</span>
+                      <span class="range height"></span>
+                    </li>
+                    <a href="#" class="more mt-2">Подробнее <img class="img-fluid pl-1" src="svg/blue_shev_filtr.svg" alt="подробнее">
+                    </a>
+                  </ul>
+                </div>
+                <div class="col_mobile d-lg-none">
+                  <div class="block_iten_info">
+                    <label class="compare">
+                      <input class="" type="checkbox" name="compare">
+                      <span class="checked"><img class="img-fluid" src="svg/green_gal.svg" alt=""></span>
+                      <span class="text_compare">Сравнить</span>
+                    </label>
+                    <div class="comments_rating mb-0">
+                      <div class="wrap_item_border">
+                        <span class="raiting_goods">
+                          <img class="img-fluid pr-1" src="img/star.png" alt="рейтинг">
+                          <span class="gradient_text">5.0</span>
+                        </span>
+                      </div> 
+                      <div class="wrap_item_border">
+                        <a href="#" class="link_comments_goods">6 отзывов</a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -1373,19 +1429,9 @@
             </div>
           </div>
           <div class="col-lg-4 text-left text-lg-right order-3 pt-5 pt-lg-0">
-            <p class="title_foote_item pt-3 mb-2 mb-lg-0">Выберите регион:</p>
-            <div class="btn_city">
+            <p class="title_foote_item pt-3 mb-0 mb-lg-0">Выберите регион:</p>
+            <div class="btn_city mt-3 pr-0">
               <span class="position-relative">г. Москва</span>
-              <span class="shevrron_down">
-                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="-0.35" x2="4.18095" y2="-0.35"
-                    transform="matrix(0.696488 -0.717568 0.968394 0.249426 1.24219 6)" stroke="#191919"
-                    stroke-width="0.9" />
-                  <line y1="-0.35" x2="4.1812" y2="-0.35"
-                    transform="matrix(-0.696566 -0.717493 0.968381 -0.249476 4.15503 3)" stroke="#191919"
-                    stroke-width="0.9" />
-                </svg>
-              </span>
               <div class="wrapper_city_search text-left">
                 <div class="sity_search_block">
                   <p class="min_txt">Возможно, мы неправильно определили ваше месторасположение, Вы можете указать его
@@ -1596,6 +1642,18 @@
       }
       scrollPrev = scrolled;
     })
+  </script>
+  <!--spollers-->
+  <script>
+  let winWidth = $(window).width();
+   $(".block__title").click(function(){
+     $(this).toggleClass('active');
+   });
+   if (winWidth > 992) {
+      $(".block__title").addClass('active');
+    }else{
+      $(".block__title").removeClass('active');
+    }
   </script>
 </body>
 
