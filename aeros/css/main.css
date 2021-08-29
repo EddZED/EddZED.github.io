@@ -2110,6 +2110,8 @@ section { will-change: transform; }
 
 .card_category_page .col_slider_card { -webkit-box-flex: 0; -webkit-flex: 0 0 23%; -ms-flex: 0 0 23%; flex: 0 0 23%; max-width: 23%; }
 
+@media (max-width: 767.9px) { .card_category_page .col_slider_card { -webkit-box-flex: 0; -webkit-flex: 0 0 30%; -ms-flex: 0 0 30%; flex: 0 0 30%; max-width: 30%; } }
+
 .card_category_page .col_slider_card .slider_good_category { position: relative; max-width: 100%; }
 
 .card_category_page .col_slider_card .slider_good_category .slider_cat_item { text-align: center; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
@@ -2136,6 +2138,12 @@ section { will-change: transform; }
 
 .card_category_page .col_right_card { -webkit-box-flex: 1; -webkit-flex: 1 1 20%; -ms-flex: 1 1 20%; flex: 1 1 20%; padding-right: 30px; }
 
+@media (max-width: 767.9px) { .card_category_page .col_right_card { padding-right: 0; padding-left: 15px; -webkit-box-flex: 1; -webkit-flex: 1 1 25%; -ms-flex: 1 1 25%; flex: 1 1 25%; } }
+
+.card_category_page .col_right_card .specifications .more { font-family: 'Montserrat_semibold'; margin-right: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+@media (max-width: 565px) { .card_category_page .col_right_card .specifications .more { font-size: 11px; line-height: 13px; } }
+
 @media (max-width: 991px) { .card_category_page .col_right_card .name_goods_ { font-size: 18px; font-family: 'Montserrat_bold'; } }
 
 .card_category_page .col_right_card .new_price span { font-family: 'Montserrat_medium'; }
@@ -2149,6 +2157,8 @@ section { will-change: transform; }
 .card_category_page .col_right_card .info_goods_availab { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; padding-top: 15px; }
 
 .card_category_page .col_right_card .info_goods_availab .more { font-family: 'Montserrat_semibold'; margin-right: 30px; }
+
+@media (max-width: 565px) { .card_category_page .col_right_card .info_goods_availab .more { font-size: 11px; line-height: 13px; } }
 
 .card_category_page .col_right_card .available_good_text { font-size: 13px; font-family: 'Montserrat_semibold'; line-height: 16px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.5); display: inline-block; }
 
@@ -2178,9 +2188,11 @@ section { will-change: transform; }
 
 .wrapper_search_mobile .sort .my_select:focus { outline: none; }
 
-.col_mobile { width: 100%; -webkit-box-flex: 0; -webkit-flex: 0 1 100%; -ms-flex: 0 1 100%; flex: 0 1 100%; }
+.col_mobile { width: 100%; -webkit-box-flex: 0; -webkit-flex: 0 1 100%; -ms-flex: 0 1 100%; flex: 0 1 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 .col_mobile .block_iten_info { padding: 15px 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+@media (max-width: 767px) { .col_mobile .block_iten_info { padding: 10px 0; } }
 
 .col_mobile .block_iten_info .compare { margin-bottom: 0; position: relative; padding: 5px 6px 5px 25px; background-color: #fff; border: 1px solid #EDEDED; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; margin-right: 6px; min-height: 24px; }
 
@@ -2194,11 +2206,75 @@ section { will-change: transform; }
 
 .col_mobile .block_iten_info .compare .text_compare { font-size: 10px; line-height: 12px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.43); font-family: 'Montserrat_semibold'; }
 
-.col_mobile .block_iten_info .wrap_item_border { background-color: #fff; border: 1px solid #EDEDED; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; margin-right: 6px; min-height: 24px; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; }
+.col_mobile .block_iten_info .wrap_item_border { background-color: #fff; border: 1px solid #EDEDED; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; margin-right: 6px; min-height: 24px; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+.col_mobile .block_iten_info .wrap_item_border .link_comments_goods { font-size: 10px; line-height: 12px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 100%; }
 
 .col_mobile .block_iten_info .wrap_item_border .raiting_goods { min-width: 68px; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 100%; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
 
 .col_mobile .block_iten_info .wrap_item_border .link_comments_goods { margin-left: 0; padding: 2px 10px 2px 10px; height: 100%; }
+
+.col_mobile .price_block_cart { padding-left: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 0; -webkit-flex: 0 1 60%; -ms-flex: 0 1 60%; flex: 0 1 60%; }
+
+@media (max-width: 767px) { .col_mobile .price_block_cart { padding-left: 0; } }
+
+.col_mobile .price_block_cart .new_price { font-family: 'Montserrat_medium'; }
+
+.col_mobile .price_block_cart .credit_item { width: 100%; font-size: 10px; line-height: 12px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.9); font-family: 'Montserrat_reg'; }
+
+.col_mobile .block_btn_buy_mobile { -webkit-box-flex: 0; -webkit-flex: 0 1 40%; -ms-flex: 0 1 40%; flex: 0 1 40%; }
+
+.col_mobile .block_btn_buy_mobile .btn_add_cart { font-size: 11px; line-height: 13px; letter-spacing: 0.04em; font-family: 'Montserrat_semibold'; padding: 15px 5px; }
+
+.col_mobile .block_btn_buy_mobile .btn_add_cart span { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+
+.mobile_device { padding-top: 15px; padding-left: 30px; }
+
+@media (max-width: 767.9px) { .mobile_device { padding-left: 0; } }
+
+.mobile_device .min_gray_text { font-size: 10px; line-height: 12px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.9); font-family: 'Montserrat_reg'; margin-bottom: 5px; }
+
+.mobile_device .shop_links { font-size: 10px; line-height: 12px; letter-spacing: 0.04em; color: #31ACE4; font-family: 'Montserrat_reg'; }
+
+.banner_left_item { -webkit-box-flex: 0; -webkit-flex: 0 1 75%; -ms-flex: 0 1 75%; flex: 0 1 75%; }
+
+.banner_left_item .text_banner_category { font-size: 23px; line-height: 28px; letter-spacing: 0.04em; color: #000; font-family: 'Montserrat_reg'; padding-right: 20px; }
+
+.banner_left_item .text_banner_category span { font-family: 'Montserrat_semibold'; }
+
+.bammer_right_item { -webkit-box-flex: 0; -webkit-flex: 0 1 25%; -ms-flex: 0 1 25%; flex: 0 1 25%; }
+
+.bammer_blocks { margin-bottom: 25px; }
+
+.block_description_services { padding: 25px 50px; background-color: #F8F9FE; -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); -webkit-border-radius: 10px; border-radius: 10px; margin-bottom: 25px; }
+
+@media (max-width: 767.9px) { .block_description_services { padding: 20px 15px; } }
+
+.block_description_services .light_gray { font-size: 20px; line-height: 24px; color: rgba(0, 0, 0, 0.5); font-family: 'Montserrat_medium'; }
+
+.block_description_services .black_reg { font-size: 20px; line-height: 24px; color: rgba(0, 0, 0, 0.95); font-family: 'Montserrat_medium'; }
+
+@media (max-width: 767.9px) { .block_description_services .black_reg { font-family: 'Montserrat_reg'; font-size: 15px; line-height: 18px; color: black; } }
+
+.block_description_services .text_gradient_2 { font-size: 20px; line-height: 24px; letter-spacing: 0.04em; font-family: "Montserrat_medium"; background: -webkit-linear-gradient(359.91deg, #F71212 14.36%, #FDB41E 82.19%); background: -o-linear-gradient(359.91deg, #F71212 14.36%, #FDB41E 82.19%); background: linear-gradient(90.09deg, #F71212 14.36%, #FDB41E 82.19%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+@media (max-width: 767.9px) { .block_description_services .text_gradient_2 { font-size: 13px; line-height: 16px; } }
+
+.block_description_services .contact_banner_block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.block_description_services .contact_banner_block .hidden_text { display: inline-block; font-family: "Montserrat_medium"; font-size: 20px; line-height: 24px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.5); }
+
+@media (max-width: 991px) { .block_description_services .contact_banner_block .dual_color_link { font-size: 15px; line-height: 20px; } }
+
+.block_description_services .massanger_banner_block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+@media (max-width: 991px) { .block_description_services .massanger_banner_block .messanger_link { margin-right: 15px; } }
+
+.block_description_services .massanger_banner_block img { max-width: 31px; }
+
+@media (max-width: 767.9px) { .block_description_services .massanger_banner_block img { max-width: 24px; } }
+
+.more_goods .more { font-size: 16px; line-height: 20px; letter-spacing: 0.01em; }
 
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 850px; } }
 
