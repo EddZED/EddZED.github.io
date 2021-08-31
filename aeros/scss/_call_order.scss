@@ -92,7 +92,7 @@
     border-radius:50%;
     @media(max-width:767px){
       left:4px;
-      top:-6px;
+      top:-7px;
     }
     @media(max-width:565px){
       top:-6px;
@@ -171,11 +171,11 @@
       @media(max-width:767px){
         padding-left:0;
         max-width:93px;
-        right:-103px;
+        right:0;
       }
       @media(max-width:374px){
         max-width:63px;
-        right:-73px;
+        right:0;
       }
       &.pay_logo{
         right:-230px;
@@ -257,12 +257,12 @@
         flex-direction:column;
       }
       @media(max-width:565px){
-        left:200px;
-        right:auto;
+        left:auto;
+        right:0;
       }
       @media(max-width:374px){
-        left:185px;
-        right:auto;
+        left:auto;
+        right:0;
       }
       img{
         margin: 0px  15px  12px  0px;
@@ -397,6 +397,7 @@
     }
     .input_form{
       border:none;
+      border-radius:0;
       border-bottom:1px solid rgba(0,0,0,.4);
       width:100%;
       padding: 13px  0px  5px  3px;
@@ -500,7 +501,9 @@
     display:flex;
     align-items:center;
   }
-  .check_filter{
+  
+}
+.check_filter{
     padding-left:40px;
     .checked{
       border:1px solid rgba(102, 102, 102, 0.5);
@@ -512,8 +515,22 @@
       line-height:100.9%;
       font-family:'Montserrat_medium';
     }
+    &._radio{
+      padding-left:120px;
+      @media(max-width:767.9px){
+        padding-left:50px;
+      }
+      .checked{
+        top:-2px;
+        left:68px;
+        border: 1px solid rgba(102, 102, 102, 0.5);
+        @media(max-width:767.9px){
+          left:4px;
+        }
+      }
+    }
   }
-}
+
 .setting_descriptions{
   display:block;
   font-size:16px;
