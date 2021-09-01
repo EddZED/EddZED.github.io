@@ -247,7 +247,7 @@ section{will-change:transform;}
 .red_old_price{position:relative;display:inline-block;font-size:13px;line-height:16px;letter-spacing:0.04em;background: linear-gradient(84.73deg, #FF0606 7.12%, #FFB017 204.78%, #FFE922 262.29%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-family:'Montserrat_reg';}
 .red_old_price:before{content:'';position:absolute;left:0;right:4px;top:3px;bottom:0;margin:auto;height:1px;background: linear-gradient(84.73deg, #FF0606 7.12%, #FFB017 204.78%, #FFE922 262.29%);opacity:.6;}
 .stock_price{display:flex;align-items:center;}
-.persent_stock{display:inline-block;font-size:10px;line-height:10px;letter-spacing:0.04em;color:#FDFDFD;font-family:'Montserrat_semibold';padding:2px 8px;border-radius:0 20px 20px 20px;background-color:#F71212;}
+.persent_stock{display:inline-flex;align-items:center;font-size:10px;line-height:9px;letter-spacing:0.04em;color:#FDFDFD;font-family:'Montserrat_semibold';padding:3px 8px;border-radius:0 20px 20px 20px;background-color:#F71212;}
 .btn_add_cart{display:flex;width:100%;align-items:center;justify-content:center;border:none;background-color:transparent;position:relative;color: #FDFDFD;font-size:15px;line-height:18px;letter-spacing:0.04em;font-family:'Montserrat_semibold';padding:13px 0;border-radius:10px;}
 .btn_add_cart.gradient_btn_other{background: linear-gradient(92.58deg, #F71212 -14.51%, #E49E0F 82.83%, #FFE922 139.94%);transition:all .3s;overflow:hidden;}
 .btn_add_cart.gradient_btn_other span{z-index:1;display:inline-flex;align-items:center;}
