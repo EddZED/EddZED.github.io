@@ -807,6 +807,8 @@ section { will-change: transform; }
 
 .slider_baner .slick-dots li { width: 28px; height: 4px; background-color: transparent; border: 1px solid rgba(0, 0, 0, 0.5); -webkit-border-radius: 3px; border-radius: 3px; margin: 0 2px; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
 
+.slick-dots li button:before { display: none; }
+
 .slider_baner .slick-dots li.slick-active { background-color: rgba(0, 0, 0, 0.8); }
 
 .input_submit { width: 100%; margin-bottom: 0; padding-top: 10px; }
