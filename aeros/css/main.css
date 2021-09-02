@@ -353,7 +353,7 @@ section { will-change: transform; }
 
 .look_back.active { opacity: 1; visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 
-.look_back { -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; }
+.look_back { -webkit-transition: all .2s; -o-transition: all .2s; transition: all .2s; }
 
 .look_back .text_button_nav:hover { text-decoration: none; color: rgba(0, 0, 0, 0.89); }
 
