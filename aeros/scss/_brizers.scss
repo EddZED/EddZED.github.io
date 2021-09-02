@@ -706,20 +706,154 @@
   
 }
 //style card category card
+.tile_viev{
+  &.d_flex{
+    @media(min-width:992px){
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+  }
+}
 .card_category_page{
   width:100%;
   padding:15px;
   background-color:#fff;
-  box-shadow: -5px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display:flex;
   position: relative;
   overflow:hidden;
   justify-content:space-between;
   margin-bottom:25px;
+  &:hover{
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.35);
+  }
+  &.order_none{
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.35);
+  }
   @media(max-width:991px){
     flex-wrap:wrap;
     margin-bottom:20px;
+  }
+  &.tile{
+    flex-wrap:wrap;
+    &.order_none{
+      @media(min-width:992px){
+        display:none !important;
+      }
+    }
+    @media(min-width:992px){
+      .col_slider_card{
+        flex:0 1 100%;
+        max-width:100%;
+        .image_brand_cart{
+          display:none;
+        }
+        .slider_good_category{
+          height:206px;
+        }
+        .slick-dots{
+          bottom:-15px;
+        }
+        .stat_goods{
+          display:block !important;
+        }
+        .favorite_goods{
+          display:block !important;
+        }
+        .slick-dotted.slick-slider{
+          margin-bottom:12px;
+        }
+      }
+      .col_center_card{
+        flex:0 1 100%;
+        max-width:100%;
+        overflow:visible;
+        padding-right:0;
+        .comments_rating{
+          width:100%;
+          justify-content:space-between;
+          top:-26px;
+          position:absolute;
+        }
+        .name_goods_{
+          font-size:16px;
+          line-height:20px;
+          margin-bottom:0;
+        }
+        .hachtags_goods{
+          display:none;
+        }
+        .table_parameters{
+          display:none;
+        }
+        .pay_part{
+          display:none;
+        }
+      }
+      .col_right_card{
+        flex:0 1 100%;
+        max-width:100%;
+        display:flex;
+        flex-direction:column;
+        padding-right:0;
+        .price_block_cart{
+          order:3;
+          padding-top:10px;
+          display:flex !important;
+          align-items:center;
+          .new_price{
+            font-family:'Montserrat_reg';
+            font-size:26px;
+            line-height:32px;
+            color:rgba(0,0,0,.6);
+          }
+        }
+        .specifications{
+          margin-top:0 !important;
+        }
+        .blk_btn_category_card{
+          order:4;
+          .btn_add_cart{
+            text-transform:capitalize;
+          }
+          .tile_type{
+            display:none;
+          }
+        }
+        .info_goods_availab{
+          padding-top:0;
+          order:2;
+          .more{
+            font-size:13px;
+            line-height:16px;
+            font-family:'Montserrat_medium';
+          }
+        }
+        .delivery{
+          display:flex !important;
+          order:5;
+        }
+        .available_good_text{
+          display:none !important;
+        }
+        .heart_favorite{
+          display:none !important;
+        }
+      }
+    }
+    @media(min-width:1200px){
+      flex:0 1 33%;
+      max-width:33%;
+    }
+    @media(max-width:1199px){
+      flex:0 1 50%;
+      max-width:50%;
+    }
+    @media(max-width:991px){
+      flex:0 1 100%;
+      max-width:100%;
+    }
   }
   .col_slider_card{
     flex:0 0 23%;
@@ -753,12 +887,12 @@
       li{
         width:18px;
         height:4px;
-        border:1px solid rgba(0,0,0,.5);
+        border:1px solid #7f7f7f;
         border-radius:2px;
         margin:0 2px;
         transition:background-color .3s;
         &.slick-active{
-          background-color:rgba(0,0,0,.5);
+          background-color:#7f7f7f;
         }
       }
     }
