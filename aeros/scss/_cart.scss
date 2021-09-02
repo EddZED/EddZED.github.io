@@ -935,8 +935,17 @@
   .promo_item{
     display:flex;
     justify-content:space-between;
+    .input_romo{
+      width:215/348 *100%;
+      max-width:215px;
+      @media(max-width:991px){
+        width:100%;
+        max-width:100%;
+      }
+    }
     .promo_input{
       width:100%;
+      max-width:215px;
       padding-left:10px;
       height:44px;
       border:none;
@@ -946,14 +955,18 @@
       font-size:16px;
       line-height:100.9%;
       font-family: 'Montserrat_medium';
+      @media(max-width:991px){
+        max-width:99%;
+      }
       &:focus{
         outline:none;
       }
     }
     .btn_add_cart{
       height:44px;
-      padding:5px 10px;
+      padding:5px 15px;
       display:inline-flex;
+      width:auto;
     }
   }
 }

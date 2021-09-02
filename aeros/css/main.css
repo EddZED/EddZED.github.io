@@ -1585,11 +1585,17 @@ section { will-change: transform; }
 
 .promocode_block .promo_item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.promocode_block .promo_item .promo_input { width: 100%; padding-left: 10px; height: 44px; border: none; background-color: #fff; -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); -webkit-border-radius: 10px; border-radius: 10px; font-size: 16px; line-height: 100.9%; font-family: 'Montserrat_medium'; }
+.promocode_block .promo_item .input_romo { width: 61.78161%; max-width: 215px; }
+
+@media (max-width: 991px) { .promocode_block .promo_item .input_romo { width: 100%; max-width: 100%; } }
+
+.promocode_block .promo_item .promo_input { width: 100%; max-width: 215px; padding-left: 10px; height: 44px; border: none; background-color: #fff; -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); -webkit-border-radius: 10px; border-radius: 10px; font-size: 16px; line-height: 100.9%; font-family: 'Montserrat_medium'; }
+
+@media (max-width: 991px) { .promocode_block .promo_item .promo_input { max-width: 99%; } }
 
 .promocode_block .promo_item .promo_input:focus { outline: none; }
 
-.promocode_block .promo_item .btn_add_cart { height: 44px; padding: 5px 10px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+.promocode_block .promo_item .btn_add_cart { height: 44px; padding: 5px 15px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; width: auto; }
 
 /* style four page */
 .call_order { padding: 80px  0px  30px  0px; }
@@ -2572,7 +2578,7 @@ section { will-change: transform; }
   .intro_slider_nav .slick-arrow:before { display: none; }
   .content_slider_intro { display: none; }
   .title_block, .light_gray_title { font-size: 35px; line-height: 40px; position: relative; }
-  .body_card_goods { padding: 20px 5px 10px; }
+  .body_card_goods { padding: 20px 0px 10px; }
   .slider_cards_goods_item { padding: 0 5px; }
   .popular_link_item { -webkit-box-flex: 0; -webkit-flex: 0 1 30%; -ms-flex: 0 1 30%; flex: 0 1 30%; margin-right: 15px; }
   .wrapper_mobile_frame { padding: 30px 40px; -webkit-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25); box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25); background-color: #fff; z-index: 1; margin-top: 40px; position: relative; }
