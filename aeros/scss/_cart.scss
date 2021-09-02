@@ -492,12 +492,12 @@
         .slick-dots li{
           width:18px;
           height:4px;
-          border:1px solid rgba(0,0,0,.5);
+          border:1px solid #7f7f7f;
           border-radius:2px;
           margin:0 2px;
           transition:background-color .3s;
           &.slick-active{
-            background-color:rgba(0,0,0,.5);
+            background-color:#7f7f7f;
           }
         }
       }
