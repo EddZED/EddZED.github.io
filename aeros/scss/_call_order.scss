@@ -207,7 +207,7 @@
       line-height:100.9%;
       font-family:'Montserrat_semibold';
       background: linear-gradient(90.72deg, #F71212 0.61%, #F8A120 18.79%);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-left:30px;
       @media(max-width:767px){
@@ -329,7 +329,7 @@
       background-size:100%;
       top:-6px;
       left:-55px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px rgba(0,0,0,.25);
       @media(max-width:767px){
         width:27px;
         height:27px;
@@ -355,6 +355,7 @@
       background-size:100%;
       top:-6px;
       left:-55px;
+      box-shadow: 0px 4px 4px rgba(0,0,0,.25);
       @media(max-width:767px){
         width:27px;
         height:27px;
@@ -728,7 +729,7 @@
       color:rgba(0,0,0,1);
       background: linear-gradient(84.73deg, #FF0606 7.12%, #FFB017 204.78%, #FFE922 262.29%);
       font-family:'Montserrat_reg';
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
