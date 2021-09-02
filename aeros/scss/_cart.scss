@@ -936,7 +936,7 @@
     display:flex;
     justify-content:space-between;
     .promo_input{
-      flex:0 1 69%;
+      width:100%;
       padding-left:10px;
       height:44px;
       border:none;
@@ -946,10 +946,14 @@
       font-size:16px;
       line-height:100.9%;
       font-family: 'Montserrat_medium';
+      &:focus{
+        outline:none;
+      }
     }
     .btn_add_cart{
-      flex:0 1 30%;
       height:44px;
+      padding:5px 10px;
+      display:inline-flex;
     }
   }
 }
