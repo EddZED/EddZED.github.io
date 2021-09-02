@@ -437,7 +437,7 @@ section { will-change: transform; }
 
 @media (max-width: 991px) { .description_goods_card .link_comments_goods { top: 22px; } }
 
-@media (max-width: 767.9px) { .description_goods_card .link_comments_goods { top: 6px; } }
+@media (max-width: 767.9px) { .description_goods_card .link_comments_goods { top: 9px; } }
 
 .description_goods_card .link_comments_goods:hover { color: black; text-decoration: none; }
 
@@ -1591,7 +1591,7 @@ section { will-change: transform; }
 
 .promocode_block .promo_item .promo_input { width: 100%; max-width: 215px; padding-left: 10px; height: 44px; border: none; background-color: #fff; -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16); -webkit-border-radius: 10px; border-radius: 10px; font-size: 16px; line-height: 100.9%; font-family: 'Montserrat_medium'; }
 
-@media (max-width: 991px) { .promocode_block .promo_item .promo_input { max-width: 99%; } }
+@media (max-width: 991px) { .promocode_block .promo_item .promo_input { max-width: 96%; } }
 
 .promocode_block .promo_item .promo_input:focus { outline: none; }
 
