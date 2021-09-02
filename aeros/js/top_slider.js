@@ -14,7 +14,7 @@ $('.intro_slider_nav').slick({
   dots: false,
   centerMode: false,
   centerPadding: '0px',
-  focusOnSelect: false,
+  focusOnSelect: true,
   prevArrow: '<button type = "button" class = "slick-prev"><img class="img-fluid" src="img/sl_left.png" alt="передъидущий слайд"></ button>',
   nextArrow: '<button type = "button" class = "slick-next"><img class="img-fluid" src="img/sl_right.png" alt="следующий слайд"></ button>',
   responsive: [
