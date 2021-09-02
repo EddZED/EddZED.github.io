@@ -405,7 +405,7 @@ section { will-change: transform; }
 
 .wrapper_top_image_slider { position: relative; }
 
-.top_image_slider .slick-dots { bottom: -35px; }
+.top_image_slider .slick-dots { bottom: -46px; }
 
 .top_image_slider .slick-dots button:before { display: none; }
 
@@ -413,7 +413,9 @@ section { will-change: transform; }
 
 .top_image_slider .slick-dots li.slick-active { background-color: rgba(0, 0, 0, 0.5); }
 
-.description_goods_card { position: relative; padding: 31px 0 10px; }
+.description_goods_card { position: relative; padding: 20px 0 10px; }
+
+.slick-dotted.slick-slider { margin-bottom: 40px; }
 
 .description_goods_card .name_goods { font-size: 16px; line-height: 20px; letter-spacing: 0.04em; color: rgba(0, 0, 0, 0.75); font-family: 'Montserrat_bold'; text-transform: uppercase; }
 
