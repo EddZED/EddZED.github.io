@@ -2166,7 +2166,8 @@ section { will-change: transform; }
 
 .filter_price_slider { margin-top: 10px; }
 
-@media (min-width: 992px) { .tile_viev.d_flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; } }
+@media (min-width: 992px) { .tile_viev.d_flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+  .tile_viev.d_flex .bammer_blocks { display: none; } }
 
 .card_category_page { width: 100%; padding: 15px; background-color: #fff; -webkit-border-radius: 10px; border-radius: 10px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; overflow: hidden; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 25px; }
 
