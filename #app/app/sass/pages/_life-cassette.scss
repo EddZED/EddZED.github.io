@@ -214,8 +214,9 @@
     top: -97px;
 
     @include response-to(large) {
-      width: 140%;
+      width: 200%;
       left: -30%;
+      top:-130px;
     }
   }
 }

@@ -156,7 +156,7 @@ input[type="number"] {
     .caption-block {
       margin-top: 44px; } }
   .caption-block__text {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
     line-height: 139.7%;
     text-align: center;
@@ -735,9 +735,19 @@ input[type="number"] {
           margin-bottom: 76px; } }
 
 .contact-page {
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .contact-page .contact-section {
-    margin: 80px auto;
+    margin: 0 auto;
     height: auto; }
 
 @media (max-width: 767px) {
@@ -5207,6 +5217,22 @@ input[type="number"] {
     z-index: 3; }
   .services-page .service__img_shine {
     z-index: 1; }
+    @media (max-width: 991px) {
+      .services-page .service__img_shine {
+        display: none; } }
+
+@media (max-width: 991px) {
+  .shadow_block {
+    -webkit-filter: drop-shadow(0 0 20px #5e81f0);
+            filter: drop-shadow(0 0 20px #5e81f0); } }
+
+.shadow_block__orange {
+  -webkit-filter: drop-shadow(0 0 5px #c55a38);
+          filter: drop-shadow(0 0 5px #c55a38); }
+
+.shadow_block__yellow {
+  -webkit-filter: drop-shadow(0 0 20px #ddac28);
+          filter: drop-shadow(0 0 20px #ddac28); }
 
 .projects-page {
   max-width: 1327px; }
@@ -5537,7 +5563,7 @@ input[type="number"] {
             height: 3px;
             top: 9px; } }
       .careers-page .career__content_item:last-of-type {
-        margin-bottom: 29px; }
+        margin-bottom: 15px; }
       @media (max-width: 992px) {
         .careers-page .career__content_item {
           font-size: 17px;
@@ -5728,8 +5754,9 @@ input[type="number"] {
     top: -97px; }
     @media (max-width: 1275px) {
       .life-cassette .second-section + .section__bg {
-        width: 140%;
-        left: -30%; } }
+        width: 200%;
+        left: -30%;
+        top: -130px; } }
 
 .life-cassette .third-section {
   display: -webkit-box;
@@ -6264,7 +6291,7 @@ input[type="number"] {
   display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -10px;
   width: 100%; }
   @media (max-width: 767px) {
     .shabba .single-project--top-bg-mob {

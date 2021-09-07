@@ -98,7 +98,7 @@
 
         .second-section__item_bg {
           width: 500px;
-
+          
           @include response-to(small) {
             width: 430px;
           }

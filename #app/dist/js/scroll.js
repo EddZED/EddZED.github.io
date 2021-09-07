@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var height = $( window ).height();
 	var width = $( window ).width();
 
-	if (width >= 992) {
+	if (width >= 320) {
 		$(function () {
 
 			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 1800, offset: 0, triggerHook: 0})
@@ -46,10 +46,10 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 800, triggerHook: 0})
 				.setClassToggle("#cont5", "show")
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 1000, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 1050, triggerHook: 0})
 				.setClassToggle("#process-launch", "animate")
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 1000, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 1050, triggerHook: 0})
 				.setClassToggle("#cont6", "show")
 				.addTo(controller);
 			
