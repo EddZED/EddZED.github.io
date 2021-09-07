@@ -42,6 +42,7 @@
     }
   }
   .wrapper_page_card{
+    width:100%;
     @media(min-width:992px){
       display:flex;
       flex-wrap:wrap;
@@ -58,6 +59,7 @@
     }
   }
   &.active .wrapper_banner_card{
+    display:none;
     .staff_banner{
       margin-top:5px;
     }

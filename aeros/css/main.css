@@ -2403,11 +2403,15 @@ section { will-change: transform; }
 
 .page_card .menu_top_block .bread_crumb_desc .breadcrumb { padding: 15px 0; }
 
+.page_card .wrapper_page_card { width: 100%; }
+
 @media (min-width: 992px) { .page_card .wrapper_page_card { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; } }
 
 .page_card .wrapper_banner_card { width: 100%; padding-left: 27px; }
 
 .page_card .wrapper_banner_card .staff_banner { margin-top: 27px; height: 60px; }
+
+.page_card.active .wrapper_banner_card { display: none; }
 
 .page_card.active .wrapper_banner_card .staff_banner { margin-top: 5px; }
 
