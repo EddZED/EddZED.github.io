@@ -1,0 +1,61 @@
+.bg {
+  $radius: 738px;
+
+  &-circle {
+    border: 2px dashed rgba(#fff, .2);
+    width: $radius * 2;
+    height: $radius * 2;
+    top: -475px;
+    opacity: .5;
+    right: -142px;
+    @include flex-center();
+    animation-name: circlesRotate;
+    animation-duration: 150s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @include response-to(huge) {
+      width: 100vw;
+      height: 100vw;
+      top: -7%;
+      right: -20%;
+    }
+
+    @include response-to(small) {
+      width: 565px;
+      height: 565px;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 134px;
+      border: 2px dashed rgba(#fff, .1);
+    }
+  }
+
+  &-sub_circle {
+    border: inherit;
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+
+    @include response-to(small) {
+      width: calc(100% - 58px);
+      height: calc(100% - 58px);
+    }
+  }
+}
+
+.home-page {
+
+  @import "../components/home-first";
+  @import "../components/home-second";
+}
+
+@keyframes circlesRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

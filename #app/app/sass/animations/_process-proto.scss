@@ -1,0 +1,956 @@
+$duration: 2.4s;
+
+#process-phone {
+  animation-duration: $duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+  @include transition-ease;
+
+  &.hide {
+    opacity: 0!important;
+  }
+
+  &-bg,
+  &-top-proto,
+  &-center-proto,
+  &-bottom-proto,
+  &-top-design,
+  &-center-design,
+  &-bottom-design,
+  #process-test-brace1,
+  #process-test-brace2,
+  #process-test-brace3,
+  #process-test-line1,
+  #process-test-line2,
+  #process-test-line3,
+  #process-test-line4,
+  #process-test-line5,
+  #process-test-line6,
+  #process-test-line7,
+  #process-test-line8,
+  #process-test-line9,
+  #process-test-line10,
+  #process-test-line11,
+  #process-test-line12,
+  #process-test-line13,
+  #process-test-line14,
+  #process-test-line15,
+  #process-test-line16,
+  #process-test-line17,
+  #process-test-line18,
+  #process-test-line19,
+  #process-test-line20,
+  #process-test-circles {
+    opacity: 0;
+  }
+
+  &-bg,
+  &-top-proto,
+  &-center-proto,
+  &-bottom-proto,
+  &-top-design,
+  &-center-design,
+  &-bottom-design {
+    animation-duration: $duration;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    @include transition-ease;
+  }
+
+  &.animate {
+    opacity: 1;
+
+    #process-phone-bg {
+      animation-name: phoneOpacity;
+    }
+
+    #process-phone-top-proto {
+      animation-name: topProtoOpacity;
+    }
+
+    #process-phone-center-proto {
+      animation-name: centerProtoOpacity;
+    }
+
+    #process-phone-bottom-proto {
+      animation-name: bottomProtoOpacity;
+    }
+
+    &.animate2 {
+
+      #process-phone-top-design {
+        animation-name: topProtoOpacity;
+      }
+
+      #process-phone-center-design {
+        animation-name: centerProtoOpacity;
+      }
+
+      #process-phone-bottom-design {
+        animation-name: bottomProtoOpacity;
+      }
+
+      #process-phone-top-proto {
+        animation-name: topProtoHide;
+      }
+
+      #process-phone-center-proto {
+        animation-name: centerProtoHide;
+      }
+
+      #process-phone-bottom-proto {
+        animation-name: bottomProtoHide;
+      }
+
+      &.animate3 {
+        $duration: 1s;
+
+        #process-phone-top-proto,
+        #process-phone-center-proto,
+        #process-phone-bottom-proto,
+        #process-phone-top-design,
+        #process-phone-center-design,
+        #process-phone-bottom-design {
+          opacity: 0!important;
+        }
+
+        #process-test-brace1,
+        #process-test-brace2,
+        #process-test-brace3,
+        #process-test-line1,
+        #process-test-line2,
+        #process-test-line3,
+        #process-test-line4,
+        #process-test-line5,
+        #process-test-line6,
+        #process-test-line7,
+        #process-test-line8,
+        #process-test-line9,
+        #process-test-line10,
+        #process-test-line11,
+        #process-test-line12,
+        #process-test-line13,
+        #process-test-line14,
+        #process-test-line15,
+        #process-test-line16,
+        #process-test-line17,
+        #process-test-line18,
+        #process-test-line19,
+        #process-test-line20,
+        #process-test-circles {
+          animation-duration: $duration;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-in-out;
+        }
+
+        #process-test-circles {
+          animation-name: processTestCircles;
+        }
+
+        #process-test-brace1 {
+          animation-name: processTestCircle1Opacity;
+        }
+
+        #process-test-brace2 {
+          animation-name: processTestCircle2Opacity;
+        }
+
+        #process-test-brace3 {
+          animation-name: processTestCircle3Opacity;
+        }
+
+        #process-test-line1 {
+          animation-name: processTestLine1;
+        }
+
+        #process-test-line2 {
+          animation-name: processTestLine2;
+        }
+
+        #process-test-line3 {
+          animation-name: processTestLine3;
+        }
+
+        #process-test-line4 {
+          animation-name: processTestLine4;
+        }
+
+        #process-test-line5 {
+          animation-name: processTestLine5;
+        }
+
+        #process-test-line6 {
+          animation-name: processTestLine6;
+        }
+
+        #process-test-line7 {
+          animation-name: processTestLine7;
+        }
+
+        #process-test-line8 {
+          animation-name: processTestLine8;
+        }
+
+        #process-test-line9 {
+          animation-name: processTestLine9;
+        }
+
+        #process-test-line10 {
+          animation-name: processTestLine10;
+        }
+
+        #process-test-line11 {
+          animation-name: processTestLine11;
+        }
+
+        #process-test-line12 {
+          animation-name: processTestLine12;
+        }
+
+        #process-test-line13 {
+          animation-name: processTestLine13;
+        }
+
+        #process-test-line14 {
+          animation-name: processTestLine14;
+        }
+
+        #process-test-line15 {
+          animation-name: processTestLine15;
+        }
+
+        #process-test-line16 {
+          animation-name: processTestLine16;
+        }
+
+        #process-test-line17 {
+          animation-name: processTestLine17;
+        }
+
+        #process-test-line18 {
+          animation-name: processTestLine18;
+        }
+
+        #process-test-line19 {
+          animation-name: processTestLine19;
+        }
+
+        #process-test-line20 {
+          animation-name: processTestLine20;
+        }
+      }
+    }
+  }
+}
+
+@keyframes phoneOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes topProtoOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  28.33% {
+    opacity: 0;
+  }
+
+  46.66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes topProtoHide {
+  0% {
+    opacity: 1;
+  }
+
+  47% {
+    opacity: 1;
+  }
+
+  57% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes centerProtoOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes centerProtoHide {
+  0% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 1;
+  }
+
+  84% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomProtoOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  56.66% {
+    opacity: 0;
+  }
+
+  88.33% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bottomProtoHide {
+  0% {
+    opacity: 1;
+  }
+
+  89% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes processTestCircles {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processTestCircle1Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  4% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processTestCircle2Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 1;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processTestCircle3Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine1 {
+  0% {
+    d: path("M 152 124 L 152 124");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  4% {
+    d: path("M 152 124 L 152 124");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  8% {
+    d: path("M 152 124 L 202.5 132");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 152 124 L 202.5 132");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine2 {
+  0% {
+    d: path("M 220 135 L 220 135.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  8% {
+    d: path("M 220 135 L 220 135.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  12% {
+    d: path("M 220 135 L 254 140.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 220 135 L 254 140.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine3 {
+  0% {
+    d: path("M 271 144 L 271 143.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  12% {
+    d: path("M 271 144 L 271 143.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  16% {
+        d: path("M 271 144 L 315 151.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+        d: path("M 271 144 L 315 151.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine4 {
+  0% {
+    d: path("M 159 158 L 159 158");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  16% {
+    d: path("M 159 158 L 159 158");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  20% {
+    d: path("M 159 158 L 248 173");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 159 158 L 248 173");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine5 {
+  0% {
+    d: path("M 266 176 L 266 175");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  20% {
+    d: path("M 266 176 L 266 175");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  24% {
+    d: path("M 266 176 L 323.5 185.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 266 176 L 323.5 185.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine6 {
+  0% {
+    d: path("M 169 194 L 169 194");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  24% {
+    d: path("M 169 194 L 169 194");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  28% {
+    d: path("M 169 194 L 195.5 198.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 169 194 L 195.5 198.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine7 {
+  0% {
+    d: path("M 214 202 L 214 202");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  28% {
+    d: path("M 214 202 L 214 202");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  32% {
+    d: path("M 214 202 L 281 212.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 214 202 L 281 212.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine8 {
+  0% {
+    d: path("M 186.5 276 L 186.5 276");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  36% {
+    d: path("M 186.5 276 L 186.5 276");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  40% {
+    d: path("M 186.5 276 L 305 290.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 186.5 276 L 305 290.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine9 {
+  0% {
+    d: path("M 321 292 L 321 292");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  40% {
+    d: path("M 321 292 L 321 292");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  44% {
+    d: path("M 321 292 L 350.5 295.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 321 292 L 350.5 295.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine10 {
+  0% {
+    d: path("M 195 314 L 195 314");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  44% {
+    d: path("M 195 314 L 195 314");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  48% {
+    d: path("M 195 314 L 224.5 317");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 195 314 L 224.5 317");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine11 {
+  0% {
+    d: path("M 239 318.5 L 239 318.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  48% {
+    d: path("M 239 318.5 L 239 318.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  52% {
+    d: path("M 239 318.5 L 270 322");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 239 318.5 L 270 322");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine12 {
+  0% {
+    d: path("M 285.5 323.5 L 285.5 323.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  52% {
+    d: path("M 285.5 323.5 L 285.5 323.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  56% {
+    d: path("M 285.5 323.5 L 316.5 327");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 285.5 323.5 L 316.5 327");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine13 {
+  0% {
+    d: path("M 333 328.5 L 333 328.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  56% {
+    d: path("M 333 328.5 L 333 328.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  60% {
+    d: path("M 333 328.5 L 359 331.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 333 328.5 L 359 331.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine14 {
+  0% {
+    d: path("M 204 354 L 204 354");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  60% {
+    d: path("M 204 354 L 204 354");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  64% {
+    d: path("M 204 354 L 275 360");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 204 354 L 275 360");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine15 {
+  0% {
+    d: path("M 290.5 361.5 L 290.5 361.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  64% {
+    d: path("M 290.5 361.5 L 290.5 361.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  68% {
+    d: path("M 290.5 361.5 L 309 363");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 290.5 361.5 L 309 363");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine16 {
+  0% {
+    d: path("M 221 424 L 221 424");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  72% {
+    d: path("M 221 424 L 221 424");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  76% {
+    d: path("M 221 424 L 291 427");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 221 424 L 291 427");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine17 {
+  0% {
+    d: path("M 309.5 427.5 L 309.5 427.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  76% {
+    d: path("M 309.5 427.5 L 309.5 427.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  80% {
+    d: path("M 309.5 427.5 L 339 428.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 309.5 427.5 L 339 428.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine18 {
+  0% {
+    d: path("M 356 429.5 L 356 429.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  80% {
+    d: path("M 356 429.5 L 356 429.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  84% {
+    d: path("M 356 429.5 L 384 430.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 356 429.5 L 384 430.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine19 {
+  0% {
+    d: path("M 231.5 464 L 231.5 464");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  84% {
+    d: path("M 231.5 464 L 231.5 464");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  88% {
+    d: path("M 231.5 464 L 252.5 464.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 231.5 464 L 252.5 464.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}
+
+@keyframes processTestLine20 {
+  0% {
+    d: path("M 272 464.5 L 272 464.5");
+    stroke-width: 0;
+    opacity: 0;
+  }
+
+  88% {
+    d: path("M 272 464.5 L 272 464.5");
+    stroke-width: 4;
+    opacity: 0;
+  }
+
+  92% {
+    d: path("M 272 464.5 L 339 465.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+
+  100% {
+    d: path("M 272 464.5 L 339 465.5");
+    stroke-width: 4;
+    opacity: 1;
+  }
+}

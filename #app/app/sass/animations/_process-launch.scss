@@ -1,0 +1,168 @@
+$duration: 1.3s;
+
+#process-launch {
+  @include transition-ease;
+
+  &,
+  &-circle,
+  &-circles,
+  &-check {
+    animation-duration: $duration;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  &.animate {
+    opacity: 1;
+    transition:opacity .3s;
+
+    #process-launch-circles {
+      animation-name: processLaunchCirclesOpacity;
+    }
+
+    #process-launch-circle {
+      animation-name: processLaunchCircleOpacity;
+    }
+
+    #process-launch-check {
+      animation-name: processLaunchCheck;
+    }
+  }
+
+  &.unanimate {
+    opacity: 1;
+
+    #process-launch-circles {
+      animation-name: processLaunchCirclesOpacityReverse;
+    }
+
+    #process-launch-circle {
+      animation-name: processLaunchCircleOpacityReverse;
+    }
+
+    #process-launch-check {
+      animation-name: processLaunchCheckReverse;
+    }
+  }
+}
+
+@keyframes processLaunchCircleOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  37.5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processLaunchCirclesOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  40.6% {
+    opacity: 0;
+  }
+
+  56% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processLaunchCheck {
+  0% {
+    stroke-width: 0;
+    d: path("M 288 314.5 L 288 314.5 L 288 314.5");
+  }
+
+  58% {
+    stroke-width: 0;
+  }
+
+  59% {
+    opacity: 1;
+    stroke-width: 27;
+    d: path("M 288 314.5 L 288 314.5 L 288 314.5");
+  }
+
+  75% {
+    d: path("M 288 314.5 L 380.5 416.5 L 380.5 416.5");
+  }
+
+  100% {
+    opacity: 1;
+    stroke-width: 27;
+    d: path("M 288 314.5 L 380.5 416.5 L 508.5 236");
+  }
+}
+
+
+@keyframes processLaunchCircleOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  62.5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processLaunchCirclesOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processLaunchCheckReverse {
+  0% {
+    opacity: 1;
+    stroke-width: 27;
+    d: path("M 288 314.5 L 380.5 416.5 L 508.5 236");
+  }
+
+  25% {
+    d: path("M 288 314.5 L 380.5 416.5 L 380.5 416.5");
+  }
+
+  41% {
+    opacity: 1;
+    stroke-width: 27;
+    d: path("M 288 314.5 L 288 314.5 L 288 314.5");
+  }
+
+  42% {
+    stroke-width: 0;
+  }
+
+  100% {
+    stroke-width: 0;
+    d: path("M 288 314.5 L 288 314.5 L 288 314.5");
+  }
+}

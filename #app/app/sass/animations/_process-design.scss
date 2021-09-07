@@ -1,0 +1,750 @@
+$duration: 3.8s;
+
+#process-design {
+  animation-duration: $duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+  @include transition-ease;
+
+  &-circles,
+  &-top-rect,
+  &-center-rect,
+  &-bottom-rect,
+  &-top-line-t,
+  &-top-line-c,
+  &-top-line-b,
+  &-center-line-b,
+  &-center-line-t,
+  &-center-line-c,
+  &-bottom-line-t,
+  &-bottom-line-b {
+    animation-duration: $duration;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  &-top-line-t,
+  &-top-line-b,
+  &-center-line-b,
+  &-center-line-c,
+  &-bottom-line-t {
+    stroke: #fff;
+    stroke-width: 11;
+    stroke-linecap: round;
+  }
+
+  &.animate {
+    animation-name: processDesignOpacity;
+    animation-direction: alternate;
+
+    #process-design-circles,
+    #process-design-top-rect,
+    #process-design-center-rect,
+    #process-design-bottom-rect,
+    #process-design-top-line-t,
+    #process-design-top-line-c,
+    #process-design-top-line-b,
+    #process-design-center-line-b,
+    #process-design-center-line-t,
+    #process-design-center-line-c,
+    #process-design-bottom-line-t,
+    #process-design-bottom-line-b {
+      animation-direction: alternate;
+      opacity: 0;
+    }
+
+    #process-design-top  {
+
+      &-line-t {
+        animation-name: processDesignTopLineTop;
+      }
+
+      &-line-c {
+        animation-name: processDesignTopLineCenter;
+      }
+
+      &-line-b {
+        animation-name: processDesignTopLineBottom;
+      }
+    }
+
+    #process-design-center {
+
+      &-line-t {
+        animation-name: processDesignCenterLineTop;
+      }
+
+      &-line-c {
+        animation-name: processDesignCenterLineCenter;
+      }
+
+      &-line-b {
+        animation-name: processDesignCenterLineBottom;
+      }
+    }
+
+    #process-design-bottom {
+
+      &-line-t {
+        animation-name: processDesignBottomLineTop;
+      }
+
+      &-line-b {
+        animation-name: processDesignBottomLineBottom;
+      }
+    }
+
+    #process-design-circles {
+      animation-name: processDesignCirclesOpacity;
+    }
+
+    #process-design-top-rect {
+      animation-name: processDesignTopRectOpacity;
+    }
+
+    #process-design-center-rect {
+      animation-name: processDesignCenterRectOpacity;
+    }
+
+    #process-design-bottom-rect {
+      animation-name: processDesignBottomRectOpacity;
+    }
+
+    &.hide {
+      opacity: 0!important;
+    }
+  }
+
+  &.unanimate {
+    animation-name: processDesignOpacityReverse;
+
+    #process-design-top  {
+
+      &-line-t {
+        animation-name: processDesignTopLineTopReverse;
+      }
+
+      &-line-c {
+        animation-name: processDesignTopLineCenterReverse;
+      }
+
+      &-line-b {
+        animation-name: processDesignTopLineBottomReverse;
+      }
+    }
+
+    #process-design-center {
+
+      &-line-t {
+        animation-name: processDesignCenterLineTopReverse;
+      }
+
+      &-line-c {
+        animation-name: processDesignCenterLineCenterReverse;
+      }
+
+      &-line-b {
+        animation-name: processDesignCenterLineBottomReverse;
+      }
+    }
+
+    #process-design-bottom {
+
+      &-line-t {
+        animation-name: processDesignBottomLineTopReverse;
+      }
+
+      &-line-b {
+        animation-name: processDesignBottomLineBottomReverse;
+      }
+    }
+
+    #process-design-circles {
+      animation-name: processDesignCirclesOpacityReverse;
+    }
+
+    #process-design-top-rect {
+      animation-name: processDesignTopRectOpacityReverse;
+    }
+
+    #process-design-center-rect {
+      animation-name: processDesignCenterRectOpacityReverse;
+    }
+
+    #process-design-bottom-rect {
+      animation-name: processDesignBottomRectOpacityReverse;
+    }
+  }
+}
+
+@keyframes processDesignCirclesOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  7% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processDesignTopRectOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  11% {
+    opacity: 0;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processDesignCenterRectOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 0;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processDesignBottomRectOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  52% {
+    opacity: 0;
+  }
+
+  59% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processDesignOpacity {
+  0% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes processDesignTopLineTop {
+  0% {
+    opacity: 0;
+  }
+
+  21% {
+    opacity: 0;
+    d: path("M 210 50 H 210.5");
+  }
+
+  22% {
+    opacity: 1;
+    d: path("M 210 50 H 210.5");
+  }
+
+  39% {
+    d: path("M 210 50 H 466.5");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 210 50 H 466.5");
+  }
+}
+
+@keyframes processDesignTopLineBottom {
+  0% {
+    opacity: 0;
+  }
+
+  21% {
+    opacity: 0;
+    d: path("M 210 150 H 210.5");
+  }
+
+  22% {
+    opacity: 1;
+    d: path("M 210 150 H 210.5");
+  }
+
+  39% {
+    d: path("M 210 150 H 466.5");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 210 150 H 466.5");
+  }
+}
+
+@keyframes processDesignTopLineCenter {
+  0% {
+    opacity: 0;
+  }
+
+  21% {
+    opacity: 0;
+    d: path("M 210 100 H 210.5");
+  }
+
+  22% {
+    opacity: 1;
+    d: path("M 210 100 H 210.5");
+  }
+
+  39% {
+    d: path("M 210 100 H 313");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 210 100 H 313");
+  }
+}
+
+@keyframes processDesignCenterLineTop {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+    d: path("M 580 292 H 580");
+  }
+
+  34% {
+    opacity: 1;
+    d: path("M 580 292 H 580");
+  }
+
+  50% {
+    d: path("M 387 292 H 580");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 387 292 H 580");
+  }
+}
+
+@keyframes processDesignCenterLineCenter {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+    d: path("M 580 342 L 580 342");
+  }
+
+  34% {
+    opacity: 1;
+    d: path("M 580 342 L 580 342");
+  }
+
+  50% {
+    d: path("M 317 342 L 580 342");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 317 342 L 580 342");
+  }
+}
+
+@keyframes processDesignCenterLineBottom {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+    d: path("M 580 392 H 580");
+  }
+
+  34% {
+    opacity: 1;
+    d: path("M 580 392 H 580");
+  }
+
+  50% {
+    d: path("M 323 392 H 580");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 323 392 H 580");
+  }
+}
+
+@keyframes processDesignBottomLineTop {
+  0% {
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 0;
+    d: path("M 252 542 H 253");
+  }
+
+  52% {
+    opacity: 1;
+    d: path("M 252 542 H 253");
+  }
+
+  68% {
+    d: path("M 252 542 H 509");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 252 542 H 509");
+  }
+}
+
+@keyframes processDesignBottomLineBottom {
+  0% {
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 0;
+    d: path("M 252 592 H 252");
+  }
+
+  52% {
+    opacity: 1;
+    d: path("M 252 592 H 252");
+  }
+
+  68% {
+    opacity: 1;
+    d: path("M 252 592 H 406");
+  }
+
+  100% {
+    opacity: 1;
+    d: path("M 252 592 H 406");
+  }
+}
+
+
+
+@keyframes processDesignCirclesOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  93% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignTopRectOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  83% {
+    opacity: 1;
+  }
+
+  89% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignCenterRectOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignBottomRectOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  41% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignOpacityReverse {
+  0% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignTopLineTopReverse {
+  0% {
+    opacity: 1;
+    d: path("M 210 50 H 466.5");
+  }
+
+  61% {
+    d: path("M 210 50 H 466.5");
+  }
+
+  78% {
+    opacity: 1;
+    d: path("M 210 50 H 210.5");
+  }
+
+  79% {
+    opacity: 0;
+    d: path("M 210 50 H 210.5");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignTopLineBottomReverse {
+  0% {
+    opacity: 1;
+    d: path("M 210 150 H 466.5");
+  }
+
+  61% {
+    d: path("M 210 150 H 466.5");
+  }
+
+  78% {
+    opacity: 1;
+    d: path("M 210 150 H 210.5");
+  }
+
+  79% {
+    opacity: 0;
+    d: path("M 210 150 H 210.5");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignTopLineCenterReverse {
+  0% {
+    opacity: 1;
+    d: path("M 210 100 H 313");
+  }
+
+  61% {
+    d: path("M 210 100 H 313");
+  }
+
+  78% {
+    opacity: 1;
+    d: path("M 210 100 H 210.5");
+  }
+
+  79% {
+    opacity: 0;
+    d: path("M 210 100 H 210.5");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignCenterLineTopReverse {
+  0% {
+    opacity: 1;
+    d: path("M 387 292 H 580");
+  }
+
+  50% {
+    d: path("M 387 292 H 580");
+  }
+
+  76% {
+    opacity: 1;
+    d: path("M 580 292 H 580");
+  }
+
+  77% {
+    opacity: 0;
+    d: path("M 580 292 H 580");
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes processDesignCenterLineCenterReverse {
+  0% {
+    opacity: 1;
+    d: path("M 317 342 L 580 342");
+  }
+
+  50% {
+    d: path("M 317 342 L 580 342");
+  }
+
+  76% {
+    opacity: 1;
+    d: path("M 580 342 L 580 342");
+  }
+
+  77% {
+    opacity: 0;
+    d: path("M 580 342 L 580 342");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignCenterLineBottomReverse {
+  0% {
+    opacity: 1;
+    d: path("M 323 392 H 580");
+  }
+
+  50% {
+    d: path("M 323 392 H 580");
+  }
+
+  76% {
+    opacity: 1;
+    d: path("M 580 392 H 580");
+  }
+
+  77% {
+    opacity: 0;
+    d: path("M 580 392 H 580");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignBottomLineTopReverse {
+  0% {
+    opacity: 1;
+    d: path("M 252 542 H 509");
+  }
+
+  32% {
+    d: path("M 252 542 H 509");
+  }
+
+  48% {
+    opacity: 1;
+    d: path("M 252 542 H 253");
+  }
+
+  49% {
+    opacity: 0;
+    d: path("M 252 542 H 253");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes processDesignBottomLineBottomReverse {
+  0% {
+    opacity: 1;
+    d: path("M 252 592 H 406");
+  }
+
+  32% {
+    opacity: 1;
+    d: path("M 252 592 H 406");
+  }
+
+  48% {
+    opacity: 1;
+    d: path("M 252 592 H 252");
+  }
+
+  49% {
+    opacity: 0;
+    d: path("M 252 592 H 252");
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

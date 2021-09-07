@@ -1,0 +1,467 @@
+#first-section-svg {
+
+  @include response-to(huge) {
+    width: 630px;
+  }
+
+  @include response-to(large) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include response-to(small) {
+    width: 90vw;
+    height: auto;
+  }
+
+  #dis {
+    transform: translateX(calc(100% - 460px));
+
+    $duration: 2s;
+
+    #display-top-right,
+    #display-top-left,
+    #display-bottom-right {
+      animation-duration: $duration;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+
+    &.click {
+
+      #display-top-right {
+        animation-name: displaytopright;
+      }
+
+      #display-top-left {
+        animation-name: displaytopleft;
+      }
+
+      #display-bottom-right {
+        animation-name: displaybottomright;
+      }
+
+      &.unclick {
+
+        #display-top-right {
+          animation-name: displaytoprightreverse;
+        }
+
+        #display-top-left {
+          animation-name: displaytopleftreverse;
+        }
+
+        #display-bottom-right {
+          animation-name: displaybottomrightreverse;
+        }
+      }
+    }
+  }
+
+  #ph {
+    transform: translateY(90px) translateX(43px);
+
+    $duration: 4s;
+
+    #dialog {
+      opacity: 0;
+    }
+
+    #Ellipse1,
+    #Ellipse2,
+    #Ellipse3 {
+      opacity: 0;
+    }
+
+    #phone-changed,
+    #phone-circles,
+    #dialog,
+    #Ellipse1,
+    #Ellipse2,
+    #Ellipse3 {
+      animation-duration: $duration;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+
+    &.click {
+
+      #phone-changed {
+        animation-name: phonechangedmove;
+      }
+
+      #phone-circles {
+        transform-origin: center;
+        transform-box: fill-box;
+        animation-name: phonecirclesopacity;
+      }
+
+      #dialog {
+        animation-name: phonedialogopacity;
+      }
+
+      #Ellipse1 {
+        animation-name: phonedialogelipseopacity1;
+      }
+
+      #Ellipse2 {
+        animation-name: phonedialogelipseopacity2;
+      }
+
+      #Ellipse3 {
+        animation-name: phonedialogelipseopacity3;
+      }
+    }
+  }
+
+  #lap {
+    transform: translateX(116px) translateY(358px);
+
+    $duration: 1s;
+
+    #laptop-left-bottom {
+      opacity: .2;
+    }
+
+    #laptop-left-top {
+      opacity: .3;
+    }
+
+    #laptop-right,
+    #laptop-left-bottom,
+    #laptop-left-top {
+      animation-duration: $duration;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+
+    &.click {
+
+      #laptop-right {
+        animation-name: laptoprightmove;
+      }
+
+      #laptop-left-bottom {
+        animation-name: laptopleftbottomove;
+      }
+
+      #laptop-left-top {
+        animation-name: laptoplefttopmove;
+      }
+    }
+  }
+
+  #dot-run {
+    transform: translateY(325px);
+
+    $duration: 5.5s;
+
+    #dot {
+      animation-duration: $duration;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: dotMove;
+    }
+  }
+}
+
+@keyframes displaytopright {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-210px) translateY(-75px);
+  }
+
+  100% {
+    transform: translateX(-215px) translateY(25px);
+  }
+}
+
+@keyframes displaytoprightreverse {
+  0% {
+    transform: translateX(-215px) translateY(25px);
+  }
+
+  50% {
+    transform: translateX(-210px) translateY(-75px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes displaytopleft {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-5px) translateY(86px);
+  }
+
+  100% {
+    transform: translateX(220px) translateY(160px);
+  }
+}
+
+@keyframes displaytopleftreverse {
+  0% {
+    transform: translateX(220px) translateY(160px);
+  }
+
+  50% {
+    transform: translateX(-5px) translateY(86px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes displaybottomright {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(5px) translateY(-125px);
+  }
+
+  100% {
+    transform: translateX(-230px) translateY(-215px);
+  }
+}
+
+@keyframes displaybottomrightreverse {
+  0% {
+    transform: translateX(-230px) translateY(-215px);
+  }
+
+  50% {
+    transform: translateX(5px) translateY(-125px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes phonechangedmove {
+  10.52% {
+    transform: translateX(10px) translateY(-10px);
+  }
+
+  89.48% {
+    transform: translateX(10px) translateY(-10px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes phonecirclesopacity {
+  10.52% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  17.88% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  92% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes phonedialogopacity {
+  17.88% {
+    opacity: 0;
+  }
+
+  26% {
+    opacity: 1;
+  }
+
+  84% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0;
+  }
+}
+
+@keyframes phonedialogelipseopacity1 {
+  30% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  71% {
+    opacity: 0;
+  }
+}
+
+@keyframes phonedialogelipseopacity2 {
+  37% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  71% {
+    opacity: 0;
+  }
+}
+
+@keyframes phonedialogelipseopacity3 {
+  44% {
+    opacity: 0;
+  }
+
+  47% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  71% {
+    opacity: 0;
+  }
+}
+
+@keyframes laptoprightmove {
+  50% {
+    transform: translateX(-50px) translateY(-12px);
+  }
+
+  75% {
+    transform: translateX(-48px) translateY(18px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes laptopleftbottomove {
+  50% {
+    transform: translateX(39px) translateY(-42px);
+    opacity: .2;
+  }
+
+  100% {
+    transform: translateX(-11px) translateY(-24px);
+    opacity: .3;
+  }
+}
+
+@keyframes laptoplefttopmove {
+  50% {
+    transform: translateX(-49px) translateY(12px);
+    opacity: .3;
+  }
+
+  100% {
+    transform: translateX(11px) translateY(24px);
+    opacity: .2;
+  }
+}
+
+@keyframes dotMove {
+  5.45% {
+    transform: translateX(50px) translateY(20px);
+  }
+
+  14.45% {
+    transform: translateX(-85px) translateY(60px);
+  }
+
+  19.9% {
+    transform: translateX(-37px) translateY(78px);
+  }
+
+  28.9% {
+    transform: translateX(-170px) translateY(122px);
+  }
+
+  38.5% {
+    transform: translateX(-38px) translateY(183px);
+  }
+
+  44% {
+    transform: translateX(26px) translateY(163px);
+  }
+
+  60% {
+    transform: translateX(299px) translateY(203px);
+  }
+
+  66.5% {
+    transform: translateX(387px) translateY(234px);
+  }
+
+  75% {
+    transform: translateX(500px) translateY(180px);
+  }
+
+  81.5% {
+    transform: translateX(417px) translateY(149px);
+  }
+
+  87.5% {
+    transform: translateX(471px) translateY(121px);
+  }
+
+  94% {
+    transform: translateX(340px) translateY(73px);
+    opacity: 1;
+  }
+
+  94.5% {
+    transform: translateX(340px) translateY(73px);
+    opacity: 0;
+  }
+
+  99.99% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,105 @@
+.life-cassette {
+  @import "life-cassette";
+}
+
+.shabba {
+  @import "shabba";
+}
+
+.stake {
+  @import "stake";
+}
+
+.single-projects-page {
+
+  .single-project {
+
+    &__top {
+      margin-top: 61px;
+      max-width: 1413px;
+
+      @include response-to(huge) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      @include response-to(small) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__categories {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+
+      @include response-to(small) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &_item {
+        border-radius: 18px;
+        margin-bottom: 10px;
+        background-color: rgba(#fff, .3);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+        padding: 7px 20px 8px;
+
+        @include response-to(small) {
+          margin-bottom: 14px;
+          width: 240px;
+          text-align: center;
+          padding: 9px 0;
+          font-size: 12px;
+          line-height: 11px;
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 17px;
+
+          @include response-to(small) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__caption {
+      font-weight: 500;
+      font-size: 144px;
+      line-height: 118px;
+
+      @include response-to(medium) {
+        font-size: 100px;
+      }
+
+      @include response-to(small) {
+        text-align: center;
+        font-size: 36px;
+        line-height: 34px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section__bg {
+    position: absolute;
+    z-index: 0;
+    height: auto;
+  }
+
+  .section__content {
+    z-index: 1;
+  }
+
+  .section__images {
+    z-index: 1;
+
+    img {
+      filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.25));
+    }
+  }
+}

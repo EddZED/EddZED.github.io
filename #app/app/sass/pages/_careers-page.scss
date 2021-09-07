@@ -1,0 +1,235 @@
+.careers-page {
+
+  &.single {
+
+    .career__img {
+
+      @include response-to(small) {
+        display: none;
+      }
+    }
+  }
+
+  .careers {
+    margin-top: 202px;
+    max-width: 1460px;
+
+    @include response-to(huge) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include response-to(medium) {
+      margin-top: 97px;
+    }
+  }
+
+  .career {
+    margin-bottom: 180px;
+    display: flex;
+    align-items: center;
+
+    @include response-to(medium) {
+      margin-bottom: 134px;
+    }
+
+    @include response-to(small) {
+      flex-wrap: wrap;
+    }
+
+    &.two {
+
+      .career__img {
+
+        &:before {
+          left: -22.97%;
+          bottom: -15.97%;
+        }
+
+        &:after {
+          top: 3.06%;
+          left: -19.47%;
+        }
+      }
+    }
+
+    &.three {
+
+      .career__img {
+
+        &:before {
+          left: -23.10%;
+          bottom: -3.5%;
+        }
+
+        &:after {
+          width: 88.4%;
+          height: 88.4%;
+          transform: translateX(-50%);
+          left: 50%;
+          top: -13.13%;
+        }
+      }
+    }
+
+    &.one {
+
+      .career__img {
+
+        &:before {
+          bottom: 5.7%;
+          right: -25.16%;
+        }
+
+        &:after {
+          top: -19.91%;
+          right: 2.4%;
+        }
+      }
+    }
+
+    &:hover {
+
+      .career__img_svg {
+        filter: grayscale(0%);
+      }
+    }
+
+    &__img {
+      width: 457px;
+      height: 457px;
+      z-index: 1;
+
+      @include response-to(large) {
+        width: 400px;
+        height: 400px;
+      }
+
+      @include response-to(medium) {
+        width: 306px;
+        height: 306px;
+      }
+
+      @include response-to(small) {
+        order: 2;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        border-radius: 50%;
+        border: 2px dashed rgba(#fff, .1);
+      }
+
+      &:before {
+        width: 94.3%;
+        height: 94.3%;
+      }
+
+      &:after {
+        width: 54.26%;
+        height: 54.26%;
+      }
+
+      &_wrap {
+        width: inherit;
+        height: inherit;
+        @include flex-center();
+        border-radius: 50%;
+        background: radial-gradient(71.68% 71.68% at 76.26% 55.7%, #0E0E0E 0%, #1F1F1F 100%);
+      }
+
+      &_svg {
+        filter: grayscale(100%);
+        @include transition-ease;
+
+        @include response-to(medium) {
+          width: 220px;
+          filter: unset;
+        }
+
+        @include response-to(small) {
+          width: 166px;
+        }
+      }
+    }
+
+    &__content {
+      margin-left: 212px;
+
+      @include response-to(large) {
+        margin-left: 75px;
+      }
+
+      @include response-to(small) {
+        margin-left: 0;
+      }
+
+      &_title {
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 118px;
+        margin-bottom: 13px;
+
+        @include response-to(huge) {
+          font-size: 50px;
+          line-height: 120%;
+        }
+
+        @include response-to(medium) {
+          font-size: 30px;
+        }
+
+        @include response-to(small) {
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &_item {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 239.2%;
+        padding-left: 26px;
+
+        &:before {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: rgba(#fff, .7);
+          left: 0;
+          top: 19px;
+          content: '';
+
+          @include response-to(small) {
+            width: 3px;
+            height: 3px;
+            top: 9px;
+          }
+        }
+
+        &:last-of-type {
+          margin-bottom: 29px;
+        }
+
+        @include response-to(medium) {
+          font-size: 17px;
+          line-height: 150%;
+        }
+
+        @include response-to(small) {
+          font-size: 10px;
+          line-height: 22px;
+          padding-left: 9px;
+        }
+      }
+    }
+  }
+}

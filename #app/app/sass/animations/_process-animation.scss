@@ -1,0 +1,12 @@
+#process-svg {
+
+  @include response-to(huge) {
+    width: 585px;
+    left: 20px;
+  }
+
+  @import "process-design";
+  @import "process-proto";
+  @import "process-marketing";
+  @import "process-launch";
+}

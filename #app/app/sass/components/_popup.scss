@@ -1,0 +1,121 @@
+.popup {
+  padding: 18vh 0;
+  top: 0;
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  background: rgba(#161516, .9);
+
+  @include response-to(small) {
+    padding: 0;
+  }
+
+  &.active {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  & .form {
+    right: calc((100vw - 1362px) / 2);
+    margin-left: auto;
+    width: 650px;
+
+    @media(max-width: 1480px) {
+      right: 35px;
+    }
+
+    @include response-to(small) {
+      width: 100%;
+      right: unset;
+      padding-left: 20px;
+      padding-right: 20px;
+      transform: unset;
+      top: 20%;
+    }
+
+    label[for="popup_check"] {
+      margin-left: 0;
+      margin-top: -10px;
+    }
+  }
+
+  &-close {
+    top: 10.5vh;
+    right: calc((100vw - 1362px) / 2);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 17px;
+    padding-left: 33px;
+
+    @media(max-width: 1480px) {
+      right: 35px;
+    }
+
+    @include response-to(small) {
+      right: unset;
+      top: 10%;
+      left: 20px;
+      font-size: 14px;
+      line-height: 13px;
+      padding-left: 28px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 20px;
+      height: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-image: url('../../img/x.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @include response-to(small) {
+        width: 14px;
+        height: 13px;
+      }
+    }
+  }
+
+  &__circle-bg {
+    left: 36.46%;
+    width: 1349px;
+    top: -200px;
+    height: 1349px;
+    border-radius: 50%;
+    background: linear-gradient(13deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%);
+    z-index: -1;
+
+    @include response-to(large) {
+      left: 20%;
+    }
+
+    @include response-to(medium) {
+      left: 0;
+    }
+
+    @include response-to(small) {
+      width: 850px;
+      height: 850px;
+      top: 40px;
+      left: 35%;
+      transform: translateX(-50%);
+      background: linear-gradient(85deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%);
+    }
+  }
+}

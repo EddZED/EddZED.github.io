@@ -1,0 +1,125 @@
+.header {
+  margin-top: 63px;
+  max-width: 1413px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+
+  @include response-to(huge) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include response-to(small) {
+    margin-top: 32px;
+  }
+
+  .mob-menu-btn {
+    z-index: 1000;
+    display: none;
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    background-color: #fff;
+    @include transition-ease;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 5px;
+      @include transition-ease;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -8px;
+    }
+
+    @include response-to(small) {
+      display: block;
+
+      &.hide {
+        display: none;
+      }
+
+      &.active {
+        background-color: transparent;
+        position: fixed;
+        top: 39px;
+        right: 20px;
+
+        &:before {
+          transform: rotate(315deg);
+          top: 0;
+        }
+
+        &:after {
+          transform: rotate(45deg);
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__logo {
+
+    img {
+
+      @include response-to(small) {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+
+  &__langs {
+    display: flex;
+    font-size: 14px;
+
+    @include response-to(small) {
+      position: fixed;
+      bottom: 42px;
+      left: 20px;
+      transform: translateY(-100vw);
+      z-index: -5;
+      opacity: 0;
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 1000;
+      }
+    }
+  }
+
+  &__lang {
+    font-weight: 700;
+    opacity: .41;
+    @include transition-ease;
+
+    &:first-of-type {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

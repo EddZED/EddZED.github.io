@@ -1,0 +1,200 @@
+.first-section {
+  max-width: 1413px;
+  margin-top: 223px;
+  margin-bottom: 463px;
+
+  @include response-to(huge) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 350px;
+  }
+
+  @include response-to(large) {
+    margin-top: 75px;
+    margin-bottom: 0;
+  }
+
+  @include response-to(small) {
+    margin-top: 44px;
+  }
+
+  &__content {
+
+    @include response-to(small) {
+      margin-bottom: 66px;
+    }
+  }
+
+  &__caption {
+    font-weight: bold;
+    font-size: 48px;
+
+    @include response-to(huge) {
+      font-size: 44px;
+    }
+
+    @include response-to(large) {
+      text-align: center;
+    }
+
+    &_top {
+
+      @include response-to(small) {
+        font-size: 24px;
+        line-height: 23px;
+      }
+    }
+
+    &_bottom {
+      width: fit-content;
+      background: -webkit-linear-gradient(360deg, $blue-color, $yellow-color, $red-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 15px;
+      margin-bottom: 30px;
+
+      @include response-to(large) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include response-to(small) {
+        font-size: 32px;
+        line-height: 119.2%;
+        margin-top: 20px;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__note {
+    max-width: 469px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include response-to(large) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include response-to(small) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    z-index: 11;
+    display: block;
+    width: 200px;
+    padding: 13px 0;
+    border-radius: 77px;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 2px solid transparent;
+
+    &_wrap {
+      width: fit-content;
+
+      @include response-to(large) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      & .hov {
+        width: 700px;
+        height: 700px;
+        z-index: 10;
+        border-radius: 50%;
+      }
+    }
+
+    &:before {
+      background-color: #141314;
+      height: calc(100% - 4px);
+      position: absolute;
+      content: '';
+      z-index: -1;
+      border-radius: 77px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: calc(100% - 4px);
+    }
+
+    &_after {
+      z-index: -2;
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      display: block;
+      background-image: linear-gradient(90deg, rgba(#fff, 0), #fff, rgba(#fff, 0));
+      background-size: 200% 200%;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      //animation-name: buttonBorderWidth;
+    }
+
+    &:hover {
+
+      .first-section__btn_after {
+        animation-iteration-count: 1;
+        animation-duration: .5s;
+        animation-name: buttonHover;
+      }
+    }
+  }
+
+  &__img {
+    right: -34px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include response-to(huge) {
+      right: 20px;
+    }
+
+    @include response-to(large) {
+      position: relative;
+      top: unset;
+      right: unset;
+      transform: unset;
+    }
+
+    @import "../animations/first-section";
+  }
+}
+
+@keyframes buttonBorderWidth {
+  0% {
+    background-size: 0 100%;
+  }
+
+  80% {
+    background-size: 200% 200%;
+  }
+
+  100% {
+    background-size: 200% 200%;
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    background-size: 0 100%;
+  }
+
+  100% {
+    background-size: 200% 200%;
+  }
+}
