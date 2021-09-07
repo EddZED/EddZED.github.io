@@ -2381,6 +2381,38 @@ section { will-change: transform; }
 
 .more_goods .more { font-size: 16px; line-height: 20px; letter-spacing: 0.01em; }
 
+.page_card .menu_link { color: #323232; }
+
+.page_card .menu_link svg line { stroke: #323232; }
+
+.page_card .menu_link .dropdown_menu_wrapper { opacity: 0; pointer-events: none; }
+
+.page_card .menu_link:hover .dropdown_menu_wrapper { opacity: 1; pointer-events: visible; }
+
+@media (min-width: 992px) { .page_card .menu_main { border-bottom: 1px solid #888888; } }
+
+.page_card.active .menu_main { border-bottom: none; width: 100%; }
+
+.page_card.active .menu_block { width: 100%; }
+
+.page_card.active .bread_crumb_desc { display: none !important; }
+
+@media (min-width: 992px) { .page_card .menu_top_block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
+
+.page_card .menu_top_block .bread_crumb_desc { width: 100%; padding-left: 27px; }
+
+.page_card .menu_top_block .bread_crumb_desc .breadcrumb { padding: 15px 0; }
+
+@media (min-width: 992px) { .page_card .wrapper_page_card { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; } }
+
+.page_card .wrapper_banner_card { width: 100%; padding-left: 27px; }
+
+.page_card .wrapper_banner_card .staff_banner { margin-top: 27px; height: 60px; }
+
+.page_card.active .wrapper_banner_card .staff_banner { margin-top: 5px; }
+
+.page_card .wrap_wrap_item { width: 100%; -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
 @media (min-width: 1440px) and (max-width: 4300px) { .splitpic-images { height: 850px; } }
 
 @media (min-width: 1440px) { .container.first_intro { max-width: 1320px; } }
