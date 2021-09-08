@@ -83,48 +83,44 @@
   }
 
   &__item {
-    width: 277px;
-
+    max-width: 430px;
+    width:100%;
+    min-height:420px;
+    padding:20px 70px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    &.first{
+        background-color:#181818;
+        border-radius:43% 57% 59% 41% / 56% 43% 57% 44%;
+      }
+    &.second{
+        background-color:#181818;
+        border-radius:44% 56% 51% 49% / 55% 74% 26% 45%;
+    }
+    &.third{
+      background-color:#181818;
+      border-radius:56% 44% 21% 79% / 69% 74% 26% 31%;
+    }
     @include response-to(huge) {
-      width: 220px;
+      max-width: 430px;
+      min-height:400px;
+      padding:20px 30px 30px;
 
       .second-section__item_shine {
         width: 350px;
-        left: -50px;
-        top: -90px;
+        left: -15px;
+        top: -20px;
       }
 
-      &.first {
 
-        .second-section__item_bg {
-          width: 500px;
-          
-          @include response-to(small) {
-            width: 430px;
-          }
-        }
-      }
-
-      &.second {
-
-        .second-section__item_bg {
-          width: 400px;
-
-          @include response-to(small) {
-            width: 300px;
-          }
-        }
-      }
-
-      &.third {
-
-        .second-section__item_bg {
-          width: 350px;
-
-          @include response-to(small) {
-            width: 270px;
-          }
-        }
+    }
+    @include response-to(small){
+      padding:10px 20px 20px;
+      .second-section__item_shine {
+        transform: translateX(0) scale(1.7)!important;
+        @include transition-ease;
       }
     }
 
@@ -135,26 +131,24 @@
     &.active {
 
       .second-section__item_shine {
-        transform: translateX(0) scale(1.6)!important;
+        transform: translateX(0) scale(1.7)!important;
         @include transition-ease;
       }
     }
 
     &_shine {
       z-index: -2;
-      left: -80px;
-      top: -80px;
+      left: -15px;
+      top: -20px;
 
       @include response-to(large) {
-        width: 390px !important;
-        left: 100px !important;
-        top: -60px !important;
+        left:auto !important;
+        right:10px;
       }
 
       @include response-to(small) {
-        width: 280px !important;
-        left: -30px !important;
-        top: -50px !important;
+        left:auto !important;
+        right:30px;
       }
     }
 
