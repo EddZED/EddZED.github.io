@@ -1,5 +1,6 @@
 .popup {
-  padding: 18vh 0;
+  display:flex;
+  align-items:center;
   top: 0;
   position: absolute;
   right: 0;
@@ -11,6 +12,7 @@
   opacity: 0;
   transition: all ease-in-out 1s;
   background: rgba(#161516, .9);
+  overflow-y:hidden;
 
   @include response-to(small) {
     padding: 0;
@@ -57,7 +59,11 @@
     font-size: 18px;
     line-height: 17px;
     padding-left: 33px;
-
+    display:inline-flex;
+    align-items:center;
+    img{
+      padding-right:5px;
+    }
     @media(max-width: 1480px) {
       right: 35px;
     }
@@ -118,4 +124,9 @@
       background: linear-gradient(85deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%);
     }
   }
+}
+.arrow_download{
+  position:absolute;
+  left:0;
+  top:7px;
 }

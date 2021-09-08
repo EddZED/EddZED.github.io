@@ -19,7 +19,7 @@ $(document).ready(function() {
 			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 380, offset: 0, triggerHook: 0})
 				.setClassToggle("#process-design", "animate")
 				.addTo(controller);
-			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 1700, offset: 380, triggerHook: 0})
+			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 5000, offset: 380, triggerHook: 0})
 				.setClassToggle("#cont2", "show")
 				.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#thirdSection", duration: 380, offset: 380, triggerHook: 0})

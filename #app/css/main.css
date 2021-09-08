@@ -356,7 +356,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (max-width: 767px) { .form__field.checkbox .form__label span.text { font-size: 11px; line-height: 11px; padding-left: 30px; } }
 
-.form__field.checkbox .form__label span.text:before, .form__field.checkbox .form__label span.text:after { -webkit-transition: all ease-in-out .3s; -o-transition: all ease-in-out .3s; transition: all ease-in-out .3s; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; border-radius: 3px; opacity: .5; }
+.form__field.checkbox .form__label span.text:before, .form__field.checkbox .form__label span.text:after { -webkit-transition: all ease-in-out .3s; -o-transition: all ease-in-out .3s; transition: all ease-in-out .3s; position: absolute; left: 0; top: 0; bottom: 0; margin: auto; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; border-radius: 3px; opacity: .5; }
 
 .form__field.checkbox .form__label span.text:before { content: ''; width: 20px; height: 20px; left: 0; border: 1px solid #FFFFFF; }
 
@@ -394,7 +394,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (max-width: 767px) { .form__btn { margin-top: 40px; margin-left: auto; margin-right: auto; width: 161px; padding: 11px 10px; font-size: 14px; line-height: 13px; } }
 
-.popup { padding: 18vh 0; top: 0; position: absolute; right: 0; height: 100vh; overflow-y: scroll; overflow-x: hidden; left: 0; z-index: -1; opacity: 0; -webkit-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; transition: all ease-in-out 1s; background: rgba(22, 21, 22, 0.9); }
+.popup { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; top: 0; position: absolute; right: 0; height: 100vh; overflow-y: scroll; overflow-x: hidden; left: 0; z-index: -1; opacity: 0; -webkit-transition: all ease-in-out 1s; -o-transition: all ease-in-out 1s; transition: all ease-in-out 1s; background: rgba(22, 21, 22, 0.9); overflow-y: hidden; }
 
 @media (max-width: 767px) { .popup { padding: 0; } }
 
@@ -410,7 +410,9 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .popup .form label[for="popup_check"] { margin-left: 0; margin-top: -10px; }
 
-.popup-close { top: 10.5vh; right: -webkit-calc((100vw - 1362px) / 2); right: calc((100vw - 1362px) / 2); cursor: pointer; font-size: 18px; line-height: 17px; padding-left: 33px; }
+.popup-close { top: 10.5vh; right: -webkit-calc((100vw - 1362px) / 2); right: calc((100vw - 1362px) / 2); cursor: pointer; font-size: 18px; line-height: 17px; padding-left: 33px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.popup-close img { padding-right: 5px; }
 
 @media (max-width: 1480px) { .popup-close { right: 35px; } }
 
@@ -427,6 +429,8 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (max-width: 992px) { .popup__circle-bg { left: 0; } }
 
 @media (max-width: 767px) { .popup__circle-bg { width: 850px; height: 850px; top: 40px; left: 35%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: -webkit-linear-gradient(5deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%); background: -o-linear-gradient(5deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%); background: linear-gradient(85deg, rgba(21, 20, 21, 0.19) 21.9%, #1F1F1F 46.33%, #181818 75.93%, rgba(19, 19, 19, 0) 85.55%); } }
+
+.arrow_download { position: absolute; left: 0; top: 7px; }
 
 .third-section { padding-top: 70px; height: 900px; max-width: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
 

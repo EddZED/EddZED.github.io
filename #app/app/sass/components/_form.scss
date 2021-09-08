@@ -271,8 +271,10 @@
           &:after {
             @include transition-ease;
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+            left:0;
+            top:0;
+            bottom:0;
+            margin:auto;
             box-sizing: border-box;
             border-radius: 3px;
             opacity: .5;
