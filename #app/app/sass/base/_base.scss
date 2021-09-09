@@ -135,10 +135,10 @@
 
   &__bg {
     z-index: 0;
-    bottom: -39px;
+    bottom: -100px;
 
     @media(max-width: 1024px) {
-      width: 160%;
+      width: 120%;
     }
   }
 }

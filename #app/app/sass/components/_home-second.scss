@@ -4,8 +4,6 @@
   max-width: 1424px;
 
   @include response-to(huge) {
-    padding-left: 20px;
-    padding-right: 20px;
     height: 792px;
   }
 
@@ -33,7 +31,7 @@
     padding: 100px 0;
 
     @include response-to(small) {
-      padding: 60px 0 100px;
+      padding: 60px 0 60px;
     }
   }
 

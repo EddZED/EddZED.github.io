@@ -214,9 +214,9 @@
     top: -97px;
 
     @include response-to(large) {
-      width: 200%;
-      left: -30%;
-      top:-130px;
+      width: 579%;
+      left: -193%;
+      top:-379px;
     }
   }
 }
@@ -341,10 +341,10 @@
 
   & + .section__bg {
     right: 0;
-    top: -114px;
+    top: 400px;
 
     @include response-to(medium) {
-      width: 1000px;
+      width: 200%;
     }
   }
 }
@@ -478,7 +478,10 @@
 
   & + .section__bg {
     right: -40px;
-    top: -303px;
+    top: -90px;
+    @media(max-width:767.9px){
+      width:1400px;
+    } 
   }
 }
 
@@ -686,6 +689,7 @@
 
     @include response-to(medium) {
       width: 1000px;
+      display:none;
     }
   }
 }
@@ -813,6 +817,13 @@
       width: 1200px;
       left: 195px;
       top: -1291px;
+      display:none;
     }
   }
+}
+.right_bg_life{
+  position:absolute;
+  right:0;
+  top:0;
+  display:none;
 }

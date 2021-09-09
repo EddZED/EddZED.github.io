@@ -14,7 +14,7 @@
     }
 
     &:not(:first-of-type) {
-      margin-top: 43px;
+      margin-top: 50px;
 
       @include response-to(small) {
         margin-top: 30px;

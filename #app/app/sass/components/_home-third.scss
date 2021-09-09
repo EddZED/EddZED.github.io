@@ -8,10 +8,10 @@
   @include response-to(huge) {
     padding-top: 80px;
     height: 775px;
-    padding-left: 20px;
   }
 
   @include response-to(small) {
+    padding-top:0;
     flex-wrap: wrap;
     height: auto;
     margin-bottom: 130px;

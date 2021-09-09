@@ -336,6 +336,7 @@
       display: flex;
       align-items: flex-start;
       flex-wrap: wrap;
+      justify-content:space-between;
 
       &_item {
         font-weight: inherit;
@@ -428,7 +429,7 @@
         margin-top: 21px;
         font-size: 11px;
         line-height: 174.7%;
-        max-width: 80%;
+        max-width: 90%;
       }
     }
 
@@ -464,16 +465,5 @@
         }
       }
     }
-  }
-}
-.shadow_block{
-  @media(max-width:991px){
-    filter: drop-shadow(0 0 20px rgba(94,129,240,1));
-  }
-  &__orange{
-    filter: drop-shadow(0 0 5px rgba(197,90,56,1));
-  }
-  &__yellow{
-    filter: drop-shadow(0 0 20px rgba(221,172,40,1));
   }
 }
