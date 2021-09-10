@@ -2419,7 +2419,7 @@ section { will-change: transform; }
 
 .goods_description { padding-top: 230px; }
 
-.wrapper_content_card { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex: 1 1 100%; -ms-flex: 1 1 100%; flex: 1 1 100%; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.wrapper_content_card { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex: 1 1 100%; -ms-flex: 1 1 100%; flex: 1 1 100%; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
 @media (max-width: 1199px) { .wrapper_content_card { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 
