@@ -284,20 +284,98 @@
   justify-content:space-between;
   width:100%;
   padding:10px 0 20px;
+  position:relative;
+  border-bottom:1px solid #888888;
   .name_brand_card{
     display:flex;
     align-items:center;
+    .blue_name_brand{
+      font-size:13px;
+      line-height:16px;
+      font-family:'Montserrat_semibold';
+      color:rgba(49, 172, 228, 1);
+      span{
+        color:#000;
+      }
+    }
   }
-  .blue_name_brand{
-    font-size:13px;
-    line-height:16px;
-    font-family:'Montserrat_semibold';
-    color:rgba(49, 172, 228, 1);
+  .rating_block_card{
+    position:relative;
+    display:flex;
+    align-items:center;
+    .raiting_goods{
+      position:relative;
+      top:auto;
+      left:auto;
+      right:auto;
+      padding-right:17px;
+    }
+    .link_comments_goods{
+      font-size:13px;
+      line-height:16px;
+      color:#919191;
+      letter-spacing:0.04em;
+      font-family:'Montserrat_semibold';
+    }
   }
 }
-
-
-
+.content_card_main{
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+}
+.name_good_bold{
+  font-size:35px;
+  line-height:43px;
+  color:#0A0A0A;
+  font-family:'Montserrat_semibold';
+  padding-top:5px;
+}
+.complectation_block_card{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  padding-top:40px;
+  .inp_col{
+    flex:0 0 auto;
+    border-radius: 10px;
+    padding:0;
+    .body_input{
+      padding:15px 10px;
+    }
+    .content_input_top{
+      .name_select{
+        font-size:13px;
+        line-height:100.9%;
+        color:rgba(0,0,0,.8);
+        font-family:'Montserrat_bold';
+      }
+      .blue_bold_name{
+        font-size:13px;
+        line-height:100.9%;
+        color:rgba(49, 172, 228, .8);
+        font-family:'Montserrat_bold';
+      }
+    }
+    .content_input_bottom{
+      padding-left:0;
+      .price_input{
+        font-size:27px;
+        line-height:100.9%;
+        color:rgba(0,0,0,.6);
+      }
+    }
+    .more_gray{
+      font-size:13px;
+      line-height:100.9%;
+      color: #848282;
+      text-decoration:none;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+}
 
 
 
