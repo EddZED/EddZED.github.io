@@ -2475,9 +2475,9 @@ section { will-change: transform; }
 
 .about_goods .item_about .icon_quest { -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
 
-.about_goods .item_about .answer_questions { position: absolute; right: 0; top: -25px; padding: 5px 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #eee; opacity: 0; visibility: hidden; -webkit-transition: opacity .2s; -o-transition: opacity .2s; transition: opacity .2s; pointer-events: none; }
+.answer_questions { position: absolute; right: 0; top: -25px; padding: 5px 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #eee; opacity: 0; visibility: hidden; -webkit-transition: opacity .2s; -o-transition: opacity .2s; transition: opacity .2s; pointer-events: none; }
 
-.about_goods .item_about .icon_quest:hover + .answer_questions { opacity: 1; visibility: visible; }
+.icon_quest:hover + .answer_questions { opacity: 1; visibility: visible; }
 
 .top_block_brand { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; width: 100%; padding: 10px 0 20px; position: relative; border-bottom: 1px solid #888888; }
 
@@ -2494,6 +2494,20 @@ section { will-change: transform; }
 .top_block_brand .rating_block_card .link_comments_goods { font-size: 13px; line-height: 16px; color: #919191; letter-spacing: 0.04em; font-family: 'Montserrat_semibold'; }
 
 .content_card_main { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; align-items: start; }
+
+.content_card_main .check_filter .checked { top: 0; bottom: 0; margin: auto; border-color: #666666; width: 24px; height: 24px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+.content_card_main .check_filter .name_filtr { font-size: 15px; line-height: 100.9%; color: rgba(0, 0, 0, 0.9); position: relative; }
+
+.content_card_main .check_filter .name_filtr .price_dop { font-size: 20px; line-height: 100.9%; color: rgba(3, 3, 3, 0.63); font-family: 'Montserrat_semibold'; display: inline-block; padding-left: 10px; }
+
+.content_card_main .check_filter .info_filtr { position: relative; }
+
+.content_card_main .check_filter .info_filtr .icon_quest { -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+
+.content_card_main .check_filter .info_filtr .answer_questions { min-width: 150px; position: absolute; right: 0; top: -35px; padding: 5px 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: #eee; opacity: 0; visibility: hidden; -webkit-transition: opacity .2s; -o-transition: opacity .2s; transition: opacity .2s; pointer-events: none; }
+
+.content_card_main .check_filter .info_filtr .icon_quest:hover + .answer_questions { opacity: 1; visibility: visible; }
 
 .name_good_bold { font-size: 35px; line-height: 43px; color: #0A0A0A; font-family: 'Montserrat_semibold'; padding-top: 5px; }
 
