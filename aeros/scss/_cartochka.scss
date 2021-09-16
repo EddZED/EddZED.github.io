@@ -1,4 +1,19 @@
 .page_card{
+  .link_icon_menu .cart_icon rect{
+    stroke: #3B3B3A;
+  }
+  .link_icon_menu .cart_icon ellipse{
+    fill: #3B3B3A;
+  }
+  .link_icon_menu svg path{
+    fill: #3B3B3A;
+  }
+  .link_icon_menu.favorite_item svg rect{
+    fill: #3B3B3A;
+  }
+  .link_icon_menu .stat_icon rect{
+    stroke: #3B3B3A;
+  }
   .menu_link{
     color:#323232;
     svg{
@@ -12,6 +27,12 @@
       opacity:1;
       pointer-events:visible;
     }
+  }
+  .menu_main{
+    width:100%;
+  }
+  .menu_block{
+    width:100%;
   }
   .menu_main{
     @media(min-width:992px){
@@ -42,8 +63,8 @@
     }
   }
   .wrapper_page_card{
-    width:100%;
     @media(min-width:992px){
+      width:100%;
       display:flex;
       flex-wrap:wrap;
       flex-direction:column;
@@ -54,8 +75,154 @@
     width:100%;
     padding-left:27px;
     .staff_banner{
+      width:100%;
       margin-top:27px;
       height:60px;
+      align-items:center;
+      justify-content:space-between;
+      @media(max-width:1439px){
+        margin-top:37px;
+      }
+      .text_block_staf{
+        padding-left:5px;
+        flex-direction:row;
+        flex:0 1 auto;
+        justify-content:flex-start;
+        align-items:center;
+        .name_banner_goods{
+          display:flex;
+          align-items:flex-start;
+          padding-left:10px;
+          flex-direction:column;
+          .name_briz_card{
+            font-size:15px;
+            line-height:18px;
+            color:#0A0A0A;
+            font-family:'Montserrat_semibold';
+            display:flex;
+            .rating_block_card{
+              position:relative;
+              display:flex;
+              align-items:flex-start;
+              .raiting_goods{
+                position:relative;
+                top:auto;
+                left:auto;
+                right:auto;
+                padding-right:5px;
+              }
+              .link_comments_goods{
+                display:inline-flex;
+                font-size:13px;
+                line-height:16px;
+                color:#919191;
+                letter-spacing:0.04em;
+                font-family:'Montserrat_semibold';
+              }
+            }
+          }
+          .watching_goods{
+            display:flex;
+            padding-top:5px;
+            align-items:center;
+            .gray_items_looks{
+              display:flex;
+              .gray_min_bold_text{
+                white-space:nowrap;
+              }
+            }
+            .green_items_looks{
+              display:flex;
+              padding-left:15px;
+              .green_min_bold_text{
+                font-family:'Montserrat_medium';
+                white-space:nowrap;
+              }
+            }
+          }
+        }
+      }
+      .avatar_staffs{
+        padding-left:14px;
+        @media(max-width:1279px){
+          display:none;
+        }
+        .contact_staff{
+          padding-left:10px;
+          display:flex;
+          flex-direction:column;
+          .bold_min_text{
+            font-size:16px;
+            line-height:100.9%;
+            font-family:'Montserrat_medium';
+            color:#000;
+            margin-bottom:0;
+            span{
+              font-size:13px;
+              line-height:100.9%;
+              color:#000;
+              font-family:'Montserrat_light';
+            }
+          }
+          .chat_number{
+            display:flex;
+            align-items:center;
+            .green_text{
+              font-size:13px;
+              line-height:100.9%;
+              color:#43DC5E;
+              font-family:'Montserrat_medium';
+            }
+            .link_phone_staff{
+              display:inline-flex;
+              padding:0 10px;
+              position:relative;
+              font-size:13px;
+              line-height:100.9%;
+              color:#31ACE4;
+              &:before, &:after{
+                content: '';
+                position:absolute;
+                top:0;
+                bottom:0;
+                width:1px;
+                background-color:#000;
+              }
+              &:before{
+                left:5px;
+              }
+              &:after{
+                right:5px;
+              }
+            }
+            .min_link_phone{
+              display:inline-block;
+              img{
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              }
+            }
+          }
+        }
+      }
+      .blk_btn_category_card{
+        display:flex;
+        padding:0 40px 0 10px;
+        align-items:center;
+        .btn_add_cart{
+          padding:8px 25px;
+          margin-right:10px;
+        }
+        .heart_favorite{
+          width:36px;
+          height:36px;
+          background-color:#F8F9FE;
+          border-radius:10px;
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          border:none;
+        }
+      }
     }
   }
   &.active .wrapper_banner_card{
@@ -68,6 +235,19 @@
     width:100%;
     flex:0 0 100%;
     display:flex;
+  }
+  .phone_menu{
+    @media(max-width:1439px){
+      display:none;
+    }
+  }
+  .city_block{
+    @media(max-width:1439px){
+      display:none !important;
+    }
+  }
+  .link_mail{
+    padding-right:0;
   }
 }
 .goods_description{
@@ -306,6 +486,9 @@
     position:relative;
     display:flex;
     align-items:center;
+    @media(max-width:1199px){
+      display:none;
+    }
     .raiting_goods{
       position:relative;
       top:auto;
@@ -367,6 +550,7 @@
         font-family:'Montserrat_semibold';
         display:inline-block;
         padding-left:10px;
+        white-space:nowrap;
       }
     }
     .info_filtr{
@@ -461,16 +645,26 @@
   color:#0A0A0A;
   font-family:'Montserrat_semibold';
   padding-top:5px;
+  @media(max-width:1199px){
+    font-size:25px;
+  }
 }
 .complectation_block_card{
   display:flex;
   justify-content:space-between;
   width:100%;
   padding-top:40px;
+  @media(max-width:1279px){
+      flex-wrap:wrap;
+    }
   .inp_col{
-    flex:0 0 auto;
+    flex:0 0 33%;
     border-radius: 10px;
     padding:0;
+    @media(max-width:1279px){
+      flex:0 0 49%;
+      margin-bottom:10px;
+    }
     .body_input{
       padding:15px 10px;
     }
