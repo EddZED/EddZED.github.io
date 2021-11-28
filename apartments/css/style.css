@@ -111,13 +111,21 @@ input[type=range]:focus{outline:none}
 .links_item:hover{opacity:1;background-color:#fff;color:#323232;}
 .links_item.active{opacity:1;background-color:#fff;color:#323232;box-shadow: 0px 20px 70px rgba(69, 34, 14, 0.05);transition:all .3s;}
 .phone_hand{position:absolute;right:10%;bottom:0;}
-.steps{width:100%;position:absolute;padding:138px 0 154px;}
-
-
-
-
-
-
+.steps{width:100%;position:absolute;padding:138px 0 154px;background-image:url(../img/bg_steps.png);background-repeat:no-repeat;background-size:cover;background-position:center center;}
+.tabs_body{padding:60px 0 0;}
+.nav-tabs .nav-link, .nav-tabs{border:none;}
+.nav-tabs{margin:0 55px;box-shadow: 0px 20px 70px rgba(14, 69, 22, 0.2);border-radius: 15px 15px 0px 0px;overflow:hidden;}
+.nav-tabs .nav-link{color:rgba(0,0,0,.3);font-size:22px;line-height:22px;text-transform:uppercase;font-family:'TTnorms';transition:all .3s;margin-bottom:0;flex:1 0 0%;padding:44px 5px;background-color:#fff;box-shadow: 0px 20px 70px rgba(69, 34, 14, 0.05);}
+.nav-tabs .nav-link.active{color:#fff;opacity:1;background-color:#7CD3C2;border-radius:0;}
+.nav-tabs .nav-link.beige.active{color:#000;background-color:#F8F1EC;box-shadow: 0px 20px 70px rgba(69, 34, 14, 0.05);}
+.tab-content{background-color:#fff;box-shadow: 0px 20px 70px rgba(69, 34, 14, 0.05);border-radius: 15px;padding:60px 100px 60px 0;}
+.min_title{font-size:16px;line-height:24px;color:#323232;font-family:'TTnorms';}
+.title_steps{font-size:26px;line-height:30px;color:#000;font-family:'TTnorms-med';}
+.list_steps{margin-bottom:30px;}
+.list_steps li{font-size:16px;line-height:30px;color:#000;font-family:'TTnorms';}
+.gray_block{width:100%;background: rgba(196, 196, 196, 0.15);border-radius:15px;padding:20px 43px;}
+.button_get{position:relative;display:inline-flex;padding:20px 30px;background: linear-gradient(270deg, #9BEBDC 0%, #62AC9E 100%);border-radius: 100px;font-size:14px;font-family:'TTnorms-med';color:#232323;letter-spacing:0.07em;text-decoration:none;text-transform:uppercase;box-shadow:0px 20px 50px rgba(90, 217, 193, 0.4),0px 4px 0px #6CA3A1,inset -1px -2px 3px rgba(255,255,255,.4),inset 1px 3px 5px rgba(255,255,255,.5);transition:box-shadow .3s;}
+.button_get:hover{color:inherit;box-shadow:0px 20px 50px rgba(90, 217, 193, 0.4),0px 4px 0px #6CA3A1,inset 0 0 0 rgba(255,255,255,.4),inset 0 0 0 rgba(255,255,255,.2);}
 
 
 
