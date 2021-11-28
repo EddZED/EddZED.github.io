@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <title>Infina Estate</title>
+</head>
+
+<body>
+  
+  <section class="home">
+    <header>
+      <div class="container">
+        <div class="d-flex justify-content-between border-class pb-3">
+          <div class="d-flex align-items-center">
+            <div class="logo">
+              <img src="img/logo.svg" class="img-fluid">
+            </div>
+            <div class="name d-md-block d-none">
+              ПРЕМИАЛЬНЫЕ УСЛУГИ ПО ПРОДАЖЕ И ПОКУПКЕ НЕДВИЖИМОСТИ В УФЕ
+            </div>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="time px-5">
+              <p>На связи с 9:00 до 21:00</p>
+              <div class="d-flex justify-content-between">
+                <a href=""><img src="img/wa.svg"></a>
+                <a href=""><img src="img/in.svg"></a>
+                <a href=""><img src="img/tg.svg"></a>
+                <a href=""><img src="img/vb.svg"></a>
+              </div>
+            </div>
+            <div class="call">
+              <a href="tel:" class="phone">+7 (800) 000-00-00</a>
+              <a href="" class="callme">Консультация онлайн</a>
+            </div>
+          </div>
+          <div class="menu d-md-none">
+            <img src="img/menu.svg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="col-md-9">
+        <div class="watt">Чем мы вам поможем?</div>
+        <h1>поможем продать вашу недвижимость</h1>
+        <div class="key-block d-flex align-items-center">
+          <img src="img/key.svg">
+          &ensp;в 2-3 раза быстрее
+          <span>по выгодной для вас цене</span>
+        </div>
+        <div class="button-block d-flex justify-content-between align-items-start">
+          <div>
+            <a class="button">Получить предварительную оценку</a>
+            <div class="card-block d-flex">
+              <div class="tab2">
+                <div>01</div>
+                <p>Более 15 рекламных каналов для быстрого поиска покупателей</p>
+              </div>
+              <div class="tab2">
+                <div>02</div>
+                <p>Гарантии, условия
+                  и сроки продажи прописываем
+                  в договоре</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <img src="img/atom.svg">
+            <p>Используем инновационные технологии позиционирования и презентации вашего объекта на рынке</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="brif">
+    <div class="container">
+      <h2>За 1 минуту получите предварительную оценку рабочей стоимости вашей недвижимости онлайн</h2>
+      <div class="d-flex pt-5">
+        <div class="px-3 block col-4 d-none d-md-block">
+          <div class="bg-white"> 
+            <div class="bg">
+              <img src="img/photo.png">
+              <h4>Ильдар Маратович</h4>
+              <p>Брокер по недвижимости</p>
+              <p class="min-p">"Здравствуйте, меня зовут Ильдар, и я личноу рассчиваю предварительную стоимость!"</p>
+            </div>
+            <h4>Пройдя тест, Вы получите:</h4>
+            <div class="bg2 d-flex align-items-center">
+              <img src="img/home.svg">
+              <p>Предварительную оценку Вашей недвижимости</p>
+            </div>
+            <div class="bg2 d-flex align-items-center">
+              <img src="img/chat.svg">
+              <p>Консультацию брокера по недвижимости </p>
+            </div>
+            <div class="bg2 d-flex align-items-center">
+              <img src="img/checklist.svg">
+              <p>Чек-лист “6 ошибок при самостоятельной продаже недвижимости”</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-md-3 block col-8">
+          <div class="bg-white big-white"> 
+            <section class="lazy slider" data-sizes="50vw">
+            <div>
+            <h3>Какой у Вас тип имущества?</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/apartament.png" class="w-100">
+                <input type="radio" id="apartament" name="house" value="Квартира" checked>
+                <label for="apartament">Квартира</label>
+              </div>
+              <div class="col-md-4">
+                <img src="img/cottage.png" class="w-100">
+                <input type="radio" id="cottage" name="house" value="Коттедж">
+                <label for="cottage">Коттедж</label>
+              </div>
+              <div class="col-md-4">
+                <img src="img/townhouse.png" class="w-100">
+                <input type="radio" id="townhouse" name="house" value="Таунхаус">
+                <label for="townhouse">Таунхаус</label>
+              </div>
+            </div>
+            </div>
+            <div>
+              <h3>Укажите количество комнат:</h3>
+              <div class="row">
+                <div class="range">
+                  <output id="Output1" class="output">3 комн.</output>
+                  <input name="sdfs" id="gdskill1" type="range" min="1" value="3" max="5" step="1" list="ticks" oninput="Output1.value = gdskill1.value + ' комн.'" /><br />
+                  
+                  <datalist id="ticks">
+                    <option>1 комната</option>
+                    <option>2 компанты</option>
+                    <option>3 комнаты</option>
+                    <option>4 комнаты</option>
+                    <option>5 комнат и более</option>
+                  </datalist>
+                  <div class="d-flex justify-content-between">
+                    <p>1 комната</p>
+                    <p>более 5 комнат</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3>Укажите общую площадь недвижимости:</h3>
+              <div class="row">
+                <div class="range">
+                  <output id="Output2" class="output">175 кв.м</output>
+                  <input name="gdskill[2]" id="gdskill2" type="range" min="50" value="175" max="300" step="1" list="ticks" oninput="Output2.value = gdskill2.value + ' кв.м'" /><br />
+                  
+                  <datalist id="ticks">
+                    <option>1 комната</option>
+                    <option>2 компанты</option>
+                    <option>3 комнаты</option>
+                    <option>4 комнаты</option>
+                    <option>5 комнат и более</option>
+                  </datalist>
+                  <div class="d-flex justify-content-between">
+                    <p>менее 50 кв.м</p>
+                    <p>более 300 кв.м</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3>Какая отделка квартиры?</h3>
+              <div class="row mb-3">
+                <div class="col-md-3">
+                  <img src="img/otd1.png" class="w-100">
+                  <input type="radio" id="otd1" name="otd" value="Предчистовая">
+                  <label for="otd1">Предчистовая</label>
+                </div>
+                <div class="col-md-3">
+                  <img src="img/otd2.png" class="w-100">
+                  <input type="radio" id="otd2" name="otd" value="Косметический">
+                  <label for="otd2">Косметический</label>
+                </div>
+                <div class="col-md-3">
+                  <img src="img/otd3.png" class="w-100">
+                  <input type="radio" id="otd3" name="otd" value="Евроремонт">
+                  <label for="otd3">Евроремонт</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="img/otd4.png" class="w-100">
+                  <input type="radio" id="otd4" name="otd" value="Старый ремонт">
+                  <label for="otd4">Старый ремонт</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3>На сколько срочно необходма продажа?</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="block-quiz">
+                    <input type="radio" id="urgently" name="term" value="Очень срочно">
+                    <label for="urgently">Очень срочно</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="block-quiz"> 
+                    <input type="radio" id="mounth" name="term" value="1-2 меясца">
+                    <label for="mounth">1-2 меясца</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="block-quiz"> 
+                    <input type="radio" id="maxprice" name="term" value="Не тороплюсь, главное максимальная цена">
+                    <label for="maxprice">Не тороплюсь, главное максимальная цена</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="block-quiz">   
+                    <input type="radio" id="other" name="term" value="Как найду себе другой вариант">
+                    <label for="other">Как найду себе другой вариант</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3><strong>Отлично! Мы уже начали оценку</strong></h3>
+              <img src="img/bg-quiz.jpg" class="img-quiz">
+              <p class="end-quiz">Заполните форму, чтобы мы отправили результат</p>
+              <input name="name" class="input-form" placeholder="Введите ваше имя"><br>
+              <input name="phone" class="input-form" placeholder="Введите ваш номер телефона"><br>
+              <a class="button">Получить результат</a>
+            </div>
+            </section>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="application team">
+    <div class="container">
+      <div class="application-block">
+        <div>
+          <p class="application__title">Хотите стать частью <span>нашей команды?</span></p>
+          <p class="application__subtitle">Переходите в раздел вакансии, подберите себе <br> подходящую вакансию и
+            отправьте нам резюме</p>
+        </div>
+
+        <button class="btn-style">ВЫБРАТЬ ВАКАНСИЮ</button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', 
+        infinite: true,
+        dots: true,
+        arrows:true,
+        slidesToScroll: 1,
+        infinite: false,
+        swipe: false,
+        slidesToShow: 1
+      });
+    });
+  </script>
+
+</body>
+
+</html>
