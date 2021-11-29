@@ -157,7 +157,71 @@ input[type=range]:focus{outline:none}
 .count_clients{display:flex;align-items:flex-end;}
 .we_helping{padding-top:40px;}
 .our_group{position:absolute;left:0;right:0;bottom:0;margin:auto;}
+.garant{width:100%;padding:110px 0 80px;}
+.title_name_garant{font-size:18px;line-height:26px;color:#323232;font-family:'TTnorms-med';}
+.consultation{width:100%;background-image: url(../img/bg_consultation.png);background-size:cover;background-position:center center;position:relative;padding:117px 0 90px;}
+.text_consult{font-size:18px;line-height:26px;color:#323232;}
+.const_icons_block{display:flex;align-items:center;}
+.consultation .title_form{font-size:22px;text-align:center;line-height:30px;margin-bottom:15px;}
+.consultation .privacy .link_privacy{color:inherit;font-size:inherit;}
+.photo_block{position:absolute;bottom:0;margin:auto;display:inline-block;left:50%;transform:translateX(-50%);}
+.photo_block img{pointer-events:none;}
+.name_badge{background-color:#F8F1EC;border-radius:15px;padding:15px 35px;position:absolute;left:0;bottom:80px;}
+.opacity_text{font-size:14px;line-height:22px;color:#323232;font-family:'TTnorms-light';}
+.name_consult_min_text{font-size:14px;line-height:22px;color:#323232;font-family:'TTnorms-med';}
 
 
-@media(max-width:450px){.logo img{max-width:168px}.home h1{font-size:34px;line-height:40px}.home .watt{font-size:18px;margin-top:0}
+
+
+.footer{background:linear-gradient(to top, #282728, #4F4842);padding:110px 0 70px;color:#fff}
+.footer h3{font-size:38px;font-family: 'Optima';}
+.footer .time{color:#66D17E;margin-left:20px;position:relative;font-size:16px;font-family: 'TTnorms-light';margin-bottom:30px}
+.footer .phone img{margin-right:15px}
+.footer .geo img{margin-right:15px}
+.footer .phone a{color:#fff;text-decoration:none;font-size:26px}
+.footer .time:after{position: absolute;width:7px;height:7px;border-radius:50%;background:#66D17E;content:'';left:-20px;top:10px;}
+.footer .geo{margin-top:20px}
+.footer .geo p{font-size:18px;}
+.footer p{margin:0}
+.footer .mess{margin:30px 0;font-family:'TTnorms-light';font-size:14px}
+.footer .mess a{margin-right:7px}
+.footer .mail a{color:#fff;text-decoration:none;margin-left:10px;font-family:'TTNorms-med';font-size:16px}
+.footer .inst a{color:#fff;font-size:16px;font-family:'TTnorms-med';}
+.footer .inst p{margin-left:15px}
+.footer .name{font-size:12px;max-width: 165px;margin-left: 34px;line-height: 22px}
+.footer .hr{width:100%;height:1px;background:rgb(255,255,255,0.5);margin:100px 0 50px}
+.footer .text-end a{color:#fff;font-size:18px;opacity: .6;margin-top:5px;display:block}
+
+
+@media(max-width:756px){
+.footer .inst{display:none}  
+.footer .col-md-8{margin:0 -11px;width:calc(100% + 22px);max-width:calc(100% + 22px)}  
+.footer .text-md-end{font-size:10px;width:100%;}
+.footer .name{font-size:9px;line-height: 14px;}
+.footer .logo{width:70%}
+.footer .text-md-end.d-flex.d-md-block.justify-content-between{margin-top:30px}
+.footer{padding-bottom:10px}
+.header .logo img{max-width:168px}
+.home h1{font-size:34px;line-height:40px;padding:0 15px}
+.home .watt{font-size:18px;margin-top:0;line-height:12px;margin-bottom:20px}
+.home .key-block{font-size:18px;padding:10px}
+.home .key-block span{margin-top:10px}
+header .border-class{border:0}
+header{padding:10px 0}
+header .logo img{max-width:200px}
+.home .button{font-size:10px;line-height: 12px;padding:20px 30px;height:57px;background-size: 100% 100%;margin-bottom:20px}
+.home .button:after{height:57px;background-size: 100% 100%;}
+.home .button-block{margin-top:20px}
+.h-text{font-size:14px;margin:0 40px 15px}
+.home .key-block span{display:inline-block;padding:4px 10px 6px;line-height: 16px;}
+.home .tab2{padding:25px 15px 10px;max-width:50%}
+.home .tab2 div::after{height:24px}
+.home .tab2 div{font-size:25px;line-height:30px}
+.home .tab2 p{font-size:12px;line-height:18px;margin-top:7px}
+.card-block{width:80%;margin-left:10%}
+.brif{padding:65px 0;background-size: 100% auto;}
+.brif h2{font-size:24px}
+.home{background-size: auto;}
+}
+@media(max-width:450px){
 }
