@@ -53,17 +53,17 @@ header .call .callme{padding-top:10px;font-size:14px;line-height:22px;text-decor
 .brif .big-white input:disabled+label::before{background-color:#e9ecef}
 .brif .row .block{height:100%}
 .brif .big-white{height:100%}
-.slick-prev, .slick-next{font-size:16px;letter-spacing:1px;position:absolute;display:block;height:20px;line-height:0px;font-size:18px;cursor:pointer;background:transparent;color:transparent;bottom:50px;-webkit-transform:translate(0, -50%);transform:translate(0, -50%);padding:0;outline:none;color:#000}
+.lazy .slick-prev, .lazy .slick-next{font-size:16px;letter-spacing:1px;position:absolute;display:block;height:20px;line-height:0px;font-size:18px;cursor:pointer;background:transparent;color:transparent;bottom:50px;-webkit-transform:translate(0, -50%);transform:translate(0, -50%);padding:0;outline:none;color:#000}
 .brif .slick-slider{position:static}
-.slick-prev{opacity:0.3;right:30%;bottom:95px;border:0;font-size:14px;color:#1A2241;border-bottom:1px solid #1A2241}
-.slick-next{right:50px;left:auto;background:#62AC9E;padding:30px 40px 36px;border-radius:60px;color:#fff;border:0}
+.lazy .slick-prev{opacity:0.3;right:30%;bottom:95px;border:0;font-size:14px;color:#1A2241;border-bottom:1px solid #1A2241}
+.lazy .slick-next{right:50px;left:auto;background:#62AC9E;padding:30px 40px 36px;border-radius:60px;color:#fff;border:0}
 .brif .big-white .slick-next img{margin-left:10px;margin-bottom:0px}
 .brif .range{width:100%;position:relative;margin-top:20%;font-family:'TTnorms-light'}
 .brif .range output{font-size:22px}
 .brif .range p{font-size:16px}
 .output{position:absolute;left:0;right:0;margin:auto;top:-40px;text-align:center;width:100%}
 .block-quiz{padding:0 20px;border:1px solid #BABDC6;margin-bottom:15px;height:67px;border-radius:10px;align-items: center;display:flex}
-.slick-slide>div{padding:0 63px}
+.lazy .slick-slide>div{padding:0 63px}
 .brif .img-quiz{position:absolute;right:0}
 .brif .input-form{border:0;background:#FAFAFA;padding:30px 44px;border-radius:60px;margin-bottom:15px;width:50%}
 .brif .input-form::placeholder{color:#bdbdbd}
@@ -139,6 +139,18 @@ input[type=range]:focus{outline:none}
 .form-control.customs::-webkit-input-placeholder{font-size:14px;line-height:20px;color:rgba(50, 50, 50,.5);}
 .form_btn.button_get{border:none;width:100%;text-align:center;justify-content:center;height:100%;align-items:center;}
 .privacy{font-size:12px;line-height:16px;color:#323232;font-family:'TTnorms';}
+.specialist{width:100%;padding:134px 0 130px;}
+.major{font-size:26px;line-height:30px;color:#000;font-family:'TTnorms-med';}
+.name_spec{font-size:18px;line-height:26px;color:#323232;font-family:'TTnorms';}
+.about_spec{font-size:14px;line-height:22px;color:#323232;font-family:'TTnorms';}
+.line_devided{max-width:118px;width:100%;background-color:rgba(50,50,50,.5);}
+.description_person{font-size:14px;line-height:22px;color:rgba(50,50,50,.6);font-family:'TTnorms';}
+.description_block{padding:50px 25px 15px;}
+.slider_specialist .slick-prev, .slider_specialist .slick-next{position:absolute;top:0;bottom:100px;height:50px;margin:auto;border:none;background-color:transparent;}
+.slider_specialist .slick-prev{left:-50px;}
+.slider_specialist .slick-next{right:-25px;}
+.slider_item{padding:0 20px;}
+
 
 
 @media(max-width:450px){.logo img{max-width:168px}.home h1{font-size:34px;line-height:40px}.home .watt{font-size:18px;margin-top:0}
