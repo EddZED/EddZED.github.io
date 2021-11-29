@@ -13,8 +13,7 @@ $(document).on('ready', function() {
                               settings: {
                                 slidesToShow: 2,
                                 slidesToScroll: 3,
-                                infinite: true,
-                                dots: true
+                                infinite: true
                               }
                             },
                             {
@@ -27,3 +26,4 @@ $(document).on('ready', function() {
                           ]
       });
     });
+    $('.slider_specialist').slick('setPosition');
