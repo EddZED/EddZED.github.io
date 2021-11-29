@@ -150,6 +150,12 @@ input[type=range]:focus{outline:none}
 .slider_specialist .slick-prev{left:-50px;}
 .slider_specialist .slick-next{right:-25px;}
 .slider_item{padding:0 20px;}
+.about_us{width:100%;background-image:url(../img/bg_about.png);background-size:cover;padding:91px 0 70px;position:relative;}
+.midle_white_text{font-size:16px;line-height:24px;color:#fff;font-family:'TTnorms-light';}
+.big_num{font-size:100px;line-height:86px;letter-spacing:-0.01em;text-transform:uppercase;font-family:'Optima';color:rgba(228, 187, 154, 1);}
+.years_block{display:flex;flex-direction:column;align-items:flex-start;padding-top:40px;}
+.count_clients{display:flex;align-items:flex-end;}
+.we_helping{padding-top:40px;}
 
 
 
