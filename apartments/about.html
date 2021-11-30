@@ -12,7 +12,7 @@
   <title>Infina Estate</title>
 </head>
 
-<body> 
+<body class="over"> 
   
   <div class="wrapper">
     <section class="home">
@@ -27,22 +27,24 @@
                 ПРЕМИАЛЬНЫЕ УСЛУГИ ПО ПРОДАЖЕ И ПОКУПКЕ НЕДВИЖИМОСТИ В УФЕ
               </div>
             </div>
-            <div class="d-none d-md-flex">
-              <div class="time px-1 px-lg-5">
-                <p>На связи с 9:00 до 21:00</p>
-                <div class="d-flex justify-content-between">
-                  <a href=""><img src="img/wa.svg"></a>
-                  <a href=""><img src="img/in.svg"></a>
-                  <a href=""><img src="img/tg.svg"></a>
-                  <a href=""><img src="img/vb.svg"></a>
+            <div class="mobile_menu">
+              <div class="mobile_container">
+                <div class="time px-1 px-lg-5">
+                  <p>На связи с 9:00 до 21:00</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="" class="social_link"><img src="img/wa.svg"></a>
+                    <a href="" class="social_link"><img src="img/in.svg"></a>
+                    <a href="" class="social_link"><img src="img/tg.svg"></a>
+                    <a href="" class="social_link"><img src="img/vb.svg"></a>
+                  </div>
+                </div>
+                <div class="call">
+                  <a href="tel:" class="phone">+7 (800) 000-00-00</a>
+                  <a href="" class="callme">Консультация онлайн</a>
                 </div>
               </div>
-              <div class="call">
-                <a href="tel:" class="phone">+7 (800) 000-00-00</a>
-                <a href="" class="callme">Консультация онлайн</a>
-              </div>
             </div>
-            <div class="menu d-md-none">
+            <div class="btn_menu d-lg-none">
               <img src="img/menu.svg" class="img-fluid">
             </div>
           </div>
@@ -889,7 +891,11 @@
     $('.links_item').click(function(){
       $('.links_item').removeClass('active');
       $(this).addClass('active');
-    })
+    });
+    $('.btn_menu').click(function () {
+      $('.mobile_menu').toggleClass('active');
+      $('.over').toggleClass('overflow-hidden');
+    });
   </script>
 
 </body>
