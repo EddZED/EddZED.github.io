@@ -13,6 +13,7 @@ header .call{text-align:right}
 header .call a{display:block;text-decoration:none;color:#000}
 header .call .phone{font-size:22px;font-family:'TTnorms-bold';line-height:22px}
 header .call .callme{padding-top:10px;font-size:14px;line-height:22px;text-decoration:underline}
+.wrapper{overflow-x:hidden;height:100%;}
 .home{background-image:url(../img/bg-home.png);background-size:cover;min-height:110vh}
 .home{padding-bottom:40px}
 .home .watt{padding:10px 20px;font-size:25px;line-height:38px;font-family:'TTnorms-light';border:1px solid #323232;margin:80px 0 30px;border-radius:70px;display:inline-block}
@@ -28,6 +29,7 @@ header .call .callme{padding-top:10px;font-size:14px;line-height:22px;text-decor
 .home .tab2 div{font-family:'Optima';font-size:40px;line-height:75px;color:#62AC9E}
 .home .tab2 div::after{width:1px;height:50px;top:0;left:0;right:0;margin:auto;position:absolute;content:'';background:#62AC9E}
 .home .tab2 p{font-size:16px;line-height:26px;}
+.home .button_get{font-size:20px;line-height:38px;margin-bottom:40px;padding:40px 70px;}
 .brif{padding:140px 0 100px;background-image:url(../img/bg-brif.jpg);background-size:cover}
 .brif h2{font-size:44px;font-family:'Optima';letter-spacing:1px;text-align:center;width:90%;margin-left:5%}
 .brif .bg-white{border-radius:15px;background-color:#fff;padding:35px;box-shadow:0px 4px 70px rgb(69,34,14,0.05)}
@@ -206,10 +208,10 @@ input[type=range]:focus{outline:none}
   .block_images_text{flex-direction:column;justify-content:center;}
   .block_image_intro{text-align:center;}
   .home .key-block{font-size:18px;line-height:12px;}
-  .home .key-block span{display:inline-block;align-items:center;justify-content:center;padding:8px 20px;line-height:20px;margin-left:0;}
+  .home .key-block span{display:inline-block;align-items:center;justify-content:center;padding:5px 15px;line-height:20px;margin-left:0;}
   .tab{display:none;}
   .home .button-block{margin-top:30px;justify-content:center !important;}
-  .home .button_get{margin-bottom:20px;font-size:12px}
+  .home .button_get{margin-bottom:20px;font-size:10px;padding:22px 15px;line-height:12px;}
   .mobile_respons{display:flex;flex-direction:column;align-items:center;}
   .mobile_text{font-size:14px;line-height:20px;color:#323232;text-align:center;}
   .brif{padding:0 0 20px;}
@@ -249,10 +251,10 @@ input[type=range]:focus{outline:none}
   .title_block_works{font-size:24px;line-height:30px;text-align:left;}
   .links_block{background:transparent;backdrop-filter:none;box-shadow:none;position:relative;}
   .links_item{background-color:#ffff;color:#323232;box-shadow:none;opacity:1;font-size:16px;line-height:22px;font-family:'TTnorms-med';padding:20px 25px;}
-  .links_block .slick-arrow{position:absolute;top:0;bottom:0;margin:auto;height:7px;width:14px;border:none;background-color:transparent;padding:3px;background-size:cover;background-position:center center;}
+  .links_block .slick-arrow{position:absolute;top:50%;transform:translateY(-50%);height:7px;width:14px;border:none;background-color:transparent;padding:3px;background-size:cover;background-position:center center;}
   .links_block .slick-prev{z-index:1;left:20px;background-image:url(../img/ar_prev.png);}
   .links_block .slick-next{z-index:1;right:20px;background-image:url(../img/ar_next.png);}
-  .steps{padding:60px 0;}
+  .steps{padding:60px 0 20px;}
   .tabs_body{padding-top:20px;}
   .nav-tabs{margin:0;}
   .tab-content{margin-top:-20px;z-index:2;position:relative;padding:40px 30px;}
@@ -288,7 +290,12 @@ input[type=range]:focus{outline:none}
   .slider_specialist .slick-prev, .slider_specialist .slick-next{bottom:auto;top:100px;z-index:99999}
   .slider_specialist .slick-next{right:0}
   .slider_specialist .slick-prev{left:0}
-  .about_us{background-size:110% 110%;background-position: center center;}
+  .about_us{background-size:110% 110%;background-position: center center;padding:40px 0 40px;}
+  .flex_block_mobile{display:flex;justify-content:space-between;text-align:center;flex-wrap:wrap;}
+  .count_clients{flex-direction:column;align-items:center;}
+  .years_block{flex:0 0 50%;text-align:center;align-items:center;}
+  .card-block{width:100%;margin-left:0;}
+  .midle_white_text{text-align:center;}
 }
 
 @media(max-width:756px){
@@ -300,8 +307,8 @@ input[type=range]:focus{outline:none}
 .footer .text-md-end.d-flex.d-md-block.justify-content-between{margin-top:30px}
 .footer{padding-bottom:10px}
 .header .logo img{max-width:168px}
-.home h1{font-size:34px;line-height:40px;padding:0 15px}
-.home .watt{font-size:18px;margin-top:0;line-height:12px;margin-bottom:20px}
+.home h1{font-size:34px;line-height:40px;padding:0;letter-spacing:0.03em;}
+.home .watt{font-size:18px;margin-top:0;line-height:12px;margin:15px 0 20px}
 .home .key-block{font-size:18px;padding:10px}
 .home .key-block span{margin-top:10px}
 header .border-class{border:0}
@@ -312,21 +319,28 @@ header .logo img{max-width:200px}
 .home .button-block{margin-top:20px}
 .h-text{font-size:14px;margin:0 40px 15px}
 .home .key-block span{display:inline-block;padding:4px 10px 6px;line-height: 16px;}
-.home .tab2{padding:25px 15px 10px;max-width:50%;margin-top:0px}
+.home .tab2{padding:20px 10px 10px;max-width:50%;margin-top:0px;margin:0 8px;}
 .home .tab2 div::after{height:24px}
 .home .tab2 div{font-size:25px;line-height:30px}
 .home .tab2 p{font-size:12px;line-height:18px;margin-top:7px}
-.card-block{width:80%;margin-left:10%}
 .brif{padding:65px 0;background-size: 100% auto;}
 .brif h2{font-size:24px}
 .home{background-size: auto;}
 .slick-slide img.w-100 {display:none}
 .img-quiz{display:none!important}
-.slick-list{min-height:300px}
+.brif .slick-list{min-height:300px}
 .block-quiz{padding:0;border:0;height:auto}
 .brif .input-form{width:100%;padding:20px}
 .brif .button{width:100%;height:55px;padding:15px 0;margin-top:3px;margin-bottom:15px}
 .brif .button:after{height:55px}
+.big_num{font-size:55px;line-height:55px;}
+.years_block, .we_helping{padding-top:20px;}
+.years_block .midle_white_text{font-size:12px;line-height:24px;}
+.we_helping .midle_white_text{font-size:12px;line-height:24px;}
+.garant{padding:40px 0 30px;}
+.name_badge{bottom:30px;}
+.consultation .button_get{font-size:14px;line-height:16px;padding:26px 0;}
+.checklist .wrapper_form{padding:30px 20px;}
 }
 @media(max-width:450px){
 }
