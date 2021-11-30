@@ -24,10 +24,10 @@ header .call .callme{padding-top:10px;font-size:14px;line-height:22px;text-decor
 .home .button:after{content:'';position:absolute;left:0;right:0;width:100%;height:110px;bottom:4px;background-image:url(../img/button.png);z-index:-1;border-radius:70px}
 .home .tab{max-width:234px;padding:40px 30px;background:url(../img/card.png);background-size:100% 100%;font-size:16px}
 .home .tab p{padding-top:10px}
-.home .tab2{text-align:center;position:relative;max-width:224px;padding:51px 35px 41px;background:url(../img/card2.png);background-size:100% 100%;font-size:16px;margin-right:12px}
+.home .tab2{text-align:center;position:relative;max-width:224px;padding:51px 35px 41px;margin-top:30px;background:url(../img/card2.png);background-size:100% 100%;font-size:16px;margin-right:12px}
 .home .tab2 div{font-family:'Optima';font-size:40px;line-height:75px;color:#62AC9E}
 .home .tab2 div::after{width:1px;height:50px;top:0;left:0;right:0;margin:auto;position:absolute;content:'';background:#62AC9E}
-.home .tab2 p{font-size:16px;line-height:26px}
+.home .tab2 p{font-size:16px;line-height:26px;}
 .brif{padding:140px 0 100px;background-image:url(../img/bg-brif.jpg);background-size:cover}
 .brif h2{font-size:44px;font-family:'Optima';letter-spacing:1px;text-align:center;width:90%;margin-left:5%}
 .brif .bg-white{border-radius:15px;background-color:#fff;padding:35px;box-shadow:0px 4px 70px rgb(69,34,14,0.05)}
@@ -209,7 +209,7 @@ input[type=range]:focus{outline:none}
   .home .key-block span{display:inline-block;align-items:center;justify-content:center;padding:8px 20px;line-height:20px;margin-left:0;}
   .tab{display:none;}
   .home .button-block{margin-top:30px;justify-content:center !important;}
-  .home .button_get{margin-bottom:20px;}
+  .home .button_get{margin-bottom:20px;font-size:12px}
   .mobile_respons{display:flex;flex-direction:column;align-items:center;}
   .mobile_text{font-size:14px;line-height:20px;color:#323232;text-align:center;}
   .brif{padding:0 0 20px;}
@@ -230,7 +230,7 @@ input[type=range]:focus{outline:none}
   .card_block.bg_block_img.bg_one{background-image:none;}
   .card_block.bg_block_img.bg_two{background-image:none;}
   .card_block.bg_block_img.bg_three{background-image:none;}
-  .bg_card_img{z-index:0;opacity:.3;}
+  .bg_card_img{z-index:0;opacity:.3;right:-50px}
   .middle_bold_text{font-size:16px;line-height:22px;margin-bottom:15px;}
   .card_mini_text{line-height:20px;}
   .gx-lg-6{--bs-gutter-x:3rem;}
@@ -246,7 +246,7 @@ input[type=range]:focus{outline:none}
   .white_text_item{line-height:20px;font-family:'TTnorms-light';}
   .phone_hand{position:relative;margin:auto;right:0;left:0;bottom:0;padding-top:30px;}
   .works{padding:60px 0 0;overflow:hidden;text-align:center;}
-  .title_block_works{font-size:24px;line-height:30px;text-align:center;}
+  .title_block_works{font-size:24px;line-height:30px;text-align:left;}
   .links_block{background:transparent;backdrop-filter:none;box-shadow:none;position:relative;}
   .links_item{background-color:#ffff;color:#323232;box-shadow:none;opacity:1;font-size:16px;line-height:22px;font-family:'TTnorms-med';padding:20px 25px;}
   .links_block .slick-arrow{position:absolute;top:0;bottom:0;margin:auto;height:7px;width:14px;border:none;background-color:transparent;padding:3px;background-size:cover;background-position:center center;}
@@ -283,6 +283,12 @@ input[type=range]:focus{outline:none}
   .photo_block{position:relative;}
   .consultation .wrapper_form{margin-top:30px;padding:30px 20px;}
   .consultation .title_form{font-size:20px;line-height:28px;}
+  .specialist{padding:50px 0 }
+  .major{margin-bottom:0}
+  .slider_specialist .slick-prev, .slider_specialist .slick-next{bottom:auto;top:100px;z-index:99999}
+  .slider_specialist .slick-next{right:0}
+  .slider_specialist .slick-prev{left:0}
+  .about_us{background-size:110% 110%;background-position: center center;}
 }
 
 @media(max-width:756px){
@@ -306,7 +312,7 @@ header .logo img{max-width:200px}
 .home .button-block{margin-top:20px}
 .h-text{font-size:14px;margin:0 40px 15px}
 .home .key-block span{display:inline-block;padding:4px 10px 6px;line-height: 16px;}
-.home .tab2{padding:25px 15px 10px;max-width:50%}
+.home .tab2{padding:25px 15px 10px;max-width:50%;margin-top:0px}
 .home .tab2 div::after{height:24px}
 .home .tab2 div{font-size:25px;line-height:30px}
 .home .tab2 p{font-size:12px;line-height:18px;margin-top:7px}
@@ -314,6 +320,13 @@ header .logo img{max-width:200px}
 .brif{padding:65px 0;background-size: 100% auto;}
 .brif h2{font-size:24px}
 .home{background-size: auto;}
+.slick-slide img.w-100 {display:none}
+.img-quiz{display:none!important}
+.slick-list{min-height:300px}
+.block-quiz{padding:0;border:0;height:auto}
+.brif .input-form{width:100%;padding:20px}
+.brif .button{width:100%;height:55px;padding:15px 0;margin-top:3px;margin-bottom:15px}
+.brif .button:after{height:55px}
 }
 @media(max-width:450px){
 }
