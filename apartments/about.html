@@ -388,17 +388,27 @@
         <div class="row pt-3 pt-lg-0">
           <div class="col-lg-9">
             <div class="links_block">
-              <button class="links_item">Креативные видео-обзоры</button>
-              <button class="links_item active">Таргетированный поиск в соц сетях</button>
-              <button class="links_item">3D-визуализации</button>
-              <button class="links_item">Собственный сайт для вашего объекта</button>
-              <button class="links_item">Более 15 каналов поиска покупателей</button>
+              <button class="links_item item_one">Креативные видео-обзоры</button>
+              <button class="links_item item_two active">Таргетированный поиск в соц сетях</button>
+              <button class="links_item item_three">3D-визуализации</button>
+              <button class="links_item item_four">Собственный сайт для вашего объекта</button>
+              <button class="links_item item_five">Более 15 каналов поиска покупателей</button>
             </div>
           </div>
         </div>
       </div>
-      <img class="img-fluid phone_hand" src="img/phone_hand.png" alt="телефон в руке">
+      <div class="box_img_slider">
+        <img class="img-fluid phone_hand" src="img/phone_hand.png" alt="телефон в руке">
+        <div class="content_slider_img">
+          <img class="img-fluid slider_inner_img img_1" src="img/inner_slider_img.png" alt="картинка">
+          <img class="img-fluid slider_inner_img img_2" src="img/inner_slider_img.png" alt="картинка">
+          <img class="img-fluid slider_inner_img img_3" src="img/inner_slider_img.png" alt="картинка">
+          <img class="img-fluid slider_inner_img img_4" src="img/inner_slider_img.png" alt="картинка">
+          <img class="img-fluid slider_inner_img img_5" src="img/inner_slider_img.png" alt="картинка">
+        </div>
+      </div>
     </section>
+    
     <section class="steps">
       <div class="container">
         <div class="title_text_works">
@@ -866,12 +876,12 @@
   </div>
   
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/swiper-bundle.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" type="text/javascript"></script>
   <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/specialist_slider.js"></script>
   <script src="js/mobile_slider.js"></script>
+  <script src="js/links_slider.js"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
       $(".lazy").slick({
@@ -888,16 +898,11 @@
     });
   </script>
   <script>
-    $('.links_item').click(function(){
-      $('.links_item').removeClass('active');
-      $(this).addClass('active');
-    });
     $('.btn_menu').click(function () {
       $('.mobile_menu').toggleClass('active');
       $('.over').toggleClass('overflow-hidden');
     });
   </script>
-
 </body>
 
 </html>

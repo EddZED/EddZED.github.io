@@ -112,7 +112,7 @@ input[type=range]:focus{outline:none}
 .links_item{display:flex;align-items:center;padding:36px 57px;text-decoration:none;color:#323232;font-size:22px;line-height:26px;opacity:0.4;transition:all .3s;border-radius:15px;border:none;background-color:transparent;width:100%;}
 .links_item:hover{opacity:1;background-color:#fff;color:#323232;}
 .links_item.active{opacity:1;background-color:#fff;color:#323232;box-shadow: 0px 20px 70px rgba(69, 34, 14, 0.05);transition:all .3s;}
-.phone_hand{position:absolute;right:10%;bottom:0;}
+.box_img_slider{position:absolute;right:10%;bottom:0;}
 .steps{width:100%;position:relative;padding:138px 0 154px;background-image:url(../img/bg_steps.png);background-repeat:no-repeat;background-size:cover;background-position:center center;}
 .tabs_body{padding:60px 0 0;}
 .nav-tabs .nav-link, .nav-tabs{border:none;}
@@ -173,6 +173,9 @@ input[type=range]:focus{outline:none}
 .name_consult_min_text{font-size:14px;line-height:22px;color:#323232;font-family:'TTnorms-med';}
 .mobile_menu{display:flex;}
 .mobile_container{display:flex;}
+.content_slider_img{position:absolute;left:79px;top:67px;width:296px;height:548px;overflow:hidden;}
+.slider_inner_img{position:absolute;left:0;top:0;opacity:0;transform:translateX(100%);transition:all .5s;}
+.slider_inner_img.active{opacity:1;transform:translateX(0);transition-delay:.2s;}
 
 .footer{background:linear-gradient(to top, #282728, #4F4842);padding:110px 0 70px;color:#fff}
 .footer h3{font-size:38px;font-family: 'Optima';}
@@ -246,7 +249,7 @@ input[type=range]:focus{outline:none}
   .brown_item_card{padding:30px 20px;}
   .white_tite_item{padding-top:15px;font-size:16px;line-height:22px;}
   .white_text_item{line-height:20px;font-family:'TTnorms-light';}
-  .phone_hand{position:relative;margin:auto;right:0;left:0;bottom:0;padding-top:30px;}
+  .box_img_slider{position:relative;margin:auto;right:0;left:0;bottom:0;padding-top:30px;}
   .works{padding:60px 0 0;overflow:hidden;text-align:center;}
   .title_block_works{font-size:24px;line-height:30px;text-align:left;}
   .links_block{background:transparent;backdrop-filter:none;box-shadow:none;position:relative;}
@@ -306,6 +309,7 @@ input[type=range]:focus{outline:none}
   .call{text-align:center !important;}
   header .call .phone{margin-top:20px;font-size:20px;}
   header .call .callme{font-size:18px;margin-top:15px;}
+  .content_slider_img{left:238px;}
 }
 
 @media(max-width:756px){
