@@ -197,6 +197,9 @@ input[type=range]:focus{outline:none}
 .footer .text-end a{color:#fff;font-size:18px;opacity: .6;margin-top:5px;display:block}
 .block_images_text{display:flex;}
 
+@media(max-width:1199px){
+  .box_img_slider{right:0;}
+}
 @media(max-width:991px){
   header{padding:15px 0 0;}
   header .name{margin-left:10px;font-size:10px;line-height:18px;}
@@ -309,7 +312,8 @@ input[type=range]:focus{outline:none}
   .call{text-align:center !important;}
   header .call .phone{margin-top:20px;font-size:20px;}
   header .call .callme{font-size:18px;margin-top:15px;}
-  .content_slider_img{left:238px;}
+  .content_slider_img{left:12.1%;top:95px;}
+  .box_img_slider{right:auto;width:654px;height:754px;transform:translateX(5%);}
 }
 
 @media(max-width:756px){
@@ -357,4 +361,6 @@ header .logo img{max-width:200px}
 .checklist .wrapper_form{padding:30px 20px;}
 }
 @media(max-width:450px){
+  .box_img_slider{right:auto;width:320px;height:auto;transform:translateX(5%);}
+  .content_slider_img{width:45%;top:63px;}
 }

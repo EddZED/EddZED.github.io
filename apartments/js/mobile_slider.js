@@ -4,6 +4,7 @@ $(".links_block").slick({
         dots: false,
         arrows:true,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         slidesToShow: 1,
         mobileFirst: true,
         prevArrow: '<button type = "button" class = "slick-prev"></ button>',
