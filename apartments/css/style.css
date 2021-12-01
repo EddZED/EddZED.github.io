@@ -222,7 +222,7 @@ input[type=range]:focus{outline:none}
   .mobile_text{font-size:14px;line-height:20px;color:#323232;text-align:center;}
   .brif{padding:0 0 20px;}
   .brif h2{font-size:24px;line-height:30px;}
-  .brif .bg-white.big-white{padding:25px 0;}
+  .brif .bg-white.big-white{padding:25px 15px;}
   .brif .bg-white h3{font-size:16px;line-height:20px;}
   .lazy .slick-slide>div{padding:0 30px;}
   .type_appartments{display:none !important;}
@@ -231,7 +231,7 @@ input[type=range]:focus{outline:none}
   .lazy .slick-dots{display:none !important;}
   .brif .range{margin-top:30px;}
   .lazy .slick-next{bottom:-50px;left:auto;right:30px;height:auto;padding:15px 20px;display:inline-flex;align-items:center;justify-content:center;}
-  .lazy .slick-prev{bottom:-40px;left:auto;right:170px;height:auto;padding:15px 20px;display:inline-flex;align-items:center;justify-content:center;}
+  .lazy .slick-prev{bottom:-44px;left:auto;right:170px;height:auto;padding:15px 20px;display:inline-flex;align-items:center;justify-content:center;}
   .problems{padding:60px 0;}
   .text_block{margin-bottom:30px;}
   .title_block{font-size:24px;line-height:30px;}
@@ -297,9 +297,10 @@ input[type=range]:focus{outline:none}
   .slider_specialist .slick-next{right:0}
   .slider_specialist .slick-prev{left:0}
   .about_us{background-size:110% 110%;background-position: center center;padding:40px 0 40px;}
-  .flex_block_mobile{display:flex;justify-content:space-between;text-align:center;flex-wrap:wrap;}
+  .flex_block_mobile{display:flex;justify-content:space-around;text-align:center;flex-wrap:wrap;}
   .count_clients{flex-direction:column;align-items:center;}
   .years_block{flex:0 0 50%;text-align:center;align-items:center;}
+  .we_helping{flex:0 0 50%;text-align:center;align-items:center;}
   .card-block{width:100%;margin-left:0;}
   .midle_white_text{text-align:center;}
   .btn_menu{display:inline-flex;align-items:center;z-index:1000;}
@@ -355,10 +356,11 @@ header .logo img{max-width:200px}
 .years_block, .we_helping{padding-top:20px;}
 .years_block .midle_white_text{font-size:12px;line-height:24px;}
 .we_helping .midle_white_text{font-size:12px;line-height:24px;}
-.garant{padding:40px 0 30px;}
+.garant{padding:40px 0 260px;}
 .name_badge{bottom:30px;}
 .consultation .button_get{font-size:14px;line-height:16px;padding:26px 0;}
 .checklist .wrapper_form{padding:30px 20px;}
+.tab-content{padding:25px 15px;}
 }
 @media(max-width:450px){
   .box_img_slider{right:auto;width:320px;height:auto;transform:translateX(5%);}

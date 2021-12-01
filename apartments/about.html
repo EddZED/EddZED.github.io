@@ -189,7 +189,7 @@
                 </div>
                 <div>
                   <h3>Какая отделка квартиры?</h3>
-                  <div class="row mb-3">
+                  <div class="row">
                     <div class="col-md-3">
                       <img src="img/otd1.png" class="w-100">
                       <input type="radio" id="otd1" name="otd" value="Предчистовая">
@@ -893,7 +893,9 @@
         infinite: false,
         swipe: true,
         adaptiveHeight: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: flex;" aria-disabled="false">Далее</button>',
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style="display: flex;" aria-disabled="false">Назад</button>'
       });
     });
   </script>
