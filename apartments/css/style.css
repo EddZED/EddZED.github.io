@@ -199,6 +199,11 @@ input[type=range]:focus{outline:none}
 
 @media(max-width:1199px){
   .box_img_slider{right:0;}
+  .home .watt{margin:40px 0 25px}
+  .home h1{font-size:60px;line-height:65px;}
+  .home .key-block span{padding:0px 15px 5px 15px;display:flex;align-items:center;justify-content:center; line-height:20px;}
+  .home .key-block{font-size:25px;}
+  .home .button_get{padding:20px 35px;}
 }
 @media(max-width:991px){
   header{padding:15px 0 0;}
