@@ -197,13 +197,20 @@ input[type=range]:focus{outline:none}
 .footer .text-end a{color:#fff;font-size:18px;opacity: .6;margin-top:5px;display:block}
 .block_images_text{display:flex;}
 
+
+@media(max-width:1439px){
+  header{padding:20px 0;}
+  .home .watt{margin:10px 0 20px;padding:7px 15px;}
+  .home h1{font-size:50px;line-height:55px;}
+  .home .key-block span{padding:0px 15px 5px 15px;display:flex;align-items:center;justify-content:center; line-height:20px;}
+  .home .key-block{font-size:22px;}
+  .home .button-block{margin-top:25px;}
+  .home .button_get{padding:10px 25px;font-size:16px;line-height:25px;}
+  .home .button_get{margin-bottom:20px;}
+  .home .tab2{margin-top:15px;padding:30px 15px 20px;}
+}
 @media(max-width:1199px){
   .box_img_slider{right:0;}
-  .home .watt{margin:40px 0 25px}
-  .home h1{font-size:60px;line-height:65px;}
-  .home .key-block span{padding:0px 15px 5px 15px;display:flex;align-items:center;justify-content:center; line-height:20px;}
-  .home .key-block{font-size:25px;}
-  .home .button_get{padding:20px 35px;}
 }
 @media(max-width:991px){
   header{padding:15px 0 0;}
