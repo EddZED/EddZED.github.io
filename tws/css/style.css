@@ -9,17 +9,21 @@
 @font-face{font-family:'Emily';src:url(../font/emilyaustin.ttf);}
 @font-face{font-family:'FuturaPT_heavy';src:url(../font/FuturaPT-Heavy.ttf);}
 html{scroll-behavior:smooth;}
+body{font-family: 'Graphik_regular';}
 *{margin:0;padding:0;box-sizing:border-box;}
 .wrapper{overflow:hidden;min-height:9999px;}
 .header{position:fixed;padding:10px 0;background-color:#000;width:100%;left:0;top:0;z-index:10;}
 .container{max-width:1440px;padding:0 10px;margin:0 auto;position:relative;}
 .header-content{width:100%;display:flex;align-items:center;justify-content:space-between;z-index:1;position: relative;}
 .header-content__language{display:flex;align-items:center;justify-content:center;padding-top:25px;}
-.link-language{color:#fff;text-decoration:none;}
+.link-language{color:#474747;text-decoration:none;border-bottom:2px solid transparent;font-size:16px;line-height:16px;font-family:'Graphik_semibold';text-transform:uppercase;margin:0 2px;}
+.link-language.active{color:#fff;border-color:#fff;}
 .header-content__menu{display:flex;align-items:center;justify-content:space-between;position: relative;padding:0 10px 0 10px;width:100%;}
 .content-menu__body{list-style:none;display:flex;align-items:center;margin-bottom:0;height:100%;}
-.content-menu__item{color:#fff;text-decoration:none;margin:0 10px;}
-.logo-link{font-size:50px;line-height:50px;color:#fff;text-decoration:none;text-transform:uppercase;}
+li.content-menu__item{cursor:pointer;}
+.content-menu__item{color:#fff;text-decoration:none;margin:0 10px;font-size:18px;line-height:18px;font-family:'Graphik_semibold';display:inline-flex;align-items:center;}
+.shevron_menu{padding-left:7px;}
+.logo-link{font-size:50px;line-height:55px;color:#fff;text-decoration:none;text-transform:uppercase;font-family:'Graphik_bold';}
 .sidebar{position:fixed;left:0;top:0;width:75px;height:100vh;z-index:10;}
 .sidebar-body__body{position:relative;left:0;top:0;width:100%;height:100vh;background-color:#000;height:100%;display:flex;flex-direction:column;}
 .intro{background-image:url(../img/intro_img.jpg);background-size:cover;background-position:center center;min-height:100vh;position: relative;}
@@ -39,7 +43,7 @@ html{scroll-behavior:smooth;}
   justify-content:flex-end;
   align-items:center;
 }
-.namv-link_sidebar{
+.nav-link_sidebar{
   display:flex;
   width:100%;
   align-items:center;
@@ -52,10 +56,10 @@ html{scroll-behavior:smooth;}
   line-height:18px;
   min-height:66px;
 }
-.namv-link_sidebar:nth-child(1){
+.nav-link_sidebar:nth-child(1){
   border-top:0;
 }
-.namv-link_sidebar:last-child{
+.nav-link_sidebar:last-child{
   border-bottom:0;
 }
 
