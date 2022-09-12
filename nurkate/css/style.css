@@ -1,0 +1,62 @@
+font-face{font-family:"insta";src:url(../font/Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);}
+html{scroll-behavior:smooth;}
+body{padding:0;margin:0;background-color:#ccc;font-family:'Helvetica Neue';font-weight:500;font-size:14px;box-sizing:border-box;}
+.wrapper{
+  position:relative;
+}
+.header{
+  width:100%;
+  background-color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0;
+  position:fixed;
+  left:0;
+  top:0;
+}
+.container {
+  max-width:1400px;
+  width:100%;
+  margin:auto;
+}
+.header__menu{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.header__menu-item{
+  display:inline-block;
+  text-decoration:none;
+  letter-spacing:3px;
+  padding:15px 30px 15px 30px;
+  color:#C13584;
+  transition:.5s;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-size: 16px;
+}
+.header__menu-item:hover{
+  color:#833AB4;
+}
+.header__menu-item.active{
+  color:#833AB4;
+}
+.content__main-item{
+  width:100%;
+  min-height:100vh;
+  background-image:url(../img/main_theme.jpg);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+
+
+
+
+
+
+
