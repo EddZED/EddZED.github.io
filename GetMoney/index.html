@@ -5,11 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="wrapper">
-    
+    <header class="header">
+      <div class="header__nav">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="header__nav-leftblock">
+              <div class="header__nav-link nav__top">
+                <div class="link"><a href="#" class="link_main"><img class="img-fluid" src="img/logo.png" alt="GetMoney"></a></div>
+              </div>
+              <div class="header__nav-menu nav__top">
+                <div class="menu__top">
+                  <a href="#" class="menu__top-link one">Как получить займ?</a>
+                  <a href="#" class="menu__top-link two">Тарифы</a>
+                  <a href="#" class="menu__top-link three">Реферальная система</a>
+                  <a href="#" class="menu__top-link">О компании</a>
+                  <a href="#" class="menu__top-link">Частые вопросы</a>
+                </div>
+              </div>
+            </div>
+            <div class="header__nav-account nav__top">
+              <div class="account__items">
+                <a href="#" class="account__items-button">Войти</a>
+                <a href="#" class="account__items-button">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      var height = $(window).scrollTop();
+      if (height > 0) {
+        $('.header_nav').addClass('fixed_menu');
+        $('.left_block_nav').addClass('hid_text');
+      } else {
+        $('.header_nav').removeClass('fixed_menu');
+        $('.left_block_nav').removeClass('hid_text');
+      }
+    });
+  </script>
 </body>
 </html>

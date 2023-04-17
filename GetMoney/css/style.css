@@ -1,0 +1,42 @@
+html {scroll-behavior: smooth;}
+@font-face {font-family:'Mazzard_M_regular';src:url('../font/MazzardM-Regular.ttf');}
+@font-face {font-family:'Mazzard_M_bold';src:url('../font/MazzardM-Bold.ttf');}
+@font-face {font-family:'Mazzard_M_light';src:url('../font/MazzardM-Light.ttf');}
+@font-face {font-family:'Mazzard_M_medium';src:url('../font/MazzardM-Medium.ttf');}
+@font-face {font-family:'Mazzard_M_semibold';src:url('../font/MazzardM-SemiBold.ttf');}
+@font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');
+}
+
+.header__nav-leftblock{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link{
+  display:flex;
+  padding:0 3px;
+}
+.nav__top{
+  width: auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.header__nav-link{
+  padding:0 54px 0 0;
+}
+.menu__top-link{
+  font-family:'Mazzard_M_regular';
+  font-weight: normal;
+  font-size: 14px;
+  line-height:17px;
+  display:inline-block;
+  padding:0 13px;
+  text-decoration:none;
+  color: rgba(85, 85, 85, 1);
+  transition:all .3s;
+}
+.menu__top-link:hover{
+  color:rgba(60, 80, 232, 1);
+}
