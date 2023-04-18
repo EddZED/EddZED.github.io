@@ -6,7 +6,9 @@ html {scroll-behavior: smooth;}
 @font-face {font-family:'Mazzard_M_semibold';src:url('../font/MazzardM-SemiBold.ttf');}
 @font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');
 }
-
+.header{
+  padding:39px 0;
+}
 .header__nav-leftblock{
   width: auto;
   display: flex;
@@ -40,3 +42,87 @@ html {scroll-behavior: smooth;}
 .menu__top-link:hover{
   color:rgba(60, 80, 232, 1);
 }
+.account__items{
+  display:flex;
+  align-items:center;
+}
+.account__items-button{
+  min-height:40px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(60, 80, 232, 1);
+  font-family: 'Mazzard_M_bold';
+  font-size: 14px;
+  line-height: 17px;
+  padding:0px 10px;
+  border: 1px solid #CDD3FF;
+  border-radius:5px;
+  text-decoration:none;
+  transition:.3s;
+}
+.account__items-button.button_profile{
+  background-color:rgba(255,255,255,1);
+}
+.account__items-button.button_profile:hover {
+  background-color:rgba(60, 80, 232, 1);
+  color:rgba(255, 255, 255, 1);
+}
+.account__items-button.button_profile .color_icon {
+  transition:.3s;
+}
+.account__items-button.button_profile:hover .color_icon{
+  fill:#fff;
+}
+.account__items-button span{
+  width:16px;
+  height:18px;
+  display:flex;
+  margin-right:10px;
+}
+.button_profile{
+  margin-right:10px;
+  padding: 0px 19px;
+}
+.button_order{
+  color:rgba(255, 255, 255, 1);
+  background-color:rgba(60, 80, 232, 1);
+  box-shadow:0 20px 22px -14px rgba(60, 80, 232, .5);
+  padding: 0px 30px;
+}
+.account__items-button.button_order:hover{
+  transform:translateY(-5px);
+  color:rgba(255, 255, 255, 1);
+}
+.head__main-bold{
+  font-size:57px;
+  line-height:100%;
+  letter-spacing:-0.02em;
+  color: #2D2D2D;
+  font-family: 'Mazzard_M_medium';
+}
+.text_intro{
+  font-size:20px;
+  line-height:140%;
+  font-family: 'Mazzard_M_light';
+  padding-top:26px;
+}
+.container.content{
+  width:1160px;
+}
+.first__block-conent{
+  padding:88px 15px;
+}
+.button_get{
+  font-size:16px;
+  line-height:19px;
+  margin-top:24px;
+  padding:25px 73px;
+  border-radius:10px;
+}
+
+
+
+
+
+
