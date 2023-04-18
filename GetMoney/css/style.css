@@ -87,7 +87,8 @@ html {scroll-behavior: smooth;}
 .button_order{
   color:rgba(255, 255, 255, 1);
   background-color:rgba(60, 80, 232, 1);
-  box-shadow:0 20px 22px -14px rgba(60, 80, 232, .5);
+  box-shadow:0 24px 27px -10px rgba(60, 80, 232, .5);
+  border-color:rgba(60, 80, 232, 1);
   padding: 0px 30px;
 }
 .account__items-button.button_order:hover{
@@ -120,9 +121,82 @@ html {scroll-behavior: smooth;}
   padding:25px 73px;
   border-radius:10px;
 }
-
-
-
+.box_bg-intro{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.img__bg-intro{
+  position:absolute;
+  max-width:fit-content;
+  right:-155px;
+  top:-189px;
+  z-index:-1;
+}
+.message__box{
+  max-width:343px;
+  position:absolute;
+  padding:20px 26px;
+}
+.message__box.box-one{
+  left:100px;
+  top:3px;
+  background-image:url(../img/Union.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  filter: drop-shadow(0px 10px 80px rgba(76, 81, 118, 0.2));
+}
+.message__box.box-two {
+  right: -18px;
+  top: 210px;
+  padding: 21px 20px 20px 44px;
+  background-image: url(../img/Union2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 10px 80px rgba(76, 81, 118, 0.2));
+}
+.title__message{
+  font-size:15px;
+  font-family:'Mazzard_M_semibold';
+  display:inline-block;
+  margin-bottom:1px;
+  letter-spacing:0.025em;
+}
+.text__message{
+  font-size:15px;
+  line-height:20px;
+  font-family:'Mazzard_M_regular';
+  display: inline-block;
+  letter-spacing: 0.025em;
+  margin-bottom:5px;
+}
+.box_cards{
+  display:flex;
+  align-items:center;
+  padding-top:146px;
+}
+.text_min{
+  font-size:13px;
+  line-height:120%;
+  font-family: 'Mazzard_M_light';
+  color:#555555;
+  display:inline-block;
+}
+.icon_card:nth-of-type(1){
+  margin-left:44px;
+}
+.icon_card:nth-of-type(2){
+  margin-left: 30px;
+}
+.icon_card:nth-of-type(3) {
+  margin-left: 27px;
+}
+.icon_card:nth-of-type(4) {
+  margin-left: 30px;
+}
+.icon_card:nth-of-type(5) {
+  margin-left: 26px;
+}
 
 
 
