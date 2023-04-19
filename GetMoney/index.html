@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Money</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/slick.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>   
@@ -193,7 +194,7 @@
                   </div>
                   <div class="block__hover-content">
                     <p class="hover__content-title">Простота использования</p>
-                    <p class="hover__content-content">В личном кабинете вы сможете отслеживать сроки, процент и сумму, оставшуюся к погашению</p>
+                    <p class="hover__content-content">В личном кабинете вы сможете отслеживать сроки, процент<br> и сумму, оставшуюся к погашению</p>
                   </div>
                 </div>
               </div>
@@ -290,6 +291,7 @@
                   <div class="block__hover-content">
                     <p class="hover__content-title">Реферальная система</p>
                     <p class="hover__content-content">Дарим 40% от процентных выплат приведенного вами друга</p>
+                    <a href="#" class="link__blue">Подробнее</a>
                   </div>
                 </div>
               </div>
@@ -298,8 +300,84 @@
         </div>
       </div>
     </section>
+    <section class="third__section">
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 class="head__main-bold">Уменьшайте процент с каждым последующим займом</h2>
+          </div>
+        </div>
+        <div class="slider__card">
+          <div class="slider__card-body">
+            <span class="light__text">Тариф</span>
+            <p class="name__card">Быстрый старт</p> 
+            <p class="light__text">Вариант, доступный каждому клиенту -<br> как новому, так и тому, кто с нами давно</p>
+            <div class="table__info">
+              <div class="rows__info rows-one">
+                <span class="text_regular">Процентная ставка:</span>
+                <span class="text_regular">0,5%</span>
+              </div>
+              <div class="rows__info rows-two">
+                <span class="text_regular">Сумма займа:</span>
+                <span class="text__blue">5 000 - 25 000 р.</span>
+              </div>
+            </div>
+            <div class="button__box">
+              <a href="#" class="account__items-button button_order button_get">Получить займ</a>
+            </div>
+            <div class="box__img">
+              <img class="img-fluid" src="img/card1.png" alt="займ до 25 тысяч">
+            </div>
+          </div>
+          <div class="slider__card-body">
+            <span class="light__text">Тариф</span>
+            <p class="name__card">Набираем обороты</p>
+            <p class="light__text">Доступен клиентам, успешно и вовремя<br> закрывшим первый займ</p>
+            <div class="table__info">
+              <div class="rows__info rows-one">
+                <span class="text_regular">Процентная ставка:</span>
+                <span class="text_regular">0,4%</span>
+              </div>
+              <div class="rows__info rows-two">
+                <span class="text_regular">Сумма займа:</span>
+                <span class="text__blue">25 000 - 45 000 р.</span>
+              </div>
+            </div>
+            <div class="button__box">
+              <a href="#" class="account__items-button button_order button_get">Получить займ</a>
+            </div>
+            <div class="box__img">
+              <img class="img-fluid" src="img/card2.png" alt="займ до 45 тысяч рублей">
+            </div>
+          </div>
+          <div class="slider__card-body">
+            <span class="light__text">Тариф</span>
+            <p class="name__card">GoldMoney</p>
+            <p class="light__text">Доступен постоянным клиентам, успешно<br> погасившим займ 45 000 р,</p>
+            <div class="table__info">
+              <div class="rows__info rows-one">
+                <span class="text_regular">Процентная ставка:</span>
+                <span class="text_regular">0,3%</span>
+              </div>
+              <div class="rows__info rows-two">
+                <span class="text_regular">Сумма займа:</span>
+                <span class="text__blue">от 45 000 р.</span>
+              </div>
+            </div>
+            <div class="button__box">
+              <a href="#" class="account__items-button button_order button_get">Получить займ</a>
+            </div>
+            <div class="box__img">
+              <img class="img-fluid" src="img/card3.png" alt="займ от 45 тысяч рублей">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script>
     $(window).scroll(function () {
       var height = $(window).scrollTop();
@@ -310,6 +388,13 @@
         $('.header_nav').removeClass('fixed_menu');
         $('.left_block_nav').removeClass('hid_text');
       }
+    });
+  </script>
+  <script>
+    $('.slider__card').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
     });
   </script>
 </body>

@@ -223,10 +223,10 @@ body{background-color:#F8F8F8;}
 
 /* second section */
 .wrapper__text-block{
-  padding-bottom:60px;
+  padding-bottom:77px;
 }
 .lowestprice__block{
-  padding:150px 0;
+  padding:167px 0 100px;
 }
 .lowestprice__block .head__main-bold{
   font-size:60px;
@@ -241,7 +241,7 @@ body{background-color:#F8F8F8;}
 .blocks_grid{
   display:grid;
   gap:30px;
-  row-gap:45px;
+  row-gap:30px;
   grid-template-columns:280px 280px;
   grid-template-rows: 230px 230px;
   justify-content:end;
@@ -256,7 +256,7 @@ body{background-color:#F8F8F8;}
   flex-direction:column;
   background-color:rgba(255, 255, 255, 1);;
   border-radius:30px;
-  padding:15px 25px;
+  padding:24px 27px;
   transition:.3s;
 }
 .block__hover-top{
@@ -272,20 +272,24 @@ body{background-color:#F8F8F8;}
   color:rgba(45, 45, 45, .1);
   font-family: 'Mazzard_M_bold';
   transition: .3s;
+  margin-bottom:5px;
 }
 .block__hover-icons{
   opacity:0;
   transition:.3s;
+  margin: 6px 5px 0 0;
 }
 .block__hover-content{
   display:flex;
   flex-direction:column;
+  padding-top:12px;
 }
 .hover__content-title{
   font-family:'Mazzard_M_semibold';
   font-size: 14px;
   line-height: 150%;
   color:rgba(45, 45, 45, 1);
+  margin-bottom:10px;
   transition: .3s;
 }
 .hover__content-content{
@@ -293,6 +297,7 @@ body{background-color:#F8F8F8;}
   line-height: 140%;
   color:rgba(45, 45, 45, 1);
   font-family:'Mazzard_M_light';
+  margin-bottom:2px;
   transition: .3s;
 }
 .block__hover:hover{
@@ -310,3 +315,109 @@ body{background-color:#F8F8F8;}
 .block__hover:hover .hover__content-content{
   color:rgba(255, 255, 255, 1);
 }
+.link__blue{
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Mazzard_M_regular';
+  color: #3C50E8;
+  text-decoration:none;
+  transition:.3s;
+}
+.link__blue:hover{
+  color: #fff;
+  text-decoration:underline;
+}
+
+
+
+
+
+
+/* third section style */
+.third__section{
+  padding:80px 0;
+}
+.third__section .head__main-bold{
+  font-size:60px;
+}
+
+/* styles slider items */
+.slider__card{
+  padding-top:54px;
+}
+.slider__card-body{
+  width:87% !important;
+  min-height:100px;
+  background-color:#F1F1F1;
+  border-radius:30px;
+  padding:49px 64px 69px 64px;
+  position:relative;
+}
+.light__text{
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Mazzard_M_regular';
+  color:#555555;
+}
+.name__card{
+  font-size:30px;
+  line-height:100%;
+  letter-spacing:-0.02em;
+  color:#2D2D2D;
+  margin-bottom:25px;
+}
+.table__info{
+  padding-top:17px;
+  width:310px;
+}
+.rows__info{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.rows__info.rows-one{
+  margin-bottom: 6px;
+}
+.text_regular{
+  font-size: 20px;
+  line-height: 140%;
+  font-family: 'Mazzard_M_regular';
+  color:#2D2D2D;
+}
+.text__blue{
+  font-size: 20px;
+  line-height: 140%;
+  color: #3C50E8;
+  font-family: 'Mazzard_M_bold';
+}
+.button__box{
+  padding-top:28px;
+  width: 310px;
+}
+.button__box .button_get{
+  width:100%;
+}
+.box__img{
+  width:551px;
+  height:334px;
+  position:absolute;
+  right:-150px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  display:flex;
+  align-items:center;
+}
+.box__img img{
+  position: relative;
+  top:-5px;
+  right:5px;
+  pointer-events:none;
+  box-shadow:-7px 58px 34px -28px rgba(36, 42, 88, .2);
+}
+
+
+
+
+
