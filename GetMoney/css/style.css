@@ -343,6 +343,7 @@ body{background-color:#F8F8F8;}
 
 /* styles slider items */
 .slider__card{
+  position:relative;
   padding-top:54px;
 }
 .slider__card-body{
@@ -416,8 +417,26 @@ body{background-color:#F8F8F8;}
   pointer-events:none;
   box-shadow:-7px 58px 34px -28px rgba(36, 42, 88, .2);
 }
-
-
+.slick-arrow{
+  position:absolute;
+  top:auto;
+  bottom:70px;
+  z-index:10;
+  width:70px;
+  height:70px;
+  border:1px solid #DCDCDC;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.slick-prev{
+  left:400px;
+}
+.slick-next{
+  left:480px;
+  background-color:#DCDCDC;
+}
 
 
 
