@@ -4,8 +4,9 @@ html {scroll-behavior: smooth;}
 @font-face {font-family:'Mazzard_M_light';src:url('../font/MazzardM-Light.ttf');}
 @font-face {font-family:'Mazzard_M_medium';src:url('../font/MazzardM-Medium.ttf');}
 @font-face {font-family:'Mazzard_M_semibold';src:url('../font/MazzardM-SemiBold.ttf');}
-@font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');
-}
+@font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');}
+body{background-color:#F8F8F8;}
+ /*header style*/
 .header{
   padding:39px 0;
 }
@@ -95,6 +96,16 @@ html {scroll-behavior: smooth;}
   transform:translateY(-5px);
   color:rgba(255, 255, 255, 1);
 }
+
+
+
+
+
+
+
+
+
+/* first section */
 .head__main-bold{
   font-size:57px;
   line-height:100%;
@@ -201,3 +212,101 @@ html {scroll-behavior: smooth;}
 
 
 
+
+
+
+
+
+
+
+
+
+/* second section */
+.wrapper__text-block{
+  padding-bottom:60px;
+}
+.lowestprice__block{
+  padding:150px 0;
+}
+.lowestprice__block .head__main-bold{
+  font-size:60px;
+}
+.lowestprice__block .text_intro{
+  line-height:150%;
+  padding-top:27px;
+}
+
+/* second section - blocks with hover effects */
+
+.blocks_grid{
+  display:grid;
+  gap:30px;
+  row-gap:45px;
+  grid-template-columns:280px 280px;
+  grid-template-rows: 230px 230px;
+  justify-content:end;
+}
+
+
+.block__hover{
+  width:280px;
+  min-height:230px;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  background-color:rgba(255, 255, 255, 1);;
+  border-radius:30px;
+  padding:15px 25px;
+  transition:.3s;
+}
+.block__hover-top{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+.gray__text-bold{
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color:rgba(45, 45, 45, .1);
+  font-family: 'Mazzard_M_bold';
+  transition: .3s;
+}
+.block__hover-icons{
+  opacity:0;
+  transition:.3s;
+}
+.block__hover-content{
+  display:flex;
+  flex-direction:column;
+}
+.hover__content-title{
+  font-family:'Mazzard_M_semibold';
+  font-size: 14px;
+  line-height: 150%;
+  color:rgba(45, 45, 45, 1);
+  transition: .3s;
+}
+.hover__content-content{
+  font-size: 14px;
+  line-height: 140%;
+  color:rgba(45, 45, 45, 1);
+  font-family:'Mazzard_M_light';
+  transition: .3s;
+}
+.block__hover:hover{
+  background-color:rgba(45, 45, 45, 1);;
+}
+.block__hover:hover .gray__text-bold{
+  color:rgba(255, 255, 255, .1);;
+}
+.block__hover:hover .block__hover-icons{
+  opacity:1;
+}
+.block__hover:hover .hover__content-title{
+  color:rgba(255, 255, 255, 1);
+}
+.block__hover:hover .hover__content-content{
+  color:rgba(255, 255, 255, 1);
+}
