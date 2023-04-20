@@ -459,7 +459,7 @@ body{background-color:#F8F8F8;}
 }
 .slick-slide:not(.slick-current) .box__img{
   opacity:1;
-  transform: translate(-580px, 0px) scale(.8);
+  transform: translate(-583px, -8px) scale(.79);
 }
 .slick-slide:not(.slick-current) .slider__card-body{
   background-color: #F8F8F8;
@@ -482,6 +482,9 @@ body{background-color:#F8F8F8;}
 
 /* fourth section style */
 
+.wrapper_range{
+  position:relative;
+}
 .custom_range{
   appearance: none;
   width:100%;
@@ -491,14 +494,13 @@ body{background-color:#F8F8F8;}
   position: relative;
 }
 .custom_range::-webkit-slider-thumb{
-  position:relative;
   appearance:none;
   width:16px;
   height:16px;
   border-radius:4px;
   background-color: #3C50E8;
   cursor:pointer;
-  box-shadow:2px 3px 5px rgba(60, 80, 232, 1);
+  box-shadow:2px 3px 5px rgba(60, 80, 232, .4);
   z-index:1;
 }
 

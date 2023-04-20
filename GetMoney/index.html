@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Money</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/rangeslider.css">
   <link rel="stylesheet" href="/css/slick.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -389,6 +390,8 @@
                   <div class="bottom_part">
                     <div class="wrapper_range">
                       <input class="custom_range" type="range" name="" min="1000" max="45000" value="15000">
+                      <span class="custom__thumb"></span>
+                      <span class="custom__progress"></span>
                     </div>
                     <div class="nums_block">
                       <span class="">1000p</span>
@@ -409,6 +412,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
   <script>
     $(window).scroll(function () {
       var height = $(window).scrollTop();
@@ -421,7 +425,6 @@
       }
     });
   </script>
-  <script>$('.slider__card').slick('setPosition')</script>
   <script>
     $('.slider__card').slick({
       infinite: false,
@@ -434,5 +437,6 @@
       nextArrow: '<button type = "button" class = "slick-next"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9.5H22M22 9.5L14 1M22 9.5L14 17.5" stroke="#EDEDED" stroke- width="2"/></svg ></button>'
     });
   </script>
+  <script>$('input[type="range"]').rangeslider();</script>
 </body>
 </html>
