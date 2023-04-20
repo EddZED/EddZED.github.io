@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="/css/slick.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>   
+<body>    
   <div class="wrapper">
     <header class="header">
       <div class="header__nav">
-        <div class="container">
+        <div class="containhttps://eddzed.github.io/GetMoney/index.htmler">
           <div class="row justify-content-between align-items-center">
             <div class="header__nav-leftblock">
               <div class="header__nav-link nav__top">
@@ -374,6 +374,37 @@
         </div>
       </div>
     </section>
+    <section class="fourth__section">
+      <div class="container content">
+        <h2 class="head__main-bold">Рассчитать займ</h2>
+        <form action="post">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="slider__range-box">
+                <div class="range__box-body">
+                  <div class="top_part">
+                    <span class="text_regular">Выберите нужную сумму:</span>
+                    <span class="custom_range-info">0</span>
+                  </div>
+                  <div class="bottom_part">
+                    <div class="wrapper_range">
+                      <input class="custom_range" type="range" name="" min="1000" max="45000" value="15000">
+                    </div>
+                    <div class="nums_block">
+                      <span class="">1000p</span>
+                      <span class="">45000p</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
@@ -390,10 +421,13 @@
       }
     });
   </script>
+  <script>$('.slider__card').slick('setPosition')</script>
   <script>
     $('.slider__card').slick({
       infinite: false,
       speed: 1000,
+      useTransform: true,
+      ssEase: 'linear',
       slidesToShow: 1,
       slidesToScroll: 1,
       prevArrow: '<button type = "button" class = "slick-prev"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 9.5H2M2 9.5L10 1M2 9.5L10 17.5" stroke="#DCDCDC" stroke- width="2"/></svg></button>',
