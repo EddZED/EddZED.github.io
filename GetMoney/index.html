@@ -378,30 +378,114 @@
     <section class="fourth__section">
       <div class="container content">
         <h2 class="head__main-bold">Рассчитать займ</h2>
-        <form action="post">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="slider__range-box">
-                <div class="range__box-body">
-                  <div class="top_part">
-                    <span class="text_regular">Выберите нужную сумму:</span>
-                    <span style="color:green" id="result-polzunok"></span>₽
+        <div class="calculation__block">
+          <form action="post">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="slider__range-box">
+                  <div class="range__box-body">
+                    <div class="top_part">
+                      <span class="text_regular">Выберите нужную сумму:</span>
+                      <div class="summ_block">
+                        <span class="summ_num" id="result-polzunok"></span><span class="rub_style">₽</span>
+                      </div>
+                    </div>
+                    <div class="bottom_part">
+                      <div class="dots__gray" id="polzunok"></div>
+                      <div class="nums_block">
+                        <span class="">1000p</span>
+                        <span class="">45000</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="bottom_part">
-                    <div id="polzunok"></div>
-                    <div class="nums_block">
-                      <span class="">1000p</span>
-                      <span class="">45000p</span>
+                  <div class="range__box-body second">
+                    <div class="top_part">
+                      <span class="text_regular">Выберите срок:</span>
+                      <div class="summ_block">
+                        <span class="summ_num" id="countday"></span><span class="day_style">дней</span>
+                      </div>
+                    </div>
+                    <div class="bottom_part">
+                      <div class="dots__gray" id="countpolz"></div>
+                      <div class="nums_block">
+                        <span class="">7 дней</span>
+                        <span class="">50 дней</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-4 pl-lg-0">
+                <div class="dark__block">
+                  <div class="dark__block-topcase">
+                    <p class="graylight__text">Сумма к возврату:</p>
+                    <div class="result__pay">
+                      <p id="equals" class="white__text">15 200</p>
+                      <p class="white__text-min"> рублей</p>
+                    </div>
+                    <p class="graylight__text">Срок до (включительно):</p>
+                    <p id="currentdate" class="white__text">20.03.2023</p>
+                  </div>
+                  <div class="dark__block-bottomcase">
+                    <button type="submit" class="account__items-button button_order button_get">Получить займ</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4">
-
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="fifth__section">
+      <div class="container content">
+        <h2 class="head__main-bold">Погашайте займ<br> полностью или частями:</h2>
+        <div class="row gx-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="wrapper_blocks">
+              <div class="block__hover">
+                <div class="block__hover-content">
+                  <p class="hover__content-title">В личном кабинете</p>
+                  <p class="hover__content-content">В личном кабинете вы всегда можете посмотреть сумму
+                  к возврату, срок, а также погасить задолженность</p>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
+          <div class="col-lg-3 col-md-6">
+            <div class="wrapper_blocks">
+              <div class="block__hover">
+                <div class="block__hover-content">
+                  <p class="hover__content-title">Через банковское приложение</p>
+                  <p class="hover__content-content">Вы можете погасить задолженность переводом
+                  из любого банковского приложения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="wrapper_blocks">
+              <div class="block__hover">
+                <div class="block__hover-content">
+                  <p class="hover__content-title">В кассах банков</p>
+                  <p class="hover__content-content">Переводите сумму
+                  к погашению в кассе
+                  любого банка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="wrapper_blocks">
+              <div class="block__hover">
+                <div class="block__hover-content">
+                  <p class="hover__content-title">Через приложение Киви</p>
+                  <p class="hover__content-content">Погасите задолженность
+                  через приложение Киви, пополнив его в ближайшем терминале</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -438,6 +522,7 @@
     $("#polzunok").slider({
         min: 1000,
         max: 45000,
+        step: 1000,
         animate: "slow",
         range: "min",
         value: 15000,
@@ -446,6 +531,20 @@
           }
       });
       $("#result-polzunok").text($("#polzunok").slider("value"));
+  </script>
+  <script>
+    $("#countpolz").slider({
+        min: 7,
+        max: 50,
+        step: 1,
+        animate: "slow",
+        range: "min",
+        value: 14,
+        slide: function (event, ui) {
+              $("#countday").text(ui.value);
+          }
+      });
+      $("#countday").text($("#countpolz").slider("value"));
   </script>
 </body>
 </html>
