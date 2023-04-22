@@ -624,12 +624,73 @@ body{background-color:#F8F8F8;}
   margin:0;
   width:100%;
 }
+
+
+
+/* fifth section style */
+.fifth__section{
+  padding:211px 0 100px;
+}
+.fifth__section .wrapper__steps-block{
+  padding-top: 59px;
+} 
 .fifth__section .head__main-bold{
   font-size:60px;
 }
 .fifth__section .block__hover{
+  position:relative;
   width:100%;
+  overflow: hidden;
+  padding:28px 31px;
+  min-height:300px;
 }
+.fifth__section .block__hover .hover__content-title{
+  line-height:120%;
+}
+.gradient__num{
+  position:absolute;
+  right:14px;
+  bottom:-21px;
+  font-size: 120px;
+  line-height: 100%;
+  font-family: 'Mazzard_M_light';
+  transition:.3s;
+  opacity:.1;
+  filter: grayscale(1);
+}
+.gradient__num.color-one{
+  background: radial-gradient(135.68% 158.36% at 5.65% 100%, #3C50E8 17.19%, #FFF27E 83.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient__num.color-two{
+  background: radial-gradient(127.46% 122.63% at 5.65% 100%, #A6F4FF 0%, #3C50E8 86.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient__num.color-three{
+  background: linear-gradient(117.3deg, #3C50E8 7.33%, #8FFF5A 98.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient__num.color-four{
+  background: radial-gradient(127.46% 141.94% at 5.65% 100%, #FFA6A6 0%, #3C50E8 86.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.fifth__section .block__hover:hover .gradient__num{
+  opacity:1;
+  filter: grayscale(0);
+}
+
 
 
 
