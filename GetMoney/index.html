@@ -494,12 +494,62 @@
         </div>
       </div>
     </section>
+    <section class="sixth__section">
+      <div class="container content">
+        <h2 class="head__main-bold">Отзывы клиентов<br>о работе с GetMoney:</h2>
+      </div>
+      <div class="sccrollbar__video">
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review1.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review2.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review3.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review4.png" alt="видео отзыв">
+          </a>
+        </div>
+      </div>
+      <div class="sccrollbar__video second__row">
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review3.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review4.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review5.png" alt="видео отзыв">
+          </a>
+        </div>
+        <div class="reviews__item">
+          <a href="#" class="link_video">
+            <img class="img-fluid" src="img/review1.png" alt="видео отзыв">
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jqueryUI.min.js"></script>
   <script src="js/jqueryUI_touch.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
   <script>
     $(window).scroll(function () {
       var height = $(window).scrollTop();
@@ -551,6 +601,14 @@
           }
       });
       $("#countday").text($("#countpolz").slider("value"));
+  </script>
+  <script>
+    $(function () {
+        $(".sccrollbar__video").mousewheel(function (event, delta) {
+          this.scrollLeft -= (delta * 100);
+          event.preventDefault();
+        });
+      })
   </script>
 </body>
 </html>
