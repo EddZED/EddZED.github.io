@@ -724,7 +724,7 @@ body{background-color:#F8F8F8;}
   display:flex;
   white-space: nowrap;
   position:relative;
-  scroll-behavior:smooth;
+  /* scroll-behavior:smooth; */
 }
 .sccrollbar__video::-webkit-scrollbar{
   appearance:none;
@@ -774,8 +774,36 @@ body{background-color:#F8F8F8;}
   margin-left:404px;
 }
 .sccrollbar__video.second__row{
-  justify-content:center;
+  margin-right:-100%;
   padding-top:23px;
+}
+
+
+
+
+
+
+
+/* seventh section style */
+.seventh__section{
+  position: relative;
+  padding:166px 0 150px;
+  overflow:hidden;
+}
+.seventh__section:before{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:480px;
+  left:75px;
+  top:82px;
+  background-color:#3C50E8;
+  border-radius:30px;
+  z-index: -1;
+}
+.seventh__section .head__main-bold{
+  font-size:60px;
+  color:#ffffff;
 }
 
 
