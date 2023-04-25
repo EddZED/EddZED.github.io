@@ -6,6 +6,7 @@ html {scroll-behavior: smooth;}
 @font-face {font-family:'Mazzard_M_semibold';src:url('../font/MazzardM-SemiBold.ttf');}
 @font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');}
 body{background-color:#F8F8F8;}
+img {pointer-events: none;}
  /*header style*/
 .header{
   padding:39px 0;
@@ -774,10 +775,8 @@ body{background-color:#F8F8F8;}
   margin-left:404px;
 }
 .sccrollbar__video.second__row{
-  margin-right:-100%;
   padding-top:23px;
 }
-
 
 
 
@@ -805,6 +804,65 @@ body{background-color:#F8F8F8;}
   font-size:60px;
   color:#ffffff;
 }
+.button_block{
+  padding-top:50px;
+  position:relative;
+}
+.big_nums{
+  position:absolute;
+  bottom:-10px;
+  right:-50px;
+  font-size:220px;
+  line-height:100%;
+  letter-spacing:-0.02em;
+  color:#fff;
+  opacity:.1;
+  font-size: 'Mazzard_M_medium';
+}
+.button_white {
+  color: rgba(60, 80, 232, 1);
+  background-color: #ffffff;
+  box-shadow: 0 24px 27px -10px rgba(255, 255, 255, .5);
+  border-color: #fff;
+  margin-top: 0;
+}
+.button_white:hover {
+  color: rgba(60, 80, 232, 1) !important;
+}
+.white_text-min {
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  font-size: 'Mazzard_M_light';
+  margin: 0;
+}
+.box_phone{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.phone_position{
+  position: absolute;
+  left:0;
+  bottom:-90px;
+}
+
+
+
+
+
+
+
+
+
+
+/* eighth section style */
+.eighth__section{
+  position: relative;
+  padding:100px 0;
+}
+
+
 
 
 
