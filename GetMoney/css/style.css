@@ -985,7 +985,7 @@ img {pointer-events: none;}
   position:relative;
   width:100%;
   background:#2D2D2D;
-  padding:58px 0;
+  padding:58px 0 68px;
 }
 .block_links_footer{
   padding-top:37px;
@@ -1082,7 +1082,13 @@ img {pointer-events: none;}
   opacity:.1;
   margin:68px 0;
 }
-
+.micro_text{
+  font-size: 12px;
+  line-height: 14px;
+  color: #A6A6A6;
+  font-family: 'Mazzard_M_regular';
+  margin-bottom:11px;
+}
 
 
 
