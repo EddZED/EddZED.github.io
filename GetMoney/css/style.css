@@ -1311,6 +1311,6 @@ img {pointer-events: none;}
     transform:translateX(50%) translateY(80px);
   }
   .message__box.box-two{
-    transform:;
+    transform:translateX(-65%) translateY(70px);
   }
 }
