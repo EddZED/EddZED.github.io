@@ -1134,17 +1134,6 @@ img {pointer-events: none;}
   width:100%;
   padding:202px 0 93px;
 }
-.intro_two:before{
-  content:'';
-  position:absolute;
-  left:51%;
-  top:168px;
-  width:1000px;
-  height:550px;
-  background-color:#2D2D2D;
-  border-radius:30px;
-  z-index:-1;
-}
 .intro_two .head__main-bold{
   font-size:60px;
 }
@@ -1175,12 +1164,24 @@ img {pointer-events: none;}
 }
 .phone_box{
   position: relative;
+  min-height:550px;
+}
+.phone_box:before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:-35px;
+  width:1000px;
+  height:550px;
+  background-color:#2D2D2D;
+  border-radius:30px;
+  z-index:-1;
 }
 .phone_intro{
   max-width:fit-content;
   position:absolute;
   left:0;
-  top:-35px;
+  top:-34px;
   z-index:0;
 }
 .ref_money{
@@ -1197,7 +1198,9 @@ img {pointer-events: none;}
   top:-34px;
   z-index:2;
 }
-
+.wrapper_picture{
+  display:none;
+}
 
 
 
@@ -1626,7 +1629,42 @@ img {pointer-events: none;}
     font-size:10px;
     line-height:12px;
   }
+  .intro_two .head__main-bold{
+    font-size:40px;
+  }
+  .wrapper_steps-box{
+    padding-top:0;
+  }
+  .ref_money{
+    right:-134px;
+  }
+  .phone_box{
+    margin-top:80px;
+  }
+  .phone_box:before{
+    width:100%;
+  }
+  .phone_intro{
+    right:0;
+    margin:auto;
+  }
+  .ref_money{
+    right:0;
+    left:0;
+    transform:translate(85%, 0);
+  }
+  .available_credits{
+    left:0;
+    right:0;
+    transform:translate(30%, 0);
+  }
+  .intro_two{
+    padding-top:150px;
+  }
 }
+
+
+
 
 
 
@@ -1634,9 +1672,39 @@ img {pointer-events: none;}
   .slider__range-box{
     padding-right:0;
   }
+  .available_credits{
+    transform: translate(0, 0);
+  }
+  .ref_money{
+    transform: translate(55%, 0);
+  }
+  .phone_box:before{
+    width:1000px;
+  }
 }
 
 @media(max-width:767px){
+  .intro_two{
+    padding:120px 0 45px;
+  }
+  .phone_box{
+    display:none;
+  }
+  .wrapper_picture{
+    display:block;
+    margin-top:20px;
+    position: relative;
+  }
+  .wrapper_picture:before{
+    content:'';
+    position:absolute;
+    top:0;
+    right:-90%;
+    bottom:0;
+    width:500px;
+    background-color:#2D2D2D;
+    z-index:-1;
+  }
   .menu_btn{
     right:15px;
   }
