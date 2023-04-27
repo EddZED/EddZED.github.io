@@ -141,9 +141,6 @@ img {pointer-events: none;}
   font-family: 'Mazzard_M_light';
   padding-top:26px;
 }
-.container.content{
-  width:1160px;
-}
 .first__block{
   padding-top:118px;
 }
@@ -1140,6 +1137,9 @@ img {pointer-events: none;}
   .footer_menu{
     padding-left:73px;
   }
+  .container.content{
+    width:1160px;
+  }
 }
 @media(min-width:992px){
   .pl-lg-0 {
@@ -1152,6 +1152,11 @@ img {pointer-events: none;}
     padding-left:30px;
   }
 }
+
+
+
+
+
 @media(max-width:1399px) {
   .header__nav-link {
     padding-right: 0;
@@ -1525,5 +1530,104 @@ img {pointer-events: none;}
     right:80px;
     top:80px;
     text-align:left;
+  }
+  .eighth__section .head__main-bold{
+    font-size:40px;
+  }
+  .footer{
+    padding:30px 0;
+  }
+  .footer_second-block{
+    order:1;
+  }
+  .footer_first-block{
+    order:2;
+  }
+  .footer_second-block .row{
+    justify-content:center;
+    text-align:center;
+  }
+  .footer_menu-link{
+    padding:10px 0;
+  }
+  .line_horizon{
+    margin:40px 0;
+  }
+  .micro_text{
+    font-size:10px;
+    line-height:12px;
+  }
+}
+
+
+
+
+
+@media(max-width:767px){
+  .menu_btn{
+    right:15px;
+  }
+  .account__items-button.button_profile{
+    right:55px;
+  }
+  .message__box{
+    max-width:287px;
+    background-size:contain;
+  }
+  .message__box.box-one{
+    left:-60px;
+  }
+  .message__box.box-two{
+    right:-150px;
+  }
+  .margin_mobile{
+    margin-top:-75px;
+  }
+  .blocks_grid{
+    grid-template-columns:100%;
+    grid-template-rows:230px;
+  }
+  .wrapper_blocks{
+    width:100%;
+    display:flex;
+  }
+  .wrapper_blocks:first-child{
+    justify-content: end;
+  }
+  .wrapper_blocks:nth-child(3){
+    justify-content: end;
+  }
+}
+
+
+
+
+
+
+
+@media(max-width:450px){
+  .message__box{
+    padding: 10px 20px 15px 50px;
+  }
+  .message__box.box-one{
+    left:40px;
+    transform:translate(0);
+    top:80px;
+  }
+  .message__box.box-two{
+    right:50px;
+    transform: translate(0);
+    padding: 10px 20px 15px 50px;
+  }
+  .title__message{
+    font-size:11px;
+    line-height:20px;
+  }
+  .text__message{
+    font-size:11px;
+    line-height:12px;
+  }
+  .img__bg-intro{
+    max-width:890px;
   }
 }
