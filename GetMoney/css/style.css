@@ -395,6 +395,7 @@ img {pointer-events: none;}
   color:#2D2D2D;
   margin-bottom:25px;
   transition: .3s;
+  font-family: 'Mazzard_M_medium';
 }
 .table__info{
   padding-top:17px;
@@ -1299,6 +1300,7 @@ img {pointer-events: none;}
   .box_bg-intro{
     display:flex;
     justify-content:center;
+    height:auto;
   }
   .img__bg-intro{
     position:relative;
@@ -1312,5 +1314,216 @@ img {pointer-events: none;}
   }
   .message__box.box-two{
     transform:translateX(-65%) translateY(70px);
+  }
+  .box_cards{
+    padding-top:0;
+    flex-direction:column;
+    align-items:start;
+  }
+  .box_cards .text_min{
+    width:100%;
+  }
+  .icon_box{
+    padding-top:20px;
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+  }
+  .icon_box .icon_card{
+    margin-left:0;
+  }
+  .lowestprice__block{
+    padding:80px 0 40px;
+  }
+  .lowestprice__block .head__main-bold{
+    font-size:40px;
+  }
+  .lowestprice__block .text_intro{
+    text-align:left;
+    padding-top:20px;
+  }
+  .lowestprice__block .wrapper__text-block{
+    padding-bottom:40px;
+  }
+  .blocks_grid{
+    justify-content:center;
+  }
+  .block__hover-icons{
+    opacity:.4;
+    filter:grayscale(1);
+  }
+  .third__section{
+    padding:40px 0 80px;
+  }
+  .third__section .head__main-bold{
+    font-size:40px;
+  }
+  .slider__card{
+    padding-top:100px;
+  }
+  .slider__card-body{
+    display:flex !important;
+    flex-direction:column;
+    width:100% !important;
+    padding: 49px 30px 35px 30px;
+  }
+  .slider__card-body .light__text:nth-of-type(1){
+    order:2;
+    margin-top:-60px;
+  }
+  .slider__card-body .name__card{
+    order:3;
+  }
+  .slider__card-body .light__text:nth-of-type(2){
+    order:4;
+  }
+  .slider__card-body .table__info{
+    order:5;
+  }
+  .slider__card-body .button__box{
+    order:6;
+  }
+  .slider__card-body .box__img{
+    position:relative;
+    order:1;
+    right:auto;
+    top:-100px;
+    bottom:auto;
+    transition:0;
+    width:300px;
+    height:auto;
+    text-align:center;
+  }
+  .slider__card-body .box__img img{
+
+  }
+  .slick-slide:not(.slick-current) .box__img{
+    opacity:0;
+  }
+  .slider__card-body .button__box{
+    width:100%;
+    padding-top:15px;
+  }
+  .slider__card .slick-arrow{
+    width:50px;
+    height:50px;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:-60px;
+  }
+  .slider__card .slick-prev{
+    left:-60px;
+  }
+  .slider__card .slick-next{
+    right:-60px;
+  }
+  .fourth__section{
+    padding:50px 0;
+  }
+  .fourth__section .head__main-bold{
+    font-size:40px;
+  }
+  .calculation__block{
+    padding:30px 0 0;
+  }
+  .calculation__block .button_get{
+    padding:25px 15px;
+  }
+  .calculation__block .text_regular{
+    font-size:16px;
+  }
+  .calculation__block .summ_num, .rub_style{
+    font-size:20px;
+  }
+  .nums_block span{
+    font-size:14px;
+  }
+  .graylight__text{
+    font-size:14px;
+  }
+  .white__text{
+    font-size:26px;
+    margin-bottom:17px;
+  }
+  .white__text-min{
+    font-size:16px;
+    margin-left:10px;
+  }
+  .dark__block{
+    padding:25px 28px;
+  }
+  .fifth__section{
+    padding:100px 0 50px;
+  }
+  .fifth__section .head__main-bold{
+    font-size:40px;
+  }
+  .fifth__section:before{
+    top:45px;
+  }
+  .fifth__section .wrapper__steps-block{
+    padding-top:40px;
+  }
+  .fifth__section .block__hover{
+    padding:25px 28px;
+    min-width:260px;
+    margin-right:15px;
+  }
+  .sixth__section{
+    padding:50px 0 100px;
+  }
+  .sixth__section .head__main-bold{
+    font-size:40px;
+  }
+  .sccrollbar__video:not(.second__row){
+    padding-top:35px;
+  }
+  .sccrollbar__video:not(.second__row) .reviews__item:nth-of-type(1){
+    margin-left:0;
+  }
+  .reviews__item{
+    min-width:320px;
+    height:210px;
+  }
+  .link_video:before{
+    width:80px;
+    height:80px;
+  }
+  .sccrollbar__video.second__row{
+    display:none;
+  }
+  .seventh__section{
+    padding:50px 0;
+  }
+  .seventh__section:before{
+    left:0;
+    border-radius:0;
+    top:0;
+    height:100%;
+  }
+  .seventh__section .head__main-bold{
+    font-size:40px;
+  }
+  .button_block{
+    padding-top:25px;
+  }
+  .position_mob{
+    order:2;
+    margin-top:30px;
+  }
+  .big_nums{
+    right:0;
+  }
+  .box_phone{
+    text-align:center;
+  }
+  .box_phone .phone_position{
+    position:relative;
+  }
+  .seventh__section .message__box.box-two{
+    right:80px;
+    top:80px;
+    text-align:left;
   }
 }
