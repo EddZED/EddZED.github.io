@@ -1471,6 +1471,10 @@ img {pointer-events: none;}
   }
   .icon_box .icon_card{
     margin-left:0;
+    max-width:20%;
+  }
+  .icon_box .icon_card svg{
+    max-width:100%;
   }
   .lowestprice__block{
     padding:80px 0 40px;
