@@ -446,7 +446,7 @@
                   <div class="dark__block-topcase">
                     <p class="graylight__text">Сумма к возврату:</p>
                     <div class="result__pay">
-                      <p id="equals" class="white__text">15 200 </p>
+                      <p id="equals" class="white__text" value="#polzunok">15750</p>
                       <p class="white__text-min">&#32;рублей</p>
                     </div>
                     <p class="graylight__text">Срок до (включительно):</p>
@@ -808,9 +808,11 @@
         value: 15000,
         slide: function (event, ui) {
               $("#result-polzunok").text(ui.value);
+              $("#equals").text(ui.value * 1.05);
           }
       });
       $("#result-polzunok").text($("#polzunok").slider("value"));
+      $("#equals").text($("#result-polzunok").slider("value"));
   </script>
   <script>
     $("#countpolz").slider({
@@ -852,6 +854,10 @@
       $('.header__nav').toggleClass('active');
       $(this).toggleClass('active');
     });
+  </script>
+    $("#currentdate").datepicker({
+        altField: "#actualDate"
+      });
   </script>
 </body>
 </html>
