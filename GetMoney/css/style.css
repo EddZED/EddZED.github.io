@@ -7,7 +7,7 @@ html {scroll-behavior: smooth;}
 @font-face {font-family:'Mazzard_H_regular';src:url('../font/MazzardH-Regular.ttf');}
 body{background-color:#F8F8F8;}
 img {pointer-events: none;}
-.wrapper{
+.wrapper{ 
   overflow:hidden;
 }
  /*header style*/
@@ -440,16 +440,54 @@ img {pointer-events: none;}
   bottom:0;
   margin:auto;
   display:flex;
-  align-items:center;
+  flex-direction:column;
+  align-items:start;
+  justify-content:space-between;
+  border-radius:20px;
   transition: 1s;
+  padding:20px 30px;
+  box-shadow: -7px 58px 34px -28px rgba(36, 42, 88, .2);
+  z-index:10;
+  overflow-x:clip;
 }
-.box__img img{
-  position: relative;
-  top:-5px;
-  right:5px;
-  pointer-events:none;
-  box-shadow:-7px 58px 34px -28px rgba(36, 42, 88, .2);
-  transition:.3s;
+.card_one{
+  background: linear-gradient(90deg, #2D2D2D 64%, #DCDCDC 64% 100%);
+}
+.title_card{
+  width:100%;
+  height:100%;
+}
+.title_tarif-card{
+  color:rgba(255, 255, 255, .4);
+  font-size:18px;
+  line-height:100%;
+  font-family:'Mazzard_M_regular';
+}
+.name_tarif-card{
+  color:#fff;
+  font-size:30px;
+  line-height:100%;
+  font-family:'Mazzard_M_medium';
+}
+.nominal_tarif{
+  color:#fff;
+  font-size:35px;
+  line-height:100%;
+  font-family:'Mazzard_M_medium';
+}
+.flex_dir{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.back_nums{
+  color:rgba(238, 238, 238, .7);
+  font-size:150px;
+  position:absolute;
+  right:-50px;
+  bottom:0;
+  letter-spacing:-0.1em;
+  font-family: 'Mazzard_M_medium';
 }
 .slick-arrow{
   position:absolute;
@@ -464,9 +502,19 @@ img {pointer-events: none;}
   align-items:center;
   justify-content:center;
 }
+.slick-arrow.slick-disabled{
+  background-color:transparent;
+}
+.slick-arrow.slick-disabled svg path{
+  stroke:#DCDCDC;
+}
 .slick-prev{
   left:400px;
+  background-color: #DCDCDC;
   transition:.3s;
+}
+.slick-prev svg path{
+  stroke: #EDEDED;
 }
 .slick-prev:hover, .slick-next:hover{
   border-color:#3C50E8;
