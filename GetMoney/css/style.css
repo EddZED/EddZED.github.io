@@ -220,16 +220,16 @@ img {pointer-events: none;}
   margin-left:44px;
 }
 .icon_card:nth-of-type(2){
-  margin-left: 30px;
+  margin-left: 23px;
 }
 .icon_card:nth-of-type(3) {
-  margin-left: 27px;
+  margin-left: 25px;
 }
 .icon_card:nth-of-type(4) {
-  margin-left: 30px;
+  margin-left: 26px;
 }
 .icon_card:nth-of-type(5) {
-  margin-left: 26px;
+  margin-left: 21px;
 }
 
 
@@ -436,6 +436,7 @@ img {pointer-events: none;}
   height:334px;
   position:absolute;
   right:-150px;
+  transform:translate(-5px, -4px);
   top:0;
   bottom:0;
   margin:auto;
@@ -445,7 +446,7 @@ img {pointer-events: none;}
   justify-content:space-between;
   border-radius:20px;
   transition: 1s;
-  padding:20px 30px;
+  padding:40px 38px 44px 39px;
   box-shadow: -7px 58px 34px -28px rgba(36, 42, 88, .2);
   z-index:10;
   overflow-x:clip;
@@ -453,27 +454,39 @@ img {pointer-events: none;}
 .card_one{
   background: linear-gradient(90deg, #2D2D2D 64%, #DCDCDC 64% 100%);
 }
+.card_two {
+  background: linear-gradient(90deg, #2D2D2D 64%, #3C50E8 64% 100%);
+}
+.card_three {
+  background: linear-gradient(90deg, #2D2D2D 64%, #ECDFB3 64% 100%);
+}
 .title_card{
   width:100%;
   height:100%;
 }
+.title_card img{
+  margin:4px 2px 0 0;
+}
 .title_tarif-card{
   color:rgba(255, 255, 255, .4);
-  font-size:18px;
+  font-size:20px;
   line-height:100%;
-  font-family:'Mazzard_M_regular';
+  font-family:'Mazzard_M_light';
+  margin-bottom:-2px;
 }
 .name_tarif-card{
   color:#fff;
-  font-size:30px;
+  font-size:34px;
   line-height:100%;
   font-family:'Mazzard_M_medium';
+  letter-spacing:-0.038em;
 }
 .nominal_tarif{
   color:#fff;
   font-size:35px;
   line-height:100%;
   font-family:'Mazzard_M_medium';
+  letter-spacing: -0.04em;
 }
 .flex_dir{
   display:flex;
@@ -482,10 +495,10 @@ img {pointer-events: none;}
 }
 .back_nums{
   color:rgba(238, 238, 238, .7);
-  font-size:150px;
+  font-size:165px;
   position:absolute;
-  right:-50px;
-  bottom:0;
+  right:-62px;
+  bottom:-17px;
   letter-spacing:-0.1em;
   font-family: 'Mazzard_M_medium';
 }
@@ -686,6 +699,7 @@ img {pointer-events: none;}
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  margin-left: 9px;
   font-family: 'Mazzard_M_medium';
 }
 .dark__block-bottomcase{
@@ -791,7 +805,7 @@ img {pointer-events: none;}
   font-size:60px;
 }
 .sccrollbar__video{
-  overflow-x: scroll;
+  overflow: hidden;
   display:flex;
   white-space: nowrap;
   position:relative;
@@ -845,7 +859,7 @@ img {pointer-events: none;}
   margin-left:404px;
 }
 .sccrollbar__video.second__row{
-  padding-top:23px;
+  padding-top:40px;
 }
  
 
@@ -856,7 +870,7 @@ img {pointer-events: none;}
 /* seventh section style */
 .seventh__section{
   position: relative;
-  padding:166px 0 150px;
+  padding:182px 0 150px;
   overflow:hidden;
 }
 .seventh__section:before{
@@ -916,7 +930,7 @@ img {pointer-events: none;}
 .phone_position{
   position: absolute;
   left:6px;
-  bottom:-96px;
+  bottom:-80px;
   max-width:fit-content;
 }
 .seventh__section .message__box{
@@ -1453,6 +1467,7 @@ img {pointer-events: none;}
     display:flex;
     width:100%;
     justify-content:space-between;
+    align-items:center;
   }
   .icon_box .icon_card{
     margin-left:0;
@@ -1516,11 +1531,29 @@ img {pointer-events: none;}
     bottom:auto;
     transition:0;
     width:300px;
-    height:auto;
-    text-align:center;
+    height:182px;
+    text-align:left;
+    padding:15px 25px;
   }
-  .slider__card-body .box__img img{
-
+  .title_tarif-card{
+    font-size:12px;
+  }
+  .title_card img{
+    margin:0;
+    max-width:54px;
+  }
+  .name_tarif-card{
+    font-size:20px;
+    margin-top:5px;
+    display:inline-block;
+  }
+  .back_nums{
+    font-size:100px;
+    right:-43px;
+    letter-spacing:-0.12em;
+  }
+  .nominal_tarif{
+    font-size:20px;
   }
   .slick-slide:not(.slick-current) .box__img{
     opacity:0;
@@ -1535,7 +1568,7 @@ img {pointer-events: none;}
     left:0;
     right:0;
     margin:auto;
-    bottom:-60px;
+    bottom:-70px;
   }
   .slider__card .slick-prev{
     left:-60px;
@@ -1544,7 +1577,7 @@ img {pointer-events: none;}
     right:-60px;
   }
   .fourth__section{
-    padding:50px 0;
+    padding:80px 0 50px;
   }
   .fourth__section .head__main-bold{
     font-size:40px;
@@ -1638,7 +1671,10 @@ img {pointer-events: none;}
     margin-top:30px;
   }
   .big_nums{
-    right:0;
+    right:-80px;
+    font-size:160px;
+    bottom:auto;
+    top:-30px;
   }
   .box_phone{
     text-align:center;
@@ -1729,6 +1765,9 @@ img {pointer-events: none;}
   .phone_box:before{
     width:1000px;
   }
+  .margin_mobile{
+    margin-top:-75px;
+  }
 }
 
 @media(max-width:767px){
@@ -1768,9 +1807,6 @@ img {pointer-events: none;}
   }
   .message__box.box-two{
     right:-150px;
-  }
-  .margin_mobile{
-    margin-top:-75px;
   }
   .blocks_grid{
     grid-template-columns:100%;
@@ -1824,19 +1860,24 @@ img {pointer-events: none;}
     height:593px;
   }
   .wrapper__steps-block{
-    overflow-x:scroll;
+    overflow-x:hidden;
   }
-  .wrapper__steps-block::-webkit-scrollbar{
+  .wrapper__steps-block .row::-webkit-scrollbar{
     appearance:none;
   }
   .wrapper__steps-block .row{
     flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
   }
   .wrapper__steps-block .col-lg-6{
     max-width:280px !important;
+    scroll-snap-align: start;
   }
-  .wrapper_blocks{
+  .fifth__section .wrapper_blocks{
     display:block;
+    margin-left:15px;
   }
   .sixth__section{
     padding:50px 0 80px;
@@ -1864,5 +1905,12 @@ img {pointer-events: none;}
   .footer_first-block{
     justify-content:center;
     text-align:center;
+  }
+  .fifth__section{
+    overflow:hidden;
+  }
+  .button_white{
+    width:100%;
+    padding:25px 0;
   }
 }
