@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/jqueryUI.css">
   <link rel="stylesheet" href="css/style.css">
 </head> 
-<body>          
   <div class="wrapper">
     <header class="header">
       <div class="header__nav">
@@ -59,19 +58,19 @@
       <div class="container content first__block-conent">
         <div class="row">
           <div class="col-xl-5 mobile_center">
-            <h1 class="head__main-bold">Займ на карту<br> по заниженной ставке от 0,3%</h1>
-            <p class="text_intro">Оставьте заявку и получите сумму<br>
+            <h1 id="titletextAnim" class="head__main-bold">Займ на карту<br> по заниженной ставке от 0,3%</h1>
+            <p id="titletextAnim2" class="text_intro">Оставьте заявку и получите сумму<br>
             на карту уже через 5 минут</p>
-            <a href="#" class="account__items-button button_order button_get">Получить займ</a>
+            <a href="#" id="buttonAnim" class="account__items-button button_order button_get">Получить займ</a>
           </div>
           <div class="col-xl-7">
             <div class="box_bg-intro">
               <img class="img-fluid img__bg-intro" src="img/iPhone_12_Pro_Mockup_By_GraphicList 1.png" alt="доступные кредиты">
-              <div class="message__box box-one">
+              <div id="messageOne" class="message__box box-one">
                 <p class="title__message">Новое сообщение от Ваш банк</p>
                 <div class="text__message">Пополнение, счет RUB. 20000 RUB. GetMoney. доступно 23456.19 RUB</div>
               </div>
-              <div class="message__box box-two">
+              <div id="messageTwo" class="message__box box-two">
                 <p class="title__message">Новое сообщение от Ваш банк</p>
                 <div class="text__message">Пополнение, счет RUB. 20000 RUB. GetMoney. доступно 23456.19 RUB</div>
               </div>
@@ -319,9 +318,9 @@
         </div>
         <div class="slider__card">
           <div class="slider__card-body">
-            <span class="light__text">Тариф</span>
-            <p class="name__card">Быстрый старт</p> 
-            <p class="light__text">Вариант, доступный каждому клиенту -<br> как новому, так и тому, кто с нами давно</p>
+            <span id="textone" class="light__text">Тариф</span>
+            <p id="namecard" class="name__card">Быстрый старт</p> 
+            <p id="texttwo" class="light__text">Вариант, доступный каждому клиенту -<br> как новому, так и тому, кто с нами давно</p>
             <div class="table__info">
               <div class="rows__info rows-one">
                 <span class="text_regular">Процентная ставка:</span>
@@ -447,7 +446,7 @@
                     <p class="graylight__text">Сумма к возврату:</p>
                     <div class="result__pay">
                       <p id="equals" class="white__text" value="#polzunok">15750</p>
-                      <p class="white__text-min">&#32;рублей</p>
+                      <p class="white__text-min">рублей</p>
                     </div>
                     <p class="graylight__text">Срок до (включительно):</p>
                     <p id="currentdate" class="white__text"></p>
@@ -524,7 +523,7 @@
       <div class="container content">
         <h2 class="head__main-bold">Отзывы клиентов<br>о работе с GetMoney:</h2>
       </div>
-      <div class="sccrollbar__video">
+      <div id="videoBarOne" class="sccrollbar__video">
         <div class="reviews__item">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I343c1sZQ2k" title="YouTube video player"
             frameborder="0"
@@ -550,7 +549,7 @@
             allowfullscreen></iframe>
         </div>
       </div>
-      <div class="sccrollbar__video second__row">
+      <div id="videoBarTwo" class="sccrollbar__video second__row">
         <div class="reviews__item">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I343c1sZQ2k" title="YouTube video player"
             frameborder="0"
@@ -598,8 +597,8 @@
           </div>
           <div class="col-xl-5">
             <div class="box_phone">
-              <img class="phone_position img-fluid" src="img/phone.png" alt="сообщение от Get Money">
-              <div class="message__box box-two">
+              <img id="phoneAnim" class="phone_position img-fluid" src="img/phone.png" alt="сообщение от Get Money">
+              <div id="messageThree" class="message__box box-two">
                 <p class="title__message">Новое сообщение от GetMoney</p>
                 <div class="text__message">Реферал закрыл займ. Ваш доход
                 с реферальных платежей составил 114506.68 RUB</div>
@@ -776,6 +775,279 @@
   <script src="js/jqueryUI.min.js"></script>
   <script src="js/jqueryUI_touch.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script>
+    $(document).ready(function () {
+    var tl = gsap.timeline();
+    tl.to('.img__bg-intro', {duration:.5, opacity:1, ease: "power1.in" });
+    tl.to('#messageOne', { duration:.5, opacity: 1});
+    tl.to('#messageTwo', {duration:.5, opacity: 1});
+    tl.to('#titletextAnim', {duration:1, opacity: 1});
+    tl.to('#titletextAnim2', {duration:1, opacity: 1});
+    tl.to('#buttonAnim', {duration:1, opacity: 1});
+    gsap.from('.icon_card', {duration:1.5, opacity: 0, stagger: 1});
+    
+    gsap.from('.lowestprice__block .wrapper_blocks', {
+      scrollTrigger:{
+        trigger: '.lowestprice__block',
+        start: '20px 75% ',
+        markers:false
+      },
+      duration: .5, 
+      opacity: 0, 
+      stagger: .5
+    });
+    gsap.from('.lowestprice__block .head__main-bold',{
+      scrollTrigger:{
+        trigger: '.head__main-bold',
+        markers:false
+      },
+      duration: 1, 
+      opacity: 0,
+      delay: 3
+    });
+    gsap.from('.lowestprice__block .text_intro',{
+      scrollTrigger:{
+        trigger: '.text_intro',
+        markers:false
+      },
+      duration: 1, 
+      opacity: 0,
+      delay: 3.5
+    });
+    gsap.from('.third__section .head__main-bold',{
+      scrollTrigger:{
+        trigger: '.third__section',
+        start: '20px 50%',
+        markers:false
+      },
+      duration: 1, 
+      opacity: 0
+    });
+    ScrollTrigger.create({
+      trigger: '.third__section',
+      toggleClass: 'active',
+      start: '20px 55%',
+      duration: 1
+    });
+    gsap.from('#textone', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('#namecard', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('#texttwo', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('.table__info', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('.button__box', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('.box__img', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('.slick-arrow', {
+        scrollTrigger: {
+          trigger: '.slider__card-body',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: .5,
+        opacity: 0
+      });
+    gsap.from('.fourth__section .head__main-bold', {
+        scrollTrigger: {
+          trigger: '.fourth__section',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0
+      });
+    gsap.from('.fourth__section .slider__range-box', {
+        scrollTrigger: {
+          trigger: '.calculation__block',
+          start: '20px 60%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0
+      });
+    gsap.from('.fourth__section .dark__block', {
+        scrollTrigger: {
+          trigger: '.calculation__block',
+          start: '20px 65%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0,
+        delay: 1
+      });
+    ScrollTrigger.create({
+        trigger: '.fifth__section',
+        toggleClass: 'active',
+        start: '20px 60%',
+        duration: 1,
+        markers: false
+      });
+    gsap.from('.fifth__section .head__main-bold', {
+        scrollTrigger: {
+          trigger: '.fifth__section ',
+          start: '20px 50%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0
+      });
+    gsap.from('.fifth__section .wrapper_blocks', { 
+      scrollTrigger: {
+        trigger: '.wrapper__steps-block ',
+        start: '-20px 55%',
+        markers: false
+      },
+      duration: 1, 
+      opacity: 0, 
+      stagger: 1 
+    });
+    gsap.timeline({
+      scrollTrigger:{
+        trigger: '.sixth__section',
+        start:'top 100%',
+        end:'bottom top',
+        markers: false,
+        scrub: true
+      }
+    })
+    .from('#videoBarOne',{x: innerWidth*1});
+    gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sixth__section',
+          start: 'top 100%',
+          end: 'bottom top',
+          markers: false,
+          scrub: true
+        }
+      })
+        .from('#videoBarTwo', { x: innerWidth * -1 });
+      ScrollTrigger.create({
+        trigger: '.seventh__section',
+        toggleClass: 'active',
+        start: '20px 60%',
+        duration: 1,
+        markers: false
+      });
+    gsap.from('#phoneAnim', {
+        scrollTrigger: {
+          trigger: '.seventh__section',
+          start: '-20px 75%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0,
+        delay: .5
+      });
+    gsap.from('#messageThree', {
+        scrollTrigger: {
+          trigger: '.seventh__section',
+          start: '20px 65%%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0,
+        delay:.5
+      });
+    gsap.from('.seventh__section .head__main-bold', {
+        scrollTrigger: {
+          trigger: '.seventh__section',
+          start: '20px 65%%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0,
+        delay: 1
+      });
+    gsap.from('.seventh__section .button_block', {
+        scrollTrigger: {
+          trigger: '.seventh__section',
+          start: '20px 65%%',
+          markers: false
+        },
+        duration: 1,
+        opacity: 0,
+        delay: 2
+      });
+    gsap.from('.eighth__section .head__main-bold', {
+        scrollTrigger: {
+          trigger: '.eighth__section',
+          start: '20px 75%%',
+          markers: true
+        },
+        duration: 1,
+        opacity: 0
+      });
+    gsap.from('.nav-item', {
+        scrollTrigger: {
+          trigger: '.eighth__section',
+          start: '20px 75%%',
+          markers: true
+        },
+        duration: 1,
+        opacity: 0,
+        stagger: .5
+      });
+    gsap.from('#myTabContent', {
+        scrollTrigger: {
+          trigger: '.eighth__section',
+          start: '20px 75%%',
+          markers: true
+        },
+        duration: 1,
+        opacity: 0,
+        delay: 2.5
+      });
+    })
+
+    
+  </script>
   <script>
     function zero_first_format(value) {
         if (value < 10) {
@@ -785,15 +1057,18 @@
       }
 
       /* функция получения текущей даты и времени */
+      
       function date_time() {
-        var current_datetime = new Date();
-        var day = zero_first_format(current_datetime.getDate());
-        var month = zero_first_format(current_datetime.getMonth() + 1);
-        var year = current_datetime.getFullYear();
-
-        return day + "." + month + "." + year + " ";
+      
+        let current_datetime = new Date();
+        let day = zero_first_format(current_datetime.getDate()+n);
+        current_datetime.setDate(day);
+        let month = zero_first_format(current_datetime.getMonth() + 1);
+        let year = current_datetime.getFullYear();
+        
+        return day + "." + month + "." + year;
       }
-
+      console.log(n)
       /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
       document.getElementById('currentdate').innerHTML = date_time();
   </script>
@@ -848,14 +1123,6 @@
           }
       });
       $("#countday").text($("#countpolz").slider("value"));
-  </script>
-  <script>
-    $(function () {
-        $(".sccrollbar__video").mousewheel(function (event, delta) {
-          this.scrollLeft -= (delta * 100);
-          event.preventDefault();
-        });
-      })
   </script>
   <script>
     $(document).ready(function () {
