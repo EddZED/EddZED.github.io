@@ -90,6 +90,7 @@ img {pointer-events: none;}
 .account__items-button.button_profile:hover {
   background-color:rgba(60, 80, 232, 1);
   color:rgba(255, 255, 255, 1);
+  border-color:rgba(60, 80, 232, 1);
 }
 .account__items-button.button_profile .color_icon {
   transition:.3s;
@@ -1288,6 +1289,82 @@ img {pointer-events: none;}
 .wrapper_picture{
   display:none;
 }
+
+
+
+
+
+
+
+
+/* style page tarifs */
+.dark__section{
+  padding:185px 0 0;
+  margin: 0 30px;
+  overflow: hidden;
+  border-radius: 0px 0px 80px 80px;
+  background:#2D2D2D;
+  background-image:url(../img/bg_intro_tarifs.png);
+  background-position:center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.dark__section .head__main-bold{
+  font-size:60px;
+  color:#fff;
+  padding-bottom:45px;
+}
+.flex_block{
+  display:flex;
+  align-items:center;
+  padding:15px 0 0 3px;
+}
+.dark__section .white_text-min{
+  padding-left:20px;
+}
+.bg_cards_intro{
+  position:relative;
+  padding-top:106px;
+  left:47%;
+  transform:translate(-50%, 0);
+}
+.dark__header .menu__top-link{
+  color:#B9B9B9;
+}
+.dark__header .menu__top-link:hover{
+  color:#fff;
+}
+.dark__header .account__items-button.button_profile{
+  border-color:#B9B9B9;
+  background:transparent;
+  color:#B9B9B9;
+}
+.dark__header .account__items-button.button_profile:hover{
+  background-color:#fff;
+  border-color:#fff;
+  color:#3C50E8;
+}
+.dark__header .account__items-button.button_profile .color_icon {
+  fill: #B9B9B9;
+}
+.dark__header .account__items-button.button_profile:hover .color_icon {
+  fill: #3C50E8;
+}
+.tarifs__section{
+  padding:134px 0 100px;
+}
+.title_midle-text{
+  font-size:40px;
+  color:#2D2D2D;
+  line-height:100%;
+  font-family:'Mazzard_M_medium';
+}
+.tarifs__section .head__main-bold{
+  font-size:60px;
+  padding-top:4px;
+}
+
+
 
 
 
