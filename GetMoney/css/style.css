@@ -1298,6 +1298,12 @@ img {pointer-events: none;}
 
 
 /* style page tarifs */
+.dark__header:not(.active) .dark_logo_header{
+  display:none;
+}
+.dark__header.active .white_logo_header{
+  display:none;
+}
 .dark__section{
   padding:185px 0 0;
   margin: 0 30px;
@@ -1328,10 +1334,10 @@ img {pointer-events: none;}
   left:47%;
   transform:translate(-50%, 0);
 }
-.dark__header .menu__top-link{
+.dark__header:not(.active) .menu__top-link{
   color:#B9B9B9;
 }
-.dark__header .menu__top-link:hover{
+.dark__header:not(.active) .menu__top-link:hover{
   color:#fff;
 }
 .dark__header .account__items-button.button_profile{
@@ -1363,6 +1369,254 @@ img {pointer-events: none;}
   font-size:60px;
   padding-top:4px;
 }
+.tarifs__section .text_intro{
+  padding-top:15px;
+  padding-left:3px;
+}
+.block_steps{
+padding-top:34px;
+padding-left:3px;
+}
+.steps_begin{
+  display:flex;
+  align-items:start;
+}
+.steps_begin:not(:first-of-type){
+  padding-top:19px;
+}
+.gray_nums{
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #2D2D2D;
+  opacity:.1;
+  font-family: 'Mazzard_M_bold';
+}
+.gray_text{
+  font-size: 14px;
+  line-height:140%;
+  color:#BEBEBE;
+  font-family: 'Mazzard_M_regular';
+  padding-left:25px;
+}
+.gray_text span{
+  font-family: 'Mazzard_M_bold';
+}
+.steps_image{
+  position:relative;
+  min-height:550px;
+}
+.steps_image:before{
+  content: '';
+  position: absolute;
+  left: 84px;
+  top: 3px;
+  width: 1000px;
+  height: 550px;
+  background-color: #2D2D2D;
+  border-radius: 30px;
+  z-index: -1;
+}
+.steps_pad{
+  max-width:fit-content;
+  transform:translate(83px, 3px);
+  z-index:0;
+}
+.steps_card_bg{
+  position:absolute;
+  z-index:1;
+  max-width:315px;
+  left:50%;
+  top:50%;
+  transform:translate(-12%, -9%);
+}
+.steps_get{
+  position:absolute;
+  z-index:2;
+  max-width:430px;
+  left:50%;
+  top:0%;
+  transform:translate(-59%, 68%);
+}
+.tarifs__section-two{
+  padding:90px 0 120px;
+}
+.tarifs__section-two .head__main-bold{
+  font-size:60px;
+  padding-top: 4px;
+  padding-left:2px;
+}
+.tarifs__section-two .text_intro{
+  padding-top:14px;
+  padding-left:2px;
+}
+.steps_image_two{
+  position:relative;
+  min-height:380px;
+}
+.bg_dark{
+  position:absolute;
+  right:0;
+  width:815px;
+  height:380px;
+  background-color:#2D2D2D;
+  border-radius:30px;
+  transform:translate(-83px, 87px);
+  overflow-x: clip;
+}
+.bg_persent{
+  position:absolute;
+  right:-31px;
+  top:-14px;
+  font-size:100px;
+  font-family: 'Mazzard_M_medium';
+  color:#fff;
+  opacity:.1;
+  letter-spacing:-0.1em;
+}
+.phone_tarif_two{
+  position:absolute;
+  transform:translate(-46px, -37px);
+}
+.available_tarifs_img{
+  position:absolute;
+  transform: translate(29px, 66px);
+}
+
+
+.tarifs__section-three{
+  padding:127px 0 100px;
+}
+.tarifs__section-three .head__main-bold{
+  font-size:60px;
+  padding-top:4px;
+}
+.list_available{
+  position:relative;
+  font-size:14px;
+  line-height:140%;
+  color:#2D2D2D;
+  font-family: 'Mazzard_M_regular';
+  padding-left:56px;
+  margin-bottom:15px;
+}
+.list_available:before{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:1px;
+  background-color:#9B9A9A;
+  left:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+.tarifs__section-three .text_intro{
+  padding-top:14px;
+  padding-left:3px;
+}
+.list_block_available{
+  padding-top:39px;
+}
+.steps_image_three{
+  position:relative;
+}
+.steps_image_three:before{
+  content:'';
+  position:absolute;
+  width:1000px;
+  min-height:522px;
+  border-radius:30px;
+  background-color:#2D2D2D;
+  left:82px;
+  top:-78px;
+  z-index:0;
+}
+.steps_mac{
+  position:absolute;
+  z-index:1;
+  max-width:fit-content;
+  transform:translate(-148px,-129px);
+}
+.steps_card_bg_2{
+  position:absolute;
+  z-index:2;
+  max-width:240px;
+  transform:translate(142%, -18px);
+}
+.available_tarifs_img_2{
+  position:absolute;
+  z-index:3;
+  max-width:fit-content;
+  transform:translate(-76px,-10px);
+}
+.double_dark{
+  padding:139px 0 105px;
+}
+.wrapper_dark{
+  width:100%;
+  max-width:1290px;
+  margin:auto;
+  background-color:#2D2D2D;
+  border-radius: 30px;
+  background-image:url(../img/bg_calcul.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  padding:76px 0 97px;
+}
+.wrapper_dark .head__main-bold{
+  color:#fff;
+}
+.wrapper_dark .calculation__block{
+  padding-top: 30px;
+}
+.wrapper_dark .calculation__block .text_regular{
+  color:#fff;
+}
+.wrapper_dark .calculation__block .summ_num{
+  color:#fff;
+}
+.wrapper_dark .calculation__block .rub_style{
+  color:#fff;
+}
+.wrapper_dark .calculation__block .nums_block span{
+  color:#fff;
+}
+.wrapper_dark .calculation__block .dots__gray:before{
+  background-color:#fff;
+  top:1px;
+}
+.wrapper_dark .calculation__block .ui-slider-horizontal .ui-slider-range{
+  background-color:#fff;
+}
+.wrapper_dark .calculation__block .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button{
+  background-color:#fff;
+}
+.wrapper_dark .calculation__block .ui-slider .ui-slider-handle{
+  box-shadow: 0px 4px 5px rgba(255, 255, 255, .4);
+}
+.wrapper_dark .calculation__block .range__box-body.second .day_style{
+  color:#fff;
+}
+.wrapper_dark .calculation__block .dark__block{
+  background-color:#fff;
+}
+.wrapper_dark .calculation__block .graylight__text{
+  color:#555555;
+}
+.wrapper_dark .calculation__block .white__text{
+  color:#2D2D2D;
+}
+.wrapper_dark .calculation__block .white__text-min{
+  color:#2D2D2D;
+}
+
+
+
 
 
 
