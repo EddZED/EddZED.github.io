@@ -1617,6 +1617,25 @@ padding-left:3px;
 
 
 
+/* style ref_link page */
+.section__blue{
+  padding:120px 0;
+}
+.section__blue-content{
+  width:100%;
+  max-width:1290px;
+  margin:auto;
+  background-color:#3C50E8;
+  border-radius: 50px;
+  padding:70px 0;
+}
+
+
+
+
+
+
+
 
 
 
@@ -2330,6 +2349,9 @@ padding-left:3px;
     padding-top:0;
   }
 }
+
+
+
 
 
 
