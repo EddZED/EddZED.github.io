@@ -79,7 +79,7 @@
         duration: .5,
         opacity: 0
       });
-    gsap.from('.table__info', {
+    gsap.from('#tableinfo', {
         scrollTrigger: {
           trigger: '.slider__card-body',
           start: '20px 50%',
@@ -88,7 +88,7 @@
         duration: .5,
         opacity: 0
       });
-    gsap.from('.button__box', {
+    gsap.from('#buttonbox', {
         scrollTrigger: {
           trigger: '.slider__card-body',
           start: '20px 50%',
