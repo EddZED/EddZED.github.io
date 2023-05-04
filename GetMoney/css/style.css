@@ -1735,7 +1735,7 @@ padding-left:3px;
 
 /* style about company page */
 .about_company{
-  padding:192px 0 100px;
+  padding:171px 0 100px;
 }
 .about_company .head__main-bold{
   font-size:60px;
@@ -1745,10 +1745,51 @@ padding-left:3px;
   line-height: 140%;
   color: #2D2D2D;
   font-family: 'Mazzard_M_light';
+  margin-bottom: 21px;
 }
 .text_block{
-  padding:20px 110px 0 3px;
+  padding:22px 110px 0 3px;
 }
+.relative_box{
+  position: relative;
+}
+.img_company_box{
+  width:100%;
+  height:100%;
+  border-radius:30px;
+  
+}
+.company_img{
+  max-width:fit-content;
+  transform:translate(-39px,-3px);
+}
+.page_about.lowestprice__block{
+  position:relative;
+  padding:77px 0;
+}
+.page_about.lowestprice__block:before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -73px;
+  top: 47px;
+  width: 100%;
+  height: 460px;
+  background-color: #F1F1F1;
+  border-radius: 30px;
+  transition: .5s;
+}
+.page_about.lowestprice__block .text_intro{
+  padding-top:21px;
+}
+.page_about.lowestprice__block .blocks_grid{
+  padding-top:34px;
+}
+
+.page_about.sixth__section{
+  padding:71px 0;
+}
+
 
 
 
@@ -1760,6 +1801,9 @@ padding-left:3px;
   }
   .container.content{
     width:1160px;
+  }
+  .page_about.lowestprice__block .wrapper__text-block{
+    padding-bottom:110px;
   }
 }
 @media(min-width:992px){
@@ -1806,6 +1850,18 @@ padding-left:3px;
 
 
 @media(max-width:1199px){
+  .text_block{
+    padding: 22px 50px 0 3px;
+  }
+  .page_about.lowestprice__block .wrapper__text-block {
+    padding-bottom: 10px;
+  }
+  .page_about.lowestprice__block .blocks_grid{
+    padding-top:0;
+  }
+  .seventh__section.active:before{
+    left:0;
+  }
   .section__blue{
     padding:100px 0 60px;
   }
@@ -2365,9 +2421,22 @@ padding-left:3px;
   .ref_two{
     transform:translate(30px,50px);
   }
+  .about_company{
+    padding:130px 0 80px;
+  }
+  .about_company .head__main-bold{
+    font-size:40px;
+  }
+  .company_img{
+    transform:translate(12%,10%);
+  }
 }
 
 @media(max-width:767px){
+  .company_img{
+    max-width:100%;
+    transform:translate(15px,5%);
+  }
   .intro_two{
     padding:120px 0 45px;
   }
@@ -2508,6 +2577,9 @@ padding-left:3px;
   .ref_two{
     max-width:100%;
   }
+  .text_block{
+    padding: 22px 0 0 3px;
+  }
 }
 
 
@@ -2639,5 +2711,11 @@ padding-left:3px;
   }
   .page__ref.lowestprice__block{
     padding:90px 0 20px;
+  }
+  .company_img{
+    transform:translate(0,5%);
+  }
+  .about_company{
+    padding: 109px 0 80px;
   }
 }
