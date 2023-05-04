@@ -1591,7 +1591,6 @@ padding-left:3px;
   background-color:#fff;
 }
 .wrapper_dark .calculation__block .ui-state-default,
-.ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-button{
   background-color:#fff;
@@ -1729,6 +1728,27 @@ padding-left:3px;
   background-color:#3C50E8;
 }
 
+
+
+
+
+
+/* style about company page */
+.about_company{
+  padding:192px 0 100px;
+}
+.about_company .head__main-bold{
+  font-size:60px;
+}
+.min_text_company{
+  font-size: 14px;
+  line-height: 140%;
+  color: #2D2D2D;
+  font-family: 'Mazzard_M_light';
+}
+.text_block{
+  padding:20px 110px 0 3px;
+}
 
 
 
