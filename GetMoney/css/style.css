@@ -1785,9 +1785,40 @@ padding-left:3px;
 .page_about.lowestprice__block .blocks_grid{
   padding-top:34px;
 }
-
 .page_about.sixth__section{
   padding:71px 0;
+}
+
+
+
+
+
+/* style often_questions page */
+.often__questions{
+  padding:166px 0;
+}
+.often__questions .head__main-bold{
+  font-size:60px;
+  margin-bottom:51px;
+}
+.gray_wrapper{
+  padding:42px 40px 32px 53px;
+  border-radius: 10px 30px 30px 10px;
+  background: #F1F1F1;
+  margin-bottom:10px;
+}
+.text_questions{
+  font-size: 20px;
+  line-height: 120%;
+  color: #2D2D2D;
+  font-family: 'Mazzard_M_medium';
+}
+.text_answers{
+  font-size: 14px;
+  line-height: 140%;
+  color: #2D2D2D;
+  font-family: 'Mazzard_M_light';
+  padding-left: 38px;
 }
 
 
