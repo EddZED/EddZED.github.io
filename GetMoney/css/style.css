@@ -1620,6 +1620,7 @@ padding-left:3px;
 /* style ref_link page */
 .section__blue{
   padding:120px 0;
+  margin:0 5px;
 }
 .section__blue-content{
   width:100%;
@@ -1627,17 +1628,71 @@ padding-left:3px;
   margin:auto;
   background-color:#3C50E8;
   border-radius: 50px;
-  padding:70px 0;
+  padding:93px 0 117px;
 }
-
-
-
-
-
-
-
-
-
+.section__blue .head__main-bold{
+  font-size:60px;
+  color:#fff;
+  padding-left:2px;
+}
+.intro__block-flex{
+  padding:30px 0 0 3px;
+}
+.intro__block-item{
+  display:flex;
+  align-items:start;
+}
+.square{
+  display:inline-block;
+  width:12px;
+  height:12px;
+  background-color:#fff;
+  border-radius:4px;
+  box-shadow:0px 3px 5px rgba(255,255,255,.4);
+  transform:translate(0,3px);
+}
+.description{
+  display:inline-block;
+  font-size:14px;
+  line-height:140%;
+  color:#fff;
+  font-family: 'Mazzard_M_regular';
+  padding-left:21px;
+}
+.section__blue .button_get{
+  background-color:#fff;
+  color:#3C50E8;
+  margin-top:62px;
+  max-width:280px;
+  width:100%;
+  padding:25px 0;
+}
+.section__blue .button_get:hover{
+  color:#3C50E8;
+}
+.hand_phone_box{
+  position: relative;
+}
+.hand_img{
+  position:absolute;
+  max-width:fit-content;
+  transform:translate(-18%, -37px);
+  z-index:0;
+}
+.ref_one{
+  position:absolute;
+  transform:translate(-62%,272%);
+  right:0;
+  bottom:0;
+  z-index:1;
+}
+.ref_two{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:2;
+  transform:translate(14px,-5px);
+}
 
 
 
