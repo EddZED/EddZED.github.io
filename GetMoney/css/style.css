@@ -1870,6 +1870,112 @@ padding-left:3px;
 
 
 
+
+
+
+/* style 404 page */
+.wrong_section{
+  padding:120px 0 90px;
+}
+.blue_farme{
+  width:100%;
+  position: relative;
+  border-radius:50px;
+  background-color:#3C50E8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  min-height:620px;
+}
+.wrong_section .title_page{
+  font-size:60px;
+  line-height:100%;
+  text-align:center;
+  letter-spacing:-0.02em;
+  color:#fff;
+  font-family: 'Mazzard_M_medium';
+  z-index: 10;
+}
+.wrong_section .ghost_text{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:500px;
+  color:#fff;
+  opacity:.1;
+  font-family: 'Mazzard_M_bold';
+  z-index:0;
+}
+.wrong_section .white_text-min{
+  margin-top:15px;
+  z-index:10;
+}
+.wrong_section .btn_box_quest{
+  margin-top:40px;
+  z-index: 10;
+  min-width:280px;
+}
+.wrong_section .button_get{
+  width:100%;
+  min-width:auto;
+  padding: 25px 0;
+}
+
+
+
+/* style modal_windows page */
+.modals{
+  padding:200px 0;
+}
+.btn-close{
+  width:12px;
+  height:12px;
+  outline:none;
+  background:url(../img/close.png);
+  background-position:center center;
+  background-size:cover;
+  box-sizing:border-box;
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+.modal-dialog.midle_size{
+  max-width:560px;
+  width:100%;
+}
+.modal-content{
+  border-radius:20px;
+}
+.modal-header{
+  border-bottom:none;
+  justify-content:center;
+  text-align:center;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+}
+.modal-footer{
+  border-top: none;
+  justify-content:center;
+}
+.modal-title{
+  display:block;
+  width:100%;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2D2D2D;
+  font-family: 'Mazzard_M_medium';
+  text-align:center;
+}
+
+
+
+
+
+
 @media(min-width:1200px){
   .footer_menu{
     padding-left:73px;
@@ -2563,6 +2669,20 @@ padding-left:3px;
   }
   .list_items{
     align-items:center;
+  }
+  .wrong_section .ghost_text{
+    font-size:250px;
+  }
+  .wrong_section .title_page{
+    font-size:40px;
+  }
+  .blue_farme{
+    min-height:auto;
+    padding:50px 15px;
+    border-radius:30px;
+  }
+  .wrong_section{
+    padding:90px 0 60px;
   }
 }
 

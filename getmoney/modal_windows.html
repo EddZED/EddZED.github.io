@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ошибка</title>
+  <title>Модальные окана</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jqueryUI.css">
@@ -54,17 +54,64 @@
         </div>
       </div>
     </header>
-    <section class="wrong_section">
-      <div class="container">
-        <div class="blue_farme">
-          <span class="ghost_text">404</span>
-          <h1 class="title_page">Кажется, что-то пошло не так</h1>
-          <p class="white_text-min text-center">Мы уже решаем эту проблему, а пока вернитесь<br> на главную и попробуйте еще раз</p>
-          <div class="btn_box_quest">
-            <a href="#" class="account__items-button button_order button_get button_white">Вернуться на главную</a>
+    <section class="modals">
+      <div class="container content">
+        <div class="d-flex justify-content-center align-items-center">
+          <a type="button" class="account__items-button button_order button_get" data-bs-toggle="modal" data-bs-target="#registration">Погасить займ</a>
+        </div>
+      </div>
+    </section>
+    <section class="modal_windows">
+      <!-- Модальное окно -->
+      <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog midle_size">
+          <div class="modal-content">
+            <form action="post" class="form_ask">
+              <div class="modal-header">
+                <h1 class="modal-title">Погасить займ</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <div class="screen_credit">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="box_screen_gray">
+                        <span>Сумма к возврату</span>
+                        <span id="summDebt">45 000</span>
+                        <span>рублей</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <span>Осталось погосить</span>
+                      <span id="debt">45 000</span>
+                      <span>рублей</span>
+                    </div>
+                    <div class="range__box-body">
+                      <div class="top_part">
+                        <span class="text_regular">Выберите нужную сумму:</span>
+                        <div class="summ_block">
+                          <span class="summ_num" id="result-polzunok"></span><span class="rub_style">₽</span>
+                        </div>
+                      </div>
+                      <div class="bottom_part">
+                        <div class="dots__gray" id="polzunok"></div>
+                        <div class="nums_block">
+                          <span class="">1000p</span>
+                          <span class="">45000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Погасить займ</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+      
     </section>
     <footer class="footer">
       <div class="container">
@@ -140,30 +187,8 @@
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
-  <script>
-    function zero_first_format(value) {
-        if (value < 10) {
-          value = '0' + value;
-        }
-        return value;
-      }
-
-      /* функция получения текущей даты и времени */
-      
-      function date_time() {
-      
-        let current_datetime = new Date();
-        let day = zero_first_format(current_datetime.getDate()+n);
-        current_datetime.setDate(day);
-        let month = zero_first_format(current_datetime.getMonth() + 1);
-        let year = current_datetime.getFullYear();
-        
-        return day + "." + month + "." + year;
-      }
-      console.log(n)
-      /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
-      document.getElementById('currentdate').innerHTML = date_time();
-  </script>
+  <script src="js/jqueryUI.min.js"></script>
+  <script src="js/jqueryUI_touch.js"></script>
   <script>
     $(window).scroll(function () {
         var height = $(window).scrollTop();
@@ -175,59 +200,20 @@
       });
   </script>
   <script>
-    $('.slider__card').slick({
-      infinite: false,
-      speed: 1000,
-      useTransform: true,
-      ssEase: 'linear',
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      prevArrow: '<button type = "button" class = "slick-prev"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 9.5H2M2 9.5L10 1M2 9.5L10 17.5" stroke="#DCDCDC" stroke- width="2"/></svg></button>',
-      nextArrow: '<button type = "button" class = "slick-next"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9.5H22M22 9.5L14 1M22 9.5L14 17.5" stroke="#EDEDED" stroke- width="2"/></svg ></button>'
-    });
-  </script>
-  <script>
     $("#polzunok").slider({
         min: 1000,
-        max: 45000,
+        max: 40000,
         step: 1000,
         animate: "slow",
         range: "min",
         value: 15000,
         slide: function (event, ui) {
               $("#result-polzunok").text(ui.value);
-              $("#equals").text(ui.value * 1.05);
+              $("#debt").text(ui.value);
           }
       });
       $("#result-polzunok").text($("#polzunok").slider("value"));
-      $("#equals").text($("#result-polzunok").slider("value"));
-  </script>
-  <script>
-    $("#countpolz").slider({
-        min: 7,
-        max: 50,
-        step: 1,
-        animate: "slow",
-        range: "min",
-        value: 14,
-        slide: function (event, ui) {
-              $("#countday").text(ui.value);
-          }
-      });
-      $("#countday").text($("#countpolz").slider("value"));
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('#read_more').click(function () {
-        $('.block__text').toggleClass('active');
-        if ($('.block__text').hasClass('active')) {
-          $('#read_more').html('Скрыть');
-        } else {
-          $('#read_more').html('Читать полностью');
-        }
-        return false;
-      });
-    });
+      
   </script>
   <script>
     $('.menu_btn').click(function () {
@@ -236,4 +222,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
