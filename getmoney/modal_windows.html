@@ -66,7 +66,7 @@
       <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog midle_size">
           <div class="modal-content">
-            <form action="post" class="form_ask">
+            <form action="post" class="form_debt">
               <div class="modal-header">
                 <h1 class="modal-title">Погасить займ</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
@@ -76,19 +76,25 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="box_screen_gray">
-                        <span>Сумма к возврату</span>
-                        <span id="summDebt">45 000</span>
-                        <span>рублей</span>
+                        <span class="title_screen">Сумма к возврату</span>
+                        <div class="num_block">
+                          <span id="summDebt" class="font_summ">45 000</span>
+                          <span class="font_rub"> рублей</span>
+                        </div>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <span>Осталось погосить</span>
-                      <span id="debt">45 000</span>
-                      <span>рублей</span>
+                      <div class="box_screen_gray">
+                        <span class="title_screen">Осталось погасить</span>
+                        <div class="num_block">
+                          <span id="debt" class="font_summ">40 000</span>
+                          <span class="font_rub"> рублей</span>
+                        </div>
+                      </div>
                     </div>
                     <div class="range__box-body">
                       <div class="top_part">
-                        <span class="text_regular">Выберите нужную сумму:</span>
+                        <span class="title_screen">Выберите сумму, которую хотите внести:</span>
                         <div class="summ_block">
                           <span class="summ_num" id="result-polzunok"></span><span class="rub_style">₽</span>
                         </div>
@@ -96,8 +102,8 @@
                       <div class="bottom_part">
                         <div class="dots__gray" id="polzunok"></div>
                         <div class="nums_block">
-                          <span class="">1000p</span>
-                          <span class="">45000</span>
+                          <span class="">1 000</span>
+                          <span class="">40 000</span>
                         </div>
                       </div>
                     </div>
@@ -204,16 +210,14 @@
         min: 1000,
         max: 40000,
         step: 1000,
-        animate: "slow",
+        animate: "slow", 
         range: "min",
         value: 15000,
         slide: function (event, ui) {
               $("#result-polzunok").text(ui.value);
-              $("#debt").text(ui.value);
           }
       });
       $("#result-polzunok").text($("#polzunok").slider("value"));
-      
   </script>
   <script>
     $('.menu_btn').click(function () {
