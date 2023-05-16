@@ -89,15 +89,15 @@
                         </button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="statistic" data-bs-toggle="tab" data-bs-target="#statistic-pane"
-                          type="button" role="tab" aria-controls="statistic-pane" aria-selected="false">
+                        <button class="nav-link active" id="statistic" data-bs-toggle="tab" data-bs-target="#statistic-pane"
+                          type="button" role="tab" aria-controls="statistic-pane" aria-selected="true">
                           <img class="img-fluid" src="img/stat1.png" alt="статистика">
                           <span>Статистика</span>
                         </button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="profile" data-bs-toggle="tab" data-bs-target="#profile-pane" type="button"
-                          role="tab" aria-controls="profile-pane" aria-selected="true">
+                        <button class="nav-link" id="profile" data-bs-toggle="tab" data-bs-target="#profile-pane" type="button"
+                          role="tab" aria-controls="profile-pane" aria-selected="false">
                           <img class="img-fluid" src="img/stat2.png" alt="Профиль">
                           <span>Профиль</span>
                         </button>
@@ -151,7 +151,7 @@
             </div>
             <div class="col-xl-10">
               <div class="tab-content">
-                <div class="show_content tab-pane fade" id="statistic-pane" role="tabpanel" aria-labelledby="statistic" tabindex="0">
+                <div class="show_content tab-pane fade show active" id="statistic-pane" role="tabpanel" aria-labelledby="statistic" tabindex="0">
                   <div class="row gx-2">
                     <div class="col">
                       <div class="wrapper__white">
@@ -326,7 +326,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="show_content tab-pane fade show active" id="profile-pane" role="tabpanel" aria-labelledby="profile" tabindex="0">
+                <div class="show_content tab-pane fade" id="profile-pane" role="tabpanel" aria-labelledby="profile" tabindex="0">
                   <form action="" class="form_info_customer">
                     <fieldset>
                       <div class="row gx-2">
