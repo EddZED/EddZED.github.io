@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ЛК - статистика\стартовая</title>
+  <title>ЛК - Профиль</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jqueryUI.css">
@@ -66,13 +66,14 @@
                     <div class="customer__card customer__tarif-one">
                       <div class="customer__card-name">
                         <span class="customer_name">Иван<br class="d-none d-xl-block">
-                        Абрумхлебовницев</span>
+                          Абрумхлебовницев</span>
                       </div>
                       <span class="customer__card-nums-ghost">0,4%</span>
                       <div class="customer__card-tarif">
                         <div class="card__tarif-box">
                           <span>Тариф</span>
-                          <span class="icon_info"><img class="img-fluid" src="img/ЛК - статистика-иконка инфо.png" alt="лк инфо"></span>
+                          <span class="icon_info"><img class="img-fluid" src="img/ЛК - статистика-иконка инфо.png"
+                              alt="лк инфо"></span>
                         </div>
                         <div class="card__tarif-name">
                           <span>Набираем обороты</span>
@@ -89,13 +90,13 @@
                         </button>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="nav-link active" id="statistic">
+                        <a href="#" class="nav-link" id="statistic">
                           <img class="img-fluid" src="img/stat1.png" alt="Статистика">
                           <span>Статистика</span>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="nav-link" id="profile">
+                        <a href="#" class="nav-link active" id="profile">
                           <img class="img-fluid" src="img/stat2.png" alt="Профиль">
                           <span>Профиль</span>
                         </a>
@@ -106,17 +107,19 @@
                           <span>Кредиты</span>
                         </a>
                       </li>
-                      <li class="nav-item drop_down"> 
+                      <li class="nav-item drop_down">
                         <a href="#" class="nav-link dropparents" id="orders">
                           <img class="img-fluid" src="img/stat4.png" alt="Мои заявки">
                           <span>Мои заявки</span>
                         </a>
-                        <span class="arrow_drop collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listOrders" aria-expanded="true" aria-controls="listOrders"><img class="img-fluid" src="img/arrow.png" alt="выпадающее меню"></span>
+                        <span class="arrow_drop collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listOrders"
+                          aria-expanded="true" aria-controls="listOrders"><img class="img-fluid" src="img/arrow.png"
+                            alt="выпадающее меню"></span>
                         <div id="listOrders" class="accordion-collapse collapse">
                           <div class="accordion-body">
                             <ul class="nav nav-tabs" role="tablist">
                               <li class="nav-item" role="presentation">
-                                <a href="#" class="nav-link dropmenu" id="approvedOrders" >Одобренные заявки</a>
+                                <a href="#" class="nav-link dropmenu" id="approvedOrders">Одобренные заявки</a>
                               </li>
                               <li class="nav-item dropmenu" role="presentation">
                                 <a href="#" class="nav-link" id="rejectedOrders">Отклоненные заявки</a>
@@ -144,180 +147,210 @@
             </div>
             <div class="col-xl-10">
               <div class="tab-content">
-                <div class="show_content" id="statistic-pane">
-                  <div class="row gx-2">
-                    <div class="col">
-                      <div class="wrapper__white">
-                        <div class="calculation__block">
-                          <form action="post">
-                            <div class="row gx-3">
-                              <div class="col-lg-7">
-                                <h1 class="middle_title">Доступные кредиты:</h1>
-                                <div class="slider__range-box">
-                                  <div class="range__box-body">
-                                    <div class="top_part">
-                                      <span class="text_regular">Выберите нужную сумму:</span>
-                                      <div class="summ_block">
-                                        <span class="summ_num" id="result-polzunok"></span><span class="rub_style">₽</span>
-                                      </div>
+                <div class="show_content">
+                  <form action="" class="form_info_customer">
+                    <fieldset>
+                      <div class="row gx-2">
+                        <div class="col-xl-6">
+                          <div class="wrapper__white general_info">
+                            <h3 class="middle_title">Общая информация</h3>
+                            <div class="block__info">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Фамилия</span>
                                     </div>
-                                    <div class="bottom_part">
-                                      <div class="dots__gray" id="polzunok"></div>
-                                      <div class="nums_block">
-                                        <span class="">1 000</span>
-                                        <span class="">45 000</span>
-                                      </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="lastName" placeholder="Иванов">
                                     </div>
                                   </div>
-                                  <div class="range__box-body second">
-                                    <div class="top_part">
-                                      <span class="text_regular">Выберите срок:</span>
-                                      <div class="summ_block">
-                                        <span class="summ_num" id="countday"></span><span class="day_style">дней</span>
-                                      </div>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Имя</span>
                                     </div>
-                                    <div class="bottom_part">
-                                      <div class="dots__gray" id="countpolz"></div>
-                                      <div class="nums_block">
-                                        <span class="">7 дней</span>
-                                        <span class="">50 дней</span>
-                                      </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="Василий">
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-5 pl-lg-0 mt-5 mt-lg-0">
-                                <div class="dark__block">
-                                  <div class="dark__block-topcase">
-                                    <p class="graylight__text">Сумма к возврату:</p>
-                                    <div class="result__pay">
-                                      <p id="equals" class="white__text" value="#polzunok">15750</p>
-                                      <p class="white__text-min">рублей</p>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Отчество</span>
                                     </div>
-                                    <p class="graylight__text">Срок до (включительно):</p>
-                                    <p id="currentdate" class="white__text">20.03.2023</p>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="Петрович">
+                                    </div>
                                   </div>
-                                  <div class="dark__block-bottomcase">
-                                    <button type="submit" class="account__items-button button_order button_get">Получить займ</button>
-                                    <span class="text_persent">Процентная ставка 0,4%</span>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Пароль</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="password" name="" placeholder="NaAngliyskom94">
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="wrapper__white activ_credit">
-                        <h2 class="middle_title">Активные кредиты:</h2>
-                        <div class="wrapper__tab-block"> <!-- для активации красной рамки просроченного кредита добавляется класс - wrong -->
-                          <div class="tab__block-content">
-                            <div class="block_item">
-                              <div class="name_colums">
-                                <div class="name_colums-text first_pad">Сумма займа</div>
-                              </div>
-                              <div class="item_colums">
-                                <div class="item_colums-content bold_num">5 000 <span> ₽</span></div>
-                              </div>
-                            </div>
-                            <div class="block_item">
-                              <div class="name_colums">
-                                <div class="name_colums-text">Дата получения</div>
-                              </div>
-                              <div class="item_colums">
-                                <div class="item_colums-content">10.03.2023</div>
-                              </div>
-                            </div>
-                            <div class="block_item">
-                              <div class="name_colums">
-                                <div class="name_colums-text">Дата выплаты</div>
-                              </div>
-                              <div class="item_colums">
-                                <div class="item_colums-content">30.03.2023 <span><img class="img-fluid wrong_img" src="img/wrong.png" alt="просроченный кредит"></span></div>
-                              </div>
-                            </div>
-                            <div class="block_item">
-                              <div class="name_colums">
-                                <div class="name_colums-text">Ставка</div>
-                              </div>
-                              <div class="item_colums">
-                                <div class="item_colums-content">0,5%</div>
-                              </div>
-                            </div>
-                            <div class="block_item">
-                              <div class="name_colums">
-                                <div class="name_colums-text"><br></div>
-                              </div>
-                              <div class="item_colums">
-                                <div class="item_colums-content">
-                                  <a href="#" class="btn_color"><span>Погасить</span></a>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Телефон</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="+7 945 456 33 22">
+                                    </div>
+                                  </div>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>E-mail</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="ivanovdp@yandex.ru">
+                                    </div>
+                                  </div>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Дата рождения</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="date" name="" placeholder="23.04.1992">
+                                    </div>
+                                  </div>
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Повторите пароль</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="password" name="" placeholder="NaAngliyskom94">
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
+                        <div class="col-xl-6">
+                          <div class="wrapper__white">
+                            <h3 class="middle_title">Документы</h3>
+                            <div class="block__info">
+                              <div class="row align-items-end">
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Номер и серия документа</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="passport" placeholder="9456 456643">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Загрузите фото документа: страницы
+                                        с личными данными и пропиской</span>
+                                    </div>
+                                    <div class="border_item-form get_file">
+                                      <input type="file" id="photo1" name="photo1" hidden="hidden">
+                                      <button class="btn_unload">
+                                        <span></span>
+                                        <label for="photo1"><img class="img-fluid" src="img/unload.png"
+                                            alt="загрузить">Загрузить фото</labe>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Дата выдачи документа</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="date" name="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Код подразделения</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="50040493">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Кем выдан документ</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name=""
+                                        placeholder="Отделом УФМС России по Ижевску">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Место рождения</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="Екатеринбург">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Загрузите фото с документом (селфи)</span>
+                                    </div>
+                                    <div class="border_item-form get_file">
+                                      <input type="file" id="photo" name="photo" hidden="hidden">
+                                      <button class="btn_unload">
+                                        <span></span>
+                                        <label for="photo"><img class="img-fluid" src="img/unload.png"
+                                            alt="загрузить">Загрузить фото</labe>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>СНИЛС</span>
+                                    </div>
+                                    <div class="border_item-form">
+                                      <input class="form_info-input" type="text" name="" placeholder="098-456-532-43">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="item_form-frame">
+                                    <div class="name_item-form">
+                                      <span>Загрузите фото СНИЛС:</span>
+                                    </div>
+                                    <div class="border_item-form input_file">
+                                      <span id="upload-text" class="success_img">Фото загружено</span>
+                                      <input type="file" id="upload-file" name="upload-file" hidden="hidden">
+                                      <button id="upload-btn" class="upload_btn"><label for="upload-file"><span>Загрузить
+                                            другое фото</span></label></button>
+                                      <span class="ready_file"><img class="img-fluid" src="img/success.png"
+                                          alt="фото загружено"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="button_box-profile">
+                            <button type="submit" class="account__items-button button_profile btn_save">Отменить изменения</button>
+                            <button type="submit" class="account__items-button button_order btn_save">Сохранить изменения</button>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-xl-3">
-                      <div class="wrapper__white right_block">
-                        <h3 class="middle_title">Статистика:</h3>
-                        <div class="title_tab-stat">
-                          <span>Вид</span>
-                          <span>Количество</span>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Активные кредиты</span>
-                            <span class="count_prod">3</span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Закрытые кредиты</span>
-                            <span class="count_prod">8</span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Просроченные<br> кредиты</span>
-                            <span class="count_prod">0</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wrapper__white right_block">
-                        <h3 class="middle_title">Доход с рефералов:</h3>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Всего рефералов</span>
-                            <span class="count_prod">13</span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Рефералов, закрывших кредит</span>
-                            <span class="count_prod">7</span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Сумма закрытых кредитов</span>
-                            <span class="count_prod">48 000 <span>₽</span></span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Общий доход с рефералов</span>
-                            <span class="count_prod">2 045 <span>₽</span></span>
-                          </div>
-                        </div>
-                        <div class="gray_tab-wrapper">
-                          <div class="gray_tab-item">
-                            <span class="name_prod">Доступно к выплате</span>
-                            <span class="count_prod">1 360 <span>₽</span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </fieldset>
+                  </form>
                 </div>
               </div>
             </div>
