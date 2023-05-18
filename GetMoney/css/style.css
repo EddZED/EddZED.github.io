@@ -2719,6 +2719,9 @@ padding-left:3px;
   .personal_account .col-xl-3{
     width:30.5%;
   }
+  .mobile_part{
+    display:none;
+  }
 }
 @media(min-width:992px){
   .pl-lg-0 {
@@ -2770,6 +2773,9 @@ padding-left:3px;
 
 
 @media(max-width:1199px){
+  .desctop_part{
+    display:none;
+  }
   .have_quest .head__main-bold{
     text-align:center;
   }
@@ -3350,6 +3356,33 @@ padding-left:3px;
   }
   .wrapper__white.general_info{
     padding:25px 15px;
+  }
+  .slider_available-credits{
+    margin-top:20px;
+  }
+  .mobile_part.flex_mobile{
+    display:flex;
+    flex-direction:column;
+  }
+  .mobile_part.flex_mobile .middle_title{
+    order:1;
+    display:flex;
+  }
+  .mobile_part.flex_mobile .arrows_slider.arrows-mobile{
+    order:3;
+    display:flex;
+    position:relative;
+    margin-top:20px;
+
+  }
+  .mobile_part.flex_mobile .arrows_slider.arrows-mobile .slick-arrow{
+    position:relative;
+    bottom:0;
+    top:auto;
+  }
+  .mobile_part.flex_mobile .slider_available-credits.mobile{
+    order:2;
+    display:flex;
   }
 }
 
