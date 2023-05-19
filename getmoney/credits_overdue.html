@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ЛК - Кредиты</title>
+  <title>ЛК - Кредиты просроченный</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jqueryUI.css">
@@ -149,7 +149,7 @@
                     <div class="col">
                       <div class="wrapper__white activ_credit">
                         <h2 class="middle_title">Активные кредиты:</h2>
-                        <div class="wrapper__tab-block"> <!-- для активации красной рамки просроченного кредита добавляется класс - wrong -->
+                        <div class="wrapper__tab-block wrong"> <!-- для активации красной рамки просроченного кредита добавляется класс - wrong -->
                           <div class="tab__block-content">
                             <div class="block_item">
                               <div class="name_colums">
@@ -247,6 +247,75 @@
                           </div>
                         </div>
                       </div>
+                      <div class="wrapper__white activ_credit closed_credit overdue_credit">
+                        <h2 class="middle_title">Просроченные кредиты:</h2>
+                        <div class="wrapper__tab-block wrong border_standart">
+                          <div class="tab__block-content">
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text first_pad">Сумма займа</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content bold_num">5 000 <span> ₽</span></div>
+                              </div>
+                            </div>
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text">Дата получения</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content">02.02.2023</div>
+                              </div>
+                            </div>
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text">Когда выплачен</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content">19.02.2023 <span><img class="img-fluid wrong_img" src="img/wrong.png"
+                                      alt="просроченный кредит"></span></div>
+                              </div>
+                            </div>
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text">Ставка</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content">0,5%</div>
+                              </div>
+                            </div>
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text">Пени</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content">0,5%</div>
+                              </div>
+                            </div>
+                            <div class="block_item">
+                              <div class="name_colums">
+                                <div class="name_colums-text">Итого к погашению</div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content wrong_num-red">8200 <span>₽</span></div>
+                              </div>
+                            </div>
+                            <div class="block_item mobile_only">
+                              <div class="name_colums">
+                                <div class="name_colums-text"><br></div>
+                              </div>
+                              <div class="item_colums">
+                                <div class="item_colums-content">
+                                  <a href="#" class="btn_color"><span>Погасить</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn_desctop_outside">
+                          <a href="#" class="btn_color"><span>Погасить</span></a>
+                        </div>
+                      </div>
                       <div class="wrapper__white activ_credit closed_credit">
                         <h2 class="middle_title">Закрытые кредиты:</h2>
                         <div class="wrapper__tab-block">
@@ -337,8 +406,8 @@
                                 <div class="name_colums-text">Когда выплачен</div>
                               </div>
                               <div class="item_colums">
-                                <div class="item_colums-content status_red">30.01.2023 <span><img class="img-fluid wrong_img" src="img/wrong.png"
-                                      alt="просроченный кредит"></span></div>
+                                <div class="item_colums-content status_red">30.01.2023 <span><img class="img-fluid wrong_img"
+                                      src="img/wrong.png" alt="просроченный кредит"></span></div>
                               </div>
                             </div>
                             <div class="block_item">
