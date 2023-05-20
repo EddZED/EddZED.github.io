@@ -2845,7 +2845,43 @@ padding-left:3px;
 .referal_block-info.more-info .wrapper__tab-block.few_rows{
   margin-top:5px;
 }
-
+.btn_cnsl {
+  margin-right: 10px;
+  background-color:#fff;
+}
+.btn_cnsl:hover{
+  background-color:#3C50E8;
+  color:#fff;
+}
+.referal_modal .modal-dialog{
+  max-width:1040px;
+  margin:25px 15px;
+}
+.referal_modal .modal-content{
+  padding:35px 25px;
+}
+.referal_modal .block_item{
+  justify-content:end;
+}
+.referal_modal .block_item:nth-child(5) .item_colums{
+  border-right:none;
+  border-radius:0;
+}
+.referal_modal .block_item:nth-child(6) .item_colums {
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
+}
+.referal_modal .info_ref{
+  right:11px;
+  bottom:1px;
+}
+.referal_modal .btn-close{
+  right:25px;
+  top:25px;
+}
+.referal_modal .wrapper__tab-block{
+  margin-top:5px;
+}
 
 
 
@@ -2854,6 +2890,9 @@ padding-left:3px;
 
 
 @media(min-width:1200px){
+  .referal_block-info.more-info .tab__block-content .block_item:nth-child(1){
+    min-width:150px;
+  }
   .footer_menu{
     padding-left:73px;
   }
@@ -2924,6 +2963,10 @@ padding-left:3px;
 
   .footer_link {
     font-size: 28px;
+  }
+  .pad_popup .info_ref{
+    right:8px;
+    bottom:2px;
   }
 }
 
@@ -3947,6 +3990,36 @@ padding-left:3px;
   .all_applications .tab__block-content .block_item:nth-child(7){
     order:7;
   }
+  .referal_modal .tab__block-content .block_item:nth-child(1){
+    width:100%;
+  }
+  .referal_modal .tab__block-content .block_item{
+    width:50%;
+  }
+  .referal_modal .modal-content{
+    padding:25px 15px;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(2){
+    order:3;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(5){
+    order:2;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(3){
+    order:4;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(4){
+    order:5;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(6){
+    order:6;
+  }
+  .referal_modal .tab__block-content .block_item:nth-child(7){
+    order:7;
+  }
+  .referal_modal .info_ref{
+    display:none;
+  }
 }
 
 
@@ -4133,6 +4206,17 @@ padding-left:3px;
   }
   .activ_credit:not(.closed_credit) .tab__block-content .block_item:nth-child(4){
     width:20%;
+  }
+  .btn_save{
+    min-height:60px;
+    width:100%;
+  }
+  .button_box-profile{
+    flex-direction:column;
+  }
+  .btn_cnsl{
+    margin-right:0;
+    margin-bottom:10px;
   }
 }
 
