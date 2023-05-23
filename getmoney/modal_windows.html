@@ -18,7 +18,7 @@
           <div class="row justify-content-between align-items-center mobile_menu">
             <div class="header__nav-leftblock">
               <div class="header__nav-link nav__top">
-                <div class="link"><a href="#" class="link_main"><img class="img-fluid" src="img/logo.png" alt="GetMoney"></a></div>
+                <div class="link"><a href="#" class="link_main"><img class="img-fluid" src="svg/logo.svg" alt="GetMoney"></a></div>
               </div> 
               <div class="header__nav-menu nav__top">
                 <div class="menu__top">
@@ -56,14 +56,22 @@
     </header>
     <section class="modals">
       <div class="container content">
-        <div class="d-flex justify-content-center align-items-center">
-          <a type="button" class="account__items-button button_order button_get" data-bs-toggle="modal" data-bs-target="#registration">Погасить займ</a>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#debit">Погасить займ</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#questions">Отправить вопрос</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#questions-two">Отправить вопрос</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#order">Отправить заявку на вывод</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#rekvizits">Сохранить реквизиты</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#thanks">Спасибо за заявку</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#get_rekviz">Спасибо за реквизиты</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#thank_quest">Спасибо за вопрос</a>
+          <a type="button" class="account__items-button button_order button_get btn_modal" data-bs-toggle="modal" data-bs-target="#change_summ">Изменить сумму</a>
         </div>
       </div>
     </section>
     <section class="modal_windows">
-      <!-- Модальное окно -->
-      <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Модальное окно погасить займ -->
+      <div class="modal fade" id="debit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog midle_size">
           <div class="modal-content">
             <form action="post" class="form_debt">
@@ -118,6 +126,286 @@
         </div>
       </div>
       
+      <!-- Модальное окно задать вопрос -->
+      <div class="modal fade modal_narrowly" id="questions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <h3 class="modal-title">Задать вопрос<br>
+                по заявке от <span class="gray_txt">10.12.2022</span></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <span>Введите ваш вопрос:</span>
+                  </div>
+                  <div class="border_item-form">
+                    <textarea class="form_info-input form_login-input text_area" type="text" name="phone"
+                      placeholder="Вот такой вот вопрос можно на две строки можно на три можно на одну"></textarea>
+                  </div>
+                </div>
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <label for="speed">Как хотите получить ответ?</label>
+                  </div>
+                  <div class="border_item-form no_pad">
+                    <select name="speed" id="speed" class="select_custom">
+                      <option>Напишите мне</option>
+                      <option selected="selected">Перезвоните мне</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Отправить вопрос</button>
+                <div class="privacy_block">
+                  <p class="link_text_privacy">Нажимая на кнопку, вы соглашаетесь с</p>
+                  <a href="#" class="privacy_link">Политикой конфиденциальности</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно задать вопрос -->
+      <div class="modal fade modal_narrowly" id="questions-two" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <h3 class="modal-title">Задать вопрос</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <span>Ваше имя</span>
+                  </div>
+                  <div class="border_item-form">
+                    <input class="form_info-input" type="text" name="name" placeholder="Александр Титов">
+                  </div>
+                </div>
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <span>Ваш e-mail для ответа:</span>
+                  </div>
+                  <div class="border_item-form">
+                    <input class="form_info-input" type="text" name="email" placeholder="ivanovdp@yandex.ru">
+                  </div>
+                </div>
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <span>Введите ваш вопрос:</span>
+                  </div>
+                  <div class="border_item-form">
+                    <textarea class="form_info-input form_login-input text_area" type="text" name="phone"
+                      placeholder="Вот такой вот вопрос можно на две строки можно на три можно на одну"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Отправить
+                  вопрос</button>
+                <div class="privacy_block">
+                  <p class="link_text_privacy">Нажимая на кнопку, вы соглашаетесь с</p>
+                  <a href="#" class="privacy_link">Политикой конфиденциальности</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно заявка на вывод средств -->
+      <div class="modal fade modal_narrowly" id="order" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <h3 class="modal-title">Заявка на вывод<br>
+                средств</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text_info_modal">
+                  Для вывода средств подайте заявку. После одобрения администратором вся сумма, доступная к выводу, будет перечислена
+                  на указанный в личном кабинете счет
+                </p>
+              </div>
+              <div class="modal-footer clear_modal">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Отправить заявку на вывод</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно реквизиты для вывод средств -->
+      <div class="modal fade modal_narrowly" id="rekvizits" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <h3 class="modal-title">Реквизиты<br>
+                для вывода средств</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <label for="speed">Как хотите получить ответ?</label>
+                  </div>
+                  <div class="border_item-form no_pad">
+                    <select name="speed" id="speed" class="select_custom">
+                      <option>Юмани кошелек</option>
+                      <option>Киви кошелек</option>
+                      <option selected="selected">Visa/Mastercard/МИР</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="item_form-frame">
+                  <div class="name_item-form">
+                    <span>Номер карты:</span>
+                  </div>
+                  <div class="border_item-form">
+                    <input class="form_info-input" type="text" name="card" placeholder="1234 5678 7654 4321">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer clear_modal mt-4">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Сохранить реквизиты</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно спасибо -->
+      <div class="modal fade modal_narrowly" id="thanks" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <img class="img-fluid" src="img/ok.png" alt="спасибо">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body mb-5">
+                <h3 class="modal-title mb-3">Спасибо!</h3>
+                <p class="text_info_modal">Ваша заявка отправлена<br>
+                на рассмотрение</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно спасибо за реквизиты -->
+      <div class="modal fade modal_narrowly" id="get_rekviz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <img class="img-fluid" src="img/ok.png" alt="спасибо">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body mb-5">
+                <h3 class="modal-title mb-3">Спасибо!</h3>
+                <p class="text_info_modal">Ваши реквизиты для вывода
+                средств сохранены</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно спасибо за вопрос -->
+      <div class="modal fade modal_narrowly" id="thank_quest" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <img class="img-fluid" src="img/ok.png" alt="спасибо">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body mb-5">
+                <h3 class="modal-title mb-3">Спасибо!</h3>
+                <p class="text_info_modal">Ваш вопрос отправлен. Менеджер рассмотрит его и ответит вам как можно скорее</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно изменить сумму -->
+      <div class="modal fade change_modal" id="change_summ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog midle_size">
+          <div class="modal-content">
+            <form action="post" class="form_debt">
+              <div class="modal-header">
+                <h1 class="modal-title">Изменить сумму/срок</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              </div>
+              <div class="modal-body">
+                <div class="screen_credit">
+                  <div class="calculation__block">
+                    <form action="post">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          <div class="slider__range-box">
+                            <div class="range__box-body">
+                              <div class="top_part">
+                                <span class="text_regular">Выберите нужную сумму:</span>
+                                <div class="summ_block">
+                                  <span class="summ_num" id="result-polzun"></span><span class="rub_style">₽</span>
+                                </div>
+                              </div>
+                              <div class="bottom_part">
+                                <div class="dots__gray" id="polzun"></div>
+                                <div class="nums_block">
+                                  <span class="">1000p</span>
+                                  <span class="">45000</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="range__box-body second">
+                              <div class="top_part">
+                                <span class="text_regular">Выберите срок:</span>
+                                <div class="summ_block">
+                                  <span class="summ_num" id="countday"></span><span class="day_style">дней</span>
+                                </div>
+                              </div>
+                              <div class="bottom_part">
+                                <div class="dots__gray" id="countpolz"></div>
+                                <div class="nums_block">
+                                  <span class="">7 дней</span>
+                                  <span class="">50 дней</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn account__items-button button_order button_get btn-primary">Сохранить изменения</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+
     </section>
     <footer class="footer">
       <div class="container">
@@ -218,6 +506,34 @@
           }
       });
       $("#result-polzunok").text($("#polzunok").slider("value"));
+  </script>
+  <script>
+    $("#polzun").slider({
+      min: 1000,
+      max: 40000,
+      step: 1000,
+      animate: "slow",
+      range: "min",
+      value: 15000,
+      slide: function (event, ui) {
+        $("#result-polzunok").text(ui.value);
+      }
+    });
+    $("#result-polzun").text($("#polzun").slider("value"));
+  </script>
+  <script>
+    $("#countpolz").slider({
+      min: 7,
+      max: 50,
+      step: 1,
+      animate: "slow",
+      range: "min",
+      value: 14,
+      slide: function (event, ui) {
+        $("#countday").text(ui.value);
+      }
+    });
+    $("#countday").text($("#countpolz").slider("value"));
   </script>
   <script>
     $('.menu_btn').click(function () {

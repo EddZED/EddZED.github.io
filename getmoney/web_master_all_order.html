@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛК вебмастера - все Заявки</title>
+  <link rel="stylesheet" href="css/air-datepicker.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jqueryUI.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>  
+  <div class="wrapper">
+    <header class="header personal_page">
+      <div class="header__nav">
+        <button type="button" class="menu_btn"><span></span><span></span><span></span></button>
+        <div class="container">
+          <div class="row justify-content-between align-items-center mobile_menu">
+            <div class="header__nav-leftblock">
+              <div class="header__nav-link nav__top">
+                <div class="link"><a href="#" class="link_main"><img class="img-fluid" src="svg/logo.svg" alt="GetMoney"></a></div>
+              </div> 
+              <div class="header__nav-menu nav__top">
+                <div class="menu__top">
+                  <a href="#" class="menu__top-link one">Как получить займ?</a>
+                  <a href="#" class="menu__top-link two">Тарифы</a>
+                  <a href="#" class="menu__top-link three">Реферальная система</a>
+                  <a href="#" class="menu__top-link">О компании</a>
+                  <a href="#" class="menu__top-link">Частые вопросы</a>
+                </div>
+              </div>
+            </div>
+            <div class="header__nav-account nav__top">
+              <div class="account__items">
+                <a href="#" class="account__items-button button_profile">
+                  <i class="d-none">
+                    <svg class="icon_profile" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="color_icon" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.505 4.5567C12.505 7.4322 10.573 9.9 8.00043 9.9C5.42585 9.9 3.49591 7.4322 3.49591 4.5558C3.49591 1.6812 5.15758 0 8.00043 0C10.8433 0 12.505 1.6803 12.505 4.5567ZM0.0945004 16.3278C0.479887 16.74 2.13955 18 8.00043 18C13.8613 18 15.52 16.74 15.9064 16.3287C15.9422 16.2892 15.9687 16.2435 15.9842 16.1944C15.9997 16.1454 16.0038 16.094 15.9965 16.0434C15.9084 15.2496 15.1136 11.7 8.00043 11.7C0.887296 11.7 0.0924983 15.2496 0.0034089 16.0434C-0.00384045 16.094 0.000500361 16.1455 0.0161652 16.1945C0.03183 16.2436 0.058488 16.2883 0.0945004 16.3278Z"
+                        fill="#3C50E8" />
+                    </svg>
+                    <svg class="icon_profile-mobile" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.4916 16.0363C15.1267 16.3767 13.5027 17.5 8.00043 17.5C2.4908 17.5 0.869604 16.3737 0.508511 16.035C0.561213 15.6666 0.780766 14.7731 1.70193 13.9461C2.68185 13.0663 4.52477 12.2 8.00043 12.2C11.4761 12.2 13.319 13.0663 14.2988 13.9461C15.2214 14.7744 15.4398 15.6695 15.4916 16.0363ZM12.005 4.5567C12.005 7.25096 10.2107 9.4 8.00043 9.4C5.78835 9.4 3.99591 7.25117 3.99591 4.5558C3.99591 3.21388 4.38212 2.21453 5.03767 1.55145C5.69246 0.889147 6.67757 0.5 8.00043 0.5C9.32336 0.5 10.3084 0.888963 10.9632 1.55123C11.6187 2.21426 12.005 3.2138 12.005 4.5567Z"
+                        stroke="#3C50E8" />
+                    </svg>
+                  </i>
+                  <span>Выйти из личного кабинета</span> 
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <section class="personal_account">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-2">
+              <div class="sidebar web_master">
+                <div class="sidebar__body">
+                  <div class="sidebar__body-top">
+                    <a href="#" class="mobile_account">
+                      <img class="img-fluid" src="img/account_icon.png" alt="личная информация">
+                    </a>
+                  </div>
+                  <div class="sidebar__body-bottom">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item mobile">
+                        <button class="btn_open">
+                          <img class="img-fluid img_open" src="img/arrow_open.png" alt="открыть меню">
+                          <img class="img-fluid img_close" src="img/close_menu.png" alt="закрыть меню">
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" id="statistic">
+                          <img class="img-fluid" src="img/stat1.png" alt="Статистика">
+                          <span>Статистика</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" id="profile">
+                          <img class="img-fluid" src="img/stat2.png" alt="Профиль">
+                          <span>Профиль</span>
+                        </a>
+                      </li>
+                      <li class="nav-item drop_down2">
+                        <a href="#" class="nav-link dropparents2" id="credits">
+                          <img class="img-fluid" src="img/stat3.png" alt="Кредиты">
+                          <span>Все займы</span>
+                        </a>
+                        <span class="arrow_drop arr_2 arrow_droptwo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#list_credit"
+                          aria-expanded="true" aria-controls="listOrders"><img class="img-fluid" src="img/arrow.png"
+                            alt="выпадающее меню"></span>
+                        <div id="list_credit" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            <ul class="nav nav-tabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link dropmenu dropmenu-two">Закрытые займы</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link dropmenu dropmenu-two">Активные займы</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link dropmenu dropmenu-two">Просроченные займы</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item drop_down drop_down1 active"> 
+                        <a href="#" class="nav-link dropparents1 active" id="orders">
+                          <img class="img-fluid" src="img/stat4.png" alt="Мои заявки">
+                          <span>Все заявки</span>
+                        </a>
+                        <span class="arrow_drop arr_1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listOrders" aria-expanded="true" aria-controls="listOrders"><img class="img-fluid" src="img/arrow.png" alt="выпадающее меню"></span>
+                        <div id="listOrders" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            <ul class="nav nav-tabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link dropmenu dropmenu-one" id="approvedOrders" >Одобренные заявки</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link dropmenu dropmenu-one" id="rejectedOrders">Отклоненные заявки</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" id="refSistem">
+                          <img class="img-fluid" src="img/stat5.png" alt="Мои заявки">
+                          <span>Реферальная система</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="nav-item">
+                  <button class="exit_btn">
+                    <img class="img-fluid" src="img/exit_icon.png" alt="выйти из личного кабинета">
+                    <span>Выход</span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-xl-10">
+              <div class="tab-content web_master-content">
+                <div class="wrapper__white">
+                  <h1 class="middle_title">Все заявки</h1>
+                  <div class="wrapper_tab_clients tab_orders">
+                    <div class="wrapper__tab-block">
+                      <div class="tab__block-content">
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text first_pad">ФИО</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">Филлипов И.А.</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init">Сумма займа</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">5 000 <span>₽</span></div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата получения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">02.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата погашения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Когда выплачен</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">19.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init pad_popup">Ставка</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">0,5%</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Статус</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content status_green">Одобрено</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper__tab-block few_rows">
+                      <div class="tab__block-content">
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text first_pad">ФИО</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">Соболев М.В.</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init">Сумма займа</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">25 000 <span>₽</span></div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата получения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">02.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата погашения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Когда выплачен</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">-</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init pad_popup">Ставка</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">0,5%</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Статус</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content orange_num">Отказано</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper__tab-block few_rows">
+                      <div class="tab__block-content">
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text first_pad">ФИО</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">Михайлова Я.Б.</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init">Сумма займа</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">12 000 <span>₽</span></div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата получения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">02.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата погашения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Когда выплачен</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">19.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init pad_popup">Ставка</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">0,5%</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Статус</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content status_red">Просрочен</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper__tab-block few_rows">
+                      <div class="tab__block-content">
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text first_pad">ФИО</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">Соболев М.В.</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init">Сумма займа</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">25 000 <span>₽</span></div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата получения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">02.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата погашения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Когда выплачен</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init pad_popup">Ставка</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">0,5%</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Статус</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content orange_num">Закрыт с опозданием</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper__tab-block few_rows">
+                      <div class="tab__block-content">
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text first_pad">ФИО</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">Михайлова Я.Б.</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init">Сумма займа</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content bold_num">12 000 <span>₽</span></div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата получения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">02.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Дата погашения</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">21.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Когда выплачен</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">19.02.2023</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text disp_init pad_popup">Ставка</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content">0,5%</div>
+                          </div>
+                        </div>
+                        <div class="block_item">
+                          <div class="name_colums">
+                            <div class="name_colums-text">Статус</div>
+                          </div>
+                          <div class="item_colums">
+                            <div class="item_colums-content status_red">Просрочен</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer_main">
+          <div class="col-xl-7 footer_first-block">
+            <a href="#" class="main_link d-none d-xl-block"><img class="img-fluid" src="img/logo_white.png" alt="get money"></a>
+            <div class="block_links_footer">
+              <div class="row gx-lg-2">
+                <div class="col-lg-4">
+                  <div class="list_items">
+                    <span class="footer_mini_text">Поддержка клиентов:</span>
+                    <a href="tel:+78009384883" class="footer_link">8 800 938 48 83</a>
+                    <span class="footer_mini_text two">Ежедневно с 10:00 до 18:00 по МСК</span>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-md-0">
+                  <div class="list_items padding_desctop">
+                    <span class="footer_mini_text">E-mail для вопросов:</span>
+                    <a href="mailto:Getmoney@info.ru" class="footer_link">Getmoney@info.ru</a>
+                    <span class="footer_mini_text two">Отвечаем в течение 24 часов</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-5 mt-md-0">
+                  <div class="list_items">
+                    <span class="footer_mini_text">Рассмотрение заявок:</span>
+                    <a class="footer_link dis" disabled>Круглосуточно</a>
+                    <span class="footer_mini_text two">от 5 минут</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="privacy_link d-xl-none d-block text-center mt-4">Политика конфиденциальности</a>
+          </div>
+          <div class="col-xl-5 footer_second-block">
+            <div class="row h-100">
+              <div class="col-xl-6">
+                <div class="footer_menu">
+                  <a href="#" class="footer_menu-link">Как получить займ?</a>
+                  <a href="#" class="footer_menu-link">Тарифы</a>
+                  <a href="#" class="footer_menu-link">Реферальная система</a>
+                  <a href="#" class="footer_menu-link">О компании</a>
+                  <a href="#" class="footer_menu-link">Частые вопросы</a>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="footer_button-block">
+                  <div class="buttons_account-footer">
+                    <a href="#" class="account__items-button button_order button_get">Оставить заявку</a>
+                    <a href="#" class="account__items-button button_order button_get button_dark">Войти в личный кабинет</a>
+                  </div>
+                  <div class="privacy_block">
+                    <a href="#" class="privacy_link d-none d-xl-block">Политика конфиденциальности</a>
+                  </div>
+                </div>  
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="line_horizon"></div>
+        <div class="end_page">
+          <p class="micro_text">Деятельность осуществляет Общество с ограниченной ответственностью Микрокредитная компания «Каппадокия» (ООО МКК
+          «Каппадокия»), которая состоит в государственном реестре микрофинансовых организаций от 27.12.2019
+          за номером 1903475009492</p>
+          <p class="micro_text">Является участником СРО Союз Микрофинансовый Альянс «Институты развития малого и среднего бизнеса», дата вступления
+          09.04.2020 года. Адрес место нахождения СРО: г. Москва, ул. Сущёвская, д. 21 этаж / офис 5/513,514</p>
+          <p class="micro_text">ИНН: 7459007268 ОГРН: 1197456052199<br>
+          Лицензия ЦБ: №1903475009492</p>
+          <p class="micro_text">Адрес: 443011, г. Самара, ул. Ново-Садовая, д. 307А, помещение №6, этаж 6</p>
+          <p class="micro_text">** Не является офертой. Решение о предоставлении займа и его сумме остается на усмотрение компании</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jqueryUI.min.js"></script>
+  <script src="js/jqueryUI_touch.js"></script>
+  <script src="js/air-datepicker.js"></script>
+  <script>
+    new AirDatepicker('#date_set', {
+        range: true,
+        autoClose: true,
+        multipleDatesSeparator: '                   по         '
+      });
+  </script>
+  <script>
+    window.onload = () => {
+      const uploadFile = document.getElementById("upload-file");
+      const uploadBtn = document.getElementById("upload-btn");
+      const uploadText = document.getElementById("upload-text");
+      console.log(uploadFile.value.innerText);
+      uploadFile.addEventListener("change", function(){
+        if (uploadFile.value){
+          uploadBtn.innerText = "Фото загружено"
+        }else{
+          uploadText.innerText = "Фото не загружено"
+        }
+      });
+    } 
+  </script>
+  <script>
+    $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 0) {
+          $('.header').addClass('active');
+        } else {
+          $('.header').removeClass('active');
+        }
+      });
+  </script>
+  <script>
+    $("#polzunok").slider({
+        min: 1000,
+        max: 45000,
+        step: 1000,
+        animate: "slow", 
+        range: "min",
+        value: 15000,
+        slide: function (event, ui) {
+              $("#result-polzunok").text(ui.value);
+          }
+      });
+      $("#result-polzunok").text($("#polzunok").slider("value"));
+  </script>
+  <script>
+    $("#countpolz").slider({
+      min: 7,
+      max: 50,
+      step: 1,
+      animate: "slow",
+      range: "min",
+      value: 14,
+      slide: function (event, ui) {
+        $("#countday").text(ui.value);
+      }
+    });
+    $("#countday").text($("#countpolz").slider("value"));
+  </script>
+  <script>
+    $('.menu_btn').click(function () {
+      $('.header__nav').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+    $('.nav-link').click(function () {
+      $('.nav-link').removeClass('active');
+      $('.drop_down1').removeClass('active');
+      $('.drop_down2').removeClass('active');
+      $('.dropparents1').removeClass('active');
+      $('.dropparents2').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.arr_1').click(function () {
+      $('.arr_2').removeClass('active');
+      $('.drop_down2').removeClass('active');
+      $('.dropparents2').removeClass('active');
+      $('.dropmenu-two').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.arr_2').click(function () {
+      $('.arr_1').removeClass('active');
+      $('.drop_down1').removeClass('active');
+      $('.dropparents1').removeClass('active');
+      $('.dropmenu-one').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.dropmenu-one').click(function () {
+      $('.dropparents1').addClass('active');
+      $('.drop_down1').addClass('active');
+    });
+    $('.dropmenu-two').click(function () {
+      $('.dropparents2').addClass('active');
+      $('.drop_down2').addClass('active');
+    });
+    $('.arr_1').click(function () {
+      $('.dropparents1').addClass('active');
+    });
+    $('.arr_2').click(function () {
+      $('.dropparents2').addClass('active');
+    });
+    $('.arr_1').click(function () {
+      $('.drop_down1').addClass('active');
+    });
+    $('.arr_2').click(function () {
+      $('.drop_down2').addClass('active');
+    });
+    $('.dropparents1').click(function () {
+      $('.drop_down1').addClass('active');
+    });
+    $('.dropparents2').click(function () {
+      $('.drop_down2').addClass('active');
+    });
+    $('.btn_open').click(function () {
+      $('.sidebar').toggleClass('show');
+    });
+  </script>
+</body>
+</html>
