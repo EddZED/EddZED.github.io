@@ -189,7 +189,7 @@
   </div>
   <!-- Модальное окно -->
   <div class="modal fade modal_ask" id="askus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered modal_send">
       <div class="modal-content">
         <form action="post" class="form_debt">
           <div class="modal-header">
@@ -223,7 +223,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn account__items-button button_order button_get btn-primary">Получить консультацию</button>
+            <button type="submit" class="btn account__items-button button_order button_get btn-primary btn_mod">Получить консультацию</button>
+            <div class="privacy_block">
+              <p class="link_text_privacy">Нажимая на кнопку, вы соглашаетесь с</p>
+              <a href="#" class="privacy_link">Политикой конфиденциальности</a>
+            </div>
           </div>
         </form>
       </div>
