@@ -1,0 +1,11 @@
+html{scroll-behavior:smooth;}
+.wrapper{overflow-x:hidden;}
+.section__content{
+  max-width:1600px;
+  width:100%;
+  margin:auto;
+}
+.header__content{
+  position:relative;
+  width:100%;
+}
