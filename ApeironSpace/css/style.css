@@ -6,6 +6,9 @@ html{scroll-behavior:smooth;}
   margin:auto;
   position:relative;
 }
+.content_box{
+  padding:90px 0;
+}
 .header__content{
   position:relative;
   width:100%;
@@ -263,22 +266,55 @@ html{scroll-behavior:smooth;}
 }
 .dots_custom{
   position:absolute;
-  right:0;
-  top:400px;
+  right:8px;
+  top:376px;
   display:flex;
   align-items:center;
   justify-content:center;
   flex-direction:column;
   transform:translate(0, -60%);
 }
+.dots_custom .slick-dots-custom button{
+  background-color:#6C6C6C;
+  border:none;
+  outline:none;
+  width:4px;
+  height:16px;
+  border-radius:2px;
+  font-size:0;
+  padding:0;
+  transition:.3s;
+}
+.dots_custom .slick-dots-custom button:hover{
+  background-color:#fff;
+}
+.slick-arrow{
+  background-color:transparent;
+  border:none;
+  outline:none;
+  color:#fff;
+}
+.dots_custom .slick-arrow span svg path {
+  transition:.3s ease;
+}
+.dots_custom .slick-arrow:hover span svg path{
+  stroke:#fff;
+}
+.dots_custom .slick-dots-custom .slick-active button{
+  background-color:#fff;
+}
 .slick-prev{
   order:1;
+  transform:rotateX(-180deg);
 }
 .slick-next{
   order:3;
 }
-.slick-dots{
+.slick-dots-custom{
   order:2;
+  list-style:none;
+  padding:0;
+  margin:0;
 }
 .menu_link{
   color:#fff;
@@ -409,24 +445,244 @@ html{scroll-behavior:smooth;}
   left:0;
   right:0;
   width:100%;
-  bottom:50px;
+  bottom:57px;
 }
 .search_block-body{
   background-color:#fff;
   border-radius:6px;
-  padding:15px 25px;
+  padding:28px 33px 33px 33px;
 }
 .select_body{
   display:flex;
   flex-direction:column;
+  justify-content:space-between;
   border-right:1px solid #A8BFC2;
+  height:100%;
+}
+.select_name{
+  font-size:16px;
+  line-height:130%;
+  font-family:'Neue Haas Unica';
+  font-weight:400;
+  color:#848A94;
+  margin-bottom:6px;
+}
+
+.select_dropdown{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.select_dropdown:before{
+  content:'';
+  position:absolute;
+  width:8px;
+  height:8px;
+  z-index:11111;
+  right:20px;
+  top:10px;
+  border:2px solid #1C1C1C;
+  border-top:2px solid #fff;
+  border-right:2px solid #fff;
+  transform:rotate(-45deg);
+  transition:.5s;
+  pointer-events:none;
+}
+.select_dropdown.active:before{
+  top:15px;
+  transform:rotate(-225deg);
+}
+.select_view{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  cursor:pointer;
+  background-color:#fff;
+  border:none;
+  outline:none;
+  font-weight: 500;
+  line-height: 130%;
+  font-size: 22px;
+  font-family: 'Neue Haas Unica';
+  color:#1C1C1C;
+  transition:.3s ease;
+  padding-right:40px;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.select_view:hover{
+  color:#1C545B;
+}
+.select_dropdown.active .option{
+  display:block;
+}
+.option{
+  position:absolute;
+  left:-25px;
+  top:55px;
+  width:536px;
+  max-height:300px;
+  padding:20px;
+  overflow-y: scroll;
+  background-color:#fff;
+  border-radius:6px;
+  box-shadow: 0px 0px 24px 0px rgba(35, 32, 32, 0.10);
+  z-index: 111111;
+  display:none;
+}
+.option_item{
+  margin:3px 0;
+  padding-left:15px;
+  cursor:pointer;
+  transition:.3s ease;
+  font-family: 'Neue Haas Unica';
+  font-weight:400;
+  color:#1C1C1C;
+}
+.option_item.main_city{
+  padding-left:0;
+  font-weight:500;
+}
+.option_item:hover{
+  color:#1C545B;
+}
+.calendar_item{
+  border:none;
+  outline:none;
+  font-size:22px;
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color:#1C1C1C;
+  cursor:pointer;
+  width:100%;
+}
+.calendar_item:hover,
+.calendar_item:focus{
+  color:#1C545B;
+}
+.drp-buttons{
+  display:none!important;
+}  
+.daterangepicker:before,
+.daterangepicker:after{
+  display:none;
+}
+.daterangepicker{
+  font-family:'Neue Haas Unica';
+  font-size:16px;
+  font-weight:500;
+  margin-top:25px;
+}
+.btn_form{
+  width:100%;
+  height:100%;
 }
 
 
 
-
-
-
-
-
-
+/* section two */
+.name_block{
+  color:#848A94;
+  font-size: 16px;
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+  padding-left:3px;
+}
+.title_block{
+  color:#1C545B;
+  font-size: 36px;
+  font-family: Neue Haas Unica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+.animation__number{
+  width:100%;
+  position:relative;
+}
+.phone_container{
+  width:284px;
+  height:570px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-image:url(../img/phone_bg.png);
+  background-size:250px 546px;
+  background-position:16px 8px;
+  background-repeat:no-repeat;
+  border-radius:45px;
+}
+.phone_frame{
+  pointer-events:none;
+}
+.phone_screen-block{
+  width:246px;
+  height:299px;
+  background-color:#F4F4F4;
+  position:absolute;
+  padding:10px 7px;
+  left:18px;
+  bottom:17px;
+  border-radius:10px 10px 25px 25px;
+}
+.top_line{
+  display:inline-block;
+  width:24px;
+  height: 2px;
+  background-color:#CACFD2;
+  position:absolute;
+  left:50%;
+  top:10px;
+  transform:translateX(-50%);
+}
+.name_screen{
+  color:#1C1C1C;
+  font-size: 16px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align:center;
+}
+.phone_screen-block .name_screen{
+  margin-top:10px;
+}
+.box_settings{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:100%;
+  max-height:100%;
+}
+.settings{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction:row-reverse;
+}
+.settings .settings_input[type="radio"]{
+  display:none;
+}
+.settings .checked{
+  width:35px;
+  height:22px;
+  border-radius:4px;
+  background-color:#A8BFC2;
+  transition:.3s ease;
+}
+.settings .checked:before{
+  width:18px;
+  height:18px;
+  border-radius:2px;
+}

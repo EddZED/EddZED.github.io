@@ -7,6 +7,7 @@
   <title>Apeiron Space</title>
   <link rel="stylesheet" href="font/styles_fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -341,8 +342,8 @@
           <div class="slider_item">
             <div class="slider_bg-intro">
               <div class="frame_bg"></div>
-              <!--<video class="video_slider" src="video/sample_1920x1080.mp4" loop="true" muted="true" preload="auto"></video>-->
-              <img class="img-fluid img_bg_slider" src="img/bg_slider_one.png" alt="smart отель в Санкт Петербурге">
+              <video class="video_slider" src="video/sample_1920x1080.mp4" loop="true" muted="true" preload="auto"></video>
+              <!--<img class="img-fluid img_bg_slider" src="img/bg_slider_one.png" alt="smart отель в Санкт Петербурге">-->
             </div>
             <div class="slider_content">
               <span class="video_btn">
@@ -397,19 +398,35 @@
           <form action="post" class="form_select">
             <fieldset>
               <div class="search_block-body">
-                <div class="row">
+                <div class="row gap-x-2">
                   <div class="col-xl-4">
                     <div class="select_body">
                       <span class="select_name">Выберите город</span>
-                      <select name="" id="">
-                        <option value="">Россия, Москва</option>
-                        <option value=""></option>
-                      </select>
+                      <div class="select_dropdown">
+                        <input class="select_view" type="text" name="" placeholder="Россия, Москва" readonly>
+                        <div class="option">
+                          <div onclick="show('Россия, Москва')" class="option_item main_city">Москва</div>
+                          <div onclick="show('Россия, Москва, отель APEIRONSPACE RAUSHSKAYA')" class="option_item">Москва, отель APEIRONSPACE RAUSHSKAYA</div>
+                          <div onclick="show('Россия, Москва, отель ACE Kostomarovskaya')" class="option_item">Москва, отель APEIRONSPACE Kostomarovskaya</div>
+                          <div onclick="show('Россия, Москва, отель ACE Kostomarovskaya')" class="option_item">Москва, отель APEIRONSPACE Okhotny Ryad</div>
+                          <div onclick="show('Россия, Санкт-Петербург')" class="option_item main_city">Санкт-Петербург</div>
+                          <div class="option_item">Санкт-Петербург, отель APEIRONSPACE RAUSHSKAYA</div>
+                          <div class="option_item">Санкт-Петербург, отель APEIRONSPACE Kostomarovskaya</div>
+                          <div class="option_item">Санкт-Петербург, отель APEIRONSPACE Okhotny Ryad</div>
+                          <div class="option_item main_city">Казань</div>
+                          <div class="option_item">Казань, отель APEIRONSPACE RAUSHSKAYA</div>
+                          <div class="option_item">Казань, отель APEIRONSPACE Kostomarovskaya</div>
+                          <div class="option_item">Казань, отель APEIRONSPACE Okhotny Ryad</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="select_body">
                       <span class="select_name">Заезд — Выезд</span>
+                      <div class="calendar_body">
+                        <input id="calendar" class="calendar_item" type="text">
+                      </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
@@ -418,7 +435,7 @@
                     </div>
                   </div>
                   <div class="col-xl-2">
-                    <button type="submit" class="btn_main btn_color-green">найти номер</button>
+                    <button type="submit" class="btn_main btn_color-green btn_form">найти номер</button>
                   </div>
                 </div>
               </div>          
@@ -427,8 +444,43 @@
         </div>
       </div>
     </section>
-    <section class="section__content">
-      <div class="container"></div>
+    <section class="section__content content_box">
+      <div class="container">
+        <h3 class="name_block">Сеть технологичных отелей</h3>
+        <h2 class="title_block">Ваш смартфон — ключ ко всему</h2>
+        <div class="animation__number">
+          <img class="img-fluid main_image" src="img/bg_smart-main.png" alt="smart hotel">
+          <div class="phone_container">
+            <img class="img-fluid phone_frame" src="img/phone.png" alt="">
+            <div class="phone_screen-block">
+                <span class="top_line"></span>
+                <p class="name_screen">Управление номером</p>
+                <div class="box_settings">
+                  <label class="settings">
+                    <input class="settings_input" type="radio" name="settings" checked>
+                    <span class="checked"></span>
+                    <span class="settings_type">Главный свет</span>
+                  </label>
+                  <label class="settings">
+                    <input class="settings_input" type="radio" name="settings">
+                    <span class="checked"></span>
+                    <span class="settings_type">Правая бра</span>
+                  </label>
+                  <label class="settings">
+                    <input class="settings_input" type="radio" name="settings">
+                    <span class="checked"></span>
+                    <span class="settings_type">Дверь номера</span>
+                  </label>
+                  <label class="settings">
+                    <input class="settings_input" type="radio" name="settings">
+                    <span class="checked"></span>
+                    <span class="settings_type">Шторы <span class="level_open">100<span>%</span></span></span>
+                  </label>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer__content">
       <div class="container">
@@ -439,6 +491,65 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script>
+    $('#calendar').daterangepicker({
+        "locale": {
+          "direction": "ltr",
+          "format": "MM.DD.YYYY",
+          "separator": " — ",
+          "fromLabel": "From",
+          "toLabel": "To",
+          "customRangeLabel": "Custom",
+          "daysOfWeek": [
+            "Вс",
+            "Пн",
+            "Вт",
+            "Ср",
+            "Чт",
+            "Пт",
+            "Сб"
+          ],
+          "monthNames": [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"
+          ],
+          "firstDay": 1
+        },
+        "startDate": "07/1/2023",
+        "endDate": "08/18/2023"
+      }, function (start, end, label) {
+        console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+      });
+  </script>
+  <script>
+    function show(anything){
+      document.querySelector('.select_view'). value = anything;
+    }
+
+    let selectDropdown = document.querySelector('.select_dropdown');
+    selectDropdown.onclick = function(){
+      selectDropdown.classList.toggle('active');
+    };
+    $(document).on('mouseup', function (e) { // При нажатии на документ
+        let s = $('.select_dropdown.active'); // берём .select_dropdown.active
+        if (!s.is(e.target) && s.has(e.target).length === 0) {
+          // Если нажат не он и не его дочернии И сам он существует
+          s.removeClass('active'); // То удаляем у него класс .active
+        }
+      });
+  </script>
   <script>
       const btnMenu = document.querySelector(".btn_menu ");
       const menu = document.querySelector(".sidebar__body");
@@ -448,7 +559,6 @@
       const toggleBtn = function () {
         btnMenu.classList.toggle("active");
       };
-
       btnMenu.addEventListener("click", function (e) {
         e.stopPropagation();
         toggleMenu();
@@ -512,9 +622,13 @@
         verticalSwiping: true,
         autoplay:false,
         autoplaySpeed: 3000,
+        pauseOnFocus: true,
         appendDots:'.dots_custom',
         appendArrows:'.dots_custom',
-        adaptiveHeight:true
+        adaptiveHeight:true,
+        prevArrow: '<button type = "button" class = "slick-prev"><span><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.99997 5.5L9 1.49999" stroke="#6C6C6C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.999971 1.49999L5 5.5" stroke="#6C6C6C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>',
+        nextArrow: '<button type = "button" class = "slick-next"><span><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.99997 5.5L9 1.49999" stroke="#6C6C6C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.999971 1.49999L5 5.5" stroke="#6C6C6C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>',
+        dotsClass:'slick-dots-custom'
     });
   </script>
 </body>
