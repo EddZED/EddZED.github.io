@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'YS Text';
+    src:url(../fonts/text-black.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'YS Text';
+  src: url(../fonts/text-medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YS Text';
+  src: url(../fonts/text-regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+html{scroll-behavior:smooth;}
+body{min-height:100vh;height:100%;overflow-x: hidden;font-family:'YS Text';}
+.wrapper{
+  height:100%;
+}
+.container{
+  width:100%;
+  max-width:916px;
+  margin:auto;
+  padding:0 15px;
+}
+.header__content{
+  padding:124px 0 5px 0;
+}
+.first__block{
+  padding:6px 0px 50px 0;
+}
+.content__row{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+.content__col{
+  flex:0 0 auto;
+  width:50%;
+  position:relative;
+}
+.title__name{
+  font-size:72px;
+  font-weight:900;
+  line-height:100%;
+  letter-spacing:-1.44px;
+}
+.img__fluid{
+  max-width:100%;
+}
+.image__intro{
+  max-width:822px;
+  position:absolute;
+  right:-186px;
+  top:-147px;
+  z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
