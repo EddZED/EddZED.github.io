@@ -25,6 +25,7 @@ img {
   width:100%;
   top:0;
   left:0;
+  z-index:1;
 }
 .container{
   max-width:1222px;
@@ -32,6 +33,7 @@ img {
   display:flex;
   padding:0 15px;
   margin:auto;
+  z-index: 2;
 }
 .container__link{
   display:flex;
@@ -42,9 +44,29 @@ img {
 .logo_img{
   max-width:50%;
 }
-
-
-
+.img-fluid{
+  max-width:100%;
+}
+.section_content{
+  position: relative;
+  width:100%;
+  max-width:1366px;
+  margin:auto;
+}
+.bg_image{
+  min-height:700px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.bg_image-item{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.content_intro{
+  flex:0 0 50%;
+}
 
 
 
