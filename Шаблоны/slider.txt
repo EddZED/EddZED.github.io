@@ -1,0 +1,36 @@
+// Массив с URL изображений
+const imagesUrls = [ "images/image1.jpg", "images/image2.jpg", "images/image3.jpg", ];
+
+// Индекс для отслеживания текущей картинки
+let currentIndex = 0;
+
+// Устанавливаем начальное изображение
+const imageElement = document.querySelector("#image"); imageElement.src = imagesUrls[currentIndex];
+
+// Функция, отвечающая за переход к следующему изображению
+function nextImageHandler() {
+  // Увеличиваем индекс текущего изображения
+  currentIndex++;
+  // Если текущий индекс больше длины массива изображений, устанавливаем его обратно в 0
+  if (currentIndex >= imagesUrls.length) {
+    currentIndex = 0;
+  }
+  // Показываем следующее изображение
+  imageElement.src = imagesUrls[currentIndex];
+}
+
+// Функция, отвечающая за переход к предыдущему изображению
+function previousImageHandler() {
+  // Уменьшаем индекс
+  currentIndex--;
+  // Если текущий индекс меньше 0, устанавливаем его на последний индекс массива изображений
+  if (currentIndex < 0) {
+    currentIndex = imagesUrls.length - 1;
+  }
+  // Показываем предыдущее изображение
+  imageElement.src = imagesUrls[currentIndex];
+}
+
+// Устанавливаем обработчики изображений на кнопки
+const nextButton = document.querySelector("#next"); nextButton.addEventListener("click", nextImageHandler);
+const previousButton = document.querySelector("#previous"); previousButton.addEventListener("click", previousImageHandler);
