@@ -1,6 +1,13 @@
+@font-face { font-family: 'GolosRegular'; src: url(../font/GolosText-Regular.ttf); }
+@font-face { font-family: 'GolosMedium'; src: url(../font/GolosText-Medium.ttf); }
+@font-face { font-family: 'GolosBold'; src: url(../font/GolosText-Bold.ttf); }
+@font-face { font-family: 'GolosSemiBold'; src: url(../font/GolosText-SemiBold.ttf); }
+@font-face { font-family: 'MerriRegular'; src: url(../font/Merriweather-Regular.ttf); }
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  --color-content: #313131;
+  --color-red:#f54932;
 }
 *:before,*:after {
   box-sizing: inherit;
@@ -67,6 +74,20 @@ img {
 .content_intro{
   flex:0 0 50%;
 }
-
-
-
+.title{
+  font-size:60px;
+  line-height:110%;
+  text-transform:uppercase;
+  color:var(--color-content);
+  font-family:'MerriRegular';
+  font-weight:400;
+}
+.row_title{
+  display:inline-block;
+}
+.row_one{
+  padding-left:90px;
+}
+.row_two{
+  padding-left:40px;
+}
