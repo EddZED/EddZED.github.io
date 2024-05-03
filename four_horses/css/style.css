@@ -35,10 +35,8 @@ img {
   z-index:1;
 }
 .container{
-  max-width:1222px;
-  width: 100%;
+  width: min(1222px, 100% - 30px);
   display:flex;
-  padding:0 15px;
   margin:auto;
   z-index: 2;
 }
