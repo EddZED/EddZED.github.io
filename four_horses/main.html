@@ -19,19 +19,31 @@
       <section class="section_content intro">
         <div class="bg_image">
           <img class="bg_image-item" src="img/wrapper_main.png" alt="">
+          <div class="circle_item">
+            <p class="text_circle">из васюков полетят сигналы на марс•из васюков полетят сигналы на марс•из васюков полетят сигналы на марс•из васюков полетят сигналы на марс•</p>
+          </div>
+          <img class="chess_wood" src="img/city.png" alt="">
           <div class="container">
             <div class="content_intro">
               <h1 class="title">Превратите уездный город <span class="row_title row_one">в столицу</span><span class="row_title row_two"> земного шара</span></h1>
+              <div class="intro_text-block">
+                <p class="text_content">Оплатите взнос на телеграммы для организации<br> Международного васюкинского турнира по шахматам</p>
+              </div>
+              <div class="button_block">
+                <button type="button" class="button_main button_dark">Поддержать<br>шахматную мысль</button>
+                <button type="button" class="button_main button_light">Подробнее<br>о турнире</button>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
       <section class="section_content">
         <div class="running_line">
           <marquee behavior="scoll" direction="left">Дело помощи утопающим — дело рук самих утопающих!
-            <span></span> 
+            <span>•</span> 
             Шахматы двигают вперед не только культуру, но и экономику!
-            <span></span>
+            <span>•</span>
             Лед тронулся, господа присяжные заседатели!
           </marquee>
         </div>
@@ -41,5 +53,13 @@
 
     </footer>
   </div>
+
+  <script>
+    const circle_text = document.querySelector('.text_circle');
+    circle_text.innerHTML = circle_text.innerText.split("").map(
+      (char, i) => 
+      `<span style="transform:rotate(${i * 2.57}deg)">${char}</span>`
+    ).join("");
+  </script>
 </body>
 </html>

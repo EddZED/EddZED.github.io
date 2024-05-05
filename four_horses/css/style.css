@@ -8,6 +8,8 @@ html {
   box-sizing: border-box;
   --color-content: #313131;
   --color-red:#f54932;
+  --color-element:#1f1f1f;
+  --color-text-light:#fff;
 }
 *:before,*:after {
   box-sizing: inherit;
@@ -20,6 +22,7 @@ body,h1,h2,h3 {
 img {
   max-width: 100%;
   height: auto;
+  pointer-events: none;
 }
 .wrapper{
   min-width:100%;
@@ -37,8 +40,8 @@ img {
 .container{
   width: min(1222px, 100% - 30px);
   display:flex;
-  margin:auto;
-  z-index: 2;
+  margin-inline:auto;
+  z-index: 10;
 }
 .container__link{
   display:flex;
@@ -89,3 +92,94 @@ img {
 .row_two{
   padding-left:40px;
 }
+.intro_text-block{
+  display:flex;
+  width:90%;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.text_content{
+  font-size:18px;
+  color: var(--color-content);
+  line-height:130%;
+  font-family:'GolosRegular';
+  font-weight:400;
+}
+.button_block{
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  gap:50px;
+}
+.button_main{
+  width:263px;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size:16px;
+  font-weight:500;
+  font-family:'GolosMedium';
+  border:1px solid var(--color-element);
+  border-radius:66px;
+  outline:none;
+  padding:5px;
+  background:transparent;
+}
+.button_main:hover{
+  cursor: pointer;
+}
+.button_dark{
+  color:#fff;
+  background-color:var(--color-element);
+}
+.chess_wood{
+  position:absolute;
+  right:0;  
+  bottom:0;
+  width:auto;
+  z-index:2;
+}
+.circle_item{
+  width:660px;
+  height:660px;
+  border-radius:50%;
+  z-index:1;
+  position:absolute;
+  mix-blend-mode: color-burn;
+  top:-50px;
+  right:100px;
+  background-color:#FBCE51;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.text_circle{
+  position:absolute;
+  margin:0;
+  width:660px;
+  height:660px;
+  font-size:17px;
+  font-family:'MerriRegular';
+  text-transform:uppercase;
+  color:#313131;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation: rotateText 100s linear infinite;
+}
+@keyframes rotateText{
+  0%{
+    transform:rotate(360deg);
+  }
+}
+.text_circle span{
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform-origin: 0 320px;
+}
+
