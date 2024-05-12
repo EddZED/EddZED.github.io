@@ -66,6 +66,7 @@ img {
   display:flex;
   align-items:center;
   justify-content:center;
+  background-image: url(../img/wrapper_main.png);
 }
 .bg_image-item{
   position:absolute;
@@ -148,13 +149,13 @@ img {
   border-radius:50%;
   z-index:1;
   position:absolute;
-  mix-blend-mode: color-burn;
   top:-50px;
   right:100px;
   background-color:#FBCE51;
   display:flex;
   align-items:center;
   justify-content:center;
+  mix-blend-mode: color-burn;
 }
 .text_circle{
   position:absolute;
@@ -181,5 +182,47 @@ img {
   top:10px;
   left:50%;
   transform-origin: 0 320px;
+}
+.chess_image{
+  z-index:1;
+  opacity:1;
+  max-width:103px;
+  position:absolute;
+  bottom:180px;
+  left:54%;
+}
+.chess_image-2 {
+  z-index: 2;
+  opacity: 1;
+  max-width: 113px;
+  position: absolute;
+  top: 200px;
+  right: 13%;
+}
+.image_horse{
+  position:absolute;
+  bottom:0;
+  right:25%;
+  z-index:2;
+}
+.image_pawn{
+  position:absolute;
+  bottom:20px;
+  right:50px;
+  z-index:2;
+  max-width:82px;
+}
+.running_line{
+  color:#fff;
+  background-color:#f54932;
+  font-family: 'MerriRegular';
+  font-weight:400;
+  font-size:22px;
+  line-height:110%;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  min-height:50px;
+  padding:5px 0;
 }
 
