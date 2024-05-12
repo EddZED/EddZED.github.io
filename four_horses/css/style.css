@@ -123,17 +123,27 @@ img {
   font-size:16px;
   font-weight:500;
   font-family:'GolosMedium';
-  border:1px solid var(--color-element);
+  border:2px solid var(--color-element);
   border-radius:66px;
   outline:none;
   padding:5px;
   background:transparent;
+  transition:.3s ease;
 }
 .button_main:hover{
   cursor: pointer;
 }
 .button_dark{
   color:#fff;
+  background-color:var(--color-element);
+}
+.button_dark:hover{
+  color:var(--color-element);
+  border-color:#fbce51;
+  background-color:#fbce51;
+}
+.button_light:hover{
+  color:var(--color-text-light);
   background-color:var(--color-element);
 }
 .chess_wood{
@@ -220,9 +230,42 @@ img {
   font-size:22px;
   line-height:110%;
   text-transform:uppercase;
-  display:flex;
+  display:inline-flex;
   align-items:center;
   min-height:50px;
   padding:5px 0;
+  white-space:nowrap;
+  overflow-x:hidden;
+  width:100%;
+  overflow:hidden;
+}
+@keyframes running_line{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.running_item{
+  animation: 30s running_line infinite linear;
 }
 
+
+
+.top_block{
+  width:100%;
+  display:grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  
+}
+
+
+
+
+
+
+.photo_img{
+  max-width:30%;
+}
