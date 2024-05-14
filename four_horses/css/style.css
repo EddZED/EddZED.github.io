@@ -252,17 +252,27 @@ img {
 }
 
 
-
-.top_block{
-  width:100%;
-  display:grid;
-  grid-template-columns: 2;
-  grid-template-rows: 3;
-  
+.second_section{
+  padding-top:50px;
 }
-
-
-
+.top_block{
+  min-width:100%;
+  display:flex;
+  align-items:center;
+}
+.content_title{
+  font-size:36px;
+  line-height:135%;
+  text-transform:uppercase;
+  color:var(--color-content);
+  font-weight:400;
+}
+.red_text{
+  color:var(--color-red);
+}
+.bold_text{
+  font-weight:bold;
+}
 
 
 
