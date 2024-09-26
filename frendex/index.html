@@ -13,35 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <ul class="nav align-items-center nav-tabs group_btn" id="myTab" role="tablist">
-              <li class="nav-item col-lg-2 pl-0 pr-1">
-                <a class="nav-link whtspc active" id="operations-tab" data-toggle="tab" href="#operations" role="tab"
-                  aria-controls="operations" aria-selected="true">Все операции</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="devident-tab" data-toggle="tab" href="#devident" role="tab"
-                  aria-controls="avia" aria-selected="false">Мои девиденты</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab"
-                  aria-controls="" aria-selected="false">Вывод доходов</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Мои инвестиции</a>
-              </li>
-              <li class="nav-item col-lg-2 px-1 pt-3 pt-lg-0">
-                <a class="nav-link whtspc" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Все инвестиции</a>
-              </li>
-              <li class="nav-item col-lg-2 pl-1 pr-0 pt-3 pt-lg-0">
-                <a class="nav-link" id="" data-toggle="tab" href="#" role="tab" aria-controls=""
-                  aria-selected="false">Инвестиции моей страницы</a>
-              </li>
-            </ul>
-            <div class="tab-content pt-5" id="info_tab-dest">
-              <div class="tab-pane fade show active" id="operations" role="tabpanel" aria-labelledby="operations-tab">
-                <p class="title_content pb-4">Автомобильная программа FX - авто</p>
+           <p class="title_content pb-4">Автомобильная программа FX - авто</p>
                 <form method="get" action="">
                   <fieldset>
                     <p class="text_content pb-4">Выберите состояние автомобиля</p>
@@ -50,11 +22,11 @@
                         <input type="radio" class="inp_condition" name="condition" value="new">
                         <span class="name_btn">новый</span>
                       </label>
-                      <label class="btn_condition pr-0 pr-md-3 m-0">
+                      <label class="btn_condition inp_block pr-0 pr-md-3 m-0">
                         <input type="radio" class="inp_condition" name="condition"  value="used" checked>
                         <span class="name_btn">подержанный</span>
                       </label>
-                      <input type="text" class="input_form mt-3 mt-md-0" placeholder="Введите год выпуска ТС">
+                      <input type="text" id="used_car" class="input_form inp_none mt-3 mt-md-0" placeholder="Введите год выпуска ТС">
                     </div>
                     <div class="price_auto pt-4 pt-lg-5 col-lg-9">
                       <p class="text_content">Выберите стоимость автомобиля</p>
@@ -87,11 +59,8 @@
                     </div>
                   </fieldset>
                 </form>
-              </div>
-              <div class="tab-pane fade" id="devident" role="tabpanel" aria-labelledby="devident-tab">
-                <p class="txt_content">2</p>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </div>
@@ -155,7 +124,6 @@
         from: val
         });
         });
-
-    </script>
+     </script>
   </body>
 </html>

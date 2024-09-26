@@ -11,6 +11,7 @@ body{font-family:'PT sans';}
 .inp_condition[type=radio]{display:none;}
 .name_btn{display:inline-block;padding:13px 35px;color:#393E5A;background:#121420;border: 1px solid #191D2D;border-radius:8px;text-transform:uppercase;cursor:pointer;transition:all .3s;font-weight:bold;}
 .btn_condition .inp_condition[type=radio]:checked + .name_btn{background:#191D2D;border-color:#5F6AFF;color:#fff;}
+.btn_condition .inp_condition[type=radio]:checked + .inp_none{display:block;}
 .btn_condition .inp_condition + .name_btn:hover{background:#191D2D;border-color:#5F6AFF;color:#fff;}
 .input_form{display:inline-block;padding:13px 35px;background: #191D2D;border-radius: 8px;border:1px solid transparent;font-size:16px;color:#fff;transition:all .3s;}
 .input_form[:placeholder]{font-size:12px;line-height:16px;color:#393E5A;letter-spacing:0.01em;}
@@ -39,6 +40,8 @@ body{font-family:'PT sans';}
 .modal-content{background: #121420;box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);border-radius: 18px;padding:60px 20px 30px;text-align:center;}
 .close{position:absolute;top:20px;right:30px;}
 .title_modal{font-size:22px;line-height:28px;letter-spacing:0.01em;color:#fff;}
+
+
 
 @media(max-width:767px){
   .btn_condition{padding-right:20px;}
